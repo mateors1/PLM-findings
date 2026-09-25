@@ -2,6 +2,21 @@
 
 Research synthesis for **PLM / Pika Edition**, a decoder-only model that emits product identifiers for structured relation queries. Pokémon identifiers are the first opaque product catalog. This repository is a dated research snapshot of the source project's working tree, not a software release.
 
+## What the research aims to prove
+
+PLM tests whether a constrained vocabulary and an explicit query protocol can support reliable **relation-to-ID retrieval**. A deterministic pipeline parses a request, supplies the model with a subject and relation, validates its generated product IDs, and hydrates those IDs outside the model. The model does not generate prose or attribute descriptions.
+
+The current controlled experiment uses `TYPE` and `COLOR` with the `SAME` relation. A graph lookup can compute every correct answer, so the goal is to **match that oracle's complete-answer quality** and then measure whether model serving offers an advantage in concurrent throughput, latency, or energy per request **at matched quality**. A later experiment would ask whether a learned policy helps with relations that cannot be fully compiled from fixed graph rules, such as complementary products. The current findings establish neither oracle parity nor a quality-matched serving advantage, and they do not test that later learning claim. See the [research question and protocol](papers/01-research-question-and-protocol.md) and [evidence ledger](papers/05-evidence-ledger.md).
+
+## Possible applications
+
+- **Catalog relation queries:** return product IDs that share a specified attribute with a subject. This is the present test case; exact graph lookup remains the correct baseline for deployment.
+- **Human-reviewed candidate discovery:** propose related IDs for a curator or merchandiser to assess. This could tolerate incomplete suggestions, but no user-workflow benefit has been measured.
+- **Learned complementary or preference retrieval:** explore relationships that require judgments beyond deterministic attribute matching. This is a future hypothesis requiring new labels, careful splits, and comparisons with simpler retrieval methods.
+- **High-volume structured services:** serve bounded, ID-only responses for many requests. Offline batching shows capacity in a fixed workload; live concurrency, latency targets, energy, and quality-matched comparisons remain open.
+
+These are application directions, not validated product claims. The [architecture and applications paper](papers/13-decoder-and-applications.md) details the fit and evidence boundary for each.
+
 ## Read the findings
 
 1. [Research question and protocol](papers/01-research-question-and-protocol.md) — what the experiment can establish.
@@ -79,6 +94,12 @@ This public repository includes research material copied from a source working
 tree with uncommitted changes. The dated evidence inventories identify the copied
 bytes; source `HEAD` alone does not identify them. Results and status statements
 should be read with their original dates and declared acceptance gates.
+
+## Pokémon names and IP
+
+Pokémon and individual Pokémon names appear here as reference labels for a research corpus. The model treats names as opaque `PKM_<NAME>` identifiers to study relational retrieval and serving, rather than as characters in a game or story. This is independent research, with no affiliation with or endorsement by the owners of Pokémon or related marks. No rights in those marks are claimed.
+
+The intended rationale is limited, referential use of names to identify the benchmark entities and make the experiments reproducible. Under U.S. guidance, individual names are not protected by copyright, although names may be protected as trademarks ([U.S. Copyright Office](https://www.copyright.gov/help/faq/faq-protect.html); [USPTO](https://www.uspto.gov/trademarks/basics/what-trademark)). Copyright fair use and trademark defenses depend on the specific use and jurisdiction; this notice is not a legal determination or permission to reuse other Pokémon material ([U.S. Copyright Office fair-use guidance](https://copyright.gov/fair-use/)).
 
 ## Support
 
