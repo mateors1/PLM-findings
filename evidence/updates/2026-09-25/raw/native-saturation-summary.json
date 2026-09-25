@@ -1,0 +1,3294 @@
+{
+  "definition": "generated tokens include EOS and exclude five prompt tokens; 503s do not contribute completed output",
+  "deployment": {
+    "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "constrained_decoding": true,
+    "corpus_identity": {
+      "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+      "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+      "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+    },
+    "decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+    "device": "cuda",
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source_tree_sha256": "82b0c7d8fd00ca5ba9a0be44be5b50e6d690b0d8255abf7fc54590e6e63d7d84",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "first_target_guidance_alpha": 16.0,
+    "generation_batch_size": 1,
+    "inference_config_hash": "b89db71f57beec70d1f9bff098fc5efd24d257560f51a8329e11ed788398c4b3",
+    "max_new_tokens": 507,
+    "max_pending": 8,
+    "pair_set_composition": false,
+    "prevent_repeated_targets": true,
+    "scheduling": "serial model execution with bounded admission; not continuous batching",
+    "set_composition_policy": null,
+    "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "symmetric_set_reranking": false,
+    "use_kv_cache": true
+  },
+  "deployment_receipt": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\native-saturation-20260925\\deployments\\native-a2hhcdo7\\serving.json",
+  "reference_receipt_sha256": "2c5f724606d224b55b52faa8e2735922a509c8a55cf72ae67efeedd3d89113ab",
+  "rows": [
+    {
+      "client_seconds_p50": 1.063361250000014,
+      "client_seconds_p95": 1.649576799999977,
+      "client_seconds_p99": 1.649576799999977,
+      "completed_output_tps": 156.48319756909714,
+      "completed_requests": 16,
+      "completed_rps": 0.9512656387179157,
+      "concurrency": 1,
+      "elapsed_seconds": 16.819697200000064,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.06308544999996,
+      "offered_requests": 16,
+      "offered_rps": 0.9512656387179157,
+      "path": "internal",
+      "queue_seconds_p50": 3.9999997625272954e-07,
+      "queue_seconds_p95": 7.999999525054591e-07,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 0.8772530999999617,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8770094000000199,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2639415999999528,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2636135000000195,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.649576799999977,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6491536999999425,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2979162999999971,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2975652999999738,
+          "queue_seconds": 7.999999525054591e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8180889999999863,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8178543999999874,
+          "queue_seconds": 5.000000555810402e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.366449399999965,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3661121000000094,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.835741999999982,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8355097999999543,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3348310000000083,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.33470410000006723,
+          "queue_seconds": 1.999999312829459e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.8964842000000317,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8962464999999611,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2302382999999963,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.229924399999959,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6218387999999777,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6213827999999921,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2765979000000698,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2762238999999909,
+          "queue_seconds": 6.999999868639861e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8204351000000543,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8202012000000423,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.367807599999992,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3674703000000363,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.844917799999962,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.84458810000001,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3157377999999653,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3156135000000404,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.0692114999999944,
+      "client_seconds_p95": 1.633568299999979,
+      "client_seconds_p99": 1.633568299999979,
+      "completed_output_tps": 158.45018382207954,
+      "completed_requests": 16,
+      "completed_rps": 0.9632230019579303,
+      "concurrency": 1,
+      "elapsed_seconds": 16.610899000000018,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0672874999999635,
+      "offered_requests": 16,
+      "offered_rps": 0.9632230019579303,
+      "path": "http",
+      "queue_seconds_p50": 4.0000008993956726e-07,
+      "queue_seconds_p95": 1.4999999393694452e-06,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 0.8769322000000557,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8747935999999754,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2619337999999516,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2598587999999609,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.633568299999979,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6208480000000236,
+          "queue_seconds": 1.4999999393694452e-06,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2418142999999873,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2398672999999008,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.9491391999999905,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.9472955999999613,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3692164999999932,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3670883999999432,
+          "queue_seconds": 5.000000555810402e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8261214000000336,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8241457999999966,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.31632999999999356,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.31470170000000053,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.8665649999999232,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8540948000000981,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2362097999999833,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2342304000000013,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.546914700000002,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5449062999999796,
+          "queue_seconds": 9.000000318337698e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.1892837999999983,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1872793999999658,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.7873762000000397,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.785502000000065,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3190011000000368,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3170346000000563,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8564423000000261,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8543733000000202,
+          "queue_seconds": 5.000000555810402e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3325507000000698,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3307108999999855,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.3507009499999754,
+      "client_seconds_p95": 2.862182599999983,
+      "client_seconds_p99": 2.862182599999983,
+      "completed_output_tps": 155.94549209722825,
+      "completed_requests": 16,
+      "completed_rps": 0.9479969124451565,
+      "concurrency": 2,
+      "elapsed_seconds": 16.87769209999999,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0650850000000673,
+      "offered_requests": 16,
+      "offered_rps": 0.9479969124451565,
+      "path": "internal",
+      "queue_seconds_p50": 0.16045565000001716,
+      "queue_seconds_p95": 1.3668079999999918,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 2.1756536000000324,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8878508000000238,
+          "queue_seconds": 1.2875606000000062,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2876688999999715,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2873307000000977,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.862182599999983,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6180243999999675,
+          "queue_seconds": 1.2436791000000085,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2437269999999216,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.243368700000019,
+          "queue_seconds": 1.999999312829459e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.175527200000033,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.820671999999945,
+          "queue_seconds": 1.3546360000000277,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3546804000000066,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3543406000000004,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.2317755999999918,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8993039000000635,
+          "queue_seconds": 0.3322177999999667,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3322663000000148,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.33213739999996506,
+          "queue_seconds": 2.0000004496978363e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 2.2568297000000257,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8897843000000876,
+          "queue_seconds": 1.3668079999999918,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.3669666000000689,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.3666428000000224,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.8476408999999876,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.61613669999997,
+          "queue_seconds": 1.2311270999999806,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2311836999999741,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2308661000000711,
+          "queue_seconds": 2.9999989692441886e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.1798493000000008,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8329501000000619,
+          "queue_seconds": 1.3466723999999886,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3467214999999442,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3463812999999618,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.1460559999999305,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8249229000000469,
+          "queue_seconds": 0.3209107000000131,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.32096599999999853,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3208314999999402,
+          "queue_seconds": 6.000000212225132e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.4876238499999772,
+      "client_seconds_p95": 2.8641404999999622,
+      "client_seconds_p99": 2.8641404999999622,
+      "completed_output_tps": 158.2189128660677,
+      "completed_requests": 16,
+      "completed_rps": 0.9618170994897733,
+      "concurrency": 2,
+      "elapsed_seconds": 16.63517939999997,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.057507649999991,
+      "offered_requests": 16,
+      "offered_rps": 0.9618170994897733,
+      "path": "http",
+      "queue_seconds_p50": 0.15286685000000944,
+      "queue_seconds_p95": 1.6358559999999898,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 2.107137400000056,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8696820999999773,
+          "queue_seconds": 1.2344110000000228,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2375321000000667,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2347181000000091,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6482976000000917,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6455184999999801,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.8641404999999622,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2160518999999113,
+          "queue_seconds": 1.6358559999999898,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.197562400000038,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8263974999999846,
+          "queue_seconds": 1.3689409999999498,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3721610000000055,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3686588000000484,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.1539691000000403,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8460492000000386,
+          "queue_seconds": 0.30573279999998704,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.30826779999995324,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3056601999999202,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.9019331000000648,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8989634000000706,
+          "queue_seconds": 5.999999075356754e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 2.1336961000000656,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2322236999999632,
+          "queue_seconds": 0.8991489000000001,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.603086699999949,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.599658800000043,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.862301099999968,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2599023999999872,
+          "queue_seconds": 1.6001200000000608,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8113442000000077,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8083839999999327,
+          "queue_seconds": 9.000000318337698e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.1896582000000535,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3787598000000116,
+          "queue_seconds": 0.8085906999999679,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8156909000000496,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8132054000000153,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 1.124778699999979,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3090283000000227,
+          "queue_seconds": 0.8133704999999054,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 2.298766750000027,
+      "client_seconds_p95": 5.382478799999944,
+      "client_seconds_p99": 5.382478799999944,
+      "completed_output_tps": 153.45848280740577,
+      "completed_requests": 16,
+      "completed_rps": 0.9328783149386369,
+      "concurrency": 4,
+      "elapsed_seconds": 17.15121869999996,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0408127999999692,
+      "offered_requests": 16,
+      "offered_rps": 0.9328783149386369,
+      "path": "internal",
+      "queue_seconds_p50": 1.1992669500000375,
+      "queue_seconds_p95": 4.0612546000000975,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 4.932209499999999,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8707300999999461,
+          "queue_seconds": 4.0612546000000975,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.061245900000017,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2582483999999567,
+          "queue_seconds": 2.802696200000014,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.8026905000000397,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6002816999999823,
+          "queue_seconds": 1.2017799000000196,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2018461999999772,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2014934999999696,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.1298033999999006,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8286104000000023,
+          "queue_seconds": 0.30095639999990453,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.499594200000047,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3694559999999,
+          "queue_seconds": 1.1298074000000042,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 3.327556100000038,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8277673999999706,
+          "queue_seconds": 2.4995675999999776,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.30101250000006985,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.30088469999998324,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 2.072058200000015,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8750709999999344,
+          "queue_seconds": 1.1967540000000554,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 3.317396600000052,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.245016699999951,
+          "queue_seconds": 2.0720555999999988,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 5.382478799999944,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 2.0646610999999666,
+          "queue_seconds": 3.3174055000000635,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.196802699999921,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1964843999999175,
+          "queue_seconds": 2.0000004496978363e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.2189196000000493,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.885141200000021,
+          "queue_seconds": 0.33354609999992135,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.5067375999999513,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.4084685000000263,
+          "queue_seconds": 2.097938099999965,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 2.0979393000000073,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8787929000000076,
+          "queue_seconds": 1.218917900000065,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3335814999999229,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3334449000000177,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 2.593725500000005,
+      "client_seconds_p95": 5.159788299999946,
+      "client_seconds_p99": 5.159788299999946,
+      "completed_output_tps": 155.84327798382475,
+      "completed_requests": 16,
+      "completed_rps": 0.9473755500536458,
+      "concurrency": 4,
+      "elapsed_seconds": 16.888761799999997,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0654095499999698,
+      "offered_requests": 16,
+      "offered_rps": 0.9473755500536458,
+      "path": "http",
+      "queue_seconds_p50": 1.470046850000017,
+      "queue_seconds_p95": 4.086717700000008,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 3.51288169999998,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9061660999999503,
+          "queue_seconds": 2.601487200000065,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.311421600000017,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.307975400000032,
+          "queue_seconds": 6.999999868639861e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 5.159788299999946,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6471242000000075,
+          "queue_seconds": 3.5076212999999825,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.6064076000000114,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2943850000000339,
+          "queue_seconds": 1.3069573000000219,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8515251000000035,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8476924000000281,
+          "queue_seconds": 3.9999997625272954e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.266823000000045,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.41518700000006,
+          "queue_seconds": 0.847794199999953,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 3.4267988999999943,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.845984000000044,
+          "queue_seconds": 2.577889599999935,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 2.5810433999999987,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.31428540000001703,
+          "queue_seconds": 2.263323499999956,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 4.968210399999975,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8784528999999566,
+          "queue_seconds": 4.086717700000008,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.090562999999975,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2283616999999367,
+          "queue_seconds": 2.8580888999999843,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.636919799999987,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.632718700000055,
+          "queue_seconds": 5.000000555810402e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.8619573000000855,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2246529999999893,
+          "queue_seconds": 1.6331364000000121,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.9682941999999457,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8244048999999904,
+          "queue_seconds": 1.1395641999999953,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.3314722000000074,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3635672999999997,
+          "queue_seconds": 1.964171399999941,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.823946200000023,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8199785999998994,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 1.1437405000000354,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3197808999999552,
+          "queue_seconds": 0.82014479999998,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.7259804999999915,
+      "client_seconds_p95": 8.422038399999906,
+      "client_seconds_p99": 8.422038399999906,
+      "completed_output_tps": 157.2819555491787,
+      "completed_requests": 16,
+      "completed_rps": 0.9561213103293538,
+      "concurrency": 8,
+      "elapsed_seconds": 16.734278200000062,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0475964500000146,
+      "offered_requests": 16,
+      "offered_rps": 0.9561213103293538,
+      "path": "internal",
+      "queue_seconds_p50": 3.435472049999987,
+      "queue_seconds_p95": 7.035137299999974,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 1.2007574000000432,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8855359000000362,
+          "queue_seconds": 0.31496340000001055,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 2.464691700000003,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2636251999999786,
+          "queue_seconds": 1.2007551000000376,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 4.100308999999925,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.635209199999963,
+          "queue_seconds": 2.4646935000000667,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 5.31244049999998,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.211750600000073,
+          "queue_seconds": 4.1003232999999,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.184810999999968,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.872090500000013,
+          "queue_seconds": 5.312445499999967,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 8.422038399999906,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3988881999999876,
+          "queue_seconds": 7.022786999999994,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 7.022778600000038,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8377359999999499,
+          "queue_seconds": 6.184819599999969,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3150536999999076,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3149203000000398,
+          "queue_seconds": 6.999999868639861e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 1.1822310999999672,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8734212999999045,
+          "queue_seconds": 0.30857620000006136,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 8.309280700000045,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2738431999999875,
+          "queue_seconds": 7.035137299999974,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.770615899999939,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5880114000000276,
+          "queue_seconds": 1.1822308000000703,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 5.349521999999979,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2096569999999929,
+          "queue_seconds": 4.1395264000000225,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.186357999999927,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.836550299999999,
+          "queue_seconds": 5.349584800000002,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 4.139520500000003,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3685687999999345,
+          "queue_seconds": 2.7706208000000743,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 7.035132299999987,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8485506000000669,
+          "queue_seconds": 6.186361099999999,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3086274999999432,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3085049999999683,
+          "queue_seconds": 8.000000661922968e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.832648199999994,
+      "client_seconds_p95": 8.370328100000052,
+      "client_seconds_p99": 8.370328100000052,
+      "completed_output_tps": 157.9338365834235,
+      "completed_requests": 16,
+      "completed_rps": 0.9600841129691399,
+      "concurrency": 8,
+      "elapsed_seconds": 16.665206499999954,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0434198999999467,
+      "offered_requests": 16,
+      "offered_rps": 0.9600841129691399,
+      "path": "http",
+      "queue_seconds_p50": 3.569457200000045,
+      "queue_seconds_p95": 7.455860400000006,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 6.979081700000052,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8757659000000331,
+          "queue_seconds": 6.095334199999911,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 5.272431900000015,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.273822799999948,
+          "queue_seconds": 3.991491700000097,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6327519999999822,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6289892999999438,
+          "queue_seconds": 5.000000555810402e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 3.153511299999991,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2018118999999388,
+          "queue_seconds": 1.9457972000000154,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.102939800000058,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8307305999999244,
+          "queue_seconds": 5.264781800000037,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 8.370328100000052,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3910154999999804,
+          "queue_seconds": 6.971069700000044,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 3.997862599999962,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8444984000000204,
+          "queue_seconds": 3.147422699999993,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 1.951333800000043,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3184342999999217,
+          "queue_seconds": 1.6280536000000438,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 3.0910197000000608,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8850278999999546,
+          "queue_seconds": 2.2001305,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 6.235178299999916,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2454815000000963,
+          "queue_seconds": 4.982577300000003,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 4.676168299999972,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5847243999999137,
+          "queue_seconds": 3.085209000000077,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 7.461541199999942,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2269157999999152,
+          "queue_seconds": 6.228631700000051,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.2056145000000242,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8159977000000254,
+          "queue_seconds": 1.3844539000000395,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3892574000000195,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3852464999999938,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 8.291316100000131,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.830196899999919,
+          "queue_seconds": 7.455860400000006,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 4.989128100000016,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3125939000000244,
+          "queue_seconds": 4.670071500000063,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.319153699999902,
+      "client_seconds_p95": 8.392946100000017,
+      "client_seconds_p99": 8.392946100000017,
+      "completed_output_tps": 151.70972152442076,
+      "completed_requests": 8,
+      "completed_rps": 0.9526513125552325,
+      "concurrency": 16,
+      "elapsed_seconds": 8.39761610000005,
+      "generated_tokens": 1274,
+      "generation_seconds_p50": 1.1248626000001423,
+      "offered_requests": 16,
+      "offered_rps": 1.905302625110465,
+      "path": "internal",
+      "queue_seconds_p50": 3.3474188999999797,
+      "queue_seconds_p95": 7.079082900000003,
+      "rejected_503": 8,
+      "rejected_fraction": 0.5,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 3.099999958067201e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 1.6684788000000026,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.3488997000001746,
+          "queue_seconds": 0.3191395999999713,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 4.157879299999877,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.620561299999963,
+          "queue_seconds": 2.5369418999998743,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 5.000000101063051e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 2.5369332999998733,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8681793999999172,
+          "queue_seconds": 1.66848559999994,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 5.6999999742402e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 5.0999999530176865e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 4.480428099999926,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3224038999999266,
+          "queue_seconds": 4.157895900000085,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 5.41692090000015,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9361990000002152,
+          "queue_seconds": 4.480442999999923,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 8.392946100000017,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.3135262000000694,
+          "queue_seconds": 7.079082900000003,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 7.07906909999997,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.661734499999966,
+          "queue_seconds": 5.416935099999819,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 4.999999873689376e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 5.0999999530176865e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 3.999999989900971e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 4.300000000512227e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 0.31923699999993005,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3190965999999662,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 3.5660097999999607,
+      "client_seconds_p95": 7.950393300000087,
+      "client_seconds_p99": 7.950393300000087,
+      "completed_output_tps": 152.8549425325112,
+      "completed_requests": 8,
+      "completed_rps": 1.0056246219244156,
+      "concurrency": 16,
+      "elapsed_seconds": 7.955254700000069,
+      "generated_tokens": 1216,
+      "generation_seconds_p50": 0.9399925000000167,
+      "offered_requests": 16,
+      "offered_rps": 2.011249243848831,
+      "path": "http",
+      "queue_seconds_p50": 2.9405268000000433,
+      "queue_seconds_p95": 6.958702099999982,
+      "rejected_503": 8,
+      "rejected_fraction": 0.5,
+      "repetition": 0,
+      "requests": [
+        {
+          "client_seconds": 4.015841800000089,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8988752000000204,
+          "queue_seconds": 3.108126000000084,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 0.016331799999989016,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 5.7013696999999866,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6852458000000752,
+          "queue_seconds": 4.006463499999882,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 0.014018100000157574,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.013413700000000972,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.014014599999882194,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.8444071999999778,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8391919000000598,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 3.116177799999832,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.33575249999989865,
+          "queue_seconds": 2.7729276000000027,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 7.950393300000087,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9811098000000129,
+          "queue_seconds": 6.958702099999982,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 6.969179000000167,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2678163999999015,
+          "queue_seconds": 5.691628199999968,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.780348300000014,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6222063000000162,
+          "queue_seconds": 1.1510879999998451,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 0.014532499999859283,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.01604019999990669,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.012438700000075187,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.014626800000087314,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 1.1582670000000235,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3141677000000982,
+          "queue_seconds": 0.8376043000000664,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.0556638000000476,
+      "client_seconds_p95": 1.664248900000075,
+      "client_seconds_p99": 1.664248900000075,
+      "completed_output_tps": 153.8642554703625,
+      "completed_requests": 16,
+      "completed_rps": 0.935345018056915,
+      "concurrency": 1,
+      "elapsed_seconds": 17.10598730000015,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0535928999998987,
+      "offered_requests": 16,
+      "offered_rps": 0.935345018056915,
+      "path": "http",
+      "queue_seconds_p50": 4.0000008993956726e-07,
+      "queue_seconds_p95": 9.99999883788405e-07,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 0.894489300000032,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8925773000000845,
+          "queue_seconds": 9.99999883788405e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2638703000000078,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2618055999998887,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.664248900000075,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6619387000000643,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.1962608999999702,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1942116999998689,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8100438999999824,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8081398000001627,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.4478827000000365,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.445689399999992,
+          "queue_seconds": 7.999999525054591e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8632319000000734,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8612567999998646,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3225470999998379,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3207969000000048,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.9150667000001249,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9129740999999285,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.308495399999856,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.3063829999998688,
+          "queue_seconds": 5.000001692678779e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6630321000000095,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.650776699999824,
+          "queue_seconds": 6.000000212225132e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2690306000001783,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2570230999999694,
+          "queue_seconds": 9.000000318337698e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.885488099999975,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8834345999998732,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.4383507000000009,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.4360920999999962,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8476422999999613,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8457945000000109,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.31451339999989614,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3128503999998884,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.0705209999999852,
+      "client_seconds_p95": 1.6357399999999416,
+      "client_seconds_p99": 1.6357399999999416,
+      "completed_output_tps": 155.19620571221574,
+      "completed_requests": 16,
+      "completed_rps": 0.9434419800134696,
+      "concurrency": 1,
+      "elapsed_seconds": 16.959177500000123,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0702430000001186,
+      "offered_requests": 16,
+      "offered_rps": 0.9434419800134696,
+      "path": "internal",
+      "queue_seconds_p50": 3.499999365885742e-07,
+      "queue_seconds_p95": 4.999999418942025e-07,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 0.8749992999998994,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8747528000001239,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.293160600000192,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.292804500000102,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6269886999998562,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.626597400000037,
+          "queue_seconds": 2.9999978323758114e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.24653649999982,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2462251000001743,
+          "queue_seconds": 2.9999978323758114e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8611081999999897,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8608802999999625,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.4391435000000001,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.4387590999999702,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.8449668999999176,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.844645200000059,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.32417869999994764,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.32401150000009693,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.8945055000001503,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.894260900000063,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2616997000000083,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.261364100000037,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.6357399999999416,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6353474999998525,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.3019813999999315,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.3016569999999774,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8344738000000689,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8342364000000089,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3858417999999801,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3855029000001196,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 0.821651600000223,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8214158999999199,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.31067529999995713,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.31052180000006047,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.2168157499999097,
+      "client_seconds_p95": 2.803756900000053,
+      "client_seconds_p99": 2.803756900000053,
+      "completed_output_tps": 159.37698036646304,
+      "completed_requests": 16,
+      "completed_rps": 0.9688570235043347,
+      "concurrency": 2,
+      "elapsed_seconds": 16.51430460000006,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0373273000000154,
+      "offered_requests": 16,
+      "offered_rps": 0.9688570235043347,
+      "path": "http",
+      "queue_seconds_p50": 0.15389790000006087,
+      "queue_seconds_p95": 1.5794897000000674,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 2.103534800000034,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8652710000001207,
+          "queue_seconds": 1.234102799999846,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2385314999999082,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2349455000000944,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.790084499999921,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.595518600000105,
+          "queue_seconds": 1.1921442000000297,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.1950999999999112,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1918815999999879,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.823347799999965,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8208191999999599,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.1802612999999837,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3568613999998433,
+          "queue_seconds": 0.8210179000000153,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.1442806999998538,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.830912600000147,
+          "queue_seconds": 0.3113028000000213,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3136211999999432,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3112282000001869,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.8859598999999889,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8827730000000429,
+          "queue_seconds": 4.79999994240643e-06,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 2.1107528,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2254557999999633,
+          "queue_seconds": 0.8829646000001503,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 1.5927747999999156,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5894615999998223,
+          "queue_seconds": 1.0000001111620804e-06,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.803756900000053,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2116194000000178,
+          "queue_seconds": 1.5794897000000674,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.8261697000000368,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8229834999999639,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.191486599999962,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3660408999999163,
+          "queue_seconds": 0.8231633999998849,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.1883281999998871,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.878406699999914,
+          "queue_seconds": 0.30779100000017934,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.31066820000000916,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3077097999998841,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 1.3791800000000194,
+      "client_seconds_p95": 2.886899299999868,
+      "client_seconds_p99": 2.886899299999868,
+      "completed_output_tps": 155.48652762406124,
+      "completed_requests": 16,
+      "completed_rps": 0.9452068548575152,
+      "concurrency": 2,
+      "elapsed_seconds": 16.92751159999989,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0544951000000538,
+      "offered_requests": 16,
+      "offered_rps": 0.9452068548575152,
+      "path": "internal",
+      "queue_seconds_p50": 0.1531192000001056,
+      "queue_seconds_p95": 1.3900709000001825,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 2.2799413000000186,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8972294000000147,
+          "queue_seconds": 1.382468900000049,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.3825317000000723,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.3822064000000864,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.886899299999868,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6404101000000537,
+          "queue_seconds": 1.2461169999999129,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2461464999998952,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2458308999998735,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.2142736999999215,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8382660999998279,
+          "queue_seconds": 1.3757795000001352,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3758282999999665,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3754845000000842,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.2411941999998817,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8835331000000224,
+          "queue_seconds": 0.35743890000003375,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3575069999999414,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3573711999999887,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 2.132937100000163,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8735934999999699,
+          "queue_seconds": 1.259111700000176,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.2591718000001038,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2588451000001442,
+          "queue_seconds": 1.999999312829459e-07,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.837368000000197,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6248768999998902,
+          "queue_seconds": 1.212122600000157,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2121513999998115,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2117608000000928,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.2044005999998717,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8141103999998904,
+          "queue_seconds": 1.3900709000001825,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.39011830000004,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3897792000000209,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.1286353000000418,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8221760999999788,
+          "queue_seconds": 0.30623800000012125,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3062984000000597,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.30617340000003423,
+          "queue_seconds": 1.999999312829459e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 2.500498049999919,
+      "client_seconds_p95": 4.921041500000001,
+      "client_seconds_p99": 4.921041500000001,
+      "completed_output_tps": 159.5769387386971,
+      "completed_requests": 16,
+      "completed_rps": 0.9700725759191313,
+      "concurrency": 4,
+      "elapsed_seconds": 16.49361130000011,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.038158850000059,
+      "offered_requests": 16,
+      "offered_rps": 0.9700725759191313,
+      "path": "http",
+      "queue_seconds_p50": 1.2854505999999901,
+      "queue_seconds_p95": 3.68369789999997,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 3.6582312000000456,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8642452999999932,
+          "queue_seconds": 2.7890901999999187,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.899043599999914,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2407764000001862,
+          "queue_seconds": 3.6532791999998153,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.7938294999999016,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5811435000000529,
+          "queue_seconds": 1.2084637999998904,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2125985999998647,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2084755000000769,
+          "queue_seconds": 6.000000212225132e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.0289086000000225,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.821413800000073,
+          "queue_seconds": 2.2034158999999818,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.3660970000000816,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3622322999999597,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 2.207166599999937,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8407525000000078,
+          "queue_seconds": 1.3624374000000898,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 3.338087099999939,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.31016599999998107,
+          "queue_seconds": 3.0250215999999455,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 2.0794389000000137,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8767786999999316,
+          "queue_seconds": 1.1997241999999915,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.921041500000001,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2345368999999664,
+          "queue_seconds": 3.68369789999997,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 3.687279500000159,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.606529799999862,
+          "queue_seconds": 2.0767385999999988,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2033166999999594,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1995390000001862,
+          "queue_seconds": 6.999998731771484e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.9615828999999394,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8321931000000404,
+          "queue_seconds": 1.1255818999998155,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.33326070000021,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.372544100000141,
+          "queue_seconds": 1.9580018999999993,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.128983000000062,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8216489999999794,
+          "queue_seconds": 0.3037133000000267,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3072967000000517,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3036352999999963,
+          "queue_seconds": 4.999999418942025e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 2.059216000000106,
+      "client_seconds_p95": 4.913280499999928,
+      "client_seconds_p99": 4.913280499999928,
+      "completed_output_tps": 158.5112459964995,
+      "completed_requests": 16,
+      "completed_rps": 0.9635942005866232,
+      "concurrency": 4,
+      "elapsed_seconds": 16.604500099999996,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0350609500001156,
+      "offered_requests": 16,
+      "offered_rps": 0.9635942005866232,
+      "path": "internal",
+      "queue_seconds_p50": 1.1899673999998868,
+      "queue_seconds_p95": 4.03934019999997,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 4.908208099999911,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.868636400000014,
+          "queue_seconds": 4.03934019999997,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.039349599999923,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2474392999999964,
+          "queue_seconds": 2.7915831999998773,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.7915881999999783,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5897342999999182,
+          "queue_seconds": 1.2014624999999342,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2015258000001268,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2011842000001707,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.1271778000000268,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8247272000000976,
+          "queue_seconds": 0.30222060000005513,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.332098900000119,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3690890000000309,
+          "queue_seconds": 1.962667300000021,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 1.9626656999998886,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8352632999999514,
+          "queue_seconds": 1.127178400000048,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.30226710000010826,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.30213389999994433,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 2.0707971000001635,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8666206999998849,
+          "queue_seconds": 1.2039426999999705,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 4.913280499999928,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2379863999999543,
+          "queue_seconds": 3.6749868000001698,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 3.6749813999999787,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.6038104000001567,
+          "queue_seconds": 2.070795099999941,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.2039861999999175,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2036760000000868,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.1784781000001203,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.862682599999971,
+          "queue_seconds": 0.3155677000002015,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 3.448769200000015,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.4009601000000202,
+          "queue_seconds": 2.0474856999999247,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 2.047634900000048,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8689377000000604,
+          "queue_seconds": 1.1784722999998394,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.315624200000002,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3154925999999705,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.802715799999987,
+      "client_seconds_p95": 8.569423499999857,
+      "client_seconds_p99": 8.569423499999857,
+      "completed_output_tps": 154.7931189377294,
+      "completed_requests": 16,
+      "completed_rps": 0.9409916044846771,
+      "concurrency": 8,
+      "elapsed_seconds": 17.00333979999982,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.1002559999999448,
+      "offered_requests": 16,
+      "offered_rps": 0.9409916044846771,
+      "path": "http",
+      "queue_seconds_p50": 3.913513249999937,
+      "queue_seconds_p95": 7.599999300000036,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 4.870615699999917,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9191327000000911,
+          "queue_seconds": 3.9443416999999954,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 2.678865000000087,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.240542699999878,
+          "queue_seconds": 1.432798000000048,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 7.608620299999984,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5990501999999651,
+          "queue_seconds": 6.000736799999913,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 3.9513045999999576,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2723382000001493,
+          "queue_seconds": 2.6721414999999524,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 8.569423499999857,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.9608524999998735,
+          "queue_seconds": 7.599999300000036,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 1.437585300000137,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.432703599999968,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 6.009045000000015,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8318921000000046,
+          "queue_seconds": 5.16902970000001,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 5.177141799999845,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3064669000000322,
+          "queue_seconds": 4.863180199999988,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 0.9238256999999521,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.9197480000000269,
+          "queue_seconds": 5.999997938488377e-07,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 6.85097810000002,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.274603599999864,
+          "queue_seconds": 5.5695837000000665,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 8.430351700000074,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5801916000000347,
+          "queue_seconds": 6.844520800000055,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 3.8889145000000553,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2396595000000161,
+          "queue_seconds": 2.6429663000001256,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 5.575614099999939,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.840556099999958,
+          "queue_seconds": 4.728752400000076,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 2.648809300000039,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.3660773999999947,
+          "queue_seconds": 1.276827499999854,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 4.734815900000058,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8461053000000902,
+          "queue_seconds": 3.882684799999879,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 1.2826243000001796,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3584725000000617,
+          "queue_seconds": 0.9187445000000025,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.469114699999977,
+      "client_seconds_p95": 8.15669580000008,
+      "client_seconds_p99": 8.15669580000008,
+      "completed_output_tps": 162.57315050557668,
+      "completed_requests": 16,
+      "completed_rps": 0.9882866292132321,
+      "concurrency": 8,
+      "elapsed_seconds": 16.18963520000011,
+      "generated_tokens": 2632,
+      "generation_seconds_p50": 1.0072816999999077,
+      "offered_requests": 16,
+      "offered_rps": 0.9882866292132321,
+      "path": "internal",
+      "queue_seconds_p50": 3.476621399999999,
+      "queue_seconds_p95": 7.313409300000103,
+      "rejected_503": 0,
+      "rejected_fraction": 0.0,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 8.15669580000008,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.843065599999818,
+          "queue_seconds": 7.313409300000103,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 1.5432123000000502,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2322527000001173,
+          "queue_seconds": 0.31057239999995545,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 3.097295999999915,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5537110000000212,
+          "queue_seconds": 1.5432033000001866,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 4.269099800000049,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1714977999999974,
+          "queue_seconds": 3.0972971000001053,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 5.078537799999822,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8091989999998077,
+          "queue_seconds": 4.269109400000161,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.480976399999918,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.4020911999998589,
+          "queue_seconds": 5.0785430999999335,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 7.313405500000044,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8322035999999571,
+          "queue_seconds": 6.480983500000093,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.3106559999998808,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.3104990000001635,
+          "queue_seconds": 3.999998625658918e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 1.133786900000132,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8371807999999419,
+          "queue_seconds": 0.2963763000000199,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 8.030078599999797,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2027714000000742,
+          "queue_seconds": 6.82700890000001,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 2.6841068999999607,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5498093000001063,
+          "queue_seconds": 1.1337831999999253,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 3.8559383000001617,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1715074999999615,
+          "queue_seconds": 2.6841340999999375,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 4.669129599999906,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8129619000001185,
+          "queue_seconds": 3.855945699999893,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.0219388999998955,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.352465200000097,
+          "queue_seconds": 4.669138599999997,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 6.827003999999988,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8048367000001235,
+          "queue_seconds": 6.02194529999997,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.29642539999986184,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.29630139999994753,
+          "queue_seconds": 4.0000008993956726e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 5.52521569999999,
+      "client_seconds_p95": 9.145435700000007,
+      "client_seconds_p99": 9.145435700000007,
+      "completed_output_tps": 163.60637499617218,
+      "completed_requests": 8,
+      "completed_rps": 0.8743159652434052,
+      "concurrency": 16,
+      "elapsed_seconds": 9.150010199999997,
+      "generated_tokens": 1497,
+      "generation_seconds_p50": 1.1895904999998947,
+      "offered_requests": 16,
+      "offered_rps": 1.7486319304868103,
+      "path": "http",
+      "queue_seconds_p50": 4.504424500000027,
+      "queue_seconds_p95": 8.320235499999853,
+      "rejected_503": 8,
+      "rejected_fraction": 0.5,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 6.772882299999992,
+          "dimension": "TYPE",
+          "generated_tokens": 139,
+          "generation_seconds": 0.8448639999999159,
+          "queue_seconds": 5.919241000000056,
+          "status": 200,
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "client_seconds": 5.12284109999996,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2211575000001176,
+          "queue_seconds": 3.893938599999956,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 8.329950900000085,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.5566807999998673,
+          "queue_seconds": 6.763876700000083,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 1.205505900000162,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.2008285999997952,
+          "queue_seconds": 6.000000212225132e-07,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.013639399999874513,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.012374700000009398,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 9.145435700000007,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8157504000000699,
+          "queue_seconds": 8.320235499999853,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.01194349999991573,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.012958999999909793,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.010353800000075353,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 3.900719900000013,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.516602599999942,
+          "queue_seconds": 2.377697699999999,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 2.3835802000000967,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.1783523999999943,
+          "queue_seconds": 1.1998435000000427,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 0.013267199999972945,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 0.01092930000004344,
+          "retry_after": "1",
+          "status": 503
+        },
+        {
+          "client_seconds": 5.92759030000002,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8046170000000075,
+          "queue_seconds": 5.114910400000099,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 0.012242900000046575,
+          "retry_after": "1",
+          "status": 503
+        }
+      ]
+    },
+    {
+      "client_seconds_p50": 4.629985799999872,
+      "client_seconds_p95": 7.449281199999859,
+      "client_seconds_p99": 7.449281199999859,
+      "completed_output_tps": 164.499727146478,
+      "completed_requests": 8,
+      "completed_rps": 1.073407681216822,
+      "concurrency": 16,
+      "elapsed_seconds": 7.45289989999992,
+      "generated_tokens": 1226,
+      "generation_seconds_p50": 0.9868345500001396,
+      "offered_requests": 16,
+      "offered_rps": 2.146815362433644,
+      "path": "internal",
+      "queue_seconds_p50": 3.6427980500000103,
+      "queue_seconds_p95": 7.155467799999997,
+      "rejected_503": 8,
+      "rejected_fraction": 0.5,
+      "repetition": 1,
+      "requests": [
+        {
+          "client_seconds": 4.79999994240643e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 1.5115761999998085,
+          "dimension": "TYPE",
+          "generated_tokens": 198,
+          "generation_seconds": 1.2081954000000223,
+          "queue_seconds": 0.30288629999995464,
+          "status": 200,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "client_seconds": 3.0587471999999707,
+          "dimension": "TYPE",
+          "generated_tokens": 255,
+          "generation_seconds": 1.546780900000158,
+          "queue_seconds": 1.5115822000000207,
+          "status": 200,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "client_seconds": 4.226842399999896,
+          "dimension": "TYPE",
+          "generated_tokens": 193,
+          "generation_seconds": 1.167613000000074,
+          "queue_seconds": 3.0587434000001394,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 5.033129199999848,
+          "dimension": "COLOR",
+          "generated_tokens": 131,
+          "generation_seconds": 0.8060561000002053,
+          "queue_seconds": 4.226852699999881,
+          "status": 200,
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "client_seconds": 6.354532699999936,
+          "dimension": "TYPE",
+          "generated_tokens": 219,
+          "generation_seconds": 1.321066700000074,
+          "queue_seconds": 5.033123799999885,
+          "status": 200,
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "client_seconds": 7.155466499999875,
+          "dimension": "TYPE",
+          "generated_tokens": 132,
+          "generation_seconds": 0.8007055000000491,
+          "queue_seconds": 6.354536999999937,
+          "status": 200,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "client_seconds": 7.449281199999859,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.29369919999999183,
+          "queue_seconds": 7.155467799999997,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "client_seconds": 6.299999995462713e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 6.299999995462713e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 7.500000037907739e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 4.79999994240643e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 6.399999847417348e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 5.4000001910026185e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 4.600000011123484e-06,
+          "retry_after": null,
+          "status": 503
+        },
+        {
+          "client_seconds": 0.30295250000017404,
+          "dimension": "TYPE",
+          "generated_tokens": 49,
+          "generation_seconds": 0.30282020000004195,
+          "queue_seconds": 3.000000106112566e-07,
+          "status": 200,
+          "subject": "PKM_ARCTIBAX"
+        }
+      ]
+    }
+  ],
+  "scope": "fixed validation prompts; one loopback server and one predictor; closed synchronized waves",
+  "script_sha256": "0f3698436e969157cc709982d45cc0a8bce141b3ab9d51689f840867d17126fc",
+  "server_stopped": true,
+  "warmup_token_sha256": {
+    "PKM_ABSOL/TYPE": "f40a37938407a462c55c8690135c8fea1cfef3a03d84e4a869526d0043d6c4cc",
+    "PKM_AEGISLASH/TYPE": "7d5de83414da2c6e4a1ae2e0fe6b9f2ee3fe4ec1356e77828b675492cc4d0132",
+    "PKM_AERODACTYL/TYPE": "9608a11de6ff18b779cbf419c58d97fad0ca7b840af745fbbf3ab3ae12ec9211",
+    "PKM_APPLIN/COLOR": "55fce2e7eb5a9ff4a424e4cf6b3a4f99039a2d5ce9c702863eea343c9678d87d",
+    "PKM_APPLIN/TYPE": "db148ef005a07def8c53a2716927c2bd83c47288d4707ff6a7173909faaf1d1f",
+    "PKM_ARAQUANID/TYPE": "cb0a7966190ec16456167b367da2527c741762404164a7675d60ef1208ac1a74",
+    "PKM_ARCHALUDON/TYPE": "7d1966708a06d2ae48aaa19a4a2d17459611e3178bc3a933f77fa72d716c210b",
+    "PKM_ARCTIBAX/TYPE": "cf022cac796f0bbc8929cd2dc5893ed3d054dd277b2caae544fa5033896b4f24"
+  },
+  "workload": {
+    "concurrency": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "max_pending": 8,
+    "prompts": [
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_ABSOL"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_AEGISLASH"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_AERODACTYL"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "COLOR",
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_ARAQUANID"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_ARCHALUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "subject": "PKM_ARCTIBAX"
+      }
+    ],
+    "repetitions": 2,
+    "requests_per_level": 16,
+    "warmup": "one complete request per prompt through each path"
+  }
+}
