@@ -17,6 +17,8 @@
 | The deferred complementary/compositional policy experiment succeeds. | Not tested here. | [Research log](../evidence/source/research_log.md), [Paper 1](01-research-question-and-protocol.md) |
 | Native serial serving scales throughput with additional callers. | Not observed in the 2026-09-25 fixed workload: approximately 156–159 HTTP output TPS through eight callers while p95 latency rises. | [Dated report](../evidence/updates/2026-09-25/experiments/2026-09-25-native-saturation.json), [Paper 4 addition](04-serving-and-reproducibility.md#2026-09-25-addition-concurrency-exposes-a-serial-scheduler) |
 | Fixed-group GPU decoding reaches about 31,000 completed output TPS. | Observed offline on one RTX 5070 Ti at batch 640 (30,980 TPS, 188.3 completed requests/s); batch 656 is level and 672 slows. This is not HTTP serving capacity or proven GPU arithmetic saturation. | [Batch sweep receipt](../evidence/updates/2026-09-25-batch-saturation/experiments/2026-09-25-batch-saturation.json), [Paper 4](04-serving-and-reproducibility.md#2026-09-25-follow-up-offline-batch-throughput-peaks-near-640) |
+| Eight-branch first-choice search improves validation quality at higher inference cost. | Passed the fixed three-seed gate: 603/666 exact answers, 98.35% macro F1 and one query loss; additional ranks roughly double generation time. | [Paper 14](14-wider-first-choice-search.md) |
+| Eight-source pair intersections improve pooled exact answers without a seed regression. | Rejected: pooled exact answers rise 603→605/666, but seed 1729 F1 regresses and the fixed gate fails. | [Paper 15](15-eight-source-set-operations.md) |
 | Historical model artifacts have traceable final-checkpoint identities. | The original 23-run snapshot and later 25-run inventory pass byte/receipt/source consistency; complete historical lineage, payload validation and durable archival remain open. | [Original inventory](../evidence/updates/2026-09-25/experiments/2026-09-25-model-version-inventory.json), [Margin follow-up](08-hardest-boundary-margin-failure.md) |
 | Adding a hardest-boundary margin improves the current model. | Rejected for fixed margin 1.0 and coefficient 0.1 at seed 1729: fresh-control exact 192/222 falls to 6/222; no further-seed replication. | [Audited margin screen](08-hardest-boundary-margin-failure.md) |
 | A weaker fixed margin improves both exact sets and global membership separation. | Rejected at coefficient .001: exact sets rise 191/222 to 194/222, but strict separation falls 168/222 to 164/222. | [Paired screen](10-weaker-margin-mixed-result.md) |
@@ -25,8 +27,16 @@
 
 ## Evidence rules used throughout
 
+The [eight-branch follow-up](14-wider-first-choice-search.md) is the newer offline
+quality result: 603/666 exact answers and 98.35% macro F1, with unchanged trained
+weights and roughly twice the generation time. Its 63 remaining failures comprise
+61 unavailable exact candidates and two selection misses. The application-verified
+policy remains the earlier four-branch composition. Active research stays within
+Pokémon; external datasets require an explicit user request.
+
 The [later rank diagnosis](07-ranking-and-threshold-limits.md) refines the next
-quality decision: adding all whole-source unions creates no new exact candidate,
+quality decision on historical four-source evidence: adding whole-source unions
+creates no new exact candidate,
 and even oracle-informed per-query thresholds on the frozen membership scores
 are limited to 479/666 exact answers. Thus a pool-only union expansion or a
 threshold-only replacement cannot beat the existing 569/666 on this evidence.
@@ -43,7 +53,7 @@ changes and different candidate constructions remain untested hypotheses.
 ## Next research decisions, in order
 
 1. **Composition integration completed.** The two remaining HTTP checkpoints ran under the declared shape-aware contract; independent audit and separate acceptance pass. The original exact-score campaign remains failed. See [the follow-up](04-serving-and-reproducibility.md#2026-09-25-follow-up-revised-integration-accepted) for explicit fresh/reused accounting and limits.
-2. **Attack missing coverage without losing exact answers.** The fixed pool lacks an exact candidate in 96 of 97 remaining failures; direct sign-thresholding recovers many members but spoils 233 exact sets. Declare a candidate-construction hypothesis and paired per-seed nonregression gates before running it.
+2. **Attack missing candidates without losing exact answers.** The newer eight-source pool lacks an exact candidate in 61 of 63 remaining failures. The earlier four-source direct sign-thresholding experiment recovered members but spoiled 233 exact sets. Declare a candidate-construction hypothesis and paired per-seed nonregression gates before running it; distinguish omitted true members from unwanted extra members.
 3. **Seek oracle parity on validation and preserve baseline comparisons.** Track whole-set exactness, subgroup behavior, F1, validity and termination, not only token loss. Retain the deterministic graph lookup and existing controls.
 4. **Finalize once, on the protected test partition.** Freeze the selected source, data, model and inference policy; then run the protected evaluator and report its result without subsequent tuning on that partition.
 5. **Measure systems benefit at comparable quality.** Use repeated latency distributions, concurrency and energy per request against a clearly specified oracle/lookup service on the same hardware and workload. Microbenchmark ratios alone do not answer the Experiment A question.

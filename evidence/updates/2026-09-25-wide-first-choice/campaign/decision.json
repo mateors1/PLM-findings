@@ -1,0 +1,30 @@
+{
+  "audit_sha256": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+  "auditor_sha256": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+  "basis": "Independent reconstruction of all three seeds, raw path semantics, 36-slot pools, scores, selections, metrics, work counts and fixed gate agrees with the completed campaign.",
+  "campaign_version": "wide-first-choice-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "04941845e0a91c5488b07b90757ad7770a7688e1cc668d40fc53f8c47ea08250",
+  "default_changed": false,
+  "eligible_for_serving_integration_consideration": true,
+  "evidence_accepted": true,
+  "fixed_quality_gate_passed": true,
+  "gate": {
+    "checks": {
+      "all_selected_eligible": true,
+      "all_sources_valid_terminated_unique": true,
+      "complete_exact_replay": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": true,
+      "pooled_dual_exact_improvement": true,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": true
+  },
+  "new_checkpoint_created": false,
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "scope": "Offline validation quality/work evidence only. No serving, energy, protected-test or neural-independent-replay claim.",
+  "summary_sha256": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183"
+}

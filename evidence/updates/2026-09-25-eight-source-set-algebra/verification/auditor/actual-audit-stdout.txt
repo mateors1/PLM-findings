@@ -1,0 +1,70 @@
+{
+  "audit_passed": true,
+  "audit_sha256": "27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c",
+  "summary_sha256": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+  "accounting": {
+    "query_seed_observations": 666,
+    "distinct_queries": 222,
+    "candidate_slots": 42624,
+    "source_paths": 5328,
+    "subsets_per_operation_per_query": 255,
+    "pure_operation_subsets_examined": 339660
+  },
+  "overall": {
+    "query_count": 666,
+    "gains": 2,
+    "losses": 0,
+    "changed_selection_count": 14,
+    "baseline": {
+      "exact_count": 603,
+      "precision": 0.99138927159738,
+      "recall": 0.9817685798026508,
+      "f1": 0.9834927532993669,
+      "mean_set_size": 126.43693693693693,
+      "exact_available": 605,
+      "available_exact_misses": 2,
+      "intersection_selections": 0,
+      "empty_selections": 0
+    },
+    "prediction": {
+      "exact_count": 605,
+      "precision": 0.9951747844321416,
+      "recall": 0.9805533321242288,
+      "f1": 0.9846697745678721,
+      "mean_set_size": 125.64714714714715,
+      "exact_available": 607,
+      "available_exact_misses": 2,
+      "intersection_selections": 14,
+      "empty_selections": 0
+    },
+    "pure_family_availability": {
+      "all_unions": 605,
+      "all_intersections": 515,
+      "either_pure_family": 610
+    },
+    "baseline_state_counts": {
+      "selected_exact": 603,
+      "available_exact_but_missed": 2,
+      "unavailable_and_truth_missing_from_all_sources": 30,
+      "unavailable_with_truth_covered": 31
+    }
+  },
+  "gate": {
+    "checks": {
+      "complete_baseline_reproduction": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": false,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": false
+  },
+  "derived_bound": {
+    "missing_union_count": 30,
+    "existing_available_miss_count": 2,
+    "selected_exact_upper_bound": 634,
+    "scope": "appended pure union/intersection sets; unchanged scorer and old-first ties"
+  }
+}
+
+exit_code=0

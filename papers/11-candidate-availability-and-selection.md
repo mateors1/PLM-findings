@@ -76,4 +76,7 @@ Separately, the [primary-source data review](../evidence/updates/2026-09-25-cand
 distinguishes co-outfit labels, observed behavior events and website recommendation
 links. It recommends a feasibility audit of a separately defined behavioral
 relation, not adoption of a judged-compatibility dataset. No data was downloaded
-or new task measured. This remains a future application track.
+or new task measured. The user subsequently parked this external-data track:
+active work stays within Pokémon while pursuing oracle parity and the intended
+evolutions, and another dataset requires an explicit request. Historical evidence
+copies retain the earlier recommendation; this scope decision supersedes it.

@@ -1,0 +1,27 @@
+{
+  "audit_sha256": "27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c",
+  "auditor_sha256": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+  "basis": "Independent bitset and rational-sum reconstruction agrees on all64 candidate slots, exhaustive pure-operation witnesses, errors, metrics, identities and fixed gate.",
+  "campaign_version": "eight-source-set-algebra-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "d1d1284cc10be56ca9563361a646b82d3bf42791e48b6e627783337466d80b5d",
+  "default_changed": false,
+  "evidence_accepted": true,
+  "fixed_quality_gate_passed": false,
+  "gate": {
+    "checks": {
+      "complete_baseline_reproduction": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": false,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": false
+  },
+  "new_checkpoint_created": false,
+  "outcome": "Reject prediction variant: seed1729 macro F1 regresses despite two pooled exact gains. Retain negative result and oracle diagnostics.",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "summary_sha256": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+  "training_executed": false
+}

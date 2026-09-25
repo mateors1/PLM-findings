@@ -1,0 +1,110 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-eight-source-set-algebra-plan.md",
+      "sha256": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+      "source": "docs/experiments/2026-09-25-eight-source-set-algebra-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-eight-source-set-algebra.json",
+      "sha256": "2f044528163ee15c1ff343811ebbcbdb35c43c32d901e118bf2a7f00c3bd2e3a",
+      "source": "docs/experiments/2026-09-25-eight-source-set-algebra.json"
+    },
+    {
+      "path": "learning/36-unions-intersections-and-recoverability.md",
+      "sha256": "2d9d54b732831e82ec39064dddefe6e5de5c231d2ca94d4174b9706ac1337c5c",
+      "source": "docs/learning/36-unions-intersections-and-recoverability.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "db16e09e5cc813f12b2606e923966cb3bdbb85849881a0439f42bf7e9d8bb1cd",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "scripts/evaluate_source_intersections.py",
+      "sha256": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+      "source": "scripts/evaluate_source_intersections.py"
+    },
+    {
+      "path": "tests/test_source_intersections.py",
+      "sha256": "c18a588c803a7fba7901e3ae3228180e0551ae022446be5ec6d6b8936c855654",
+      "source": "tests/unit/test_source_intersections.py"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+      "source": "runs/learning/eight-source-set-algebra-v1/summary.json"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+      "source": "runs/learning/eight-source-set-algebra-v1/summary.script.py"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+      "source": "runs/learning/eight-source-set-algebra-v1/summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.inputs.json",
+      "sha256": "9fb0e5a7a1e8faf720d72addce88b7f46da01c384143a67bc3a7db28e485decc",
+      "source": "runs/learning/eight-source-set-algebra-v1/summary.inputs.json"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+      "source": "runs/learning/eight-source-set-algebra-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c",
+      "source": "runs/learning/eight-source-set-algebra-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "01a51a5a9d5957ec68f32b0d81d23acace29d7eb3aa5684d99939582e88cb32a",
+      "source": "runs/learning/eight-source-set-algebra-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "d1d1284cc10be56ca9563361a646b82d3bf42791e48b6e627783337466d80b5d",
+      "source": "runs/learning/eight-source-set-algebra-v1/record-decision.py"
+    },
+    {
+      "path": "verification/runner/stdout.txt",
+      "sha256": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330",
+      "source": "runs/learning/eight-source-set-algebra-runner-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/runner/test-receipt.json",
+      "sha256": "d7197da002be4961e73b2063123d08cc8321ae029c048ee6334ce12c0cf6651c",
+      "source": "runs/learning/eight-source-set-algebra-runner-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/actual-audit-stdout.txt",
+      "sha256": "9c7e39d462dbdbf50229381809071ddbdc77193ce7210860e9fab09b88641bf5",
+      "source": "runs/learning/eight-source-set-algebra-auditor-tests-v1/actual-audit-stdout.txt"
+    },
+    {
+      "path": "verification/auditor/stdout.txt",
+      "sha256": "bc59136f3908ab0923825ab32790fa7efcb8abf13736304bf0d8a18c9f2c30b7",
+      "source": "runs/learning/eight-source-set-algebra-auditor-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/auditor/test-receipt.json",
+      "sha256": "53b8efe7b62e973b72e9e19e59cd1e77a23fb09f568351adc5aec2765ead37a1",
+      "source": "runs/learning/eight-source-set-algebra-auditor-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/test_auditor.py",
+      "sha256": "5cd8ce9736feda2d76c41fc0e0ed67b7d235e2c274252f12e0c5b62d460feaeb",
+      "source": "runs/learning/eight-source-set-algebra-auditor-tests-v1/test_auditor.py"
+    }
+  ],
+  "date": "2026-09-25",
+  "previous_manifest_entries_verified": 347,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true,
+  "sync_script_sha256": "a5a5f2d8f25880bbd0d98990d9ac8a87c26da452ffe9d44b1da3c4885a044108"
+}

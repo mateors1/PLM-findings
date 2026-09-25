@@ -1,0 +1,62 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "passed_count": 39,
+  "stdout_sha256": "bc59136f3908ab0923825ab32790fa7efcb8abf13736304bf0d8a18c9f2c30b7",
+  "tested_auditor_sha256": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+  "tests_sha256": "5cd8ce9736feda2d76c41fc0e0ed67b7d235e2c274252f12e0c5b62d460feaeb"
+}

@@ -1,0 +1,815 @@
+{
+  "acceptance": false,
+  "accounting": {
+    "candidate_slots": 23976,
+    "distinct_queries": 222,
+    "query_seed_observations": 666,
+    "source_paths": 5328
+  },
+  "campaign_version": "wide-first-choice-v1",
+  "changed_queries": [
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 0,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_ABSOL"
+    },
+    {
+      "dimension": "COLOR",
+      "gained_exact": true,
+      "index": 9,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_ARMALDO"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 36,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_CHI_YU"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 74,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_FROSLASS"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 76,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_GABITE"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 154,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_PRIMARINA"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 160,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_RAGING_BOLT"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 179,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_SLAKING"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 180,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_SLITHER_WING"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 202,
+      "lost_exact": false,
+      "seed": 1729,
+      "subject": "PKM_TOXTRICITY"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 3,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_APPLIN"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 10,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_ARMAROUGE"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 14,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_BAXCALIBUR"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": false,
+      "index": 32,
+      "lost_exact": true,
+      "seed": 1730,
+      "subject": "PKM_CETITAN"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 36,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_CHI_YU"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 44,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_CRAWDAUNT"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 58,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_DUCKLETT"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 74,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_FROSLASS"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 104,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_KELDEO"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 150,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_PILOSWINE"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 169,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_SABLEYE"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 180,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_SLITHER_WING"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 184,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_SOLROCK"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 195,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_THUNDURUS"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 204,
+      "lost_exact": false,
+      "seed": 1730,
+      "subject": "PKM_TURTONATOR"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 0,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_ABSOL"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 1,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_AEGISLASH"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 5,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_ARAQUANID"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 42,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_CORSOLA"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 43,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_CRAMORANT"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 111,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_KYUREM"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 144,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_PANCHAM"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 160,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_RAGING_BOLT"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 177,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_SKARMORY"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 195,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_THUNDURUS"
+    },
+    {
+      "dimension": "TYPE",
+      "gained_exact": true,
+      "index": 204,
+      "lost_exact": false,
+      "seed": 1731,
+      "subject": "PKM_TURTONATOR"
+    }
+  ],
+  "complete": true,
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128"
+  },
+  "final_identity_check": true,
+  "gate": {
+    "checks": {
+      "all_selected_eligible": true,
+      "all_sources_valid_terminated_unique": true,
+      "complete_exact_replay": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": true,
+      "pooled_dual_exact_improvement": true,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": true
+  },
+  "groups": {
+    "COLOR": {
+      "baseline": {
+        "added_slot_selections": 0,
+        "available_exact_miss": 0,
+        "exact_available": 308,
+        "exact_count": 308,
+        "f1": 0.9968020528140019,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 8.281553398058252,
+        "original_selections": 309,
+        "pair_selections": 0,
+        "precision": 0.9968151230287152,
+        "recall": 0.9967942846675215,
+        "set_size": 113.53074433656958,
+        "source_union_contains_truth": 308
+      },
+      "gains": 1,
+      "losses": 0,
+      "query_count": 309,
+      "wide": {
+        "added_slot_selections": 1,
+        "available_exact_miss": 0,
+        "exact_available": 309,
+        "exact_count": 309,
+        "f1": 1.0,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 29.216828478964402,
+        "original_selections": 309,
+        "pair_selections": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "set_size": 113.66990291262135,
+        "source_union_contains_truth": 309
+      }
+    },
+    "TYPE_dual": {
+      "baseline": {
+        "added_slot_selections": 0,
+        "available_exact_miss": 1,
+        "exact_available": 126,
+        "exact_count": 125,
+        "f1": 0.904465879730429,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 7.877450980392157,
+        "original_selections": 114,
+        "pair_selections": 90,
+        "precision": 0.9568614752171237,
+        "recall": 0.8877172168718639,
+        "set_size": 162.08333333333334,
+        "source_union_contains_truth": 152
+      },
+      "gains": 30,
+      "losses": 0,
+      "query_count": 204,
+      "wide": {
+        "added_slot_selections": 49,
+        "available_exact_miss": 1,
+        "exact_available": 156,
+        "exact_count": 155,
+        "f1": 0.9501237682021885,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 27.33823529411765,
+        "original_selections": 86,
+        "pair_selections": 118,
+        "precision": 0.9774263581828438,
+        "recall": 0.9413572704960016,
+        "set_size": 165.55882352941177,
+        "source_union_contains_truth": 174
+      }
+    },
+    "TYPE_single": {
+      "baseline": {
+        "added_slot_selections": 0,
+        "available_exact_miss": 0,
+        "exact_available": 136,
+        "exact_count": 136,
+        "f1": 0.9897378918854483,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 8.0,
+        "original_selections": 153,
+        "pair_selections": 0,
+        "precision": 0.9857980584687326,
+        "recall": 0.9985928358722027,
+        "set_size": 101.0,
+        "source_union_contains_truth": 153
+      },
+      "gains": 4,
+      "losses": 1,
+      "query_count": 153,
+      "wide": {
+        "added_slot_selections": 8,
+        "available_exact_miss": 1,
+        "exact_available": 140,
+        "exact_count": 139,
+        "f1": 0.9946465685237378,
+        "failures": 0,
+        "mean_distinct_eligible_sets": 27.202614379084967,
+        "original_selections": 152,
+        "pair_selections": 1,
+        "precision": 0.9926161948663721,
+        "recall": 0.9988300063227525,
+        "set_size": 100.05882352941177,
+        "source_union_contains_truth": 153
+      }
+    }
+  },
+  "imported_modules": {
+    "plm": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\__init__.py",
+      "sha256": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4"
+    },
+    "plm.config": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\config.py",
+      "sha256": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d"
+    },
+    "plm.configuration": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\configuration.py",
+      "sha256": "6577b86d8403b4c628546bbc80dfd94b63c818c80e482867ae4ff99e73882d1e"
+    },
+    "plm.corpus": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\__init__.py",
+      "sha256": "d84f2234bb4534acfd649f79e0c18286d71a8cea645515c2058e4db7c7c9df2c"
+    },
+    "plm.corpus.compiler": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\compiler.py",
+      "sha256": "8e5c0f76860d0677e02c55ba023c7523673e3185387ab49485826c795de0cfd0"
+    },
+    "plm.corpus.validation": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\validation.py",
+      "sha256": "38c1ecb76b55f3b7a774542551566261ec36b93750b49cef6d71af7adef6d912"
+    },
+    "plm.evaluation": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\__init__.py",
+      "sha256": "fb115cad4ab3bad67743b2d0187c741656c083e20a7a17b63dc1847c63271112"
+    },
+    "plm.evaluation.plm": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\plm.py",
+      "sha256": "d3c81820f8c61ade8f52fcf1c5c3950c8fb6a0717f7a3a52cbc274743e317a66"
+    },
+    "plm.evaluation.ranking": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\ranking.py",
+      "sha256": "83ee403c8b53d606199bea72bc83a06f4f5f116577d6da5662839a135e9eb693"
+    },
+    "plm.evaluation.split": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\split.py",
+      "sha256": "9ad16d5b297c1dd7055b1a767c213162823f1db9be9b486e9c8c59636b67f3b1"
+    },
+    "plm.experimentation": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\__init__.py",
+      "sha256": "a5203b2b72b0645b66bebda3e43fd92afaa19789813d98e06db3e76e7a26b45a"
+    },
+    "plm.experimentation.comparison": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\comparison.py",
+      "sha256": "10281960c9c9617ccad814edd292d465ea69314b405bd3a19648cdb5741906e1"
+    },
+    "plm.experimentation.evidence": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\evidence.py",
+      "sha256": "ccb31095f096b4c81be2dcab9841f9f99d6d56b02129be9ab57b6d8f735b9509"
+    },
+    "plm.experimentation.firewall": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\firewall.py",
+      "sha256": "e2c71168741cb0c0deb514204c28f8a67300540cb65fed8b23ff6f7ccc31f3ed"
+    },
+    "plm.experimentation.identity": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\identity.py",
+      "sha256": "ef3c8451d213b19981a89561d963abc75a4017eff5fc08b96806ed109a575e34"
+    },
+    "plm.experimentation.lineage": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\lineage.py",
+      "sha256": "4286d7913b27a6a634786ae9db36ebc5637bcfd8e41687492272b4d0c6f250fa"
+    },
+    "plm.experimentation.measurement": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\measurement.py",
+      "sha256": "22a94d5f6603eca2c4a131e7e8f3ebe8a36fbf138389385ddb55e417c2b247ff"
+    },
+    "plm.experimentation.provenance": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\provenance.py",
+      "sha256": "a71ae38e17e211c227b37dedf42b7d73c0162c42ec09bdc86ef6e40293a11437"
+    },
+    "plm.graph": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\__init__.py",
+      "sha256": "d541af95ab44a4c524f7289c18f7a22795d2e58fb4a5a3848a2e9310eab3dd83"
+    },
+    "plm.graph.importers": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\importers.py",
+      "sha256": "bd9c8f1159aa7b0f65d015215679df63f26baef2e0e4dab2799e1a959f2ab701"
+    },
+    "plm.graph.repository": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\repository.py",
+      "sha256": "f4edca845bf44dba03194a0876d6e6518b8d992202e806a5fbf9d0fea3e9046c"
+    },
+    "plm.graph.schema": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\schema.py",
+      "sha256": "53924883936b701b930a27a618a35e09855ea16412c5c186e7e34351451c91d9"
+    },
+    "plm.model": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\__init__.py",
+      "sha256": "dbd7a7c96b70bdb13c12c9ed89ef3a8b6c16ab2e7af53c39d7582477046e1698"
+    },
+    "plm.model.architecture": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\architecture.py",
+      "sha256": "5e14377afad2fefae1fccc6ece9c379a3bae1853b3d40c2b39b48554755ec5f8"
+    },
+    "plm.model.interfaces": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\interfaces.py",
+      "sha256": "a6ba06429e244bfce78ef7c372a39fce8c44b5335296bbbd4557fdf31cc16b9d"
+    },
+    "plm.model.layers": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\layers.py",
+      "sha256": "791adff33e330136f3a7fccbc6a0bebf6737c817e0ed920202fa4a48de7e59da"
+    },
+    "plm.model.synthetic": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\synthetic.py",
+      "sha256": "9638a8671cd07ec5bb9fe90bdd2161a9a8276665f1a46ac027000a8a277d78b8"
+    },
+    "plm.protocol": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\__init__.py",
+      "sha256": "e90fe7a8e44bf8307431d71951b20db24a3958001f8383b4fe50506f8e1f30e7"
+    },
+    "plm.protocol.config": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\config.py",
+      "sha256": "f3d2732694a472db2b624caba8993385b6cd0f35fc683ace42d6de5e76fdbd59"
+    },
+    "plm.protocol.tokenizer": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\tokenizer.py",
+      "sha256": "d38c166afa0a5dc0f170687ca10ec2f1e6bb9bc5c66e7003a6ad9fcd98b6c61f"
+    },
+    "plm.reproducibility": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\reproducibility.py",
+      "sha256": "201ea15a0a5f69c1f3f966fcae3cbe202fda0bdc4814e8aa8b995a84ac8762b7"
+    },
+    "plm.serving": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\__init__.py",
+      "sha256": "af77c53d2e18dd9136fc4c604ce7e999b69a75ca5157ac6a26c227c8c00c75f5"
+    },
+    "plm.serving.generation": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\generation.py",
+      "sha256": "3706eb262d016ae72783530628948b3bdf25a7571ad03e7859db15adcf70793e"
+    },
+    "plm.serving.guidance": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\guidance.py",
+      "sha256": "64da07bf0e351ff4566dce4e5b9881352c3ccfebf2e429743b1643bc23743827"
+    },
+    "plm.serving.hydration": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\hydration.py",
+      "sha256": "c3118da146b573ae2d78177c442bc192c71cc321955963413ed3df08b299cf25"
+    },
+    "plm.serving.parser": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\parser.py",
+      "sha256": "d370557359702d3456e560f4cb58a47a05d94200826bcc6477d03dd4d9331072"
+    },
+    "plm.serving.postprocess": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\postprocess.py",
+      "sha256": "a420ed8b3fa14c507c99e9168153f70ada75eba2aac9ce3a8415befed9907727"
+    },
+    "plm.serving.runtime": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\runtime.py",
+      "sha256": "7884510497b015b5fa2e1494c8ea492415bb38d1e16154e96b2e2f257d382468"
+    },
+    "plm.serving.set_reranking": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\set_reranking.py",
+      "sha256": "b5fc41463695c6758ff98471e6c1af5a2cb5ddfb7ca9a85a545b6616908629da"
+    },
+    "plm.training": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\__init__.py",
+      "sha256": "0caaf782b8b1a92d3907f6da86cc6ecfef1c2903c59e13f09d2cab5b7830e7f9"
+    },
+    "plm.training.checkpoint": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\checkpoint.py",
+      "sha256": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410"
+    },
+    "plm.training.data": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\data.py",
+      "sha256": "cd8767a7b6e4cf7b9af6546b689151928cc1c329b9c12ef06014e58e9e732d3e"
+    },
+    "plm.training.optim": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\optim.py",
+      "sha256": "92cad98334129c39c818a02e4bbd5791b2e7efc2d56804011f4d3aeb7b596c18"
+    },
+    "plm.training.resume": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\resume.py",
+      "sha256": "f6a800ae9a56eb7732a89b941ba1d5346e601c3c0a9a14c8bedeff4b6dc96bf4"
+    },
+    "plm.training.runner": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\runner.py",
+      "sha256": "8102f84b4714aa593f30b3e2b3636c3a213c44dfaa33d1eda677a18deaccb95a"
+    },
+    "plm.training.trainer": {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\trainer.py",
+      "sha256": "0c45be0400cc8d3b6cf0497ad393f7934fbe1edeeca7cdcbf25680c91d05b196"
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\manifests\\pokemon_v1_f1541479_20260924.json": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\sqlite\\pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-wide-first-choice-plan.md": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1729.json": "c7ad1db44d3c7e0387369b1ffc982d5e7b96afb046c4f8a68111b235ae5a3f67",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1730.json": "932ad33ad4d0b00e29cd7d64966b3f0d5820df91764d9ba1188a22cdd84e1659",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1731.json": "cd713d451a1235f7ad73d8b524acbf3c250b482f78e84c2cfd08f778e3c5ae73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\acceptance.json": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.json": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.py": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\summary.json": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-runner-tests-v1\\stdout.txt": "2a3450f788092218e03daa5730df1819f56c2d8ea93dd8cd737baac0ba09e228",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-runner-tests-v1\\test-receipt.json": "0249dbde598d33063888598792193b25e9b46f509e99172200a8afe990c9a807",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\training-result.json": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\training-result.json": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_wide_first_choices.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39"
+  },
+  "limitations": [
+    "Saved-output audit does not independently reproduce neural forwards or first-logit ordering.",
+    "Quality/work experiment; no serving throughput, energy or concurrency claim.",
+    "222 distinct validation queries, three seeds; no policy promotion.",
+    "Executed archived runtime differs from unrelated current workspace source."
+  ],
+  "numerical_settings": {
+    "autocast_cpu_enabled": false,
+    "autocast_cuda_enabled": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest"
+  },
+  "overall": {
+    "baseline": {
+      "added_slot_selections": 0,
+      "available_exact_miss": 1,
+      "exact_available": 570,
+      "exact_count": 569,
+      "f1": 0.9668960529174291,
+      "failures": 0,
+      "mean_distinct_eligible_sets": 8.093093093093094,
+      "original_selections": 576,
+      "pair_selections": 90,
+      "precision": 0.9820461214803038,
+      "recall": 0.9637964716104676,
+      "set_size": 125.52402402402403,
+      "source_union_contains_truth": 613
+    },
+    "gains": 35,
+    "losses": 1,
+    "query_count": 666,
+    "wide": {
+      "added_slot_selections": 58,
+      "available_exact_miss": 2,
+      "exact_available": 605,
+      "exact_count": 603,
+      "f1": 0.9834927532993669,
+      "failures": 0,
+      "mean_distinct_eligible_sets": 28.17867867867868,
+      "original_selections": 547,
+      "pair_selections": 119,
+      "precision": 0.99138927159738,
+      "recall": 0.9817685798026508,
+      "set_size": 126.43693693693693,
+      "source_union_contains_truth": 636
+    }
+  },
+  "plan_sha256": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+  "protected_test_used": false,
+  "reports": [
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1729.json",
+      "seed": 1729,
+      "sha256": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1730.json",
+      "seed": 1730,
+      "sha256": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1731.json",
+      "seed": 1731,
+      "sha256": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799"
+    }
+  ],
+  "runtime_files_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\config.yaml": "06b4eb9e3c74c9dc998cfd7e18af0a7a71d60f0340f2093b2be62297578fcf3a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\data\\pokemon_v1.yaml": "b524769d5a0fd760b06624a5248eac9aaf72eaafe0790e0f39fea1729fbd3d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\eval\\ranking.yaml": "ad2c15c5dc0f3caa91781eddc0a39379161fdd0151dc8845cce97d43fc8401d1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\checkpointing_lab.yaml": "0d793e4255f9b96d37195afe04f4887ca23ea58ac44bfc1bc50c7dc2a55a0f73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\continuation_set_lab.yaml": "774e9627619b351347be38a2d80a6ff15e0333461c0f7f522d0f75c011486ee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\first_target_lab.yaml": "6cb4f76534346c267881e72bf27f594c5b2f332bd189cd38be00de923de12326",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\moe_lab.yaml": "1749b2d19c87333cd8e01307eeb0430031800111541d5bb2534c116e3fa0ecfa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\national_dex_v1.yaml": "568e9d883c7c2205c7534076d3eb79d8ca01afd9350a73e7d2655f3c01245c9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\prompt_set_lab.yaml": "822294ca346705510203582677cc5b3bb3ab40f8698c55f6bca117132a816b27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\symmetric_relation_lab.yaml": "6eeef56cdf8ffb4a838b2b430a0f6e03ebb17190650ede501a6db4f8707e7092",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\experiment\\tiny_smoke.yaml": "e801e5405db9c072a4d2668579d3c861eb44bbcc2d1ddb0f395a604ba35714b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\model\\overkill.yaml": "6e7b327c492a36c82edaf47781ed4ae6d2c36de4f338c6be7302d6687abd7ee5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\model\\tiny_decoder.yaml": "cb743d984a1cdca098cb0a174cdd2e16488be154cc594da5816dde143c32b240",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\protocol\\pokemon_v1.yaml": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\serve\\local.yaml": "816b6b05e326b678494386d9d41e1cbc4ea3930d4d421ce319ea2490934132f2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\configs\\train\\local_cuda.yaml": "814ceb8df66d50f5bcd8ac3e78cd1fcc695cf9c2133131b767d94212a7510141",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\pyproject.toml": "30bfe2dae495c9641b6d38221948d30925986a5fcfee91b7ff09f0a8b65037e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\__init__.py": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\baselines\\__init__.py": "e2fc4f1a65963ac4a3cfbb63bbd80a811af5a3f7dbba51e0b9bd3e9c8457608a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\baselines\\complex.py": "a23c4b179a92238d49fa48c4c4c6de466ab214bef91c3b438e4d08db7aa4f0df",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\baselines\\oracle.py": "04bf088092dbe5c79f37b8613004ea2d0c3c25aeaf1a33b98cd09a576342a036",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\baselines\\popularity.py": "29aa93558c9b0595cd643fbb773f6aed1e373102855ba0dcc3a72da9886097ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\cli.py": "6fd5057947fa8c7f40473c287d2ec05d65c09408eaf6e94ab921cd2f0d29f478",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\config.py": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\configuration.py": "6577b86d8403b4c628546bbc80dfd94b63c818c80e482867ae4ff99e73882d1e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\__init__.py": "d84f2234bb4534acfd649f79e0c18286d71a8cea645515c2058e4db7c7c9df2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\compiler.py": "8e5c0f76860d0677e02c55ba023c7523673e3185387ab49485826c795de0cfd0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\snapshot.py": "ac61c110c0f1294cd1fa79ac966d56f8bb34c062ce5f6958dbf4fad18faacd51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\corpus\\validation.py": "38c1ecb76b55f3b7a774542551566261ec36b93750b49cef6d71af7adef6d912",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\__init__.py": "fb115cad4ab3bad67743b2d0187c741656c083e20a7a17b63dc1847c63271112",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\generation.py": "e38cfaba143643ad0b7339fa31a94a19b0cf3110893c54e45f9f8870cd3f7c37",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\plm.py": "d3c81820f8c61ade8f52fcf1c5c3950c8fb6a0717f7a3a52cbc274743e317a66",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\ranking.py": "83ee403c8b53d606199bea72bc83a06f4f5f116577d6da5662839a135e9eb693",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\set_composition.py": "265c8719633b21539d1eca1e693968fdb8a40c160fc64416482d80d268ef7b69",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\evaluation\\split.py": "9ad16d5b297c1dd7055b1a767c213162823f1db9be9b486e9c8c59636b67f3b1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\__init__.py": "a5203b2b72b0645b66bebda3e43fd92afaa19789813d98e06db3e76e7a26b45a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\comparison.py": "10281960c9c9617ccad814edd292d465ea69314b405bd3a19648cdb5741906e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\evidence.py": "ccb31095f096b4c81be2dcab9841f9f99d6d56b02129be9ab57b6d8f735b9509",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\firewall.py": "e2c71168741cb0c0deb514204c28f8a67300540cb65fed8b23ff6f7ccc31f3ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\identity.py": "ef3c8451d213b19981a89561d963abc75a4017eff5fc08b96806ed109a575e34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\lineage.py": "4286d7913b27a6a634786ae9db36ebc5637bcfd8e41687492272b4d0c6f250fa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\measurement.py": "22a94d5f6603eca2c4a131e7e8f3ebe8a36fbf138389385ddb55e417c2b247ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\experimentation\\provenance.py": "a71ae38e17e211c227b37dedf42b7d73c0162c42ec09bdc86ef6e40293a11437",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\__init__.py": "d541af95ab44a4c524f7289c18f7a22795d2e58fb4a5a3848a2e9310eab3dd83",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\importers.py": "bd9c8f1159aa7b0f65d015215679df63f26baef2e0e4dab2799e1a959f2ab701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\repository.py": "f4edca845bf44dba03194a0876d6e6518b8d992202e806a5fbf9d0fea3e9046c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\graph\\schema.py": "53924883936b701b930a27a618a35e09855ea16412c5c186e7e34351451c91d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\labeling\\__init__.py": "3eb12e9fbf63f3167229532ecc96b38905724008d16351f95fe72beba1c44837",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\labeling\\web.py": "44bea94ec405e6328c1866bc21afcc75e71becdb958756df607d68e95a340cc2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\__init__.py": "dbd7a7c96b70bdb13c12c9ed89ef3a8b6c16ab2e7af53c39d7582477046e1698",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\architecture.py": "5e14377afad2fefae1fccc6ece9c379a3bae1853b3d40c2b39b48554755ec5f8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\interfaces.py": "a6ba06429e244bfce78ef7c372a39fce8c44b5335296bbbd4557fdf31cc16b9d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\layers.py": "791adff33e330136f3a7fccbc6a0bebf6737c817e0ed920202fa4a48de7e59da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\legal_output.py": "ade361ca7531d79c328d34ba510ddefc4ebf27309d342133b387b7a70d5c55aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\model\\synthetic.py": "9638a8671cd07ec5bb9fe90bdd2161a9a8276665f1a46ac027000a8a277d78b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\observability\\__init__.py": "81ab11abbef8b39b44011e6c0948bf3f270d971244806836db3fd76f22b0913a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\__init__.py": "e90fe7a8e44bf8307431d71951b20db24a3958001f8383b4fe50506f8e1f30e7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\config.py": "f3d2732694a472db2b624caba8993385b6cd0f35fc683ace42d6de5e76fdbd59",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\protocol\\tokenizer.py": "d38c166afa0a5dc0f170687ca10ec2f1e6bb9bc5c66e7003a6ad9fcd98b6c61f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\reproducibility.py": "201ea15a0a5f69c1f3f966fcae3cbe202fda0bdc4814e8aa8b995a84ac8762b7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\__init__.py": "af77c53d2e18dd9136fc4c604ce7e999b69a75ca5157ac6a26c227c8c00c75f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\generation.py": "3706eb262d016ae72783530628948b3bdf25a7571ad03e7859db15adcf70793e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\generation_batch.py": "c397b3a045d052e4f2a4d96976a513e54cd1e43ee964fa9dc04fe9729adf3d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\guidance.py": "64da07bf0e351ff4566dce4e5b9881352c3ccfebf2e429743b1643bc23743827",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\hydration.py": "c3118da146b573ae2d78177c442bc192c71cc321955963413ed3df08b299cf25",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\native.py": "0c456bc6c246989af77e85e78a962143f9bc06312533ddd3d74ae460f59a2a8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\parser.py": "d370557359702d3456e560f4cb58a47a05d94200826bcc6477d03dd4d9331072",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\postprocess.py": "a420ed8b3fa14c507c99e9168153f70ada75eba2aac9ce3a8415befed9907727",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\runtime.py": "7884510497b015b5fa2e1494c8ea492415bb38d1e16154e96b2e2f257d382468",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\set_composition.py": "0f9e7907aa95df5a60e492f0f220bf8ef297bec9c35382d84ae7f6314ebfe2a9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\set_reranking.py": "b5fc41463695c6758ff98471e6c1af5a2cb5ddfb7ca9a85a545b6616908629da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\serving\\web.py": "17fcaddf1583c53109761a91a6a87559fede00ec27698a10a5e6f96ed189818d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\__init__.py": "0caaf782b8b1a92d3907f6da86cc6ecfef1c2903c59e13f09d2cab5b7830e7f9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\checkpoint.py": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\data.py": "cd8767a7b6e4cf7b9af6546b689151928cc1c329b9c12ef06014e58e9e732d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\optim.py": "92cad98334129c39c818a02e4bbd5791b2e7efc2d56804011f4d3aeb7b596c18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\resume.py": "f6a800ae9a56eb7732a89b941ba1d5346e601c3c0a9a14c8bedeff4b6dc96bf4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\runner.py": "8102f84b4714aa593f30b3e2b3636c3a213c44dfaa33d1eda677a18deaccb95a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\src\\plm\\training\\trainer.py": "0c45be0400cc8d3b6cf0497ad393f7934fbe1edeeca7cdcbf25680c91d05b196",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\runtime\\uv.lock": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "script_sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+  "snapshot_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.inputs.json": "c9011ef2b23e1da35eabda2b8903e827ee77ebe34405a6d81e8e520de85d8d80",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.plan.md": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.test-receipt.json": "0249dbde598d33063888598792193b25e9b46f509e99172200a8afe990c9a807",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.test-stdout.txt": "2a3450f788092218e03daa5730df1819f56c2d8ea93dd8cd737baac0ba09e228"
+  },
+  "training_executed": false,
+  "wall_seconds": 981.1292329000007
+}

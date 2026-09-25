@@ -2,6 +2,10 @@
 
 Research synthesis for **PLM / Pika Edition**, a decoder-only model that emits product identifiers for structured relation queries. Pokémon identifiers are the first opaque product catalog. This repository is a dated research snapshot of the source project's working tree, not a software release.
 
+**Active research scope, clarified on 2026-09-25:** work stays within Pokémon
+while pursuing oracle parity and the intended evolutions. External dataset reviews
+remain parked references; another dataset requires an explicit user request.
+
 ## What the research aims to prove
 
 PLM tests whether a constrained vocabulary and an explicit query protocol can support reliable **relation-to-ID retrieval**. A deterministic pipeline parses a request, supplies the model with a subject and relation, validates its generated product IDs, and hydrates those IDs outside the model. The model does not generate prose or attribute descriptions.
@@ -32,6 +36,8 @@ These are application directions, not validated product claims. The [architectur
 11. [Candidate availability and selection](papers/11-candidate-availability-and-selection.md) — both saved selectors find every available exact answer; missing candidates limit the remaining exactness.
 12. [FP8 inference screen](papers/12-fp8-inference-screen.md) — eager FP8 kept similar validation quality but was much slower on the measured native path.
 13. [Decoder-only architecture and applications](papers/13-decoder-and-applications.md) — why this reference model generates IDs sequentially, and which uses remain hypotheses.
+14. [Wider first-choice search](papers/14-wider-first-choice-search.md) — eight branches improve offline exact answers from 569 to 603, with roughly doubled generation time and one query regression.
+15. [Eight-source unions and intersections](papers/15-eight-source-set-operations.md) — two exact gains fail the per-seed F1 gate; exhaustive diagnostics bound what fixed set operations can recover.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -78,6 +84,19 @@ reconstructs all four fixed pool/score combinations and separates candidate
 availability from selection errors. It adds no checkpoint or promoted policy.
 The same dated addition includes the future learned-retrieval data review.
 
+The [wider first-choice search](evidence/updates/2026-09-25-wide-first-choice/README.md)
+is a retrospective offline inference result: **603/666 exact answers and 98.35%
+macro F1**, with all fixed quality gates passing. It reused the same checkpoints,
+roughly doubled generation time and did not establish serving or protected-test
+benefit.
+
+The [eight-source set-operation screen](evidence/updates/2026-09-25-eight-source-set-algebra/README.md)
+records a rejected follow-up. Pair intersections improve exact answers 603→605,
+but seed 1729 F1 regresses, so the fixed gate fails. Its audit accepts the
+reconstruction without promoting the variant.
+
+These are retrospective publication snapshots made after measurement; the
+publication commit is not the source revision that executed the analysis.
 The [offline batch-saturation sweep](evidence/updates/2026-09-25-batch-saturation/README.md)
 reached 30,980 completed output tokens/s and 188.3 completed requests/s at
 batch 640 on one RTX 5070 Ti. This fixed-group decoder result does not change
