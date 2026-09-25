@@ -1,0 +1,62 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "passed_count": 37,
+  "stdout_sha256": "5e46413f230c8d627df1da01a7382bd59538d26628210d3fddb69b94a484c362",
+  "tested_auditor_sha256": "85aa133c01584f2f8e7979d20097dbbe71f715a54dbf1e0ff4923782e420d86d",
+  "tests_sha256": "49b3e64ffa96ec365c8062838cf9c872d81d082da5f7055bbd23f85af8fb3c63"
+}

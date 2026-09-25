@@ -1,0 +1,93 @@
+{
+  "acceptance": false,
+  "campaign_version": "missing-source-membership-v1",
+  "complete": true,
+  "coverage_summary": {
+    "covered_member_occurrences": 83922,
+    "focused_queries": 30,
+    "fully_covered_queries": 636,
+    "omitted_member_occurrences": 1407,
+    "query_count": 666,
+    "true_member_occurrences": 85329
+  },
+  "final_identity_check": true,
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-missing-source-membership-plan.md": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\decision.json": "01a51a5a9d5957ec68f32b0d81d23acace29d7eb3aa5684d99939582e88cb32a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.json": "27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1729.json": "a80d0ad5706dd3514fafb3f650913a84d9e9342873651b2dd016451a2349a830",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1730.json": "50fb3d4fc037cfb53607e2462d2921cd8b1a41eea7a65fae484753be0370ab0e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1731.json": "b26b9d1bd4e9b7c0496c7300337ef7d99d0b73a220cc72585296d7c9be131c81",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.json": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-runner-tests-v1\\stdout.txt": "846fb9655de8061f01f66b7dd7d341cdcb67bc5a41cda509fea6664bc6dc628a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-runner-tests-v1\\test-receipt.json": "612f268e8be6e50a5b422648148ba3ad40e7c03b07922007838de9246b012e7a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_missing_source_membership.py": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829"
+  },
+  "limitations": [
+    "Upstream audits establish source/runtime provenance; no new neural replay or recursive checkpoint audit.",
+    "Relation-head ranks are not decoder-plus-guidance first-token ranks; oracle K uses labels.",
+    "Positive logits are neither calibrated probabilities nor causal proof; repeated products are not independent samples.",
+    "Focused query counts are query-seed observations; distinct query identities are reported separately."
+  ],
+  "neural_generation_executed": false,
+  "new_prediction_policy": false,
+  "overall": {
+    "covered": {
+      "mean_query_positive_fraction": 0.9865678842678095,
+      "member_occurrences": 3844,
+      "negative_count": 47,
+      "nonempty_query_count": 30,
+      "positive_count": 3797,
+      "positive_member_fraction": 0.9877731529656608,
+      "zero_count": 0
+    },
+    "distinct_focused_queries": 22,
+    "focused_queries": 30,
+    "omitted": {
+      "mean_query_positive_fraction": 0.9908023047546597,
+      "member_occurrences": 1407,
+      "negative_count": 13,
+      "nonempty_query_count": 30,
+      "positive_count": 1394,
+      "positive_member_fraction": 0.9907604832977968,
+      "zero_count": 0
+    },
+    "omitted_oracle_top_k_count": 1367,
+    "positive_omitted_queries": {
+      "all": 22,
+      "none": 0,
+      "some": 8
+    }
+  },
+  "plan_sha256": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+  "protected_test_used": false,
+  "reports": [
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1729.json",
+      "seed": 1729,
+      "sha256": "0c75bb15a938e861cde1935ee177e092a20dfa97b77a2341b149711e6e4fe6f0"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1730.json",
+      "seed": 1730,
+      "sha256": "5379de17a693a245c66c53e9defaa9562b30387063fad7becf00cc5b372bbf7c"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1731.json",
+      "seed": 1731,
+      "sha256": "18bc002861508c20294ea432da5f1485a4b3a91c808ec9e13f9243b5db35c2a2"
+    }
+  ],
+  "script_sha256": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829",
+  "snapshot_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.inputs.json": "7af63fb695635ba8b69b83e5c51673cfde77b00f8d3850f2cfe7a0dd6a27d524",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.plan.md": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.script.py": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.test-receipt.json": "612f268e8be6e50a5b422648148ba3ad40e7c03b07922007838de9246b012e7a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.test-stdout.txt": "846fb9655de8061f01f66b7dd7d341cdcb67bc5a41cda509fea6664bc6dc628a"
+  },
+  "training_executed": false,
+  "upstream_evidence_accepted": true,
+  "upstream_quality_gate_passed": false
+}

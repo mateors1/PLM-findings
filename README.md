@@ -38,6 +38,7 @@ These are application directions, not validated product claims. The [architectur
 13. [Decoder-only architecture and applications](papers/13-decoder-and-applications.md) — why this reference model generates IDs sequentially, and which uses remain hypotheses.
 14. [Wider first-choice search](papers/14-wider-first-choice-search.md) — eight branches improve offline exact answers from 569 to 603, with roughly doubled generation time and one query regression.
 15. [Eight-source unions and intersections](papers/15-eight-source-set-operations.md) — two exact gains fail the per-seed F1 gate; exhaustive diagnostics bound what fixed set operations can recover.
+16. [Membership support for omitted products](papers/16-membership-scores-for-omitted-products.md) — 1,394/1,407 omitted correct-member occurrences receive positive head scores; this diagnosis does not claim a quality gain.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -94,6 +95,12 @@ The [eight-source set-operation screen](evidence/updates/2026-09-25-eight-source
 records a rejected follow-up. Pair intersections improve exact answers 603→605,
 but seed 1729 F1 regresses, so the fixed gate fails. Its audit accepts the
 reconstruction without promoting the variant.
+
+The [missing-source membership diagnosis](evidence/updates/2026-09-25-missing-source-membership/README.md)
+finds positive head scores for 1,394/1,407 omitted true-member occurrences and
+1,367/1,407 within the label-assisted oracle-cardinality top K. Head ranks are
+not decoder-plus-guidance ranks; this accepted diagnostic proposes no prediction
+rule and establishes no quality gain.
 
 These are retrospective publication snapshots made after measurement; the
 publication commit is not the source revision that executed the analysis.

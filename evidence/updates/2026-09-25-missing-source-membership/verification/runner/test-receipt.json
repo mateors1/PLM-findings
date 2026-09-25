@@ -1,0 +1,52 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_missing_source_membership.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_missing_source_membership.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_missing_source_membership.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_missing_source_membership.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_missing_source_membership.py",
+      "-o",
+      "addopts=",
+      "-q"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_missing_source_membership.py",
+      "--preflight-only"
+    ]
+  ],
+  "diagnostic_measured": false,
+  "gpu_used": false,
+  "passed": true,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-runner-tests-v1\\stdout.txt",
+    "sha256": "846fb9655de8061f01f66b7dd7d341cdcb67bc5a41cda509fea6664bc6dc628a"
+  },
+  "test_count": 26,
+  "tested_script_sha256": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829",
+  "tested_test_sha256": "69616b01324cd8bf395d3f69c8e9bc95d089cc78e4749e89b3224e57276c02ce"
+}
