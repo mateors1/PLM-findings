@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-25",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_head": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_worktree": "dirty; copied bytes identified individually",
+  "items": [
+    {
+      "source": "docs/model-versions.md",
+      "copy": "model-versions.md",
+      "sha256": "aaa0e5b358c97a9bff8a197191a5421058b498133c90f3fe026c19fe01245906"
+    },
+    {
+      "source": "docs/learning/29-shape-aware-verification.md",
+      "copy": "learning/29-shape-aware-verification.md",
+      "sha256": "44686f3ddc3dbbdbf50c4d2e88c04f6067937bfcd3974ae916902b80ca2af2c1"
+    },
+    {
+      "source": "docs/experiments/2026-09-25-learned-retrieval-hypothesis.md",
+      "copy": "experiments/2026-09-25-learned-retrieval-hypothesis.md",
+      "sha256": "2666844516d0aeff9b1b7dbfbb85b6ce737bacc444ed89177aacc75fc0db3ba7"
+    },
+    {
+      "source": "docs/experiments/2026-09-25-pair-composition-shape-aware-plan.md",
+      "copy": "experiments/2026-09-25-pair-composition-shape-aware-plan.md",
+      "sha256": "0e406e2515c582ba5f4e8f3897b58e7daa6c27c96711913ef5d335f7eef2861f"
+    },
+    {
+      "source": "docs/experiments/2026-09-25-native-saturation-plan.md",
+      "copy": "experiments/2026-09-25-native-saturation-plan.md",
+      "sha256": "abec199f0f521b29d6db922d0bf153f1ffc67b02c632fe339ee10bd9af605a41"
+    },
+    {
+      "source": "docs/experiments/2026-09-25-native-saturation.json",
+      "copy": "experiments/2026-09-25-native-saturation.json",
+      "sha256": "8676acd7602221b7b8f6669ef15d35626774a7aeea2e22ec92d85fdb88d25279"
+    },
+    {
+      "source": "docs/experiments/2026-09-25-model-version-inventory.json",
+      "copy": "experiments/2026-09-25-model-version-inventory.json",
+      "sha256": "0c9480d6dd542fc5ea69e60ebb66c945612bbcd81964d1c27abd6d366b76751f"
+    },
+    {
+      "source": "runs/learning/native-saturation-20260925/summary.json",
+      "copy": "raw/native-saturation-summary.json",
+      "sha256": "242ca7ce72fc5b7b21f66fdd4818d773bb4e767ef3cb2bc1bc27f4c7a3e0b447"
+    },
+    {
+      "source": "scripts/inventory_model_versions.py",
+      "copy": "scripts/inventory_model_versions.py",
+      "sha256": "8c8955d3b0aa785f5282cc3ba978fdafc75f1e70257786d8298efbb89de7c2d7"
+    },
+    {
+      "source": "tests/unit/test_model_version_inventory.py",
+      "copy": "tests/test_model_version_inventory.py",
+      "sha256": "44c44c5a414cfa94a7b19ccd9c9b459c69055e06f47eec4999e06c2ded5c8e41"
+    }
+  ],
+  "limitation": "Copied reports and methods, not checkpoint files or full artifact archive"
+}

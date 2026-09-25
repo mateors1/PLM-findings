@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-25",
+  "scope": "One RTX 5070 Ti, seed-1729 symmetric checkpoint, guided serial policy, eight fixed validation prompts, one predictor and one loopback Uvicorn worker",
+  "method": "Two repetitions, 16 synchronized offered requests per path and concurrency level, no retries; each prompt warmed once through each path",
+  "paths": ["internal NativePredictor.predict", "HTTP POST /v1/predict"],
+  "concurrency": [1, 2, 4, 8, 16],
+  "max_pending": 8,
+  "token_definition": "Completed generated tokens, including EOS and excluding five prompt tokens; rejected requests contribute zero",
+  "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+  "source_tree_sha256": "82b0c7d8fd00ca5ba9a0be44be5b50e6d690b0d8255abf7fc54590e6e63d7d84",
+  "runtime": {
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8"
+  },
+  "totals": {
+    "offered_requests": 320,
+    "completed_requests": 288,
+    "rejected_503": 32,
+    "unexpected_statuses": 0,
+    "all_successful_raw_tokens_equal_warmup": true,
+    "server_stopped": true
+  },
+  "rows": [
+    {"path": "http", "concurrency": 1, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 156.1, "completed_rps": 0.95, "client_p95_seconds_by_repetition": [1.63, 1.66], "queue_p95_seconds_by_repetition": [0.0, 0.0]},
+    {"path": "http", "concurrency": 2, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 158.8, "completed_rps": 0.97, "client_p95_seconds_by_repetition": [2.86, 2.80], "queue_p95_seconds_by_repetition": [1.64, 1.58]},
+    {"path": "http", "concurrency": 4, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 157.7, "completed_rps": 0.96, "client_p95_seconds_by_repetition": [5.16, 4.92], "queue_p95_seconds_by_repetition": [4.09, 3.68]},
+    {"path": "http", "concurrency": 8, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 156.3, "completed_rps": 0.95, "client_p95_seconds_by_repetition": [8.37, 8.57], "queue_p95_seconds_by_repetition": [7.46, 7.60]},
+    {"path": "http", "concurrency": 16, "completed": 16, "rejected_503": 16, "generated_tokens": 2713, "completed_output_tps": 158.6, "completed_rps": 0.94, "client_p95_seconds_by_repetition": [7.95, 9.15], "queue_p95_seconds_by_repetition": [6.96, 8.32]},
+    {"path": "internal", "concurrency": 1, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 155.8, "completed_rps": 0.95, "client_p95_seconds_by_repetition": [1.65, 1.64], "queue_p95_seconds_by_repetition": [0.0, 0.0]},
+    {"path": "internal", "concurrency": 2, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 155.7, "completed_rps": 0.95, "client_p95_seconds_by_repetition": [2.86, 2.89], "queue_p95_seconds_by_repetition": [1.37, 1.39]},
+    {"path": "internal", "concurrency": 4, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 155.9, "completed_rps": 0.95, "client_p95_seconds_by_repetition": [5.38, 4.91], "queue_p95_seconds_by_repetition": [4.06, 4.04]},
+    {"path": "internal", "concurrency": 8, "completed": 32, "rejected_503": 0, "generated_tokens": 5264, "completed_output_tps": 159.9, "completed_rps": 0.97, "client_p95_seconds_by_repetition": [8.42, 8.16], "queue_p95_seconds_by_repetition": [7.04, 7.31]},
+    {"path": "internal", "concurrency": 16, "completed": 16, "rejected_503": 16, "generated_tokens": 2500, "completed_output_tps": 157.7, "completed_rps": 1.01, "client_p95_seconds_by_repetition": [8.39, 7.45], "queue_p95_seconds_by_repetition": [7.08, 7.16]}
+  ],
+  "raw_report": "runs/learning/native-saturation-20260925/summary.json",
+  "raw_report_sha256": "242ca7ce72fc5b7b21f66fdd4818d773bb4e767ef3cb2bc1bc27f4c7a3e0b447",
+  "plan": "docs/experiments/2026-09-25-native-saturation-plan.md",
+  "plan_sha256": "abec199f0f521b29d6db922d0bf153f1ffc67b02c632fe339ee10bd9af605a41",
+  "script_sha256": "0f3698436e969157cc709982d45cc0a8bce141b3ab9d51689f840867d17126fc",
+  "limits": "Fixed prompts and closed request waves; no independent host, open-loop arrival, energy, oracle comparison, or production SLO. At concurrency 16, accepted prompt mix varies, so output TPS is not directly paired with lower levels."
+}
