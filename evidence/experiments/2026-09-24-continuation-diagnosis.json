@@ -1,0 +1,831 @@
+{
+  "aggregate": [
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0,
+          "count": 8,
+          "mean_target_margin": -0.6681800186634064,
+          "mean_target_probability": 0.09151004091836512,
+          "median_target_rank": 2.0
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.125,
+          "count": 8,
+          "mean_target_margin": -117.11639976501465,
+          "mean_target_probability": 0.1247742548584938,
+          "mean_total_variation": 0.9961256086826324,
+          "median_target_rank": 155.5,
+          "same_choice_rate": 0
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "archived_first_divergence"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 1,
+          "count": 309,
+          "mean_target_margin": 12.65431127579081,
+          "mean_target_probability": 0.9999315237150224,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 1,
+          "count": 309,
+          "mean_target_margin": 12.978049713431053,
+          "mean_target_probability": 0.9999371385111392,
+          "mean_total_variation": 2.0554771219371205e-05,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 1,
+          "count": 309,
+          "mean_target_margin": 12.537409242302854,
+          "mean_target_probability": 0.9999215053123178,
+          "mean_total_variation": 2.4799138465770507e-05,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "eos"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9741100323624595,
+          "count": 309,
+          "mean_target_margin": 6.60036229894385,
+          "mean_target_probability": 0.9049002688715663,
+          "median_target_rank": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.10679611650485436,
+          "count": 309,
+          "mean_target_margin": -129.4248378438857,
+          "mean_target_probability": 0.10637541393985717,
+          "mean_total_variation": 0.9107650644089393,
+          "median_target_rank": 259,
+          "same_choice_rate": 0.10355987055016182
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "first"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.082497041202286,
+          "mean_target_probability": 0.9893533125698489,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.082854871225203,
+          "mean_target_probability": 0.9892597419660468,
+          "mean_total_variation": 0.000693886478219225,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.103429601416233,
+          "mean_target_probability": 0.9893345267342903,
+          "mean_total_variation": 0.0005739042993527,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "middle"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.141250650473783,
+          "mean_target_probability": 0.9845417164052823,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.022005277158373,
+          "mean_target_probability": 0.9888196689509724,
+          "mean_total_variation": 0.005160473194189934,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.9870550161812298,
+          "count": 309,
+          "mean_target_margin": 8.398482291829625,
+          "mean_target_probability": 0.9776639565603534,
+          "mean_total_variation": 0.015788913368041932,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9967637540453075
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "second"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 9.058374148742281,
+          "mean_target_probability": 0.9882933483050446,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.9902912621359223,
+          "count": 309,
+          "mean_target_margin": 8.87369648461203,
+          "mean_target_probability": 0.9880860944066594,
+          "mean_total_variation": 0.001718337446904039,
+          "median_target_rank": 1,
+          "same_choice_rate": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.9773462783171522,
+          "count": 309,
+          "mean_target_margin": 8.41457359999129,
+          "mean_target_probability": 0.9732667013430402,
+          "mean_total_variation": 0.01650899018542551,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9870550161812298
+        }
+      },
+      "dimension": "COLOR",
+      "landmark": "third"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.0392156862745098,
+          "count": 204,
+          "mean_target_margin": -3.032729488377478,
+          "mean_target_probability": 0.09677477794153813,
+          "median_target_rank": 5.0
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.43478260869565216,
+          "count": 46,
+          "mean_target_margin": -1.4288607576619023,
+          "mean_target_probability": 0.39656496498244687,
+          "mean_total_variation": 0.3137875480549511,
+          "median_target_rank": 2.0,
+          "same_choice_rate": 0.6739130434782609
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.08823529411764706,
+          "count": 204,
+          "mean_target_margin": -93.48007263038673,
+          "mean_target_probability": 0.08518030356688304,
+          "mean_total_variation": 0.8250735583197264,
+          "median_target_rank": 231.0,
+          "same_choice_rate": 0.1568627450980392
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "archived_first_divergence"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9859943977591037,
+          "count": 357,
+          "mean_target_margin": 11.643939548513803,
+          "mean_target_probability": 0.9871082650506781,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.988795518207283,
+          "count": 357,
+          "mean_target_margin": 11.842446061409488,
+          "mean_target_probability": 0.9881155419920455,
+          "mean_total_variation": 0.001931136801985525,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9943977591036415
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.9859943977591037,
+          "count": 357,
+          "mean_target_margin": 11.548171433414064,
+          "mean_target_probability": 0.9870645666066595,
+          "mean_total_variation": 0.0012673405355952086,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9971988795518207
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "eos"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.5294117647058824,
+          "count": 357,
+          "mean_target_margin": 0.20472074456575537,
+          "mean_target_probability": 0.4109122890040624,
+          "median_target_rank": 1
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.04481792717086835,
+          "count": 357,
+          "mean_target_margin": -110.092914696835,
+          "mean_target_probability": 0.0439827733085445,
+          "mean_total_variation": 0.9370243791542968,
+          "median_target_rank": 286,
+          "same_choice_rate": 0.04481792717086835
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "first"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.9915966386554622,
+          "count": 357,
+          "mean_target_margin": 8.942871802327346,
+          "mean_target_probability": 0.9904521219460887,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.9915966386554622,
+          "count": 357,
+          "mean_target_margin": 8.775221582888221,
+          "mean_target_probability": 0.9897549402889768,
+          "mean_total_variation": 0.003847672393908206,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9971988795518207
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.9915966386554622,
+          "count": 357,
+          "mean_target_margin": 8.799380846050273,
+          "mean_target_probability": 0.9897338107340129,
+          "mean_total_variation": 0.00325512597619334,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.9971988795518207
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "middle"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.6554621848739496,
+          "count": 357,
+          "mean_target_margin": 2.653749861303164,
+          "mean_target_probability": 0.6106008015145321,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.5798319327731093,
+          "count": 357,
+          "mean_target_margin": 1.7182597105576545,
+          "mean_target_probability": 0.5511197361983444,
+          "mean_total_variation": 0.23745555193641996,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.7955182072829131
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.5882352941176471,
+          "count": 357,
+          "mean_target_margin": 1.568797250421775,
+          "mean_target_probability": 0.5170672716581513,
+          "mean_total_variation": 0.3040082590059861,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.7535014005602241
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "second"
+    },
+    {
+      "conditions": {
+        "original": {
+          "accuracy_against_original_teacher": 0.7563025210084033,
+          "count": 357,
+          "mean_target_margin": 4.2772971294841176,
+          "mean_target_probability": 0.7249377963994359,
+          "median_target_rank": 1
+        },
+        "previous_target_subject": {
+          "accuracy_against_original_teacher": 0.7142857142857143,
+          "count": 357,
+          "mean_target_margin": 3.722216131306496,
+          "mean_target_probability": 0.6800002516627441,
+          "mean_total_variation": 0.1951170461406207,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.84593837535014
+        },
+        "rotated_subject": {
+          "accuracy_against_original_teacher": 0.6890756302521008,
+          "count": 357,
+          "mean_target_margin": 3.1907685303888402,
+          "mean_target_probability": 0.6251357187050229,
+          "mean_total_variation": 0.24604758500292406,
+          "median_target_rank": 1,
+          "same_choice_rate": 0.8235294117647058
+        }
+      },
+      "dimension": "TYPE",
+      "landmark": "third"
+    }
+  ],
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "9d65344bb13ee3844bb69de531c55503357b64364f94bd37deb8a6cfafbbefdf",
+    "source_tree_sha256": "95b08b43e262c23e1ba56a6ef27fb680cd14d25d5b3b4f2ad1619a8f5a188883",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "figure": {
+    "png": {
+      "path": "docs/learning/assets/union-coverage.png",
+      "sha256": "98904a905126507fe7cc5990feea3b5653cadf001d0814f297495d78b5d4b73f"
+    },
+    "script": {
+      "path": "runs/learning/continuation-diagnosis-v1/plot.py",
+      "sha256": "00cf528ae11c94514297272500b12e00883eca28c5554dce0f82db2183a3cede"
+    },
+    "svg": {
+      "path": "docs/learning/assets/union-coverage.svg",
+      "sha256": "353fe0dc9c9160b27d1a21d0673c10ae2ea45c70b1f9e411185b846257d5e224"
+    }
+  },
+  "first_choice_archived_matches": 666,
+  "full_report_path": "runs/learning/continuation-diagnosis-v1/summary.json",
+  "full_report_sha256": "a1a68951d2968f5a8202569f5906e44821585ce03269f0dbfa9afc5bf51048a8",
+  "head_by_dimension": [
+    {
+      "count": 357,
+      "dimension": "TYPE",
+      "generation_exact_count": 153,
+      "head_exact_count": 99,
+      "mean_head_f1": 0.9821031267378539,
+      "missing_target_count": 12293,
+      "missing_targets_head_positive": 12172
+    },
+    {
+      "count": 309,
+      "dimension": "COLOR",
+      "generation_exact_count": 301,
+      "head_exact_count": 232,
+      "mean_head_f1": 0.9979439113827637,
+      "missing_target_count": 804,
+      "missing_targets_head_positive": 804
+    }
+  ],
+  "joined_analysis": {
+    "condition_scores": 9390,
+    "coverage_report_sha256": "c9513f6cd9236f11c3c23b260c7b88a868e92c65f3d9eff09e1074cd56cfd117",
+    "groups": {
+      "COLOR": {
+        "count": 309,
+        "generation_exact": 301,
+        "generation_missing": 804,
+        "head_exact": 232,
+        "head_f1": 0.9979439113827637,
+        "head_fn": 2,
+        "head_fp": 116,
+        "head_tp": 35122,
+        "missing_head_positive": 804,
+        "teacher_probes": {
+          "archived_first_divergence": {
+            "original": {
+              "count": 8,
+              "mean_teacher_probability": 0.09151004091836512,
+              "original_teacher_correct": 0
+            },
+            "rotated_subject": {
+              "count": 8,
+              "mean_teacher_probability": 0.1247742548584938,
+              "mean_total_variation": 0.9961256086826324,
+              "original_teacher_correct": 1,
+              "same_choice_count": 0
+            }
+          },
+          "eos": {
+            "original": {
+              "count": 309,
+              "mean_teacher_probability": 0.9999315237150224,
+              "original_teacher_correct": 309
+            },
+            "previous_target_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9999371385111392,
+              "mean_total_variation": 2.0554771219371205e-05,
+              "original_teacher_correct": 309,
+              "same_choice_count": 309
+            },
+            "rotated_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9999215053123178,
+              "mean_total_variation": 2.4799138465770507e-05,
+              "original_teacher_correct": 309,
+              "same_choice_count": 309
+            }
+          },
+          "first": {
+            "original": {
+              "count": 309,
+              "mean_teacher_probability": 0.9049002688715663,
+              "original_teacher_correct": 301
+            },
+            "rotated_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.10637541393985717,
+              "mean_total_variation": 0.9107650644089393,
+              "original_teacher_correct": 33,
+              "same_choice_count": 32
+            }
+          },
+          "middle": {
+            "original": {
+              "count": 309,
+              "mean_teacher_probability": 0.9893533125698489,
+              "original_teacher_correct": 306
+            },
+            "previous_target_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9892597419660468,
+              "mean_total_variation": 0.000693886478219225,
+              "original_teacher_correct": 306,
+              "same_choice_count": 309
+            },
+            "rotated_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9893345267342903,
+              "mean_total_variation": 0.0005739042993527,
+              "original_teacher_correct": 306,
+              "same_choice_count": 309
+            }
+          },
+          "second": {
+            "original": {
+              "count": 309,
+              "mean_teacher_probability": 0.9845417164052823,
+              "original_teacher_correct": 306
+            },
+            "previous_target_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9888196689509724,
+              "mean_total_variation": 0.005160473194189934,
+              "original_teacher_correct": 306,
+              "same_choice_count": 309
+            },
+            "rotated_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9776639565603534,
+              "mean_total_variation": 0.015788913368041932,
+              "original_teacher_correct": 305,
+              "same_choice_count": 308
+            }
+          },
+          "third": {
+            "original": {
+              "count": 309,
+              "mean_teacher_probability": 0.9882933483050446,
+              "original_teacher_correct": 306
+            },
+            "previous_target_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9880860944066594,
+              "mean_total_variation": 0.001718337446904039,
+              "original_teacher_correct": 306,
+              "same_choice_count": 309
+            },
+            "rotated_subject": {
+              "count": 309,
+              "mean_teacher_probability": 0.9732667013430402,
+              "mean_total_variation": 0.01650899018542551,
+              "original_teacher_correct": 302,
+              "same_choice_count": 305
+            }
+          }
+        }
+      },
+      "TYPE_dual": {
+        "count": 204,
+        "generation_exact": 29,
+        "generation_missing": 11855,
+        "head_exact": 10,
+        "head_f1": 0.9743271760686872,
+        "head_fn": 237,
+        "head_fp": 1427,
+        "head_tp": 34767,
+        "missing_head_positive": 11737,
+        "teacher_probes": {
+          "archived_first_divergence": {
+            "original": {
+              "count": 175,
+              "mean_teacher_probability": 0.05684798951754942,
+              "original_teacher_correct": 1
+            },
+            "previous_target_subject": {
+              "count": 31,
+              "mean_teacher_probability": 0.24453956574166846,
+              "mean_total_variation": 0.34451654909418955,
+              "original_teacher_correct": 8,
+              "same_choice_count": 21
+            },
+            "rotated_subject": {
+              "count": 175,
+              "mean_teacher_probability": 0.026993962725765826,
+              "mean_total_variation": 0.868581760235663,
+              "original_teacher_correct": 5,
+              "same_choice_count": 21
+            }
+          },
+          "eos": {
+            "original": {
+              "count": 204,
+              "mean_teacher_probability": 0.9922231312695087,
+              "original_teacher_correct": 202
+            },
+            "previous_target_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.9939884780814835,
+              "mean_total_variation": 0.003344645637237225,
+              "original_teacher_correct": 203,
+              "same_choice_count": 202
+            },
+            "rotated_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.9921622769450587,
+              "mean_total_variation": 0.0021806500504507153,
+              "original_teacher_correct": 202,
+              "same_choice_count": 203
+            }
+          },
+          "first": {
+            "original": {
+              "count": 204,
+              "mean_teacher_probability": 0.15459856285787235,
+              "original_teacher_correct": 51
+            },
+            "rotated_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.001595440577647324,
+              "mean_total_variation": 0.957108734102518,
+              "original_teacher_correct": 0,
+              "same_choice_count": 2
+            }
+          },
+          "middle": {
+            "original": {
+              "count": 204,
+              "mean_teacher_probability": 0.9842161106579999,
+              "original_teacher_correct": 201
+            },
+            "previous_target_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.9837650090004328,
+              "mean_total_variation": 0.005471163123051976,
+              "original_teacher_correct": 201,
+              "same_choice_count": 203
+            },
+            "rotated_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.9829477765080953,
+              "mean_total_variation": 0.00520144006112983,
+              "original_teacher_correct": 201,
+              "same_choice_count": 203
+            }
+          },
+          "second": {
+            "original": {
+              "count": 204,
+              "mean_teacher_probability": 0.37651567402012714,
+              "original_teacher_correct": 92
+            },
+            "previous_target_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.3450508299377082,
+              "mean_total_variation": 0.3085735461438661,
+              "original_teacher_correct": 79,
+              "same_choice_count": 151
+            },
+            "rotated_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.28262753216541553,
+              "mean_total_variation": 0.42062130408956755,
+              "original_teacher_correct": 78,
+              "same_choice_count": 137
+            }
+          },
+          "third": {
+            "original": {
+              "count": 204,
+              "mean_teacher_probability": 0.5250726376528327,
+              "original_teacher_correct": 118
+            },
+            "previous_target_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.4540504741874565,
+              "mean_total_variation": 0.32314354505369386,
+              "original_teacher_correct": 104,
+              "same_choice_count": 152
+            },
+            "rotated_subject": {
+              "count": 204,
+              "mean_teacher_probability": 0.3715796428415577,
+              "mean_total_variation": 0.3992714994443197,
+              "original_teacher_correct": 95,
+              "same_choice_count": 144
+            }
+          }
+        }
+      },
+      "TYPE_single": {
+        "count": 153,
+        "generation_exact": 124,
+        "generation_missing": 438,
+        "head_exact": 89,
+        "head_f1": 0.9924710609634093,
+        "head_fn": 9,
+        "head_fp": 160,
+        "head_tp": 15192,
+        "missing_head_positive": 435,
+        "teacher_probes": {
+          "archived_first_divergence": {
+            "original": {
+              "count": 29,
+              "mean_teacher_probability": 0.33771229429319416,
+              "original_teacher_correct": 7
+            },
+            "previous_target_subject": {
+              "count": 15,
+              "mean_teacher_probability": 0.7107507900800556,
+              "mean_total_variation": 0.2502809459071917,
+              "original_teacher_correct": 12,
+              "same_choice_count": 10
+            },
+            "rotated_subject": {
+              "count": 29,
+              "mean_teacher_probability": 0.43630477415983177,
+              "mean_total_variation": 0.5625240639994193,
+              "original_teacher_correct": 13,
+              "same_choice_count": 11
+            }
+          },
+          "eos": {
+            "original": {
+              "count": 153,
+              "mean_teacher_probability": 0.9802884434255704,
+              "original_teacher_correct": 150
+            },
+            "previous_target_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.9802849605394616,
+              "mean_total_variation": 4.64583549832586e-05,
+              "original_teacher_correct": 150,
+              "same_choice_count": 153
+            },
+            "rotated_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.980267619488794,
+              "mean_total_variation": 4.95945157878666e-05,
+              "original_teacher_correct": 150,
+              "same_choice_count": 153
+            }
+          },
+          "first": {
+            "original": {
+              "count": 153,
+              "mean_teacher_probability": 0.7526639238656491,
+              "original_teacher_correct": 138
+            },
+            "rotated_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.10049921694974073,
+              "mean_total_variation": 0.9102452392233353,
+              "original_teacher_correct": 16,
+              "same_choice_count": 14
+            }
+          },
+          "middle": {
+            "original": {
+              "count": 153,
+              "mean_teacher_probability": 0.9987668036635405,
+              "original_teacher_correct": 153
+            },
+            "previous_target_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.9977415153403687,
+              "mean_total_variation": 0.0016830180883831785,
+              "original_teacher_correct": 153,
+              "same_choice_count": 153
+            },
+            "rotated_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.9987818563685698,
+              "mean_total_variation": 0.0006600405296113524,
+              "original_teacher_correct": 153,
+              "same_choice_count": 153
+            }
+          },
+          "second": {
+            "original": {
+              "count": 153,
+              "mean_teacher_probability": 0.9227143048404055,
+              "original_teacher_correct": 142
+            },
+            "previous_target_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.8258782778791928,
+              "mean_total_variation": 0.14263155965982507,
+              "original_teacher_correct": 128,
+              "same_choice_count": 133
+            },
+            "rotated_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.8296535909817988,
+              "mean_total_variation": 0.14852419889454418,
+              "original_teacher_correct": 132,
+              "same_choice_count": 132
+            }
+          },
+          "third": {
+            "original": {
+              "count": 153,
+              "mean_teacher_probability": 0.99142467472824,
+              "original_teacher_correct": 152
+            },
+            "previous_target_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.9812666216297943,
+              "mean_total_variation": 0.024415047589856506,
+              "original_teacher_correct": 151,
+              "same_choice_count": 150
+            },
+            "rotated_subject": {
+              "count": 153,
+              "mean_teacher_probability": 0.9632104865229766,
+              "mean_total_variation": 0.04174903241439656,
+              "original_teacher_correct": 151,
+              "same_choice_count": 150
+            }
+          }
+        }
+      }
+    },
+    "probe_summary_sha256": "a1a68951d2968f5a8202569f5906e44821585ce03269f0dbfa9afc5bf51048a8",
+    "query_seed_observations": 666,
+    "scope": "CPU join of labeled validation coverage and oracle-assisted prefix diagnosis",
+    "script_sha256": "b28f5d3a6fd0d3e3411032fc357323f144d18da1ed6e2d89229a02089cc15b79",
+    "unique_prefix_probes": 3352
+  },
+  "joined_analysis_sha256": "8df34304b1ae07aea40243800054cc0256d12cd8f2cf4da9fb7511fc22b8791b",
+  "protocol": {
+    "counterfactual_caveat": "Prefix may conflict; original teacher is not its oracle",
+    "first_guidance_alpha": 16,
+    "head_threshold_logit": 0,
+    "previous_target": "last supplied teacher target becomes subject; suffix held fixed",
+    "rank_ties": "optimistic; strict-greater score count plus one",
+    "rotation": "subject index plus floor(catalog size / 2), modulo catalog size",
+    "teacher_prefix": "Known ordered targets supplied; next token scored, never generated",
+    "uniqueness": true
+  },
+  "query_count": 666,
+  "reference_summary_sha256": "1ed9033bddb0b86baed0f192f5827a84b6a15f2a43c8fd9c777af881e65979da",
+  "report_sha256": {
+    "seed-1729.json": "690e5ae675411d7d902c7522bd23ab880fac899b06b7dde39d9f203152478454",
+    "seed-1730.json": "f754e448d705347bf3ba33ec71bd582eaabba4a234909050feb5542a0d87cec2",
+    "seed-1731.json": "5676479c15f7268b09cb71825af123b94ef63837c569614855a980c73d0fc27c"
+  },
+  "scope": "Validation teacher-prefix counterfactual diagnosis; NOT free generation quality",
+  "script_sha256": "af5c5dac702041f1b67163c29c2e33af20fa3e8339d661c43c6bd376eb2a3b0c",
+  "seeds": [
+    {
+      "query_count": 222,
+      "seed": 1729
+    },
+    {
+      "query_count": 222,
+      "seed": 1730
+    },
+    {
+      "query_count": 222,
+      "seed": 1731
+    }
+  ],
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5"
+}

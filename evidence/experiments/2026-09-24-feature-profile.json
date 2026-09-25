@@ -1,0 +1,419 @@
+{
+  "batch_shape": [
+    8,
+    289
+  ],
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "b51d528dea61f74b1c11e5f84a3d4d1c97fe55380560e836cd0eb109dbfe944c",
+    "source_tree_sha256": "9b0adeab61cba90144ea5ee7dd16815d3e4f2f401d48c838c257dcb21b5fd332",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "manifest": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "record_count": 2050,
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "schema_version": 1,
+    "tokenizer_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2",
+    "vocabulary_size": 2049
+  },
+  "measured_steps": 5,
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "decay_excludes_norm_and_bias": true,
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "name": "adamw_fused",
+    "weight_decay": 0.1
+  },
+  "precision": "bf16-autocast-fp32-weights",
+  "procedure": "fixed-longest-training-batch-forward-backward-adamw-v1",
+  "queries": [
+    [
+      "PKM_BIBAREL",
+      "TYPE"
+    ],
+    [
+      "PKM_LOMBRE",
+      "TYPE"
+    ],
+    [
+      "PKM_LOTAD",
+      "TYPE"
+    ],
+    [
+      "PKM_GYARADOS",
+      "TYPE"
+    ],
+    [
+      "PKM_PELIPPER",
+      "TYPE"
+    ],
+    [
+      "PKM_ARBOLIVA",
+      "TYPE"
+    ],
+    [
+      "PKM_DEERLING",
+      "TYPE"
+    ],
+    [
+      "PKM_DOLLIV",
+      "TYPE"
+    ]
+  ],
+  "results": [
+    {
+      "last_expert_load": null,
+      "last_router_aux_loss": null,
+      "last_token_loss": 6.79709005355835,
+      "median_step_ms": 60.4350999997223,
+      "model_config": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "gradient_checkpointing": false,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": false,
+          "experts_per_token": 2,
+          "num_experts": 8,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "parameters": 6558720,
+      "peak_allocated_bytes": 522777600,
+      "step_ms": [
+        62.83490000032543,
+        59.70729999989999,
+        60.4350999997223,
+        61.74409999994168,
+        58.653900000081194
+      ],
+      "variant": "dense"
+    },
+    {
+      "last_expert_load": null,
+      "last_router_aux_loss": null,
+      "last_token_loss": 6.79709005355835,
+      "median_step_ms": 98.02870000021358,
+      "model_config": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "gradient_checkpointing": true,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": false,
+          "experts_per_token": 2,
+          "num_experts": 8,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "parameters": 6558720,
+      "peak_allocated_bytes": 193213952,
+      "step_ms": [
+        81.67730000013762,
+        98.02870000021358,
+        99.51579999960813,
+        97.25819999994201,
+        101.42820000010033
+      ],
+      "variant": "checkpointing"
+    },
+    {
+      "last_expert_load": [
+        [
+          0.23871567845344543,
+          0.20474639534950256,
+          0.3727315068244934,
+          0.1838064193725586
+        ],
+        [
+          0.4541647136211395,
+          0.015355979092419147,
+          0.1931130737066269,
+          0.3373662233352661
+        ],
+        [
+          0.28711026906967163,
+          0.191251739859581,
+          0.3113075792789459,
+          0.21033038198947906
+        ],
+        [
+          0.5956258773803711,
+          0.0013959980569779873,
+          0.2247556895017624,
+          0.1782224327325821
+        ],
+        [
+          0.07398790121078491,
+          0.341554194688797,
+          0.402512788772583,
+          0.1819450855255127
+        ],
+        [
+          0.15495578944683075,
+          0.15262912213802338,
+          0.3843648135662079,
+          0.3080502450466156
+        ],
+        [
+          0.0,
+          0.796184241771698,
+          0.10004653036594391,
+          0.10376919060945511
+        ],
+        [
+          0.3099115788936615,
+          0.07445323467254639,
+          0.18241041898727417,
+          0.43322473764419556
+        ]
+      ],
+      "last_router_aux_loss": 1.0745984315872192,
+      "last_token_loss": 6.950909614562988,
+      "median_step_ms": 127.08359999987806,
+      "model_config": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "gradient_checkpointing": false,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": true,
+          "experts_per_token": 1,
+          "num_experts": 4,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "parameters": 20722688,
+      "peak_allocated_bytes": 773581824,
+      "step_ms": [
+        119.87069999986488,
+        128.17069999982778,
+        123.77210000022387,
+        127.08359999987806,
+        127.30639999972482
+      ],
+      "variant": "moe_top1"
+    },
+    {
+      "last_expert_load": [
+        [
+          0.2689622938632965,
+          0.2359236776828766,
+          0.24639366567134857,
+          0.24872033298015594
+        ],
+        [
+          0.3652861714363098,
+          0.04932526499032974,
+          0.35737550258636475,
+          0.2280130237340927
+        ],
+        [
+          0.3110749125480652,
+          0.1700790971517563,
+          0.24150767922401428,
+          0.27733829617500305
+        ],
+        [
+          0.4490460455417633,
+          0.018613308668136597,
+          0.21707770228385925,
+          0.31526291370391846
+        ],
+        [
+          0.2819916307926178,
+          0.3180549144744873,
+          0.247789666056633,
+          0.1521637886762619
+        ],
+        [
+          0.25942298769950867,
+          0.18892507255077362,
+          0.3932061493396759,
+          0.1584457904100418
+        ],
+        [
+          0.09097254276275635,
+          0.4820846915245056,
+          0.026291297748684883,
+          0.4006514549255371
+        ],
+        [
+          0.19706839323043823,
+          0.2675662934780121,
+          0.0714285671710968,
+          0.4639367163181305
+        ]
+      ],
+      "last_router_aux_loss": 1.0890679359436035,
+      "last_token_loss": 6.930743217468262,
+      "median_step_ms": 127.98609999981636,
+      "model_config": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "gradient_checkpointing": false,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": true,
+          "experts_per_token": 2,
+          "num_experts": 4,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "parameters": 20722688,
+      "peak_allocated_bytes": 938352128,
+      "step_ms": [
+        127.98609999981636,
+        99.35230000019146,
+        119.4046000000526,
+        133.4019000000808,
+        137.20009999997274
+      ],
+      "variant": "moe_top2"
+    }
+  ],
+  "scope": "single-process fixed-order microbenchmark; no quality or serving claim",
+  "script_sha256": "0fc74774f6220517cc96c40177248141046eece9a7b64a2a91a512bb3c8cf28f",
+  "seed": 1729,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "warmup_steps": 2
+}

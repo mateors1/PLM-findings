@@ -1,0 +1,167 @@
+{
+  "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+  "dimension": "COLOR",
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "b1386ce3569b15e7048b57cfe09d9a6b184387300aa2770ff9992533d809cad1",
+    "source_tree_sha256": "70cae85ef74cba46d31113d026b567a548980e85ea2955c39508cc383d2b5090",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "functions": [
+    {
+      "calls": 1,
+      "cumulative_seconds": 1.4413791,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\.venv\\Lib\\site-packages\\torch\\autograd\\grad_mode.py",
+      "function": "__exit__",
+      "line": 293,
+      "self_seconds": 0.0182522
+    },
+    {
+      "calls": 171,
+      "cumulative_seconds": 1.1545228,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "decode",
+      "line": 391,
+      "self_seconds": 0.007113
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 1.1221755,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "decode",
+      "line": 338,
+      "self_seconds": 0.023574
+    },
+    {
+      "calls": 21033,
+      "cumulative_seconds": 0.9205152000000001,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py",
+      "function": "_wrapped_call_impl",
+      "line": 1775,
+      "self_seconds": 0.0163079
+    },
+    {
+      "calls": 21033,
+      "cumulative_seconds": 0.9070123000000001,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\module.py",
+      "function": "_call_impl",
+      "line": 1783,
+      "self_seconds": 0.028883100000000002
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 0.6795032000000001,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "decode",
+      "line": 225,
+      "self_seconds": 0.0047532
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 0.6743991,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "_attend",
+      "line": 233,
+      "self_seconds": 0.030217200000000003
+    },
+    {
+      "calls": 5643,
+      "cumulative_seconds": 0.36334740000000004,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "forward",
+      "line": 43,
+      "self_seconds": 0.17547300000000002
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 0.30971590000000004,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "_feed_forward",
+      "line": 345,
+      "self_seconds": 0.018355100000000003
+    },
+    {
+      "calls": 171,
+      "cumulative_seconds": 0.2387736,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\parser.py",
+      "function": "constrain_logits",
+      "line": 99,
+      "self_seconds": 0.0422306
+    },
+    {
+      "calls": 9747,
+      "cumulative_seconds": 0.2280172,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\.venv\\Lib\\site-packages\\torch\\nn\\modules\\linear.py",
+      "function": "forward",
+      "line": 130,
+      "self_seconds": 0.0329641
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 0.21181570000000002,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "forward",
+      "line": 71,
+      "self_seconds": 0.0957357
+    },
+    {
+      "calls": 9747,
+      "cumulative_seconds": 0.1914597,
+      "file": "~",
+      "function": "<built-in method torch._C._nn.linear>",
+      "line": 0,
+      "self_seconds": 0.1914597
+    },
+    {
+      "calls": 171,
+      "cumulative_seconds": 0.1912413,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\parser.py",
+      "function": "allowed_token_ids",
+      "line": 70,
+      "self_seconds": 0.0027917000000000003
+    },
+    {
+      "calls": 1368,
+      "cumulative_seconds": 0.15634420000000002,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py",
+      "function": "forward",
+      "line": 119,
+      "self_seconds": 0.020226400000000002
+    },
+    {
+      "calls": 715638,
+      "cumulative_seconds": 0.1047064,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\tokenizer.py",
+      "function": "class_of",
+      "line": 257,
+      "self_seconds": 0.0716157
+    },
+    {
+      "calls": 8192,
+      "cumulative_seconds": 0.0909601,
+      "file": "~",
+      "function": "<built-in method torch.cat>",
+      "line": 0,
+      "self_seconds": 0.0909601
+    },
+    {
+      "calls": 513,
+      "cumulative_seconds": 0.0808847,
+      "file": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\parser.py",
+      "function": "<genexpr>",
+      "line": 75,
+      "self_seconds": 0.0322934
+    }
+  ],
+  "generated_tokens": 171,
+  "raw_report_sha256": "490c2e9d0efb6943bb36b4c136d91eb7a60bfdee55ec6e47b2a1efcb48382caf",
+  "scope": "Instrumented cProfile wall-clock attribution; not GPU utilization or benchmark latency",
+  "script_sha256": "9030ee371b4944512cc37e3ffb481d3f542522205aeccd4bb72b3dcda031a443",
+  "source": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "subject": "PKM_TOXAPEX",
+  "total_seconds": 1.4413676999999998
+}

@@ -1,0 +1,112 @@
+{
+  "prompt": {
+    "by_dimension_subject_excluded": {
+      "COLOR": {
+        "count": 103,
+        "exact_count": 88
+      },
+      "TYPE": {
+        "count": 119,
+        "exact_count": 32
+      }
+    },
+    "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+      "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "head": "prompt_set",
+    "macro": {
+      "exact_set": 0,
+      "f1": 0.8666729850537366,
+      "precision": 0.8804424448150912,
+      "recall": 0.8675541115658355,
+      "self_return": 0.9279279279279279
+    },
+    "query_count": 222,
+    "ranking": {
+      "hits_at": {
+        "1": 0.8423423423423423,
+        "10": 0.9459459459459459,
+        "3": 0.9369369369369369
+      },
+      "map": 0.8957345080429989,
+      "mrr": 0.8914879448530902
+    },
+    "raw_report": "runs\\learning\\symmetric-relation-v1\\prompt-classifier.json",
+    "raw_report_sha256": "9e87dad8d2e05b2bf281795ee33b2167b27c8d30c0c7840a6e8324b192a0b9dc",
+    "scope": "auxiliary prompt-only set classifier; not autoregressive generation",
+    "script_sha256": "a9aad4c02c4f490ff08baa3a9efa7d45a6f2acede9836fb3590e46d4e0b77a85",
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "subject_excluded": {
+      "exact_count": 120,
+      "exact_set": 0.5405405405405406,
+      "f1": 0.8704960433050697,
+      "precision": 0.8882743065006865,
+      "recall": 0.8675541115658355
+    },
+    "threshold_logit": 0.0
+  },
+  "symmetric": {
+    "by_dimension_subject_excluded": {
+      "COLOR": {
+        "count": 103,
+        "exact_count": 75
+      },
+      "TYPE": {
+        "count": 119,
+        "exact_count": 39
+      }
+    },
+    "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+      "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "head": "symmetric_relation",
+    "macro": {
+      "exact_set": 0,
+      "f1": 0.9863835394544783,
+      "precision": 0.9758254921235834,
+      "recall": 0.9976623999538612,
+      "self_return": 1
+    },
+    "query_count": 222,
+    "ranking": {
+      "hits_at": {
+        "1": 0.24324324324324326,
+        "10": 1.0,
+        "3": 1.0
+      },
+      "map": 0.9645296512301637,
+      "mrr": 0.6216216216216216
+    },
+    "raw_report": "runs\\learning\\symmetric-relation-v1\\symmetric-classifier.json",
+    "raw_report_sha256": "3ce1e89545810500550a47d479da4f1b79b743b58d640d18a61976fc36ea294c",
+    "scope": "auxiliary prompt-only set classifier; not autoregressive generation",
+    "script_sha256": "a9aad4c02c4f490ff08baa3a9efa7d45a6f2acede9836fb3590e46d4e0b77a85",
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "subject_excluded": {
+      "exact_count": 114,
+      "exact_set": 0.5135135135135135,
+      "f1": 0.9908374961765196,
+      "precision": 0.9845816973340478,
+      "recall": 0.9976623999538612
+    },
+    "threshold_logit": 0.0
+  }
+}

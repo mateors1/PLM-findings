@@ -1,0 +1,74 @@
+{
+  "deployment": {
+    "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+    "constrained_decoding": true,
+    "corpus_identity": {
+      "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+      "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+      "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+    },
+    "device": "cuda",
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+      "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "inference_config_hash": "2407c0c0b9b088e0ff3aec6613c95d8e81c8ddc22ab2489563bbfc5efb1b340a",
+    "max_new_tokens": 507,
+    "max_pending": 8,
+    "scheduling": "serial model execution with bounded admission; not continuous batching",
+    "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "use_kv_cache": true
+  },
+  "deployment_receipt": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\native-service-v1\\deployments\\native-pqt39wbh\\serving.json",
+  "exact_raw_response_parity": true,
+  "http_timing": {
+    "median_seconds": 0.6903647499993895,
+    "total_seconds": 167.55205709999427,
+    "warmup": "none; first request included; correctness run only"
+  },
+  "metadata_checks": {
+    "ignore_and_limit": true,
+    "invalid_subject_422": true,
+    "zero_limit": true
+  },
+  "processed_generation": {
+    "duplicate_query_rate": 0.0,
+    "exact_sequence_accuracy": 0.47297297297297297,
+    "exact_set_accuracy": 0.47297297297297297,
+    "f1": 0.6318792716698569,
+    "mean_target_count": 115.77027027027027,
+    "precision": 0.6685126750883909,
+    "protocol_valid_rate": 1.0,
+    "query_count": 222,
+    "recall": 0.616715893240276,
+    "self_return_rate": 0.0,
+    "termination_rate": 1.0
+  },
+  "query_count": 222,
+  "raw_generation": {
+    "duplicate_query_rate": 0.013513513513513514,
+    "exact_sequence_accuracy": 0.0,
+    "exact_set_accuracy": 0.0,
+    "f1": 0.6290175108824568,
+    "mean_target_count": 116.56306306306307,
+    "precision": 0.6620999388381861,
+    "protocol_valid_rate": 1.0,
+    "query_count": 222,
+    "recall": 0.616715893240276,
+    "self_return_rate": 0.7027027027027027,
+    "termination_rate": 1.0
+  },
+  "raw_report_sha256": "e6254512b62a2f58d506d3e977ade66c66d36f6672088f5945d564ea25e8bce3",
+  "reference_sha256": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+  "scope": "real loopback HTTP correctness run; serial requests; no concurrency/SLO/energy claim",
+  "script_sha256": "0f9c29b6a33dac569aa451dda8f82c67d52941f298aa983df3ffc8e7d5a693e4",
+  "server_stopped": true
+}

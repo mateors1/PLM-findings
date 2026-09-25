@@ -1,0 +1,273 @@
+{
+  "all_outputs_equal": true,
+  "all_servers_stopped": true,
+  "dimension_count": {
+    "COLOR": 309,
+    "TYPE": 357
+  },
+  "dimension_exact": {
+    "COLOR": 301,
+    "TYPE": 153
+  },
+  "exact_answer_count": 454,
+  "exact_answer_rate": 0.6816816816816816,
+  "mean_processed_f1": 0.8839904574642476,
+  "query_count": 666,
+  "report_sha256": {
+    "seed-1729.json": "fcc1969f97f931e9cbce942a04d11683d9d716633ee1e6df9a158e9b8a94c296",
+    "seed-1730.json": "531ee3c47340eb2d912088af0e9e1c7f6bb9a3f98cfec7f42f440e01be1060f1",
+    "seed-1731.json": "7734fd6dda0311ba9250ad1c77539e9282cbd3c0dda1dd5e00f3f364adb2dd4f"
+  },
+  "scope": "Guided native HTTP correctness; validation only; serial; no concurrency, SLO or energy claim",
+  "seeds": [
+    {
+      "deployment": {
+        "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+        "constrained_decoding": true,
+        "corpus_identity": {
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+        "device": "cuda",
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "9d65344bb13ee3844bb69de531c55503357b64364f94bd37deb8a6cfafbbefdf",
+          "source_tree_sha256": "95b08b43e262c23e1ba56a6ef27fb680cd14d25d5b3b4f2ad1619a8f5a188883",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "first_target_guidance_alpha": 16.0,
+        "generation_batch_size": 1,
+        "inference_config_hash": "0e554d36610f32e3f9c5f206dd90fadf289a0f7a2d6a2ffff923206870ce8d62",
+        "max_new_tokens": 507,
+        "max_pending": 8,
+        "prevent_repeated_targets": true,
+        "scheduling": "serial model execution with bounded admission; not continuous batching",
+        "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "use_kv_cache": true
+      },
+      "deployment_receipt": "runs/learning/guided-http-v1/deployments/native-cmz310dd/serving.json",
+      "deployment_receipt_sha256": "2c5f724606d224b55b52faa8e2735922a509c8a55cf72ae67efeedd3d89113ab",
+      "exact_raw_response_parity": true,
+      "exact_raw_token_parity": true,
+      "expected_native_decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+      "metadata_checks": {
+        "ignore_and_limit": true,
+        "invalid_subject_422": true,
+        "zero_limit": true
+      },
+      "model_source_verified": true,
+      "parity_scope": "full raw tokens and parsed responses",
+      "parsed_response_parity": true,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6801801801801802,
+        "exact_set_accuracy": 0.6801801801801802,
+        "f1": 0.8857111644302244,
+        "mean_target_count": 119.08108108108108,
+        "precision": 0.9245952218675837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "processed_metrics_parity": true,
+      "query_count": 222,
+      "raw_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8815864566487325,
+        "mean_target_count": 120.04054054054055,
+        "precision": 0.9155413934365224,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "raw_metrics_parity": true,
+      "reference_batch_size": 8,
+      "reference_sha256": "8943bea10ae647389cdcb9af6876babcdd9216a16c38dee1cf3c7f0c22ec2847",
+      "report_path": "runs/learning/guided-http-v1/seed-1729.json",
+      "scope": "real loopback HTTP correctness run; serial requests; no concurrency/SLO/energy claim",
+      "script_sha256": "2e3d7f2693405d3cfdbde9733e16e15a1fd50755641a569822974165a0a5a58e",
+      "seed": 1729,
+      "server_stopped": true
+    },
+    {
+      "deployment": {
+        "checkpoint_hash": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+        "constrained_decoding": true,
+        "corpus_identity": {
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+        "device": "cuda",
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "9d65344bb13ee3844bb69de531c55503357b64364f94bd37deb8a6cfafbbefdf",
+          "source_tree_sha256": "95b08b43e262c23e1ba56a6ef27fb680cd14d25d5b3b4f2ad1619a8f5a188883",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "first_target_guidance_alpha": 16.0,
+        "generation_batch_size": 1,
+        "inference_config_hash": "276c080305a8e651ec8f73c5ca3a15d5fa656b38cd160103d3ec44d4cb1d9fca",
+        "max_new_tokens": 507,
+        "max_pending": 8,
+        "prevent_repeated_targets": true,
+        "scheduling": "serial model execution with bounded admission; not continuous batching",
+        "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "use_kv_cache": true
+      },
+      "deployment_receipt": "runs/learning/guided-http-v1/deployments/native-3iqtkq0x/serving.json",
+      "deployment_receipt_sha256": "eb63e0beb639f7dbc6fcad1b4b6fed989e232cfb6381c72c8f6a1f342e715112",
+      "exact_raw_response_parity": true,
+      "exact_raw_token_parity": true,
+      "expected_native_decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+      "metadata_checks": {
+        "ignore_and_limit": true,
+        "invalid_subject_422": true,
+        "zero_limit": true
+      },
+      "model_source_verified": true,
+      "parity_scope": "full raw tokens and parsed responses",
+      "parsed_response_parity": true,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8829904611575127,
+        "mean_target_count": 120.48648648648648,
+        "precision": 0.9143281240618508,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "processed_metrics_parity": true,
+      "query_count": 222,
+      "raw_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8788709116281672,
+        "mean_target_count": 121.44594594594595,
+        "precision": 0.9054238086455628,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "raw_metrics_parity": true,
+      "reference_batch_size": 8,
+      "reference_sha256": "25836e9bcc53f8022fc725c064369990d6691fbaacbf779fa6ff888d838e27c9",
+      "report_path": "runs/learning/guided-http-v1/seed-1730.json",
+      "scope": "real loopback HTTP correctness run; serial requests; no concurrency/SLO/energy claim",
+      "script_sha256": "2e3d7f2693405d3cfdbde9733e16e15a1fd50755641a569822974165a0a5a58e",
+      "seed": 1730,
+      "server_stopped": true
+    },
+    {
+      "deployment": {
+        "checkpoint_hash": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa",
+        "constrained_decoding": true,
+        "corpus_identity": {
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+        "device": "cuda",
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "9d65344bb13ee3844bb69de531c55503357b64364f94bd37deb8a6cfafbbefdf",
+          "source_tree_sha256": "95b08b43e262c23e1ba56a6ef27fb680cd14d25d5b3b4f2ad1619a8f5a188883",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "first_target_guidance_alpha": 16.0,
+        "generation_batch_size": 1,
+        "inference_config_hash": "e856c8c1f70fbc65f2cccd53a72c0b073bb6a83ac463e5ea4a25c4edbd663184",
+        "max_new_tokens": 507,
+        "max_pending": 8,
+        "prevent_repeated_targets": true,
+        "scheduling": "serial model execution with bounded admission; not continuous batching",
+        "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "use_kv_cache": true
+      },
+      "deployment_receipt": "runs/learning/guided-http-v1/deployments/native-a2hnkx1d/serving.json",
+      "deployment_receipt_sha256": "64221bae664f246bc58247c9609f61c5f08891b30ff2eb3346d4291f19cbcf37",
+      "exact_raw_response_parity": true,
+      "exact_raw_token_parity": true,
+      "expected_native_decoding": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+      "metadata_checks": {
+        "ignore_and_limit": true,
+        "invalid_subject_422": true,
+        "zero_limit": true
+      },
+      "model_source_verified": true,
+      "parity_scope": "full raw tokens and parsed responses",
+      "parsed_response_parity": true,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.883269746805006,
+        "mean_target_count": 121.31981981981981,
+        "precision": 0.9139915396437757,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "processed_metrics_parity": true,
+      "query_count": 222,
+      "raw_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8792297947631826,
+        "mean_target_count": 122.27927927927928,
+        "precision": 0.9053583058457837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "raw_metrics_parity": true,
+      "reference_batch_size": 8,
+      "reference_sha256": "94a3f22be87e56e4d7891dec0291ab61889c4e2e33c1b8e36315ec2a8579a93e",
+      "report_path": "runs/learning/guided-http-v1/seed-1731.json",
+      "scope": "real loopback HTTP correctness run; serial requests; no concurrency/SLO/energy claim",
+      "script_sha256": "2e3d7f2693405d3cfdbde9733e16e15a1fd50755641a569822974165a0a5a58e",
+      "seed": 1731,
+      "server_stopped": true
+    }
+  ]
+}

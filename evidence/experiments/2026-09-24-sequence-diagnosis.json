@@ -1,0 +1,1034 @@
+{
+  "checkpoint": "runs\\national_dex_promptset_s1729_v1\\checkpoint-final.pt",
+  "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+  "config": {
+    "baseline": {
+      "complex": {
+        "batch_size": 32,
+        "dimension": 32,
+        "epochs": 100,
+        "learning_rate": 0.01,
+        "negative_samples": 1,
+        "regularization": 0.0
+      }
+    },
+    "data": {
+      "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+      "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+      "held_out_query_fraction": null,
+      "name": "pokemon_v1_f1541479_20260924",
+      "protocol_version": "pokemon-v1",
+      "split_seed": 1729,
+      "test_query_fraction": 0.1,
+      "tokenizer_version": "pokemon-v1",
+      "validation_query_fraction": 0.1
+    },
+    "deterministic": false,
+    "eval": {
+      "constrained_decoding": true,
+      "device": "auto",
+      "filtered": false,
+      "hits_at": [
+        1,
+        3,
+        10
+      ],
+      "max_new_tokens": 507,
+      "metrics": [
+        "mrr",
+        "hits"
+      ],
+      "name": "ranking",
+      "use_kv_cache": false
+    },
+    "model": {
+      "activation": "swiglu",
+      "attention": {
+        "backend": "sdpa",
+        "causal": true,
+        "dropout": 0.0,
+        "logit_soft_cap": null,
+        "qk_norm": true,
+        "sliding_window": null
+      },
+      "dim": 256,
+      "dtype": "bf16",
+      "embed_dropout": 0.0,
+      "ffn_multiple": 2.6667,
+      "ffn_multiple_of": 256,
+      "first_target_loss_weight": 1.0,
+      "gradient_checkpointing": false,
+      "head_dim": null,
+      "init_std": 0.02,
+      "max_seq_len": 512,
+      "moe": {
+        "aux_loss_weight": 0.01,
+        "enabled": false,
+        "experts_per_token": 2,
+        "num_experts": 8,
+        "shared_experts": 0
+      },
+      "n_heads": 8,
+      "n_kv_heads": 2,
+      "n_layers": 8,
+      "name": "tiny_decoder",
+      "norm": "rmsnorm",
+      "norm_eps": 1e-05,
+      "prompt_set_loss_weight": 1.0,
+      "resid_dropout": 0.0,
+      "rope": {
+        "original_max_seq_len": null,
+        "scaling_factor": 1.0,
+        "scaling_type": "none",
+        "theta": 10000.0
+      },
+      "tie_embeddings": true,
+      "use_mup": false,
+      "vocab_size": 2049,
+      "z_loss_weight": 0.0
+    },
+    "paths": {
+      "data_root": "data",
+      "run_root": "runs"
+    },
+    "run_name": "national_dex_promptset_s1729_v1",
+    "seed": 1729,
+    "train": {
+      "batch_size": 32,
+      "checkpoint_every": 500,
+      "compile": false,
+      "ema_decay": null,
+      "eval_every": 200,
+      "grad_accum_steps": 1,
+      "grad_clip_norm": 1.0,
+      "max_steps": 2000,
+      "name": "local_cuda",
+      "num_workers": 0,
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "decay_excludes_norm_and_bias": true,
+        "eps": 1e-08,
+        "lr": 0.0003,
+        "name": "adamw_fused",
+        "weight_decay": 0.1
+      },
+      "pin_memory": false,
+      "precision": "bf16",
+      "scheduler": {
+        "min_lr_ratio": 0.1,
+        "name": "cosine",
+        "warmup_steps": 200
+      },
+      "seq_len": 512
+    }
+  },
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+    "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "inputs": {
+    "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+    "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+  },
+  "oracle_hint_failures": [
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_BISHARP",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ABSOL",
+      "terminated": true,
+      "token_count": 68,
+      "train_family_count": 7
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DOUBLADE",
+      "extra": 0,
+      "missing": 61,
+      "subject": "PKM_AEGISLASH",
+      "terminated": true,
+      "token_count": 67,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ARCHEN",
+      "extra": 0,
+      "missing": 104,
+      "subject": "PKM_AERODACTYL",
+      "terminated": true,
+      "token_count": 75,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DEWPIDER",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ARAQUANID",
+      "terminated": true,
+      "token_count": 240,
+      "train_family_count": 4
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DIALGA",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ARCHALUDON",
+      "terminated": true,
+      "token_count": 131,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_BAXCALIBUR",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ARCTIBAX",
+      "terminated": true,
+      "token_count": 113,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DELPHOX",
+      "extra": 216,
+      "missing": 167,
+      "subject": "PKM_ARMAROUGE",
+      "terminated": true,
+      "token_count": 229,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_MARILL",
+      "extra": 0,
+      "missing": 150,
+      "subject": "PKM_AZUMARILL",
+      "terminated": true,
+      "token_count": 67,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ARCTIBAX",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_BAXCALIBUR",
+      "terminated": true,
+      "token_count": 114,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DIANCIE",
+      "extra": 134,
+      "missing": 105,
+      "subject": "PKM_CARBINK",
+      "terminated": true,
+      "token_count": 215,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABOMASNOW",
+      "extra": 90,
+      "missing": 44,
+      "subject": "PKM_CETITAN",
+      "terminated": true,
+      "token_count": 94,
+      "train_family_count": 11
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DUCKLETT",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_CRAMORANT",
+      "terminated": true,
+      "token_count": 254,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CARVANHA",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_CRAWDAUNT",
+      "terminated": true,
+      "token_count": 219,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABSOL",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_DARKRAI",
+      "terminated": true,
+      "token_count": 69,
+      "train_family_count": 7
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_AEGISLASH",
+      "extra": 0,
+      "missing": 61,
+      "subject": "PKM_DOUBLADE",
+      "terminated": true,
+      "token_count": 66,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CRAMORANT",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_DUCKLETT",
+      "terminated": true,
+      "token_count": 255,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ALCREMIE",
+      "extra": 0,
+      "missing": 82,
+      "subject": "PKM_FEZANDIPITI",
+      "terminated": true,
+      "token_count": 65,
+      "train_family_count": 0
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_GABITE",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_FLYGON",
+      "terminated": true,
+      "token_count": 138,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABOMASNOW",
+      "extra": 0,
+      "missing": 64,
+      "subject": "PKM_FROSLASS",
+      "terminated": true,
+      "token_count": 49,
+      "train_family_count": 0
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_SNOM",
+      "extra": 52,
+      "missing": 46,
+      "subject": "PKM_FROSMOTH",
+      "terminated": true,
+      "token_count": 175,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_FLYGON",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_GABITE",
+      "terminated": true,
+      "token_count": 139,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_MALAMAR",
+      "extra": 194,
+      "missing": 142,
+      "subject": "PKM_INKAY",
+      "terminated": false,
+      "token_count": 507,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_POLIWRATH",
+      "extra": 2,
+      "missing": 49,
+      "subject": "PKM_KELDEO",
+      "terminated": true,
+      "token_count": 179,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ANORITH",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_KLEAVOR",
+      "terminated": true,
+      "token_count": 160,
+      "train_family_count": 4
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ARCTIBAX",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_KYUREM",
+      "terminated": true,
+      "token_count": 114,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_AZUMARILL",
+      "extra": 63,
+      "missing": 198,
+      "subject": "PKM_MARILL",
+      "terminated": true,
+      "token_count": 80,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABSOL",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_MIGHTYENA",
+      "terminated": true,
+      "token_count": 69,
+      "train_family_count": 7
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DRACOVISH",
+      "extra": 0,
+      "missing": 2,
+      "subject": "PKM_PALKIA",
+      "terminated": true,
+      "token_count": 218,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_MAMOSWINE",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_PILOSWINE",
+      "terminated": true,
+      "token_count": 120,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABSOL",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_POOCHYENA",
+      "terminated": true,
+      "token_count": 69,
+      "train_family_count": 7
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_AZUMARILL",
+      "extra": 131,
+      "missing": 199,
+      "subject": "PKM_PRIMARINA",
+      "terminated": true,
+      "token_count": 147,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DRACOZOLT",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_RAGING_BOLT",
+      "terminated": true,
+      "token_count": 135,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_GOUGING_FIRE",
+      "extra": 146,
+      "missing": 136,
+      "subject": "PKM_RESHIRAM",
+      "terminated": true,
+      "token_count": 195,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CELESTEELA",
+      "extra": 44,
+      "missing": 114,
+      "subject": "PKM_SKARMORY",
+      "terminated": true,
+      "token_count": 136,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DARTRIX",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_SKIPLOOM",
+      "terminated": true,
+      "token_count": 230,
+      "train_family_count": 5
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_BUZZWOLE",
+      "extra": 158,
+      "missing": 143,
+      "subject": "PKM_SLITHER_WING",
+      "terminated": true,
+      "token_count": 177,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_IRON_BOULDER",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_SOLROCK",
+      "terminated": true,
+      "token_count": 173,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_EXCADRILL",
+      "extra": 140,
+      "missing": 123,
+      "subject": "PKM_STEELIX",
+      "terminated": true,
+      "token_count": 154,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CRAMORANT",
+      "extra": 100,
+      "missing": 207,
+      "subject": "PKM_SWANNA",
+      "terminated": true,
+      "token_count": 170,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_EMOLGA",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_THUNDURUS",
+      "terminated": true,
+      "token_count": 173,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_KLEFKI",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_TINKATON",
+      "terminated": true,
+      "token_count": 123,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_KLEFKI",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_TINKATUFF",
+      "terminated": true,
+      "token_count": 123,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CROAGUNK",
+      "extra": 89,
+      "missing": 104,
+      "subject": "PKM_TOXICROAK",
+      "terminated": true,
+      "token_count": 189,
+      "train_family_count": 3
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_GOUGING_FIRE",
+      "extra": 145,
+      "missing": 137,
+      "subject": "PKM_TURTONATOR",
+      "terminated": true,
+      "token_count": 157,
+      "train_family_count": 1
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_ABSOL",
+      "extra": 0,
+      "missing": 74,
+      "subject": "PKM_TYRANITAR",
+      "terminated": true,
+      "token_count": 69,
+      "train_family_count": 0
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_EMOLGA",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ZAPDOS",
+      "terminated": true,
+      "token_count": 173,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_DRACOZOLT",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ZEKROM",
+      "terminated": true,
+      "token_count": 135,
+      "train_family_count": 2
+    },
+    {
+      "dimension": "TYPE",
+      "expected_first": "PKM_CROBAT",
+      "extra": 0,
+      "missing": 1,
+      "subject": "PKM_ZUBAT",
+      "terminated": true,
+      "token_count": 189,
+      "train_family_count": 2
+    }
+  ],
+  "processed_exact_transitions": {
+    "0_to_0": 48,
+    "0_to_1": 69,
+    "1_to_1": 105
+  },
+  "raw_report": "runs/learning/sequence-diagnosis-v1/diagnosis.json",
+  "raw_report_sha256": "010272795b885647f76a04b80ec15005ba3f22e4f2c07f3fd45f69e2f9f3e8d3",
+  "scope": "validation-only, oracle-assisted diagnosis; not deployable quality",
+  "script_sha256": "ffe870ab32599275e69db87ee0fba954e6a85ce7287f5118f25170f38597681a",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "split": "validation",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "summaries": {
+    "COLOR": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.7087378640776699,
+          "exact_set_accuracy": 0.7087378640776699,
+          "f1": 0.7087378640776699,
+          "mean_target_count": 115.44660194174757,
+          "precision": 0.7087378640776699,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 0.7087378640776699,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.7054752193506304,
+          "mean_target_count": 116.15533980582525,
+          "precision": 0.7022454154606909,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 0.7087378640776699,
+          "self_return_rate": 0.7087378640776699,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 1.0,
+          "exact_set_accuracy": 1.0,
+          "f1": 1.0,
+          "mean_target_count": 113.66990291262135,
+          "precision": 1.0,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 1.0,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.9950647092934854,
+          "mean_target_count": 114.66990291262135,
+          "precision": 0.990184928313506,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 1.0,
+          "self_return_rate": 1.0,
+          "termination_rate": 1.0
+        }
+      }
+    },
+    "TYPE": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.2689075630252101,
+          "exact_set_accuracy": 0.2689075630252101,
+          "f1": 0.5653546076530105,
+          "mean_target_count": 116.05042016806723,
+          "precision": 0.6336959148707796,
+          "protocol_valid_rate": 1.0,
+          "query_count": 119,
+          "recall": 0.5370666243642122,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.025210084033613446,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.5628398304436185,
+          "mean_target_count": 116.91596638655462,
+          "precision": 0.6273521733582033,
+          "protocol_valid_rate": 1.0,
+          "query_count": 119,
+          "recall": 0.5370666243642122,
+          "self_return_rate": 0.6974789915966386,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.008403361344537815,
+          "exact_sequence_accuracy": 0.5966386554621849,
+          "exact_set_accuracy": 0.5966386554621849,
+          "f1": 0.8783981302193387,
+          "mean_target_count": 136.0420168067227,
+          "precision": 0.9056719669547404,
+          "protocol_valid_rate": 0.9915966386554622,
+          "query_count": 119,
+          "recall": 0.8665635222899264,
+          "self_return_rate": 0.0,
+          "termination_rate": 0.9915966386554622
+        },
+        "raw": {
+          "duplicate_query_rate": 0.10084033613445378,
+          "exact_sequence_accuracy": 0.04201680672268908,
+          "exact_set_accuracy": 0.04201680672268908,
+          "f1": 0.8731700501398827,
+          "mean_target_count": 138.7983193277311,
+          "precision": 0.8941861346285956,
+          "protocol_valid_rate": 0.9915966386554622,
+          "query_count": 119,
+          "recall": 0.8665635222899264,
+          "self_return_rate": 0.8067226890756303,
+          "termination_rate": 0.9915966386554622
+        }
+      }
+    },
+    "all": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.47297297297297297,
+          "exact_set_accuracy": 0.47297297297297297,
+          "f1": 0.6318792716698569,
+          "mean_target_count": 115.77027027027027,
+          "precision": 0.6685126750883909,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.013513513513513514,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6290175108824568,
+          "mean_target_count": 116.56306306306307,
+          "precision": 0.6620999388381861,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.7027027027027027,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0045045045045045045,
+          "exact_sequence_accuracy": 0.7837837837837838,
+          "exact_set_accuracy": 0.7837837837837838,
+          "f1": 0.9348170157482039,
+          "mean_target_count": 125.66216216216216,
+          "precision": 0.9494367750793429,
+          "protocol_valid_rate": 0.9954954954954955,
+          "query_count": 222,
+          "recall": 0.9284732394256816,
+          "self_return_rate": 0.0,
+          "termination_rate": 0.9954954954954955
+        },
+        "raw": {
+          "duplicate_query_rate": 0.05405405405405406,
+          "exact_sequence_accuracy": 0.02252252252252252,
+          "exact_set_accuracy": 0.02252252252252252,
+          "f1": 0.9297247793868247,
+          "mean_target_count": 127.6036036036036,
+          "precision": 0.9387261154824058,
+          "protocol_valid_rate": 0.9954954954954955,
+          "query_count": 222,
+          "recall": 0.9284732394256816,
+          "self_return_rate": 0.8963963963963963,
+          "termination_rate": 0.9954954954954955
+        }
+      }
+    },
+    "five_plus_train_family": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.625,
+          "exact_set_accuracy": 0.625,
+          "f1": 0.7025336014755239,
+          "mean_target_count": 115.89880952380952,
+          "precision": 0.7103324144788195,
+          "protocol_valid_rate": 1.0,
+          "query_count": 168,
+          "recall": 0.699739333613311,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.005952380952380952,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6992616824303518,
+          "mean_target_count": 116.66666666666667,
+          "precision": 0.7036468702713599,
+          "protocol_valid_rate": 1.0,
+          "query_count": 168,
+          "recall": 0.699739333613311,
+          "self_return_rate": 0.7202380952380952,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.9642857142857143,
+          "exact_set_accuracy": 0.9642857142857143,
+          "f1": 0.994113329341786,
+          "mean_target_count": 116.04761904761905,
+          "precision": 0.9942396313364055,
+          "protocol_valid_rate": 1.0,
+          "query_count": 168,
+          "recall": 0.9940514252714001,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.011904761904761904,
+          "exact_set_accuracy": 0.011904761904761904,
+          "f1": 0.9892924596648552,
+          "mean_target_count": 117.02380952380952,
+          "precision": 0.9846483472449573,
+          "protocol_valid_rate": 1.0,
+          "query_count": 168,
+          "recall": 0.9940514252714001,
+          "self_return_rate": 0.9761904761904762,
+          "termination_rate": 1.0
+        }
+      }
+    },
+    "no_train_family": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.04495665140474594,
+          "mean_target_count": 69.33333333333333,
+          "precision": 0.06627252252252253,
+          "protocol_valid_rate": 1.0,
+          "query_count": 3,
+          "recall": 0.03404872223654322,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.04495665140474594,
+          "mean_target_count": 69.33333333333333,
+          "precision": 0.06627252252252253,
+          "protocol_valid_rate": 1.0,
+          "query_count": 3,
+          "recall": 0.03404872223654322,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6149789029535865,
+          "mean_target_count": 59.0,
+          "precision": 1.0,
+          "protocol_valid_rate": 1.0,
+          "query_count": 3,
+          "recall": 0.44436116233621736,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6117380357698133,
+          "mean_target_count": 60.0,
+          "precision": 0.9829452614379085,
+          "protocol_valid_rate": 1.0,
+          "query_count": 3,
+          "recall": 0.44436116233621736,
+          "self_return_rate": 1.0,
+          "termination_rate": 1.0
+        }
+      }
+    },
+    "one_to_four_train_family": {
+      "0_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.43366045703148975,
+          "mean_target_count": 118.07843137254902,
+          "precision": 0.5661794248943832,
+          "protocol_valid_rate": 1.0,
+          "query_count": 51,
+          "recall": 0.377501452658733,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.0392156862745098,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.4319814669292569,
+          "mean_target_count": 119.0,
+          "precision": 0.5602881303710066,
+          "protocol_valid_rate": 1.0,
+          "query_count": 51,
+          "recall": 0.377501452658733,
+          "self_return_rate": 0.6862745098039216,
+          "termination_rate": 1.0
+        }
+      },
+      "1_oracle_tokens": {
+        "processed": {
+          "duplicate_query_rate": 0.0196078431372549,
+          "exact_sequence_accuracy": 0.23529411764705882,
+          "exact_set_accuracy": 0.23529411764705882,
+          "f1": 0.758301989369029,
+          "mean_target_count": 161.2549019607843,
+          "precision": 0.7988765882960389,
+          "protocol_valid_rate": 0.9803921568627451,
+          "query_count": 51,
+          "recall": 0.7409281611744584,
+          "self_return_rate": 0.0,
+          "termination_rate": 0.9803921568627451
+        },
+        "raw": {
+          "duplicate_query_rate": 0.23529411764705882,
+          "exact_sequence_accuracy": 0.058823529411764705,
+          "exact_set_accuracy": 0.058823529411764705,
+          "f1": 0.7522069351543138,
+          "mean_target_count": 166.4313725490196,
+          "precision": 0.7848517552083818,
+          "protocol_valid_rate": 0.9803921568627451,
+          "query_count": 51,
+          "recall": 0.7409281611744584,
+          "self_return_rate": 0.6274509803921569,
+          "termination_rate": 0.9803921568627451
+        }
+      }
+    }
+  },
+  "teacher_forced": {
+    "eos": {
+      "accuracy": 0.9954954954954955,
+      "correct": 221,
+      "total": 222
+    },
+    "first_target": {
+      "accuracy": 0.4864864864864865,
+      "correct": 108,
+      "total": 222
+    },
+    "remaining_targets": {
+      "accuracy": 0.9855781155876829,
+      "correct": 27814,
+      "total": 28221
+    }
+  },
+  "training_identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+      "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "evaluator_version": "plm-train-causal-v2",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+    "seeds": [
+      1729
+    ],
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "zero_hint_parity_queries": 222
+}

@@ -1,0 +1,569 @@
+{
+  "aggregate": {
+    "cached": {
+      "median_seconds": 0.8116887999999562,
+      "peak_allocated_bytes": 37362176,
+      "requests": 24,
+      "total_seconds": 19.526820499995665
+    },
+    "uncached": {
+      "median_seconds": 0.8529717500000515,
+      "peak_allocated_bytes": 39807488,
+      "requests": 24,
+      "total_seconds": 20.352372199995443
+    }
+  },
+  "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "b1386ce3569b15e7048b57cfe09d9a6b184387300aa2770ff9992533d809cad1",
+    "source_tree_sha256": "70cae85ef74cba46d31113d026b567a548980e85ea2955c39508cc383d2b5090",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "input_reports_sha256": {
+    "runs\\learning\\kv-cache-v1\\cached-validation.json": "a25edaa1827beb5d52f8a6c67fb0103c80814229a0426a240b4e1bf6b62afddb",
+    "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c"
+  },
+  "measurements": [
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 0,
+      "seconds": 1.108889199999794,
+      "subject": "PKM_BERGMITE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 0,
+      "seconds": 1.0818242999994254,
+      "subject": "PKM_BERGMITE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 36379136,
+      "repetition": 0,
+      "seconds": 0.5335594999996829,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 37172224,
+      "repetition": 0,
+      "seconds": 0.5286870999998428,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 0,
+      "seconds": 1.1340117999998256,
+      "subject": "PKM_WAILMER",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 0,
+      "seconds": 1.102122999999665,
+      "subject": "PKM_WAILMER",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 36665856,
+      "repetition": 0,
+      "seconds": 0.7242677999993248,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 37745664,
+      "repetition": 0,
+      "seconds": 0.756154400000014,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36700672,
+      "repetition": 0,
+      "seconds": 0.3796167999998943,
+      "subject": "PKM_DARKRAI",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36143616,
+      "repetition": 0,
+      "seconds": 0.35650230000010197,
+      "subject": "PKM_DARKRAI",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 36522496,
+      "repetition": 0,
+      "seconds": 0.614929000000302,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 37458944,
+      "repetition": 0,
+      "seconds": 0.6525240000000849,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 39315968,
+      "repetition": 0,
+      "seconds": 0.9497891000000891,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 36952576,
+      "repetition": 0,
+      "seconds": 0.8991098000005877,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 37362176,
+      "repetition": 0,
+      "seconds": 1.1868514999996478,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 39807488,
+      "repetition": 0,
+      "seconds": 1.2811302000000069,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 1,
+      "seconds": 1.1066996999998082,
+      "subject": "PKM_BERGMITE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 1,
+      "seconds": 1.1571423999994295,
+      "subject": "PKM_BERGMITE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 37172224,
+      "repetition": 1,
+      "seconds": 0.5538590999994994,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 36379136,
+      "repetition": 1,
+      "seconds": 0.5815754999994169,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 1,
+      "seconds": 1.0854697999993732,
+      "subject": "PKM_WAILMER",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 1,
+      "seconds": 1.1381910000000062,
+      "subject": "PKM_WAILMER",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 37745664,
+      "repetition": 1,
+      "seconds": 0.7457858999996461,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 36665856,
+      "repetition": 1,
+      "seconds": 0.7152890000006664,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36143616,
+      "repetition": 1,
+      "seconds": 0.3659141999996791,
+      "subject": "PKM_DARKRAI",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36700672,
+      "repetition": 1,
+      "seconds": 0.3768896000001405,
+      "subject": "PKM_DARKRAI",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 37458944,
+      "repetition": 1,
+      "seconds": 0.6578625999991345,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 36522496,
+      "repetition": 1,
+      "seconds": 0.6293844000001627,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 36952576,
+      "repetition": 1,
+      "seconds": 0.9084333000000697,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 39315968,
+      "repetition": 1,
+      "seconds": 0.9545168999993621,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 39807488,
+      "repetition": 1,
+      "seconds": 1.2539925000000949,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 37362176,
+      "repetition": 1,
+      "seconds": 1.2083177999993495,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 2,
+      "seconds": 1.1219105000000127,
+      "subject": "PKM_BERGMITE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 47,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 2,
+      "seconds": 1.069960099999662,
+      "subject": "PKM_BERGMITE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 36379136,
+      "repetition": 2,
+      "seconds": 0.5199921000003087,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 125,
+      "generated_tokens_including_eos": 75,
+      "peak_allocated_bytes": 37172224,
+      "repetition": 2,
+      "seconds": 0.5367053999998461,
+      "subject": "PKM_DOUBLADE",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 39610880,
+      "repetition": 2,
+      "seconds": 1.1427484999994704,
+      "subject": "PKM_WAILMER",
+      "use_cache": false
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 153,
+      "generated_tokens_including_eos": 155,
+      "peak_allocated_bytes": 37198336,
+      "repetition": 2,
+      "seconds": 1.0683469999994486,
+      "subject": "PKM_WAILMER",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 36665856,
+      "repetition": 2,
+      "seconds": 0.7076713999995263,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "TYPE",
+      "expected_targets": 254,
+      "generated_tokens_including_eos": 103,
+      "peak_allocated_bytes": 37745664,
+      "repetition": 2,
+      "seconds": 0.7397008999996615,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36700672,
+      "repetition": 2,
+      "seconds": 0.3693710999996256,
+      "subject": "PKM_DARKRAI",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 50,
+      "generated_tokens_including_eos": 52,
+      "peak_allocated_bytes": 36143616,
+      "repetition": 2,
+      "seconds": 0.3656700000001365,
+      "subject": "PKM_DARKRAI",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 36522496,
+      "repetition": 2,
+      "seconds": 0.6123557999999321,
+      "subject": "PKM_SWANNA",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 87,
+      "generated_tokens_including_eos": 89,
+      "peak_allocated_bytes": 37458944,
+      "repetition": 2,
+      "seconds": 0.6309073000002172,
+      "subject": "PKM_SWANNA",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 39315968,
+      "repetition": 2,
+      "seconds": 0.9537854000000152,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": false
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 129,
+      "generated_tokens_including_eos": 131,
+      "peak_allocated_bytes": 36952576,
+      "repetition": 2,
+      "seconds": 0.9024758999994447,
+      "subject": "PKM_WEEPINBELL",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 37362176,
+      "repetition": 2,
+      "seconds": 1.180097299999943,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": true
+    },
+    {
+      "dimension": "COLOR",
+      "expected_targets": 169,
+      "generated_tokens_including_eos": 171,
+      "peak_allocated_bytes": 39807488,
+      "repetition": 2,
+      "seconds": 1.2282004999997298,
+      "subject": "PKM_TOXAPEX",
+      "use_cache": false
+    }
+  ],
+  "order": "alternate within pairs across prompt index and repetition",
+  "precision": "FP32 weights and inference; no autocast",
+  "ratio_of_total_times": 1.0422778352471649,
+  "scope": "single-request native generation microbenchmark; no HTTP/concurrency/energy claim",
+  "script_sha256": "ccfa8d5d85b4d142396c94a4326197ab64f4b9ef3a85a67ca92312d438bf7116",
+  "selection": "four evenly spaced target-length ranks per dimension on validation",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "training_identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+      "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "evaluator_version": "plm-train-causal-v2",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+    "seeds": [
+      1729
+    ],
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "validation_parity": {
+    "generation_metrics": {
+      "duplicate_query_rate": 0.013513513513513514,
+      "exact_sequence_accuracy": 0.0,
+      "exact_set_accuracy": 0.0,
+      "f1": 0.6290175108824568,
+      "mean_target_count": 116.56306306306307,
+      "precision": 0.6620999388381861,
+      "protocol_valid_rate": 1.0,
+      "query_count": 222,
+      "recall": 0.616715893240276,
+      "self_return_rate": 0.7027027027027027,
+      "termination_rate": 1.0
+    },
+    "identical_responses": true,
+    "queries": 222
+  },
+  "warmup": "one selected prompt on each path; excluded"
+}

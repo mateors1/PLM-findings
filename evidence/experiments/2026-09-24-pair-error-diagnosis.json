@@ -1,0 +1,144 @@
+{
+  "scope": "Fixed retrospective diagnosis of all 666 validation query-seed observations from authenticated pair selection; no new decoder, selection policy, threshold search, model forward, training or test-split access.",
+  "summary_sha256": "f5c826295bfc30466dc435c5a995134fe198686f69f2890cac2e3f2435053523",
+  "independent_audit_sha256": "1639c4b6fd2a45600436fbbd4d9a566e43be9016ed4e618750604c3315b7f895",
+  "query_count": 666,
+  "exact_count": 569,
+  "failure_count": 97,
+  "failure_counts": {
+    "fn": 3850,
+    "fp": 2120,
+    "tp": 10572
+  },
+  "failure_groups": {
+    "COLOR": 1,
+    "TYPE_dual": 79,
+    "TYPE_single": 17
+  },
+  "failure_coverage_classes": {
+    "all_truth_covered_by_four_source_union": 44,
+    "truth_missing_from_all_four_sources": 53
+  },
+  "failure_error_shapes": {
+    "fn_only": 63,
+    "fp_and_fn": 17,
+    "fp_only": 17
+  },
+  "failure_head_sign_counts": {
+    "missing_true": {
+      "negative": 40,
+      "positive": 3810,
+      "zero": 0
+    },
+    "reachable_but_unselected_true": {
+      "negative": 6,
+      "positive": 710,
+      "zero": 0
+    },
+    "selected_fp": {
+      "negative": 2003,
+      "positive": 117,
+      "zero": 0
+    },
+    "selected_tp": {
+      "negative": 103,
+      "positive": 10469,
+      "zero": 0
+    },
+    "truth_missing_from_all_sources": {
+      "negative": 34,
+      "positive": 3100,
+      "zero": 0
+    }
+  },
+  "exact_candidate_available_count_analysis_only": 570,
+  "available_exact_missed_count_analysis_only": 1,
+  "already_exact_negative_filter_risk": {
+    "by_group": {
+      "COLOR": 2,
+      "TYPE_dual": 53,
+      "TYPE_single": 7
+    },
+    "by_seed": {
+      "1729": 20,
+      "1730": 18,
+      "1731": 24
+    },
+    "exact_queries_with_negative_true_members": 62,
+    "exact_query_count": 569,
+    "true_member_sign_counts": {
+      "negative": 103,
+      "positive": 70804,
+      "zero": 0
+    }
+  },
+  "negative_member_counterexample": {
+    "all_truth_covered_by_one_pool_slot": true,
+    "dimension": "TYPE",
+    "exact": true,
+    "exact_available_in_eligible_pool": true,
+    "fn": 0,
+    "fp": 0,
+    "group": "TYPE_single",
+    "head_sign_counts": {
+      "missing_true": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 0
+      },
+      "reachable_but_unselected_true": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 0
+      },
+      "selected_fp": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 0
+      },
+      "selected_tp": {
+        "negative": 1,
+        "positive": 46,
+        "zero": 0
+      },
+      "truth_missing_from_all_sources": {
+        "negative": 0,
+        "positive": 0,
+        "zero": 0
+      }
+    },
+    "negative_true_members": [
+      {
+        "id": 1052,
+        "key": "PKM_ARCTIBAX",
+        "logit": -0.5478532910346985
+      }
+    ],
+    "seed": 1729,
+    "selected_kind": "original",
+    "selected_size": 47,
+    "selected_slot": 1,
+    "selected_source_ranks": [
+      1
+    ],
+    "source_union_false_positives": 295,
+    "subject": "PKM_BERGMITE",
+    "tp": 47,
+    "truth_missing_from_all_four_sources": 0,
+    "truth_size": 47
+  },
+  "selected_set_negative_deletion_bound_analysis_only": {
+    "original_exact": 569,
+    "unavoidable_losses": 62,
+    "possible_recoveries_upper_bound": 17,
+    "exact_upper_bound": 524,
+    "interpretation": "Logical upper bound for unconditionally deleting every negative-scored member from each currently selected set; does not apply to arbitrary deletion-only rules and is not measured alternative-policy accuracy"
+  },
+  "limitations": [
+    "Counts are query-seed/member occurrences, not unique products or independent held-out replications.",
+    "Head logits are frozen prompt-level scores; their signs are diagnostics, not guaranteed calibrated probabilities or causal explanations.",
+    "Source union is descriptive coverage over all four eligible paths; the experimental pool contains only originals and pairs, not the four-way union.",
+    "The negative-member risk count proves an unconditional negative filter would damage these already-exact answers; no filtered answers or alternative policy quality were computed.",
+    "Available exact candidates are oracle-only retrospective diagnostics; expected sets never change archived selections."
+  ]
+}

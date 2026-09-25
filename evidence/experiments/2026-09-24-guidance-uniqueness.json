@@ -1,0 +1,1652 @@
+{
+  "copied_script_sha256": {
+    "evaluate_first_guidance.py": "95dfac594a6304c9b954b34c2e29881dee2637f0e842afd3b2b4d8588f72abb6",
+    "evaluate_guidance_uniqueness.py": "4174aa88650c08343259182f2c5d0b75ea54d1b979c5afc940895a6e1ca5a209",
+    "validate_generation_batches.py": "6d4a65ccfe6f1eb98dc538e343f0b5b8e74510c4da46cdd54de948ca39388eec"
+  },
+  "diagnosis": {
+    "tables": [
+      {
+        "alpha": 0,
+        "color_exact": 257,
+        "duplicate_query_count": 15,
+        "exact_counts": [
+          143,
+          130,
+          134
+        ],
+        "processed_f1": 0.8024539702453176,
+        "raw_f1": 0.7987030035248227,
+        "type_exact": 150,
+        "unique": false,
+        "valid_count": 664
+      },
+      {
+        "alpha": 0,
+        "color_exact": 257,
+        "duplicate_query_count": 0,
+        "exact_counts": [
+          143,
+          130,
+          134
+        ],
+        "processed_f1": 0.8029584621515113,
+        "raw_f1": 0.7992994485376174,
+        "type_exact": 150,
+        "unique": true,
+        "valid_count": 666
+      },
+      {
+        "alpha": 4,
+        "color_exact": 298,
+        "duplicate_query_count": 16,
+        "exact_counts": [
+          150,
+          149,
+          153
+        ],
+        "processed_f1": 0.8802419909625485,
+        "raw_f1": 0.8759939049139633,
+        "type_exact": 154,
+        "unique": false,
+        "valid_count": 664
+      },
+      {
+        "alpha": 4,
+        "color_exact": 298,
+        "duplicate_query_count": 0,
+        "exact_counts": [
+          150,
+          149,
+          153
+        ],
+        "processed_f1": 0.8809372935507785,
+        "raw_f1": 0.8768555523150882,
+        "type_exact": 154,
+        "unique": true,
+        "valid_count": 666
+      },
+      {
+        "alpha": 16,
+        "color_exact": 301,
+        "duplicate_query_count": 17,
+        "exact_counts": [
+          151,
+          150,
+          153
+        ],
+        "processed_f1": 0.8832860157486832,
+        "raw_f1": 0.8790069320144717,
+        "type_exact": 153,
+        "unique": false,
+        "valid_count": 664
+      },
+      {
+        "alpha": 16,
+        "color_exact": 301,
+        "duplicate_query_count": 0,
+        "exact_counts": [
+          151,
+          150,
+          153
+        ],
+        "processed_f1": 0.8839904574642476,
+        "raw_f1": 0.8798957210133608,
+        "type_exact": 153,
+        "unique": true,
+        "valid_count": 666
+      }
+    ],
+    "uniqueness_marginals": [
+      {
+        "alpha": 0,
+        "changed_count": 15,
+        "changes": [
+          {
+            "after_count": 160,
+            "after_exact": false,
+            "after_f1": 0.08875739644970414,
+            "after_valid": true,
+            "before_count": 118,
+            "before_exact": false,
+            "before_f1": 0.30714285714285716,
+            "before_valid": true,
+            "delta_f1": -0.218385460693153,
+            "dimension": "TYPE",
+            "first": "PKM_IRON_MOTH",
+            "seed": 1729,
+            "subject": "PKM_AERODACTYL"
+          },
+          {
+            "after_count": 131,
+            "after_exact": false,
+            "after_f1": 0.9961685823754789,
+            "after_valid": true,
+            "before_count": 131,
+            "before_exact": false,
+            "before_f1": 0.9923076923076923,
+            "before_valid": true,
+            "delta_f1": 0.00386089006778656,
+            "dimension": "TYPE",
+            "first": "PKM_ARCHALUDON",
+            "seed": 1729,
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "after_count": 150,
+            "after_exact": false,
+            "after_f1": 0.09239130434782608,
+            "after_valid": true,
+            "before_count": 89,
+            "before_exact": false,
+            "before_f1": 0.066006600660066,
+            "before_valid": true,
+            "delta_f1": 0.02638470368776008,
+            "dimension": "TYPE",
+            "first": "PKM_MAREANIE",
+            "seed": 1729,
+            "subject": "PKM_CRAWDAUNT"
+          },
+          {
+            "after_count": 51,
+            "after_exact": false,
+            "after_f1": 0.096,
+            "after_valid": true,
+            "before_count": 50,
+            "before_exact": false,
+            "before_f1": 0.04918032786885246,
+            "before_valid": true,
+            "delta_f1": 0.046819672131147544,
+            "dimension": "TYPE",
+            "first": "PKM_PILOSWINE",
+            "seed": 1729,
+            "subject": "PKM_GROUDON"
+          },
+          {
+            "after_count": 126,
+            "after_exact": false,
+            "after_f1": 0.6076923076923076,
+            "after_valid": true,
+            "before_count": 127,
+            "before_exact": false,
+            "before_f1": 0.6076923076923076,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "TYPE",
+            "first": "PKM_AGGRON",
+            "seed": 1730,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 121,
+            "after_exact": false,
+            "after_f1": 0.06766917293233082,
+            "after_valid": true,
+            "before_count": 150,
+            "before_exact": false,
+            "before_f1": 0.10989010989010989,
+            "before_valid": true,
+            "delta_f1": -0.042220936957779065,
+            "dimension": "COLOR",
+            "first": "PKM_CHIEN_PAO",
+            "seed": 1730,
+            "subject": "PKM_CLODSIRE"
+          },
+          {
+            "after_count": 170,
+            "after_exact": true,
+            "after_f1": 1.0,
+            "after_valid": true,
+            "before_count": 171,
+            "before_exact": true,
+            "before_f1": 1.0,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "COLOR",
+            "first": "PKM_ALTARIA",
+            "seed": 1730,
+            "subject": "PKM_GRAPPLOCT"
+          },
+          {
+            "after_count": 157,
+            "after_exact": false,
+            "after_f1": 0.13240418118466898,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.006279434850863423,
+            "before_valid": false,
+            "delta_f1": 0.12612474633380555,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1730,
+            "subject": "PKM_KECLEON"
+          },
+          {
+            "after_count": 175,
+            "after_exact": false,
+            "after_f1": 0.26573426573426573,
+            "after_valid": true,
+            "before_count": 215,
+            "before_exact": false,
+            "before_f1": 0.2222222222222222,
+            "before_valid": true,
+            "delta_f1": 0.04351204351204352,
+            "dimension": "TYPE",
+            "first": "PKM_CRAMORANT",
+            "seed": 1730,
+            "subject": "PKM_SWANNA"
+          },
+          {
+            "after_count": 143,
+            "after_exact": false,
+            "after_f1": 0.6545454545454545,
+            "after_valid": true,
+            "before_count": 172,
+            "before_exact": false,
+            "before_f1": 0.6312849162011173,
+            "before_valid": true,
+            "delta_f1": 0.023260538344337278,
+            "dimension": "TYPE",
+            "first": "PKM_GOLBAT",
+            "seed": 1730,
+            "subject": "PKM_ZUBAT"
+          },
+          {
+            "after_count": 74,
+            "after_exact": false,
+            "after_f1": 0.10050251256281408,
+            "after_valid": true,
+            "before_count": 90,
+            "before_exact": false,
+            "before_f1": 0.06635071090047394,
+            "before_valid": true,
+            "delta_f1": 0.03415180166234014,
+            "dimension": "TYPE",
+            "first": "PKM_BEAUTIFLY",
+            "seed": 1731,
+            "subject": "PKM_AEGISLASH"
+          },
+          {
+            "after_count": 183,
+            "after_exact": false,
+            "after_f1": 0.1554054054054054,
+            "after_valid": true,
+            "before_count": 131,
+            "before_exact": false,
+            "before_f1": 0.05761316872427984,
+            "before_valid": true,
+            "delta_f1": 0.09779223668112556,
+            "dimension": "TYPE",
+            "first": "PKM_AGGRON",
+            "seed": 1731,
+            "subject": "PKM_ARCTIBAX"
+          },
+          {
+            "after_count": 92,
+            "after_exact": false,
+            "after_f1": 0.13215859030837004,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.018691588785046728,
+            "before_valid": false,
+            "delta_f1": 0.11346700152332331,
+            "dimension": "TYPE",
+            "first": "PKM_ARON",
+            "seed": 1731,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 253,
+            "after_exact": false,
+            "after_f1": 0.6666666666666666,
+            "after_valid": true,
+            "before_count": 251,
+            "before_exact": false,
+            "before_f1": 0.656,
+            "before_valid": true,
+            "delta_f1": 0.010666666666666602,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1731,
+            "subject": "PKM_FLORAGATO"
+          },
+          {
+            "after_count": 133,
+            "after_exact": false,
+            "after_f1": 0.22131147540983606,
+            "after_valid": true,
+            "before_count": 112,
+            "before_exact": false,
+            "before_f1": 0.1507537688442211,
+            "before_valid": true,
+            "delta_f1": 0.07055770656561497,
+            "dimension": "TYPE",
+            "first": "PKM_BASCULEGION",
+            "seed": 1731,
+            "subject": "PKM_FROSLASS"
+          }
+        ],
+        "exact_gains": 0,
+        "exact_losses": 0
+      },
+      {
+        "alpha": 4,
+        "changed_count": 16,
+        "changes": [
+          {
+            "after_count": 197,
+            "after_exact": false,
+            "after_f1": 0.13043478260869565,
+            "after_valid": true,
+            "before_count": 202,
+            "before_exact": false,
+            "before_f1": 0.11728395061728394,
+            "before_valid": true,
+            "delta_f1": 0.013150831991411704,
+            "dimension": "TYPE",
+            "first": "PKM_AERODACTYL",
+            "seed": 1729,
+            "subject": "PKM_AEGISLASH"
+          },
+          {
+            "after_count": 131,
+            "after_exact": false,
+            "after_f1": 0.9961685823754789,
+            "after_valid": true,
+            "before_count": 131,
+            "before_exact": false,
+            "before_f1": 0.9923076923076923,
+            "before_valid": true,
+            "delta_f1": 0.00386089006778656,
+            "dimension": "TYPE",
+            "first": "PKM_ARCHALUDON",
+            "seed": 1729,
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "after_count": 150,
+            "after_exact": false,
+            "after_f1": 0.09239130434782608,
+            "after_valid": true,
+            "before_count": 89,
+            "before_exact": false,
+            "before_f1": 0.066006600660066,
+            "before_valid": true,
+            "delta_f1": 0.02638470368776008,
+            "dimension": "TYPE",
+            "first": "PKM_MAREANIE",
+            "seed": 1729,
+            "subject": "PKM_CRAWDAUNT"
+          },
+          {
+            "after_count": 174,
+            "after_exact": false,
+            "after_f1": 0.01532567049808429,
+            "after_valid": true,
+            "before_count": 10,
+            "before_exact": false,
+            "before_f1": 0.042105263157894736,
+            "before_valid": true,
+            "delta_f1": -0.026779592659810447,
+            "dimension": "COLOR",
+            "first": "PKM_BEEDRILL",
+            "seed": 1729,
+            "subject": "PKM_DUNSPARCE"
+          },
+          {
+            "after_count": 51,
+            "after_exact": false,
+            "after_f1": 0.096,
+            "after_valid": true,
+            "before_count": 50,
+            "before_exact": false,
+            "before_f1": 0.04918032786885246,
+            "before_valid": true,
+            "delta_f1": 0.046819672131147544,
+            "dimension": "TYPE",
+            "first": "PKM_PILOSWINE",
+            "seed": 1729,
+            "subject": "PKM_GROUDON"
+          },
+          {
+            "after_count": 105,
+            "after_exact": false,
+            "after_f1": 0.2389937106918239,
+            "after_valid": true,
+            "before_count": 192,
+            "before_exact": false,
+            "before_f1": 0.2493368700265252,
+            "before_valid": true,
+            "delta_f1": -0.010343159334701285,
+            "dimension": "TYPE",
+            "first": "PKM_HATTERENE",
+            "seed": 1730,
+            "subject": "PKM_AZUMARILL"
+          },
+          {
+            "after_count": 126,
+            "after_exact": false,
+            "after_f1": 0.6076923076923076,
+            "after_valid": true,
+            "before_count": 127,
+            "before_exact": false,
+            "before_f1": 0.6076923076923076,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "TYPE",
+            "first": "PKM_AGGRON",
+            "seed": 1730,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 149,
+            "after_exact": false,
+            "after_f1": 0.2440677966101695,
+            "after_valid": true,
+            "before_count": 224,
+            "before_exact": false,
+            "before_f1": 0.21739130434782608,
+            "before_valid": true,
+            "delta_f1": 0.02667649226234342,
+            "dimension": "COLOR",
+            "first": "PKM_INFERNAPE",
+            "seed": 1730,
+            "subject": "PKM_CLODSIRE"
+          },
+          {
+            "after_count": 170,
+            "after_exact": true,
+            "after_f1": 1.0,
+            "after_valid": true,
+            "before_count": 171,
+            "before_exact": true,
+            "before_f1": 1.0,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "COLOR",
+            "first": "PKM_ALTARIA",
+            "seed": 1730,
+            "subject": "PKM_GRAPPLOCT"
+          },
+          {
+            "after_count": 157,
+            "after_exact": false,
+            "after_f1": 0.13240418118466898,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.006279434850863423,
+            "before_valid": false,
+            "delta_f1": 0.12612474633380555,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1730,
+            "subject": "PKM_KECLEON"
+          },
+          {
+            "after_count": 175,
+            "after_exact": false,
+            "after_f1": 0.26573426573426573,
+            "after_valid": true,
+            "before_count": 215,
+            "before_exact": false,
+            "before_f1": 0.2222222222222222,
+            "before_valid": true,
+            "delta_f1": 0.04351204351204352,
+            "dimension": "TYPE",
+            "first": "PKM_CRAMORANT",
+            "seed": 1730,
+            "subject": "PKM_SWANNA"
+          },
+          {
+            "after_count": 143,
+            "after_exact": false,
+            "after_f1": 0.6545454545454545,
+            "after_valid": true,
+            "before_count": 172,
+            "before_exact": false,
+            "before_f1": 0.6312849162011173,
+            "before_valid": true,
+            "delta_f1": 0.023260538344337278,
+            "dimension": "TYPE",
+            "first": "PKM_GOLBAT",
+            "seed": 1730,
+            "subject": "PKM_ZUBAT"
+          },
+          {
+            "after_count": 122,
+            "after_exact": false,
+            "after_f1": 0.12648221343873517,
+            "after_valid": true,
+            "before_count": 132,
+            "before_exact": false,
+            "before_f1": 0.13076923076923078,
+            "before_valid": true,
+            "delta_f1": -0.004287017330495607,
+            "dimension": "TYPE",
+            "first": "PKM_CELESTEELA",
+            "seed": 1731,
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "after_count": 92,
+            "after_exact": false,
+            "after_f1": 0.13215859030837004,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.018691588785046728,
+            "before_valid": false,
+            "delta_f1": 0.11346700152332331,
+            "dimension": "TYPE",
+            "first": "PKM_ARON",
+            "seed": 1731,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 253,
+            "after_exact": false,
+            "after_f1": 0.6666666666666666,
+            "after_valid": true,
+            "before_count": 251,
+            "before_exact": false,
+            "before_f1": 0.656,
+            "before_valid": true,
+            "delta_f1": 0.010666666666666602,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1731,
+            "subject": "PKM_FLORAGATO"
+          },
+          {
+            "after_count": 133,
+            "after_exact": false,
+            "after_f1": 0.22131147540983606,
+            "after_valid": true,
+            "before_count": 112,
+            "before_exact": false,
+            "before_f1": 0.1507537688442211,
+            "before_valid": true,
+            "delta_f1": 0.07055770656561497,
+            "dimension": "TYPE",
+            "first": "PKM_BASCULEGION",
+            "seed": 1731,
+            "subject": "PKM_FROSLASS"
+          }
+        ],
+        "exact_gains": 0,
+        "exact_losses": 0
+      },
+      {
+        "alpha": 16,
+        "changed_count": 17,
+        "changes": [
+          {
+            "after_count": 197,
+            "after_exact": false,
+            "after_f1": 0.13043478260869565,
+            "after_valid": true,
+            "before_count": 202,
+            "before_exact": false,
+            "before_f1": 0.11728395061728394,
+            "before_valid": true,
+            "delta_f1": 0.013150831991411704,
+            "dimension": "TYPE",
+            "first": "PKM_AERODACTYL",
+            "seed": 1729,
+            "subject": "PKM_AEGISLASH"
+          },
+          {
+            "after_count": 131,
+            "after_exact": false,
+            "after_f1": 0.9961685823754789,
+            "after_valid": true,
+            "before_count": 131,
+            "before_exact": false,
+            "before_f1": 0.9923076923076923,
+            "before_valid": true,
+            "delta_f1": 0.00386089006778656,
+            "dimension": "TYPE",
+            "first": "PKM_ARCHALUDON",
+            "seed": 1729,
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "after_count": 150,
+            "after_exact": false,
+            "after_f1": 0.09239130434782608,
+            "after_valid": true,
+            "before_count": 89,
+            "before_exact": false,
+            "before_f1": 0.066006600660066,
+            "before_valid": true,
+            "delta_f1": 0.02638470368776008,
+            "dimension": "TYPE",
+            "first": "PKM_MAREANIE",
+            "seed": 1729,
+            "subject": "PKM_CRAWDAUNT"
+          },
+          {
+            "after_count": 174,
+            "after_exact": false,
+            "after_f1": 0.01532567049808429,
+            "after_valid": true,
+            "before_count": 10,
+            "before_exact": false,
+            "before_f1": 0.042105263157894736,
+            "before_valid": true,
+            "delta_f1": -0.026779592659810447,
+            "dimension": "COLOR",
+            "first": "PKM_BEEDRILL",
+            "seed": 1729,
+            "subject": "PKM_DUNSPARCE"
+          },
+          {
+            "after_count": 51,
+            "after_exact": false,
+            "after_f1": 0.096,
+            "after_valid": true,
+            "before_count": 50,
+            "before_exact": false,
+            "before_f1": 0.04918032786885246,
+            "before_valid": true,
+            "delta_f1": 0.046819672131147544,
+            "dimension": "TYPE",
+            "first": "PKM_PILOSWINE",
+            "seed": 1729,
+            "subject": "PKM_GROUDON"
+          },
+          {
+            "after_count": 152,
+            "after_exact": false,
+            "after_f1": 0.08856088560885608,
+            "after_valid": true,
+            "before_count": 108,
+            "before_exact": false,
+            "before_f1": 0.08247422680412371,
+            "before_valid": true,
+            "delta_f1": 0.006086658804732373,
+            "dimension": "TYPE",
+            "first": "PKM_SEISMITOAD",
+            "seed": 1729,
+            "subject": "PKM_PILOSWINE"
+          },
+          {
+            "after_count": 105,
+            "after_exact": false,
+            "after_f1": 0.2389937106918239,
+            "after_valid": true,
+            "before_count": 192,
+            "before_exact": false,
+            "before_f1": 0.2493368700265252,
+            "before_valid": true,
+            "delta_f1": -0.010343159334701285,
+            "dimension": "TYPE",
+            "first": "PKM_HATTERENE",
+            "seed": 1730,
+            "subject": "PKM_AZUMARILL"
+          },
+          {
+            "after_count": 126,
+            "after_exact": false,
+            "after_f1": 0.6076923076923076,
+            "after_valid": true,
+            "before_count": 127,
+            "before_exact": false,
+            "before_f1": 0.6076923076923076,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "TYPE",
+            "first": "PKM_AGGRON",
+            "seed": 1730,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 149,
+            "after_exact": false,
+            "after_f1": 0.2440677966101695,
+            "after_valid": true,
+            "before_count": 224,
+            "before_exact": false,
+            "before_f1": 0.21739130434782608,
+            "before_valid": true,
+            "delta_f1": 0.02667649226234342,
+            "dimension": "COLOR",
+            "first": "PKM_INFERNAPE",
+            "seed": 1730,
+            "subject": "PKM_CLODSIRE"
+          },
+          {
+            "after_count": 170,
+            "after_exact": true,
+            "after_f1": 1.0,
+            "after_valid": true,
+            "before_count": 171,
+            "before_exact": true,
+            "before_f1": 1.0,
+            "before_valid": true,
+            "delta_f1": 0.0,
+            "dimension": "COLOR",
+            "first": "PKM_ALTARIA",
+            "seed": 1730,
+            "subject": "PKM_GRAPPLOCT"
+          },
+          {
+            "after_count": 157,
+            "after_exact": false,
+            "after_f1": 0.13240418118466898,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.006279434850863423,
+            "before_valid": false,
+            "delta_f1": 0.12612474633380555,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1730,
+            "subject": "PKM_KECLEON"
+          },
+          {
+            "after_count": 175,
+            "after_exact": false,
+            "after_f1": 0.26573426573426573,
+            "after_valid": true,
+            "before_count": 215,
+            "before_exact": false,
+            "before_f1": 0.2222222222222222,
+            "before_valid": true,
+            "delta_f1": 0.04351204351204352,
+            "dimension": "TYPE",
+            "first": "PKM_CRAMORANT",
+            "seed": 1730,
+            "subject": "PKM_SWANNA"
+          },
+          {
+            "after_count": 143,
+            "after_exact": false,
+            "after_f1": 0.6545454545454545,
+            "after_valid": true,
+            "before_count": 172,
+            "before_exact": false,
+            "before_f1": 0.6312849162011173,
+            "before_valid": true,
+            "delta_f1": 0.023260538344337278,
+            "dimension": "TYPE",
+            "first": "PKM_GOLBAT",
+            "seed": 1730,
+            "subject": "PKM_ZUBAT"
+          },
+          {
+            "after_count": 122,
+            "after_exact": false,
+            "after_f1": 0.12648221343873517,
+            "after_valid": true,
+            "before_count": 132,
+            "before_exact": false,
+            "before_f1": 0.13076923076923078,
+            "before_valid": true,
+            "delta_f1": -0.004287017330495607,
+            "dimension": "TYPE",
+            "first": "PKM_CELESTEELA",
+            "seed": 1731,
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "after_count": 92,
+            "after_exact": false,
+            "after_f1": 0.13215859030837004,
+            "after_valid": true,
+            "before_count": 507,
+            "before_exact": false,
+            "before_f1": 0.018691588785046728,
+            "before_valid": false,
+            "delta_f1": 0.11346700152332331,
+            "dimension": "TYPE",
+            "first": "PKM_ARON",
+            "seed": 1731,
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "after_count": 253,
+            "after_exact": false,
+            "after_f1": 0.6666666666666666,
+            "after_valid": true,
+            "before_count": 251,
+            "before_exact": false,
+            "before_f1": 0.656,
+            "before_valid": true,
+            "delta_f1": 0.010666666666666602,
+            "dimension": "TYPE",
+            "first": "PKM_ARBOLIVA",
+            "seed": 1731,
+            "subject": "PKM_FLORAGATO"
+          },
+          {
+            "after_count": 133,
+            "after_exact": false,
+            "after_f1": 0.22131147540983606,
+            "after_valid": true,
+            "before_count": 112,
+            "before_exact": false,
+            "before_f1": 0.1507537688442211,
+            "before_valid": true,
+            "delta_f1": 0.07055770656561497,
+            "dimension": "TYPE",
+            "first": "PKM_BASCULEGION",
+            "seed": 1731,
+            "subject": "PKM_FROSLASS"
+          }
+        ],
+        "exact_gains": 0,
+        "exact_losses": 0
+      }
+    ]
+  },
+  "diagnosis_script_sha256": "904ee44d9337bd41aac7e4b42cdaaad9ae798be84cced1e46e20e103b0b82d5f",
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "030d9ff342d732c04761aa8136f897b2b196f6e3bbd7d6796741e5c9030c9e85",
+    "source_tree_sha256": "80ad3355c737f5fe7c4a620e889d5b7ded056f3afd874774b650349a485ea1e1",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "new_query_executions": 1998,
+  "raw_summary": {
+    "path": "runs/learning/guidance-uniqueness-v1/summary.json",
+    "sha256": "edc19fc41ea93f63cff3163c00c6b58d414328cce36ea01b582bcac6ff85d82f"
+  },
+  "reference_sha256": {
+    "runs/learning/batched-evaluation-v1/seed-1729-unique.json": "3c6e01fd2c8092e53e4a201b0cef15aa47d87601253b4238a82d4967be0d7711",
+    "runs/learning/batched-evaluation-v1/seed-1730-unique.json": "6d3c1081d8647d08d98c5d6c56a126ec3ca507d415ab85a26a0d223b53cbbb1e",
+    "runs/learning/batched-evaluation-v1/seed-1731-unique.json": "7ad952218d04fa97d5c50f2c743ad23dd6912561f40bbba2b1fc588e8f09c42f",
+    "runs/learning/first-guidance-v1/seed-1729-alpha-0.json": "4bf37443663a34245f8ffdfb24785a84824bbc153ddc78c176eb7393ef99a776",
+    "runs/learning/first-guidance-v1/seed-1729-alpha-16.json": "3d2cfd4801e55ddb74b6fde76cabbb844565a2b177dd5f29b784f325c2eccd95",
+    "runs/learning/first-guidance-v1/seed-1729-alpha-4.json": "c125a3aec87d162952f5f294bc4a7b7d4a4d78a1b889f08deb77d8a4770c5a0b",
+    "runs/learning/first-guidance-v1/seed-1730-alpha-0.json": "0279001ac7fa6193029a5c8fdc87f4a8fa967bee2ac1e230db29101b094301dc",
+    "runs/learning/first-guidance-v1/seed-1730-alpha-16.json": "a2376fe2b0ffb055a5817da691b8bec1ccbe27da8b6cc1d5a617056c4d8a684a",
+    "runs/learning/first-guidance-v1/seed-1730-alpha-4.json": "d0e9b7822d86640b5f43a4921fac16ebf6c7713a8d7c967040b0dee4506f60cf",
+    "runs/learning/first-guidance-v1/seed-1731-alpha-0.json": "027e5220081f74d2d849ad801a7520949041697fa3f67d28ec18e494276c0e17",
+    "runs/learning/first-guidance-v1/seed-1731-alpha-16.json": "1f251e819b0aaf41b8b3777e9b532fe2a8443a0363114cdc9905b38d7232e269",
+    "runs/learning/first-guidance-v1/seed-1731-alpha-4.json": "56b1f91838e6f03e04e433f65aa24518c51963f348dcc82badcdf72d813a386a"
+  },
+  "report_sha256": {
+    "seed-1729-alpha-0-unique.json": "c48055b58a92213f03961d989608b709b53a3ea880aef81e41c586221b6a849b",
+    "seed-1729-alpha-16-unique.json": "ac569792529e04a70de288c5879de26d6c762dc6845dbf91e9e26df8556e90db",
+    "seed-1729-alpha-4-unique.json": "f13aa5b360eb3139f6777a04b616c78b8ece49b5b0a74a960e7e51fb5b50dc67",
+    "seed-1730-alpha-0-unique.json": "ea7147d2862cb9105b4bf00ca750d4e91a72a27fefbf806705b649ba9b0d82c9",
+    "seed-1730-alpha-16-unique.json": "404b076c9efe623d11dcc152d092f1e7c07ceecac73e2af16281166cd479d97d",
+    "seed-1730-alpha-4-unique.json": "511258587d744e96fb05a8b0874c1282c142579e688a329a9c46d45f75f4c5e3",
+    "seed-1731-alpha-0-unique.json": "83b76ab6d790a278c065c6490ab3237dfac000e1d0a72ce0cc3b5a688cd7be14",
+    "seed-1731-alpha-16-unique.json": "d7d466e78df02ddf861cfd00b1a5b7d5bc97010b66624d939119913b6851e919",
+    "seed-1731-alpha-4-unique.json": "3484367853dc4fe9f808fc5241d93afe8cb4d8c1d6c4a6a440bc63073de73feb"
+  },
+  "reused_query_executions": 1998,
+  "runs": [
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1768,
+          "old_token": 1451,
+          "subject": "PKM_AERODACTYL",
+          "token_position": 6
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1052,
+          "old_token": 1049,
+          "subject": "PKM_ARCHALUDON",
+          "token_position": 12
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1089,
+          "old_token": 1087,
+          "subject": "PKM_CRAWDAUNT",
+          "token_position": 14
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1676,
+          "old_token": 1688,
+          "subject": "PKM_GROUDON",
+          "token_position": 40
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.6981981981981982,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.8963963963963963
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6441441441441441,
+        "exact_set_accuracy": 0.6441441441441441,
+        "f1": 0.8373627688954571,
+        "mean_target_count": 117.5945945945946,
+        "precision": 0.8848794669472965,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8335427935111591,
+        "mean_target_count": 118.49549549549549,
+        "precision": 0.8762298517865633,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.9009009009009009,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1289,
+          "old_token": 1283,
+          "subject": "PKM_AEGISLASH",
+          "token_position": 64
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1052,
+          "old_token": 1049,
+          "subject": "PKM_ARCHALUDON",
+          "token_position": 12
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1089,
+          "old_token": 1087,
+          "subject": "PKM_CRAWDAUNT",
+          "token_position": 14
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1467,
+          "old_token": 1269,
+          "subject": "PKM_DUNSPARCE",
+          "token_position": 7
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1676,
+          "old_token": 1688,
+          "subject": "PKM_GROUDON",
+          "token_position": 40
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7297297297297297,
+        "first_is_subject_rate": 0.02702702702702703,
+        "first_is_target_rate": 0.963963963963964
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8815205471533059,
+        "mean_target_count": 118.25675675675676,
+        "precision": 0.9242094927666843,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8652126517204289,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8774285554222243,
+        "mean_target_count": 119.21621621621621,
+        "precision": 0.9150991911728082,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8652126517204289,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1289,
+          "old_token": 1283,
+          "subject": "PKM_AEGISLASH",
+          "token_position": 64
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1052,
+          "old_token": 1049,
+          "subject": "PKM_ARCHALUDON",
+          "token_position": 12
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1089,
+          "old_token": 1087,
+          "subject": "PKM_CRAWDAUNT",
+          "token_position": 14
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1467,
+          "old_token": 1269,
+          "subject": "PKM_DUNSPARCE",
+          "token_position": 7
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1676,
+          "old_token": 1688,
+          "subject": "PKM_GROUDON",
+          "token_position": 40
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1116,
+          "old_token": 1114,
+          "subject": "PKM_PILOSWINE",
+          "token_position": 16
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02702702702702703,
+        "first_is_target_rate": 0.9684684684684685
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6801801801801802,
+        "exact_set_accuracy": 0.6801801801801802,
+        "f1": 0.8857111644302244,
+        "mean_target_count": 119.08108108108108,
+        "precision": 0.9245952218675837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8815864566487325,
+        "mean_target_count": 120.04054054054055,
+        "precision": 0.9155413934365224,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1077,
+          "old_token": 1059,
+          "subject": "PKM_CARBINK",
+          "token_position": 7
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1365,
+          "old_token": 1029,
+          "subject": "PKM_CLODSIRE",
+          "token_position": 44
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1036,
+          "old_token": 1035,
+          "subject": "PKM_GRAPPLOCT",
+          "token_position": 6
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1354,
+          "old_token": 1251,
+          "subject": "PKM_KECLEON",
+          "token_position": 8
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1172,
+          "old_token": 1164,
+          "subject": "PKM_SWANNA",
+          "token_position": 35
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1363,
+          "old_token": 1365,
+          "subject": "PKM_ZUBAT",
+          "token_position": 56
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.6441441441441441,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.8603603603603603
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.5855855855855856,
+        "exact_set_accuracy": 0.5855855855855856,
+        "f1": 0.7925742979370468,
+        "mean_target_count": 119.86036036036036,
+        "precision": 0.8241332321266621,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7889324730366511,
+        "mean_target_count": 120.73423423423424,
+        "precision": 0.8161655120260894,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.8738738738738738,
+        "termination_rate": 1.0
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1568,
+          "old_token": 1542,
+          "subject": "PKM_AZUMARILL",
+          "token_position": 9
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1077,
+          "old_token": 1059,
+          "subject": "PKM_CARBINK",
+          "token_position": 7
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1047,
+          "old_token": 1040,
+          "subject": "PKM_CLODSIRE",
+          "token_position": 9
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1036,
+          "old_token": 1035,
+          "subject": "PKM_GRAPPLOCT",
+          "token_position": 6
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1354,
+          "old_token": 1251,
+          "subject": "PKM_KECLEON",
+          "token_position": 8
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1172,
+          "old_token": 1164,
+          "subject": "PKM_SWANNA",
+          "token_position": 35
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1363,
+          "old_token": 1365,
+          "subject": "PKM_ZUBAT",
+          "token_position": 56
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.9684684684684685
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6711711711711712,
+        "exact_set_accuracy": 0.6711711711711712,
+        "f1": 0.8798670546084822,
+        "mean_target_count": 120.06756756756756,
+        "precision": 0.9121705172686073,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8660484691424674,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8757550037000824,
+        "mean_target_count": 121.02252252252252,
+        "precision": 0.9032648420234586,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8660484691424674,
+        "self_return_rate": 0.954954954954955,
+        "termination_rate": 1.0
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1568,
+          "old_token": 1542,
+          "subject": "PKM_AZUMARILL",
+          "token_position": 9
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1077,
+          "old_token": 1059,
+          "subject": "PKM_CARBINK",
+          "token_position": 7
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1047,
+          "old_token": 1040,
+          "subject": "PKM_CLODSIRE",
+          "token_position": 9
+        },
+        {
+          "dimension": "COLOR",
+          "new_token": 1036,
+          "old_token": 1035,
+          "subject": "PKM_GRAPPLOCT",
+          "token_position": 6
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1354,
+          "old_token": 1251,
+          "subject": "PKM_KECLEON",
+          "token_position": 8
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1172,
+          "old_token": 1164,
+          "subject": "PKM_SWANNA",
+          "token_position": 35
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1363,
+          "old_token": 1365,
+          "subject": "PKM_ZUBAT",
+          "token_position": 56
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.972972972972973
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8829904611575127,
+        "mean_target_count": 120.48648648648648,
+        "precision": 0.9143281240618508,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8788709116281672,
+        "mean_target_count": 121.44594594594595,
+        "precision": 0.9054238086455628,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1216,
+          "old_token": 1147,
+          "subject": "PKM_AEGISLASH",
+          "token_position": 13
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1265,
+          "old_token": 1077,
+          "subject": "PKM_ARCTIBAX",
+          "token_position": 7
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1911,
+          "old_token": 1907,
+          "subject": "PKM_CARBINK",
+          "token_position": 30
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1038,
+          "old_token": 1046,
+          "subject": "PKM_FLORAGATO",
+          "token_position": 13
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1285,
+          "old_token": 1265,
+          "subject": "PKM_FROSLASS",
+          "token_position": 46
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.6531531531531531,
+        "first_is_subject_rate": 0.009009009009009009,
+        "first_is_target_rate": 0.8468468468468469
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6036036036036037,
+        "exact_set_accuracy": 0.6036036036036037,
+        "f1": 0.7789383196220302,
+        "mean_target_count": 118.98648648648648,
+        "precision": 0.8155194135027751,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7754230790650419,
+        "mean_target_count": 119.81981981981981,
+        "precision": 0.8078094304334357,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.8333333333333334,
+        "termination_rate": 1.0
+      },
+      "seed": 1731
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1129,
+          "old_token": 1138,
+          "subject": "PKM_ARCHALUDON",
+          "token_position": 20
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1911,
+          "old_token": 1907,
+          "subject": "PKM_CARBINK",
+          "token_position": 30
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1038,
+          "old_token": 1046,
+          "subject": "PKM_FLORAGATO",
+          "token_position": 13
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1285,
+          "old_token": 1265,
+          "subject": "PKM_FROSLASS",
+          "token_position": 46
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7432432432432432,
+        "first_is_subject_rate": 0.013513513513513514,
+        "first_is_target_rate": 0.9774774774774775
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.8814242788905475,
+        "mean_target_count": 120.65765765765765,
+        "precision": 0.9157157461693961,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.869292263836282,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8773830978229579,
+        "mean_target_count": 121.61261261261261,
+        "precision": 0.906994516972485,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.869292263836282,
+        "self_return_rate": 0.954954954954955,
+        "termination_rate": 1.0
+      },
+      "seed": 1731
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "divergences": [
+        {
+          "dimension": "TYPE",
+          "new_token": 1129,
+          "old_token": 1138,
+          "subject": "PKM_ARCHALUDON",
+          "token_position": 20
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1911,
+          "old_token": 1907,
+          "subject": "PKM_CARBINK",
+          "token_position": 30
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1038,
+          "old_token": 1046,
+          "subject": "PKM_FLORAGATO",
+          "token_position": 13
+        },
+        {
+          "dimension": "TYPE",
+          "new_token": 1285,
+          "old_token": 1265,
+          "subject": "PKM_FROSLASS",
+          "token_position": 46
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7387387387387387,
+        "first_is_subject_rate": 0.013513513513513514,
+        "first_is_target_rate": 0.9819819819819819
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.883269746805006,
+        "mean_target_count": 121.31981981981981,
+        "precision": 0.9139915396437757,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8792297947631826,
+        "mean_target_count": 122.27927927927928,
+        "precision": 0.9053583058457837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1731
+    }
+  ],
+  "scope": "Guidance x uniqueness interaction; frozen checkpoints; validation only",
+  "selection": {
+    "candidates": [
+      {
+        "all_valid_terminated_unique": true,
+        "alpha": 4,
+        "eligible": true,
+        "mean_processed_exact": 0.6786786786786787,
+        "mean_processed_f1": 0.8809372935507785,
+        "no_seed_regression_vs_original": true,
+        "paired": [
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.03153153153153154,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.0002857500235057264,
+            "f1_gain_vs_original": 0.04352120080376565,
+            "f1_interaction": 0.0009223274775888024,
+            "seed": 1729
+          },
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.0855855855855856,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.000942480455485728,
+            "f1_gain_vs_original": 0.08797147915446424,
+            "f1_interaction": 0.0002637579724569239,
+            "seed": 1730
+          },
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.08558558558558549,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.0008576772856986326,
+            "f1_gain_vs_original": 0.10395728995815279,
+            "f1_interaction": -0.0006136534039368202,
+            "seed": 1731
+          }
+        ],
+        "strict_mean_exact_improvement": true
+      },
+      {
+        "all_valid_terminated_unique": true,
+        "alpha": 16,
+        "eligible": true,
+        "mean_processed_exact": 0.6816816816816816,
+        "mean_processed_f1": 0.8839904574642476,
+        "no_seed_regression_vs_original": true,
+        "paired": [
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.03603603603603611,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.00031316740550901834,
+            "f1_gain_vs_original": 0.04771181808068414,
+            "f1_interaction": 0.0009497448595920943,
+            "seed": 1729
+          },
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.09009009009009006,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.000942480455485839,
+            "f1_gain_vs_original": 0.09109488570349467,
+            "f1_interaction": 0.0002637579724570349,
+            "seed": 1730
+          },
+          {
+            "exact_gain_vs_guidance": 0.0,
+            "exact_gain_vs_original": 0.08558558558558549,
+            "exact_interaction": 0.0,
+            "f1_gain_vs_guidance": 0.0008576772856988546,
+            "f1_gain_vs_original": 0.10580275787261129,
+            "f1_interaction": -0.0006136534039365982,
+            "seed": 1731
+          }
+        ],
+        "strict_mean_exact_improvement": true
+      }
+    ],
+    "selected_alpha": 16
+  },
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5"
+}

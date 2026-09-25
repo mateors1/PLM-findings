@@ -1,0 +1,58 @@
+{
+  "scope": "Exploratory symmetric membership classifier on queries where generation failed; not sequence output or EOS evidence",
+  "policy": {
+    "exclude_subject": true,
+    "threshold_logit": 0
+  },
+  "rows": [
+    {
+      "seed": 1730,
+      "subject": "PKM_KECLEON",
+      "dimension": "TYPE",
+      "threshold_logit": 0.0,
+      "true_positives": 130,
+      "false_positives": 1,
+      "false_negatives": 0,
+      "f1": 0.9961685823754789,
+      "exact_set": false,
+      "extra_ids": [
+        "PKM_IRON_THORNS"
+      ],
+      "missing_ids": [],
+      "checkpoint_hash": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+      "source_report_sha256": "1cd4bceb80dfc11c9fdad783db4a1939805212866fd486fd62bb2fc3815460e6"
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_CARBINK",
+      "dimension": "TYPE",
+      "threshold_logit": 0.0,
+      "true_positives": 132,
+      "false_positives": 12,
+      "false_negatives": 3,
+      "f1": 0.946236559139785,
+      "exact_set": false,
+      "extra_ids": [
+        "PKM_BELLOSSOM",
+        "PKM_CUFANT",
+        "PKM_DOUBLADE",
+        "PKM_DURANT",
+        "PKM_GOLURK",
+        "PKM_HONEDGE",
+        "PKM_ILLUMISE",
+        "PKM_MAGNETON",
+        "PKM_NINCADA",
+        "PKM_PALPITOAD",
+        "PKM_SLOWPOKE",
+        "PKM_STEELIX"
+      ],
+      "missing_ids": [
+        "PKM_AERODACTYL",
+        "PKM_MIMIKYU",
+        "PKM_TYRANTRUM"
+      ],
+      "checkpoint_hash": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa",
+      "source_report_sha256": "2c53b82a69f05ca4a86e33eae8f823f80e527eef717ffbb0aa1083dd9d88dfef"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "all_outputs_equal": true,
+  "benchmark": {
+    "all_timed_outputs_equal": true,
+    "batch_median_seconds": 1.386775499999203,
+    "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "completion_lengths": [
+      75,
+      141,
+      119,
+      193,
+      131,
+      219,
+      132,
+      140
+    ],
+    "device": "cuda",
+    "paired_time_ratios": [
+      5.321618315295908,
+      5.36227470956308,
+      5.238763971415119
+    ],
+    "rows": [
+      {
+        "peak_allocated_bytes": 38115840,
+        "repetition": 0,
+        "requests_per_second": 1.0840270123813978,
+        "seconds": 7.379889899999398,
+        "variant": "serial"
+      },
+      {
+        "peak_allocated_bytes": 54221312,
+        "repetition": 0,
+        "requests_per_second": 5.76877800336435,
+        "seconds": 1.386775499999203,
+        "variant": "batch"
+      },
+      {
+        "peak_allocated_bytes": 54221312,
+        "repetition": 1,
+        "requests_per_second": 5.810174763518416,
+        "seconds": 1.3768949000004795,
+        "variant": "batch"
+      },
+      {
+        "peak_allocated_bytes": 38115840,
+        "repetition": 1,
+        "requests_per_second": 1.0835279947811238,
+        "seconds": 7.383288699998957,
+        "variant": "serial"
+      },
+      {
+        "peak_allocated_bytes": 38115840,
+        "repetition": 2,
+        "requests_per_second": 1.0863252132879604,
+        "seconds": 7.364277199998469,
+        "variant": "serial"
+      },
+      {
+        "peak_allocated_bytes": 54221312,
+        "repetition": 2,
+        "requests_per_second": 5.691001388612811,
+        "seconds": 1.4057279999979073,
+        "variant": "batch"
+      }
+    ],
+    "scope": "Offline decoder workload: eight fixed requests; original policy; cached FP32 inference; no HTTP, SLO, energy or oracle-performance claim",
+    "serial_median_seconds": 7.379889899999398,
+    "summed_time_ratio": 5.3071099657949725,
+    "total_output_slots": 1752,
+    "useful_output_slots": 1150,
+    "warmup": "one complete workload per path"
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "030d9ff342d732c04761aa8136f897b2b196f6e3bbd7d6796741e5c9030c9e85",
+    "source_tree_sha256": "80ad3355c737f5fe7c4a620e889d5b7ded056f3afd874774b650349a485ea1e1",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "mismatches": [],
+  "query_executions": 1332,
+  "raw_summary": {
+    "path": "runs/learning/batched-evaluation-v1/summary.json",
+    "sha256": "f161a4ef5d9227405ca33ac9e1dc6ac17c67405e544c12f7a711d7abb7849531"
+  },
+  "reference_sha256": {
+    "runs/learning/target-uniqueness-v1/seed-1729-original.json": "8cfabb91482c67e9222b71f21e009d4d10fb835248d31dae4648fdb2463e11b8",
+    "runs/learning/target-uniqueness-v1/seed-1729-unique.json": "39f48653e2769984e20b6e6a0af5978372c451ecbed1ec13c80b30dc58df7cac",
+    "runs/learning/target-uniqueness-v1/seed-1730-original.json": "e22ab782f67d51ab5742b406e98530f8ef38e9ae3ceab7416bc3944d55501742",
+    "runs/learning/target-uniqueness-v1/seed-1730-unique.json": "39ae9ad04398ab9a3b52f7e315e596c344697c44090090ae67d748b166b51d76",
+    "runs/learning/target-uniqueness-v1/seed-1731-original.json": "fd5e9aab1ebad39f4ccfa0ede63ca89a6b195343d5bf4382635316e8ecbde18d",
+    "runs/learning/target-uniqueness-v1/seed-1731-unique.json": "3f9601024227b36bb6ade74cc59928c36be8a486dba31b90b0e052a586865174"
+  },
+  "report_sha256": {
+    "seed-1729-original.json": "3589a8e7b4cb86b2f6bfd142381323128f912a30bdd6682aef9f80e6df4c1b5b",
+    "seed-1729-unique.json": "3c6e01fd2c8092e53e4a201b0cef15aa47d87601253b4238a82d4967be0d7711",
+    "seed-1730-original.json": "2cb013498828a4fb58a368488d3d9afc78a39e4181759021015b8863c0489ea0",
+    "seed-1730-unique.json": "6d3c1081d8647d08d98c5d6c56a126ec3ca507d415ab85a26a0d223b53cbbb1e",
+    "seed-1731-original.json": "ad791f8c2ccedd68285fb6c4f80931d213fd80c4d95a98abbdf84e620f2515f7",
+    "seed-1731-unique.json": "7ad952218d04fa97d5c50f2c743ad23dd6912561f40bbba2b1fc588e8f09c42f"
+  },
+  "runs": [
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6441441441441441,
+        "exact_set_accuracy": 0.6441441441441441,
+        "f1": 0.8379993463495402,
+        "mean_target_count": 117.02252252252252,
+        "precision": 0.8861271484523306,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8165597863482479,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.018018018018018018,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8340801445405982,
+        "mean_target_count": 118.02702702702703,
+        "precision": 0.8771505830941294,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8165597863482479,
+        "self_return_rate": 0.9054054054054054,
+        "termination_rate": 1.0
+      },
+      "seed": 1729,
+      "unique": false
+    },
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6441441441441441,
+        "exact_set_accuracy": 0.6441441441441441,
+        "f1": 0.8373627688954571,
+        "mean_target_count": 117.5945945945946,
+        "precision": 0.8848794669472965,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8335427935111591,
+        "mean_target_count": 118.49549549549549,
+        "precision": 0.8762298517865633,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.9009009009009009,
+        "termination_rate": 1.0
+      },
+      "seed": 1729,
+      "unique": true
+    },
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.5855855855855856,
+        "exact_set_accuracy": 0.5855855855855856,
+        "f1": 0.791895575454018,
+        "mean_target_count": 121.72972972972973,
+        "precision": 0.8230217213396244,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.778692861932728,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.02702702702702703,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7881645783043464,
+        "mean_target_count": 122.76126126126127,
+        "precision": 0.8148638096331947,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.778692861932728,
+        "self_return_rate": 0.8738738738738738,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1730,
+      "unique": false
+    },
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.5855855855855856,
+        "exact_set_accuracy": 0.5855855855855856,
+        "f1": 0.7925742979370468,
+        "mean_target_count": 119.86036036036036,
+        "precision": 0.8241332321266621,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7889324730366511,
+        "mean_target_count": 120.73423423423424,
+        "precision": 0.8161655120260894,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.8738738738738738,
+        "termination_rate": 1.0
+      },
+      "seed": 1730,
+      "unique": true
+    },
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6036036036036037,
+        "exact_set_accuracy": 0.6036036036036037,
+        "f1": 0.7774669889323947,
+        "mean_target_count": 120.45495495495496,
+        "precision": 0.8140988598044719,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.7623252491687904,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.02252252252252252,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7738642877295236,
+        "mean_target_count": 121.42342342342343,
+        "precision": 0.8061973705963048,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.7623252491687904,
+        "self_return_rate": 0.8333333333333334,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1731,
+      "unique": false
+    },
+    {
+      "metrics_equal": true,
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6036036036036037,
+        "exact_set_accuracy": 0.6036036036036037,
+        "f1": 0.7789383196220302,
+        "mean_target_count": 118.98648648648648,
+        "precision": 0.8155194135027751,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7754230790650419,
+        "mean_target_count": 119.81981981981981,
+        "precision": 0.8078094304334357,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.8333333333333334,
+        "termination_rate": 1.0
+      },
+      "seed": 1731,
+      "unique": true
+    }
+  ],
+  "scope": "batch size eight versus frozen serial decoding: three seeds, two policies, fixed validation partition",
+  "script_sha256": "6d4a65ccfe6f1eb98dc538e343f0b5b8e74510c4da46cdd54de948ca39388eec",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5"
+}

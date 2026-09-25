@@ -1,0 +1,2812 @@
+{
+  "diagnosis": [
+    {
+      "alpha": 0,
+      "changed_outputs_with_unchanged_first": 0,
+      "exact_counts": [
+        143,
+        130,
+        134
+      ],
+      "failures": [
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1730,
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1731,
+          "subject": "PKM_CARBINK"
+        }
+      ],
+      "first_change_counts": [
+        0,
+        0,
+        0
+      ],
+      "first_exact_counts": [
+        155,
+        143,
+        145
+      ],
+      "first_subject_counts": [
+        5,
+        5,
+        2
+      ],
+      "first_target_counts": [
+        199,
+        191,
+        188
+      ],
+      "gained_exact": 0,
+      "largest_gains": [],
+      "largest_losses": [],
+      "lost_exact": 0,
+      "mean_processed_f1": 0.8024539702453176,
+      "mean_raw_f1": 0.7987030035248227,
+      "member_to_wrong": 0,
+      "valid_counts": [
+        222,
+        221,
+        221
+      ],
+      "wrong_to_member": 0
+    },
+    {
+      "alpha": 1,
+      "changed_outputs_with_unchanged_first": 0,
+      "exact_counts": [
+        150,
+        144,
+        150
+      ],
+      "failures": [
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1730,
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1731,
+          "subject": "PKM_CARBINK"
+        }
+      ],
+      "first_change_counts": [
+        15,
+        19,
+        28
+      ],
+      "first_exact_counts": [
+        162,
+        158,
+        162
+      ],
+      "first_subject_counts": [
+        5,
+        5,
+        3
+      ],
+      "first_target_counts": [
+        211,
+        210,
+        214
+      ],
+      "gained_exact": 37,
+      "largest_gains": [
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AGGRON",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_ABOMASNOW",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_ABRA",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_AGGRON",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AERODACTYL",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_APPLETUN",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_DRIFBLIM"
+        }
+      ],
+      "largest_losses": [
+        {
+          "after_exact": false,
+          "after_f1": 0.4908424908424908,
+          "after_first": "PKM_GASTLY",
+          "before_exact": false,
+          "before_f1": 0.6564102564102564,
+          "before_first": "PKM_AEGISLASH",
+          "delta_f1": -0.1655677655677656,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "after_exact": false,
+          "after_f1": 0.4268292682926829,
+          "after_first": "PKM_BELDUM",
+          "before_exact": false,
+          "before_f1": 0.5470085470085471,
+          "before_first": "PKM_AEGISLASH",
+          "delta_f1": -0.12017927871586415,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_SKARMORY"
+        }
+      ],
+      "lost_exact": 0,
+      "mean_processed_f1": 0.8670876732813212,
+      "mean_raw_f1": 0.8629399945053625,
+      "member_to_wrong": 1,
+      "valid_counts": [
+        222,
+        221,
+        221
+      ],
+      "wrong_to_member": 58
+    },
+    {
+      "alpha": 4,
+      "changed_outputs_with_unchanged_first": 0,
+      "exact_counts": [
+        150,
+        149,
+        153
+      ],
+      "failures": [
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1730,
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1731,
+          "subject": "PKM_CARBINK"
+        }
+      ],
+      "first_change_counts": [
+        20,
+        25,
+        33
+      ],
+      "first_exact_counts": [
+        162,
+        163,
+        165
+      ],
+      "first_subject_counts": [
+        6,
+        5,
+        3
+      ],
+      "first_target_counts": [
+        214,
+        215,
+        217
+      ],
+      "gained_exact": 45,
+      "largest_gains": [
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AGGRON",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_ABOMASNOW",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_ABRA",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_AGGRON",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AERODACTYL",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_APPLETUN",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_DRIFBLIM"
+        }
+      ],
+      "largest_losses": [
+        {
+          "after_exact": false,
+          "after_f1": 0.10071942446043165,
+          "after_first": "PKM_TOXTRICITY",
+          "before_exact": false,
+          "before_f1": 0.70995670995671,
+          "before_first": "PKM_AMOONGUSS",
+          "delta_f1": -0.6092372854962783,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "after_exact": false,
+          "after_f1": 0.5714285714285714,
+          "after_first": "PKM_BOMBIRDIER",
+          "before_exact": false,
+          "before_f1": 0.9925925925925926,
+          "before_first": "PKM_ABSOL",
+          "delta_f1": -0.4211640211640212,
+          "dimension": "TYPE",
+          "seed": 1731,
+          "subject": "PKM_MIGHTYENA"
+        },
+        {
+          "after_exact": false,
+          "after_f1": 0.4908424908424908,
+          "after_first": "PKM_GASTLY",
+          "before_exact": false,
+          "before_f1": 0.6564102564102564,
+          "before_first": "PKM_AEGISLASH",
+          "delta_f1": -0.1655677655677656,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_SABLEYE"
+        }
+      ],
+      "lost_exact": 0,
+      "mean_processed_f1": 0.8802419909625485,
+      "mean_raw_f1": 0.8759939049139633,
+      "member_to_wrong": 2,
+      "valid_counts": [
+        222,
+        221,
+        221
+      ],
+      "wrong_to_member": 70
+    },
+    {
+      "alpha": 16,
+      "changed_outputs_with_unchanged_first": 0,
+      "exact_counts": [
+        151,
+        150,
+        153
+      ],
+      "failures": [
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1730,
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "count": 507,
+          "dimension": "TYPE",
+          "error": "response must terminate with EOS",
+          "seed": 1731,
+          "subject": "PKM_CARBINK"
+        }
+      ],
+      "first_change_counts": [
+        24,
+        29,
+        37
+      ],
+      "first_exact_counts": [
+        163,
+        163,
+        164
+      ],
+      "first_subject_counts": [
+        6,
+        5,
+        3
+      ],
+      "first_target_counts": [
+        215,
+        216,
+        218
+      ],
+      "gained_exact": 48,
+      "largest_gains": [
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AGGRON",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_ABOMASNOW",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_ABRA",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_AGGRON",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after_exact": true,
+          "after_f1": 1.0,
+          "after_first": "PKM_AERODACTYL",
+          "before_exact": false,
+          "before_f1": 0.0,
+          "before_first": "PKM_APPLETUN",
+          "delta_f1": 1.0,
+          "dimension": "COLOR",
+          "seed": 1729,
+          "subject": "PKM_DRIFBLIM"
+        }
+      ],
+      "largest_losses": [
+        {
+          "after_exact": false,
+          "after_f1": 0.10071942446043165,
+          "after_first": "PKM_TOXTRICITY",
+          "before_exact": false,
+          "before_f1": 0.70995670995671,
+          "before_first": "PKM_AMOONGUSS",
+          "delta_f1": -0.6092372854962783,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "after_exact": false,
+          "after_f1": 0.08247422680412371,
+          "after_first": "PKM_SEISMITOAD",
+          "before_exact": false,
+          "before_f1": 0.5662650602409639,
+          "before_first": "PKM_ABOMASNOW",
+          "delta_f1": -0.4837908334368402,
+          "dimension": "TYPE",
+          "seed": 1729,
+          "subject": "PKM_PILOSWINE"
+        },
+        {
+          "after_exact": false,
+          "after_f1": 0.5714285714285714,
+          "after_first": "PKM_BOMBIRDIER",
+          "before_exact": false,
+          "before_f1": 0.9925925925925926,
+          "before_first": "PKM_ABSOL",
+          "delta_f1": -0.4211640211640212,
+          "dimension": "TYPE",
+          "seed": 1731,
+          "subject": "PKM_MIGHTYENA"
+        }
+      ],
+      "lost_exact": 1,
+      "mean_processed_f1": 0.8832860157486832,
+      "mean_raw_f1": 0.8790069320144717,
+      "member_to_wrong": 2,
+      "valid_counts": [
+        222,
+        221,
+        221
+      ],
+      "wrong_to_member": 73
+    }
+  ],
+  "diagnosis_script_sha256": "0cd3ce80d3ac378b07c836c343e349acedd385cecda9857ab70addf2d6984fae",
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "030d9ff342d732c04761aa8136f897b2b196f6e3bbd7d6796741e5c9030c9e85",
+    "source_tree_sha256": "80ad3355c737f5fe7c4a620e889d5b7ded056f3afd874774b650349a485ea1e1",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "helpers_sha256": "6d4a65ccfe6f1eb98dc538e343f0b5b8e74510c4da46cdd54de948ca39388eec",
+  "query_executions": 2664,
+  "raw_summary": {
+    "path": "runs/learning/first-guidance-v1/summary.json",
+    "sha256": "8bb853c4bcf75c29bfaaf6ae2e39406ed891bc04a536fa0130b17cdffb3cd8ce"
+  },
+  "reference_sha256": {
+    "runs/learning/batched-evaluation-v1/seed-1729-original.json": "3589a8e7b4cb86b2f6bfd142381323128f912a30bdd6682aef9f80e6df4c1b5b",
+    "runs/learning/batched-evaluation-v1/seed-1730-original.json": "2cb013498828a4fb58a368488d3d9afc78a39e4181759021015b8863c0489ea0",
+    "runs/learning/batched-evaluation-v1/seed-1731-original.json": "ad791f8c2ccedd68285fb6c4f80931d213fd80c4d95a98abbdf84e620f2515f7"
+  },
+  "report_sha256": {
+    "seed-1729-alpha-0.json": "4bf37443663a34245f8ffdfb24785a84824bbc153ddc78c176eb7393ef99a776",
+    "seed-1729-alpha-1.json": "aa69da3a6e31f56e6073b06c3ee92379131f0dabe26dc4d3723bd909d322e245",
+    "seed-1729-alpha-16.json": "3d2cfd4801e55ddb74b6fde76cabbb844565a2b177dd5f29b784f325c2eccd95",
+    "seed-1729-alpha-4.json": "c125a3aec87d162952f5f294bc4a7b7d4a4d78a1b889f08deb77d8a4770c5a0b",
+    "seed-1730-alpha-0.json": "0279001ac7fa6193029a5c8fdc87f4a8fa967bee2ac1e230db29101b094301dc",
+    "seed-1730-alpha-1.json": "46203a6bac6c9ff8ea941932b71f7a72fb0b9ab5d747c51e066b5759bcf4e359",
+    "seed-1730-alpha-16.json": "a2376fe2b0ffb055a5817da691b8bec1ccbe27da8b6cc1d5a617056c4d8a684a",
+    "seed-1730-alpha-4.json": "d0e9b7822d86640b5f43a4921fac16ebf6c7713a8d7c967040b0dee4506f60cf",
+    "seed-1731-alpha-0.json": "027e5220081f74d2d849ad801a7520949041697fa3f67d28ec18e494276c0e17",
+    "seed-1731-alpha-1.json": "b64ad0075f1216642d8c0e9637363fe635bbde61272101985931e546e3c8ae45",
+    "seed-1731-alpha-16.json": "1f251e819b0aaf41b8b3777e9b532fe2a8443a0363114cdc9905b38d7232e269",
+    "seed-1731-alpha-4.json": "56b1f91838e6f03e04e433f65aa24518c51963f348dcc82badcdf72d813a386a"
+  },
+  "runs": [
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "first_changes": [],
+      "first_metrics": {
+        "first_exact_rate": 0.6981981981981982,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.8963963963963963
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6441441441441441,
+        "exact_set_accuracy": 0.6441441441441441,
+        "f1": 0.8379993463495402,
+        "mean_target_count": 117.02252252252252,
+        "precision": 0.8861271484523306,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8165597863482479,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.018018018018018018,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8340801445405982,
+        "mean_target_count": 118.02702702702703,
+        "precision": 0.8771505830941294,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8165597863482479,
+        "self_return_rate": 0.9054054054054054,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 1,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": false,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CRAMORANT",
+          "after_is_target": true,
+          "before": "PKM_IRON_MOTH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GOLEM",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BONSLY"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DRIFBLIM"
+        },
+        {
+          "after": "PKM_BEEDRILL",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DUNSPARCE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_IMPIDIMP"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_OKIDOGI"
+        },
+        {
+          "after": "PKM_GASTLY",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "after": "PKM_BELDUM",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_GEODUDE",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7297297297297297,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.9504504504504504
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8767718601603117,
+        "mean_target_count": 117.56756756756756,
+        "precision": 0.9224820766137565,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8581799303854591,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02252252252252252,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8726868654909499,
+        "mean_target_count": 118.57207207207207,
+        "precision": 0.913112736500038,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8581799303854591,
+        "self_return_rate": 0.9504504504504504,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_PANGORO",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": false,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CRAMORANT",
+          "after_is_target": true,
+          "before": "PKM_IRON_MOTH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GOLEM",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_DRAGONAIR",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_AZURILL"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BONSLY"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DRIFBLIM"
+        },
+        {
+          "after": "PKM_BEEDRILL",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DUNSPARCE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "after": "PKM_AROMATISSE",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_IMPIDIMP"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_OKIDOGI"
+        },
+        {
+          "after": "PKM_DRAGONAIR",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_PHANPY"
+        },
+        {
+          "after": "PKM_GASTLY",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "after": "PKM_BELDUM",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_TOXTRICITY",
+          "after_is_target": false,
+          "before": "PKM_AMOONGUSS",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "after": "PKM_GEODUDE",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7297297297297297,
+        "first_is_subject_rate": 0.02702702702702703,
+        "first_is_target_rate": 0.963963963963964
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8812347971298001,
+        "mean_target_count": 117.2072072072072,
+        "precision": 0.9250047667124328,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8647789390174112,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02252252252252252,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8771096067547031,
+        "mean_target_count": 118.22072072072072,
+        "precision": 0.9155933881949438,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8647789390174112,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_PANGORO",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": false,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CRAMORANT",
+          "after_is_target": true,
+          "before": "PKM_IRON_MOTH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GOLEM",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_DRAGONAIR",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_AZURILL"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BONSLY"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DRIFBLIM"
+        },
+        {
+          "after": "PKM_BEEDRILL",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DUNSPARCE"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "after": "PKM_AROMATISSE",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_IMPIDIMP"
+        },
+        {
+          "after": "PKM_LUGIA",
+          "after_is_target": true,
+          "before": "PKM_DEINO",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_INKAY"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_OKIDOGI"
+        },
+        {
+          "after": "PKM_DRAGONAIR",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_PHANPY"
+        },
+        {
+          "after": "PKM_SEISMITOAD",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_PILOSWINE"
+        },
+        {
+          "after": "PKM_GASTLY",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "after": "PKM_BELDUM",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_TOXTRICITY",
+          "after_is_target": false,
+          "before": "PKM_AMOONGUSS",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "after": "PKM_GEODUDE",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02702702702702703,
+        "first_is_target_rate": 0.9684684684684685
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6801801801801802,
+        "exact_set_accuracy": 0.6801801801801802,
+        "f1": 0.8853979970247153,
+        "mean_target_count": 117.68468468468468,
+        "precision": 0.9255153575171413,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.870299568062085,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02702702702702703,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8811860831879181,
+        "mean_target_count": 118.84684684684684,
+        "precision": 0.9160136386823204,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.870299568062085,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "seed": 1729
+    },
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "first_changes": [],
+      "first_metrics": {
+        "first_exact_rate": 0.6441441441441441,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.8603603603603603
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.5855855855855856,
+        "exact_set_accuracy": 0.5855855855855856,
+        "f1": 0.791895575454018,
+        "mean_target_count": 121.72972972972973,
+        "precision": 0.8230217213396244,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.778692861932728,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02702702702702703,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7881645783043464,
+        "mean_target_count": 122.76126126126127,
+        "precision": 0.8148638096331947,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.778692861932728,
+        "self_return_rate": 0.8738738738738738,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 1,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_POLTCHAGEIST",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BERGMITE"
+        },
+        {
+          "after": "PKM_INFERNAPE",
+          "after_is_target": true,
+          "before": "PKM_CHIEN_PAO",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_EXEGGUTOR"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_JIGGLYPUFF",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HATTREM"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HONCHKROW"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_JANGMO_O"
+        },
+        {
+          "after": "PKM_PAWMO",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_LARVITAR"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_RABSCA"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_TYPHLOSION"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7117117117117117,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.9459459459459459
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6486486486486487,
+        "exact_set_accuracy": 0.6486486486486487,
+        "f1": 0.8569589710131157,
+        "mean_target_count": 121.98648648648648,
+        "precision": 0.8886429431493569,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8434207596035478,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02702702702702703,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8526720662265775,
+        "mean_target_count": 123.4054054054054,
+        "precision": 0.8794359976776839,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8434207596035478,
+        "self_return_rate": 0.9459459459459459,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_HATTERENE",
+          "after_is_target": true,
+          "before": "PKM_GARDEVOIR",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_AZUMARILL"
+        },
+        {
+          "after": "PKM_POLTCHAGEIST",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BERGMITE"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "after": "PKM_INFERNAPE",
+          "after_is_target": true,
+          "before": "PKM_CHIEN_PAO",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_EELEKTRIK"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_EXEGGUTOR"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_JIGGLYPUFF",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HATTREM"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HONCHKROW"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_JANGMO_O"
+        },
+        {
+          "after": "PKM_PAWMO",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_LARVITAR"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_RABSCA"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SCRAFTY"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SUNFLORA"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_TYPHLOSION"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.9684684684684685
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6711711711711712,
+        "exact_set_accuracy": 0.6711711711711712,
+        "f1": 0.8789245741529965,
+        "mean_target_count": 122.08558558558559,
+        "precision": 0.91047670405023,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8654780281396894,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.03153153153153153,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8744342431987593,
+        "mean_target_count": 123.64864864864865,
+        "precision": 0.9008351436991437,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8654780281396894,
+        "self_return_rate": 0.963963963963964,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_HATTERENE",
+          "after_is_target": true,
+          "before": "PKM_GARDEVOIR",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_AZUMARILL"
+        },
+        {
+          "after": "PKM_POLTCHAGEIST",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BERGMITE"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_BONSLY"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "after": "PKM_INFERNAPE",
+          "after_is_target": true,
+          "before": "PKM_CHIEN_PAO",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_EELEKTRIK"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_EXEGGUTOR"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_JIGGLYPUFF",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HATTREM"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HONCHKROW"
+        },
+        {
+          "after": "PKM_ALOMOMOLA",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_JANGMO_O"
+        },
+        {
+          "after": "PKM_PAWMO",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_LARVITAR"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_BRONZONG",
+          "after_is_target": true,
+          "before": "PKM_BELDUM",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_MEDICHAM"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_RABSCA"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ROTOM"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SCRAFTY"
+        },
+        {
+          "after": "PKM_BELDUM",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SUNFLORA"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_TYPHLOSION"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7342342342342343,
+        "first_is_subject_rate": 0.02252252252252252,
+        "first_is_target_rate": 0.972972972972973
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8820479807020268,
+        "mean_target_count": 122.50450450450451,
+        "precision": 0.9126343108434734,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8700708902243874,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.03153153153153153,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8775501511268444,
+        "mean_target_count": 124.07207207207207,
+        "precision": 0.9029941103212479,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8700708902243874,
+        "self_return_rate": 0.9684684684684685,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1730
+    },
+    {
+      "alpha": 0,
+      "baseline_exact_replay": true,
+      "first_changes": [],
+      "first_metrics": {
+        "first_exact_rate": 0.6531531531531531,
+        "first_is_subject_rate": 0.009009009009009009,
+        "first_is_target_rate": 0.8468468468468469
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6036036036036037,
+        "exact_set_accuracy": 0.6036036036036037,
+        "f1": 0.7774669889323947,
+        "mean_target_count": 120.45495495495496,
+        "precision": 0.8140988598044719,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.7623252491687904,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.02252252252252252,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7738642877295236,
+        "mean_target_count": 121.42342342342343,
+        "precision": 0.8061973705963048,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.7623252491687904,
+        "self_return_rate": 0.8333333333333334,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1731
+    },
+    {
+      "alpha": 1,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_DURANT",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CELESTEELA",
+          "after_is_target": true,
+          "before": "PKM_GALLADE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "after": "PKM_ARCHALUDON",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": true,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BEAUTIFLY"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_FERROSEED",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BRUTE_BONNET"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BUIZEL"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CARRACOSTA"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GARDEVOIR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_CHERUBI"
+        },
+        {
+          "after": "PKM_ABSOL",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ELECTRIKE"
+        },
+        {
+          "after": "PKM_ALCREMIE",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FLITTLE"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": false,
+          "before": "PKM_BALTOY",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "after": "PKM_RUFFLET",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "after": "PKM_GOLETT",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "after": "PKM_IRON_HANDS",
+          "after_is_target": true,
+          "before": "PKM_CHARJABUG",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SEVIPER"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_DEINO",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        },
+        {
+          "after": "PKM_ARCANINE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_VULPIX"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7297297297297297,
+        "first_is_subject_rate": 0.013513513513513514,
+        "first_is_target_rate": 0.963963963963964
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8675321886705362,
+        "mean_target_count": 121.22072072072072,
+        "precision": 0.9040529046211555,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8527108835244959,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.018018018018018018,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.86346105179856,
+        "mean_target_count": 122.28828828828829,
+        "precision": 0.8952103976899618,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.8527108835244959,
+        "self_return_rate": 0.9414414414414415,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1731
+    },
+    {
+      "alpha": 4,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_DURANT",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CELESTEELA",
+          "after_is_target": true,
+          "before": "PKM_GALLADE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "after": "PKM_ARCHALUDON",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": true,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BEAUTIFLY"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_FERROSEED",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BRUTE_BONNET"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BUIZEL"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CARRACOSTA"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GARDEVOIR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_CHERUBI"
+        },
+        {
+          "after": "PKM_ABSOL",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DEWGONG"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ELECTRIKE"
+        },
+        {
+          "after": "PKM_ALCREMIE",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FLITTLE"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": false,
+          "before": "PKM_BALTOY",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "after": "PKM_RUFFLET",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "after": "PKM_GOLETT",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "after": "PKM_IRON_HANDS",
+          "after_is_target": true,
+          "before": "PKM_CHARJABUG",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_BOMBIRDIER",
+          "after_is_target": true,
+          "before": "PKM_ABSOL",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_MIGHTYENA"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SEVIPER"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_KLEFKI",
+          "after_is_target": true,
+          "before": "PKM_ALCREMIE",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATUFF"
+        },
+        {
+          "after": "PKM_DEINO",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        },
+        {
+          "after": "PKM_ARCANINE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_VULPIX"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7432432432432432,
+        "first_is_subject_rate": 0.013513513513513514,
+        "first_is_target_rate": 0.9774774774774775
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.8805666016048489,
+        "mean_target_count": 122.34234234234235,
+        "precision": 0.9148637154319663,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.868432125499354,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.018018018018018018,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8764378647884276,
+        "mean_target_count": 123.42342342342343,
+        "precision": 0.905955635697368,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.868432125499354,
+        "self_return_rate": 0.954954954954955,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1731
+    },
+    {
+      "alpha": 16,
+      "baseline_exact_replay": null,
+      "first_changes": [
+        {
+          "after": "PKM_DURANT",
+          "after_is_target": true,
+          "before": "PKM_BEAUTIFLY",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after": "PKM_CELESTEELA",
+          "after_is_target": true,
+          "before": "PKM_GALLADE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "after": "PKM_ARCHALUDON",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after": "PKM_AGGRON",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": true,
+          "before": "PKM_GEODUDE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BEAUTIFLY"
+        },
+        {
+          "after": "PKM_APPLETUN",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "after": "PKM_FERROSEED",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_BRUTE_BONNET"
+        },
+        {
+          "after": "PKM_ABRA",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_BUIZEL"
+        },
+        {
+          "after": "PKM_ACCELGOR",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_CARRACOSTA"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_GARDEVOIR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_CHERUBI"
+        },
+        {
+          "after": "PKM_CHARIZARD",
+          "after_is_target": true,
+          "before": "PKM_LUGIA",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_CRAMORANT"
+        },
+        {
+          "after": "PKM_ABSOL",
+          "after_is_target": true,
+          "before": "PKM_ACCELGOR",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_DEWGONG"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_ABOMASNOW",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_ELECTRIKE"
+        },
+        {
+          "after": "PKM_KLEFKI",
+          "after_is_target": true,
+          "before": "PKM_AEGISLASH",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "after": "PKM_AMPHAROS",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FLITTLE"
+        },
+        {
+          "after": "PKM_FLYGON",
+          "after_is_target": false,
+          "before": "PKM_BALTOY",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "after": "PKM_RUFFLET",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_BANETTE",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "after": "PKM_GOLETT",
+          "after_is_target": true,
+          "before": "PKM_ANNIHILAPE",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_APPLETUN",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_KARTANA"
+        },
+        {
+          "after": "PKM_IRON_HANDS",
+          "after_is_target": true,
+          "before": "PKM_CHARJABUG",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "after": "PKM_GEODUDE",
+          "after_is_target": true,
+          "before": "PKM_AERODACTYL",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_LYCANROC"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "after": "PKM_BOMBIRDIER",
+          "after_is_target": true,
+          "before": "PKM_ABSOL",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_MIGHTYENA"
+        },
+        {
+          "after": "PKM_AERODACTYL",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "after": "PKM_ALTARIA",
+          "after_is_target": true,
+          "before": "PKM_ABRA",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_NIDOQUEEN"
+        },
+        {
+          "after": "PKM_BANETTE",
+          "after_is_target": true,
+          "before": "PKM_AGGRON",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SEVIPER"
+        },
+        {
+          "after": "PKM_ABOMASNOW",
+          "after_is_target": true,
+          "before": "PKM_AMPHAROS",
+          "before_is_target": false,
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "after": "PKM_KLEFKI",
+          "after_is_target": true,
+          "before": "PKM_ALCREMIE",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATUFF"
+        },
+        {
+          "after": "PKM_DEINO",
+          "after_is_target": true,
+          "before": "PKM_FLYGON",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        },
+        {
+          "after": "PKM_ARCANINE",
+          "after_is_target": true,
+          "before": "PKM_ALOMOMOLA",
+          "before_is_target": false,
+          "dimension": "TYPE",
+          "subject": "PKM_VULPIX"
+        },
+        {
+          "after": "PKM_DEINO",
+          "after_is_target": true,
+          "before": "PKM_ALTARIA",
+          "before_is_target": true,
+          "dimension": "TYPE",
+          "subject": "PKM_ZEKROM"
+        }
+      ],
+      "first_metrics": {
+        "first_exact_rate": 0.7387387387387387,
+        "first_is_subject_rate": 0.013513513513513514,
+        "first_is_target_rate": 0.9819819819819819
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0045045045045045045,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.8824120695193072,
+        "mean_target_count": 123.00450450450451,
+        "precision": 0.913139508906346,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.872912639908909,
+        "self_return_rate": 0.0,
+        "termination_rate": 0.9954954954954955
+      },
+      "raw": {
+        "duplicate_query_rate": 0.018018018018018018,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8782845617286523,
+        "mean_target_count": 124.09009009009009,
+        "precision": 0.9043194245706666,
+        "protocol_valid_rate": 0.9954954954954955,
+        "query_count": 222,
+        "recall": 0.872912639908909,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 0.9954954954954955
+      },
+      "seed": 1731
+    }
+  ],
+  "scope": "First-position learned guidance; frozen models; validation-only exploration",
+  "script_sha256": "95dfac594a6304c9b954b34c2e29881dee2637f0e842afd3b2b4d8588f72abb6",
+  "selection": {
+    "candidates": [
+      {
+        "all_valid": false,
+        "alpha": 1,
+        "eligible": false,
+        "mean_exact": 0.6666666666666666,
+        "mean_f1": 0.8670876732813212,
+        "no_seed_regression": true,
+        "strict_exact_improvement": true
+      },
+      {
+        "all_valid": false,
+        "alpha": 4,
+        "eligible": false,
+        "mean_exact": 0.6786786786786787,
+        "mean_f1": 0.8802419909625485,
+        "no_seed_regression": true,
+        "strict_exact_improvement": true
+      },
+      {
+        "all_valid": false,
+        "alpha": 16,
+        "eligible": false,
+        "mean_exact": 0.6816816816816816,
+        "mean_f1": 0.8832860157486832,
+        "no_seed_regression": true,
+        "strict_exact_improvement": true
+      }
+    ],
+    "selected_alpha": null
+  },
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5"
+}

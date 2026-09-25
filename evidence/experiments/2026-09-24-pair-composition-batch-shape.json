@@ -1,0 +1,51 @@
+{
+  "scope": "bounded seed1729 prompt-only head batch-shape diagnosis; no integration acceptance",
+  "all_declared_expectations_passed": true,
+  "query_count": 222,
+  "prompt_head_forward_count": 259,
+  "difference_summary": {
+    "compared_logit_count": 227550,
+    "different_logit_count": 156003,
+    "different_slot_score_count": 2220,
+    "max_absolute_logit_difference": 7.62939453125e-06,
+    "max_absolute_slot_score_difference": 0.00036144256591796875,
+    "mean_absolute_logit_difference": 9.094886899230193e-07,
+    "positive_membership_sign_change_count": 0,
+    "queries_with_logit_differences": 222
+  },
+  "expectations": {
+    "batch_eight_logits_exact_pair": true,
+    "batch_eight_repeatable": true,
+    "batch_eight_scores_exact_pair": true,
+    "selected_slot_unchanged": true,
+    "serial_repeatable": true,
+    "serial_scores_exact_http": true
+  },
+  "checkpoint_hash": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "inference_config_hash": "d8db30a0637315ae9789dd55be8c0b65422dab77ff2f97a3818d705841957211",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "declaration_sha256": "c40854fb2e3c6b579972a346f79712de0c950838d7e010ba8ab731cf2ec67002",
+  "script_sha256": "81e56f0ee934adec5fd2ec5257d9315495d97d659fde53df81b48a634f89daba",
+  "torch_settings": {
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest",
+    "model_training": false,
+    "parameter_dtype": "torch.float32"
+  },
+  "wall_seconds": 3.1329507999980706,
+  "limitations": [
+    "Only seed1729 and these exact shapes/checkpoint/source were diagnosed.",
+    "No generation, training, policy modification, protected test, numerical tolerance or acceptance change.",
+    "A same-shape explanation does not establish cross-shape bitwise portability."
+  ],
+  "repeatability": {
+    "batch_eight_exact": true,
+    "serial_exact": true
+  },
+  "summary_sha256": "d263db1e956064b1f5c597369f5c82b95a7edc2fca55901d98a2f72e4a01557b",
+  "independent_audit_sha256": "6bc483713c5dd4511a3bdbc455649435f6da85a63ef8756bb6998573e90c44ee",
+  "campaign_accepted": false
+}

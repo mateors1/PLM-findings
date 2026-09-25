@@ -1,0 +1,59 @@
+{
+  "byte_stable_recompilation": true,
+  "corpus_manifest": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "record_count": 2050,
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "schema_version": 1,
+    "tokenizer_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2",
+    "vocabulary_size": 2049
+  },
+  "corpus_path": "processed/pokemon_v1_f1541479_20260924",
+  "dataset_name": "pokemon_v1_f1541479_20260924",
+  "edge_count": 2576,
+  "files": {
+    "processed/pokemon_v1_f1541479_20260924/manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "processed/pokemon_v1_f1541479_20260924/records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "processed/pokemon_v1_f1541479_20260924/vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "raw/pokemon_v1_f1541479_20260924/pokemon.csv": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+    "raw/pokemon_v1_f1541479_20260924/pokemon_colors.csv": "02f0753b509eacc92eb7896e932f3e873d86697de6449491ecebb278b1e60c1a",
+    "raw/pokemon_v1_f1541479_20260924/pokemon_species.csv": "9878f19c0637095cdd9a4134b4aac8fb2b64776d3bdc599aa68f15c3a011b87c",
+    "raw/pokemon_v1_f1541479_20260924/pokemon_types.csv": "f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05",
+    "raw/pokemon_v1_f1541479_20260924/types.csv": "37f039c8d722f47d51ba1c5c5ecf9b7007235b1a9a1af2827645c777b70307c8",
+    "sqlite/pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438"
+  },
+  "graph_path": "sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+  "product_count": 1025,
+  "protocol_sha256": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+  "schema_version": 1,
+  "source_metadata": {
+    "files": {
+      "pokemon.csv": {
+        "sha256": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+        "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/f15414790832c88d784d1537658b957fd73cbbbd/data/v2/csv/pokemon.csv"
+      },
+      "pokemon_colors.csv": {
+        "sha256": "02f0753b509eacc92eb7896e932f3e873d86697de6449491ecebb278b1e60c1a",
+        "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/f15414790832c88d784d1537658b957fd73cbbbd/data/v2/csv/pokemon_colors.csv"
+      },
+      "pokemon_species.csv": {
+        "sha256": "9878f19c0637095cdd9a4134b4aac8fb2b64776d3bdc599aa68f15c3a011b87c",
+        "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/f15414790832c88d784d1537658b957fd73cbbbd/data/v2/csv/pokemon_species.csv"
+      },
+      "pokemon_types.csv": {
+        "sha256": "f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05",
+        "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/f15414790832c88d784d1537658b957fd73cbbbd/data/v2/csv/pokemon_types.csv"
+      },
+      "types.csv": {
+        "sha256": "37f039c8d722f47d51ba1c5c5ecf9b7007235b1a9a1af2827645c777b70307c8",
+        "url": "https://raw.githubusercontent.com/PokeAPI/pokeapi/f15414790832c88d784d1537658b957fd73cbbbd/data/v2/csv/types.csv"
+      }
+    },
+    "imported_at": "2026-09-24T14:30:01+00:00",
+    "provider": "PokeAPI",
+    "revision": "f15414790832c88d784d1537658b957fd73cbbbd",
+    "revision_url": "https://github.com/PokeAPI/pokeapi/commit/f15414790832c88d784d1537658b957fd73cbbbd"
+  },
+  "source_revision": "f15414790832c88d784d1537658b957fd73cbbbd"
+}

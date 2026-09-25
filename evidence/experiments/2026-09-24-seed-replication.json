@@ -1,0 +1,2282 @@
+{
+  "analysis_environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+    "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "analysis_source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "paired_differences": {
+    "processed": {
+      "exact_set_accuracy": {
+        "max": 0.3198198198198198,
+        "mean": 0.3018018018018018,
+        "min": 0.28378378378378377,
+        "sample_std": 0.018018018018018,
+        "values": [
+          0.28378378378378377,
+          0.3198198198198198,
+          0.3018018018018018
+        ]
+      },
+      "f1": {
+        "max": 0.3942841627812665,
+        "mean": 0.3767571478855687,
+        "min": 0.3523427302775064,
+        "sample_std": 0.02180248098746057,
+        "values": [
+          0.3523427302775064,
+          0.3942841627812665,
+          0.3836445505979331
+        ]
+      },
+      "precision": {
+        "max": 0.40148586115786605,
+        "mean": 0.38687449595178264,
+        "min": 0.3623788826708253,
+        "sample_std": 0.021345086357302544,
+        "values": [
+          0.3623788826708253,
+          0.40148586115786605,
+          0.3967587440266565
+        ]
+      },
+      "recall": {
+        "max": 0.39258798173602655,
+        "mean": 0.37290922247893393,
+        "min": 0.347640314562998,
+        "sample_std": 0.022989356615514787,
+        "values": [
+          0.347640314562998,
+          0.39258798173602655,
+          0.3784993711377773
+        ]
+      }
+    },
+    "raw": {
+      "exact_set_accuracy": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "sample_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "f1": {
+        "max": 0.392096561402524,
+        "mean": 0.3748546216844516,
+        "min": 0.35059474598917845,
+        "sample_std": 0.021622644141869377,
+        "values": [
+          0.35059474598917845,
+          0.392096561402524,
+          0.3818725576616523
+        ]
+      },
+      "precision": {
+        "max": 0.39730842043096576,
+        "mean": 0.3829284717235935,
+        "min": 0.35864606560230533,
+        "sample_std": 0.021148012137080997,
+        "values": [
+          0.35864606560230533,
+          0.39730842043096576,
+          0.3928309291375095
+        ]
+      },
+      "recall": {
+        "max": 0.39258798173602655,
+        "mean": 0.37290922247893393,
+        "min": 0.347640314562998,
+        "sample_std": 0.022989356615514787,
+        "values": [
+          0.347640314562998,
+          0.39258798173602655,
+          0.3784993711377773
+        ]
+      }
+    }
+  },
+  "policy": {
+    "deduplicate": true,
+    "exclude_subject": true,
+    "ignore": [],
+    "limit": null
+  },
+  "processed_exact_consistency": {
+    "dense": {
+      "correct_in_at_least_one_seed": 70,
+      "correct_in_every_seed": 5,
+      "never_exact_queries": [
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ARCTOVISH"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ARMALDO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARMAROUGE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AROMATISSE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AZUMARILL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BAYLEEF"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BEAUTIFLY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BERGMITE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BOLDORE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BONSLY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BRUTE_BONNET"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BUDEW"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BUIZEL"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CARRACOSTA"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CASTFORM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CETITAN"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHERUBI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHEWTLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHI_YU"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CLEFAIRY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_COMBEE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CORPHISH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CORSOLA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CRAMORANT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CRAWDAUNT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DEINO"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DELPHOX"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DEOXYS"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DEOXYS"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DEWGONG"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DHELMISE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DOUBLADE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DRAPION"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DRIFBLIM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DUCKLETT"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DUSTOX"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_EELEKTRIK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_EKANS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ELECTRIKE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_EXEGGUTOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_FLITTLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_FOONGUS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FROSLASS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GABITE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GENGAR"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GIRATINA"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GLIGAR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GOLURK"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GREAVARD"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GROUDON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_HATTERENE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_HATTREM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_HERDIER"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_HONCHKROW"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_IMPIDIMP"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_INKAY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_JANGMO_O"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_KABUTO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KABUTOPS"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_KARTANA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KLEAVOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KRABBY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KYOGRE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KYUREM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_LAMPENT"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_LANTURN"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_LARVITAR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_LEDIAN"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_LYCANROC"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MANTYKE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MAREANIE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MARILL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MAROWAK"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MEDICHAM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_METAPOD"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_MEWTWO"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_MR_RIME"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_NIDORAN_F"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_OKIDOGI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PALKIA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PANCHAM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PILOSWINE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PORYGON_Z"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PRIMARINA"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_PRIMEAPE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_PYROAR"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_QUAXLY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_RAGING_BOLT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_RESHIRAM"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ROLYCOLY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ROTOM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_SCRAFTY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_SEVIPER"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SEWADDLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SINISTCHA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SKIPLOOM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SLITHER_WING"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SLOWBRO"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_SOLGALEO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_STEELIX"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_SUNFLORA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SWANNA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TAPU_BULU"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_TERAPAGOS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_THUNDURUS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TIMBURR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATUFF"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TOUCANNON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TOXICROAK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TURTONATOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TYNAMO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_UMBREON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_VENOMOTH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_VOLBEAT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_VULPIX"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_WIMPOD"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_WURMPLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZAPDOS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZEBSTRIKA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZEKROM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZUBAT"
+        }
+      ]
+    },
+    "promptset": {
+      "correct_in_at_least_one_seed": 137,
+      "correct_in_every_seed": 61,
+      "never_exact_queries": [
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ABSOL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_APPLIN"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARAQUANID"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ARMAROUGE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_AZUMARILL"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BAXCALIBUR"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_BELLIBOLT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BERGMITE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BRUTE_BONNET"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_BUDEW"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_CAMERUPT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CETITAN"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHERUBI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHEWTLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CHI_YU"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CONKELDURR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CORSOLA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CRAMORANT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_CRAWDAUNT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DARKRAI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DEINO"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_DEWGONG"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DHELMISE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DOUBLADE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_DUCKLETT"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_EELEKTRIK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ELECTRIKE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_EXEGGUTOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FROSLASS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_FROSMOTH"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GABITE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GOLEM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_GOLURK"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_HATTERENE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_HOPPIP"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_INKAY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KABUTOPS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KELDEO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KLEAVOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_KYUREM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_LAMPENT"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_LARVITAR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MANTYKE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MAREANIE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MARILL"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_MAWILE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_MEDICHAM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PALKIA"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_PHANPY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PILOSWINE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_PRIMARINA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_RAGING_BOLT"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_RESHIRAM"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ROLYCOLY"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_ROTOM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "dimension": "COLOR",
+          "subject": "PKM_SEVIPER"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SEWADDLE"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SINISTCHA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SLITHER_WING"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_STEELIX"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_SWANNA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TAPU_BULU"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_THUNDURUS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATON"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TINKATUFF"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TOXICROAK"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TURTONATOR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TYNAMO"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_TYRANITAR"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZAPDOS"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZEBSTRIKA"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZEKROM"
+        },
+        {
+          "dimension": "TYPE",
+          "subject": "PKM_ZUBAT"
+        }
+      ]
+    }
+  },
+  "runs": {
+    "dense": {
+      "1729": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.2815533980582524,
+              "exact_set_accuracy": 0.2815533980582524,
+              "f1": 0.2815533980582524,
+              "mean_target_count": 123.6116504854369,
+              "precision": 0.2815533980582524,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.2815533980582524,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.2803398959497793,
+              "mean_target_count": 123.89320388349515,
+              "precision": 0.2791373746037196,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.2815533980582524,
+              "self_return_rate": 0.2815533980582524,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.1092436974789916,
+              "exact_set_accuracy": 0.1092436974789916,
+              "f1": 0.27779085873194803,
+              "mean_target_count": 115.89075630252101,
+              "precision": 0.3274092598041981,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.2582754492971068,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.01680672268907563,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.276763399356979,
+              "mean_target_count": 116.22689075630252,
+              "precision": 0.32450092667380204,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.2582754492971068,
+              "self_return_rate": 0.31092436974789917,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "5ab8e2c19d8f8275366509812c0e882ceb65298dcb024f10500a8e17858986dc",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.1891891891891892,
+          "exact_set_accuracy": 0.1891891891891892,
+          "f1": 0.2795365413923505,
+          "mean_target_count": 119.47297297297297,
+          "precision": 0.30613379241756555,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.269075578677278,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.009009009009009009,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.2784227648932784,
+          "mean_target_count": 119.78378378378379,
+          "precision": 0.30345387323588074,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.269075578677278,
+          "self_return_rate": 0.2972972972972973,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "88b821ce5bca566ef358f2ea64a694d5042df2be8755a4864effec51f61889a7",
+            "source_tree_sha256": "e1c4d39fdbdef1aaa808be7c59d49cfe5b9cf16d7437c5715aa2901f852e248f",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "7cbcb5ec6a82576efe239cd81bb677f6330d416ce1e78f158e78a5a1842207c7",
+          "seeds": [
+            1729
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 134.3524665,
+        "validation_loss": 0.19083111788742874
+      },
+      "1730": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.1941747572815534,
+              "exact_set_accuracy": 0.1941747572815534,
+              "f1": 0.19559209127630925,
+              "mean_target_count": 120.03883495145631,
+              "precision": 0.19521312496755103,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.19640665104341035,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.19476404980843606,
+              "mean_target_count": 120.23300970873787,
+              "precision": 0.1935644690779028,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.19640665104341035,
+              "self_return_rate": 0.1941747572815534,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.10084033613445378,
+              "exact_set_accuracy": 0.10084033613445378,
+              "f1": 0.19657968320649963,
+              "mean_target_count": 117.2016806722689,
+              "precision": 0.2176572019269938,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.19082628947827862,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.03361344537815126,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.1958736967089799,
+              "mean_target_count": 117.49579831932773,
+              "precision": 0.21598825383142137,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.19082628947827862,
+              "self_return_rate": 0.17647058823529413,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "2bab280cbd12c3638349c49ff8d41e66cfd16b9a1b3312033cd6d47d541a0940",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.14414414414414414,
+          "exact_set_accuracy": 0.14414414414414414,
+          "f1": 0.19612147613978964,
+          "mean_target_count": 118.51801801801801,
+          "precision": 0.2072439590133785,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.19341537615038934,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.018018018018018018,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.19535886053440324,
+          "mean_target_count": 118.76576576576576,
+          "precision": 0.20558442577010422,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.19341537615038934,
+          "self_return_rate": 0.18468468468468469,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+            "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "fc02e5219ca29e6f09b7bf3644ef34a0e33e909401d37a8a73fd4b58efd029dc",
+          "seeds": [
+            1730
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 56.78324479999992,
+        "validation_loss": 0.18825005156746838
+      },
+      "1731": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.21359223300970873,
+              "exact_set_accuracy": 0.21359223300970873,
+              "f1": 0.21535229659910296,
+              "mean_target_count": 123.2135922330097,
+              "precision": 0.21512779869229245,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.21565367735071153,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.21441899227904923,
+              "mean_target_count": 123.42718446601941,
+              "precision": 0.2132697424549098,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.21565367735071153,
+              "self_return_rate": 0.21359223300970873,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.06722689075630252,
+              "exact_set_accuracy": 0.06722689075630252,
+              "f1": 0.22589524230818872,
+              "mean_target_count": 124.47899159663865,
+              "precision": 0.25112671621650096,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.21852120560590424,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.025210084033613446,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.2250337398420583,
+              "mean_target_count": 125.26890756302521,
+              "precision": 0.2492419903192073,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.21852120560590424,
+              "self_return_rate": 0.24369747899159663,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "941c6592847919a4abb1e7a73a1d20af28438e2f1779d0218ea7934acb3e0df8",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.13513513513513514,
+          "exact_set_accuracy": 0.13513513513513514,
+          "f1": 0.2210036954251443,
+          "mean_target_count": 123.89189189189189,
+          "precision": 0.23442451574355733,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.21719077582984644,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.013513513513513514,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.22010887948624777,
+          "mean_target_count": 124.41441441441441,
+          "precision": 0.23255216360739364,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.21719077582984644,
+          "self_return_rate": 0.22972972972972974,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+            "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "694849bb2e1bfefe6f02cc5c8c705a918cdf849b932048b472c2d63155aafb5a",
+          "seeds": [
+            1731
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 55.31930139999986,
+        "validation_loss": 0.18688026852795284
+      }
+    },
+    "promptset": {
+      "1729": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.7087378640776699,
+              "exact_set_accuracy": 0.7087378640776699,
+              "f1": 0.7087378640776699,
+              "mean_target_count": 115.44660194174757,
+              "precision": 0.7087378640776699,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.7087378640776699,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.7054752193506304,
+              "mean_target_count": 116.15533980582525,
+              "precision": 0.7022454154606909,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.7087378640776699,
+              "self_return_rate": 0.7087378640776699,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.2689075630252101,
+              "exact_set_accuracy": 0.2689075630252101,
+              "f1": 0.5653546076530105,
+              "mean_target_count": 116.05042016806723,
+              "precision": 0.6336959148707796,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5370666243642122,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.025210084033613446,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.5628398304436185,
+              "mean_target_count": 116.91596638655462,
+              "precision": 0.6273521733582033,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5370666243642122,
+              "self_return_rate": 0.6974789915966386,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.47297297297297297,
+          "exact_set_accuracy": 0.47297297297297297,
+          "f1": 0.6318792716698569,
+          "mean_target_count": 115.77027027027027,
+          "precision": 0.6685126750883909,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.013513513513513514,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6290175108824568,
+          "mean_target_count": 116.56306306306307,
+          "precision": 0.6620999388381861,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.7027027027027027,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+            "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+          "seeds": [
+            1729
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 61.79574179999963,
+        "validation_loss": 0.14674341953821712
+      },
+      "1730": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.6310679611650486,
+              "exact_set_accuracy": 0.6310679611650486,
+              "f1": 0.6321355886964936,
+              "mean_target_count": 118.54368932038835,
+              "precision": 0.6318294308014468,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.632853476174534,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.019417475728155338,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.6288837304471293,
+              "mean_target_count": 120.76699029126213,
+              "precision": 0.6257834586967498,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.632853476174534,
+              "self_return_rate": 0.6407766990291263,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.31932773109243695,
+              "exact_set_accuracy": 0.31932773109243695,
+              "f1": 0.5542864386952571,
+              "mean_target_count": 126.94957983193277,
+              "precision": 0.5887360395417421,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5454524151664478,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.04201680672268908,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.5515973061675925,
+              "mean_target_count": 128.28571428571428,
+              "precision": 0.583079963116575,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5454524151664478,
+              "self_return_rate": 0.6386554621848739,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "8637c0c787eb98d403119805e0ca56b5ccf98c7efa5bdd80d7e09e6453b30631",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.46396396396396394,
+          "exact_set_accuracy": 0.46396396396396394,
+          "f1": 0.5904056389210561,
+          "mean_target_count": 123.04954954954955,
+          "precision": 0.6087298201712446,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.5860033578864159,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.03153153153153153,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.5874554219369272,
+          "mean_target_count": 124.79729729729729,
+          "precision": 0.60289284620107,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.5860033578864159,
+          "self_return_rate": 0.6396396396396397,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+            "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "e13cda2424d5fc82839d1ccfbb89c625443661e6b5b5d1a3b2992d0a1db36df7",
+          "seeds": [
+            1730
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 57.666263699999945,
+        "validation_loss": 0.1457600704261235
+      },
+      "1731": {
+        "by_dimension": {
+          "COLOR": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.6796116504854369,
+              "exact_set_accuracy": 0.6796116504854369,
+              "f1": 0.6892915790383451,
+              "mean_target_count": 110.1747572815534,
+              "precision": 0.6893203883495146,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.6892629401964727,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.6860003664338793,
+              "mean_target_count": 110.86407766990291,
+              "precision": 0.6827729837041698,
+              "protocol_valid_rate": 1.0,
+              "query_count": 103,
+              "recall": 0.6892629401964727,
+              "self_return_rate": 0.6893203883495146,
+              "termination_rate": 1.0
+            }
+          },
+          "TYPE": {
+            "processed": {
+              "duplicate_query_rate": 0.0,
+              "exact_sequence_accuracy": 0.226890756302521,
+              "exact_set_accuracy": 0.226890756302521,
+              "f1": 0.5313855292115429,
+              "mean_target_count": 123.29411764705883,
+              "precision": 0.580862887974685,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5146985696350903,
+              "self_return_rate": 0.0,
+              "termination_rate": 1.0
+            },
+            "raw": {
+              "duplicate_query_rate": 0.04201680672268908,
+              "exact_sequence_accuracy": 0.0,
+              "exact_set_accuracy": 0.0,
+              "f1": 0.5292591706230613,
+              "mean_target_count": 124.03361344537815,
+              "precision": 0.5757094896457078,
+              "protocol_valid_rate": 1.0,
+              "query_count": 119,
+              "recall": 0.5146985696350903,
+              "self_return_rate": 0.6134453781512605,
+              "termination_rate": 1.0
+            }
+          }
+        },
+        "checkpoint_hash": "a2a935cdcfaaeb182151039fd8a110b39456873f93b4461beded249111f2068e",
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.4369369369369369,
+          "exact_set_accuracy": 0.4369369369369369,
+          "f1": 0.6046482460230774,
+          "mean_target_count": 117.2072072072072,
+          "precision": 0.6311832597702138,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.5956901469676238,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.02252252252252252,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6019814371479001,
+          "mean_target_count": 117.92342342342343,
+          "precision": 0.6253830927449031,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.5956901469676238,
+          "self_return_rate": 0.6486486486486487,
+          "termination_rate": 1.0
+        },
+        "training_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+            "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+            "torch": "2.11.0+cu128",
+            "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+          },
+          "evaluator_version": "plm-train-causal-v2",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "56bea5452b8822d80803c3ebe62296b3e06491145e46b8e74993621847ed777c",
+          "seeds": [
+            1731
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "training_wall_seconds": 57.33212360000016,
+        "validation_loss": 0.14944174321959328
+      }
+    }
+  },
+  "scope": "fixed validation split; paired seeds; final checkpoints; unequal training compute",
+  "script_sha256": "74c6d6c1f3ba7ca1850cf019d892bc75cd7372e923bbb379e52100615acf8d05",
+  "seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "source_comparison": {
+    "changed_files": {
+      "dense-1729": [
+        "src/plm/cli.py",
+        "src/plm/config.py",
+        "src/plm/model/interfaces.py",
+        "src/plm/model/layers.py",
+        "src/plm/model/synthetic.py",
+        "src/plm/training/trainer.py"
+      ],
+      "dense-1730": [
+        "src/plm/serving/__init__.py",
+        "src/plm/serving/postprocess.py"
+      ],
+      "dense-1731": [
+        "src/plm/serving/__init__.py",
+        "src/plm/serving/postprocess.py"
+      ],
+      "promptset-1729": [],
+      "promptset-1730": [
+        "src/plm/serving/__init__.py",
+        "src/plm/serving/postprocess.py"
+      ],
+      "promptset-1731": [
+        "src/plm/serving/__init__.py",
+        "src/plm/serving/postprocess.py"
+      ]
+    },
+    "reference": "promptset-1729"
+  },
+  "source_reports_sha256": {
+    "runs/learning/prompt-objectives-v1/promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+    "runs/learning/quality-v1/dense-validation.json": "a05723df324429f211a9cc45a89b8d24c28cb8a04fa4abab6550182f40e73439",
+    "runs/learning/seed-replication-v1/dense-1730.json": "b6f9ed7ae52efe489aeb5ec670beba2f58db46048344d34b6a088f5b7a1ac792",
+    "runs/learning/seed-replication-v1/dense-1731.json": "8cf94a31b7e8b28da1009d520f3130382cd3bfa91a851ff8334f2e63f8af31e7",
+    "runs/learning/seed-replication-v1/promptset-1730.json": "6c44e3e0b6b511bd863c0bf2af694db2aa053125289415f74fd4dc8a71534e8f",
+    "runs/learning/seed-replication-v1/promptset-1731.json": "f04250403628299c6f9add901cfc71dc93ee5d677f0adec32c3de82363198e97",
+    "runs/national_dex_dense_s1729_v1/run.json": "ec46314104554397ae3d6ecb9357d227ae169809de2f3800f3c9d044eb33cd17",
+    "runs/national_dex_dense_s1729_v1/training-result.json": "c79375049c56703407ea6ff646936f1d3bf820e7c328243ab35c71565c706ecc",
+    "runs/national_dex_dense_s1730_v1/run.json": "145872e7f620b8da390fa4ca881f2fbcea3c74738a78c5c8ce392adadea3d75f",
+    "runs/national_dex_dense_s1730_v1/training-result.json": "9a2b3c6e4914ae774540e27e35a3848acfa2a60f22a3e4501340a87fba5f44ef",
+    "runs/national_dex_dense_s1731_v1/run.json": "d6bbf90495509bb789fff05d05e2741ad4cbdd0f76a0a878735c0bafdb473025",
+    "runs/national_dex_dense_s1731_v1/training-result.json": "20a250d97e147c7ad39d8cae3172bd775a4b15fc5916ff7cef4bfa76a1cf35e3",
+    "runs/national_dex_promptset_s1729_v1/run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917",
+    "runs/national_dex_promptset_s1729_v1/training-result.json": "b57331c673967c19cb3967c1d302d85f6f811e504a2691d6fa961b778d8bfd90",
+    "runs/national_dex_promptset_s1730_v1/run.json": "16fde614b5f09d65bd6ca104185bb401a420dc77a6f6ab932b7bf310608cceb4",
+    "runs/national_dex_promptset_s1730_v1/training-result.json": "9afcaaf3aeb850e181402f7390ad67612b73016176e510439c3c9c83accd38aa",
+    "runs/national_dex_promptset_s1731_v1/run.json": "3538b5b13965feaf0353d232e891254433b12f90c23dbff3bfd970759b778930",
+    "runs/national_dex_promptset_s1731_v1/training-result.json": "47cc23c304eb8d9329e5804e2c0261a3bdd2404fa68e3c6ae5f5e32d9b88ce06"
+  },
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "variants": {
+    "dense": {
+      "processed": {
+        "duplicate_query_rate": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "exact_sequence_accuracy": {
+          "max": 0.1891891891891892,
+          "mean": 0.15615615615615616,
+          "min": 0.13513513513513514,
+          "sample_std": 0.02895991219517404,
+          "values": [
+            0.1891891891891892,
+            0.14414414414414414,
+            0.13513513513513514
+          ]
+        },
+        "exact_set_accuracy": {
+          "max": 0.1891891891891892,
+          "mean": 0.15615615615615616,
+          "min": 0.13513513513513514,
+          "sample_std": 0.02895991219517404,
+          "values": [
+            0.1891891891891892,
+            0.14414414414414414,
+            0.13513513513513514
+          ]
+        },
+        "f1": {
+          "max": 0.2795365413923505,
+          "mean": 0.2322205709857615,
+          "min": 0.19612147613978964,
+          "sample_std": 0.04282384850499807,
+          "values": [
+            0.2795365413923505,
+            0.19612147613978964,
+            0.2210036954251443
+          ]
+        },
+        "mean_target_count": {
+          "max": 123.89189189189189,
+          "mean": 120.62762762762762,
+          "min": 118.51801801801801,
+          "sample_std": 2.866975868700816,
+          "values": [
+            119.47297297297297,
+            118.51801801801801,
+            123.89189189189189
+          ]
+        },
+        "precision": {
+          "max": 0.30613379241756555,
+          "mean": 0.24926742239150046,
+          "min": 0.2072439590133785,
+          "sample_std": 0.05108848887955714,
+          "values": [
+            0.30613379241756555,
+            0.2072439590133785,
+            0.23442451574355733
+          ]
+        },
+        "protocol_valid_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "max": 0.269075578677278,
+          "mean": 0.22656057688583792,
+          "min": 0.19341537615038934,
+          "sample_std": 0.038690585941209214,
+          "values": [
+            0.269075578677278,
+            0.19341537615038934,
+            0.21719077582984644
+          ]
+        },
+        "self_return_rate": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "termination_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "raw": {
+        "duplicate_query_rate": {
+          "max": 0.018018018018018018,
+          "mean": 0.013513513513513514,
+          "min": 0.009009009009009009,
+          "sample_std": 0.0045045045045045045,
+          "values": [
+            0.009009009009009009,
+            0.018018018018018018,
+            0.013513513513513514
+          ]
+        },
+        "exact_sequence_accuracy": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "exact_set_accuracy": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "f1": {
+          "max": 0.2784227648932784,
+          "mean": 0.2312968349713098,
+          "min": 0.19535886053440324,
+          "sample_std": 0.042647166527061166,
+          "values": [
+            0.2784227648932784,
+            0.19535886053440324,
+            0.22010887948624777
+          ]
+        },
+        "mean_target_count": {
+          "max": 124.41441441441441,
+          "mean": 120.98798798798799,
+          "min": 118.76576576576576,
+          "sample_std": 3.010712326516325,
+          "values": [
+            119.78378378378379,
+            118.76576576576576,
+            124.41441441441441
+          ]
+        },
+        "precision": {
+          "max": 0.30345387323588074,
+          "mean": 0.2471968208711262,
+          "min": 0.20558442577010422,
+          "sample_std": 0.050551524968028845,
+          "values": [
+            0.30345387323588074,
+            0.20558442577010422,
+            0.23255216360739364
+          ]
+        },
+        "protocol_valid_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "max": 0.269075578677278,
+          "mean": 0.22656057688583792,
+          "min": 0.19341537615038934,
+          "sample_std": 0.038690585941209214,
+          "values": [
+            0.269075578677278,
+            0.19341537615038934,
+            0.21719077582984644
+          ]
+        },
+        "self_return_rate": {
+          "max": 0.2972972972972973,
+          "mean": 0.23723723723723725,
+          "min": 0.18468468468468469,
+          "sample_std": 0.05668043870323387,
+          "values": [
+            0.2972972972972973,
+            0.18468468468468469,
+            0.22972972972972974
+          ]
+        },
+        "termination_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "promptset": {
+      "processed": {
+        "duplicate_query_rate": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "exact_sequence_accuracy": {
+          "max": 0.47297297297297297,
+          "mean": 0.45795795795795796,
+          "min": 0.4369369369369369,
+          "sample_std": 0.018753747742938143,
+          "values": [
+            0.47297297297297297,
+            0.46396396396396394,
+            0.4369369369369369
+          ]
+        },
+        "exact_set_accuracy": {
+          "max": 0.47297297297297297,
+          "mean": 0.45795795795795796,
+          "min": 0.4369369369369369,
+          "sample_std": 0.018753747742938143,
+          "values": [
+            0.47297297297297297,
+            0.46396396396396394,
+            0.4369369369369369
+          ]
+        },
+        "f1": {
+          "max": 0.6318792716698569,
+          "mean": 0.6089777188713301,
+          "min": 0.5904056389210561,
+          "sample_std": 0.02107305874104228,
+          "values": [
+            0.6318792716698569,
+            0.5904056389210561,
+            0.6046482460230774
+          ]
+        },
+        "mean_target_count": {
+          "max": 123.04954954954955,
+          "mean": 118.67567567567568,
+          "min": 115.77027027027027,
+          "sample_std": 3.855421694004532,
+          "values": [
+            115.77027027027027,
+            123.04954954954955,
+            117.2072072072072
+          ]
+        },
+        "precision": {
+          "max": 0.6685126750883909,
+          "mean": 0.636141918343283,
+          "min": 0.6087298201712446,
+          "sample_std": 0.030198322083260613,
+          "values": [
+            0.6685126750883909,
+            0.6087298201712446,
+            0.6311832597702138
+          ]
+        },
+        "protocol_valid_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "max": 0.616715893240276,
+          "mean": 0.5994697993647718,
+          "min": 0.5860033578864159,
+          "sample_std": 0.015701251101360586,
+          "values": [
+            0.616715893240276,
+            0.5860033578864159,
+            0.5956901469676238
+          ]
+        },
+        "self_return_rate": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "termination_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "raw": {
+        "duplicate_query_rate": {
+          "max": 0.03153153153153153,
+          "mean": 0.02252252252252252,
+          "min": 0.013513513513513514,
+          "sample_std": 0.009009009009009007,
+          "values": [
+            0.013513513513513514,
+            0.03153153153153153,
+            0.02252252252252252
+          ]
+        },
+        "exact_sequence_accuracy": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "exact_set_accuracy": {
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "sample_std": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "f1": {
+          "max": 0.6290175108824568,
+          "mean": 0.6061514566557614,
+          "min": 0.5874554219369272,
+          "sample_std": 0.021092501188834534,
+          "values": [
+            0.6290175108824568,
+            0.5874554219369272,
+            0.6019814371479001
+          ]
+        },
+        "mean_target_count": {
+          "max": 124.79729729729729,
+          "mean": 119.76126126126127,
+          "min": 116.56306306306307,
+          "sample_std": 4.41405587806725,
+          "values": [
+            116.56306306306307,
+            124.79729729729729,
+            117.92342342342343
+          ]
+        },
+        "precision": {
+          "max": 0.6620999388381861,
+          "mean": 0.6301252925947197,
+          "min": 0.60289284620107,
+          "sample_std": 0.029887059059009343,
+          "values": [
+            0.6620999388381861,
+            0.60289284620107,
+            0.6253830927449031
+          ]
+        },
+        "protocol_valid_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "max": 0.616715893240276,
+          "mean": 0.5994697993647718,
+          "min": 0.5860033578864159,
+          "sample_std": 0.015701251101360586,
+          "values": [
+            0.616715893240276,
+            0.5860033578864159,
+            0.5956901469676238
+          ]
+        },
+        "self_return_rate": {
+          "max": 0.7027027027027027,
+          "mean": 0.6636636636636637,
+          "min": 0.6396396396396397,
+          "sample_std": 0.03410755763243408,
+          "values": [
+            0.7027027027027027,
+            0.6396396396396397,
+            0.6486486486486487
+          ]
+        },
+        "termination_rate": {
+          "max": 1.0,
+          "mean": 1.0,
+          "min": 1.0,
+          "sample_std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}

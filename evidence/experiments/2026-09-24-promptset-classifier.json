@@ -1,0 +1,36 @@
+{
+  "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+    "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "macro": {
+    "exact_set": 0,
+    "f1": 0.6544801542600157,
+    "precision": 0.6581474799979559,
+    "recall": 0.6700344619859753,
+    "self_return": 0.7747747747747747
+  },
+  "query_count": 222,
+  "ranking": {
+    "hits_at": {
+      "1": 0.6711711711711712,
+      "10": 0.8288288288288288,
+      "3": 0.7792792792792793
+    },
+    "map": 0.7013005029816882,
+    "mrr": 0.7375530866519011
+  },
+  "raw_report_sha256": "e0135a306b7a2b9e598af45ac2499eef3132973f3fcf7a4eca322a08f651be3a",
+  "scope": "auxiliary prompt-only set classifier; not autoregressive generation",
+  "script_sha256": "c62b8a9816d77ef04cfa34214c6d7fecd7e38269800f5b989cec361cf764a3be",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "threshold_logit": 0.0
+}

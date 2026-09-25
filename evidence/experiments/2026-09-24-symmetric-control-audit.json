@@ -1,0 +1,1347 @@
+{
+  "audits": {
+    "cache-parity.json": {
+      "all_responses_equal": true,
+      "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+      "query_count": 222,
+      "reports": {
+        "runs\\learning\\symmetric-relation-v1\\validation.json": "248e6e4b150b53b66a87df92b10d020628c64886720fccf1b7b0fd263ce8ac36",
+        "runs\\learning\\symmetric-replication-v1\\symmetric-1729.json": "461fb4483528dcc8418577f953ddd48856545d2ccada6eab3599773508dd09c0"
+      }
+    },
+    "control-replay-audit.json": {
+      "all_model_tensors_equal": false,
+      "checkpoints": [
+        {
+          "path": "runs/national_dex_promptset_s1729_v1/checkpoint-final.pt",
+          "sha256": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725"
+        },
+        {
+          "path": "runs/national_dex_promptset_bridge_s1729_v1/checkpoint-final.pt",
+          "sha256": "a79daf5325179356fb49fc93d70822991a7e0a8c6f861b9244ce700e71582b7d"
+        }
+      ],
+      "deterministic": false,
+      "equal_tensor_count": 0,
+      "interpretation": "Archived and current-source controls do not replay bitwise. Cause is unresolved; source and GPU nondeterminism are possible factors. Primary comparison will use fresh current-source controls.",
+      "normalized_configs_equal": true,
+      "tensor_count": 92,
+      "tensors": [
+        {
+          "equal": false,
+          "max_abs_diff": 0.04099968448281288,
+          "name": "token_embedding.weight",
+          "shape": [
+            2049,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.009025216102600098,
+          "name": "blocks.0.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01918315514922142,
+          "name": "blocks.0.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.015117844566702843,
+          "name": "blocks.0.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.013779358938336372,
+          "name": "blocks.0.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.0175672248005867,
+          "name": "blocks.0.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.009423613548278809,
+          "name": "blocks.0.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.009481549263000488,
+          "name": "blocks.0.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.011843323707580566,
+          "name": "blocks.0.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02000817097723484,
+          "name": "blocks.0.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.020901473239064217,
+          "name": "blocks.0.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02170034497976303,
+          "name": "blocks.0.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.012038230895996094,
+          "name": "blocks.1.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.026000890880823135,
+          "name": "blocks.1.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02026692032814026,
+          "name": "blocks.1.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014862468466162682,
+          "name": "blocks.1.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.022728128358721733,
+          "name": "blocks.1.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014645218849182129,
+          "name": "blocks.1.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014738321304321289,
+          "name": "blocks.1.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01410377025604248,
+          "name": "blocks.1.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02492847666144371,
+          "name": "blocks.1.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.026394186541438103,
+          "name": "blocks.1.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025738149881362915,
+          "name": "blocks.1.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02172774076461792,
+          "name": "blocks.2.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028350792825222015,
+          "name": "blocks.2.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02317844144999981,
+          "name": "blocks.2.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.017397984862327576,
+          "name": "blocks.2.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.022445224225521088,
+          "name": "blocks.2.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01122283935546875,
+          "name": "blocks.2.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.021457433700561523,
+          "name": "blocks.2.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014047026634216309,
+          "name": "blocks.2.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02377133257687092,
+          "name": "blocks.2.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02520299330353737,
+          "name": "blocks.2.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025099560618400574,
+          "name": "blocks.2.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.013097226619720459,
+          "name": "blocks.3.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.029432039707899094,
+          "name": "blocks.3.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025083184242248535,
+          "name": "blocks.3.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01966257207095623,
+          "name": "blocks.3.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.022386610507965088,
+          "name": "blocks.3.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.012498021125793457,
+          "name": "blocks.3.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.012357473373413086,
+          "name": "blocks.3.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.016561150550842285,
+          "name": "blocks.3.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028265874832868576,
+          "name": "blocks.3.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028713440522551537,
+          "name": "blocks.3.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02630346640944481,
+          "name": "blocks.3.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01682877540588379,
+          "name": "blocks.4.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028648775070905685,
+          "name": "blocks.4.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.0258023664355278,
+          "name": "blocks.4.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.021494869142770767,
+          "name": "blocks.4.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02539348043501377,
+          "name": "blocks.4.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.018975496292114258,
+          "name": "blocks.4.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.013881921768188477,
+          "name": "blocks.4.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014984369277954102,
+          "name": "blocks.4.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025576982647180557,
+          "name": "blocks.4.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02553282119333744,
+          "name": "blocks.4.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.027359843254089355,
+          "name": "blocks.4.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.017051517963409424,
+          "name": "blocks.5.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028738385066390038,
+          "name": "blocks.5.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025379398837685585,
+          "name": "blocks.5.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.018243897706270218,
+          "name": "blocks.5.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025600284337997437,
+          "name": "blocks.5.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.010022997856140137,
+          "name": "blocks.5.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.013179779052734375,
+          "name": "blocks.5.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.014092087745666504,
+          "name": "blocks.5.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025341570377349854,
+          "name": "blocks.5.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02722439542412758,
+          "name": "blocks.5.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025260884314775467,
+          "name": "blocks.5.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.017114579677581787,
+          "name": "blocks.6.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028533946722745895,
+          "name": "blocks.6.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.025917287915945053,
+          "name": "blocks.6.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.020582683384418488,
+          "name": "blocks.6.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.023531537503004074,
+          "name": "blocks.6.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.018210172653198242,
+          "name": "blocks.6.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01813971996307373,
+          "name": "blocks.6.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.016456127166748047,
+          "name": "blocks.6.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.026015419512987137,
+          "name": "blocks.6.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02797507867217064,
+          "name": "blocks.6.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.029892560094594955,
+          "name": "blocks.6.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01933187246322632,
+          "name": "blocks.7.attention_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.03204657882452011,
+          "name": "blocks.7.attention.q_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.023790279403328896,
+          "name": "blocks.7.attention.k_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.020845836028456688,
+          "name": "blocks.7.attention.v_proj.weight",
+          "shape": [
+            64,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.02351299300789833,
+          "name": "blocks.7.attention.out_proj.weight",
+          "shape": [
+            256,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.0113067626953125,
+          "name": "blocks.7.attention.q_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01116037368774414,
+          "name": "blocks.7.attention.k_norm.weight",
+          "shape": [
+            32
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.01389312744140625,
+          "name": "blocks.7.ffn_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.030471205711364746,
+          "name": "blocks.7.ffn.gate_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.028451409190893173,
+          "name": "blocks.7.ffn.up_proj.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.03756553307175636,
+          "name": "blocks.7.ffn.down_proj.weight",
+          "shape": [
+            256,
+            768
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.008762955665588379,
+          "name": "final_norm.weight",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.04099968448281288,
+          "name": "lm_head.weight",
+          "shape": [
+            2049,
+            256
+          ]
+        },
+        {
+          "equal": false,
+          "max_abs_diff": 0.0894976481795311,
+          "name": "prompt_set_projection.weight",
+          "shape": [
+            256,
+            256
+          ]
+        }
+      ]
+    },
+    "fixed-batch-audit.json": {
+      "all_equal": true,
+      "batch_sha256": "330a386d1cba4670df08872770ef4626310971fc3f3d6422756c28628ddabfbf",
+      "batch_shape": [
+        4,
+        178
+      ],
+      "comparisons": [
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "logits"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "loss"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "task_loss"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "prompt_set_loss"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:token_embedding.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.0.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.1.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.2.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.3.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.4.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.5.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.6.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.q_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.k_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.v_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.out_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.q_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.attention.k_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.ffn_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.ffn.gate_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.ffn.up_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:blocks.7.ffn.down_proj.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:final_norm.weight"
+        },
+        {
+          "equal": true,
+          "max_abs_diff": 0.0,
+          "name": "gradient:prompt_set_projection.weight"
+        }
+      ],
+      "scope": "CPU FP32 fixed four training records, same archived weights, forward and backward; not full CUDA trajectory equivalence",
+      "tensor_count": 95
+    }
+  },
+  "control_sources": {
+    "archived": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+      "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "current": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+      "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    }
+  },
+  "evidence_sha256": {
+    "runs/learning/symmetric-replication-v1/cache-parity.json": "f8b05201761edf7c778e7f3d44bef6cfa36ee9fc9258204c8a09eb9c367920aa",
+    "runs/learning/symmetric-replication-v1/control-replay-audit.json": "c3b794493f5029128a7aec42413a9878c21925cdbe0189b2f4d31c8693690e49",
+    "runs/learning/symmetric-replication-v1/fixed-batch-audit.json": "870f7af4f287788d367c49c696b60fd4e42ad0096a7d55a0fecfc13b323683ad"
+  },
+  "fixed_batch_scripts_sha256": {
+    "audit_fixed_batch.py": "669fd4f547a0478e4110e3fdae8736cb4f887b83993d82f5b4f773cf073ac0f9",
+    "fixed-batch-worker.py": "37f8f0f273bcd968d078633e1af8e7d3f83e551a0eac5119c5fd51b7935e4214"
+  },
+  "scope": "Control replay failure, bounded regression audit, and candidate cache parity; no test partition use"
+}

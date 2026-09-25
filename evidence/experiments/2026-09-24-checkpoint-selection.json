@@ -1,0 +1,678 @@
+{
+  "candidates": [
+    {
+      "by_dimension": {
+        "COLOR": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.13592233009708737,
+            "exact_set_accuracy": 0.13592233009708737,
+            "f1": 0.13592233009708737,
+            "mean_target_count": 150.6601941747573,
+            "precision": 0.13592233009708737,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.13592233009708737,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.13546742391831001,
+            "mean_target_count": 150.79611650485438,
+            "precision": 0.135015559621907,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.13592233009708737,
+            "self_return_rate": 0.13592233009708737,
+            "termination_rate": 1.0
+          }
+        },
+        "TYPE": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.05042016806722689,
+            "exact_set_accuracy": 0.05042016806722689,
+            "f1": 0.09125829188182044,
+            "mean_target_count": 130.94117647058823,
+            "precision": 0.09872345884918857,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.0877122987136512,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.09104648573758169,
+            "mean_target_count": 131.0,
+            "precision": 0.09827442427352624,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.0877122987136512,
+            "self_return_rate": 0.058823529411764705,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "checkpoint": "runs\\national_dex_promptset_s1729_v1\\checkpoint-step-500.pt",
+      "checkpoint_hash": "736ec5f9d4fadc14c04ae4a501f430c152306081ae9dc268cea3ba57a3a904e4",
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+        "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "final_reference_parity": null,
+      "inputs": {
+        "docs\\experiments\\2026-09-24-checkpoint-selection-plan.md": "501435776425f6a50c5554841344357f2218a20cb9405dde11f6c7f46b6c56af",
+        "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+        "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.09009009009009009,
+        "exact_set_accuracy": 0.09009009009009009,
+        "f1": 0.11198079609881366,
+        "mean_target_count": 140.0900900900901,
+        "precision": 0.1159823946083488,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.1100800159771374,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.11165620029891063,
+        "mean_target_count": 140.1846846846847,
+        "precision": 0.11532098707029752,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.1100800159771374,
+        "self_return_rate": 0.0945945945945946,
+        "termination_rate": 1.0
+      },
+      "report": "runs\\learning\\checkpoint-selection-v1\\step-500.json",
+      "report_sha256": "b8ad026185fae82d65d9cce5f3bfe8e9f35c0c7f66a93df2a4348688e30ca5fd",
+      "script_sha256": "3ada59cfd8ca80d6079b5fe76dd3090d36dacf63fb0e5e316fc864892cb5d597",
+      "sidecar_sha256": "187a6f45b3507e92df13c2e6877ac1441543138bfc5b29c91f0aa5c6722f72b2",
+      "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+      "split": "validation",
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "step": 500,
+      "teacher_forced_fp32": {
+        "first_target_ce": 3.944386237376445,
+        "prompt_set_loss": 0.6902048233393077,
+        "token_ce": 0.17797250771957107
+      },
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    },
+    {
+      "by_dimension": {
+        "COLOR": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.5533980582524272,
+            "exact_set_accuracy": 0.5533980582524272,
+            "f1": 0.5533980582524272,
+            "mean_target_count": 123.00970873786407,
+            "precision": 0.5533980582524272,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.5533980582524272,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.5510804650754834,
+            "mean_target_count": 123.5631067961165,
+            "precision": 0.5487834474370196,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.5533980582524272,
+            "self_return_rate": 0.5533980582524272,
+            "termination_rate": 1.0
+          }
+        },
+        "TYPE": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.15966386554621848,
+            "exact_set_accuracy": 0.15966386554621848,
+            "f1": 0.34391408423979136,
+            "mean_target_count": 102.69747899159664,
+            "precision": 0.40129222898947847,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.3176420514445866,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.34260980675940406,
+            "mean_target_count": 103.05882352941177,
+            "precision": 0.3977883883885677,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.3176420514445866,
+            "self_return_rate": 0.36134453781512604,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "checkpoint": "runs\\national_dex_promptset_s1729_v1\\checkpoint-step-1000.pt",
+      "checkpoint_hash": "27fe34a5ae703c0f33c15d197ade7bc5feeef481432dd8e8e1662d0a8368418f",
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+        "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "final_reference_parity": null,
+      "inputs": {
+        "docs\\experiments\\2026-09-24-checkpoint-selection-plan.md": "501435776425f6a50c5554841344357f2218a20cb9405dde11f6c7f46b6c56af",
+        "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+        "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.34234234234234234,
+        "exact_set_accuracy": 0.34234234234234234,
+        "f1": 0.4411070992096179,
+        "mean_target_count": 112.12162162162163,
+        "precision": 0.4718638524763422,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.4270243428914676,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.439332679761909,
+        "mean_target_count": 112.57207207207207,
+        "precision": 0.4678446545236603,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.4270243428914676,
+        "self_return_rate": 0.45045045045045046,
+        "termination_rate": 1.0
+      },
+      "report": "runs\\learning\\checkpoint-selection-v1\\step-1000.json",
+      "report_sha256": "3533c0f87420a256fac448e19b93d84f6215b58c9d0febad04b3faed74aa37fe",
+      "script_sha256": "3ada59cfd8ca80d6079b5fe76dd3090d36dacf63fb0e5e316fc864892cb5d597",
+      "sidecar_sha256": "1331d8633b06cac3cb0f721c91eb667afcdf6a05492e7888b58ea616c72fcfad",
+      "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+      "split": "validation",
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "step": 1000,
+      "teacher_forced_fp32": {
+        "first_target_ce": 3.508792155497783,
+        "prompt_set_loss": 0.5855844246374594,
+        "token_ce": 0.15324282358084884
+      },
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    },
+    {
+      "by_dimension": {
+        "COLOR": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.6990291262135923,
+            "exact_set_accuracy": 0.6990291262135923,
+            "f1": 0.6990291262135923,
+            "mean_target_count": 115.71844660194175,
+            "precision": 0.6990291262135923,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.6990291262135923,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.6958749066763726,
+            "mean_target_count": 116.41747572815534,
+            "precision": 0.6927517062382551,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.6990291262135923,
+            "self_return_rate": 0.6990291262135923,
+            "termination_rate": 1.0
+          }
+        },
+        "TYPE": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.2773109243697479,
+            "exact_set_accuracy": 0.2773109243697479,
+            "f1": 0.5380687659083054,
+            "mean_target_count": 111.60504201680672,
+            "precision": 0.6070405228776063,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.5096737135404824,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.01680672268907563,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.5357370470632965,
+            "mean_target_count": 112.22689075630252,
+            "precision": 0.6011138296880019,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.5096737135404824,
+            "self_return_rate": 0.6050420168067226,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "checkpoint": "runs\\national_dex_promptset_s1729_v1\\checkpoint-step-1500.pt",
+      "checkpoint_hash": "093c3000f7cd785c9d6c8bcc4dde4c629a5574652bc7174b89735fff9b8e7763",
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+        "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "final_reference_parity": null,
+      "inputs": {
+        "docs\\experiments\\2026-09-24-checkpoint-selection-plan.md": "501435776425f6a50c5554841344357f2218a20cb9405dde11f6c7f46b6c56af",
+        "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+        "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.47297297297297297,
+        "exact_set_accuracy": 0.47297297297297297,
+        "f1": 0.612748572716614,
+        "mean_target_count": 113.51351351351352,
+        "precision": 0.6497199199208792,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.5975278014023307,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.009009009009009009,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.6100352431900834,
+        "mean_target_count": 114.17117117117117,
+        "precision": 0.6436305021414978,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.5975278014023307,
+        "self_return_rate": 0.6486486486486487,
+        "termination_rate": 1.0
+      },
+      "report": "runs\\learning\\checkpoint-selection-v1\\step-1500.json",
+      "report_sha256": "6ff036cad900ed2d779a02768ce767b22325ec0d94b4499314111b30ec10ca79",
+      "script_sha256": "3ada59cfd8ca80d6079b5fe76dd3090d36dacf63fb0e5e316fc864892cb5d597",
+      "sidecar_sha256": "46980d0992cce49f1bb74475a72d5e2ea298d4c7fa57f9ffc1ba1970d46b406e",
+      "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+      "split": "validation",
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "step": 1500,
+      "teacher_forced_fp32": {
+        "first_target_ce": 2.8925150622118703,
+        "prompt_set_loss": 0.6009393323649157,
+        "token_ce": 0.14641916065155347
+      },
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    },
+    {
+      "by_dimension": {
+        "COLOR": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.7087378640776699,
+            "exact_set_accuracy": 0.7087378640776699,
+            "f1": 0.7087378640776699,
+            "mean_target_count": 115.44660194174757,
+            "precision": 0.7087378640776699,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.7087378640776699,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.7054752193506304,
+            "mean_target_count": 116.15533980582525,
+            "precision": 0.7022454154606909,
+            "protocol_valid_rate": 1.0,
+            "query_count": 103,
+            "recall": 0.7087378640776699,
+            "self_return_rate": 0.7087378640776699,
+            "termination_rate": 1.0
+          }
+        },
+        "TYPE": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.2689075630252101,
+            "exact_set_accuracy": 0.2689075630252101,
+            "f1": 0.5653546076530105,
+            "mean_target_count": 116.05042016806723,
+            "precision": 0.6336959148707796,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.5370666243642122,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.025210084033613446,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.5628398304436185,
+            "mean_target_count": 116.91596638655462,
+            "precision": 0.6273521733582033,
+            "protocol_valid_rate": 1.0,
+            "query_count": 119,
+            "recall": 0.5370666243642122,
+            "self_return_rate": 0.6974789915966386,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "checkpoint": "runs\\national_dex_promptset_s1729_v1\\checkpoint-final.pt",
+      "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+        "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "final_reference_parity": 222,
+      "inputs": {
+        "docs\\experiments\\2026-09-24-checkpoint-selection-plan.md": "501435776425f6a50c5554841344357f2218a20cb9405dde11f6c7f46b6c56af",
+        "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+        "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+      },
+      "processed": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.47297297297297297,
+        "exact_set_accuracy": 0.47297297297297297,
+        "f1": 0.6318792716698569,
+        "mean_target_count": 115.77027027027027,
+        "precision": 0.6685126750883909,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.616715893240276,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "raw": {
+        "duplicate_query_rate": 0.013513513513513514,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.6290175108824568,
+        "mean_target_count": 116.56306306306307,
+        "precision": 0.6620999388381861,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.616715893240276,
+        "self_return_rate": 0.7027027027027027,
+        "termination_rate": 1.0
+      },
+      "report": "runs\\learning\\checkpoint-selection-v1\\step-2000.json",
+      "report_sha256": "be0d079c67369660dd2a27735e0a450297f775646ff0867a640299f5752a4f63",
+      "script_sha256": "3ada59cfd8ca80d6079b5fe76dd3090d36dacf63fb0e5e316fc864892cb5d597",
+      "sidecar_sha256": "b6d0e287cc40fca3909d8c80026fadb351dbd95964d02e5b5a43d55869017f97",
+      "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+      "split": "validation",
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "step": 2000,
+      "teacher_forced_fp32": {
+        "first_target_ce": 2.692895047299497,
+        "prompt_set_loss": 0.7035229528272474,
+        "token_ce": 0.14670195849506762
+      },
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    }
+  ],
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "469825c5a4c4928d125edeed8d1e10af99239034786e5eb8fd8179db51470a89",
+    "source_tree_sha256": "0b8faf55745393f534b4b2309e3fda566854fccab18dc605644584c942bb71b6",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "final_test_evaluated": false,
+  "inputs": {
+    "docs\\experiments\\2026-09-24-checkpoint-selection-plan.md": "501435776425f6a50c5554841344357f2218a20cb9405dde11f6c7f46b6c56af",
+    "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+    "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917"
+  },
+  "raw_report": "runs\\learning\\checkpoint-selection-v1\\comparison.json",
+  "raw_report_sha256": "bd2289a77cd27de7ac1c37f9ae252ecad887d03ec09e5a8efc1704b79ecb9061",
+  "rule": "all responses valid and terminated; maximize processed exact-set, then F1, then earlier step",
+  "scope": "exploratory validation-only checkpoint selection within seed 1729",
+  "script_sha256": "3ada59cfd8ca80d6079b5fe76dd3090d36dacf63fb0e5e316fc864892cb5d597",
+  "selected_step": 2000,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "step_1500_to_2000_exact_changes": {
+    "gained": [
+      [
+        "PKM_DARUMAKA",
+        "TYPE"
+      ],
+      [
+        "PKM_EKANS",
+        "TYPE"
+      ],
+      [
+        "PKM_GOREBYSS",
+        "TYPE"
+      ],
+      [
+        "PKM_GREAVARD",
+        "COLOR"
+      ],
+      [
+        "PKM_IMPIDIMP",
+        "COLOR"
+      ],
+      [
+        "PKM_OINKOLOGNE",
+        "TYPE"
+      ],
+      [
+        "PKM_VOLBEAT",
+        "TYPE"
+      ]
+    ],
+    "lost": [
+      [
+        "PKM_BUDEW",
+        "TYPE"
+      ],
+      [
+        "PKM_CONKELDURR",
+        "TYPE"
+      ],
+      [
+        "PKM_GOLEM",
+        "TYPE"
+      ],
+      [
+        "PKM_MIGHTYENA",
+        "TYPE"
+      ],
+      [
+        "PKM_PHANPY",
+        "COLOR"
+      ],
+      [
+        "PKM_SINISTCHA",
+        "TYPE"
+      ],
+      [
+        "PKM_VULPIX",
+        "TYPE"
+      ]
+    ],
+    "retained": 98
+  }
+}

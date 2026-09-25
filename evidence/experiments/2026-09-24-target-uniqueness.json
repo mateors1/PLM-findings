@@ -1,0 +1,713 @@
+{
+  "all_candidate_responses_valid": true,
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "e4e09fa4573f91c4d9322c0bb308fd898adaa3b9bcf95f3a0946479ec9082f01",
+    "source_tree_sha256": "1e67ae6439d6baf173734af0d5663365fbf362a60b1aa6e81aa1a8510d3fbc31",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "no_seed_quality_regression": false,
+  "paired_differences": {
+    "processed": {
+      "exact_set_accuracy": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "f1": {
+        "mean": 0.000504491906193727,
+        "sample_std": 0.0010647001484065531,
+        "values": [
+          -0.000636577454083076,
+          0.0006787224830288041,
+          0.0014713306896354528
+        ]
+      }
+    },
+    "raw": {
+      "exact_set_accuracy": {
+        "mean": 0.0,
+        "sample_std": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "f1": {
+        "mean": 0.0005964450127946552,
+        "sample_std": 0.0010585364699821802,
+        "values": [
+          -0.0005373510294390815,
+          0.0007678947323047636,
+          0.0015587913355182836
+        ]
+      }
+    }
+  },
+  "qualifies_for_http_verification": false,
+  "report_hashes": {
+    "seed-1729-original.json": "8cfabb91482c67e9222b71f21e009d4d10fb835248d31dae4648fdb2463e11b8",
+    "seed-1729-unique.json": "39f48653e2769984e20b6e6a0af5978372c451ecbed1ec13c80b30dc58df7cac",
+    "seed-1730-original.json": "e22ab782f67d51ab5742b406e98530f8ef38e9ae3ceab7416bc3944d55501742",
+    "seed-1730-unique.json": "39ae9ad04398ab9a3b52f7e315e596c344697c44090090ae67d748b166b51d76",
+    "seed-1731-original.json": "fd5e9aab1ebad39f4ccfa0ede63ca89a6b195343d5bf4382635316e8ecbde18d",
+    "seed-1731-unique.json": "3f9601024227b36bb6ade74cc59928c36be8a486dba31b90b0e052a586865174"
+  },
+  "runs": [
+    {
+      "changed_queries": [
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_CRAWDAUNT"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_GROUDON"
+        }
+      ],
+      "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+      "metrics": {
+        "original": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.6441441441441441,
+            "exact_set_accuracy": 0.6441441441441441,
+            "f1": 0.8379993463495402,
+            "mean_target_count": 117.02252252252252,
+            "precision": 0.8861271484523306,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.8165597863482479,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.018018018018018018,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.8340801445405982,
+            "mean_target_count": 118.02702702702703,
+            "precision": 0.8771505830941294,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.8165597863482479,
+            "self_return_rate": 0.9054054054054054,
+            "termination_rate": 1.0
+          }
+        },
+        "unique": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.6441441441441441,
+            "exact_set_accuracy": 0.6441441441441441,
+            "f1": 0.8373627688954571,
+            "mean_target_count": 117.5945945945946,
+            "precision": 0.8848794669472965,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.8162128532369118,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.8335427935111591,
+            "mean_target_count": 118.49549549549549,
+            "precision": 0.8762298517865633,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.8162128532369118,
+            "self_return_rate": 0.9009009009009009,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "original_replay_exact": true,
+      "seed": 1729,
+      "source_changed_files": [
+        "src/plm/cli.py",
+        "src/plm/config.py",
+        "src/plm/serving/generation.py",
+        "src/plm/serving/native.py"
+      ]
+    },
+    {
+      "changed_queries": [
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "COLOR",
+          "subject": "PKM_CLODSIRE"
+        },
+        {
+          "after_exact": true,
+          "after_terminated": true,
+          "before_exact": true,
+          "before_terminated": true,
+          "dimension": "COLOR",
+          "subject": "PKM_GRAPPLOCT"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": false,
+          "dimension": "TYPE",
+          "subject": "PKM_KECLEON"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_SWANNA"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_ZUBAT"
+        }
+      ],
+      "checkpoint_hash": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+      "metrics": {
+        "original": {
+          "processed": {
+            "duplicate_query_rate": 0.0045045045045045045,
+            "exact_sequence_accuracy": 0.5855855855855856,
+            "exact_set_accuracy": 0.5855855855855856,
+            "f1": 0.791895575454018,
+            "mean_target_count": 121.72972972972973,
+            "precision": 0.8230217213396244,
+            "protocol_valid_rate": 0.9954954954954955,
+            "query_count": 222,
+            "recall": 0.778692861932728,
+            "self_return_rate": 0.0,
+            "termination_rate": 0.9954954954954955
+          },
+          "raw": {
+            "duplicate_query_rate": 0.02702702702702703,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.7881645783043464,
+            "mean_target_count": 122.76126126126127,
+            "precision": 0.8148638096331947,
+            "protocol_valid_rate": 0.9954954954954955,
+            "query_count": 222,
+            "recall": 0.778692861932728,
+            "self_return_rate": 0.8738738738738738,
+            "termination_rate": 0.9954954954954955
+          }
+        },
+        "unique": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.5855855855855856,
+            "exact_set_accuracy": 0.5855855855855856,
+            "f1": 0.7925742979370468,
+            "mean_target_count": 119.86036036036036,
+            "precision": 0.8241332321266621,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.779083400864807,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.7889324730366511,
+            "mean_target_count": 120.73423423423424,
+            "precision": 0.8161655120260894,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.779083400864807,
+            "self_return_rate": 0.8738738738738738,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "original_replay_exact": true,
+      "seed": 1730,
+      "source_changed_files": [
+        "src/plm/cli.py",
+        "src/plm/config.py",
+        "src/plm/serving/generation.py",
+        "src/plm/serving/native.py"
+      ]
+    },
+    {
+      "changed_queries": [
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": false,
+          "dimension": "TYPE",
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FLORAGATO"
+        },
+        {
+          "after_exact": false,
+          "after_terminated": true,
+          "before_exact": false,
+          "before_terminated": true,
+          "dimension": "TYPE",
+          "subject": "PKM_FROSLASS"
+        }
+      ],
+      "checkpoint_hash": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa",
+      "metrics": {
+        "original": {
+          "processed": {
+            "duplicate_query_rate": 0.0045045045045045045,
+            "exact_sequence_accuracy": 0.6036036036036037,
+            "exact_set_accuracy": 0.6036036036036037,
+            "f1": 0.7774669889323947,
+            "mean_target_count": 120.45495495495496,
+            "precision": 0.8140988598044719,
+            "protocol_valid_rate": 0.9954954954954955,
+            "query_count": 222,
+            "recall": 0.7623252491687904,
+            "self_return_rate": 0.0,
+            "termination_rate": 0.9954954954954955
+          },
+          "raw": {
+            "duplicate_query_rate": 0.02252252252252252,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.7738642877295236,
+            "mean_target_count": 121.42342342342343,
+            "precision": 0.8061973705963048,
+            "protocol_valid_rate": 0.9954954954954955,
+            "query_count": 222,
+            "recall": 0.7623252491687904,
+            "self_return_rate": 0.8333333333333334,
+            "termination_rate": 0.9954954954954955
+          }
+        },
+        "unique": {
+          "processed": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.6036036036036037,
+            "exact_set_accuracy": 0.6036036036036037,
+            "f1": 0.7789383196220302,
+            "mean_target_count": 118.98648648648648,
+            "precision": 0.8155194135027751,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.7639656870919357,
+            "self_return_rate": 0.0,
+            "termination_rate": 1.0
+          },
+          "raw": {
+            "duplicate_query_rate": 0.0,
+            "exact_sequence_accuracy": 0.0,
+            "exact_set_accuracy": 0.0,
+            "f1": 0.7754230790650419,
+            "mean_target_count": 119.81981981981981,
+            "precision": 0.8078094304334357,
+            "protocol_valid_rate": 1.0,
+            "query_count": 222,
+            "recall": 0.7639656870919357,
+            "self_return_rate": 0.8333333333333334,
+            "termination_rate": 1.0
+          }
+        }
+      },
+      "original_replay_exact": true,
+      "seed": 1731,
+      "source_changed_files": [
+        "src/plm/cli.py",
+        "src/plm/config.py",
+        "src/plm/serving/generation.py",
+        "src/plm/serving/native.py"
+      ]
+    }
+  ],
+  "scope": "three frozen checkpoints; paired validation decoding policies; no retraining or final-test use",
+  "script_sha256": "d686e2b9c9fdf50ffbb58dfb9b22170d199dc994440ec1c9ffa66d61345ecd75",
+  "selected_seed_if_qualified": 1729,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "aggregates": {
+    "original": {
+      "generation": {
+        "f1": {
+          "mean": 0.7987030035248227,
+          "sample_std": 0.031460787616787944
+        },
+        "exact_set_accuracy": {
+          "mean": 0.0,
+          "sample_std": 0.0
+        },
+        "protocol_valid_rate": {
+          "mean": 0.9969969969969971,
+          "sample_std": 0.002600676888241531
+        },
+        "termination_rate": {
+          "mean": 0.9969969969969971,
+          "sample_std": 0.002600676888241531
+        },
+        "duplicate_query_rate": {
+          "mean": 0.02252252252252252,
+          "sample_std": 0.004504504504504505
+        }
+      },
+      "processed_generation": {
+        "f1": {
+          "mean": 0.8024539702453176,
+          "sample_std": 0.03161726346548621
+        },
+        "exact_set_accuracy": {
+          "mean": 0.6111111111111112,
+          "sample_std": 0.0299924690021594
+        },
+        "protocol_valid_rate": {
+          "mean": 0.9969969969969971,
+          "sample_std": 0.002600676888241531
+        },
+        "termination_rate": {
+          "mean": 0.9969969969969971,
+          "sample_std": 0.002600676888241531
+        },
+        "duplicate_query_rate": {
+          "mean": 0.003003003003003003,
+          "sample_std": 0.0026006768882415577
+        }
+      }
+    },
+    "unique": {
+      "generation": {
+        "f1": {
+          "mean": 0.7992994485376174,
+          "sample_std": 0.030415143228378468
+        },
+        "exact_set_accuracy": {
+          "mean": 0.0,
+          "sample_std": 0.0
+        },
+        "protocol_valid_rate": {
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "termination_rate": {
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "duplicate_query_rate": {
+          "mean": 0.0,
+          "sample_std": 0.0
+        }
+      },
+      "processed_generation": {
+        "f1": {
+          "mean": 0.8029584621515113,
+          "sample_std": 0.03056513075467753
+        },
+        "exact_set_accuracy": {
+          "mean": 0.6111111111111112,
+          "sample_std": 0.0299924690021594
+        },
+        "protocol_valid_rate": {
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "termination_rate": {
+          "mean": 1.0,
+          "sample_std": 0.0
+        },
+        "duplicate_query_rate": {
+          "mean": 0.0,
+          "sample_std": 0.0
+        }
+      }
+    }
+  },
+  "first_emitted_id_unchanged_on_all_queries": true,
+  "every_first_divergence_removes_a_repeat": true,
+  "change_details": [
+    {
+      "seed": 1729,
+      "subject": "PKM_AERODACTYL",
+      "dimension": "TYPE",
+      "first_change_position_1based": 2,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 118,
+      "new_entity_count": 160,
+      "expected_count": 178,
+      "old_distinct_correct": 43,
+      "new_distinct_correct": 15,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1729,
+      "subject": "PKM_ARCHALUDON",
+      "dimension": "TYPE",
+      "first_change_position_1based": 8,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 131,
+      "new_entity_count": 131,
+      "expected_count": 131,
+      "old_distinct_correct": 129,
+      "new_distinct_correct": 130,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1729,
+      "subject": "PKM_CRAWDAUNT",
+      "dimension": "TYPE",
+      "first_change_position_1based": 10,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 89,
+      "new_entity_count": 150,
+      "expected_count": 218,
+      "old_distinct_correct": 10,
+      "new_distinct_correct": 17,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1729,
+      "subject": "PKM_GROUDON",
+      "dimension": "TYPE",
+      "first_change_position_1based": 36,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 50,
+      "new_entity_count": 51,
+      "expected_count": 74,
+      "old_distinct_correct": 3,
+      "new_distinct_correct": 6,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_CARBINK",
+      "dimension": "TYPE",
+      "first_change_position_1based": 3,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 127,
+      "new_entity_count": 126,
+      "expected_count": 135,
+      "old_distinct_correct": 79,
+      "new_distinct_correct": 79,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_CLODSIRE",
+      "dimension": "COLOR",
+      "first_change_position_1based": 40,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 150,
+      "new_entity_count": 121,
+      "expected_count": 146,
+      "old_distinct_correct": 15,
+      "new_distinct_correct": 9,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_GRAPPLOCT",
+      "dimension": "COLOR",
+      "first_change_position_1based": 2,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 171,
+      "new_entity_count": 170,
+      "expected_count": 169,
+      "old_distinct_correct": 169,
+      "new_distinct_correct": 169,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_KECLEON",
+      "dimension": "TYPE",
+      "first_change_position_1based": 4,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 507,
+      "new_entity_count": 157,
+      "expected_count": 130,
+      "old_distinct_correct": 2,
+      "new_distinct_correct": 19,
+      "old_terminated": false,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_SWANNA",
+      "dimension": "TYPE",
+      "first_change_position_1based": 31,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 215,
+      "new_entity_count": 175,
+      "expected_count": 254,
+      "old_distinct_correct": 51,
+      "new_distinct_correct": 57,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1730,
+      "subject": "PKM_ZUBAT",
+      "dimension": "TYPE",
+      "first_change_position_1based": 52,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 172,
+      "new_entity_count": 143,
+      "expected_count": 188,
+      "old_distinct_correct": 113,
+      "new_distinct_correct": 108,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_AEGISLASH",
+      "dimension": "TYPE",
+      "first_change_position_1based": 9,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 90,
+      "new_entity_count": 74,
+      "expected_count": 125,
+      "old_distinct_correct": 7,
+      "new_distinct_correct": 10,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_ARCTIBAX",
+      "dimension": "TYPE",
+      "first_change_position_1based": 3,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 131,
+      "new_entity_count": 183,
+      "expected_count": 113,
+      "old_distinct_correct": 7,
+      "new_distinct_correct": 23,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_CARBINK",
+      "dimension": "TYPE",
+      "first_change_position_1based": 26,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 507,
+      "new_entity_count": 92,
+      "expected_count": 135,
+      "old_distinct_correct": 6,
+      "new_distinct_correct": 15,
+      "old_terminated": false,
+      "new_terminated": true
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_FLORAGATO",
+      "dimension": "TYPE",
+      "first_change_position_1based": 9,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 251,
+      "new_entity_count": 253,
+      "expected_count": 126,
+      "old_distinct_correct": 123,
+      "new_distinct_correct": 126,
+      "old_terminated": true,
+      "new_terminated": true
+    },
+    {
+      "seed": 1731,
+      "subject": "PKM_FROSLASS",
+      "dimension": "TYPE",
+      "first_change_position_1based": 42,
+      "old_choice_was_repeated": true,
+      "old_entity_count": 112,
+      "new_entity_count": 133,
+      "expected_count": 111,
+      "old_distinct_correct": 15,
+      "new_distinct_correct": 27,
+      "old_terminated": true,
+      "new_terminated": true
+    }
+  ],
+  "source_report_sha256": "49ef81001c19e10a40e8f4820a6981a09292cd912c2fe2094cf3824c882ec510"
+}

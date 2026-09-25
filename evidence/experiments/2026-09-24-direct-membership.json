@@ -1,0 +1,1272 @@
+{
+  "scope": "exploratory validation-only saved-head ablation; not a runtime or sequence decoder",
+  "evaluator_version": "plm-direct-membership-zero-v1",
+  "prediction_rule": "product_id != subject_id and logit > 0",
+  "query_count": 666,
+  "comparison": {
+    "baseline": {
+      "exact_count": 569,
+      "f1": 0.9668960529174291,
+      "mean_set_size": 125.52402402402403,
+      "precision": 0.9820461214803038,
+      "query_count": 666,
+      "recall": 0.9637964716104676
+    },
+    "direct": {
+      "exact_count": 339,
+      "f1": 0.9895858651596365,
+      "mean_set_size": 130.26426426426426,
+      "precision": 0.9823401536146523,
+      "query_count": 666,
+      "recall": 0.9974930922686877
+    },
+    "gained_exact": 3,
+    "lost_exact": 233
+  },
+  "groups": {
+    "COLOR": {
+      "comparison": {
+        "baseline": {
+          "exact_count": 308,
+          "f1": 0.9968020528140019,
+          "mean_set_size": 113.53074433656958,
+          "precision": 0.9968151230287152,
+          "query_count": 309,
+          "recall": 0.9967942846675215
+        },
+        "direct": {
+          "exact_count": 238,
+          "f1": 0.9979463258577925,
+          "mean_set_size": 114.03236245954693,
+          "precision": 0.9960532726016224,
+          "query_count": 309,
+          "recall": 0.9998902967472986
+        },
+        "gained_exact": 0,
+        "lost_exact": 70
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 281178,
+            "positive": 114,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 2,
+            "positive": 35122,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 114,
+          "newly_lost_true_members": 2,
+          "recovered_baseline_false_negatives": 105,
+          "removed_false_positives": 62
+        },
+        "query_count": 309,
+        "source_union_missing_recovered_count": 74,
+        "source_union_missing_true_count": 74
+      }
+    },
+    "TYPE_dual": {
+      "comparison": {
+        "baseline": {
+          "exact_count": 125,
+          "f1": 0.904465879730429,
+          "mean_set_size": 162.08333333333334,
+          "precision": 0.9568614752171237,
+          "query_count": 204,
+          "recall": 0.8877172168718639
+        },
+        "direct": {
+          "exact_count": 13,
+          "f1": 0.9745867299055261,
+          "mean_set_size": 177.34803921568627,
+          "precision": 0.9580749407326052,
+          "query_count": 204,
+          "recall": 0.9928316035935546
+        },
+        "gained_exact": 0,
+        "lost_exact": 112
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 172484,
+            "positive": 1408,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 233,
+            "positive": 34771,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 1292,
+          "newly_lost_true_members": 193,
+          "recovered_baseline_false_negatives": 3690,
+          "removed_false_positives": 1675
+        },
+        "query_count": 204,
+        "source_union_missing_recovered_count": 3026,
+        "source_union_missing_true_count": 3060
+      }
+    },
+    "TYPE_single": {
+      "comparison": {
+        "baseline": {
+          "exact_count": 136,
+          "f1": 0.9897378918854483,
+          "mean_set_size": 101.0,
+          "precision": 0.9857980584687326,
+          "query_count": 153,
+          "recall": 0.9985928358722027
+        },
+        "direct": {
+          "exact_count": 88,
+          "f1": 0.9926998601668797,
+          "mean_set_size": 100.26797385620915,
+          "precision": 0.986998648130756,
+          "query_count": 153,
+          "recall": 0.998866997535592
+        },
+        "gained_exact": 3,
+        "lost_exact": 51
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 141320,
+            "positive": 151,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 11,
+            "positive": 15190,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 150,
+          "newly_lost_true_members": 11,
+          "recovered_baseline_false_negatives": 15,
+          "removed_false_positives": 266
+        },
+        "query_count": 153,
+        "source_union_missing_recovered_count": 0,
+        "source_union_missing_true_count": 0
+      }
+    }
+  },
+  "diagnostics": {
+    "empty_prediction_count": 0,
+    "logit_sign_counts": {
+      "nonmember": {
+        "negative": 594982,
+        "positive": 1673,
+        "zero": 0
+      },
+      "true_member": {
+        "negative": 246,
+        "positive": 85083,
+        "zero": 0
+      }
+    },
+    "membership_change_counts": {
+      "new_false_positives": 1556,
+      "newly_lost_true_members": 206,
+      "recovered_baseline_false_negatives": 3810,
+      "removed_false_positives": 2003
+    },
+    "query_count": 666,
+    "source_union_missing_recovered_count": 3100,
+    "source_union_missing_true_count": 3134
+  },
+  "previously_exact": {
+    "comparison": {
+      "baseline": {
+        "exact_count": 569,
+        "f1": 1.0,
+        "mean_set_size": 124.61687170474517,
+        "precision": 1.0,
+        "query_count": 569,
+        "recall": 1.0
+      },
+      "direct": {
+        "exact_count": 336,
+        "f1": 0.9938543904675838,
+        "mean_set_size": 125.83304042179262,
+        "precision": 0.9892479601343761,
+        "query_count": 569,
+        "recall": 0.9987583870249227
+      },
+      "gained_exact": 0,
+      "lost_exact": 233
+    },
+    "diagnostics": {
+      "empty_prediction_count": 0,
+      "logit_sign_counts": {
+        "nonmember": {
+          "negative": 510954,
+          "positive": 795,
+          "zero": 0
+        },
+        "true_member": {
+          "negative": 103,
+          "positive": 70804,
+          "zero": 0
+        }
+      },
+      "membership_change_counts": {
+        "new_false_positives": 795,
+        "newly_lost_true_members": 103,
+        "recovered_baseline_false_negatives": 0,
+        "removed_false_positives": 0
+      },
+      "query_count": 569,
+      "source_union_missing_recovered_count": 0,
+      "source_union_missing_true_count": 0
+    }
+  },
+  "previously_inexact": {
+    "comparison": {
+      "baseline": {
+        "exact_count": 0,
+        "f1": 0.7727089818866775,
+        "mean_set_size": 130.84536082474227,
+        "precision": 0.8767290402668282,
+        "query_count": 97,
+        "recall": 0.751427320541973
+      },
+      "direct": {
+        "exact_count": 3,
+        "f1": 0.9645467837140479,
+        "mean_set_size": 156.2577319587629,
+        "precision": 0.9418191029989527,
+        "query_count": 97,
+        "recall": 0.9900708993171642
+      },
+      "gained_exact": 3,
+      "lost_exact": 0
+    },
+    "diagnostics": {
+      "empty_prediction_count": 0,
+      "logit_sign_counts": {
+        "nonmember": {
+          "negative": 84028,
+          "positive": 878,
+          "zero": 0
+        },
+        "true_member": {
+          "negative": 143,
+          "positive": 14279,
+          "zero": 0
+        }
+      },
+      "membership_change_counts": {
+        "new_false_positives": 761,
+        "newly_lost_true_members": 103,
+        "recovered_baseline_false_negatives": 3810,
+        "removed_false_positives": 2003
+      },
+      "query_count": 97,
+      "source_union_missing_recovered_count": 3100,
+      "source_union_missing_true_count": 3134
+    }
+  },
+  "gate": {
+    "eligible_for_further_research": false,
+    "no_per_seed_regression": false,
+    "per_seed": [
+      {
+        "exact_count_nonregression": false,
+        "macro_f1_nonregression": true,
+        "seed": 1729
+      },
+      {
+        "exact_count_nonregression": false,
+        "macro_f1_nonregression": true,
+        "seed": 1730
+      },
+      {
+        "exact_count_nonregression": false,
+        "macro_f1_nonregression": true,
+        "seed": 1731
+      }
+    ],
+    "strict_pooled_dual_exact_improvement": false,
+    "strict_pooled_exact_improvement": false
+  },
+  "runs": [
+    {
+      "checkpoint_hash": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+      "comparison": {
+        "baseline": {
+          "exact_count": 191,
+          "f1": 0.9629406553851149,
+          "mean_set_size": 123.80630630630631,
+          "precision": 0.9823575436279265,
+          "query_count": 222,
+          "recall": 0.9555738558286755
+        },
+        "direct": {
+          "exact_count": 112,
+          "f1": 0.9903735063269145,
+          "mean_set_size": 130.0855855855856,
+          "precision": 0.9838575265439718,
+          "query_count": 222,
+          "recall": 0.9975186802788016
+        },
+        "gained_exact": 1,
+        "lost_exact": 80
+      },
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 198373,
+            "positive": 512,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 76,
+            "positive": 28367,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 479,
+          "newly_lost_true_members": 63,
+          "recovered_baseline_false_negatives": 1571,
+          "removed_false_positives": 593
+        },
+        "query_count": 222,
+        "source_union_missing_recovered_count": 1289,
+        "source_union_missing_true_count": 1301
+      },
+      "groups": {
+        "COLOR": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 102,
+              "f1": 0.9904061584420061,
+              "mean_set_size": 113.25242718446601,
+              "precision": 0.9904453690861458,
+              "query_count": 103,
+              "recall": 0.9903828540025646
+            },
+            "direct": {
+              "exact_count": 75,
+              "f1": 0.9977532345677808,
+              "mean_set_size": 114.0873786407767,
+              "precision": 0.9955625230283973,
+              "query_count": 103,
+              "recall": 1.0
+            },
+            "gained_exact": 0,
+            "lost_exact": 27
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 93721,
+                "positive": 43,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 0,
+                "positive": 11708,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 43,
+              "newly_lost_true_members": 0,
+              "recovered_baseline_false_negatives": 105,
+              "removed_false_positives": 62
+            },
+            "query_count": 103,
+            "source_union_missing_recovered_count": 74,
+            "source_union_missing_true_count": 74
+          }
+        },
+        "TYPE_dual": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 41,
+              "f1": 0.8942901951683502,
+              "mean_set_size": 158.10294117647058,
+              "precision": 0.957817709318077,
+              "query_count": 68,
+              "recall": 0.8700569666950081
+            },
+            "direct": {
+              "exact_count": 5,
+              "f1": 0.9766385544057118,
+              "mean_set_size": 176.86764705882354,
+              "precision": 0.9617566332610925,
+              "query_count": 68,
+              "recall": 0.9931878215475363
+            },
+            "gained_exact": 0,
+            "lost_exact": 36
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 57534,
+                "positive": 430,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 71,
+                "positive": 11597,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 397,
+              "newly_lost_true_members": 58,
+              "recovered_baseline_false_negatives": 1463,
+              "removed_false_positives": 526
+            },
+            "query_count": 68,
+            "source_union_missing_recovered_count": 1215,
+            "source_union_missing_true_count": 1227
+          }
+        },
+        "TYPE_single": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 48,
+              "f1": 0.9990050569513934,
+              "mean_set_size": 99.3921568627451,
+              "precision": 0.9987430869783811,
+              "query_count": 51,
+              "recall": 0.9992958489498283
+            },
+            "direct": {
+              "exact_count": 32,
+              "f1": 0.9937826185197096,
+              "mean_set_size": 100.01960784313725,
+              "precision": 0.9896858815506382,
+              "query_count": 51,
+              "recall": 0.9982818658168919
+            },
+            "gained_exact": 1,
+            "lost_exact": 17
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 47118,
+                "positive": 39,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 5,
+                "positive": 5062,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 39,
+              "newly_lost_true_members": 5,
+              "recovered_baseline_false_negatives": 3,
+              "removed_false_positives": 5
+            },
+            "query_count": 51,
+            "source_union_missing_recovered_count": 0,
+            "source_union_missing_true_count": 0
+          }
+        }
+      },
+      "previously_exact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 191,
+            "f1": 1.0,
+            "mean_set_size": 123.60732984293193,
+            "precision": 1.0,
+            "query_count": 191,
+            "recall": 1.0
+          },
+          "direct": {
+            "exact_count": 111,
+            "f1": 0.9945801092847444,
+            "mean_set_size": 124.61780104712042,
+            "precision": 0.9906521224099242,
+            "query_count": 191,
+            "recall": 0.9986806603086318
+          },
+          "gained_exact": 0,
+          "lost_exact": 80
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 171751,
+              "positive": 224,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 31,
+              "positive": 23578,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 224,
+            "newly_lost_true_members": 31,
+            "recovered_baseline_false_negatives": 0,
+            "removed_false_positives": 0
+          },
+          "query_count": 191,
+          "source_union_missing_recovered_count": 0,
+          "source_union_missing_true_count": 0
+        }
+      },
+      "previously_inexact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 0,
+            "f1": 0.734607274048242,
+            "mean_set_size": 125.03225806451613,
+            "precision": 0.8736572479161187,
+            "query_count": 31,
+            "recall": 0.6818514836763208
+          },
+          "direct": {
+            "exact_count": 1,
+            "f1": 0.9644554042318978,
+            "mean_set_size": 163.7741935483871,
+            "precision": 0.9419940487892342,
+            "query_count": 31,
+            "recall": 0.9903593839659771
+          },
+          "gained_exact": 1,
+          "lost_exact": 0
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 26622,
+              "positive": 288,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 45,
+              "positive": 4789,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 255,
+            "newly_lost_true_members": 32,
+            "recovered_baseline_false_negatives": 1571,
+            "removed_false_positives": 593
+          },
+          "query_count": 31,
+          "source_union_missing_recovered_count": 1289,
+          "source_union_missing_true_count": 1301
+        }
+      },
+      "query_count": 222,
+      "seed": 1729,
+      "set_construction_seconds": 0.0484871000808198,
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "6e0314a34ddec1ae31eb1b591c14e289339b950a1894f7e66f29ecc3a1508148",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    },
+    {
+      "checkpoint_hash": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+      "comparison": {
+        "baseline": {
+          "exact_count": 192,
+          "f1": 0.9730912228699782,
+          "mean_set_size": 126.18018018018019,
+          "precision": 0.9852915939140341,
+          "query_count": 222,
+          "recall": 0.9696572025180855
+        },
+        "direct": {
+          "exact_count": 116,
+          "f1": 0.9904203935208143,
+          "mean_set_size": 130.11261261261262,
+          "precision": 0.9835963223707063,
+          "query_count": 222,
+          "recall": 0.9978384866794707
+        },
+        "gained_exact": 1,
+        "lost_exact": 77
+      },
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 198370,
+            "positive": 515,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 73,
+            "positive": 28370,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 479,
+          "newly_lost_true_members": 60,
+          "recovered_baseline_false_negatives": 1034,
+          "removed_false_positives": 580
+        },
+        "query_count": 222,
+        "source_union_missing_recovered_count": 836,
+        "source_union_missing_true_count": 848
+      },
+      "groups": {
+        "COLOR": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 103,
+              "f1": 1.0,
+              "mean_set_size": 113.66990291262135,
+              "precision": 1.0,
+              "query_count": 103,
+              "recall": 1.0
+            },
+            "direct": {
+              "exact_count": 81,
+              "f1": 0.998465823947548,
+              "mean_set_size": 113.96116504854369,
+              "precision": 0.9969682781019737,
+              "query_count": 103,
+              "recall": 1.0
+            },
+            "gained_exact": 0,
+            "lost_exact": 22
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 93734,
+                "positive": 30,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 0,
+                "positive": 11708,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 30,
+              "newly_lost_true_members": 0,
+              "recovered_baseline_false_negatives": 0,
+              "removed_false_positives": 0
+            },
+            "query_count": 103,
+            "source_union_missing_recovered_count": 0,
+            "source_union_missing_true_count": 0
+          }
+        },
+        "TYPE_dual": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 43,
+              "f1": 0.9126757184950018,
+              "mean_set_size": 165.3235294117647,
+              "precision": 0.9519813801311113,
+              "query_count": 68,
+              "recall": 0.9019821637005241
+            },
+            "direct": {
+              "exact_count": 5,
+              "f1": 0.9763572842997441,
+              "mean_set_size": 176.97058823529412,
+              "precision": 0.9607311773933468,
+              "query_count": 68,
+              "recall": 0.9935551607279355
+            },
+            "gained_exact": 0,
+            "lost_exact": 38
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 57528,
+                "positive": 436,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 70,
+                "positive": 11598,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 400,
+              "newly_lost_true_members": 57,
+              "recovered_baseline_false_negatives": 1029,
+              "removed_false_positives": 580
+            },
+            "query_count": 68,
+            "source_union_missing_recovered_count": 836,
+            "source_union_missing_true_count": 848
+          }
+        },
+        "TYPE_single": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 46,
+              "f1": 0.9993000513622556,
+              "mean_set_size": 99.25490196078431,
+              "precision": 1.0,
+              "query_count": 51,
+              "recall": 0.9986100358309676
+            },
+            "direct": {
+              "exact_count": 30,
+              "f1": 0.9929225914243284,
+              "mean_set_size": 100.25490196078431,
+              "precision": 0.9870770756675671,
+              "query_count": 51,
+              "recall": 0.999184178692998
+            },
+            "gained_exact": 1,
+            "lost_exact": 17
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 47108,
+                "positive": 49,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 3,
+                "positive": 5064,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 49,
+              "newly_lost_true_members": 3,
+              "recovered_baseline_false_negatives": 5,
+              "removed_false_positives": 0
+            },
+            "query_count": 51,
+            "source_union_missing_recovered_count": 0,
+            "source_union_missing_true_count": 0
+          }
+        }
+      },
+      "previously_exact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 192,
+            "f1": 1.0,
+            "mean_set_size": 124.671875,
+            "precision": 1.0,
+            "query_count": 192,
+            "recall": 1.0
+          },
+          "direct": {
+            "exact_count": 115,
+            "f1": 0.9935897130415365,
+            "mean_set_size": 125.99479166666667,
+            "precision": 0.9885637247884906,
+            "query_count": 192,
+            "recall": 0.9990412174329352
+          },
+          "gained_exact": 0,
+          "lost_exact": 77
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 172389,
+              "positive": 282,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 28,
+              "positive": 23909,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 282,
+            "newly_lost_true_members": 28,
+            "recovered_baseline_false_negatives": 0,
+            "removed_false_positives": 0
+          },
+          "query_count": 192,
+          "source_union_missing_recovered_count": 0,
+          "source_union_missing_true_count": 0
+        }
+      },
+      "previously_inexact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 0,
+            "f1": 0.8008750492378386,
+            "mean_set_size": 135.83333333333334,
+            "precision": 0.8911577949638524,
+            "query_count": 30,
+            "recall": 0.7754632986338329
+          },
+          "direct": {
+            "exact_count": 1,
+            "f1": 0.9701367485881927,
+            "mean_set_size": 156.46666666666667,
+            "precision": 0.9518049468968866,
+            "query_count": 30,
+            "recall": 0.9901410098572982
+          },
+          "gained_exact": 1,
+          "lost_exact": 0
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 25981,
+              "positive": 233,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 45,
+              "positive": 4461,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 197,
+            "newly_lost_true_members": 32,
+            "recovered_baseline_false_negatives": 1034,
+            "removed_false_positives": 580
+          },
+          "query_count": 30,
+          "source_union_missing_recovered_count": 836,
+          "source_union_missing_true_count": 848
+        }
+      },
+      "query_count": 222,
+      "seed": 1730,
+      "set_construction_seconds": 0.047203899957821704,
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    },
+    {
+      "checkpoint_hash": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+      "comparison": {
+        "baseline": {
+          "exact_count": 186,
+          "f1": 0.964656280497194,
+          "mean_set_size": 126.58558558558559,
+          "precision": 0.9784892268989508,
+          "query_count": 222,
+          "recall": 0.9661583564846418
+        },
+        "direct": {
+          "exact_count": 111,
+          "f1": 0.9879636956311806,
+          "mean_set_size": 130.59459459459458,
+          "precision": 0.9795666119292786,
+          "query_count": 222,
+          "recall": 0.9971221098477906
+        },
+        "gained_exact": 1,
+        "lost_exact": 76
+      },
+      "corpus_identity": {
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "diagnostics": {
+        "empty_prediction_count": 0,
+        "logit_sign_counts": {
+          "nonmember": {
+            "negative": 198239,
+            "positive": 646,
+            "zero": 0
+          },
+          "true_member": {
+            "negative": 97,
+            "positive": 28346,
+            "zero": 0
+          }
+        },
+        "membership_change_counts": {
+          "new_false_positives": 598,
+          "newly_lost_true_members": 83,
+          "recovered_baseline_false_negatives": 1205,
+          "removed_false_positives": 830
+        },
+        "query_count": 222,
+        "source_union_missing_recovered_count": 975,
+        "source_union_missing_true_count": 985
+      },
+      "groups": {
+        "COLOR": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 103,
+              "f1": 1.0,
+              "mean_set_size": 113.66990291262135,
+              "precision": 1.0,
+              "query_count": 103,
+              "recall": 1.0
+            },
+            "direct": {
+              "exact_count": 82,
+              "f1": 0.9976199190580491,
+              "mean_set_size": 114.04854368932038,
+              "precision": 0.9956290166744958,
+              "query_count": 103,
+              "recall": 0.9996708902418957
+            },
+            "gained_exact": 0,
+            "lost_exact": 21
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 93723,
+                "positive": 41,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 2,
+                "positive": 11706,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 41,
+              "newly_lost_true_members": 2,
+              "recovered_baseline_false_negatives": 0,
+              "removed_false_positives": 0
+            },
+            "query_count": 103,
+            "source_union_missing_recovered_count": 0,
+            "source_union_missing_true_count": 0
+          }
+        },
+        "TYPE_dual": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 41,
+              "f1": 0.9064317255279347,
+              "mean_set_size": 162.8235294117647,
+              "precision": 0.960785336202183,
+              "query_count": 68,
+              "recall": 0.8911125202200594
+            },
+            "direct": {
+              "exact_count": 3,
+              "f1": 0.9707643510111226,
+              "mean_set_size": 178.2058823529412,
+              "precision": 0.9517370115433763,
+              "query_count": 68,
+              "recall": 0.9917518285051922
+            },
+            "gained_exact": 0,
+            "lost_exact": 38
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 57422,
+                "positive": 542,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 92,
+                "positive": 11576,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 495,
+              "newly_lost_true_members": 78,
+              "recovered_baseline_false_negatives": 1198,
+              "removed_false_positives": 569
+            },
+            "query_count": 68,
+            "source_union_missing_recovered_count": 975,
+            "source_union_missing_true_count": 985
+          }
+        },
+        "TYPE_single": {
+          "comparison": {
+            "baseline": {
+              "exact_count": 42,
+              "f1": 0.9709085673426959,
+              "mean_set_size": 104.3529411764706,
+              "precision": 0.9586510884278167,
+              "query_count": 51,
+              "recall": 0.9978726228358121
+            },
+            "direct": {
+              "exact_count": 26,
+              "f1": 0.9913943705566016,
+              "mean_set_size": 100.52941176470588,
+              "precision": 0.9842329871740626,
+              "query_count": 51,
+              "recall": 0.9991349480968857
+            },
+            "gained_exact": 1,
+            "lost_exact": 17
+          },
+          "diagnostics": {
+            "empty_prediction_count": 0,
+            "logit_sign_counts": {
+              "nonmember": {
+                "negative": 47094,
+                "positive": 63,
+                "zero": 0
+              },
+              "true_member": {
+                "negative": 3,
+                "positive": 5064,
+                "zero": 0
+              }
+            },
+            "membership_change_counts": {
+              "new_false_positives": 62,
+              "newly_lost_true_members": 3,
+              "recovered_baseline_false_negatives": 7,
+              "removed_false_positives": 261
+            },
+            "query_count": 51,
+            "source_union_missing_recovered_count": 0,
+            "source_union_missing_true_count": 0
+          }
+        }
+      },
+      "previously_exact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 186,
+            "f1": 1.0,
+            "mean_set_size": 125.59677419354838,
+            "precision": 1.0,
+            "query_count": 186,
+            "recall": 1.0
+          },
+          "direct": {
+            "exact_count": 110,
+            "f1": 0.9933823784876024,
+            "mean_set_size": 126.91397849462365,
+            "precision": 0.9885123590149156,
+            "query_count": 186,
+            "recall": 0.9985462491995097
+          },
+          "gained_exact": 0,
+          "lost_exact": 76
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 166814,
+              "positive": 289,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 44,
+              "positive": 23317,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 289,
+            "newly_lost_true_members": 44,
+            "recovered_baseline_false_negatives": 0,
+            "removed_false_positives": 0
+          },
+          "query_count": 186,
+          "source_union_missing_recovered_count": 0,
+          "source_union_missing_true_count": 0
+        }
+      },
+      "previously_inexact": {
+        "comparison": {
+          "baseline": {
+            "exact_count": 0,
+            "f1": 0.7820470630660294,
+            "mean_set_size": 131.69444444444446,
+            "precision": 0.86735023254353,
+            "query_count": 36,
+            "recall": 0.7913098649886238
+          },
+          "direct": {
+            "exact_count": 1,
+            "f1": 0.9599671675396676,
+            "mean_set_size": 149.61111111111111,
+            "precision": 0.9333469186534873,
+            "query_count": 36,
+            "recall": 0.9897640565305744
+          },
+          "gained_exact": 1,
+          "lost_exact": 0
+        },
+        "diagnostics": {
+          "empty_prediction_count": 0,
+          "logit_sign_counts": {
+            "nonmember": {
+              "negative": 31425,
+              "positive": 357,
+              "zero": 0
+            },
+            "true_member": {
+              "negative": 53,
+              "positive": 5029,
+              "zero": 0
+            }
+          },
+          "membership_change_counts": {
+            "new_false_positives": 309,
+            "newly_lost_true_members": 39,
+            "recovered_baseline_false_negatives": 1205,
+            "removed_false_positives": 830
+          },
+          "query_count": 36,
+          "source_union_missing_recovered_count": 975,
+          "source_union_missing_true_count": 985
+        }
+      },
+      "query_count": 222,
+      "seed": 1731,
+      "set_construction_seconds": 0.047057200004928745,
+      "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      }
+    }
+  ],
+  "pair_summary_sha256": "4e4c46d4ebc366e02aa04cc3abda1a65cc08cec5463453ba97e25b4bc3f53992",
+  "pair_audit_sha256": "13d9b88135eb52c768932e213cc475ac5994636a7fc228b1a7b2ad8ab538a057",
+  "diagnosis_summary_sha256": "f5c826295bfc30466dc435c5a995134fe198686f69f2890cac2e3f2435053523",
+  "diagnosis_audit_sha256": "1639c4b6fd2a45600436fbbd4d9a566e43be9016ed4e618750604c3315b7f895",
+  "script_sha256": "4f9baef52a7f365bfafdb46041ede98cf4d04ff27c130e27c053bb4726f4e4c6",
+  "plan_sha256": "4004639897b88d54090ce94bfecf26adf5b2a75686be4b8cdf97da2155d19da0",
+  "report_sha256": {
+    "seed-1729.json": "1225c2edc06d9162e2e240d5c38613266f846fe041a4b8fce35e76546ff9ce35",
+    "seed-1730.json": "4103699701ef8378ead1cf59e0dec072599a1ae81df2af134b16bbfe6f72e54c",
+    "seed-1731.json": "e372898236964020a26866d2417c5ff9882f13eeb96f2b39c41777ef6918fc86"
+  },
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "torch_imported": false
+  },
+  "authentication_and_baseline_seconds": 2.7739354000004823,
+  "set_construction_seconds": 0.14274820004357025,
+  "timing_scope": "saved-score validation and threshold construction only; excludes historical head forward",
+  "limitations": [
+    "Repeated training seeds share one validation partition; exploratory validation-guided evidence.",
+    "No protected test, training, model forward, threshold search, synthetic protocol or serving performance claim.",
+    "Deterministic oracle is perfect; gate does not authorize application replacement."
+  ],
+  "summary_sha256": "2cbe82aad296b6ff4a920a951de38a5999a23e0eb8507d40444254e5d404ceab",
+  "independent_audit_sha256": "8111692647153787e095da94c64ec497ebc41537b6f6c3ea8ad1d5b046b8df42"
+}

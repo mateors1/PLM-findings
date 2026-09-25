@@ -1,0 +1,242 @@
+{
+  "all_outputs_equal": true,
+  "candidate_environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "030d9ff342d732c04761aa8136f897b2b196f6e3bbd7d6796741e5c9030c9e85",
+    "source_tree_sha256": "80ad3355c737f5fe7c4a620e889d5b7ded056f3afd874774b650349a485ea1e1",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "candidate_summary": "runs\\learning\\guidance-uniqueness-v1\\summary.json",
+  "candidate_summary_sha256": "edc19fc41ea93f63cff3163c00c6b58d414328cce36ea01b582bcac6ff85d82f",
+  "evaluator_environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "9d65344bb13ee3844bb69de531c55503357b64364f94bd37deb8a6cfafbbefdf",
+    "source_tree_sha256": "95b08b43e262c23e1ba56a6ef27fb680cd14d25d5b3b4f2ad1619a8f5a188883",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "full_summary_path": "runs/learning/guided-integration-v1/summary.json",
+  "full_summary_sha256": "1ed9033bddb0b86baed0f192f5827a84b6a15f2a43c8fd9c777af881e65979da",
+  "helpers_sha256": "6d4a65ccfe6f1eb98dc538e343f0b5b8e74510c4da46cdd54de948ca39388eec",
+  "model_source_unchanged": true,
+  "query_count": 1332,
+  "report_sha256": {
+    "seed-1729-alpha-0.json": "26c484f4d09bd5e3b78bb4e175f26e7f05478b19d5e8169239b2d00be469f31a",
+    "seed-1729-alpha-16.json": "8943bea10ae647389cdcb9af6876babcdd9216a16c38dee1cf3c7f0c22ec2847",
+    "seed-1730-alpha-0.json": "2f5c9a9f743967bdc29a279b51e155fe1f16b3b6f5747289aef3cc7a1c217837",
+    "seed-1730-alpha-16.json": "25836e9bcc53f8022fc725c064369990d6691fbaacbf779fa6ff888d838e27c9",
+    "seed-1731-alpha-0.json": "dde72950a22f67b27eeab61690493e0b321c2799494caef82aa4b4435d62cb4a",
+    "seed-1731-alpha-16.json": "94a3f22be87e56e4d7891dec0291ab61889c4e2e33c1b8e36315ec2a8579a93e"
+  },
+  "runs": [
+    {
+      "alpha": 0,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8335427935111591,
+        "mean_target_count": 118.49549549549549,
+        "precision": 0.8762298517865633,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.9009009009009009,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6441441441441441,
+        "exact_set_accuracy": 0.6441441441441441,
+        "f1": 0.8373627688954571,
+        "mean_target_count": 117.5945945945946,
+        "precision": 0.8848794669472965,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8162128532369118,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1729
+    },
+    {
+      "alpha": 16,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8815864566487325,
+        "mean_target_count": 120.04054054054055,
+        "precision": 0.9155413934365224,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6801801801801802,
+        "exact_set_accuracy": 0.6801801801801802,
+        "f1": 0.8857111644302244,
+        "mean_target_count": 119.08108108108108,
+        "precision": 0.9245952218675837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8708846926812204,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1729
+    },
+    {
+      "alpha": 0,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7889324730366511,
+        "mean_target_count": 120.73423423423424,
+        "precision": 0.8161655120260894,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.8738738738738738,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.5855855855855856,
+        "exact_set_accuracy": 0.5855855855855856,
+        "f1": 0.7925742979370468,
+        "mean_target_count": 119.86036036036036,
+        "precision": 0.8241332321266621,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.779083400864807,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1730
+    },
+    {
+      "alpha": 16,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8788709116281672,
+        "mean_target_count": 121.44594594594595,
+        "precision": 0.9054238086455628,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6756756756756757,
+        "exact_set_accuracy": 0.6756756756756757,
+        "f1": 0.8829904611575127,
+        "mean_target_count": 120.48648648648648,
+        "precision": 0.9143281240618508,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8706413312271654,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1730
+    },
+    {
+      "alpha": 0,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.7754230790650419,
+        "mean_target_count": 119.81981981981981,
+        "precision": 0.8078094304334357,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.8333333333333334,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6036036036036037,
+        "exact_set_accuracy": 0.6036036036036037,
+        "f1": 0.7789383196220302,
+        "mean_target_count": 118.98648648648648,
+        "precision": 0.8155194135027751,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.7639656870919357,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1731
+    },
+    {
+      "alpha": 16,
+      "exact_parity": true,
+      "generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.0,
+        "exact_set_accuracy": 0.0,
+        "f1": 0.8792297947631826,
+        "mean_target_count": 122.27927927927928,
+        "precision": 0.9053583058457837,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.9594594594594594,
+        "termination_rate": 1.0
+      },
+      "mismatch_count": 0,
+      "processed_generation": {
+        "duplicate_query_rate": 0.0,
+        "exact_sequence_accuracy": 0.6891891891891891,
+        "exact_set_accuracy": 0.6891891891891891,
+        "f1": 0.883269746805006,
+        "mean_target_count": 121.31981981981981,
+        "precision": 0.9139915396437757,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "recall": 0.8737727782458371,
+        "self_return_rate": 0.0,
+        "termination_rate": 1.0
+      },
+      "query_count": 222,
+      "seed": 1731
+    }
+  ],
+  "scope": "Core integration replay; frozen checkpoints; validation only; no timing claim",
+  "script_sha256": "b301f7800ccb83d53d8bb2a30f0e2fd6aac642abd174ddd069920aa958b01c55",
+  "selected_alpha": 16,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5"
+}

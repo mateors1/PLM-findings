@@ -1,0 +1,38 @@
+{
+  "admission_503_count": 2,
+  "all_native_score_winners_match_selected_slots": true,
+  "all_selected_sets_sources_slots_eligibility_and_provenance_equal": true,
+  "all_three_owned_server_shutdown_receipts_true": true,
+  "bound_one_502_contract": true,
+  "campaign_accepted": false,
+  "different_slot_score_count": 2220,
+  "disabled_409_contract": true,
+  "failure_audit_complete": true,
+  "http_query_count": 222,
+  "http_report_sha256": "e6759659c0eec1130088c1324c8457cc2c0bf814af7773c05a8f6b251c421e87",
+  "independent_arithmetic_helper_sha256": "1d4f1fbe070e06b841cf695c0fb673bfbca79b7390537f13cd496464950bb98a",
+  "invalid_422_count": 5,
+  "legacy_http_parity_count": 1,
+  "limitations": [
+    "No new neural inference; normal scores compared exactly, never tolerance-adjusted.",
+    "Cause consistent with serial-versus-batched FP32 arithmetic but not causally established by saved scores alone.",
+    "Short-bound singleton scores bind accepted prior native receipts at the same shape; pair sums independently reconstructed.",
+    "Shutdown/admission audited from saved receipts; no independent socket trace.",
+    "HTTP seeds1730/1731 were not run; full campaign acceptance remains false."
+  ],
+  "max_absolute_score_difference": 0.00036144256591796875,
+  "metadata_filtered_count": 2,
+  "mismatch_kinds": {
+    "full_composition_evidence": 224
+  },
+  "non_score_mismatch_count": 0,
+  "query_count_with_score_differences": 222,
+  "raw_source_path_count": 888,
+  "scope": "Independent CPU audit of terminal failed exact-score HTTP parity; not campaign acceptance.",
+  "script_sha256": "f314dac58a5ccac8c6cfd162d446909d29c57509e5aa92a35fcc402d4010578f",
+  "seed": 1729,
+  "slot_count": 2220,
+  "summary_sha256": "7abc3a99ea8aa0e95749da2b379893572f7f76643a53ab98f8242c2c77da7042",
+  "failure_audit_sha256": "65ffee3f6035943cf07210f371de061e460f0a554619cb9fbd56783aab1c0253",
+  "application_status": "First HTTP checkpoint fails zero-tolerance score gate; all three offline checkpoints pass; remaining two HTTP checkpoints not executed"
+}

@@ -1,0 +1,3405 @@
+{
+  "definitions": {
+    "metric_aggregation": "Precision/recall/F1 are query macro means; TP/FP/FN are pooled product occurrences",
+    "oracle_product_filtering": "When full union covers truth but no whole-path subset union is exact, product-level oracle pruning would be necessary",
+    "oracle_subset_union": "Any of 15 nonempty whole-path subsets unioned; chosen using labels only for diagnostic ceiling",
+    "presence_masks": "Four characters in rank1,rank2,rank3,rank4 order; 0000 means absent everywhere",
+    "union": "Union of all four eligible SAME-processed candidate sets; no truth repair"
+  },
+  "full_summary_sha256": "67974a44184a48ecb67b62bbb5dab4c9f3ac05a2b30e4858fee771a767ea0dc4",
+  "independent_root_recomputation": {
+    "covered_with_no_exact_subset": 43,
+    "failed": 165,
+    "mean_union_f1": 0.5834005201358734,
+    "missing_everywhere": 53,
+    "pair_exact_among_failed": 69,
+    "queries": 666,
+    "selected_exact": 501,
+    "union_exact": 8,
+    "union_gains": 2,
+    "union_losses": 495
+  },
+  "input_sha256": {
+    "data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "runs\\learning\\first-choice-paths-v1\\seed-1729.json": "3ebf9fed1efefa8a27b1d3c62dde6458d61883e43a1e31d4eb58fb082b43e626",
+    "runs\\learning\\first-choice-paths-v1\\seed-1730.json": "9c519bcde08554b68e76b482f167d9b097ae8f96be99926656098e1d1bae5046",
+    "runs\\learning\\first-choice-paths-v1\\seed-1731.json": "2ad3a33cdd021705182ad20da9f58905ca3c528e71e4a9548d0c2df2adc5ee2c",
+    "runs\\learning\\first-choice-paths-v1\\summary.json": "7b9db0b137d53ce2c350932aec61b1a8e94295f9affbae16aa55cc52f659fa8a",
+    "runs\\learning\\set-reranking-v1\\independent-audit.json": "22d55b7b58b988d53e78ef4f0bf167f24a2b52e2a27d3f53b603dd00fbeeb2aa",
+    "runs\\learning\\set-reranking-v1\\seed-1729.json": "b9f89fd87bb2b45161c888d8d7b6a0e6757063ef5dd21642fd58349691f4527c",
+    "runs\\learning\\set-reranking-v1\\seed-1730.json": "7e937892938ea54d342c20f0fcf06c5105f7106c8144df98f7ac086fff2c5533",
+    "runs\\learning\\set-reranking-v1\\seed-1731.json": "6428cfd97c0008af55c68c1e84324f99dd8ffa7c9d32b3147aeb3321a3a9f7fe",
+    "runs\\learning\\set-reranking-v1\\summary.json": "c515fae06f7db1810e8697badf59d53ffb41675cbb8fc543d1a14feee7252c5c"
+  },
+  "limitations": [
+    "No trained model, graph relations, checkpoint reads, or protected test records used",
+    "Repeated seed-query observations are not independent new test cases",
+    "Exact subset choices and best F1 use labels; they are not proposed runtime selectors",
+    "Union metrics are not quality of the deployed set selector"
+  ],
+  "scope": "Frozen validation only; unions and subset choices are analysis-only",
+  "scopes": {
+    "all": {
+      "by_group": {
+        "COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 308,
+            "f1": 0.9973743664895891,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.9972217133785186,
+            "recall": 0.9976796727117299,
+            "size": 114.01294498381877,
+            "tp": 35048
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 308,
+            "f1": 0.9973743664895891,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.9972217133785186,
+            "recall": 0.9976796727117299,
+            "size": 114.01294498381877,
+            "tp": 35048
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 308,
+            "truth_members_absent_from_every_candidate": 1
+          },
+          "incorrect_presence_masks": {
+            "0001": 20439,
+            "0010": 18353,
+            "0011": 2291,
+            "0100": 11250,
+            "0101": 1435,
+            "0110": 1455,
+            "0111": 128,
+            "1000": 628,
+            "1001": 37,
+            "1010": 35,
+            "1011": 1,
+            "1100": 49,
+            "1101": 8
+          },
+          "incorrect_union_product_occurrences": 56109,
+          "no_exact_candidate": 1,
+          "omitted_across_all_present": 1,
+          "omitted_across_all_product_occurrences": 74,
+          "oracle_subset_union_exact": 308,
+          "query_count": 309,
+          "rank1": {
+            "exact_count": 303,
+            "f1": 0.9817048992645278,
+            "fn": 609,
+            "fp": 758,
+            "precision": 0.9816271856439778,
+            "recall": 0.9818411068955802,
+            "size": 114.15210355987055,
+            "tp": 34515
+          },
+          "selected": {
+            "exact_count": 308,
+            "f1": 0.9968020528140019,
+            "fn": 105,
+            "fp": 62,
+            "precision": 0.9968151230287152,
+            "recall": 0.9967942846675215,
+            "size": 113.53074433656958,
+            "tp": 35019
+          },
+          "selected_rank_histogram": {
+            "1": 303,
+            "2": 5,
+            "3": 1
+          },
+          "some_candidate_proper_truth_subset": 199,
+          "truth_presence_masks": {
+            "0000": 74,
+            "0100": 300,
+            "0101": 129,
+            "0110": 18,
+            "0111": 88,
+            "1000": 6877,
+            "1001": 2479,
+            "1010": 2891,
+            "1011": 876,
+            "1100": 11018,
+            "1101": 3184,
+            "1110": 5564,
+            "1111": 1626
+          },
+          "union_analysis_only": {
+            "exact_count": 2,
+            "f1": 0.5666643555449361,
+            "fn": 74,
+            "fp": 56109,
+            "precision": 0.4133847997169155,
+            "recall": 0.997740733956158,
+            "size": 295.0129449838188,
+            "tp": 35050
+          },
+          "union_covers_all_truth": 308,
+          "union_harms_exact_rank1": 301,
+          "union_harms_exact_selected": 306,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 306,
+            "f1_gained": 1,
+            "f1_lost": 306
+          }
+        },
+        "TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 2,
+          "best_path_analysis_only": {
+            "exact_count": 57,
+            "f1": 0.8679545950574943,
+            "fn": 5976,
+            "fp": 955,
+            "precision": 0.971199908626109,
+            "recall": 0.813571508893334,
+            "size": 146.97549019607843,
+            "tp": 29028
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 126,
+            "f1": 0.9055061128311874,
+            "fn": 3559,
+            "fp": 2002,
+            "precision": 0.9516967345532363,
+            "recall": 0.8942470154318332,
+            "size": 163.9558823529412,
+            "tp": 31445
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 57,
+            "failed_candidates_full_union_exact": 2,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 67,
+            "full_union_extra_requires_oracle_product_filtering": 26,
+            "truth_members_absent_from_every_candidate": 52
+          },
+          "incorrect_presence_masks": {
+            "0001": 8265,
+            "0010": 6883,
+            "0011": 1086,
+            "0100": 5785,
+            "0101": 943,
+            "0110": 818,
+            "0111": 225,
+            "1000": 2473,
+            "1001": 330,
+            "1010": 293,
+            "1011": 84,
+            "1100": 428,
+            "1101": 160,
+            "1110": 18,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 27794,
+          "no_exact_candidate": 147,
+          "omitted_across_all_present": 52,
+          "omitted_across_all_product_occurrences": 3060,
+          "oracle_subset_union_exact": 126,
+          "query_count": 204,
+          "rank1": {
+            "exact_count": 34,
+            "f1": 0.736680037291999,
+            "fn": 11045,
+            "fp": 3789,
+            "precision": 0.874312526151879,
+            "recall": 0.6666988523290002,
+            "size": 136.01960784313727,
+            "tp": 23959
+          },
+          "selected": {
+            "exact_count": 57,
+            "f1": 0.8675374420891582,
+            "fn": 6018,
+            "fp": 895,
+            "precision": 0.9729533977084044,
+            "recall": 0.8123558677190182,
+            "size": 146.47549019607843,
+            "tp": 28986
+          },
+          "selected_rank_histogram": {
+            "1": 103,
+            "2": 47,
+            "3": 26,
+            "4": 28
+          },
+          "some_candidate_proper_truth_subset": 186,
+          "truth_presence_masks": {
+            "0000": 3060,
+            "0001": 1079,
+            "0010": 1542,
+            "0011": 547,
+            "0100": 1335,
+            "0101": 1137,
+            "0110": 1160,
+            "0111": 1185,
+            "1000": 1283,
+            "1001": 1107,
+            "1010": 2729,
+            "1011": 2275,
+            "1100": 1547,
+            "1101": 4598,
+            "1110": 2317,
+            "1111": 8103
+          },
+          "union_analysis_only": {
+            "exact_count": 6,
+            "f1": 0.6788601869746222,
+            "fn": 3060,
+            "fp": 27794,
+            "precision": 0.5548118074554368,
+            "recall": 0.9095130155508496,
+            "size": 292.8333333333333,
+            "tp": 31944
+          },
+          "union_covers_all_truth": 152,
+          "union_harms_exact_rank1": 31,
+          "union_harms_exact_selected": 53,
+          "union_vs_selected": {
+            "exact_gained": 2,
+            "exact_lost": 53,
+            "f1_gained": 20,
+            "f1_lost": 180
+          }
+        },
+        "TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 136,
+            "f1": 0.9897378918854483,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.9857980584687326,
+            "recall": 0.9985928358722027,
+            "size": 101.0,
+            "tp": 15186
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 136,
+            "f1": 0.9897378918854483,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.9857980584687326,
+            "recall": 0.9985928358722027,
+            "size": 101.0,
+            "tp": 15186
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 136,
+            "full_union_extra_requires_oracle_product_filtering": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 9759,
+            "0010": 9154,
+            "0011": 958,
+            "0100": 8282,
+            "0101": 1465,
+            "0110": 746,
+            "0111": 199,
+            "1000": 770,
+            "1001": 107,
+            "1010": 203,
+            "1011": 6,
+            "1100": 25,
+            "1101": 3,
+            "1110": 4
+          },
+          "incorrect_union_product_occurrences": 31681,
+          "no_exact_candidate": 17,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 136,
+          "query_count": 153,
+          "rank1": {
+            "exact_count": 129,
+            "f1": 0.9580622741061213,
+            "fn": 231,
+            "fp": 1118,
+            "precision": 0.9499057531203108,
+            "recall": 0.9741059899688803,
+            "size": 105.15032679738562,
+            "tp": 14970
+          },
+          "selected": {
+            "exact_count": 136,
+            "f1": 0.9897378918854483,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.9857980584687326,
+            "recall": 0.9985928358722027,
+            "size": 101.0,
+            "tp": 15186
+          },
+          "selected_rank_histogram": {
+            "1": 141,
+            "2": 7,
+            "3": 3,
+            "4": 2
+          },
+          "some_candidate_proper_truth_subset": 30,
+          "truth_presence_masks": {
+            "0001": 1,
+            "0011": 62,
+            "0100": 3,
+            "0101": 2,
+            "0110": 35,
+            "0111": 128,
+            "1000": 177,
+            "1001": 158,
+            "1010": 258,
+            "1011": 839,
+            "1100": 696,
+            "1101": 1167,
+            "1110": 1785,
+            "1111": 9890
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.48992145362276796,
+            "fn": 0,
+            "fp": 31681,
+            "precision": 0.33407098127039386,
+            "recall": 1.0,
+            "size": 306.41830065359477,
+            "tp": 15201
+          },
+          "union_covers_all_truth": 153,
+          "union_harms_exact_rank1": 129,
+          "union_harms_exact_selected": 136,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 136,
+            "f1_gained": 0,
+            "f1_lost": 153
+          }
+        }
+      },
+      "by_seed": {
+        "1729": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 168,
+            "f1": 0.9533305504374665,
+            "fn": 2140,
+            "fp": 674,
+            "precision": 0.9827843682004372,
+            "recall": 0.9386394675986358,
+            "size": 121.51801801801801,
+            "tp": 26303
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 191,
+            "f1": 0.9637442425211334,
+            "fn": 1557,
+            "fp": 740,
+            "precision": 0.982970968214714,
+            "recall": 0.9567538423092323,
+            "size": 124.44144144144144,
+            "tp": 26886
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 168,
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 22,
+            "full_union_extra_requires_oracle_product_filtering": 11,
+            "truth_members_absent_from_every_candidate": 20
+          },
+          "incorrect_presence_masks": {
+            "0001": 12517,
+            "0010": 10970,
+            "0011": 1780,
+            "0100": 8443,
+            "0101": 1288,
+            "0110": 1579,
+            "0111": 221,
+            "1000": 875,
+            "1001": 140,
+            "1010": 216,
+            "1011": 10,
+            "1100": 161,
+            "1101": 79,
+            "1110": 3,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 38285,
+          "no_exact_candidate": 54,
+          "omitted_across_all_present": 20,
+          "omitted_across_all_product_occurrences": 1301,
+          "oracle_subset_union_exact": 191,
+          "query_count": 222,
+          "rank1": {
+            "exact_count": 156,
+            "f1": 0.9019615862625215,
+            "fn": 4331,
+            "fp": 1487,
+            "precision": 0.9526752397802615,
+            "recall": 0.8791785653948508,
+            "size": 115.3108108108108,
+            "tp": 24112
+          },
+          "selected": {
+            "exact_count": 168,
+            "f1": 0.952309307146083,
+            "fn": 2208,
+            "fp": 485,
+            "precision": 0.9840170520171353,
+            "recall": 0.9363783062257274,
+            "size": 120.36036036036036,
+            "tp": 26235
+          },
+          "selected_rank_histogram": {
+            "1": 183,
+            "2": 19,
+            "3": 8,
+            "4": 12
+          },
+          "some_candidate_proper_truth_subset": 137,
+          "truth_presence_masks": {
+            "0000": 1301,
+            "0001": 366,
+            "0010": 417,
+            "0011": 302,
+            "0100": 382,
+            "0101": 408,
+            "0110": 503,
+            "0111": 652,
+            "1000": 2821,
+            "1001": 1328,
+            "1010": 1926,
+            "1011": 1362,
+            "1100": 4618,
+            "1101": 2442,
+            "1110": 2918,
+            "1111": 6697
+          },
+          "union_analysis_only": {
+            "exact_count": 2,
+            "f1": 0.5816384718801558,
+            "fn": 1301,
+            "fp": 38285,
+            "precision": 0.437594965956659,
+            "recall": 0.9638931038829014,
+            "size": 294.7162162162162,
+            "tp": 27142
+          },
+          "union_covers_all_truth": 202,
+          "union_harms_exact_rank1": 155,
+          "union_harms_exact_selected": 167,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 167,
+            "f1_gained": 10,
+            "f1_lost": 211
+          }
+        },
+        "1730": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 168,
+            "f1": 0.9613739159393284,
+            "fn": 1869,
+            "fp": 198,
+            "precision": 0.993745215784285,
+            "recall": 0.9439397206359904,
+            "size": 120.5945945945946,
+            "tp": 26574
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 192,
+            "f1": 0.9733553392577239,
+            "fn": 979,
+            "fp": 710,
+            "precision": 0.9835827032865156,
+            "recall": 0.9717559544139978,
+            "size": 126.90990990990991,
+            "tp": 27464
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 168,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 24,
+            "full_union_extra_requires_oracle_product_filtering": 14,
+            "truth_members_absent_from_every_candidate": 16
+          },
+          "incorrect_presence_masks": {
+            "0001": 13859,
+            "0010": 12122,
+            "0011": 1683,
+            "0100": 8975,
+            "0101": 814,
+            "0110": 689,
+            "0111": 123,
+            "1000": 1042,
+            "1001": 50,
+            "1010": 184,
+            "1011": 66,
+            "1100": 237,
+            "1101": 72,
+            "1110": 6
+          },
+          "incorrect_union_product_occurrences": 39922,
+          "no_exact_candidate": 54,
+          "omitted_across_all_present": 16,
+          "omitted_across_all_product_occurrences": 848,
+          "oracle_subset_union_exact": 192,
+          "query_count": 222,
+          "rank1": {
+            "exact_count": 158,
+            "f1": 0.9133386537137855,
+            "fn": 3350,
+            "fp": 1657,
+            "precision": 0.9476334436627141,
+            "recall": 0.896691002430959,
+            "size": 120.49549549549549,
+            "tp": 25093
+          },
+          "selected": {
+            "exact_count": 168,
+            "f1": 0.9612549763393373,
+            "fn": 1873,
+            "fp": 200,
+            "precision": 0.9936759157149848,
+            "recall": 0.9438194950548342,
+            "size": 120.58558558558559,
+            "tp": 26570
+          },
+          "selected_rank_histogram": {
+            "1": 185,
+            "2": 13,
+            "3": 14,
+            "4": 10
+          },
+          "some_candidate_proper_truth_subset": 138,
+          "truth_presence_masks": {
+            "0000": 848,
+            "0001": 382,
+            "0010": 578,
+            "0011": 170,
+            "0100": 302,
+            "0101": 452,
+            "0110": 327,
+            "0111": 291,
+            "1000": 2729,
+            "1001": 775,
+            "1010": 2515,
+            "1011": 977,
+            "1100": 5224,
+            "1101": 3247,
+            "1110": 3048,
+            "1111": 6578
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.5757676119470407,
+            "fn": 848,
+            "fp": 39922,
+            "precision": 0.42812551330662013,
+            "recall": 0.9757342750119576,
+            "size": 304.1306306306306,
+            "tp": 27595
+          },
+          "union_covers_all_truth": 206,
+          "union_harms_exact_rank1": 157,
+          "union_harms_exact_selected": 167,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 167,
+            "f1_gained": 5,
+            "f1_lost": 216
+          }
+        },
+        "1731": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 165,
+            "f1": 0.9532293809001666,
+            "fn": 2058,
+            "fp": 532,
+            "precision": 0.9833505679945779,
+            "recall": 0.9419086972185795,
+            "size": 121.24774774774775,
+            "tp": 26385
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 187,
+            "f1": 0.9653410656144708,
+            "fn": 1114,
+            "fp": 1001,
+            "precision": 0.9754046448435386,
+            "recall": 0.9701123379815696,
+            "size": 127.61261261261261,
+            "tp": 27329
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 165,
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 21,
+            "full_union_extra_requires_oracle_product_filtering": 18,
+            "truth_members_absent_from_every_candidate": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 12087,
+            "0010": 11298,
+            "0011": 872,
+            "0100": 7899,
+            "0101": 1741,
+            "0110": 751,
+            "0111": 208,
+            "1000": 1954,
+            "1001": 284,
+            "1010": 131,
+            "1011": 15,
+            "1100": 104,
+            "1101": 20,
+            "1110": 13
+          },
+          "incorrect_union_product_occurrences": 37377,
+          "no_exact_candidate": 57,
+          "omitted_across_all_present": 17,
+          "omitted_across_all_product_occurrences": 985,
+          "oracle_subset_union_exact": 187,
+          "query_count": 222,
+          "rank1": {
+            "exact_count": 152,
+            "f1": 0.8883622348819966,
+            "fn": 4204,
+            "fp": 2521,
+            "precision": 0.9240973342434212,
+            "recall": 0.8747326140259426,
+            "size": 120.54054054054055,
+            "tp": 24239
+          },
+          "selected": {
+            "exact_count": 165,
+            "f1": 0.9531896352721857,
+            "fn": 2057,
+            "fp": 539,
+            "precision": 0.983232568727806,
+            "recall": 0.9419406440590371,
+            "size": 121.28378378378379,
+            "tp": 26386
+          },
+          "selected_rank_histogram": {
+            "1": 179,
+            "2": 27,
+            "3": 8,
+            "4": 8
+          },
+          "some_candidate_proper_truth_subset": 140,
+          "truth_presence_masks": {
+            "0000": 985,
+            "0001": 332,
+            "0010": 547,
+            "0011": 137,
+            "0100": 954,
+            "0101": 408,
+            "0110": 383,
+            "0111": 458,
+            "1000": 2787,
+            "1001": 1641,
+            "1010": 1437,
+            "1011": 1651,
+            "1100": 3419,
+            "1101": 3260,
+            "1110": 3700,
+            "1111": 6344
+          },
+          "union_analysis_only": {
+            "exact_count": 5,
+            "f1": 0.5927954765804236,
+            "fn": 985,
+            "fp": 37377,
+            "precision": 0.4497316467178301,
+            "recall": 0.9740777650908443,
+            "size": 292.04954954954957,
+            "tp": 27458
+          },
+          "union_covers_all_truth": 205,
+          "union_harms_exact_rank1": 149,
+          "union_harms_exact_selected": 161,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 161,
+            "f1_gained": 6,
+            "f1_lost": 212
+          }
+        }
+      },
+      "by_seed_group": {
+        "1729:COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 102,
+            "f1": 0.9921230994687671,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.9916651401355561,
+            "recall": 0.9930390181351896,
+            "size": 114.69902912621359,
+            "tp": 11632
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 102,
+            "f1": 0.9921230994687671,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.9916651401355561,
+            "recall": 0.9930390181351896,
+            "size": 114.69902912621359,
+            "tp": 11632
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 102,
+            "truth_members_absent_from_every_candidate": 1
+          },
+          "incorrect_presence_masks": {
+            "0001": 6857,
+            "0010": 5952,
+            "0011": 809,
+            "0100": 4129,
+            "0101": 540,
+            "0110": 877,
+            "0111": 50,
+            "1000": 112,
+            "1001": 16,
+            "1010": 10,
+            "1100": 49,
+            "1101": 8
+          },
+          "incorrect_union_product_occurrences": 19409,
+          "no_exact_candidate": 1,
+          "omitted_across_all_present": 1,
+          "omitted_across_all_product_occurrences": 74,
+          "oracle_subset_union_exact": 102,
+          "query_count": 103,
+          "rank1": {
+            "exact_count": 102,
+            "f1": 0.9907325684024714,
+            "fn": 99,
+            "fp": 195,
+            "precision": 0.9906277035470538,
+            "recall": 0.990932405202418,
+            "size": 114.60194174757281,
+            "tp": 11609
+          },
+          "selected": {
+            "exact_count": 102,
+            "f1": 0.9904061584420061,
+            "fn": 105,
+            "fp": 62,
+            "precision": 0.9904453690861458,
+            "recall": 0.9903828540025646,
+            "size": 113.25242718446601,
+            "tp": 11603
+          },
+          "selected_rank_histogram": {
+            "1": 102,
+            "3": 1
+          },
+          "some_candidate_proper_truth_subset": 66,
+          "truth_presence_masks": {
+            "0000": 74,
+            "0100": 24,
+            "0101": 1,
+            "1000": 2331,
+            "1001": 1055,
+            "1010": 1347,
+            "1011": 181,
+            "1100": 3996,
+            "1101": 832,
+            "1110": 1556,
+            "1111": 311
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.5544266504621952,
+            "fn": 74,
+            "fp": 19409,
+            "precision": 0.4006350887611351,
+            "recall": 0.9932222018684741,
+            "size": 301.3883495145631,
+            "tp": 11634
+          },
+          "union_covers_all_truth": 102,
+          "union_harms_exact_rank1": 102,
+          "union_harms_exact_selected": 102,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 102,
+            "f1_gained": 1,
+            "f1_lost": 102
+          }
+        },
+        "1729:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 18,
+            "f1": 0.860315368342845,
+            "fn": 2061,
+            "fp": 487,
+            "precision": 0.9573635716270203,
+            "recall": 0.8107478623901674,
+            "size": 148.44117647058823,
+            "tp": 9607
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 41,
+            "f1": 0.8943130101454049,
+            "fn": 1478,
+            "fp": 553,
+            "precision": 0.9579727657912765,
+            "recall": 0.8698859680629972,
+            "size": 157.98529411764707,
+            "tp": 10190
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 18,
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 22,
+            "full_union_extra_requires_oracle_product_filtering": 8,
+            "truth_members_absent_from_every_candidate": 19
+          },
+          "incorrect_presence_masks": {
+            "0001": 2342,
+            "0010": 2301,
+            "0011": 559,
+            "0100": 1754,
+            "0101": 368,
+            "0110": 508,
+            "0111": 87,
+            "1000": 626,
+            "1001": 115,
+            "1010": 79,
+            "1011": 5,
+            "1100": 112,
+            "1101": 71,
+            "1110": 3,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 8933,
+          "no_exact_candidate": 50,
+          "omitted_across_all_present": 19,
+          "omitted_across_all_product_occurrences": 1227,
+          "oracle_subset_union_exact": 41,
+          "query_count": 68,
+          "rank1": {
+            "exact_count": 9,
+            "f1": 0.708051394017181,
+            "fn": 4227,
+            "fp": 1014,
+            "precision": 0.8809470906590495,
+            "recall": 0.6201457893442918,
+            "size": 124.33823529411765,
+            "tp": 7441
+          },
+          "selected": {
+            "exact_count": 18,
+            "f1": 0.8595819700350399,
+            "fn": 2100,
+            "fp": 418,
+            "precision": 0.9632355161181406,
+            "recall": 0.8073891429912659,
+            "size": 146.85294117647058,
+            "tp": 9568
+          },
+          "selected_rank_histogram": {
+            "1": 33,
+            "2": 16,
+            "3": 7,
+            "4": 12
+          },
+          "some_candidate_proper_truth_subset": 62,
+          "truth_presence_masks": {
+            "0000": 1227,
+            "0001": 366,
+            "0010": 417,
+            "0011": 301,
+            "0100": 358,
+            "0101": 407,
+            "0110": 500,
+            "0111": 651,
+            "1000": 427,
+            "1001": 256,
+            "1010": 507,
+            "1011": 863,
+            "1100": 404,
+            "1101": 1396,
+            "1110": 879,
+            "1111": 2709
+          },
+          "union_analysis_only": {
+            "exact_count": 2,
+            "f1": 0.679891843610319,
+            "fn": 1227,
+            "fp": 8933,
+            "precision": 0.5610322261593347,
+            "recall": 0.8923879745522247,
+            "size": 284.9117647058824,
+            "tp": 10441
+          },
+          "union_covers_all_truth": 49,
+          "union_harms_exact_rank1": 8,
+          "union_harms_exact_selected": 17,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 17,
+            "f1_gained": 9,
+            "f1_lost": 58
+          }
+        },
+        "1729:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 48,
+            "f1": 0.9990050569513934,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9987430869783811,
+            "recall": 0.9992958489498283,
+            "size": 99.3921568627451,
+            "tp": 5064
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 48,
+            "f1": 0.9990050569513934,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9987430869783811,
+            "recall": 0.9992958489498283,
+            "size": 99.3921568627451,
+            "tp": 5064
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 48,
+            "full_union_extra_requires_oracle_product_filtering": 3
+          },
+          "incorrect_presence_masks": {
+            "0001": 3318,
+            "0010": 2717,
+            "0011": 412,
+            "0100": 2560,
+            "0101": 380,
+            "0110": 194,
+            "0111": 84,
+            "1000": 137,
+            "1001": 9,
+            "1010": 127,
+            "1011": 5
+          },
+          "incorrect_union_product_occurrences": 9943,
+          "no_exact_candidate": 3,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 48,
+          "query_count": 51,
+          "rank1": {
+            "exact_count": 45,
+            "f1": 0.9812259374834693,
+            "fn": 5,
+            "fp": 278,
+            "precision": 0.971663678452081,
+            "recall": 0.9988566687528625,
+            "size": 104.70588235294117,
+            "tp": 5062
+          },
+          "selected": {
+            "exact_count": 48,
+            "f1": 0.9990050569513934,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9987430869783811,
+            "recall": 0.9992958489498283,
+            "size": 99.3921568627451,
+            "tp": 5064
+          },
+          "selected_rank_histogram": {
+            "1": 48,
+            "2": 3
+          },
+          "some_candidate_proper_truth_subset": 9,
+          "truth_presence_masks": {
+            "0011": 1,
+            "0110": 3,
+            "0111": 1,
+            "1000": 63,
+            "1001": 17,
+            "1010": 72,
+            "1011": 318,
+            "1100": 218,
+            "1101": 214,
+            "1110": 483,
+            "1111": 3677
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.5055911842017019,
+            "fn": 0,
+            "fp": 9943,
+            "precision": 0.34765641021856086,
+            "recall": 1.0,
+            "size": 294.3137254901961,
+            "tp": 5067
+          },
+          "union_covers_all_truth": 51,
+          "union_harms_exact_rank1": 45,
+          "union_harms_exact_selected": 48,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 48,
+            "f1_gained": 0,
+            "f1_lost": 51
+          }
+        },
+        "1730:COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 103
+          },
+          "incorrect_presence_masks": {
+            "0001": 7180,
+            "0010": 6896,
+            "0011": 1064,
+            "0100": 3287,
+            "0101": 381,
+            "0110": 240,
+            "0111": 44,
+            "1000": 222,
+            "1001": 21,
+            "1010": 10,
+            "1011": 1
+          },
+          "incorrect_union_product_occurrences": 19346,
+          "no_exact_candidate": 0,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 103,
+          "query_count": 103,
+          "rank1": {
+            "exact_count": 101,
+            "f1": 0.9832462885252595,
+            "fn": 151,
+            "fp": 254,
+            "precision": 0.983092281635971,
+            "recall": 0.983456494368779,
+            "size": 114.66990291262135,
+            "tp": 11557
+          },
+          "selected": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "selected_rank_histogram": {
+            "1": 101,
+            "2": 2
+          },
+          "some_candidate_proper_truth_subset": 68,
+          "truth_presence_masks": {
+            "0100": 124,
+            "0101": 24,
+            "0110": 2,
+            "0111": 1,
+            "1000": 2099,
+            "1001": 415,
+            "1010": 834,
+            "1011": 294,
+            "1100": 4658,
+            "1101": 1368,
+            "1110": 1513,
+            "1111": 376
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.5589487955292822,
+            "fn": 0,
+            "fp": 19346,
+            "precision": 0.4039493718009738,
+            "recall": 1.0,
+            "size": 301.49514563106794,
+            "tp": 11708
+          },
+          "union_covers_all_truth": 103,
+          "union_harms_exact_rank1": 101,
+          "union_harms_exact_selected": 103,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 103,
+            "f1_gained": 0,
+            "f1_lost": 103
+          }
+        },
+        "1730:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 19,
+            "f1": 0.8744221576331747,
+            "fn": 1864,
+            "fp": 198,
+            "precision": 0.9795799691781067,
+            "recall": 0.8180221493207429,
+            "size": 147.08823529411765,
+            "tp": 9804
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 43,
+            "f1": 0.9135379808197012,
+            "fn": 974,
+            "fp": 710,
+            "precision": 0.946402354847154,
+            "recall": 0.9088339713607079,
+            "size": 167.7058823529412,
+            "tp": 10694
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 19,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 24,
+            "full_union_extra_requires_oracle_product_filtering": 9,
+            "truth_members_absent_from_every_candidate": 16
+          },
+          "incorrect_presence_masks": {
+            "0001": 3173,
+            "0010": 2298,
+            "0011": 342,
+            "0100": 2416,
+            "0101": 194,
+            "0110": 160,
+            "0111": 9,
+            "1000": 738,
+            "1001": 20,
+            "1010": 133,
+            "1011": 65,
+            "1100": 231,
+            "1101": 72,
+            "1110": 2
+          },
+          "incorrect_union_product_occurrences": 9853,
+          "no_exact_candidate": 49,
+          "omitted_across_all_present": 16,
+          "omitted_across_all_product_occurrences": 848,
+          "oracle_subset_union_exact": 43,
+          "query_count": 68,
+          "rank1": {
+            "exact_count": 13,
+            "f1": 0.7610106413485779,
+            "fn": 3129,
+            "fp": 1261,
+            "precision": 0.8748323097513654,
+            "recall": 0.7028846197830954,
+            "size": 144.11764705882354,
+            "tp": 8539
+          },
+          "selected": {
+            "exact_count": 19,
+            "f1": 0.8740338548214388,
+            "fn": 1868,
+            "fp": 200,
+            "precision": 0.9793537248342152,
+            "recall": 0.817629648158733,
+            "size": 147.05882352941177,
+            "tp": 9800
+          },
+          "selected_rank_histogram": {
+            "1": 35,
+            "2": 11,
+            "3": 13,
+            "4": 9
+          },
+          "some_candidate_proper_truth_subset": 62,
+          "truth_presence_masks": {
+            "0000": 848,
+            "0001": 382,
+            "0010": 578,
+            "0011": 110,
+            "0100": 178,
+            "0101": 428,
+            "0110": 325,
+            "0111": 280,
+            "1000": 519,
+            "1001": 342,
+            "1010": 1539,
+            "1011": 519,
+            "1100": 455,
+            "1101": 1648,
+            "1110": 797,
+            "1111": 2720
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.6711259257665357,
+            "fn": 848,
+            "fp": 9853,
+            "precision": 0.5406857022685876,
+            "recall": 0.9207795448919796,
+            "size": 304.0147058823529,
+            "tp": 10820
+          },
+          "union_covers_all_truth": 52,
+          "union_harms_exact_rank1": 12,
+          "union_harms_exact_selected": 18,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 18,
+            "f1_gained": 5,
+            "f1_lost": 62
+          }
+        },
+        "1730:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 46,
+            "f1": 0.9993000513622556,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9986100358309676,
+            "size": 99.25490196078431,
+            "tp": 5062
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 46,
+            "f1": 0.9993000513622556,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9986100358309676,
+            "size": 99.25490196078431,
+            "tp": 5062
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 46,
+            "full_union_extra_requires_oracle_product_filtering": 5
+          },
+          "incorrect_presence_masks": {
+            "0001": 3506,
+            "0010": 2928,
+            "0011": 277,
+            "0100": 3272,
+            "0101": 239,
+            "0110": 289,
+            "0111": 70,
+            "1000": 82,
+            "1001": 9,
+            "1010": 41,
+            "1100": 6,
+            "1110": 4
+          },
+          "incorrect_union_product_occurrences": 10723,
+          "no_exact_candidate": 5,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 46,
+          "query_count": 51,
+          "rank1": {
+            "exact_count": 44,
+            "f1": 0.975256662640301,
+            "fn": 70,
+            "fp": 142,
+            "precision": 0.9730886749318562,
+            "recall": 0.9798672445968271,
+            "size": 100.76470588235294,
+            "tp": 4997
+          },
+          "selected": {
+            "exact_count": 46,
+            "f1": 0.9993000513622556,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9986100358309676,
+            "size": 99.25490196078431,
+            "tp": 5062
+          },
+          "selected_rank_histogram": {
+            "1": 49,
+            "3": 1,
+            "4": 1
+          },
+          "some_candidate_proper_truth_subset": 8,
+          "truth_presence_masks": {
+            "0011": 60,
+            "0111": 10,
+            "1000": 111,
+            "1001": 18,
+            "1010": 142,
+            "1011": 164,
+            "1100": 111,
+            "1101": 231,
+            "1110": 738,
+            "1111": 3482
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.48259060707063817,
+            "fn": 0,
+            "fp": 10723,
+            "precision": 0.32687158635892966,
+            "recall": 1.0,
+            "size": 309.6078431372549,
+            "tp": 5067
+          },
+          "union_covers_all_truth": 51,
+          "union_harms_exact_rank1": 44,
+          "union_harms_exact_selected": 46,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 46,
+            "f1_gained": 0,
+            "f1_lost": 51
+          }
+        },
+        "1731:COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 103
+          },
+          "incorrect_presence_masks": {
+            "0001": 6402,
+            "0010": 5505,
+            "0011": 418,
+            "0100": 3834,
+            "0101": 514,
+            "0110": 338,
+            "0111": 34,
+            "1000": 294,
+            "1010": 15
+          },
+          "incorrect_union_product_occurrences": 17354,
+          "no_exact_candidate": 0,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 103,
+          "query_count": 103,
+          "rank1": {
+            "exact_count": 100,
+            "f1": 0.9711358408658523,
+            "fn": 359,
+            "fp": 309,
+            "precision": 0.9711615717489088,
+            "recall": 0.9711344211155439,
+            "size": 113.18446601941747,
+            "tp": 11349
+          },
+          "selected": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "size": 113.66990291262135,
+            "tp": 11708
+          },
+          "selected_rank_histogram": {
+            "1": 100,
+            "2": 3
+          },
+          "some_candidate_proper_truth_subset": 65,
+          "truth_presence_masks": {
+            "0100": 152,
+            "0101": 104,
+            "0110": 16,
+            "0111": 87,
+            "1000": 2447,
+            "1001": 1009,
+            "1010": 710,
+            "1011": 401,
+            "1100": 2364,
+            "1101": 984,
+            "1110": 2495,
+            "1111": 939
+          },
+          "union_analysis_only": {
+            "exact_count": 2,
+            "f1": 0.586617620643331,
+            "fn": 0,
+            "fp": 17354,
+            "precision": 0.4355699385886375,
+            "recall": 1.0,
+            "size": 282.15533980582524,
+            "tp": 11708
+          },
+          "union_covers_all_truth": 103,
+          "union_harms_exact_rank1": 98,
+          "union_harms_exact_selected": 101,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 101,
+            "f1_gained": 0,
+            "f1_lost": 101
+          }
+        },
+        "1731:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 20,
+            "f1": 0.869126259196463,
+            "fn": 2051,
+            "fp": 270,
+            "precision": 0.9766561850732005,
+            "recall": 0.8119445149690917,
+            "size": 145.39705882352942,
+            "tp": 9617
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 42,
+            "f1": 0.9086673475284561,
+            "fn": 1107,
+            "fp": 739,
+            "precision": 0.9507150830212785,
+            "recall": 0.9040211068717945,
+            "size": 166.1764705882353,
+            "tp": 10561
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 20,
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 21,
+            "full_union_extra_requires_oracle_product_filtering": 9,
+            "truth_members_absent_from_every_candidate": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 2750,
+            "0010": 2284,
+            "0011": 185,
+            "0100": 1615,
+            "0101": 381,
+            "0110": 150,
+            "0111": 129,
+            "1000": 1109,
+            "1001": 195,
+            "1010": 81,
+            "1011": 14,
+            "1100": 85,
+            "1101": 17,
+            "1110": 13
+          },
+          "incorrect_union_product_occurrences": 9008,
+          "no_exact_candidate": 48,
+          "omitted_across_all_present": 17,
+          "omitted_across_all_product_occurrences": 985,
+          "oracle_subset_union_exact": 42,
+          "query_count": 68,
+          "rank1": {
+            "exact_count": 12,
+            "f1": 0.7409780765102382,
+            "fn": 3689,
+            "fp": 1514,
+            "precision": 0.8671581780452224,
+            "recall": 0.6770661478596134,
+            "size": 139.60294117647058,
+            "tp": 7979
+          },
+          "selected": {
+            "exact_count": 20,
+            "f1": 0.8689965014109959,
+            "fn": 2050,
+            "fp": 277,
+            "precision": 0.976270952172857,
+            "recall": 0.8120488120070558,
+            "size": 145.51470588235293,
+            "tp": 9618
+          },
+          "selected_rank_histogram": {
+            "1": 35,
+            "2": 20,
+            "3": 6,
+            "4": 7
+          },
+          "some_candidate_proper_truth_subset": 62,
+          "truth_presence_masks": {
+            "0000": 985,
+            "0001": 331,
+            "0010": 547,
+            "0011": 136,
+            "0100": 799,
+            "0101": 302,
+            "0110": 335,
+            "0111": 254,
+            "1000": 337,
+            "1001": 509,
+            "1010": 683,
+            "1011": 893,
+            "1100": 688,
+            "1101": 1554,
+            "1110": 641,
+            "1111": 2674
+          },
+          "union_analysis_only": {
+            "exact_count": 3,
+            "f1": 0.6855627915470119,
+            "fn": 985,
+            "fp": 9008,
+            "precision": 0.5627174939383879,
+            "recall": 0.9153715272083448,
+            "size": 289.5735294117647,
+            "tp": 10683
+          },
+          "union_covers_all_truth": 51,
+          "union_harms_exact_rank1": 11,
+          "union_harms_exact_selected": 18,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 18,
+            "f1_gained": 6,
+            "f1_lost": 60
+          }
+        },
+        "1731:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 42,
+            "f1": 0.9709085673426959,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.9586510884278167,
+            "recall": 0.9978726228358121,
+            "size": 104.3529411764706,
+            "tp": 5060
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 42,
+            "f1": 0.9709085673426959,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.9586510884278167,
+            "recall": 0.9978726228358121,
+            "size": 104.3529411764706,
+            "tp": 5060
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "already_has_exact_candidate": 42,
+            "full_union_extra_requires_oracle_product_filtering": 9
+          },
+          "incorrect_presence_masks": {
+            "0001": 2935,
+            "0010": 3509,
+            "0011": 269,
+            "0100": 2450,
+            "0101": 846,
+            "0110": 263,
+            "0111": 45,
+            "1000": 551,
+            "1001": 89,
+            "1010": 35,
+            "1011": 1,
+            "1100": 19,
+            "1101": 3
+          },
+          "incorrect_union_product_occurrences": 11015,
+          "no_exact_candidate": 9,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 42,
+          "query_count": 51,
+          "rank1": {
+            "exact_count": 40,
+            "f1": 0.9177042221945935,
+            "fn": 156,
+            "fp": 698,
+            "precision": 0.9049649059769952,
+            "recall": 0.9435940565569513,
+            "size": 109.98039215686275,
+            "tp": 4911
+          },
+          "selected": {
+            "exact_count": 42,
+            "f1": 0.9709085673426959,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.9586510884278167,
+            "recall": 0.9978726228358121,
+            "size": 104.3529411764706,
+            "tp": 5060
+          },
+          "selected_rank_histogram": {
+            "1": 44,
+            "2": 4,
+            "3": 2,
+            "4": 1
+          },
+          "some_candidate_proper_truth_subset": 13,
+          "truth_presence_masks": {
+            "0001": 1,
+            "0011": 1,
+            "0100": 3,
+            "0101": 2,
+            "0110": 32,
+            "0111": 117,
+            "1000": 3,
+            "1001": 123,
+            "1010": 44,
+            "1011": 357,
+            "1100": 367,
+            "1101": 722,
+            "1110": 564,
+            "1111": 2731
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.4815825695959638,
+            "fn": 0,
+            "fp": 11015,
+            "precision": 0.327684947233691,
+            "recall": 1.0,
+            "size": 315.3333333333333,
+            "tp": 5067
+          },
+          "union_covers_all_truth": 51,
+          "union_harms_exact_rank1": 40,
+          "union_harms_exact_selected": 42,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 42,
+            "f1_gained": 0,
+            "f1_lost": 51
+          }
+        }
+      },
+      "overall": {
+        "all_candidates_proper_truth_subsets": 2,
+        "best_path_analysis_only": {
+          "exact_count": 501,
+          "f1": 0.9559779490923204,
+          "fn": 6067,
+          "fp": 1404,
+          "precision": 0.9866267173264334,
+          "recall": 0.9414959618177353,
+          "size": 121.12012012012012,
+          "tp": 79262
+        },
+        "best_subset_union_analysis_only": {
+          "exact_count": 570,
+          "f1": 0.9674802157977761,
+          "fn": 3650,
+          "fp": 2451,
+          "precision": 0.9806527721149229,
+          "recall": 0.9662073782349332,
+          "size": 126.32132132132132,
+          "tp": 81679
+        },
+        "common_incorrect_present": 1,
+        "common_incorrect_product_occurrences": 3,
+        "failed_coverage_classes": {
+          "already_has_exact_candidate": 501,
+          "failed_candidates_full_union_exact": 2,
+          "full_union_extra_but_oracle_whole_path_subset_exact": 67,
+          "full_union_extra_requires_oracle_product_filtering": 43,
+          "truth_members_absent_from_every_candidate": 53
+        },
+        "incorrect_presence_masks": {
+          "0001": 38463,
+          "0010": 34390,
+          "0011": 4335,
+          "0100": 25317,
+          "0101": 3843,
+          "0110": 3019,
+          "0111": 552,
+          "1000": 3871,
+          "1001": 474,
+          "1010": 531,
+          "1011": 91,
+          "1100": 502,
+          "1101": 171,
+          "1110": 22,
+          "1111": 3
+        },
+        "incorrect_union_product_occurrences": 115584,
+        "no_exact_candidate": 165,
+        "omitted_across_all_present": 53,
+        "omitted_across_all_product_occurrences": 3134,
+        "oracle_subset_union_exact": 570,
+        "query_count": 666,
+        "rank1": {
+          "exact_count": 466,
+          "f1": 0.9012208249527679,
+          "fn": 11885,
+          "fp": 5665,
+          "precision": 0.9414686725621322,
+          "recall": 0.8835340606172508,
+          "size": 118.78228228228228,
+          "tp": 73444
+        },
+        "selected": {
+          "exact_count": 501,
+          "f1": 0.9555846395858686,
+          "fn": 6138,
+          "fp": 1224,
+          "precision": 0.9869751788199753,
+          "recall": 0.9407128151131995,
+          "size": 120.74324324324324,
+          "tp": 79191
+        },
+        "selected_rank_histogram": {
+          "1": 547,
+          "2": 59,
+          "3": 30,
+          "4": 30
+        },
+        "some_candidate_proper_truth_subset": 415,
+        "truth_presence_masks": {
+          "0000": 3134,
+          "0001": 1080,
+          "0010": 1542,
+          "0011": 609,
+          "0100": 1638,
+          "0101": 1268,
+          "0110": 1213,
+          "0111": 1401,
+          "1000": 8337,
+          "1001": 3744,
+          "1010": 5878,
+          "1011": 3990,
+          "1100": 13261,
+          "1101": 8949,
+          "1110": 9666,
+          "1111": 19619
+        },
+        "union_analysis_only": {
+          "exact_count": 8,
+          "f1": 0.5834005201358734,
+          "fn": 3134,
+          "fp": 115584,
+          "precision": 0.43848404199370306,
+          "recall": 0.9712350479952345,
+          "size": 296.96546546546546,
+          "tp": 82195
+        },
+        "union_covers_all_truth": 613,
+        "union_harms_exact_rank1": 461,
+        "union_harms_exact_selected": 495,
+        "union_vs_selected": {
+          "exact_gained": 2,
+          "exact_lost": 495,
+          "f1_gained": 21,
+          "f1_lost": 639
+        }
+      }
+    },
+    "no_exact_candidate": {
+      "by_group": {
+        "COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.18867924528301888,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.14150943396226415,
+            "recall": 0.2830188679245283,
+            "size": 212.0,
+            "tp": 30
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.18867924528301888,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.14150943396226415,
+            "recall": 0.2830188679245283,
+            "size": 212.0,
+            "tp": 30
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "truth_members_absent_from_every_candidate": 1
+          },
+          "incorrect_presence_masks": {
+            "0001": 109,
+            "0010": 43,
+            "0100": 103,
+            "0101": 13,
+            "0110": 9,
+            "1000": 112,
+            "1001": 16,
+            "1010": 10,
+            "1100": 49,
+            "1101": 8
+          },
+          "incorrect_union_product_occurrences": 472,
+          "no_exact_candidate": 1,
+          "omitted_across_all_present": 1,
+          "omitted_across_all_product_occurrences": 74,
+          "oracle_subset_union_exact": 0,
+          "query_count": 1,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.045454545454545456,
+            "fn": 99,
+            "fp": 195,
+            "precision": 0.034653465346534656,
+            "recall": 0.0660377358490566,
+            "size": 202.0,
+            "tp": 7
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.011834319526627219,
+            "fn": 105,
+            "fp": 62,
+            "precision": 0.015873015873015872,
+            "recall": 0.009433962264150943,
+            "size": 63.0,
+            "tp": 1
+          },
+          "selected_rank_histogram": {
+            "3": 1
+          },
+          "some_candidate_proper_truth_subset": 0,
+          "truth_presence_masks": {
+            "0000": 74,
+            "0100": 24,
+            "0101": 1,
+            "1000": 2,
+            "1100": 4,
+            "1110": 1
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.10491803278688525,
+            "fn": 74,
+            "fp": 472,
+            "precision": 0.06349206349206349,
+            "recall": 0.3018867924528302,
+            "size": 504.0,
+            "tp": 32
+          },
+          "union_covers_all_truth": 0,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 1,
+            "f1_lost": 0
+          }
+        },
+        "TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 2,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8167533155899921,
+            "fn": 5976,
+            "fp": 955,
+            "precision": 0.9600325262566411,
+            "recall": 0.7412829103009533,
+            "size": 131.42857142857142,
+            "tp": 18365
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 69,
+            "f1": 0.8688656259698111,
+            "fn": 3559,
+            "fp": 2002,
+            "precision": 0.9329668969310219,
+            "recall": 0.8532407561094828,
+            "size": 154.99319727891157,
+            "tp": 20782
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "failed_candidates_full_union_exact": 2,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 67,
+            "full_union_extra_requires_oracle_product_filtering": 26,
+            "truth_members_absent_from_every_candidate": 52
+          },
+          "incorrect_presence_masks": {
+            "0001": 6111,
+            "0010": 5218,
+            "0011": 979,
+            "0100": 4909,
+            "0101": 913,
+            "0110": 679,
+            "0111": 151,
+            "1000": 2346,
+            "1001": 277,
+            "1010": 200,
+            "1011": 84,
+            "1100": 269,
+            "1101": 160,
+            "1110": 18,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 22317,
+          "no_exact_candidate": 147,
+          "omitted_across_all_present": 52,
+          "omitted_across_all_product_occurrences": 3060,
+          "oracle_subset_union_exact": 69,
+          "query_count": 147,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.680441849421517,
+            "fn": 9444,
+            "fp": 3357,
+            "precision": 0.842032170593044,
+            "recall": 0.599073287446438,
+            "size": 124.17687074829932,
+            "tp": 14897
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8161744094298522,
+            "fn": 6018,
+            "fp": 895,
+            "precision": 0.9624659396769694,
+            "recall": 0.7395958980590457,
+            "size": 130.73469387755102,
+            "tp": 18323
+          },
+          "selected_rank_histogram": {
+            "1": 69,
+            "2": 34,
+            "3": 21,
+            "4": 23
+          },
+          "some_candidate_proper_truth_subset": 133,
+          "truth_presence_masks": {
+            "0000": 3060,
+            "0001": 811,
+            "0010": 1380,
+            "0011": 532,
+            "0100": 1150,
+            "0101": 824,
+            "0110": 774,
+            "0111": 913,
+            "1000": 697,
+            "1001": 623,
+            "1010": 1479,
+            "1011": 1269,
+            "1100": 732,
+            "1101": 3090,
+            "1110": 1476,
+            "1111": 5531
+          },
+          "union_analysis_only": {
+            "exact_count": 2,
+            "f1": 0.630643893206351,
+            "fn": 3060,
+            "fp": 22317,
+            "precision": 0.5048784441757507,
+            "recall": 0.8744262256624037,
+            "size": 296.5850340136054,
+            "tp": 21281
+          },
+          "union_covers_all_truth": 95,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 2,
+            "exact_lost": 0,
+            "f1_gained": 20,
+            "f1_lost": 127
+          }
+        },
+        "TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9076410269690348,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.8721825262185933,
+            "recall": 0.9873355228498241,
+            "size": 89.58823529411765,
+            "tp": 1256
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9076410269690348,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.8721825262185933,
+            "recall": 0.9873355228498241,
+            "size": 89.58823529411765,
+            "tp": 1256
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_requires_oracle_product_filtering": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 1169,
+            "0010": 1221,
+            "0011": 111,
+            "0100": 952,
+            "0101": 253,
+            "0110": 114,
+            "0111": 16,
+            "1000": 494,
+            "1001": 13,
+            "1010": 28,
+            "1100": 19,
+            "1101": 3
+          },
+          "incorrect_union_product_occurrences": 4393,
+          "no_exact_candidate": 17,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 0,
+          "query_count": 17,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.7802528711664484,
+            "fn": 163,
+            "fp": 557,
+            "precision": 0.7613560810721125,
+            "recall": 0.8252947365728602,
+            "size": 97.94117647058823,
+            "tp": 1108
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.9076410269690348,
+            "fn": 15,
+            "fp": 267,
+            "precision": 0.8721825262185933,
+            "recall": 0.9873355228498241,
+            "size": 89.58823529411765,
+            "tp": 1256
+          },
+          "selected_rank_histogram": {
+            "1": 12,
+            "2": 2,
+            "3": 2,
+            "4": 1
+          },
+          "some_candidate_proper_truth_subset": 12,
+          "truth_presence_masks": {
+            "0001": 1,
+            "0011": 2,
+            "0100": 2,
+            "0101": 2,
+            "0110": 34,
+            "0111": 122,
+            "1000": 1,
+            "1001": 59,
+            "1010": 3,
+            "1011": 77,
+            "1100": 55,
+            "1101": 82,
+            "1110": 105,
+            "1111": 726
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.374888417540631,
+            "fn": 0,
+            "fp": 4393,
+            "precision": 0.23613498303726696,
+            "recall": 1.0,
+            "size": 333.1764705882353,
+            "tp": 1271
+          },
+          "union_covers_all_truth": 17,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 0,
+            "f1_lost": 17
+          }
+        }
+      },
+      "by_seed": {
+        "1729": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8081367073540286,
+            "fn": 2140,
+            "fp": 674,
+            "precision": 0.9292246248240199,
+            "recall": 0.7477400334610583,
+            "size": 132.7962962962963,
+            "tp": 6497
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 23,
+            "f1": 0.8509485525868817,
+            "fn": 1557,
+            "fp": 740,
+            "precision": 0.9299917582160465,
+            "recall": 0.8222102406046218,
+            "size": 144.8148148148148,
+            "tp": 7080
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 22,
+            "full_union_extra_requires_oracle_product_filtering": 11,
+            "truth_members_absent_from_every_candidate": 20
+          },
+          "incorrect_presence_masks": {
+            "0001": 1907,
+            "0010": 2036,
+            "0011": 496,
+            "0100": 1834,
+            "0101": 380,
+            "0110": 520,
+            "0111": 87,
+            "1000": 743,
+            "1001": 78,
+            "1010": 89,
+            "1011": 5,
+            "1100": 65,
+            "1101": 79,
+            "1110": 3,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 8325,
+          "no_exact_candidate": 54,
+          "omitted_across_all_present": 20,
+          "omitted_across_all_product_occurrences": 1301,
+          "oracle_subset_union_exact": 23,
+          "query_count": 54,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.6671409958471045,
+            "fn": 3652,
+            "fp": 1065,
+            "precision": 0.846897715332783,
+            "recall": 0.5764147047148521,
+            "size": 112.03703703703704,
+            "tp": 4985
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8039382627116741,
+            "fn": 2208,
+            "fp": 485,
+            "precision": 0.9342923249593338,
+            "recall": 0.7384441478168791,
+            "size": 128.03703703703704,
+            "tp": 6429
+          },
+          "selected_rank_histogram": {
+            "1": 27,
+            "2": 10,
+            "3": 7,
+            "4": 10
+          },
+          "some_candidate_proper_truth_subset": 46,
+          "truth_presence_masks": {
+            "0000": 1301,
+            "0001": 317,
+            "0010": 359,
+            "0011": 297,
+            "0100": 250,
+            "0101": 338,
+            "0110": 244,
+            "0111": 546,
+            "1000": 207,
+            "1001": 120,
+            "1010": 317,
+            "1011": 634,
+            "1100": 209,
+            "1101": 956,
+            "1110": 705,
+            "1111": 1837
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.6141323009949972,
+            "fn": 1301,
+            "fp": 8325,
+            "precision": 0.4940625406759508,
+            "recall": 0.8515605381852615,
+            "size": 290.01851851851853,
+            "tp": 7336
+          },
+          "union_covers_all_truth": 34,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 0,
+            "f1_gained": 10,
+            "f1_lost": 44
+          }
+        },
+        "1730": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8412038766394614,
+            "fn": 1869,
+            "fp": 198,
+            "precision": 0.9742858871131714,
+            "recall": 0.7695299626146272,
+            "size": 125.44444444444444,
+            "tp": 6576
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 24,
+            "f1": 0.8904608391706428,
+            "fn": 979,
+            "fp": 710,
+            "precision": 0.9325066690667865,
+            "recall": 0.8838855903686571,
+            "size": 151.40740740740742,
+            "tp": 7466
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_but_oracle_whole_path_subset_exact": 24,
+            "full_union_extra_requires_oracle_product_filtering": 14,
+            "truth_members_absent_from_every_candidate": 16
+          },
+          "incorrect_presence_masks": {
+            "0001": 2556,
+            "0010": 2244,
+            "0011": 341,
+            "0100": 2313,
+            "0101": 190,
+            "0110": 153,
+            "0111": 9,
+            "1000": 738,
+            "1001": 20,
+            "1010": 40,
+            "1011": 65,
+            "1100": 171,
+            "1101": 72,
+            "1110": 2
+          },
+          "incorrect_union_product_occurrences": 8914,
+          "no_exact_candidate": 54,
+          "omitted_across_all_present": 16,
+          "omitted_across_all_product_occurrences": 848,
+          "oracle_subset_union_exact": 24,
+          "query_count": 54,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.7249066776570076,
+            "fn": 2839,
+            "fp": 1108,
+            "precision": 0.8574082822847411,
+            "recall": 0.6576347128375312,
+            "size": 124.33333333333333,
+            "tp": 5606
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8407149027283866,
+            "fn": 1873,
+            "fp": 200,
+            "precision": 0.9740009868282712,
+            "recall": 0.7690357018920961,
+            "size": 125.4074074074074,
+            "tp": 6572
+          },
+          "selected_rank_histogram": {
+            "1": 27,
+            "2": 9,
+            "3": 10,
+            "4": 8
+          },
+          "some_candidate_proper_truth_subset": 49,
+          "truth_presence_masks": {
+            "0000": 848,
+            "0001": 322,
+            "0010": 530,
+            "0011": 107,
+            "0100": 178,
+            "0101": 367,
+            "0110": 263,
+            "0111": 224,
+            "1000": 219,
+            "1001": 193,
+            "1010": 895,
+            "1011": 245,
+            "1100": 204,
+            "1101": 1352,
+            "1110": 514,
+            "1111": 1984
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.6040986657034417,
+            "fn": 848,
+            "fp": 8914,
+            "precision": 0.4704356513888399,
+            "recall": 0.9002409083824928,
+            "size": 305.75925925925924,
+            "tp": 7597
+          },
+          "union_covers_all_truth": 38,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 5,
+            "f1_lost": 49
+          }
+        },
+        "1731": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8178407466638067,
+            "fn": 2058,
+            "fp": 532,
+            "precision": 0.9351548437683558,
+            "recall": 0.7737496628513097,
+            "size": 124.73684210526316,
+            "tp": 6578
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 22,
+            "f1": 0.8650125713405705,
+            "fn": 1114,
+            "fp": 1001,
+            "precision": 0.9042075641274664,
+            "recall": 0.8835954216124288,
+            "size": 149.52631578947367,
+            "tp": 7522
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 21,
+            "full_union_extra_requires_oracle_product_filtering": 18,
+            "truth_members_absent_from_every_candidate": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 2926,
+            "0010": 2202,
+            "0011": 253,
+            "0100": 1817,
+            "0101": 609,
+            "0110": 129,
+            "0111": 71,
+            "1000": 1471,
+            "1001": 208,
+            "1010": 109,
+            "1011": 14,
+            "1100": 101,
+            "1101": 20,
+            "1110": 13
+          },
+          "incorrect_union_product_occurrences": 9943,
+          "no_exact_candidate": 57,
+          "omitted_across_all_present": 17,
+          "omitted_across_all_product_occurrences": 985,
+          "oracle_subset_union_exact": 22,
+          "query_count": 57,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.6695461552811425,
+            "fn": 3215,
+            "fp": 1936,
+            "precision": 0.7846300359544492,
+            "recall": 0.6231781221821994,
+            "size": 129.0701754385965,
+            "tp": 5421
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8176859479021967,
+            "fn": 2057,
+            "fp": 539,
+            "precision": 0.934695267676718,
+            "recall": 0.7738740873878284,
+            "size": 124.87719298245614,
+            "tp": 6579
+          },
+          "selected_rank_histogram": {
+            "1": 27,
+            "2": 17,
+            "3": 7,
+            "4": 6
+          },
+          "some_candidate_proper_truth_subset": 50,
+          "truth_presence_masks": {
+            "0000": 985,
+            "0001": 173,
+            "0010": 491,
+            "0011": 130,
+            "0100": 748,
+            "0101": 122,
+            "0110": 301,
+            "0111": 265,
+            "1000": 274,
+            "1001": 369,
+            "1010": 270,
+            "1011": 467,
+            "1100": 378,
+            "1101": 864,
+            "1110": 363,
+            "1111": 2436
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.5859333549227281,
+            "fn": 985,
+            "fp": 9943,
+            "precision": 0.45985992451688174,
+            "recall": 0.8990397166696044,
+            "size": 308.6666666666667,
+            "tp": 7651
+          },
+          "union_covers_all_truth": 40,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 0,
+            "f1_gained": 6,
+            "f1_lost": 51
+          }
+        }
+      },
+      "by_seed_group": {
+        "1729:COLOR": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.18867924528301888,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.14150943396226415,
+            "recall": 0.2830188679245283,
+            "size": 212.0,
+            "tp": 30
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.18867924528301888,
+            "fn": 76,
+            "fp": 182,
+            "precision": 0.14150943396226415,
+            "recall": 0.2830188679245283,
+            "size": 212.0,
+            "tp": 30
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "truth_members_absent_from_every_candidate": 1
+          },
+          "incorrect_presence_masks": {
+            "0001": 109,
+            "0010": 43,
+            "0100": 103,
+            "0101": 13,
+            "0110": 9,
+            "1000": 112,
+            "1001": 16,
+            "1010": 10,
+            "1100": 49,
+            "1101": 8
+          },
+          "incorrect_union_product_occurrences": 472,
+          "no_exact_candidate": 1,
+          "omitted_across_all_present": 1,
+          "omitted_across_all_product_occurrences": 74,
+          "oracle_subset_union_exact": 0,
+          "query_count": 1,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.045454545454545456,
+            "fn": 99,
+            "fp": 195,
+            "precision": 0.034653465346534656,
+            "recall": 0.0660377358490566,
+            "size": 202.0,
+            "tp": 7
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.011834319526627219,
+            "fn": 105,
+            "fp": 62,
+            "precision": 0.015873015873015872,
+            "recall": 0.009433962264150943,
+            "size": 63.0,
+            "tp": 1
+          },
+          "selected_rank_histogram": {
+            "3": 1
+          },
+          "some_candidate_proper_truth_subset": 0,
+          "truth_presence_masks": {
+            "0000": 74,
+            "0100": 24,
+            "0101": 1,
+            "1000": 2,
+            "1100": 4,
+            "1110": 1
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.10491803278688525,
+            "fn": 74,
+            "fp": 472,
+            "precision": 0.06349206349206349,
+            "recall": 0.3018867924528302,
+            "size": 504.0,
+            "tp": 32
+          },
+          "union_covers_all_truth": 0,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 1,
+            "f1_lost": 0
+          }
+        },
+        "1729:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8100289009462692,
+            "fn": 2061,
+            "fp": 487,
+            "precision": 0.9420144574127477,
+            "recall": 0.7426170928506276,
+            "size": 133.7,
+            "tp": 6198
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 23,
+            "f1": 0.8562656937977506,
+            "fn": 1478,
+            "fp": 553,
+            "precision": 0.9428429614761362,
+            "recall": 0.8230449165656762,
+            "size": 146.68,
+            "tp": 6781
+          },
+          "common_incorrect_present": 1,
+          "common_incorrect_product_occurrences": 3,
+          "failed_coverage_classes": {
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 22,
+            "full_union_extra_requires_oracle_product_filtering": 8,
+            "truth_members_absent_from_every_candidate": 19
+          },
+          "incorrect_presence_masks": {
+            "0001": 1642,
+            "0010": 1762,
+            "0011": 484,
+            "0100": 1596,
+            "0101": 365,
+            "0110": 501,
+            "0111": 87,
+            "1000": 626,
+            "1001": 62,
+            "1010": 79,
+            "1011": 5,
+            "1100": 16,
+            "1101": 71,
+            "1110": 3,
+            "1111": 3
+          },
+          "incorrect_union_product_occurrences": 7302,
+          "no_exact_candidate": 50,
+          "omitted_across_all_present": 19,
+          "omitted_across_all_product_occurrences": 1227,
+          "oracle_subset_union_exact": 23,
+          "query_count": 50,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.6606180265153607,
+            "fn": 3550,
+            "fp": 865,
+            "precision": 0.8552385145345264,
+            "recall": 0.5619253604462344,
+            "size": 111.48,
+            "tp": 4709
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8090314792476542,
+            "fn": 2100,
+            "fp": 418,
+            "precision": 0.9500003019206714,
+            "recall": 0.7380492344681215,
+            "size": 131.54,
+            "tp": 6159
+          },
+          "selected_rank_histogram": {
+            "1": 24,
+            "2": 10,
+            "3": 6,
+            "4": 10
+          },
+          "some_candidate_proper_truth_subset": 44,
+          "truth_presence_masks": {
+            "0000": 1227,
+            "0001": 317,
+            "0010": 359,
+            "0011": 296,
+            "0100": 226,
+            "0101": 337,
+            "0110": 242,
+            "0111": 546,
+            "1000": 205,
+            "1001": 120,
+            "1010": 315,
+            "1011": 633,
+            "1100": 205,
+            "1101": 955,
+            "1110": 614,
+            "1111": 1662
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.6310449101478554,
+            "fn": 1227,
+            "fp": 7302,
+            "precision": 0.5116490902121135,
+            "recall": 0.8536476453910257,
+            "size": 286.68,
+            "tp": 7032
+          },
+          "union_covers_all_truth": 31,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 0,
+            "f1_gained": 9,
+            "f1_lost": 41
+          }
+        },
+        "1729:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9830859681736874,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9786324786324787,
+            "recall": 0.9880294321470792,
+            "size": 91.33333333333333,
+            "tp": 269
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9830859681736874,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9786324786324787,
+            "recall": 0.9880294321470792,
+            "size": 91.33333333333333,
+            "tp": 269
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_requires_oracle_product_filtering": 3
+          },
+          "incorrect_presence_masks": {
+            "0001": 156,
+            "0010": 231,
+            "0011": 12,
+            "0100": 135,
+            "0101": 2,
+            "0110": 10,
+            "1000": 5
+          },
+          "incorrect_union_product_occurrences": 551,
+          "no_exact_candidate": 3,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 0,
+          "query_count": 3,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.9830859681736874,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9786324786324787,
+            "recall": 0.9880294321470792,
+            "size": 91.33333333333333,
+            "tp": 269
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.9830859681736874,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9786324786324787,
+            "recall": 0.9880294321470792,
+            "size": 91.33333333333333,
+            "tp": 269
+          },
+          "selected_rank_histogram": {
+            "1": 3
+          },
+          "some_candidate_proper_truth_subset": 2,
+          "truth_presence_masks": {
+            "0011": 1,
+            "0110": 2,
+            "1010": 2,
+            "1011": 1,
+            "1101": 1,
+            "1110": 90,
+            "1111": 175
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.5019935711833997,
+            "fn": 0,
+            "fp": 551,
+            "precision": 0.3444768741345346,
+            "recall": 1.0,
+            "size": 274.3333333333333,
+            "tp": 272
+          },
+          "union_covers_all_truth": 3,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 0,
+            "f1_lost": 3
+          }
+        },
+        "1730:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8257287085521607,
+            "fn": 1864,
+            "fp": 198,
+            "precision": 0.9716619980430868,
+            "recall": 0.7474593092614392,
+            "size": 131.14285714285714,
+            "tp": 6228
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 24,
+            "f1": 0.8800118917497893,
+            "fn": 974,
+            "fp": 710,
+            "precision": 0.9256195944817647,
+            "recall": 0.8734838786230231,
+            "size": 159.75510204081633,
+            "tp": 7118
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_but_oracle_whole_path_subset_exact": 24,
+            "full_union_extra_requires_oracle_product_filtering": 9,
+            "truth_members_absent_from_every_candidate": 16
+          },
+          "incorrect_presence_masks": {
+            "0001": 2229,
+            "0010": 1807,
+            "0011": 316,
+            "0100": 2002,
+            "0101": 172,
+            "0110": 145,
+            "0111": 9,
+            "1000": 738,
+            "1001": 20,
+            "1010": 40,
+            "1011": 65,
+            "1100": 171,
+            "1101": 72,
+            "1110": 2
+          },
+          "incorrect_union_product_occurrences": 7788,
+          "no_exact_candidate": 49,
+          "omitted_across_all_present": 16,
+          "omitted_across_all_product_occurrences": 848,
+          "oracle_subset_union_exact": 24,
+          "query_count": 49,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.6975644484490484,
+            "fn": 2834,
+            "fp": 1108,
+            "precision": 0.8428581070076739,
+            "recall": 0.6241461768540271,
+            "size": 129.91836734693877,
+            "tp": 5258
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8251898393440376,
+            "fn": 1868,
+            "fp": 200,
+            "precision": 0.9713480263005437,
+            "recall": 0.7469146137713029,
+            "size": 131.10204081632654,
+            "tp": 6224
+          },
+          "selected_rank_histogram": {
+            "1": 22,
+            "2": 9,
+            "3": 10,
+            "4": 8
+          },
+          "some_candidate_proper_truth_subset": 44,
+          "truth_presence_masks": {
+            "0000": 848,
+            "0001": 322,
+            "0010": 530,
+            "0011": 107,
+            "0100": 178,
+            "0101": 367,
+            "0110": 263,
+            "0111": 219,
+            "1000": 219,
+            "1001": 193,
+            "1010": 895,
+            "1011": 227,
+            "1100": 204,
+            "1101": 1348,
+            "1110": 510,
+            "1111": 1662
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.6261560289627458,
+            "fn": 848,
+            "fp": 7788,
+            "precision": 0.49383335258054095,
+            "recall": 0.8900614092378492,
+            "size": 306.7755102040816,
+            "tp": 7244
+          },
+          "union_covers_all_truth": 33,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 5,
+            "f1_lost": 44
+          }
+        },
+        "1730:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9928605238950066,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9858223654758707,
+            "size": 69.6,
+            "tp": 348
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.9928605238950066,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9858223654758707,
+            "size": 69.6,
+            "tp": 348
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_requires_oracle_product_filtering": 5
+          },
+          "incorrect_presence_masks": {
+            "0001": 327,
+            "0010": 437,
+            "0011": 25,
+            "0100": 311,
+            "0101": 18,
+            "0110": 8
+          },
+          "incorrect_union_product_occurrences": 1126,
+          "no_exact_candidate": 5,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 0,
+          "query_count": 5,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.9928605238950066,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9858223654758707,
+            "size": 69.6,
+            "tp": 348
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.9928605238950066,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9858223654758707,
+            "size": 69.6,
+            "tp": 348
+          },
+          "selected_rank_histogram": {
+            "1": 5
+          },
+          "some_candidate_proper_truth_subset": 5,
+          "truth_presence_masks": {
+            "0111": 5,
+            "1011": 18,
+            "1101": 4,
+            "1110": 4,
+            "1111": 322
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.3879365057622617,
+            "fn": 0,
+            "fp": 1126,
+            "precision": 0.24113817971017,
+            "recall": 1.0,
+            "size": 295.8,
+            "tp": 353
+          },
+          "union_covers_all_truth": 5,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 0,
+            "f1_lost": 5
+          }
+        },
+        "1731:TYPE_dual": {
+          "all_candidates_proper_truth_subsets": 1,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.814595533861656,
+            "fn": 2051,
+            "fp": 270,
+            "precision": 0.9669295955203673,
+            "recall": 0.7335880628728799,
+            "size": 129.35416666666666,
+            "tp": 5939
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 22,
+            "f1": 0.870612075665313,
+            "fn": 1107,
+            "fp": 739,
+            "precision": 0.9301797009468111,
+            "recall": 0.8640299014017089,
+            "size": 158.79166666666666,
+            "tp": 6883
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "failed_candidates_full_union_exact": 1,
+            "full_union_extra_but_oracle_whole_path_subset_exact": 21,
+            "full_union_extra_requires_oracle_product_filtering": 9,
+            "truth_members_absent_from_every_candidate": 17
+          },
+          "incorrect_presence_masks": {
+            "0001": 2240,
+            "0010": 1649,
+            "0011": 179,
+            "0100": 1311,
+            "0101": 376,
+            "0110": 33,
+            "0111": 55,
+            "1000": 982,
+            "1001": 195,
+            "1010": 81,
+            "1011": 14,
+            "1100": 82,
+            "1101": 17,
+            "1110": 13
+          },
+          "incorrect_union_product_occurrences": 7227,
+          "no_exact_candidate": 48,
+          "omitted_across_all_present": 17,
+          "omitted_across_all_product_occurrences": 985,
+          "oracle_subset_union_exact": 22,
+          "query_count": 48,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.6836123451081582,
+            "fn": 3060,
+            "fp": 1384,
+            "precision": 0.8274324188973985,
+            "recall": 0.6121738034680694,
+            "size": 131.54166666666666,
+            "tp": 4930
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8144117103322442,
+            "fn": 2050,
+            "fp": 277,
+            "precision": 0.9663838489115474,
+            "recall": 0.7337358170099958,
+            "size": 129.52083333333334,
+            "tp": 5940
+          },
+          "selected_rank_histogram": {
+            "1": 23,
+            "2": 15,
+            "3": 5,
+            "4": 5
+          },
+          "some_candidate_proper_truth_subset": 45,
+          "truth_presence_masks": {
+            "0000": 985,
+            "0001": 172,
+            "0010": 491,
+            "0011": 129,
+            "0100": 746,
+            "0101": 120,
+            "0110": 269,
+            "0111": 148,
+            "1000": 273,
+            "1001": 310,
+            "1010": 269,
+            "1011": 409,
+            "1100": 323,
+            "1101": 787,
+            "1110": 352,
+            "1111": 2207
+          },
+          "union_analysis_only": {
+            "exact_count": 1,
+            "f1": 0.6348075286409643,
+            "fn": 985,
+            "fp": 7227,
+            "precision": 0.5091008855579828,
+            "recall": 0.8801096635451552,
+            "size": 296.5,
+            "tp": 7005
+          },
+          "union_covers_all_truth": 31,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 1,
+            "exact_lost": 0,
+            "f1_gained": 6,
+            "f1_lost": 42
+          }
+        },
+        "1731:TYPE_single": {
+          "all_candidates_proper_truth_subsets": 0,
+          "best_path_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8351485482752774,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.765689501090961,
+            "recall": 0.9879448627362686,
+            "size": 100.11111111111111,
+            "tp": 639
+          },
+          "best_subset_union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.8351485482752774,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.765689501090961,
+            "recall": 0.9879448627362686,
+            "size": 100.11111111111111,
+            "tp": 639
+          },
+          "common_incorrect_present": 0,
+          "common_incorrect_product_occurrences": 0,
+          "failed_coverage_classes": {
+            "full_union_extra_requires_oracle_product_filtering": 9
+          },
+          "incorrect_presence_masks": {
+            "0001": 686,
+            "0010": 553,
+            "0011": 74,
+            "0100": 506,
+            "0101": 233,
+            "0110": 96,
+            "0111": 16,
+            "1000": 489,
+            "1001": 13,
+            "1010": 28,
+            "1100": 19,
+            "1101": 3
+          },
+          "incorrect_union_product_occurrences": 2716,
+          "no_exact_candidate": 9,
+          "omitted_across_all_present": 0,
+          "omitted_across_all_product_occurrences": 0,
+          "oracle_subset_union_exact": 0,
+          "query_count": 9,
+          "rank1": {
+            "exact_count": 0,
+            "f1": 0.5945264762037251,
+            "fn": 155,
+            "fp": 552,
+            "precision": 0.5563506602587195,
+            "recall": 0.6818678219908925,
+            "size": 115.88888888888889,
+            "tp": 491
+          },
+          "selected": {
+            "exact_count": 0,
+            "f1": 0.8351485482752774,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.765689501090961,
+            "recall": 0.9879448627362686,
+            "size": 100.11111111111111,
+            "tp": 639
+          },
+          "selected_rank_histogram": {
+            "1": 4,
+            "2": 2,
+            "3": 2,
+            "4": 1
+          },
+          "some_candidate_proper_truth_subset": 5,
+          "truth_presence_masks": {
+            "0001": 1,
+            "0011": 1,
+            "0100": 2,
+            "0101": 2,
+            "0110": 32,
+            "0111": 117,
+            "1000": 1,
+            "1001": 59,
+            "1010": 1,
+            "1011": 58,
+            "1100": 55,
+            "1101": 77,
+            "1110": 11,
+            "1111": 229
+          },
+          "union_analysis_only": {
+            "exact_count": 0,
+            "f1": 0.32527109509213553,
+            "fn": 0,
+            "fp": 2716,
+            "precision": 0.1972414656310094,
+            "recall": 1.0,
+            "size": 373.55555555555554,
+            "tp": 646
+          },
+          "union_covers_all_truth": 9,
+          "union_harms_exact_rank1": 0,
+          "union_harms_exact_selected": 0,
+          "union_vs_selected": {
+            "exact_gained": 0,
+            "exact_lost": 0,
+            "f1_gained": 0,
+            "f1_lost": 9
+          }
+        }
+      },
+      "overall": {
+        "all_candidates_proper_truth_subsets": 2,
+        "best_path_analysis_only": {
+          "exact_count": 0,
+          "f1": 0.8223109945180936,
+          "fn": 6067,
+          "fp": 1404,
+          "precision": 0.9460205681176037,
+          "recall": 0.7638564277006769,
+          "size": 127.60606060606061,
+          "tp": 19651
+        },
+        "best_subset_union_analysis_only": {
+          "exact_count": 69,
+          "f1": 0.8687383255837505,
+          "fn": 3650,
+          "fp": 2451,
+          "precision": 0.9219075529002337,
+          "recall": 0.863600690330094,
+          "size": 148.6,
+          "tp": 22068
+        },
+        "common_incorrect_present": 1,
+        "common_incorrect_product_occurrences": 3,
+        "failed_coverage_classes": {
+          "failed_candidates_full_union_exact": 2,
+          "full_union_extra_but_oracle_whole_path_subset_exact": 67,
+          "full_union_extra_requires_oracle_product_filtering": 43,
+          "truth_members_absent_from_every_candidate": 53
+        },
+        "incorrect_presence_masks": {
+          "0001": 7389,
+          "0010": 6482,
+          "0011": 1090,
+          "0100": 5964,
+          "0101": 1179,
+          "0110": 802,
+          "0111": 167,
+          "1000": 2952,
+          "1001": 306,
+          "1010": 238,
+          "1011": 84,
+          "1100": 337,
+          "1101": 171,
+          "1110": 18,
+          "1111": 3
+        },
+        "incorrect_union_product_occurrences": 27182,
+        "no_exact_candidate": 165,
+        "omitted_across_all_present": 53,
+        "omitted_across_all_product_occurrences": 3134,
+        "oracle_subset_union_exact": 69,
+        "query_count": 165,
+        "rank1": {
+          "exact_count": 0,
+          "f1": 0.6868770013348313,
+          "fn": 9706,
+          "fp": 4109,
+          "precision": 0.8288268843681813,
+          "recall": 0.619150433407358,
+          "size": 121.94545454545455,
+          "tp": 16012
+        },
+        "selected": {
+          "exact_count": 0,
+          "f1": 0.8207234543284151,
+          "fn": 6138,
+          "fp": 1224,
+          "precision": 0.9474270854188097,
+          "recall": 0.7606953628205507,
+          "size": 126.08484848484848,
+          "tp": 19580
+        },
+        "selected_rank_histogram": {
+          "1": 81,
+          "2": 36,
+          "3": 24,
+          "4": 24
+        },
+        "some_candidate_proper_truth_subset": 145,
+        "truth_presence_masks": {
+          "0000": 3134,
+          "0001": 812,
+          "0010": 1380,
+          "0011": 534,
+          "0100": 1176,
+          "0101": 827,
+          "0110": 808,
+          "0111": 1035,
+          "1000": 700,
+          "1001": 682,
+          "1010": 1482,
+          "1011": 1346,
+          "1100": 791,
+          "1101": 3172,
+          "1110": 1582,
+          "1111": 6257
+        },
+        "union_analysis_only": {
+          "exact_count": 2,
+          "f1": 0.601107111710977,
+          "fn": 3134,
+          "fp": 27182,
+          "precision": 0.47451465496339973,
+          "recall": 0.8838941937262192,
+          "size": 301.6121212121212,
+          "tp": 22584
+        },
+        "union_covers_all_truth": 112,
+        "union_harms_exact_rank1": 0,
+        "union_harms_exact_selected": 0,
+        "union_vs_selected": {
+          "exact_gained": 2,
+          "exact_lost": 0,
+          "f1_gained": 21,
+          "f1_lost": 144
+        }
+      }
+    }
+  },
+  "script_sha256": "12f8d7853adadbbe087114f5099fa2b3c7c8add24512a1561ffcf2bb08964ef7"
+}

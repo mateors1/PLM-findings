@@ -1,0 +1,212 @@
+{
+  "controlled_configs_equal_except_symmetric_weight_and_run_name": true,
+  "input_hashes": {
+    "docs\\experiments\\2026-09-24-symmetric-relation-plan.md": "423f240b47a209e8fec6d5a4f8446a35097472e81dedbd9717f2b4da8c0150be",
+    "runs\\learning\\prompt-objectives-v1\\promptset-validation.json": "d8c40f85b4fed7ea9d5503b5e820132e1a2a2c5993c3cff0cef8058a4f40c09c",
+    "runs\\learning\\symmetric-relation-v1\\validation.json": "248e6e4b150b53b66a87df92b10d020628c64886720fccf1b7b0fd263ce8ac36",
+    "runs\\national_dex_promptset_s1729_v1\\run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917",
+    "runs\\national_dex_promptset_s1729_v1\\source.zip": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+    "runs\\national_dex_promptset_s1729_v1\\training-result.json": "b57331c673967c19cb3967c1d302d85f6f811e504a2691d6fa961b778d8bfd90",
+    "runs\\national_dex_symmetric_s1729_v1\\run.json": "d865210e1580f2e65d5602de190079a4736dc206966e0640e376125be9bb31fa",
+    "runs\\national_dex_symmetric_s1729_v1\\source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+    "runs\\national_dex_symmetric_s1729_v1\\training-result.json": "ab1567c26e634cb480f13f0d76fdef733d2a63b82d51c7e7f24327bbca8a7b28"
+  },
+  "models": {
+    "anchor": {
+      "by_dimension_processed": {
+        "COLOR": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.7087378640776699,
+          "exact_set_accuracy": 0.7087378640776699,
+          "f1": 0.7087378640776699,
+          "mean_target_count": 115.44660194174757,
+          "precision": 0.7087378640776699,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 0.7087378640776699,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "TYPE": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.2689075630252101,
+          "exact_set_accuracy": 0.2689075630252101,
+          "f1": 0.5653546076530105,
+          "mean_target_count": 116.05042016806723,
+          "precision": 0.6336959148707796,
+          "protocol_valid_rate": 1.0,
+          "query_count": 119,
+          "recall": 0.5370666243642122,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        }
+      },
+      "checkpoint_hash": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+      "decoding": "greedy-protocol-mask-v1",
+      "evaluator_environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+        "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "metrics": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.47297297297297297,
+          "exact_set_accuracy": 0.47297297297297297,
+          "f1": 0.6318792716698569,
+          "mean_target_count": 115.77027027027027,
+          "precision": 0.6685126750883909,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.013513513513513514,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.6290175108824568,
+          "mean_target_count": 116.56306306306307,
+          "precision": 0.6620999388381861,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.616715893240276,
+          "self_return_rate": 0.7027027027027027,
+          "termination_rate": 1.0
+        }
+      },
+      "parameters": 6624256,
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "training_wall_seconds": 61.79574179999963
+    },
+    "symmetric": {
+      "by_dimension_processed": {
+        "COLOR": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.883495145631068,
+          "exact_set_accuracy": 0.883495145631068,
+          "f1": 0.883495145631068,
+          "mean_target_count": 115.8252427184466,
+          "precision": 0.883495145631068,
+          "protocol_valid_rate": 1.0,
+          "query_count": 103,
+          "recall": 0.883495145631068,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "TYPE": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.4369747899159664,
+          "exact_set_accuracy": 0.4369747899159664,
+          "f1": 0.7986206293243531,
+          "mean_target_count": 118.05882352941177,
+          "precision": 0.8884052685413228,
+          "protocol_valid_rate": 1.0,
+          "query_count": 119,
+          "recall": 0.7586241392379077,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        }
+      },
+      "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+      "decoding": "greedy-protocol-mask-v1+kv-v1",
+      "evaluator_environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+        "torch": "2.11.0+cu128",
+        "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+      },
+      "metrics": {
+        "processed": {
+          "duplicate_query_rate": 0.0,
+          "exact_sequence_accuracy": 0.6441441441441441,
+          "exact_set_accuracy": 0.6441441441441441,
+          "f1": 0.8379993463495402,
+          "mean_target_count": 117.02252252252252,
+          "precision": 0.8861271484523306,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.8165597863482479,
+          "self_return_rate": 0.0,
+          "termination_rate": 1.0
+        },
+        "raw": {
+          "duplicate_query_rate": 0.018018018018018018,
+          "exact_sequence_accuracy": 0.0,
+          "exact_set_accuracy": 0.0,
+          "f1": 0.8340801445405982,
+          "mean_target_count": 118.02702702702703,
+          "precision": 0.8771505830941294,
+          "protocol_valid_rate": 1.0,
+          "query_count": 222,
+          "recall": 0.8165597863482479,
+          "self_return_rate": 0.9054054054054054,
+          "termination_rate": 1.0
+        }
+      },
+      "parameters": 6689792,
+      "training_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "cd5074de5c3f83788d31776ac24a25077e1a220875cdc52312218e0c04c6cc5c",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "training_wall_seconds": 66.86714800000118
+    }
+  },
+  "scope": "single-seed validation comparison, auxiliary symmetry weight 1; no oracle hints",
+  "selection": "promising single-seed candidate; deployment unchanged pending replication"
+}
