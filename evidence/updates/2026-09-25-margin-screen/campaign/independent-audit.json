@@ -1,0 +1,1613 @@
+{
+  "acceptance_authority": "owner reviews the independent audit and predeclared gate",
+  "all_recomputed_outputs_equal": true,
+  "arms": [
+    {
+      "arm": "control",
+      "groups": {
+        "COLOR": {
+          "head_diagnostics": {
+            "direct_exact_count": 73,
+            "direct_f1": 0.9976427162824764,
+            "direct_precision": 0.9953457013860755,
+            "direct_recall": 1.0,
+            "direct_set_size": 114.11650485436893,
+            "query_count": 103,
+            "strict_separation_count": 103
+          },
+          "metrics": {
+            "exact_set_accuracy": 1.0,
+            "exact_set_count": 103,
+            "f1": 1.0,
+            "failure_count": 0,
+            "mean_set_size": 113.66990291262135,
+            "original_selection_count": 103,
+            "pair_selection_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 412,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        },
+        "TYPE_dual": {
+          "head_diagnostics": {
+            "direct_exact_count": 6,
+            "direct_f1": 0.9764016292733532,
+            "direct_precision": 0.9612839926918932,
+            "direct_recall": 0.9934450192509385,
+            "direct_set_size": 177.08823529411765,
+            "query_count": 68,
+            "strict_separation_count": 20
+          },
+          "metrics": {
+            "exact_set_accuracy": 0.6176470588235294,
+            "exact_set_count": 42,
+            "f1": 0.9038374262406684,
+            "failure_count": 0,
+            "mean_set_size": 160.35294117647058,
+            "original_selection_count": 40,
+            "pair_selection_count": 28,
+            "precision": 0.9513010796122622,
+            "query_count": 68,
+            "recall": 0.8841732950973097,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 272,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        },
+        "TYPE_single": {
+          "head_diagnostics": {
+            "direct_exact_count": 31,
+            "direct_f1": 0.9929359171348661,
+            "direct_precision": 0.9883309600159675,
+            "direct_recall": 0.9979706302115388,
+            "direct_set_size": 100.11764705882354,
+            "query_count": 51,
+            "strict_separation_count": 44
+          },
+          "metrics": {
+            "exact_set_accuracy": 0.9215686274509803,
+            "exact_set_count": 47,
+            "f1": 0.9874231436500812,
+            "failure_count": 0,
+            "mean_set_size": 101.96078431372548,
+            "original_selection_count": 50,
+            "pair_selection_count": 1,
+            "precision": 0.9807548017080006,
+            "query_count": 51,
+            "recall": 0.9997116493656286,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 204,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        }
+      },
+      "head_diagnostics": {
+        "direct_exact_count": 110,
+        "direct_f1": 0.9900551456827084,
+        "direct_precision": 0.9833008905704004,
+        "direct_recall": 0.9975259614858212,
+        "direct_set_size": 130.1891891891892,
+        "query_count": 222,
+        "strict_separation_count": 167
+      },
+      "metrics": {
+        "exact_set_accuracy": 0.8648648648648649,
+        "exact_set_count": 192,
+        "f1": 0.967655519416755,
+        "failure_count": 0,
+        "mean_set_size": 125.27927927927928,
+        "original_selection_count": 193,
+        "pair_selection_count": 29,
+        "precision": 0.9806620193727111,
+        "query_count": 222,
+        "recall": 0.9644553071363249,
+        "selected_source_eligibility_rate": 1.0,
+        "source_path_count": 888,
+        "source_path_duplicate_count": 0,
+        "source_path_error_count": 0,
+        "source_path_protocol_valid_rate": 1.0,
+        "source_path_termination_rate": 1.0
+      }
+    },
+    {
+      "arm": "treatment",
+      "groups": {
+        "COLOR": {
+          "head_diagnostics": {
+            "direct_exact_count": 0,
+            "direct_f1": 0.30971134401070843,
+            "direct_precision": 0.18834924265321992,
+            "direct_recall": 0.9510331648053,
+            "direct_set_size": 577.6990291262136,
+            "query_count": 103,
+            "strict_separation_count": 0
+          },
+          "metrics": {
+            "exact_set_accuracy": 0.019417475728155338,
+            "exact_set_count": 2,
+            "f1": 0.6560282962188533,
+            "failure_count": 0,
+            "mean_set_size": 225.83495145631068,
+            "original_selection_count": 3,
+            "pair_selection_count": 100,
+            "precision": 0.5016104386169293,
+            "query_count": 103,
+            "recall": 0.9804585779142543,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 412,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        },
+        "TYPE_dual": {
+          "head_diagnostics": {
+            "direct_exact_count": 0,
+            "direct_f1": 0.3788676677823292,
+            "direct_precision": 0.2490848731033836,
+            "direct_recall": 0.8332554668312209,
+            "direct_set_size": 576.7794117647059,
+            "query_count": 68,
+            "strict_separation_count": 0
+          },
+          "metrics": {
+            "exact_set_accuracy": 0.058823529411764705,
+            "exact_set_count": 4,
+            "f1": 0.6085195646536157,
+            "failure_count": 0,
+            "mean_set_size": 255.26470588235293,
+            "original_selection_count": 5,
+            "pair_selection_count": 63,
+            "precision": 0.5295017751782956,
+            "query_count": 68,
+            "recall": 0.7488493065061735,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 272,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        },
+        "TYPE_single": {
+          "head_diagnostics": {
+            "direct_exact_count": 0,
+            "direct_f1": 0.2533175375300734,
+            "direct_precision": 0.14977515030214206,
+            "direct_recall": 0.9162900809330642,
+            "direct_set_size": 616.6078431372549,
+            "query_count": 51,
+            "strict_separation_count": 0
+          },
+          "metrics": {
+            "exact_set_accuracy": 0.0,
+            "exact_set_count": 0,
+            "f1": 0.5433464252204883,
+            "failure_count": 0,
+            "mean_set_size": 217.64705882352942,
+            "original_selection_count": 4,
+            "pair_selection_count": 47,
+            "precision": 0.40736797132714553,
+            "query_count": 51,
+            "recall": 0.8659697938944061,
+            "selected_source_eligibility_rate": 1.0,
+            "source_path_count": 204,
+            "source_path_duplicate_count": 0,
+            "source_path_error_count": 0,
+            "source_path_protocol_valid_rate": 1.0,
+            "source_path_termination_rate": 1.0
+          }
+        }
+      },
+      "head_diagnostics": {
+        "direct_exact_count": 0,
+        "direct_f1": 0.3179390281816896,
+        "direct_precision": 0.19809133346721164,
+        "direct_recall": 0.906975593905654,
+        "direct_set_size": 586.3558558558559,
+        "query_count": 222,
+        "strict_separation_count": 0
+      },
+      "metrics": {
+        "exact_set_accuracy": 0.02702702702702703,
+        "exact_set_count": 6,
+        "f1": 0.6155896963659128,
+        "failure_count": 0,
+        "mean_set_size": 232.96846846846847,
+        "original_selection_count": 12,
+        "pair_selection_count": 210,
+        "precision": 0.4885034343574425,
+        "query_count": 222,
+        "recall": 0.8832137200729852,
+        "selected_source_eligibility_rate": 1.0,
+        "source_path_count": 888,
+        "source_path_duplicate_count": 0,
+        "source_path_error_count": 0,
+        "source_path_protocol_valid_rate": 1.0,
+        "source_path_termination_rate": 1.0
+      }
+    }
+  ],
+  "audit_passed": true,
+  "complete": true,
+  "distinct_validation_queries": 222,
+  "gate": {
+    "checks": {
+      "all_sources_and_selected_eligible": true,
+      "exact_count_strictly_improved": false,
+      "groups_exact_nondecreased": false,
+      "macro_f1_nondecreased": false,
+      "strict_separation_strictly_improved": false
+    },
+    "gained_exact": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 10,
+        "subject": "PKM_ARMAROUGE"
+      }
+    ],
+    "gained_exact_count": 1,
+    "independent_audit_status": "required",
+    "lost_exact": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 3,
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 4,
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 8,
+        "subject": "PKM_ARCTOVISH"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 9,
+        "subject": "PKM_ARMALDO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 11,
+        "subject": "PKM_AROMATISSE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 13,
+        "subject": "PKM_AZURILL"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 15,
+        "subject": "PKM_BAXCALIBUR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 16,
+        "subject": "PKM_BAYLEEF"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 17,
+        "subject": "PKM_BEAUTIFLY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 18,
+        "subject": "PKM_BELLIBOLT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 19,
+        "subject": "PKM_BERGMITE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 20,
+        "subject": "PKM_BOLDORE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 21,
+        "subject": "PKM_BOLTUND"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 22,
+        "subject": "PKM_BONSLY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 23,
+        "subject": "PKM_BRUTE_BONNET"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 24,
+        "subject": "PKM_BUDEW"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 25,
+        "subject": "PKM_BUIZEL"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 26,
+        "subject": "PKM_CAMERUPT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 28,
+        "subject": "PKM_CARNIVINE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 29,
+        "subject": "PKM_CARRACOSTA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 30,
+        "subject": "PKM_CASTFORM"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 31,
+        "subject": "PKM_CENTISKORCH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 32,
+        "subject": "PKM_CETITAN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 33,
+        "subject": "PKM_CHARMANDER"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 34,
+        "subject": "PKM_CHERUBI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 35,
+        "subject": "PKM_CHEWTLE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 36,
+        "subject": "PKM_CHI_YU"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 37,
+        "subject": "PKM_CLEFAIRY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 38,
+        "subject": "PKM_CLODSIRE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 39,
+        "subject": "PKM_COMBEE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 40,
+        "subject": "PKM_CONKELDURR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 41,
+        "subject": "PKM_CORPHISH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 43,
+        "subject": "PKM_CRAMORANT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 45,
+        "subject": "PKM_CUBONE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 46,
+        "subject": "PKM_DARKRAI"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 47,
+        "subject": "PKM_DARKRAI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 48,
+        "subject": "PKM_DARUMAKA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 49,
+        "subject": "PKM_DEINO"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 50,
+        "subject": "PKM_DELPHOX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 51,
+        "subject": "PKM_DEOXYS"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 52,
+        "subject": "PKM_DEOXYS"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 53,
+        "subject": "PKM_DEWGONG"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 54,
+        "subject": "PKM_DHELMISE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 56,
+        "subject": "PKM_DRAPION"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 57,
+        "subject": "PKM_DRIFBLIM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 58,
+        "subject": "PKM_DUCKLETT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 59,
+        "subject": "PKM_DUNSPARCE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 61,
+        "subject": "PKM_EELEKTRIK"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 63,
+        "subject": "PKM_ELECTABUZZ"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 64,
+        "subject": "PKM_ELECTRIKE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 65,
+        "subject": "PKM_EXEGGUTOR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 66,
+        "subject": "PKM_FERALIGATR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 68,
+        "subject": "PKM_FINIZEN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 69,
+        "subject": "PKM_FLAPPLE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 70,
+        "subject": "PKM_FLITTLE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 71,
+        "subject": "PKM_FLORAGATO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 72,
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 73,
+        "subject": "PKM_FOONGUS"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 75,
+        "subject": "PKM_FROSMOTH"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 77,
+        "subject": "PKM_GENGAR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 78,
+        "subject": "PKM_GIRATINA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 79,
+        "subject": "PKM_GLASTRIER"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 80,
+        "subject": "PKM_GLIGAR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 81,
+        "subject": "PKM_GOLDEEN"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 82,
+        "subject": "PKM_GOLEM"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 83,
+        "subject": "PKM_GOLEM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 84,
+        "subject": "PKM_GOLURK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 85,
+        "subject": "PKM_GOODRA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 86,
+        "subject": "PKM_GOREBYSS"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 87,
+        "subject": "PKM_GOSSIFLEUR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 88,
+        "subject": "PKM_GRAPPLOCT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 89,
+        "subject": "PKM_GREAVARD"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 90,
+        "subject": "PKM_GROUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 91,
+        "subject": "PKM_HATTERENE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 92,
+        "subject": "PKM_HATTREM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 93,
+        "subject": "PKM_HERDIER"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 94,
+        "subject": "PKM_HONCHKROW"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 95,
+        "subject": "PKM_HOPPIP"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 96,
+        "subject": "PKM_IMPIDIMP"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 98,
+        "subject": "PKM_INKAY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 99,
+        "subject": "PKM_JANGMO_O"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 100,
+        "subject": "PKM_KABUTO"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 102,
+        "subject": "PKM_KARTANA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 103,
+        "subject": "PKM_KECLEON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 105,
+        "subject": "PKM_KLEAVOR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 106,
+        "subject": "PKM_KLEFKI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 107,
+        "subject": "PKM_KRABBY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 108,
+        "subject": "PKM_KRICKETOT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 109,
+        "subject": "PKM_KRICKETOT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 110,
+        "subject": "PKM_KYOGRE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 111,
+        "subject": "PKM_KYUREM"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 113,
+        "subject": "PKM_LANTURN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 114,
+        "subject": "PKM_LARVITAR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 115,
+        "subject": "PKM_LATIOS"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 116,
+        "subject": "PKM_LEDIAN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 117,
+        "subject": "PKM_LITLEO"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 118,
+        "subject": "PKM_LITTEN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 119,
+        "subject": "PKM_LOPUNNY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 120,
+        "subject": "PKM_LUMINEON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 121,
+        "subject": "PKM_LYCANROC"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 122,
+        "subject": "PKM_MACHOKE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 123,
+        "subject": "PKM_MAGMORTAR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 124,
+        "subject": "PKM_MANTYKE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 125,
+        "subject": "PKM_MAREANIE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 126,
+        "subject": "PKM_MARILL"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 128,
+        "subject": "PKM_MAWILE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 129,
+        "subject": "PKM_MEDICHAM"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 130,
+        "subject": "PKM_MEDITITE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 131,
+        "subject": "PKM_MEOWSTIC"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 132,
+        "subject": "PKM_METAPOD"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 133,
+        "subject": "PKM_MEWTWO"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 135,
+        "subject": "PKM_MISDREAVUS"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 136,
+        "subject": "PKM_MR_RIME"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 137,
+        "subject": "PKM_MUK"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 138,
+        "subject": "PKM_NIDOQUEEN"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 139,
+        "subject": "PKM_NIDORAN_F"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 140,
+        "subject": "PKM_OINKOLOGNE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 141,
+        "subject": "PKM_OKIDOGI"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 142,
+        "subject": "PKM_ONIX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 143,
+        "subject": "PKM_PALKIA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 144,
+        "subject": "PKM_PANCHAM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 145,
+        "subject": "PKM_PANPOUR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 146,
+        "subject": "PKM_PARAS"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 147,
+        "subject": "PKM_PHANPY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 148,
+        "subject": "PKM_PHANTUMP"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 149,
+        "subject": "PKM_PIKACHU"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 151,
+        "subject": "PKM_POOCHYENA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 152,
+        "subject": "PKM_PORYGON2"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 153,
+        "subject": "PKM_PORYGON_Z"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 155,
+        "subject": "PKM_PRIMEAPE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 156,
+        "subject": "PKM_PYROAR"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 157,
+        "subject": "PKM_QUAGSIRE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 158,
+        "subject": "PKM_QUAXLY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 159,
+        "subject": "PKM_RABSCA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 160,
+        "subject": "PKM_RAGING_BOLT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 161,
+        "subject": "PKM_RAGING_BOLT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 162,
+        "subject": "PKM_RAIKOU"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 163,
+        "subject": "PKM_RATICATE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 165,
+        "subject": "PKM_RHYHORN"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 166,
+        "subject": "PKM_ROARING_MOON"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 167,
+        "subject": "PKM_ROLYCOLY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 168,
+        "subject": "PKM_ROTOM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 169,
+        "subject": "PKM_SABLEYE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 170,
+        "subject": "PKM_SCRAFTY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 171,
+        "subject": "PKM_SEEDOT"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 172,
+        "subject": "PKM_SEVIPER"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 173,
+        "subject": "PKM_SEWADDLE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 174,
+        "subject": "PKM_SHIFTRY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 175,
+        "subject": "PKM_SINISTCHA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 176,
+        "subject": "PKM_SINISTCHA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 178,
+        "subject": "PKM_SKIPLOOM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 179,
+        "subject": "PKM_SLAKING"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 180,
+        "subject": "PKM_SLITHER_WING"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 182,
+        "subject": "PKM_SMEARGLE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 183,
+        "subject": "PKM_SOLGALEO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 184,
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 185,
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 186,
+        "subject": "PKM_STEELIX"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 187,
+        "subject": "PKM_SUNFLORA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 189,
+        "subject": "PKM_SWANNA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 190,
+        "subject": "PKM_TANGROWTH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 191,
+        "subject": "PKM_TAPU_BULU"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 192,
+        "subject": "PKM_TEDDIURSA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 193,
+        "subject": "PKM_TERAPAGOS"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 194,
+        "subject": "PKM_TERRAKION"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 196,
+        "subject": "PKM_TIMBURR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 197,
+        "subject": "PKM_TINKATON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 198,
+        "subject": "PKM_TINKATUFF"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 199,
+        "subject": "PKM_TOUCANNON"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 200,
+        "subject": "PKM_TOXAPEX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 201,
+        "subject": "PKM_TOXICROAK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 202,
+        "subject": "PKM_TOXTRICITY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 203,
+        "subject": "PKM_TRAPINCH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 204,
+        "subject": "PKM_TURTONATOR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 205,
+        "subject": "PKM_TYNAMO"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 206,
+        "subject": "PKM_TYPHLOSION"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 208,
+        "subject": "PKM_UMBREON"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 209,
+        "subject": "PKM_URSALUNA"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 210,
+        "subject": "PKM_URSARING"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 211,
+        "subject": "PKM_VENOMOTH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 212,
+        "subject": "PKM_VOLBEAT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 213,
+        "subject": "PKM_VULPIX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 214,
+        "subject": "PKM_WAILMER"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 216,
+        "subject": "PKM_WIMPOD"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 217,
+        "subject": "PKM_WURMPLE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 219,
+        "subject": "PKM_ZEBSTRIKA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 220,
+        "subject": "PKM_ZEKROM"
+      }
+    ],
+    "lost_exact_count": 187,
+    "numerical_gates_passed": false,
+    "replication_authorized": false,
+    "stage_one_accepted": false
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\config.yaml": "06b4eb9e3c74c9dc998cfd7e18af0a7a71d60f0340f2093b2be62297578fcf3a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\data\\pokemon_v1.yaml": "b524769d5a0fd760b06624a5248eac9aaf72eaafe0790e0f39fea1729fbd3d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\eval\\ranking.yaml": "ad2c15c5dc0f3caa91781eddc0a39379161fdd0151dc8845cce97d43fc8401d1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\checkpointing_lab.yaml": "0d793e4255f9b96d37195afe04f4887ca23ea58ac44bfc1bc50c7dc2a55a0f73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\continuation_set_lab.yaml": "774e9627619b351347be38a2d80a6ff15e0333461c0f7f522d0f75c011486ee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\first_target_lab.yaml": "6cb4f76534346c267881e72bf27f594c5b2f332bd189cd38be00de923de12326",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\moe_lab.yaml": "1749b2d19c87333cd8e01307eeb0430031800111541d5bb2534c116e3fa0ecfa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\national_dex_v1.yaml": "568e9d883c7c2205c7534076d3eb79d8ca01afd9350a73e7d2655f3c01245c9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\prompt_set_lab.yaml": "822294ca346705510203582677cc5b3bb3ab40f8698c55f6bca117132a816b27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\symmetric_relation_lab.yaml": "6eeef56cdf8ffb4a838b2b430a0f6e03ebb17190650ede501a6db4f8707e7092",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\tiny_smoke.yaml": "e801e5405db9c072a4d2668579d3c861eb44bbcc2d1ddb0f395a604ba35714b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\model\\overkill.yaml": "22c8fa2e9578484de507e32ba33503f1d9e606f1c87e6ada7080e970d0e1ef55",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\model\\tiny_decoder.yaml": "506730caf64c1ec8acc97b2c2317b79d638f782f99d2fb337d97a458ee833d25",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\protocol\\pokemon_v1.yaml": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\serve\\local.yaml": "816b6b05e326b678494386d9d41e1cbc4ea3930d4d421ce319ea2490934132f2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\train\\local_cuda.yaml": "814ceb8df66d50f5bcd8ac3e78cd1fcc695cf9c2133131b767d94212a7510141",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\manifests\\pokemon_v1_f1541479_20260924.json": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\sqlite\\pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-symmetric-margin-plan.md": "845663b5f739c43b84f372aaf098e097c6380719c2882bd64c56f0661b203803",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\pyproject.toml": "30bfe2dae495c9641b6d38221948d30925986a5fcfee91b7ff09f0a8b65037e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\capture.py": "7eb34c136bcf012373316030096cb4632fa54cc1cec9cd7b12e9b9a90985a3d7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\cpu-prerequisite.json": "240764f7686a47a057941c5151cf6ac070303c1958065aa523aed0bbcb0995ef",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\current.pt": "dfff8175eb5b523be2a799147aec3496011ade147e9e062f1e3203bf48a212d3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\gpu-prerequisite.json": "2bb3716e49d25600181e34a427b6cbc21cf176f02d11e83179e55b325f8a9412",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\gpu-smoke.json": "8e5a3c211c21b11423db648855a9d000f80d39936be0c2cdf7d55241d0b9b6a5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\gpu-smoke.py": "969c05557318244ede92b93adf2068f028d84e8aed68e46af03be09b057c5c91",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\original.pt": "336c38e5876cc9ab5b077bdd356beb88602f92ae8642785b24e77ecb7f41ffd7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\seal-prerequisites.py": "7f07df196719b90e4b48e871553714236bdca56f535b0ca6073e611a4c649c07",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-default-contract-v1\\summary.json": "7aaf83746196e6fad8ae680cd4e5141cfca72724b131a4e52080378bb3e063aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\independent-audit.json": "13d9b88135eb52c768932e213cc475ac5994636a7fc228b1a7b2ad8ab538a057",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\independent-audit.py": "8fa4a7b273a5fa43289318242147b5cfd5a69e6b681317120740e4fd0fd8970e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.json": "4e4c46d4ebc366e02aa04cc3abda1a65cc08cec5463453ba97e25b4bc3f53992",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\evaluation-control.json": "2860849b418df41153fefabf6d5b3c6a7d9b5489e696af161e596842f1236d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\evaluation-treatment.json": "04baa56af9a77858d084c7108a527a84499a30df3e595cddbce4e87cd222832b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.configs.zip": "86fcd9dcba39c3d42e738d93b5241eb94030f9b2696b12912d081382f3a016d6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.cpu-comparison.json": "7aaf83746196e6fad8ae680cd4e5141cfca72724b131a4e52080378bb3e063aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.cpu-receipt.json": "240764f7686a47a057941c5151cf6ac070303c1958065aa523aed0bbcb0995ef",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.gpu-smoke-raw.json": "8e5a3c211c21b11423db648855a9d000f80d39936be0c2cdf7d55241d0b9b6a5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.gpu-smoke.json": "2bb3716e49d25600181e34a427b6cbc21cf176f02d11e83179e55b325f8a9412",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.json": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.original-recipe.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.plan.md": "845663b5f739c43b84f372aaf098e097c6380719c2882bd64c56f0661b203803",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.script.py": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-config-control.json": "bd0b551328c630776c0ad75d7edd5de21122f665f6d0253dbda4294d72b133b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-config-treatment.json": "967cb422c09f6ee34d65f8e02b1a8fd53307b41c5685a3001691ab9305f86e5d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-control.json": "8fa5ce8c4029719013757b65a3d5c78a4fbdb52686e2da2b256a70d87aef64f3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-seal.json": "1c0b9ae016d4c79925260f9732ad8a87f1dc688cebf4bf4bb56c1c2b6a8ff66d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-treatment.json": "450427afc01338d7789c36fc9362928d6979494ecd1bfe8eadfdffe1f8a2b8f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\checkpoint-final.pt": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\checkpoint-final.pt.json": "cff070bab97f2ed9a741d01f32d3f457ad976d74de0cecda26e95ea4f3c714ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\metrics.jsonl": "92cd014a321f570dab72ac9a80202ef53e9c7bab6fd968b072e0869841baf7a7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\run.json": "844e6a8573af68198e5d7185804c0f1a7f1a390a9389c06ca2065835a0637a6c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\training-result.json": "b20b9fe2fb96a05e149c2c1f600be58974e527d72410fba26e7cb23d2139d8f4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\checkpoint-final.pt": "0bb697a4a0c8a05441fb2c825ffcfc47023f91596be8f48cda639d4e57c1e8ef",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\checkpoint-final.pt.json": "339ccb185d1bc7cc05349f1f1c7defbf973d21f2f5813cd924d4f8fe91b0ff7c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\metrics.jsonl": "0980c194e3eb207a240a4bae6adad69cf931fe94b925755951b3175c04791ff4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\run.json": "8e4a1e5e7fce57e51e3050be0c213bbad820238f8fb5c0f4064c5b6ac39a4150",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\training-result.json": "04ef9996118cbebbe878b8abbdf423786b206aedd80e1d64705d35cedc179438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\run_symmetric_margin_screen.py": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\__init__.py": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\__init__.py": "e2fc4f1a65963ac4a3cfbb63bbd80a811af5a3f7dbba51e0b9bd3e9c8457608a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\complex.py": "a23c4b179a92238d49fa48c4c4c6de466ab214bef91c3b438e4d08db7aa4f0df",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\oracle.py": "04bf088092dbe5c79f37b8613004ea2d0c3c25aeaf1a33b98cd09a576342a036",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\popularity.py": "29aa93558c9b0595cd643fbb773f6aed1e373102855ba0dcc3a72da9886097ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\cli.py": "6fd5057947fa8c7f40473c287d2ec05d65c09408eaf6e94ab921cd2f0d29f478",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\config.py": "73a00712ef08da23fbc3d801551781bd4e08f0729d0d2d8db517737ac877906f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\configuration.py": "a3c0e828387d1989df0ced4c71a53f50ebe04816280c801026ab8b200f1db742",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\__init__.py": "d84f2234bb4534acfd649f79e0c18286d71a8cea645515c2058e4db7c7c9df2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\compiler.py": "8e5c0f76860d0677e02c55ba023c7523673e3185387ab49485826c795de0cfd0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\snapshot.py": "ac61c110c0f1294cd1fa79ac966d56f8bb34c062ce5f6958dbf4fad18faacd51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\validation.py": "38c1ecb76b55f3b7a774542551566261ec36b93750b49cef6d71af7adef6d912",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\__init__.py": "fb115cad4ab3bad67743b2d0187c741656c083e20a7a17b63dc1847c63271112",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\generation.py": "e38cfaba143643ad0b7339fa31a94a19b0cf3110893c54e45f9f8870cd3f7c37",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\plm.py": "d3c81820f8c61ade8f52fcf1c5c3950c8fb6a0717f7a3a52cbc274743e317a66",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\ranking.py": "83ee403c8b53d606199bea72bc83a06f4f5f116577d6da5662839a135e9eb693",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\set_composition.py": "265c8719633b21539d1eca1e693968fdb8a40c160fc64416482d80d268ef7b69",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\split.py": "9ad16d5b297c1dd7055b1a767c213162823f1db9be9b486e9c8c59636b67f3b1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\__init__.py": "a5203b2b72b0645b66bebda3e43fd92afaa19789813d98e06db3e76e7a26b45a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\comparison.py": "10281960c9c9617ccad814edd292d465ea69314b405bd3a19648cdb5741906e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\evidence.py": "ccb31095f096b4c81be2dcab9841f9f99d6d56b02129be9ab57b6d8f735b9509",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\firewall.py": "e2c71168741cb0c0deb514204c28f8a67300540cb65fed8b23ff6f7ccc31f3ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\identity.py": "ef3c8451d213b19981a89561d963abc75a4017eff5fc08b96806ed109a575e34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\lineage.py": "4286d7913b27a6a634786ae9db36ebc5637bcfd8e41687492272b4d0c6f250fa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\measurement.py": "22a94d5f6603eca2c4a131e7e8f3ebe8a36fbf138389385ddb55e417c2b247ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\provenance.py": "a71ae38e17e211c227b37dedf42b7d73c0162c42ec09bdc86ef6e40293a11437",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\__init__.py": "d541af95ab44a4c524f7289c18f7a22795d2e58fb4a5a3848a2e9310eab3dd83",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\importers.py": "bd9c8f1159aa7b0f65d015215679df63f26baef2e0e4dab2799e1a959f2ab701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\repository.py": "f4edca845bf44dba03194a0876d6e6518b8d992202e806a5fbf9d0fea3e9046c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\schema.py": "53924883936b701b930a27a618a35e09855ea16412c5c186e7e34351451c91d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\labeling\\__init__.py": "3eb12e9fbf63f3167229532ecc96b38905724008d16351f95fe72beba1c44837",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\labeling\\web.py": "44bea94ec405e6328c1866bc21afcc75e71becdb958756df607d68e95a340cc2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\__init__.py": "dbd7a7c96b70bdb13c12c9ed89ef3a8b6c16ab2e7af53c39d7582477046e1698",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\architecture.py": "5e14377afad2fefae1fccc6ece9c379a3bae1853b3d40c2b39b48554755ec5f8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\interfaces.py": "0d89c3301e93bd61b0d59979dfb5358a2438faa4328882f12dbf55fe84225c97",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py": "ae05c7165af4ef15d9897a0dbf6b80ffcfbbc14fa77d0c503035abfd4391aed6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\legal_output.py": "ade361ca7531d79c328d34ba510ddefc4ebf27309d342133b387b7a70d5c55aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\synthetic.py": "9638a8671cd07ec5bb9fe90bdd2161a9a8276665f1a46ac027000a8a277d78b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\observability\\__init__.py": "81ab11abbef8b39b44011e6c0948bf3f270d971244806836db3fd76f22b0913a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\__init__.py": "e90fe7a8e44bf8307431d71951b20db24a3958001f8383b4fe50506f8e1f30e7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\config.py": "f3d2732694a472db2b624caba8993385b6cd0f35fc683ace42d6de5e76fdbd59",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\tokenizer.py": "d38c166afa0a5dc0f170687ca10ec2f1e6bb9bc5c66e7003a6ad9fcd98b6c61f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\reproducibility.py": "201ea15a0a5f69c1f3f966fcae3cbe202fda0bdc4814e8aa8b995a84ac8762b7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\__init__.py": "af77c53d2e18dd9136fc4c604ce7e999b69a75ca5157ac6a26c227c8c00c75f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\generation.py": "3706eb262d016ae72783530628948b3bdf25a7571ad03e7859db15adcf70793e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\generation_batch.py": "c397b3a045d052e4f2a4d96976a513e54cd1e43ee964fa9dc04fe9729adf3d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\guidance.py": "64da07bf0e351ff4566dce4e5b9881352c3ccfebf2e429743b1643bc23743827",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\hydration.py": "c3118da146b573ae2d78177c442bc192c71cc321955963413ed3df08b299cf25",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\native.py": "0c456bc6c246989af77e85e78a962143f9bc06312533ddd3d74ae460f59a2a8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\parser.py": "d370557359702d3456e560f4cb58a47a05d94200826bcc6477d03dd4d9331072",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\postprocess.py": "a420ed8b3fa14c507c99e9168153f70ada75eba2aac9ce3a8415befed9907727",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\runtime.py": "91dfeb5b0d6348a6c095f7711de3496e553f31fb14ed7350d28465885eb3b367",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\set_composition.py": "0f9e7907aa95df5a60e492f0f220bf8ef297bec9c35382d84ae7f6314ebfe2a9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\set_reranking.py": "b5fc41463695c6758ff98471e6c1af5a2cb5ddfb7ca9a85a545b6616908629da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\web.py": "17fcaddf1583c53109761a91a6a87559fede00ec27698a10a5e6f96ed189818d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\__init__.py": "0caaf782b8b1a92d3907f6da86cc6ecfef1c2903c59e13f09d2cab5b7830e7f9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\checkpoint.py": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\data.py": "cd8767a7b6e4cf7b9af6546b689151928cc1c329b9c12ef06014e58e9e732d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\optim.py": "92cad98334129c39c818a02e4bbd5791b2e7efc2d56804011f4d3aeb7b596c18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\resume.py": "f6a800ae9a56eb7732a89b941ba1d5346e601c3c0a9a14c8bedeff4b6dc96bf4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\runner.py": "8102f84b4714aa593f30b3e2b3636c3a213c44dfaa33d1eda677a18deaccb95a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\trainer.py": "5b8ca309b5559dcdef712e26023a27ed3ae25c432ad7da22c5ca46bfb87179d1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_corpus.py": "24883c34d898b4dd460044586771110cadeb115ff7725a7e8f6180a68e588029",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_evaluation.py": "5ac8c631ec9ac9a8be50b5e247c4e40afc3e88732142f0951fd24ae34e1c7d21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_graph.py": "4ae55e4935090e1c4e5d458469d3f84796092d3e8a50c168c63a571cf71fc58d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_hydration.py": "56d162bdced31b5ad446c5b090d20ad4c9ee69335be8ab9053f9e6438a6d4ae5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_labeling.py": "09fca5769ca8f9f43eb3e41de55ad45c3dd1d74d03f212a421686d2045c2cc83",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_native_service.py": "0bac6b0fd0d993d92145fec127e214dccba6d5591055269782f4c7c481ec9ea5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_pair_composition_service.py": "a0bb0348a6dc8dd99a935064eb2655200219dafe0523682ae356e0e921d4ad07",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_snapshot.py": "8078f8b96fe83b2db6d7ae62f3879955181b928818cf8b18490f7e0d3c6c4ee0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\integration\\test_training_evaluation.py": "40295043abede34f255e62605bfa7a5efa83d2f1fe59a1e81eea29fffcae9b01",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\experimentation\\test_infrastructure.py": "37bebbc6e844736973546e2d16862cc0c1ee8f6c445db205a1a0f844c9aae2bd",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_continuation_set.py": "cfc07942109ed051861a21650f90cb8fd3a9a0d611666956c81db1900f7ff9ce",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_experimental_features.py": "8a519a38168cb89665950ea51eeeff9094c8c6472a6ac87de2271abfa78fe644",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_import_boundary.py": "969a860c136ba2fd1aeb98edd58cd278c81231eade0953ad367139c633c14583",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_kv_cache.py": "87f3206adcd808892e9bc6494cdab473d5aa31742360a2fed68bfb5daf098300",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_prompt_objectives.py": "8c60bf2c963784599334088c551a6e0981328b96a4ae6c95cb16b39d841b8bdb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_reference_model.py": "f88498c245472367f2a4973419530e660b2261fee0bf0d9a8b0f704677d9ac0a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\model\\test_symmetric_relations.py": "442d6a23637c8c88cd7ff0920a7c049ef4a8fe5d53dc71ab65444cf83cffa570",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_baselines.py": "271d7e1ce3d8e6a8c0217f96487d137ac7f83934b668c490e8105e767e9a1794",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_batch_saturation.py": "e2a0d2e9c2f222526edd6edfe8c8d4d18e39332f7004c3f4d190f6c9d4514d6a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_checkpoint_selection.py": "280420a952283feb11b86b021944666bcb486357df9005ab3301182b30c16498",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_cli.py": "714693443ed24cba5dfd6ea6d3524467f43cef087f4d916074bf236a81c2ee82",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_config.py": "e8c2ec6b815fa2cd0f917767c10f86e49c238279981dd32a9a08fc115326147f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_continuation_campaign.py": "a026ca5512c35c530e921eba0e061e008144d72021097a3b249bd8fc2f457848",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_continuation_config.py": "48a7f6f0fef8bbb1f4d2ba620896cfa789b52c9325270522149e34569beceedc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_continuation_diagnosis.py": "46aa8f43a946d5b8381ad926aac50f738a7208ecbeb5d1f2a42e29407b0f89ab",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_direct_membership_experiment.py": "f9eb08f4e9f89727c4a880080e70b043a7228a5176dd247d6b4895b78b84425c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_first_choice_paths.py": "bd294dba9f8c651fc216a6ee6df80310b65319b8b83b9a34733aaab96709facb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_first_guidance.py": "6102d36795117f6316e34d01a95696c32ebc59bc3ccb28c805492f397a5cdc2b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_generation.py": "d5f21e4306c4424f6f9616683797e7593aa6dae0a5016d85954eed9e632c56eb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_generation_batch.py": "d7f65a07fdd57eabbbaeba13d6b1706f2cf3f0e4b6c4b5d133413f75907dbc11",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_guidance.py": "75e63a852111e08ce851bc6d7d388b73558e8f75e352f9bfd908f56530943101",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_guidance_config.py": "ad19feb7c711275446786cb5281c5c3da6096fd12ad784ef3860ff8b593ef2cc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_guidance_integration.py": "2db8f221527aeec26a961aa8fe79a77b9060c7175a55706e7d7f4dfc3cf107f2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_guidance_uniqueness.py": "dfc308be1a483da550967cea75e524faadd96754f42342b06ac185bb5ddaf46c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_matched_errors.py": "cf741d59f32972d4e88e34517f140481ab1e41a5306e2393821244bc78e13542",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_matched_prefixes.py": "d8ddb610e0daa1280e1eeed1b49238e3d62ea48c05cdfc402d216a53a2222fb4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_membership_separability.py": "0f6f1c4572cfe5273e102c56ffcdeceab13a275b048466d41917080040ea0a48",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_model_version_inventory.py": "44c44c5a414cfa94a7b19ccd9c9b459c69055e06f47eec4999e06c2ded5c8e41",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_native_saturation.py": "5b0e0749810032940b971c1486b9421c10a13f5e165ddc53742c40e9ebf6eb27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_native_verifier.py": "c811a9a46714121696f244ba9345204dc9709f64a6878504052909fc7114eb4e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_order_campaign.py": "f1020fe84ca7e3d799bac4ed2a3ad788723f92eb86ab3a99fc32a1c669fbc7da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_pair_composition_harness.py": "07555f47d86561af6ea9b4beee15da9ca3ea3264539382f2a2bf95a9cb78d604",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_pair_composition_shapes.py": "331f2f7a5824978a59be51afda31e7bd5047b852aa088e2c3c55d3064539baa5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_pair_unions.py": "8c040804617e87c89855a3331925081971feb7be832ce4cfc43e6b68389ec87d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_parser.py": "f340139f083dd198f0f48459293d476ae3392e592edb745ca281d4055feeea34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_plm_evaluation.py": "98666269d7e3d39a36ec8f6c189d573f037630a91467267b4eae41a997878eae",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_postprocess.py": "41478f57b0e33c4d3bcc00f8d01a586ca01db7c09c3a25986858583c04a54f84",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_protocol_config.py": "a8e4c5dc9e9d51baf60de8e21da0afc480a3ec789e955e43c93eee4847e39b0d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_ranking.py": "307dfa5c1906b7a18329c7e4c8aa58e1c9570c095291474c421215246582237f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_reproducibility.py": "358cd0993599f671aae4432eeedd81f97bb5f828c874b6633c233d62730b0ef4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_seed_replication.py": "8b98505f0a7afbed879a1906208e4b9bffabfe1a99ed263f8f6a0127202f8e94",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_sequence_diagnosis.py": "2964d470fb0bb1b3b166c4b366bbd83eabcb9d9f2511fcd1e74756db4e4a91da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_composition_config.py": "cc7e6c1354525d0b0f7f13a41a7cb54b1273583ed1e236c416353098e625403e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_composition_core.py": "faf4f96420e27405b9b1bf90f5fcaf4df327e93077a76a198b96a7fcea7bb1ec",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_composition_metrics.py": "a61a83c5b7930bce9cb8cac43dc24ff91cf1dd05c63a0adcd8d241e8c97bf706",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_reranking.py": "c9062045ee74fe55e29129a12a68c73700683a1ca672d409ca60e0c5f6e14723",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_reranking_config.py": "fafac24ab5e1fa2f77e03e9908d75603751b2b2d0bc94d41f9a0d84b966a8a5e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_set_reranking_generation.py": "66fb49e2339b48467407b9127a7aa866fec8ec5eb7bca89a50a75ca91bc38be1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_split.py": "d68bb2e6ec267e2846fa60ec9c35a2cf0382254648066377d3e8c1434e632853",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_symmetric_margin.py": "fecd245eb2ac99a4140cecab826f58aae50cced07573a2c31bb6ddb03c5f41c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_symmetric_margin_config.py": "b0993544baf819bbff35f6de5013af522ade0294d22a4b50d75de8af166754e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_tokenizer.py": "1aba0eadddf54d95ece9a8a411255872b4b051336511b8f3220303b5150428f9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_type_coverage.py": "906b7e598f1888d911235324b69f87df70aae8aa0c0925c4ad247a511d2515fa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\training\\test_continuation_metrics.py": "5ad058e752eaea165c1bcd6a9b37c6c305c3116a26e8c0997264cf01b38aa358",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\training\\test_symmetric_margin_training.py": "a756bb341bfd07b5ff811369a7843899e32fb520427bb1d0b2c38864026526cc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\training\\test_training_runtime.py": "d9b7e1b6e8e119b324edd2d4ca7b3dca563e70422fa6e965bbd51c250266f948",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\uv.lock": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "limitations": [
+    "Only seed 1729 fresh control/treatment is audited; no untested-seed or deployment claim.",
+    "Checkpoint bytes and authenticated receipts are checked without unpickling Torch payloads.",
+    "Saved FP32 logits and training diagnostics are authenticated, not neurally regenerated.",
+    "CPU prerequisite provenance: owner-attested tool results; original stdout not archived",
+    "Protected partition query identities only authenticate the split; its target fields are not measured.",
+    "Historical 191 is contextual only; the gate compares the fresh matched control."
+  ],
+  "plan_sha256": "845663b5f739c43b84f372aaf098e097c6380719c2882bd64c56f0661b203803",
+  "query_count": 444,
+  "replication_authorized": false,
+  "script_sha256": "dcb7e190c5e35630edb5cfe83837fadcc792db4e490678de320edc28ef5db051",
+  "seed": 1729,
+  "slot_count": 4440,
+  "source_path_count": 1776,
+  "stage_one_accepted": false,
+  "summary_sha256": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701"
+}

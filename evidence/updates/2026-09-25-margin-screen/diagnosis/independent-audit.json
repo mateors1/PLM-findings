@@ -1,0 +1,753 @@
+{
+  "all_recomputed_outputs_equal": true,
+  "arms": [
+    {
+      "arm": "control",
+      "groups": {
+        "COLOR": {
+          "query_count": 103,
+          "statistics": {
+            "gap": {
+              "max": 10.838112473487854,
+              "mean": 5.769535152006497,
+              "median": 6.066285133361816,
+              "min": 0.5262022018432617
+            },
+            "logit_max": {
+              "max": 31.775012969970703,
+              "mean": 18.357281629321644,
+              "median": 18.12787628173828,
+              "min": 11.801846504211426
+            },
+            "logit_mean": {
+              "max": -5.570816847262904,
+              "mean": -9.043848827831152,
+              "median": -9.01869536866434,
+              "min": -12.546587234828621
+            },
+            "logit_min": {
+              "max": -17.530168533325195,
+              "mean": -24.123456769776574,
+              "median": -23.920896530151367,
+              "min": -33.51812744140625
+            },
+            "logit_population_std": {
+              "max": 11.33225410617866,
+              "mean": 7.971429160950157,
+              "median": 7.8988517831323595,
+              "min": 5.196158207922154
+            },
+            "logit_range": {
+              "max": 54.74776649475098,
+              "mean": 42.48073839909822,
+              "median": 42.64241409301758,
+              "min": 32.46976089477539
+            },
+            "max_negative_logit": {
+              "max": 4.042708396911621,
+              "mean": -1.0673365574872609,
+              "median": -1.3160794973373413,
+              "min": -4.875873565673828
+            },
+            "min_true_logit": {
+              "max": 9.84001636505127,
+              "mean": 4.702198594519236,
+              "median": 4.778742790222168,
+              "min": 1.0204215049743652
+            },
+            "negative_mean": {
+              "max": -8.408595833475726,
+              "mean": -11.611183957667285,
+              "median": -11.292447933439242,
+              "min": -15.364593298393384
+            },
+            "positive_mean": {
+              "max": 17.987050513544027,
+              "mean": 11.067372609321493,
+              "median": 10.996250010084832,
+              "min": 7.612558566917808
+            },
+            "positive_minus_negative_mean": {
+              "max": 28.73147535287054,
+              "mean": 22.678556566988778,
+              "median": 23.00304858789753,
+              "min": 16.442608337018868
+            },
+            "unit_margin_hinge": {
+              "max": 0.4737977981567383,
+              "mean": 0.006501752196006404,
+              "median": 0.0,
+              "min": 0.0
+            }
+          },
+          "strict_separation_count": 103,
+          "unit_margin_active_count": 2
+        },
+        "TYPE_dual": {
+          "query_count": 68,
+          "statistics": {
+            "gap": {
+              "max": 2.649675190448761,
+              "mean": -2.4865883303915752,
+              "median": -2.5256479680538177,
+              "min": -11.925104141235352
+            },
+            "logit_max": {
+              "max": 43.289756774902344,
+              "mean": 26.31812932912041,
+              "median": 26.35945224761963,
+              "min": 14.341655731201172
+            },
+            "logit_mean": {
+              "max": -3.845454098089249,
+              "mean": -6.989709072735637,
+              "median": -6.996568933303934,
+              "min": -9.033550880405528
+            },
+            "logit_min": {
+              "max": -18.39886474609375,
+              "mean": -24.36420701531803,
+              "median": -24.30028533935547,
+              "min": -31.64485740661621
+            },
+            "logit_population_std": {
+              "max": 11.4940607237506,
+              "mean": 8.27127939631894,
+              "median": 8.189397271210538,
+              "min": 5.576246067463875
+            },
+            "logit_range": {
+              "max": 67.75918579101562,
+              "mean": 50.68233634443844,
+              "median": 50.36655235290527,
+              "min": 33.37620735168457
+            },
+            "max_negative_logit": {
+              "max": 7.889339447021484,
+              "mean": 2.3735476822099266,
+              "median": 1.8401246070861816,
+              "min": -1.0032002925872803
+            },
+            "min_true_logit": {
+              "max": 3.2820258140563965,
+              "mean": -0.11304064818164881,
+              "median": 0.19677484035491943,
+              "min": -4.035764694213867
+            },
+            "negative_mean": {
+              "max": -6.229886929211746,
+              "mean": -10.21153322307582,
+              "median": -10.406103715512959,
+              "min": -12.65257993443259
+            },
+            "positive_mean": {
+              "max": 12.44415899661352,
+              "mean": 8.674419714863488,
+              "median": 8.419619477176969,
+              "min": 5.071547263860703
+            },
+            "positive_minus_negative_mean": {
+              "max": 25.09673893104611,
+              "mean": 18.885952937939308,
+              "median": 18.77034314828167,
+              "min": 11.744416389385421
+            },
+            "unit_margin_hinge": {
+              "max": 12.925104141235352,
+              "mean": 3.616013901636881,
+              "median": 3.5256479680538177,
+              "min": 0.0
+            }
+          },
+          "strict_separation_count": 20,
+          "unit_margin_active_count": 57
+        },
+        "TYPE_single": {
+          "query_count": 51,
+          "statistics": {
+            "gap": {
+              "max": 7.376023292541504,
+              "mean": 3.2651089178580865,
+              "median": 3.924886852502823,
+              "min": -4.486318826675415
+            },
+            "logit_max": {
+              "max": 25.343944549560547,
+              "mean": 17.36987123302385,
+              "median": 16.18507194519043,
+              "min": 11.899791717529297
+            },
+            "logit_mean": {
+              "max": -7.813300009816885,
+              "mean": -9.373421071143193,
+              "median": -9.498777129003429,
+              "min": -11.338518775999546
+            },
+            "logit_min": {
+              "max": -19.699058532714844,
+              "mean": -24.283278670965455,
+              "median": -24.33899688720703,
+              "min": -29.22446632385254
+            },
+            "logit_population_std": {
+              "max": 10.224816255448879,
+              "mean": 7.501609649171419,
+              "median": 7.027599536296107,
+              "min": 5.204396560485428
+            },
+            "logit_range": {
+              "max": 51.24116897583008,
+              "mean": 41.65314990398931,
+              "median": 41.78791809082031,
+              "min": 32.62434768676758
+            },
+            "max_negative_logit": {
+              "max": 5.008395671844482,
+              "mean": -0.3674740691979726,
+              "median": -0.44319650530815125,
+              "min": -3.2610671520233154
+            },
+            "min_true_logit": {
+              "max": 5.288702964782715,
+              "mean": 2.897634848660114,
+              "median": 3.331002950668335,
+              "min": -2.3946733474731445
+            },
+            "negative_mean": {
+              "max": -9.072832357747002,
+              "mean": -11.539956204044602,
+              "median": -11.57604697185679,
+              "min": -14.606507729717565
+            },
+            "positive_mean": {
+              "max": 13.493078818688026,
+              "mean": 9.951334013327873,
+              "median": 9.752843886613846,
+              "min": 6.4183418116872275
+            },
+            "positive_minus_negative_mean": {
+              "max": 26.11653142237167,
+              "mean": 21.491290217372477,
+              "median": 21.264174593802807,
+              "min": 15.49117416943423
+            },
+            "unit_margin_hinge": {
+              "max": 5.486318826675415,
+              "mean": 0.4577878246120378,
+              "median": 0.0,
+              "min": 0.0
+            }
+          },
+          "strict_separation_count": 44,
+          "unit_margin_active_count": 10
+        }
+      },
+      "overall": {
+        "query_count": 222,
+        "statistics": {
+          "gap": {
+            "max": 10.838112473487854,
+            "mean": 2.6652913018054254,
+            "median": 3.728519856929779,
+            "min": -11.925104141235352
+          },
+          "logit_max": {
+            "max": 43.289756774902344,
+            "mean": 20.568901959840243,
+            "median": 19.479249000549316,
+            "min": 11.801846504211426
+          },
+          "logit_mean": {
+            "max": -3.845454098089249,
+            "mean": -8.4903654091934,
+            "median": -8.350307888817042,
+            "min": -12.546587234828621
+          },
+          "logit_min": {
+            "max": -17.530168533325195,
+            "mean": -24.233915930395728,
+            "median": -24.238126754760742,
+            "min": -33.51812744140625
+          },
+          "logit_population_std": {
+            "max": 11.4940607237506,
+            "mean": 7.955343669528363,
+            "median": 7.888598881686869,
+            "min": 5.196158207922154
+          },
+          "logit_range": {
+            "max": 67.75918579101562,
+            "mean": 44.80281789023597,
+            "median": 44.21935749053955,
+            "min": 32.46976089477539
+          },
+          "max_negative_logit": {
+            "max": 7.889339447021484,
+            "mean": 0.147407204684642,
+            "median": -0.0809624008834362,
+            "min": -4.875873565673828
+          },
+          "min_true_logit": {
+            "max": 9.84001636505127,
+            "mean": 2.8126985064900674,
+            "median": 3.528731346130371,
+            "min": -4.035764694213867
+          },
+          "negative_mean": {
+            "max": -6.229886929211746,
+            "mean": -11.16609897844667,
+            "median": -11.029221872753876,
+            "min": -15.364593298393384
+          },
+          "positive_mean": {
+            "max": 17.987050513544027,
+            "mean": 10.078008802029515,
+            "median": 10.224166136160182,
+            "min": 5.071547263860703
+          },
+          "positive_minus_negative_mean": {
+            "max": 28.73147535287054,
+            "mean": 21.244107780476185,
+            "median": 21.427147196944997,
+            "min": 11.744416389385421
+          },
+          "unit_margin_hinge": {
+            "max": 12.925104141235352,
+            "mean": 1.2157919137059032,
+            "median": 0.0,
+            "min": 0.0
+          }
+        },
+        "strict_separation_count": 167,
+        "unit_margin_active_count": 69
+      }
+    },
+    {
+      "arm": "treatment",
+      "groups": {
+        "COLOR": {
+          "query_count": 103,
+          "statistics": {
+            "gap": {
+              "max": -0.15376965701580048,
+              "mean": -0.246767368651384,
+              "median": -0.24559185653924942,
+              "min": -0.3745891600847244
+            },
+            "logit_max": {
+              "max": 0.43235915899276733,
+              "mean": 0.2712264738036591,
+              "median": 0.2719706892967224,
+              "min": 0.17657364904880524
+            },
+            "logit_mean": {
+              "max": 0.03521132356195267,
+              "mean": 0.014604871797038864,
+              "median": 0.013572099544887806,
+              "min": -0.000805657068895016
+            },
+            "logit_min": {
+              "max": -0.131363645195961,
+              "mean": -0.1952834165501363,
+              "median": -0.19299322366714478,
+              "min": -0.2780911922454834
+            },
+            "logit_population_std": {
+              "max": 0.08840815834179253,
+              "mean": 0.07190290333661402,
+              "median": 0.07142033658414189,
+              "min": 0.055289262397463866
+            },
+            "logit_range": {
+              "max": 0.599061906337738,
+              "mean": 0.4665098903537954,
+              "median": 0.4684641808271408,
+              "min": 0.3391128331422806
+            },
+            "max_negative_logit": {
+              "max": 0.2796843647956848,
+              "mean": 0.2081417869595648,
+              "median": 0.20470088720321655,
+              "min": 0.14771252870559692
+            },
+            "min_true_logit": {
+              "max": 0.043605539947748184,
+              "mean": -0.0386255816918192,
+              "median": -0.040009304881095886,
+              "min": -0.11974246799945831
+            },
+            "negative_mean": {
+              "max": 0.0262287425313626,
+              "mean": 0.0030912567203121937,
+              "median": 0.003585833871401032,
+              "min": -0.017506667714135733
+            },
+            "positive_mean": {
+              "max": 0.16954005226337662,
+              "mean": 0.10579961414011714,
+              "median": 0.10396093245724151,
+              "min": 0.0546091656598157
+            },
+            "positive_minus_negative_mean": {
+              "max": 0.15905776821658918,
+              "mean": 0.10270835741980495,
+              "median": 0.10417489916935928,
+              "min": 0.04382309609273086
+            },
+            "unit_margin_hinge": {
+              "max": 1.3745891600847244,
+              "mean": 1.246767368651384,
+              "median": 1.2455918565392494,
+              "min": 1.1537696570158005
+            }
+          },
+          "strict_separation_count": 0,
+          "unit_margin_active_count": 103
+        },
+        "TYPE_dual": {
+          "query_count": 68,
+          "statistics": {
+            "gap": {
+              "max": -0.027244166005402803,
+              "mean": -0.0373589866246809,
+              "median": -0.03726246696896851,
+              "min": -0.060155896469950676
+            },
+            "logit_max": {
+              "max": 0.04359949752688408,
+              "mean": 0.02963065350537791,
+              "median": 0.02836786489933729,
+              "min": 0.021191388368606567
+            },
+            "logit_mean": {
+              "max": 0.004105595034189946,
+              "mean": 0.0014543908243196532,
+              "median": 0.001462879013747198,
+              "min": -0.0013596026185815901
+            },
+            "logit_min": {
+              "max": -0.017854707315564156,
+              "mean": -0.022793440175626206,
+              "median": -0.023136237636208534,
+              "min": -0.02764974534511566
+            },
+            "logit_population_std": {
+              "max": 0.009672436921608954,
+              "mean": 0.00794691106369314,
+              "median": 0.007934883688605367,
+              "min": 0.007046818020406472
+            },
+            "logit_range": {
+              "max": 0.06780575215816498,
+              "mean": 0.05242409368100412,
+              "median": 0.05101141706109047,
+              "min": 0.043718721717596054
+            },
+            "max_negative_logit": {
+              "max": 0.04359949752688408,
+              "mean": 0.025271469097146216,
+              "median": 0.024446548894047737,
+              "min": 0.01877712458372116
+            },
+            "min_true_logit": {
+              "max": -0.005987450946122408,
+              "mean": -0.012087517527534682,
+              "median": -0.012097653932869434,
+              "min": -0.025318976491689682
+            },
+            "negative_mean": {
+              "max": 0.00308588991021844,
+              "mean": 0.00020519061745275405,
+              "median": 0.00034928569402516775,
+              "min": -0.0029172475149689785
+            },
+            "positive_mean": {
+              "max": 0.012019961856967016,
+              "mean": 0.0075733919295500815,
+              "median": 0.0077671903171323865,
+              "min": 0.0013988692939031545
+            },
+            "positive_minus_negative_mean": {
+              "max": 0.013701351914433398,
+              "mean": 0.007368201312097328,
+              "median": 0.007444699546467233,
+              "min": 0.0026692188693624667
+            },
+            "unit_margin_hinge": {
+              "max": 1.0601558964699507,
+              "mean": 1.0373589866246808,
+              "median": 1.0372624669689685,
+              "min": 1.0272441660054028
+            }
+          },
+          "strict_separation_count": 0,
+          "unit_margin_active_count": 68
+        },
+        "TYPE_single": {
+          "query_count": 51,
+          "statistics": {
+            "gap": {
+              "max": -0.020618497510440648,
+              "mean": -0.033946512506672126,
+              "median": -0.03403825871646404,
+              "min": -0.05063776671886444
+            },
+            "logit_max": {
+              "max": 0.04665406793355942,
+              "mean": 0.03264200592450067,
+              "median": 0.032294727861881256,
+              "min": 0.022370653226971626
+            },
+            "logit_mean": {
+              "max": 0.004776648325503174,
+              "mean": 0.0023369774704273052,
+              "median": 0.002400588212033483,
+              "min": 0.0005855686470823684
+            },
+            "logit_min": {
+              "max": -0.01761719211935997,
+              "mean": -0.021803386034626587,
+              "median": -0.02133765071630478,
+              "min": -0.029679210856556892
+            },
+            "logit_population_std": {
+              "max": 0.00944203263307419,
+              "mean": 0.007988863228033334,
+              "median": 0.007851202976669136,
+              "min": 0.006962223170126879
+            },
+            "logit_range": {
+              "max": 0.06860405765473843,
+              "mean": 0.05444539195912726,
+              "median": 0.054295480251312256,
+              "min": 0.04211835376918316
+            },
+            "max_negative_logit": {
+              "max": 0.03792744502425194,
+              "mean": 0.026278967476066423,
+              "median": 0.02536339871585369,
+              "min": 0.017235446721315384
+            },
+            "min_true_logit": {
+              "max": 0.0014515796210616827,
+              "mean": -0.007667545030605705,
+              "median": -0.008007301017642021,
+              "min": -0.016669265925884247
+            },
+            "negative_mean": {
+              "max": 0.004108983769617823,
+              "mean": 0.001365820806193607,
+              "median": 0.001436920113713011,
+              "min": -0.0008476922315201614
+            },
+            "positive_mean": {
+              "max": 0.016757054484684716,
+              "mean": 0.011022455107957735,
+              "median": 0.011151761873551304,
+              "min": 0.005265559648464927
+            },
+            "positive_minus_negative_mean": {
+              "max": 0.014631076493094303,
+              "mean": 0.00965663430176413,
+              "median": 0.00994295650746847,
+              "min": 0.0032150035396147614
+            },
+            "unit_margin_hinge": {
+              "max": 1.0506377667188644,
+              "mean": 1.033946512506672,
+              "median": 1.034038258716464,
+              "min": 1.0206184975104406
+            }
+          },
+          "strict_separation_count": 0,
+          "unit_margin_active_count": 51
+        }
+      },
+      "overall": {
+        "query_count": 222,
+        "statistics": {
+          "gap": {
+            "max": -0.020618497510440648,
+            "mean": -0.13373298288023033,
+            "median": -0.043718233006075025,
+            "min": -0.3745891600847244
+          },
+          "logit_max": {
+            "max": 0.43235915899276733,
+            "mean": 0.14241420514546,
+            "median": 0.04000991955399513,
+            "min": 0.021191388368606567
+          },
+          "logit_mean": {
+            "max": 0.03521132356195267,
+            "mean": 0.007758496496128522,
+            "median": 0.0030550273327776267,
+            "min": -0.0013596026185815901
+          },
+          "logit_min": {
+            "max": -0.01761719211935997,
+            "mean": -0.10259512848816477,
+            "median": -0.025914731435477734,
+            "min": -0.2780911922454834
+          },
+          "logit_population_std": {
+            "max": 0.08840815834179253,
+            "mean": 0.037629824417261606,
+            "median": 0.008791764470908313,
+            "min": 0.006962223170126879
+          },
+          "logit_range": {
+            "max": 0.599061906337738,
+            "mean": 0.24500933363362476,
+            "median": 0.06358523853123188,
+            "min": 0.04211835376918316
+          },
+          "max_negative_logit": {
+            "max": 0.2796843647956848,
+            "mean": 0.11034815899423651,
+            "median": 0.03209599293768406,
+            "min": 0.017235446721315384
+          },
+          "min_true_logit": {
+            "max": 0.043605539947748184,
+            "mean": -0.023384823885993816,
+            "median": -0.013151366263628006,
+            "min": -0.11974246799945831
+          },
+          "negative_mean": {
+            "max": 0.0262287425313626,
+            "mean": 0.0018108525463730503,
+            "median": 0.001076505350172983,
+            "min": -0.017506667714135733
+          },
+          "positive_mean": {
+            "max": 0.16954005226337662,
+            "mean": 0.05393917170336629,
+            "median": 0.013775757668562299,
+            "min": 0.0013988692939031545
+          },
+          "positive_minus_negative_mean": {
+            "max": 0.15905776821658918,
+            "mean": 0.05212831915699323,
+            "median": 0.012643105017125737,
+            "min": 0.0026692188693624667
+          },
+          "unit_margin_hinge": {
+            "max": 1.3745891600847244,
+            "mean": 1.1337329828802303,
+            "median": 1.043718233006075,
+            "min": 1.0206184975104406
+          }
+        },
+        "strict_separation_count": 0,
+        "unit_margin_active_count": 222
+      }
+    }
+  ],
+  "audit_passed": true,
+  "causal_claim_established": false,
+  "checks": {
+    "all_222_treatment_logged_validation_hinges_active_at_every_logged_step": true,
+    "all_222_treatment_saved_vector_hinges_active": true,
+    "primary_audit_authenticated": true,
+    "raw_reports_authenticated": true,
+    "saved_extrema_and_separation_exactly_reconstructed": true,
+    "torch_not_imported": true
+  },
+  "comparisons": {
+    "gap": {
+      "control_mean": 2.6652913018054254,
+      "treatment_mean": -0.13373298288023033,
+      "treatment_minus_control_mean": -2.7990242846856557
+    },
+    "logit_max": {
+      "control_mean": 20.568901959840243,
+      "treatment_mean": 0.14241420514546,
+      "treatment_minus_control_mean": -20.426487754694783
+    },
+    "logit_mean": {
+      "control_mean": -8.4903654091934,
+      "treatment_mean": 0.007758496496128522,
+      "treatment_minus_control_mean": 8.498123905689528
+    },
+    "logit_min": {
+      "control_mean": -24.233915930395728,
+      "treatment_mean": -0.10259512848816477,
+      "treatment_minus_control_mean": 24.131320801907563
+    },
+    "logit_population_std": {
+      "control_mean": 7.955343669528363,
+      "treatment_mean": 0.037629824417261606,
+      "treatment_minus_control_mean": -7.917713845111101
+    },
+    "logit_range": {
+      "control_mean": 44.80281789023597,
+      "treatment_mean": 0.24500933363362476,
+      "treatment_minus_control_mean": -44.557808556602346
+    },
+    "max_negative_logit": {
+      "control_mean": 0.147407204684642,
+      "treatment_mean": 0.11034815899423651,
+      "treatment_minus_control_mean": -0.03705904569040548
+    },
+    "min_true_logit": {
+      "control_mean": 2.8126985064900674,
+      "treatment_mean": -0.023384823885993816,
+      "treatment_minus_control_mean": -2.836083330376061
+    },
+    "negative_mean": {
+      "control_mean": -11.16609897844667,
+      "treatment_mean": 0.0018108525463730503,
+      "treatment_minus_control_mean": 11.167909830993043
+    },
+    "positive_mean": {
+      "control_mean": 10.078008802029515,
+      "treatment_mean": 0.05393917170336629,
+      "treatment_minus_control_mean": -10.02406963032615
+    },
+    "positive_minus_negative_mean": {
+      "control_mean": 21.244107780476185,
+      "treatment_mean": 0.05212831915699323,
+      "treatment_minus_control_mean": -21.191979461319193
+    },
+    "unit_margin_hinge": {
+      "control_mean": 1.2157919137059032,
+      "treatment_mean": 1.1337329828802303,
+      "treatment_minus_control_mean": -0.08205893082567295
+    }
+  },
+  "complete": true,
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-failure-diagnosis-v1\\diagnose.py": "872972a489fe1979b5bf13a5fd3bf29d356863105a6a3411c7bb36cfa92d111f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-failure-diagnosis-v1\\executed-script.py": "872972a489fe1979b5bf13a5fd3bf29d356863105a6a3411c7bb36cfa92d111f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\margin-failure-diagnosis-v1\\summary.json": "4d5c507efabb36ff2385cad1c77e50f36c3cd7466e9d48d65b895a2317b0f3c1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\evaluation-control.json": "2860849b418df41153fefabf6d5b3c6a7d9b5489e696af161e596842f1236d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\evaluation-treatment.json": "04baa56af9a77858d084c7108a527a84499a30df3e595cddbce4e87cd222832b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\independent-audit.json": "17afc9ca0fedf184ac9e9f2794947306883d4288860b22124cd9eb0c7751bcd9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\independent-audit.py": "dcb7e190c5e35630edb5cfe83837fadcc792db4e490678de320edc28ef5db051",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\summary.json": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-control.json": "8fa5ce8c4029719013757b65a3d5c78a4fbdb52686e2da2b256a70d87aef64f3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\symmetric-margin-screen-v1\\training-treatment.json": "450427afc01338d7789c36fc9362928d6979494ecd1bfe8eadfdffe1f8a2b8f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\metrics.jsonl": "92cd014a321f570dab72ac9a80202ef53e9c7bab6fd968b072e0869841baf7a7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\training-result.json": "b20b9fe2fb96a05e149c2c1f600be58974e527d72410fba26e7cb23d2139d8f4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\metrics.jsonl": "0980c194e3eb207a240a4bae6adad69cf931fe94b925755951b3175c04791ff4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_m1_w01_s1729_v1\\training-result.json": "04ef9996118cbebbe878b8abbdf423786b206aedd80e1d64705d35cedc179438"
+  },
+  "limitations": [
+    "Descriptive saved-evidence check, not an optimization mechanism experiment.",
+    "Primary quality arithmetic inherits the authenticated accepted primary audit; new diagnosis arithmetic is independently recomputed.",
+    "Population variance uses exact rational moments and a 100-digit Decimal square root; all saved floating results match exactly without tolerance.",
+    "Saved FP32 inference vectors and training-mode validation logs remain distinct measurements.",
+    "No new selection, model forward, training, threshold search or protected-test measurement."
+  ],
+  "model_executed": false,
+  "non_subject_values_checked": 454656,
+  "non_subject_values_per_row": 1024,
+  "primary_audit_sha256": "17afc9ca0fedf184ac9e9f2794947306883d4288860b22124cd9eb0c7751bcd9",
+  "primary_summary_sha256": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+  "queries_per_arm": 222,
+  "query_count": 444,
+  "script_sha256": "d6abb98300b4f686d344739a9b40a392c565e01bc1c82bbc33d86aec0c63066f",
+  "summary_sha256": "4d5c507efabb36ff2385cad1c77e50f36c3cd7466e9d48d65b895a2317b0f3c1",
+  "training_logged_steps_checked": 20
+}

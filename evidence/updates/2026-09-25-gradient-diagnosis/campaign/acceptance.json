@@ -1,0 +1,28 @@
+{
+  "acceptance_script_sha256": "da454a9fe797506fe2434c40fb1e0f4d552e7148f1a4b41c4bc608219894105a",
+  "date": "2026-09-25",
+  "decision": "Accept the bounded training-only gradient measurement and saved-vector audit; no model promotion or causal optimizer claim.",
+  "diagnostic_accepted": true,
+  "distinct_training_queries": 96,
+  "independent_audit_sha256": "c2fe33de149f1ade6d28475b952833a304739c9fd32aafd0064b5ea080b0cbd5",
+  "limitations": [
+    "Saved arrays authenticate numerical reductions, not autograd correctness or neural outputs.",
+    "Checkpoint payload loading and all-model state/.grad immutability are runner-attested; the auditor binds bytes/sidecars and checks saved parameter blocks across batches.",
+    "Initialization is a seeded regenerated state, not a saved historical checkpoint.",
+    "Symmetric BCE and margin are recomputed from saved logits; token CE is mask-aggregated from saved unreduced losses; prompt BCE is authenticated only.",
+    "Loss checks use fixed relative 1e-5 and absolute 1e-6; radial identity uses fixed math.isclose relative 1e-4 and absolute 1e-5. Saved reductions match exactly.",
+    "No optimizer trajectory, validation answer quality or unmeasured transformer-gradient claim follows from this diagnostic."
+  ],
+  "model_promoted": false,
+  "new_checkpoints": 0,
+  "observations": 15,
+  "parameter_states": 5,
+  "plan_sha256": "a0b5af7a3d31ad9e1ac5a5616b13152dd946cec771e5164dbc98dff703f5bbd6",
+  "primary_and_audit_preserved": true,
+  "protected_test_measured": false,
+  "summary_sha256": "5a0927acf533a2a170d829a781e52e45686961e909e5a7f697ad193de3dcc607",
+  "tests": {
+    "auditor_synthetic_passed": 22,
+    "runner_synthetic_passed": 14
+  }
+}

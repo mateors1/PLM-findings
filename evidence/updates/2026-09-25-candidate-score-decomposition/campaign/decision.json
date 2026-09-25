@@ -1,0 +1,16 @@
+{
+  "additional_seed_replication_authorized": false,
+  "audit_sha256": "7d65ffca77cf4a34f991880c9c0ebcf76d47a40e57f4e4bdefd49f2dac9ab23e",
+  "auditor_sha256": "5f5af47c73fd641987d4dcf3d3e146672e739c37d7a29df57f5f0062df3ac8fa",
+  "basis": "Independent reconstruction matches all 888 cells, 8880 slot scores and 1776 source paths. Both diagonals reproduce original evidence exactly.",
+  "conclusion": "Neither arm misses an available exact candidate. Fixed-pool exact counts depend on the saved pool and remain unchanged under the two saved score vectors. This does not establish causal module attribution.",
+  "date": "2026-09-25",
+  "decision_script_sha256": "c83afb2a362e32f28d130ac079680a7697cd4ed1d6ec6399dbb93dc8badc5407",
+  "diagnostic_version": "candidate-score-decomposition-v1",
+  "evidence_accepted": true,
+  "model_or_policy_promoted": false,
+  "next_question": "Improve candidate availability under an explicitly declared generation experiment; do not tune a selector that already reaches these fixed-pool exact ceilings.",
+  "protected_test_used": false,
+  "summary_sha256": "c325c76d0137da15ca73a157b1289e1743063489397690a8b6976276e2beef2d",
+  "weak_margin_gate_reopened": false
+}

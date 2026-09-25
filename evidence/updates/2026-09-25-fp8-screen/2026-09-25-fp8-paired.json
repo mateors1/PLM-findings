@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-25",
+  "status": "completed; FP8 serving variant rejected for performance",
+  "scope": "RTX 5070 Ti, guided seed-1729 checkpoint, full 222-query validation quality, direct native serving and offline fixed-group batches",
+  "checkpoint_sha256": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "frontier": {
+    "definition": "best accepted single-seed PLM validation macro F1 in shape-aware v2 composition integration",
+    "seed": 1730,
+    "query_count": 222,
+    "macro_f1": 0.9730912228699782,
+    "source_report_sha256": "a5681c0bb0ddfa15836e8d2a9b3bfaf2a3acaa7463587bd19d06db3899e12908"
+  },
+  "quality": {
+    "metric": "postprocessed SAME set macro F1 over all validation queries",
+    "fp32_macro_f1": 0.8857111644302244,
+    "fp8_macro_f1": 0.8818409065753677,
+    "fp32_percent_of_frontier": 91.0203631081945,
+    "fp8_percent_of_frontier": 90.62263494418518,
+    "fp32_exact_sets": 151,
+    "fp8_exact_sets": 152,
+    "fp8_raw_token_agreement_with_fp32": 0.9504504504504504,
+    "both_protocol_valid_rate": 1.0,
+    "both_termination_rate": 1.0
+  },
+  "serving": {
+    "path": "direct NativePredictor.predict including postprocessing and hydration; serial execution",
+    "requests_per_level": 16,
+    "concurrency_1_fp32_output_tps": 148.46320166942226,
+    "concurrency_1_fp8_output_tps": 11.97884065691635,
+    "concurrency_1_fp32_client_p95_seconds": 1.716643000001568,
+    "concurrency_1_fp8_client_p95_seconds": 21.98338110000077,
+    "concurrency_4_fp32_output_tps": 148.17528943075382,
+    "concurrency_4_fp8_output_tps": 11.46696816871635,
+    "concurrency_4_fp32_client_p95_seconds": 5.389157100000375,
+    "concurrency_4_fp8_client_p95_seconds": 74.01285329999882
+  },
+  "offline_batch_completed_output_tps": {
+    "1": {"fp32": 150.1885401410389, "fp8": 12.492627895251111},
+    "8": {"fp32": 776.3286981046231, "fp8": 65.84723004088305},
+    "32": {"fp32": 2968.8134718655256, "fp8": 232.8076362715767}
+  },
+  "conversion": "torchao 0.17.0 dynamic per-tensor E4M3 activations and weights on 56 decoder block linears; BF16 other weights and KV cache; original checkpoint unchanged",
+  "evidence": {
+    "plan_sha256": "e021759bc5effaaa78d66064e44fada302da9a0b13c1bb37b9cdfcb85e19b5ff",
+    "raw_report_path": "runs/learning/fp8-paired-20260925/summary.json",
+    "raw_report_sha256": "55bb027c7312d1d5707d0686fab7d62d44ae465de8137aeab0722b22f1c4d70b",
+    "executed_script_path": "runs/learning/fp8-paired-20260925/executed-benchmark.py",
+    "benchmark_script_sha256": "61c5eddf4cb77185968e41e92eb146d563726dbd47a609b31c7dfd678ea30779",
+    "conversion_source_sha256": "2aeaac43e4831841a5808549e244bb80c69513b17ace6abaf026234675552195"
+  },
+  "limits": "One checkpoint and one paired run; direct native calls, not HTTP; no open-loop arrivals or energy measurement. FP8 was timed with eager torchao kernels on Windows, not TensorRT or a compiled engine. The frontier uses a different accepted PLM inference policy on the same validation split; percentages are relative quality, not oracle parity."
+}

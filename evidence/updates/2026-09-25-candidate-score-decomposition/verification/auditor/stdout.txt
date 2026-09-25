@@ -1,0 +1,28 @@
+COMMAND: ["uv", "run", "--no-sync", "ruff", "check", "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py", "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+All checks passed!
+
+
+COMMAND: ["uv", "run", "--no-sync", "ruff", "format", "--check", "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py", "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+2 files already formatted
+
+
+COMMAND: ["uv", "run", "--no-sync", "pytest", "-o", "addopts=", "-q", "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+......................                                                   [100%]
+22 passed in 0.08s
+
+
+COMMAND: ["uv", "run", "--no-sync", "python", "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py", "--help"]
+EXIT: 0
+usage: independent-audit.py [-h] --summary SUMMARY
+
+Independent saved-only audit of candidate-pool/head-score substitution. No
+model, corpus or primary diagnostic imports. Canonical scores are rebuilt with
+exact rational sums of saved binary floats, then rounded once to binary64.
+
+options:
+  -h, --help         show this help message and exit
+  --summary SUMMARY
+

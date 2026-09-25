@@ -1,0 +1,1077 @@
+{
+  "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source_tree_sha256": "82b0c7d8fd00ca5ba9a0be44be5b50e6d690b0d8255abf7fc54590e6e63d7d84",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "http_reference_sha256": "fcc1969f97f931e9cbce942a04d11683d9d716633ee1e6df9a158e9b8a94c296",
+  "inference_config_hash": "b89db71f57beec70d1f9bff098fc5efd24d257560f51a8329e11ed788398c4b3",
+  "policy": {
+    "first_target_guidance_alpha": 16.0,
+    "max_new_tokens": 507,
+    "prevent_repeated_targets": true,
+    "use_kv_cache": true
+  },
+  "reference_receipt_sha256": "2c5f724606d224b55b52faa8e2735922a509c8a55cf72ae67efeedd3d89113ab",
+  "rows": [
+    {
+      "batch_size": 672,
+      "device_free_bytes_before": 15647899648,
+      "device_total_bytes": 17066033152,
+      "median_completed_output_tps": 15748.51228315987,
+      "median_gpu_busy_percent": 92.0,
+      "output_tokens_per_work_unit": 110544,
+      "queries_per_work_unit": 672,
+      "repetitions": [
+        {
+          "completed_output_tokens": 221088,
+          "completed_output_tps": 18851.828903588594,
+          "completed_requests": 1344,
+          "completed_rps": 114.6007836084413,
+          "device_memory_peak_bytes": 16877232128.0,
+          "gpu_busy_median_percent": 90.0,
+          "gpu_busy_p90_percent": 93.0,
+          "memory_busy_median_percent": 24.0,
+          "nvml_sample_count": 59,
+          "peak_pytorch_allocated_bytes": 1831656448,
+          "peak_pytorch_reserved_bytes": 15351152640,
+          "power_median_watts": 107.393,
+          "power_peak_watts": 154.217,
+          "repetition": 0,
+          "samples": [
+            {
+              "device_memory_used_bytes": 16760111104.0,
+              "gpu_busy_percent": 86.0,
+              "memory_busy_percent": 41.0,
+              "power_watts": 154.217,
+              "seconds": 0.0
+            },
+            {
+              "device_memory_used_bytes": 16760111104.0,
+              "gpu_busy_percent": 58.0,
+              "memory_busy_percent": 5.0,
+              "power_watts": 143.719,
+              "seconds": 0.20005619999983537
+            },
+            {
+              "device_memory_used_bytes": 16760111104.0,
+              "gpu_busy_percent": 58.0,
+              "memory_busy_percent": 5.0,
+              "power_watts": 143.719,
+              "seconds": 0.4001516999996966
+            },
+            {
+              "device_memory_used_bytes": 16760111104.0,
+              "gpu_busy_percent": 58.0,
+              "memory_busy_percent": 5.0,
+              "power_watts": 143.719,
+              "seconds": 0.6002338999996937
+            },
+            {
+              "device_memory_used_bytes": 16769482752.0,
+              "gpu_busy_percent": 81.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 122.514,
+              "seconds": 0.8002929999997832
+            },
+            {
+              "device_memory_used_bytes": 16769482752.0,
+              "gpu_busy_percent": 81.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 122.514,
+              "seconds": 1.0003858999998556
+            },
+            {
+              "device_memory_used_bytes": 16783638528.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 28.0,
+              "power_watts": 117.355,
+              "seconds": 1.2004730999997264
+            },
+            {
+              "device_memory_used_bytes": 16783638528.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 28.0,
+              "power_watts": 117.355,
+              "seconds": 1.4005388000000494
+            },
+            {
+              "device_memory_used_bytes": 16783638528.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 28.0,
+              "power_watts": 117.355,
+              "seconds": 1.6006115999998656
+            },
+            {
+              "device_memory_used_bytes": 16783769600.0,
+              "gpu_busy_percent": 86.0,
+              "memory_busy_percent": 31.0,
+              "power_watts": 131.031,
+              "seconds": 1.8006797999996706
+            },
+            {
+              "device_memory_used_bytes": 16784228352.0,
+              "gpu_busy_percent": 86.0,
+              "memory_busy_percent": 31.0,
+              "power_watts": 131.031,
+              "seconds": 2.000738100000035
+            },
+            {
+              "device_memory_used_bytes": 16784228352.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 134.086,
+              "seconds": 2.20096680000006
+            },
+            {
+              "device_memory_used_bytes": 16784228352.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 134.086,
+              "seconds": 2.4010487000000467
+            },
+            {
+              "device_memory_used_bytes": 16785211392.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 134.086,
+              "seconds": 2.6011161999999786
+            },
+            {
+              "device_memory_used_bytes": 16785604608.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 36.0,
+              "power_watts": 135.316,
+              "seconds": 2.801194099999975
+            },
+            {
+              "device_memory_used_bytes": 16804904960.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 36.0,
+              "power_watts": 135.316,
+              "seconds": 3.00126709999995
+            },
+            {
+              "device_memory_used_bytes": 16807895040.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 136.708,
+              "seconds": 3.2013334999996914
+            },
+            {
+              "device_memory_used_bytes": 16833978368.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 136.708,
+              "seconds": 3.401405899999645
+            },
+            {
+              "device_memory_used_bytes": 16832864256.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 33.0,
+              "power_watts": 136.708,
+              "seconds": 3.6014774999998735
+            },
+            {
+              "device_memory_used_bytes": 16832864256.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 35.0,
+              "power_watts": 137.288,
+              "seconds": 3.801552499999616
+            },
+            {
+              "device_memory_used_bytes": 16834437120.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 35.0,
+              "power_watts": 137.288,
+              "seconds": 4.001709199999823
+            },
+            {
+              "device_memory_used_bytes": 16863141888.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 36.0,
+              "power_watts": 138.836,
+              "seconds": 4.201822900000025
+            },
+            {
+              "device_memory_used_bytes": 16875790336.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 36.0,
+              "power_watts": 138.836,
+              "seconds": 4.40191619999996
+            },
+            {
+              "device_memory_used_bytes": 16875921408.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 36.0,
+              "power_watts": 138.836,
+              "seconds": 4.602099799999905
+            },
+            {
+              "device_memory_used_bytes": 16877232128.0,
+              "gpu_busy_percent": 42.0,
+              "memory_busy_percent": 3.0,
+              "power_watts": 126.175,
+              "seconds": 4.802167399999689
+            },
+            {
+              "device_memory_used_bytes": 16876380160.0,
+              "gpu_busy_percent": 42.0,
+              "memory_busy_percent": 3.0,
+              "power_watts": 126.175,
+              "seconds": 5.002238600000055
+            },
+            {
+              "device_memory_used_bytes": 16876118016.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 14.0,
+              "power_watts": 102.764,
+              "seconds": 5.202300199999627
+            },
+            {
+              "device_memory_used_bytes": 16876118016.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 14.0,
+              "power_watts": 102.764,
+              "seconds": 5.402372900000046
+            },
+            {
+              "device_memory_used_bytes": 16876118016.0,
+              "gpu_busy_percent": 84.0,
+              "memory_busy_percent": 14.0,
+              "power_watts": 102.764,
+              "seconds": 5.602451199999905
+            },
+            {
+              "device_memory_used_bytes": 16833519616.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 93.214,
+              "seconds": 5.802505999999994
+            },
+            {
+              "device_memory_used_bytes": 16820314112.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 93.214,
+              "seconds": 6.002564999999777
+            },
+            {
+              "device_memory_used_bytes": 16820314112.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.796,
+              "seconds": 6.202632900000026
+            },
+            {
+              "device_memory_used_bytes": 16820051968.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.796,
+              "seconds": 6.4027044999998
+            },
+            {
+              "device_memory_used_bytes": 16820051968.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.796,
+              "seconds": 6.602774199999658
+            },
+            {
+              "device_memory_used_bytes": 16806027264.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 101.41,
+              "seconds": 6.802838099999917
+            },
+            {
+              "device_memory_used_bytes": 16786497536.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 101.41,
+              "seconds": 7.002906599999733
+            },
+            {
+              "device_memory_used_bytes": 16786497536.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.353,
+              "seconds": 7.202969699999812
+            },
+            {
+              "device_memory_used_bytes": 16786497536.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.353,
+              "seconds": 7.403050799999619
+            },
+            {
+              "device_memory_used_bytes": 16786497536.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.353,
+              "seconds": 7.603121299999657
+            },
+            {
+              "device_memory_used_bytes": 16712835072.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 103.021,
+              "seconds": 7.803192200000012
+            },
+            {
+              "device_memory_used_bytes": 16712835072.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 103.021,
+              "seconds": 8.003281999999672
+            },
+            {
+              "device_memory_used_bytes": 16712835072.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.714,
+              "seconds": 8.203362999999626
+            },
+            {
+              "device_memory_used_bytes": 16712835072.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.714,
+              "seconds": 8.404070000000047
+            },
+            {
+              "device_memory_used_bytes": 16712835072.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 20.0,
+              "power_watts": 100.714,
+              "seconds": 8.604522599999655
+            },
+            {
+              "device_memory_used_bytes": 16712728576.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 101.923,
+              "seconds": 8.804856400000062
+            },
+            {
+              "device_memory_used_bytes": 16712794112.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 101.923,
+              "seconds": 9.004937700000028
+            },
+            {
+              "device_memory_used_bytes": 16712007680.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 104.962,
+              "seconds": 9.205021999999644
+            },
+            {
+              "device_memory_used_bytes": 16702832640.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 104.962,
+              "seconds": 9.40509179999981
+            },
+            {
+              "device_memory_used_bytes": 16702832640.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 104.962,
+              "seconds": 9.605159599999752
+            },
+            {
+              "device_memory_used_bytes": 16702832640.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 106.367,
+              "seconds": 9.805221099999926
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 106.367,
+              "seconds": 10.005336199999874
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.031,
+              "seconds": 10.205409899999722
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.031,
+              "seconds": 10.405484299999898
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.031,
+              "seconds": 10.605548999999883
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.393,
+              "seconds": 10.805629899999985
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.393,
+              "seconds": 11.005697699999928
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 95.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 108.191,
+              "seconds": 11.205767999999807
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 95.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 108.191,
+              "seconds": 11.405842599999687
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 95.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 108.191,
+              "seconds": 11.605907699999989
+            }
+          ],
+          "seconds": 11.727668499999709,
+          "timed_outputs_match_serial": true,
+          "work_units": 2
+        },
+        {
+          "completed_output_tokens": 110544,
+          "completed_output_tps": 15748.51228315987,
+          "completed_requests": 672,
+          "completed_rps": 95.73563697969526,
+          "device_memory_peak_bytes": 16703488000.0,
+          "gpu_busy_median_percent": 92.0,
+          "gpu_busy_p90_percent": 94.0,
+          "memory_busy_median_percent": 23.0,
+          "nvml_sample_count": 36,
+          "peak_pytorch_allocated_bytes": 1831656448,
+          "peak_pytorch_reserved_bytes": 15351152640,
+          "power_median_watts": 105.7225,
+          "power_peak_watts": 110.324,
+          "repetition": 1,
+          "samples": [
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.515,
+              "seconds": 0.0
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.515,
+              "seconds": 0.20006849999981569
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.515,
+              "seconds": 0.4001314999995884
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 83.0,
+              "memory_busy_percent": 10.0,
+              "power_watts": 100.071,
+              "seconds": 0.6001902999996673
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 83.0,
+              "memory_busy_percent": 10.0,
+              "power_watts": 100.071,
+              "seconds": 0.8002714999997806
+            },
+            {
+              "device_memory_used_bytes": 16703094784.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 16.0,
+              "power_watts": 95.726,
+              "seconds": 1.0004195999999865
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 16.0,
+              "power_watts": 95.726,
+              "seconds": 1.2004891999999927
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 87.0,
+              "memory_busy_percent": 16.0,
+              "power_watts": 95.726,
+              "seconds": 1.4006344999997964
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 100.401,
+              "seconds": 1.6007133999996768
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 89.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 100.401,
+              "seconds": 1.8008571999998821
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.45,
+              "seconds": 2.0009258000000045
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.45,
+              "seconds": 2.2010055999999167
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.45,
+              "seconds": 2.4010906999997133
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 105.956,
+              "seconds": 2.6011820999997326
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 105.956,
+              "seconds": 2.8013625999997203
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.018,
+              "seconds": 3.0014671999997518
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.018,
+              "seconds": 3.201539099999991
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 103.018,
+              "seconds": 3.4016059999999015
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 103.116,
+              "seconds": 3.60169599999972
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 103.116,
+              "seconds": 3.8017714999996315
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 105.489,
+              "seconds": 4.00185139999985
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 105.489,
+              "seconds": 4.201944999999796
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 105.489,
+              "seconds": 4.402010599999812
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 107.369,
+              "seconds": 4.6021005999996305
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 107.369,
+              "seconds": 4.802162599999974
+            },
+            {
+              "device_memory_used_bytes": 16703291392.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.444,
+              "seconds": 5.0022171999999046
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.444,
+              "seconds": 5.202281099999709
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 24.0,
+              "power_watts": 107.444,
+              "seconds": 5.4023441999997885
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.306,
+              "seconds": 5.602470599999833
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.306,
+              "seconds": 5.802540299999691
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 108.368,
+              "seconds": 6.002617299999656
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 108.368,
+              "seconds": 6.202676799999608
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 108.368,
+              "seconds": 6.402740300000005
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.714,
+              "seconds": 6.602808699999969
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.714,
+              "seconds": 6.802869599999667
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 110.324,
+              "seconds": 7.01827349999985
+            }
+          ],
+          "seconds": 7.019329700000071,
+          "timed_outputs_match_serial": true,
+          "work_units": 1
+        },
+        {
+          "completed_output_tokens": 110544,
+          "completed_output_tps": 15657.300911286993,
+          "completed_requests": 672,
+          "completed_rps": 95.18116055493613,
+          "device_memory_peak_bytes": 16805928960.0,
+          "gpu_busy_median_percent": 93.0,
+          "gpu_busy_p90_percent": 94.0,
+          "memory_busy_median_percent": 23.0,
+          "nvml_sample_count": 36,
+          "peak_pytorch_allocated_bytes": 1831656448,
+          "peak_pytorch_reserved_bytes": 15351152640,
+          "power_median_watts": 107.554,
+          "power_peak_watts": 110.324,
+          "repetition": 2,
+          "samples": [
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 110.324,
+              "seconds": 0.0
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 110.324,
+              "seconds": 0.20006719999992129
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 26.0,
+              "power_watts": 110.324,
+              "seconds": 0.4001556999996865
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 82.0,
+              "memory_busy_percent": 8.0,
+              "power_watts": 100.556,
+              "seconds": 0.6002273999997669
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 82.0,
+              "memory_busy_percent": 8.0,
+              "power_watts": 100.556,
+              "seconds": 0.8002932999997938
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 85.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 93.981,
+              "seconds": 1.0003649000000223
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 85.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 93.981,
+              "seconds": 1.2004585999998199
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 85.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 93.981,
+              "seconds": 1.400524299999688
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 100.423,
+              "seconds": 1.6005800999996609
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 88.0,
+              "memory_busy_percent": 19.0,
+              "power_watts": 100.423,
+              "seconds": 1.8006321999996544
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.038,
+              "seconds": 2.0006843000001027
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.038,
+              "seconds": 2.2007619999999406
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 90.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 105.038,
+              "seconds": 2.4008334999998624
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 106.416,
+              "seconds": 2.6009086999997635
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 91.0,
+              "memory_busy_percent": 21.0,
+              "power_watts": 106.416,
+              "seconds": 2.8009727999997267
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 106.769,
+              "seconds": 3.001038999999764
+            },
+            {
+              "device_memory_used_bytes": 16703684608.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 106.769,
+              "seconds": 3.20110429999977
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 92.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 106.769,
+              "seconds": 3.401160699999764
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 106.6,
+              "seconds": 3.6012204999997266
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 22.0,
+              "power_watts": 106.6,
+              "seconds": 3.8012886999999864
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.988,
+              "seconds": 4.00135629999977
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.988,
+              "seconds": 4.201448899999832
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.988,
+              "seconds": 4.4015449999997145
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 108.064,
+              "seconds": 4.60163059999968
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 108.064,
+              "seconds": 4.8018019000001
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 107.591,
+              "seconds": 5.001867899999979
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 107.591,
+              "seconds": 5.201939999999922
+            },
+            {
+              "device_memory_used_bytes": 16703553536.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 107.554,
+              "seconds": 5.402007400000002
+            },
+            {
+              "device_memory_used_bytes": 16703750144.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.554,
+              "seconds": 5.602077499999723
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 93.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 107.554,
+              "seconds": 5.80214449999994
+            },
+            {
+              "device_memory_used_bytes": 16703488000.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.118,
+              "seconds": 6.002242399999886
+            },
+            {
+              "device_memory_used_bytes": 16704077824.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.118,
+              "seconds": 6.202317199999925
+            },
+            {
+              "device_memory_used_bytes": 16704077824.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.578,
+              "seconds": 6.402394599999752
+            },
+            {
+              "device_memory_used_bytes": 16752123904.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.578,
+              "seconds": 6.602465999999822
+            },
+            {
+              "device_memory_used_bytes": 16805928960.0,
+              "gpu_busy_percent": 94.0,
+              "memory_busy_percent": 25.0,
+              "power_watts": 108.578,
+              "seconds": 6.802543599999808
+            },
+            {
+              "device_memory_used_bytes": 16805535744.0,
+              "gpu_busy_percent": 95.0,
+              "memory_busy_percent": 23.0,
+              "power_watts": 110.108,
+              "seconds": 7.002611500000057
+            }
+          ],
+          "seconds": 7.060220700000173,
+          "timed_outputs_match_serial": true,
+          "work_units": 1
+        }
+      ],
+      "warmup_device_memory_peak_bytes": 16760045568.0,
+      "warmup_gpu_busy_median_percent": 84.0,
+      "warmup_peak_pytorch_allocated_bytes": 1831656448,
+      "warmup_peak_pytorch_reserved_bytes": 15351152640,
+      "warmup_power_median_watts": 142.1995,
+      "warmup_seconds": 3.8313029000000824
+    }
+  ],
+  "scope": "offline fixed-group CUDA decoding; no HTTP admission or scheduling",
+  "script_sha256": "0ab37af31524715e5d3d8aea5d68b09e3aa9181b5604bda4040ad19fa934d06d",
+  "serial_archive_parity": true,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_unchanged_at_end": true,
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "status": "complete",
+  "stop_reason": null,
+  "workload": {
+    "base_prompts": [
+      [
+        "PKM_ABSOL",
+        "TYPE"
+      ],
+      [
+        "PKM_AEGISLASH",
+        "TYPE"
+      ],
+      [
+        "PKM_AERODACTYL",
+        "TYPE"
+      ],
+      [
+        "PKM_APPLIN",
+        "TYPE"
+      ],
+      [
+        "PKM_APPLIN",
+        "COLOR"
+      ],
+      [
+        "PKM_ARAQUANID",
+        "TYPE"
+      ],
+      [
+        "PKM_ARCHALUDON",
+        "TYPE"
+      ],
+      [
+        "PKM_ARCTIBAX",
+        "TYPE"
+      ]
+    ],
+    "batch_sizes": [
+      672
+    ],
+    "max_work_unit_seconds": 15.0,
+    "minimum_timed_seconds_per_repetition": 5.0,
+    "output_token_definition": "completed generated tokens including EOS, excluding five prompt tokens",
+    "repetitions": 3
+  }
+}

@@ -1,0 +1,4846 @@
+{
+  "all_discovered_runs_consistent": true,
+  "discovered_runs": 27,
+  "failed_runs": 0,
+  "inventory_kind": "plm-final-checkpoint-byte-and-receipt-inventory-v1",
+  "limitations": [
+    "No checkpoint payload deserialization, tensor inspection or numerical replay",
+    "No independent corpus-file or evaluation-result revalidation",
+    "No inferred training parentage, quality ranking or promotion",
+    "No archive upload, backup guarantee or coverage outside the declared directory scope"
+  ],
+  "run_root": "runs",
+  "runs": [
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+        "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+        "runs/national_dex_continuation_control_s1729_v1/run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+        "runs/national_dex_continuation_control_s1729_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_control_s1729_v1/training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "6e0314a34ddec1ae31eb1b591c14e289339b950a1894f7e66f29ecc3a1508148",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_control_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_control_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+        "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+        "runs/national_dex_continuation_control_s1730_v1/run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+        "runs/national_dex_continuation_control_s1730_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_control_s1730_v1/training-result.json": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_control_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_control_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+        "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+        "runs/national_dex_continuation_control_s1731_v1/run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+        "runs/national_dex_continuation_control_s1731_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_control_s1731_v1/training-result.json": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_control_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_control_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_order_w8_s1729_v1/checkpoint-final.pt": "f0d85369e1199de2713d10b6d0430c6cd6e50a0c9c5a0d819c9827371bf7adef",
+        "runs/national_dex_continuation_order_w8_s1729_v1/checkpoint-final.pt.json": "add43d29f4b2e1adbe8fd2e0d67db68d261b4a753703f0b81ee12dcd15a2f8bb",
+        "runs/national_dex_continuation_order_w8_s1729_v1/run.json": "04e65bbd9e51b8bb35a5c660af106bed4d0ea59179f451d492b457cb88107a95",
+        "runs/national_dex_continuation_order_w8_s1729_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_order_w8_s1729_v1/training-result.json": "7d9c8029b8d0604eb2c69390a2b441f84b7c08d73ae43570aab15cd2a0b777a7"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_order_w8_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "f0d85369e1199de2713d10b6d0430c6cd6e50a0c9c5a0d819c9827371bf7adef",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "367174c775909ef7d7e20e37506ab470110b8531a3bb07e8750ab09f0e2cc3e1",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 8.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_order_w8_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_order_w8_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_order_w8_s1730_v1/checkpoint-final.pt": "4dab5ac1417cfacbf792881e0e7935ba085341e36e1214a0628dddf130c238e4",
+        "runs/national_dex_continuation_order_w8_s1730_v1/checkpoint-final.pt.json": "17c93bb28954010b54c0ca6a4d149cb28878b7e0026639f1f64c07dabc73121e",
+        "runs/national_dex_continuation_order_w8_s1730_v1/run.json": "1c199a53491557e7dedac2ac562f9004a3a67bd00c884afd54a2464b75284797",
+        "runs/national_dex_continuation_order_w8_s1730_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_order_w8_s1730_v1/training-result.json": "38b9004c844695f3c6c74ce20faf0e04b7099b82f41e2ec6e5c804dc23023f86"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_order_w8_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "4dab5ac1417cfacbf792881e0e7935ba085341e36e1214a0628dddf130c238e4",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "0ff8587bee1455bdeb1f92671d3d4284152ec7b21f76a440c3ba74b4b641a9a5",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 8.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_order_w8_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_order_w8_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_order_w8_s1731_v1/checkpoint-final.pt": "86896abbbc89cb49ea49d421a43873636ae0b664be4b6dbc7a4712dbf5954378",
+        "runs/national_dex_continuation_order_w8_s1731_v1/checkpoint-final.pt.json": "d99f15b47dc0734c48bbfc1b7a558861e2f7562fcee8e6354cfc1633075e20c0",
+        "runs/national_dex_continuation_order_w8_s1731_v1/run.json": "0f780ba3c3c6cec15608e18695ecb53ebd20d6bd27ad914f6f5c4e6d47f05fc3",
+        "runs/national_dex_continuation_order_w8_s1731_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_order_w8_s1731_v1/training-result.json": "904a6bf6cb5abaf586576e6668740210e56a704deea28460051f11740361b048"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_order_w8_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "86896abbbc89cb49ea49d421a43873636ae0b664be4b6dbc7a4712dbf5954378",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "3a15560ab9c750a36a6ae193b9a06804027f96c823578883ebba20f6bb86ef7f",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 8.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_order_w8_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_order_w8_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_set_s1729_v1/checkpoint-final.pt": "c26a0699b6d5799c9a799c06306f00de38b4e418569a0f5df787f313d1af3f48",
+        "runs/national_dex_continuation_set_s1729_v1/checkpoint-final.pt.json": "f8e20a181a05cd6caf398c377a7545afb7f812e927fec2d1601253c13dcb098c",
+        "runs/national_dex_continuation_set_s1729_v1/run.json": "340982e270d14f9a012269dc7898c5ece20e0577e3dace4a56bed84fb341bfce",
+        "runs/national_dex_continuation_set_s1729_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_set_s1729_v1/training-result.json": "7902484b4f97b1fcea1c3a1b9da56d35cd0f46b12d61802645dc956d598daedf"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_set_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "c26a0699b6d5799c9a799c06306f00de38b4e418569a0f5df787f313d1af3f48",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "c93f4549a076e409ab33f4e14502ade564363611bb9c512f5ac3af0738ca2af3",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_set_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_set_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_set_s1730_v1/checkpoint-final.pt": "da06667c3f8ee6cef19af5a6df581b0ea1aecf01732e046ed7ff52a9a5dc444f",
+        "runs/national_dex_continuation_set_s1730_v1/checkpoint-final.pt.json": "241929d6727ba5c6590873bbf3f0304b44a31fa5a021a5e0bc797616b83359cb",
+        "runs/national_dex_continuation_set_s1730_v1/run.json": "c2356d01d49cc1084d9863306a4af79112de0ddc105480ec6be84424f82654a3",
+        "runs/national_dex_continuation_set_s1730_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_set_s1730_v1/training-result.json": "2ee3d61af321c05d23f0f2ccef40d6a5c45cbb4e70b5bef68caa8706247f4ff5"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_set_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "da06667c3f8ee6cef19af5a6df581b0ea1aecf01732e046ed7ff52a9a5dc444f",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "2920ffc6ede768cea40585431d4c86f0c9ac3fdb369447ebbb2bd895e062cf9f",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_set_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_set_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_continuation_set_s1731_v1/checkpoint-final.pt": "f79391b82f4d68e9ca5c44b392d860e36c2d482f1914fb167b97c805effcba32",
+        "runs/national_dex_continuation_set_s1731_v1/checkpoint-final.pt.json": "1b3f1feda5d567bb7eef997abf0026c16260527629fdeb265166467e076382e1",
+        "runs/national_dex_continuation_set_s1731_v1/run.json": "78e21f310118b0b102603d493c7bb07b407a619b6788aa16216fa76b6488a76a",
+        "runs/national_dex_continuation_set_s1731_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "runs/national_dex_continuation_set_s1731_v1/training-result.json": "3d95797dd85f544bd957f1a5368f86a2bab36566e853db60aa9742322f8988d0"
+      },
+      "checkpoint_path": "runs/national_dex_continuation_set_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "f79391b82f4d68e9ca5c44b392d860e36c2d482f1914fb167b97c805effcba32",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+          "source_tree_sha256": "29ab407696aea1fcca648d65c838a4614be18891e61c8a3370bc52993849e958",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "6cdb38e08e354a97059196196749215086806da337ed9343990367d0c88105d6",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "prevent_repeated_targets": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 1.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_continuation_set_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_continuation_set_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 61,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_dense_s1729_v1/checkpoint-final.pt": "5ab8e2c19d8f8275366509812c0e882ceb65298dcb024f10500a8e17858986dc",
+        "runs/national_dex_dense_s1729_v1/checkpoint-final.pt.json": "72de1d23635f61ad23d64b37d3a0e7399d264e78077953fef44e6a19e9a4ae48",
+        "runs/national_dex_dense_s1729_v1/run.json": "ec46314104554397ae3d6ecb9357d227ae169809de2f3800f3c9d044eb33cd17",
+        "runs/national_dex_dense_s1729_v1/source.zip": "88b821ce5bca566ef358f2ea64a694d5042df2be8755a4864effec51f61889a7",
+        "runs/national_dex_dense_s1729_v1/training-result.json": "c79375049c56703407ea6ff646936f1d3bf820e7c328243ab35c71565c706ecc"
+      },
+      "checkpoint_path": "runs/national_dex_dense_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "5ab8e2c19d8f8275366509812c0e882ceb65298dcb024f10500a8e17858986dc",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "88b821ce5bca566ef358f2ea64a694d5042df2be8755a4864effec51f61889a7",
+          "source_tree_sha256": "e1c4d39fdbdef1aaa808be7c59d49cfe5b9cf16d7437c5715aa2901f852e248f",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7cbcb5ec6a82576efe239cd81bb677f6330d416ce1e78f158e78a5a1842207c7",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_dense_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_dense_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 55,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_dense_s1730_v1/checkpoint-final.pt": "2bab280cbd12c3638349c49ff8d41e66cfd16b9a1b3312033cd6d47d541a0940",
+        "runs/national_dex_dense_s1730_v1/checkpoint-final.pt.json": "3c9035e1b87e1615748b01d4b4498afd2f32df4996f9d469dc9c908151a1da22",
+        "runs/national_dex_dense_s1730_v1/run.json": "145872e7f620b8da390fa4ca881f2fbcea3c74738a78c5c8ce392adadea3d75f",
+        "runs/national_dex_dense_s1730_v1/source.zip": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+        "runs/national_dex_dense_s1730_v1/training-result.json": "9a2b3c6e4914ae774540e27e35a3848acfa2a60f22a3e4501340a87fba5f44ef"
+      },
+      "checkpoint_path": "runs/national_dex_dense_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "2bab280cbd12c3638349c49ff8d41e66cfd16b9a1b3312033cd6d47d541a0940",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+          "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "fc02e5219ca29e6f09b7bf3644ef34a0e33e909401d37a8a73fd4b58efd029dc",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 0.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_dense_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_dense_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 56,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_dense_s1731_v1/checkpoint-final.pt": "941c6592847919a4abb1e7a73a1d20af28438e2f1779d0218ea7934acb3e0df8",
+        "runs/national_dex_dense_s1731_v1/checkpoint-final.pt.json": "1b6626a416c557ee097b99123c17d8f68d2e4fcae6abaf18371f8ce093101c2c",
+        "runs/national_dex_dense_s1731_v1/run.json": "d6bbf90495509bb789fff05d05e2741ad4cbdd0f76a0a878735c0bafdb473025",
+        "runs/national_dex_dense_s1731_v1/source.zip": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+        "runs/national_dex_dense_s1731_v1/training-result.json": "20a250d97e147c7ad39d8cae3172bd775a4b15fc5916ff7cef4bfa76a1cf35e3"
+      },
+      "checkpoint_path": "runs/national_dex_dense_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "941c6592847919a4abb1e7a73a1d20af28438e2f1779d0218ea7934acb3e0df8",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+          "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "694849bb2e1bfefe6f02cc5c8c705a918cdf849b932048b472c2d63155aafb5a",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 0.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_dense_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_dense_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 56,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_first32_s1729_v1/checkpoint-final.pt": "40aa8ae7710c99b9a7c984310c111b215bdb0fba8fa31170c2fa428e172c56bc",
+        "runs/national_dex_first32_s1729_v1/checkpoint-final.pt.json": "25b7297966176e78ccd5ff95ac793bd5e257cb567456f2b013204ddb428bf7ea",
+        "runs/national_dex_first32_s1729_v1/run.json": "13d66a1e7b0d60b4cfc84016608ec4adc663e1816fb3b15489558caf744ba005",
+        "runs/national_dex_first32_s1729_v1/source.zip": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+        "runs/national_dex_first32_s1729_v1/training-result.json": "a7c68c25312d8702591714811f71f8eed034318990e22cb104dae86c6c9a4bcc"
+      },
+      "checkpoint_path": "runs/national_dex_first32_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "40aa8ae7710c99b9a7c984310c111b215bdb0fba8fa31170c2fa428e172c56bc",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "c94bcffca327b436efb024a6c84c66c2eb61c29384014b6cad0cb0c49786be89",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 32.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 0.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_first32_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_first32_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 55,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_moe_top1_s1729_v1/checkpoint-final.pt": "10f1449dbee460dcca7195d2d7c74c22c5c67ddd33e9bdeef60eaed71c414fe2",
+        "runs/national_dex_moe_top1_s1729_v1/checkpoint-final.pt.json": "d1d8c49f2c3528c69df230f08c0688a46eab7dd92b0b388e426d4979a36fccb9",
+        "runs/national_dex_moe_top1_s1729_v1/run.json": "12694ff3b3a49cda14b49d7d00c80327cd0995f5c4ccd41332fef92b8cff3409",
+        "runs/national_dex_moe_top1_s1729_v1/source.zip": "88b821ce5bca566ef358f2ea64a694d5042df2be8755a4864effec51f61889a7",
+        "runs/national_dex_moe_top1_s1729_v1/training-result.json": "cfcc6eee613f007baf12562a36874b613c9cc63f3a344ac93dab9985c7abfbd0"
+      },
+      "checkpoint_path": "runs/national_dex_moe_top1_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "10f1449dbee460dcca7195d2d7c74c22c5c67ddd33e9bdeef60eaed71c414fe2",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "88b821ce5bca566ef358f2ea64a694d5042df2be8755a4864effec51f61889a7",
+          "source_tree_sha256": "e1c4d39fdbdef1aaa808be7c59d49cfe5b9cf16d7437c5715aa2901f852e248f",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "b3e7ec31e22f7727e5d271ca2c5fc72527d0104a780a1e55d6f2ed66aee2dfb8",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": true,
+            "experts_per_token": 1,
+            "num_experts": 4,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_moe_top1_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_moe_top1_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 55,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_bridge_s1729_v1/checkpoint-final.pt": "a79daf5325179356fb49fc93d70822991a7e0a8c6f861b9244ce700e71582b7d",
+        "runs/national_dex_promptset_bridge_s1729_v1/checkpoint-final.pt.json": "09a32482b44d382d81a41e06110ec2fa2122fb1550f95d7f7cd59cd39885f14b",
+        "runs/national_dex_promptset_bridge_s1729_v1/run.json": "2c6fc5bf9adf1c97ba9cf046ba947113887aa2ba7848bece4e25a8f847e42c8f",
+        "runs/national_dex_promptset_bridge_s1729_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_promptset_bridge_s1729_v1/training-result.json": "c92df5c06299e07346b90fc4686be4803abef5e7f3736142837359eeb9f39370"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_bridge_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "a79daf5325179356fb49fc93d70822991a7e0a8c6f861b9244ce700e71582b7d",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "36204836834ca236bc246679797379926315ed7dc7a2dd09a891b474b2e68f38",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 0.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_bridge_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_bridge_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_bridge_s1730_v1/checkpoint-final.pt": "f483e09f9828039b07dee27e0b2f5b8d0db6066f7a7547d67ce3e2e34d8420db",
+        "runs/national_dex_promptset_bridge_s1730_v1/checkpoint-final.pt.json": "6262617be4f449c992520ebef2801d959d0c3f1c5ee20a0a89f223ac22fe7dd0",
+        "runs/national_dex_promptset_bridge_s1730_v1/run.json": "f732b826a79584415372896e869ce1548d7382ecb9c76821bf0f9c1428267020",
+        "runs/national_dex_promptset_bridge_s1730_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_promptset_bridge_s1730_v1/training-result.json": "95380d39dae467ef2ee31d88b256fbd841ef7ed39b6d3ad4ed8dd1f6cc699118"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_bridge_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "f483e09f9828039b07dee27e0b2f5b8d0db6066f7a7547d67ce3e2e34d8420db",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "71f7b066da591dd58b6126d01b65d5498f1288b0c3e1859a5e442ba610b0d5e2",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 0.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_bridge_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_bridge_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_bridge_s1731_v1/checkpoint-final.pt": "18a59b40b884a95a3c5f681db0c533eb83c317223fabd9b72527715a800cdc0d",
+        "runs/national_dex_promptset_bridge_s1731_v1/checkpoint-final.pt.json": "de8082551de8d26dc3141c9e1498b8706e167611eee8d2651aa342fa3b1a14c1",
+        "runs/national_dex_promptset_bridge_s1731_v1/run.json": "5d79554d229c5b500f1c1802c609ed7f91708c34d3411a89e7e102d559d3748d",
+        "runs/national_dex_promptset_bridge_s1731_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_promptset_bridge_s1731_v1/training-result.json": "d162c49509d88845e2043235141439711043a8952863d60fc32757b208bc4170"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_bridge_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "18a59b40b884a95a3c5f681db0c533eb83c317223fabd9b72527715a800cdc0d",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "6579e03a8a574c73eb9e7bc1f688ddca31a55d0aef2806e5409a0662c80df619",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 0.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_bridge_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_bridge_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_s1729_v1/checkpoint-final.pt": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+        "runs/national_dex_promptset_s1729_v1/checkpoint-final.pt.json": "b6d0e287cc40fca3909d8c80026fadb351dbd95964d02e5b5a43d55869017f97",
+        "runs/national_dex_promptset_s1729_v1/run.json": "6a170eda9ddd07296b528f1ec839e98121e108ca79934b3dffc0654d96803917",
+        "runs/national_dex_promptset_s1729_v1/source.zip": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+        "runs/national_dex_promptset_s1729_v1/training-result.json": "b57331c673967c19cb3967c1d302d85f6f811e504a2691d6fa961b778d8bfd90"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "3b86573ef681c4d1d6572b974aaf9d3b442ca5cb76fd1e48c85ce782898adf16",
+          "source_tree_sha256": "689c157ff4bd58b59a4f5414926fe3fd7adcfa134c74b0505f4f256d8f2e588d",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "7d423c9d325276ce025ba9189986745a55796b1dbdeb5483646feb4803341bf9",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 55,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_s1730_v1/checkpoint-final.pt": "8637c0c787eb98d403119805e0ca56b5ccf98c7efa5bdd80d7e09e6453b30631",
+        "runs/national_dex_promptset_s1730_v1/checkpoint-final.pt.json": "522ec2a77fdbfdc70ced3a8115cb2a8e7a05a682554cf8057a5cf1127cf1c35c",
+        "runs/national_dex_promptset_s1730_v1/run.json": "16fde614b5f09d65bd6ca104185bb401a420dc77a6f6ab932b7bf310608cceb4",
+        "runs/national_dex_promptset_s1730_v1/source.zip": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+        "runs/national_dex_promptset_s1730_v1/training-result.json": "9afcaaf3aeb850e181402f7390ad67612b73016176e510439c3c9c83accd38aa"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "8637c0c787eb98d403119805e0ca56b5ccf98c7efa5bdd80d7e09e6453b30631",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+          "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "e13cda2424d5fc82839d1ccfbb89c625443661e6b5b5d1a3b2992d0a1db36df7",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 56,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_promptset_s1731_v1/checkpoint-final.pt": "a2a935cdcfaaeb182151039fd8a110b39456873f93b4461beded249111f2068e",
+        "runs/national_dex_promptset_s1731_v1/checkpoint-final.pt.json": "755ba3c93f4d67726f70ff85889f512302e264bdb8eab5e28af48fa17aa98f25",
+        "runs/national_dex_promptset_s1731_v1/run.json": "3538b5b13965feaf0353d232e891254433b12f90c23dbff3bfd970759b778930",
+        "runs/national_dex_promptset_s1731_v1/source.zip": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+        "runs/national_dex_promptset_s1731_v1/training-result.json": "47cc23c304eb8d9329e5804e2c0261a3bdd2404fa68e3c6ae5f5e32d9b88ce06"
+      },
+      "checkpoint_path": "runs/national_dex_promptset_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "a2a935cdcfaaeb182151039fd8a110b39456873f93b4461beded249111f2068e",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "27dd25ecfa4d460d8a6b8a0a03601a81e74f12917c0416f208e0284452586166",
+          "source_tree_sha256": "09731911174f5f7e2a93d5f622075201a76e7bd718edf2d0834a6b1f5b4400d6",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "56bea5452b8822d80803c3ebe62296b3e06491145e46b8e74993621847ed777c",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking"
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_promptset_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_promptset_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 56,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_rank_margin_control_s1729_v1/checkpoint-final.pt": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+        "runs/national_dex_rank_margin_control_s1729_v1/checkpoint-final.pt.json": "cff070bab97f2ed9a741d01f32d3f457ad976d74de0cecda26e95ea4f3c714ff",
+        "runs/national_dex_rank_margin_control_s1729_v1/run.json": "844e6a8573af68198e5d7185804c0f1a7f1a390a9389c06ca2065835a0637a6c",
+        "runs/national_dex_rank_margin_control_s1729_v1/source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+        "runs/national_dex_rank_margin_control_s1729_v1/training-result.json": "b20b9fe2fb96a05e149c2c1f600be58974e527d72410fba26e7cb23d2139d8f4"
+      },
+      "checkpoint_path": "runs/national_dex_rank_margin_control_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+          "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "pair_set_composition": false,
+          "prevent_repeated_targets": false,
+          "symmetric_set_reranking": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_margin": 1.0,
+          "symmetric_margin_loss_weight": 0.0,
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_rank_margin_control_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_rank_margin_control_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 64,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_rank_margin_m1_w0001_s1729_v1/checkpoint-final.pt": "75dab72aa7f4d6ae3d5d10deda2a34fec473b43d47b702ecbce5c899d7054e16",
+        "runs/national_dex_rank_margin_m1_w0001_s1729_v1/checkpoint-final.pt.json": "6a855fe0a2f3f8301483121abec26a8b79fc56c27e81345ee1e565461c07a94d",
+        "runs/national_dex_rank_margin_m1_w0001_s1729_v1/run.json": "bbaed5fff80144cb782098efc5e47206932ee6a2d70b0a1465ef1940f54e67ed",
+        "runs/national_dex_rank_margin_m1_w0001_s1729_v1/source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+        "runs/national_dex_rank_margin_m1_w0001_s1729_v1/training-result.json": "2adcfe14505d336cc907ec017ce72275454ae3d1e451913ba245a46d03c786e1"
+      },
+      "checkpoint_path": "runs/national_dex_rank_margin_m1_w0001_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "75dab72aa7f4d6ae3d5d10deda2a34fec473b43d47b702ecbce5c899d7054e16",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+          "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "faf03894c030ecb25c045f31bec7855aa617acb9965c60f6b4f9b5a278784a67",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "pair_set_composition": false,
+          "prevent_repeated_targets": false,
+          "symmetric_set_reranking": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_margin": 1.0,
+          "symmetric_margin_loss_weight": 0.001,
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_rank_margin_m1_w0001_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_rank_margin_m1_w0001_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 64,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_rank_margin_m1_w01_s1729_v1/checkpoint-final.pt": "0bb697a4a0c8a05441fb2c825ffcfc47023f91596be8f48cda639d4e57c1e8ef",
+        "runs/national_dex_rank_margin_m1_w01_s1729_v1/checkpoint-final.pt.json": "339ccb185d1bc7cc05349f1f1c7defbf973d21f2f5813cd924d4f8fe91b0ff7c",
+        "runs/national_dex_rank_margin_m1_w01_s1729_v1/run.json": "8e4a1e5e7fce57e51e3050be0c213bbad820238f8fb5c0f4064c5b6ac39a4150",
+        "runs/national_dex_rank_margin_m1_w01_s1729_v1/source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+        "runs/national_dex_rank_margin_m1_w01_s1729_v1/training-result.json": "04ef9996118cbebbe878b8abbdf423786b206aedd80e1d64705d35cedc179438"
+      },
+      "checkpoint_path": "runs/national_dex_rank_margin_m1_w01_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "0bb697a4a0c8a05441fb2c825ffcfc47023f91596be8f48cda639d4e57c1e8ef",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+          "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "13acb9380d3f5edffee21d8d15c72c92e76a8572569402e31a9707742f3830ce",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "pair_set_composition": false,
+          "prevent_repeated_targets": false,
+          "symmetric_set_reranking": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_margin": 1.0,
+          "symmetric_margin_loss_weight": 0.1,
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_rank_margin_m1_w01_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_rank_margin_m1_w01_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 64,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_rank_margin_weak_control_s1729_v1/checkpoint-final.pt": "1024045780668d961e993881dbfa89edac0bebc99a8f6e9c048092607a804f63",
+        "runs/national_dex_rank_margin_weak_control_s1729_v1/checkpoint-final.pt.json": "856897203301c717bf5387d0f9ec72786bbf86a318aa20d9a307c91ce4c501c0",
+        "runs/national_dex_rank_margin_weak_control_s1729_v1/run.json": "303dbf74d474d86a610bab1269dc729ecf3c62491068fedcf097b0b6b5cab835",
+        "runs/national_dex_rank_margin_weak_control_s1729_v1/source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+        "runs/national_dex_rank_margin_weak_control_s1729_v1/training-result.json": "6124471bcde23fa4fea48bc2685bb1758b96f387fc1668d3340d672fbe4a8985"
+      },
+      "checkpoint_path": "runs/national_dex_rank_margin_weak_control_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "1024045780668d961e993881dbfa89edac0bebc99a8f6e9c048092607a804f63",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+          "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "first_target_guidance_alpha": 0.0,
+          "generation_batch_size": 1,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "pair_set_composition": false,
+          "prevent_repeated_targets": false,
+          "symmetric_set_reranking": false,
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "continuation_set_loss_weight": 0.0,
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_margin": 1.0,
+          "symmetric_margin_loss_weight": 0.0,
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_rank_margin_weak_control_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_rank_margin_weak_control_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 64,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_symmetric_s1729_v1/checkpoint-final.pt": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+        "runs/national_dex_symmetric_s1729_v1/checkpoint-final.pt.json": "bf1a4f76ff823f0cc8be88d368452530caaafdf412c1fb6998a9366cc23e8439",
+        "runs/national_dex_symmetric_s1729_v1/run.json": "d865210e1580f2e65d5602de190079a4736dc206966e0640e376125be9bb31fa",
+        "runs/national_dex_symmetric_s1729_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_symmetric_s1729_v1/training-result.json": "ab1567c26e634cb480f13f0d76fdef733d2a63b82d51c7e7f24327bbca8a7b28"
+      },
+      "checkpoint_path": "runs/national_dex_symmetric_s1729_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "cd5074de5c3f83788d31776ac24a25077e1a220875cdc52312218e0c04c6cc5c",
+        "seeds": [
+          1729
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_symmetric_s1729_v1",
+        "seed": 1729,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_symmetric_s1729_v1",
+      "seed": 1729,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_symmetric_s1730_v1/checkpoint-final.pt": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+        "runs/national_dex_symmetric_s1730_v1/checkpoint-final.pt.json": "630c70867c43bf5c3cefac8aeaa84fdd416f5e9d19c83dce49045a8ce7ad9809",
+        "runs/national_dex_symmetric_s1730_v1/run.json": "4c15c73a7ea81dd3f2687d69421fbd7a2cd54b7786fcd2260cd38236c85d7449",
+        "runs/national_dex_symmetric_s1730_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_symmetric_s1730_v1/training-result.json": "69e3fbc257fa29380aaf576b6b3cea1162a5bbf21d53a27dcd06d21536a5908e"
+      },
+      "checkpoint_path": "runs/national_dex_symmetric_s1730_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "fdc34e27b6e7bc17d32f4f78a182c44d643fa8a08aef56a0fcd0e8fb0fda895f",
+        "seeds": [
+          1730
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_symmetric_s1730_v1",
+        "seed": 1730,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_symmetric_s1730_v1",
+      "seed": 1730,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    },
+    {
+      "artifact_sha256": {
+        "runs/national_dex_symmetric_s1731_v1/checkpoint-final.pt": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa",
+        "runs/national_dex_symmetric_s1731_v1/checkpoint-final.pt.json": "379391c449a3fb860001de9149371a89de23f937f88643508c9ea3b4088bc118",
+        "runs/national_dex_symmetric_s1731_v1/run.json": "d3ba42a589797196feefeb84a5335c64761003219f7bd20ffca974730308f158",
+        "runs/national_dex_symmetric_s1731_v1/source.zip": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+        "runs/national_dex_symmetric_s1731_v1/training-result.json": "2c6e139ef60fd354da7521d31636d88c43ec3203f429e6b1da96e773bd30e7e4"
+      },
+      "checkpoint_path": "runs/national_dex_symmetric_s1731_v1/checkpoint-final.pt",
+      "checkpoint_sha256": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa",
+      "experiment_identity": {
+        "checkpoint_hash": null,
+        "environment": {
+          "cuda": "12.8",
+          "gpu": "NVIDIA GeForce RTX 5070 Ti",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "python": "3.12.13",
+          "source_archive_sha256": "abe8ed17d3b255457f27e4968b376f9e3c36b8e3f578a2bcc5b13fc2c79be68e",
+          "source_tree_sha256": "5dca4c0733e9d65b26675fbc27c27f7780246837fa5455091a1811276430f1f3",
+          "torch": "2.11.0+cu128",
+          "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+        },
+        "evaluator_version": "plm-train-causal-v2",
+        "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+        "protocol_version": "pokemon-v1",
+        "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+        "repetitions": 1,
+        "resolved_config_hash": "f2e1842c30086be383ae41f416853d7da8e94bfdbaa4a14448cf1861b11e8839",
+        "seeds": [
+          1731
+        ],
+        "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+      },
+      "global_step": 2000,
+      "quality_or_promotion_claim": false,
+      "resolved_config": {
+        "baseline": {
+          "complex": {
+            "batch_size": 32,
+            "dimension": 32,
+            "epochs": 100,
+            "learning_rate": 0.01,
+            "negative_samples": 1,
+            "regularization": 0.0
+          }
+        },
+        "data": {
+          "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+          "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+          "held_out_query_fraction": null,
+          "name": "pokemon_v1_f1541479_20260924",
+          "protocol_version": "pokemon-v1",
+          "split_seed": 1729,
+          "test_query_fraction": 0.1,
+          "tokenizer_version": "pokemon-v1",
+          "validation_query_fraction": 0.1
+        },
+        "deterministic": false,
+        "eval": {
+          "constrained_decoding": true,
+          "device": "auto",
+          "filtered": false,
+          "hits_at": [
+            1,
+            3,
+            10
+          ],
+          "max_new_tokens": 507,
+          "metrics": [
+            "mrr",
+            "hits"
+          ],
+          "name": "ranking",
+          "use_kv_cache": false
+        },
+        "model": {
+          "activation": "swiglu",
+          "attention": {
+            "backend": "sdpa",
+            "causal": true,
+            "dropout": 0.0,
+            "logit_soft_cap": null,
+            "qk_norm": true,
+            "sliding_window": null
+          },
+          "dim": 256,
+          "dtype": "bf16",
+          "embed_dropout": 0.0,
+          "ffn_multiple": 2.6667,
+          "ffn_multiple_of": 256,
+          "first_target_loss_weight": 1.0,
+          "gradient_checkpointing": false,
+          "head_dim": null,
+          "init_std": 0.02,
+          "max_seq_len": 512,
+          "moe": {
+            "aux_loss_weight": 0.01,
+            "enabled": false,
+            "experts_per_token": 2,
+            "num_experts": 8,
+            "shared_experts": 0
+          },
+          "n_heads": 8,
+          "n_kv_heads": 2,
+          "n_layers": 8,
+          "name": "tiny_decoder",
+          "norm": "rmsnorm",
+          "norm_eps": 1e-05,
+          "prompt_set_loss_weight": 1.0,
+          "resid_dropout": 0.0,
+          "rope": {
+            "original_max_seq_len": null,
+            "scaling_factor": 1.0,
+            "scaling_type": "none",
+            "theta": 10000.0
+          },
+          "symmetric_relation_loss_weight": 1.0,
+          "tie_embeddings": true,
+          "use_mup": false,
+          "vocab_size": 2049,
+          "z_loss_weight": 0.0
+        },
+        "paths": {
+          "data_root": "data",
+          "run_root": "runs"
+        },
+        "run_name": "national_dex_symmetric_s1731_v1",
+        "seed": 1731,
+        "train": {
+          "batch_size": 32,
+          "checkpoint_every": 500,
+          "compile": false,
+          "ema_decay": null,
+          "eval_every": 200,
+          "grad_accum_steps": 1,
+          "grad_clip_norm": 1.0,
+          "max_steps": 2000,
+          "name": "local_cuda",
+          "num_workers": 0,
+          "optimizer": {
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "decay_excludes_norm_and_bias": true,
+            "eps": 1e-08,
+            "lr": 0.0003,
+            "name": "adamw_fused",
+            "weight_decay": 0.1
+          },
+          "pin_memory": false,
+          "precision": "bf16",
+          "scheduler": {
+            "min_lr_ratio": 0.1,
+            "name": "cosine",
+            "warmup_steps": 200
+          },
+          "seq_len": 512
+        }
+      },
+      "run_id": "national_dex_symmetric_s1731_v1",
+      "seed": 1731,
+      "source_archive_member_count": 59,
+      "status": "byte_and_receipt_consistent",
+      "training_metadata_checks": {
+        "batch_size": "consistent",
+        "grad_accum_steps": "consistent",
+        "model_config": "consistent",
+        "train_loss": "consistent"
+      },
+      "training_parent": {
+        "checkpoint_sha256": null,
+        "status": "not_established_by_these_receipts"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Immediate child run.json directories only; final checkpoints, not periodic checkpoints",
+  "script_sha256": "8c8955d3b0aa785f5282cc3ba978fdafc75f1e70257786d8298efbb89de7c2d7",
+  "verified_runs": 27
+}

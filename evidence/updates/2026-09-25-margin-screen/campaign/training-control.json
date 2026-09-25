@@ -1,0 +1,297 @@
+{
+  "arm": "control",
+  "artifact_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\checkpoint-final.pt": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\checkpoint-final.pt.json": "cff070bab97f2ed9a741d01f32d3f457ad976d74de0cecda26e95ea4f3c714ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\metrics.jsonl": "92cd014a321f570dab72ac9a80202ef53e9c7bab6fd968b072e0869841baf7a7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\run.json": "844e6a8573af68198e5d7185804c0f1a7f1a390a9389c06ca2065835a0637a6c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\source.zip": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\training-result.json": "b20b9fe2fb96a05e149c2c1f600be58974e527d72410fba26e7cb23d2139d8f4"
+  },
+  "checkpoint": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_rank_margin_control_s1729_v1\\checkpoint-final.pt",
+  "checkpoint_hash": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+  "config": {
+    "baseline": {
+      "complex": {
+        "batch_size": 32,
+        "dimension": 32,
+        "epochs": 100,
+        "learning_rate": 0.01,
+        "negative_samples": 1,
+        "regularization": 0.0
+      }
+    },
+    "data": {
+      "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+      "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+      "held_out_query_fraction": null,
+      "name": "pokemon_v1_f1541479_20260924",
+      "protocol_version": "pokemon-v1",
+      "split_seed": 1729,
+      "test_query_fraction": 0.1,
+      "tokenizer_version": "pokemon-v1",
+      "validation_query_fraction": 0.1
+    },
+    "deterministic": false,
+    "eval": {
+      "constrained_decoding": true,
+      "device": "auto",
+      "filtered": false,
+      "first_target_guidance_alpha": 0.0,
+      "generation_batch_size": 1,
+      "hits_at": [
+        1,
+        3,
+        10
+      ],
+      "max_new_tokens": 507,
+      "metrics": [
+        "mrr",
+        "hits"
+      ],
+      "name": "ranking",
+      "pair_set_composition": false,
+      "prevent_repeated_targets": false,
+      "symmetric_set_reranking": false,
+      "use_kv_cache": false
+    },
+    "model": {
+      "activation": "swiglu",
+      "attention": {
+        "backend": "sdpa",
+        "causal": true,
+        "dropout": 0.0,
+        "logit_soft_cap": null,
+        "qk_norm": true,
+        "sliding_window": null
+      },
+      "continuation_set_loss_weight": 0.0,
+      "dim": 256,
+      "dtype": "bf16",
+      "embed_dropout": 0.0,
+      "ffn_multiple": 2.6667,
+      "ffn_multiple_of": 256,
+      "first_target_loss_weight": 1.0,
+      "gradient_checkpointing": false,
+      "head_dim": null,
+      "init_std": 0.02,
+      "max_seq_len": 512,
+      "moe": {
+        "aux_loss_weight": 0.01,
+        "enabled": false,
+        "experts_per_token": 2,
+        "num_experts": 8,
+        "shared_experts": 0
+      },
+      "n_heads": 8,
+      "n_kv_heads": 2,
+      "n_layers": 8,
+      "name": "tiny_decoder",
+      "norm": "rmsnorm",
+      "norm_eps": 1e-05,
+      "prompt_set_loss_weight": 1.0,
+      "resid_dropout": 0.0,
+      "rope": {
+        "original_max_seq_len": null,
+        "scaling_factor": 1.0,
+        "scaling_type": "none",
+        "theta": 10000.0
+      },
+      "symmetric_margin": 1.0,
+      "symmetric_margin_loss_weight": 0.0,
+      "symmetric_relation_loss_weight": 1.0,
+      "tie_embeddings": true,
+      "use_mup": false,
+      "vocab_size": 2049,
+      "z_loss_weight": 0.0
+    },
+    "paths": {
+      "data_root": "data",
+      "run_root": "runs"
+    },
+    "run_name": "national_dex_rank_margin_control_s1729_v1",
+    "seed": 1729,
+    "train": {
+      "batch_size": 32,
+      "checkpoint_every": 500,
+      "compile": false,
+      "ema_decay": null,
+      "eval_every": 200,
+      "grad_accum_steps": 1,
+      "grad_clip_norm": 1.0,
+      "max_steps": 2000,
+      "name": "local_cuda",
+      "num_workers": 0,
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "decay_excludes_norm_and_bias": true,
+        "eps": 1e-08,
+        "lr": 0.0003,
+        "name": "adamw_fused",
+        "weight_decay": 0.1
+      },
+      "pin_memory": false,
+      "precision": "bf16",
+      "scheduler": {
+        "min_lr_ratio": 0.1,
+        "name": "cosine",
+        "warmup_steps": 200
+      },
+      "seq_len": 512
+    }
+  },
+  "config_hash": "d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332",
+  "global_step": 2000,
+  "identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+      "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+      "torch": "2.11.0+cu128",
+      "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+    },
+    "evaluator_version": "plm-train-causal-v2",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332",
+    "seeds": [
+      1729
+    ],
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "run_name": "national_dex_rank_margin_control_s1729_v1",
+  "training_history": [
+    {
+      "last_batch_first_target_loss": 5.55859375,
+      "last_batch_prompt_set_loss": 0.6881711483001709,
+      "last_batch_symmetric_relation_loss": 0.6864791512489319,
+      "last_batch_token_loss": 1.769665002822876,
+      "step": 200.0,
+      "train_loss": 3.144315242767334,
+      "validation_first_target_loss": 5.707770291749422,
+      "validation_loss": 2.113811400858661,
+      "validation_prompt_set_loss": 0.6904810516683905,
+      "validation_symmetric_relation_loss": 0.6904185237111272
+    },
+    {
+      "last_batch_first_target_loss": 3.45556640625,
+      "last_batch_prompt_set_loss": 0.680762529373169,
+      "last_batch_symmetric_relation_loss": 0.5988196134567261,
+      "last_batch_token_loss": 0.14590635895729065,
+      "step": 400.0,
+      "train_loss": 1.4254884719848633,
+      "validation_first_target_loss": 4.171065618325998,
+      "validation_loss": 0.231105168078263,
+      "validation_prompt_set_loss": 0.6911424811895903,
+      "validation_symmetric_relation_loss": 0.6419605290567553
+    },
+    {
+      "last_batch_first_target_loss": 3.342041015625,
+      "last_batch_prompt_set_loss": 0.514579176902771,
+      "last_batch_symmetric_relation_loss": 0.441315233707428,
+      "last_batch_token_loss": 0.09823738038539886,
+      "step": 600.0,
+      "train_loss": 1.0541317462921143,
+      "validation_first_target_loss": 3.890765748582445,
+      "validation_loss": 0.16635607732136629,
+      "validation_prompt_set_loss": 0.5795387545147458,
+      "validation_symmetric_relation_loss": 0.487720529238383
+    },
+    {
+      "last_batch_first_target_loss": 2.5220794677734375,
+      "last_batch_prompt_set_loss": 0.26192066073417664,
+      "last_batch_symmetric_relation_loss": 0.30000805854797363,
+      "last_batch_token_loss": 0.06822455674409866,
+      "step": 800.0,
+      "train_loss": 0.6301532983779907,
+      "validation_first_target_loss": 2.940071185429891,
+      "validation_loss": 0.1471740265661315,
+      "validation_prompt_set_loss": 0.3984903953633867,
+      "validation_symmetric_relation_loss": 0.32250552537204985
+    },
+    {
+      "last_batch_first_target_loss": 1.125457763671875,
+      "last_batch_prompt_set_loss": 0.0994972437620163,
+      "last_batch_symmetric_relation_loss": 0.152470201253891,
+      "last_batch_token_loss": 0.03853918984532356,
+      "step": 1000.0,
+      "train_loss": 0.29050663113594055,
+      "validation_first_target_loss": 2.618630903261202,
+      "validation_loss": 0.14380168788058376,
+      "validation_prompt_set_loss": 0.3932285657874099,
+      "validation_symmetric_relation_loss": 0.1527005903892689
+    },
+    {
+      "last_batch_first_target_loss": 1.106781005859375,
+      "last_batch_prompt_set_loss": 0.04473432898521423,
+      "last_batch_symmetric_relation_loss": 0.06332697719335556,
+      "last_batch_token_loss": 0.023221921175718307,
+      "step": 1200.0,
+      "train_loss": 0.1312832236289978,
+      "validation_first_target_loss": 2.2085466750033267,
+      "validation_loss": 0.13604408480667557,
+      "validation_prompt_set_loss": 0.3299371396099125,
+      "validation_symmetric_relation_loss": 0.06767421897064459
+    },
+    {
+      "last_batch_first_target_loss": 0.6272792816162109,
+      "last_batch_prompt_set_loss": 0.02644217573106289,
+      "last_batch_symmetric_relation_loss": 0.01621537283062935,
+      "last_batch_token_loss": 0.019016293808817863,
+      "step": 1400.0,
+      "train_loss": 0.0616738423705101,
+      "validation_first_target_loss": 1.9695646333264876,
+      "validation_loss": 0.132782182662759,
+      "validation_prompt_set_loss": 0.3328120211760203,
+      "validation_symmetric_relation_loss": 0.03233900427952543
+    },
+    {
+      "last_batch_first_target_loss": 0.23795509338378906,
+      "last_batch_prompt_set_loss": 0.012647150084376335,
+      "last_batch_symmetric_relation_loss": 0.005547787994146347,
+      "last_batch_token_loss": 0.009511837735772133,
+      "step": 1600.0,
+      "train_loss": 0.027706775814294815,
+      "validation_first_target_loss": 1.8348024363990303,
+      "validation_loss": 0.12943861360104322,
+      "validation_prompt_set_loss": 0.3088179308551926,
+      "validation_symmetric_relation_loss": 0.018186149137044274
+    },
+    {
+      "last_batch_first_target_loss": 0.4017906188964844,
+      "last_batch_prompt_set_loss": 0.012834692373871803,
+      "last_batch_symmetric_relation_loss": 0.004074711352586746,
+      "last_batch_token_loss": 0.005084717646241188,
+      "step": 1800.0,
+      "train_loss": 0.021994121372699738,
+      "validation_first_target_loss": 1.7199525607598793,
+      "validation_loss": 0.1288859377975304,
+      "validation_prompt_set_loss": 0.329422018012485,
+      "validation_symmetric_relation_loss": 0.011969641018826683
+    },
+    {
+      "last_batch_first_target_loss": 0.4492816925048828,
+      "last_batch_prompt_set_loss": 0.01285031158477068,
+      "last_batch_symmetric_relation_loss": 0.005032813176512718,
+      "last_batch_token_loss": 0.004794793669134378,
+      "step": 2000.0,
+      "train_loss": 0.022677918896079063,
+      "validation_first_target_loss": 1.624110868385246,
+      "validation_loss": 0.12961999206289912,
+      "validation_prompt_set_loss": 0.3187197242771183,
+      "validation_symmetric_relation_loss": 0.008736937436870896
+    }
+  ],
+  "training_wall_seconds": 75.24653489999946
+}

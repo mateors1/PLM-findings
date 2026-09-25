@@ -1,0 +1,11 @@
+{
+  "ready": true,
+  "gpu_jobs_sequential": true,
+  "root_verified_pins": {
+    "scripts/run_weak_margin_screen.py": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+    "runs/learning/weak-margin-screen-v1/independent-audit.py": "eee58c93e60ccfdd2c87ff2793529652f15cbf43a5a23554d6401477d2def790",
+    "runs/learning/weak-margin-runner-tests-v1/test-receipt.json": "17ffaefec9344049189df18de8ca08c9c4130e27286cef5b8062ab288278ae54",
+    "docs/experiments/2026-09-25-weak-margin-plan.md": "3c0449a3154492ab4c053674b6cf76ad3a00e18974e07f05bfbb638ada0973d2",
+    "runs\\learning\\weak-margin-auditor-tests-v1\\test-receipt.json": "73eb6996ccd9e53b0843c1d1a81bf4776cfa9577b0de7abf738711d472651b66"
+  }
+}

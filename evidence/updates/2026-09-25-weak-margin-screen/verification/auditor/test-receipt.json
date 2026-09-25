@@ -1,0 +1,63 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "runs\\learning\\weak-margin-screen-v1\\independent-audit.py",
+        "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "runs\\learning\\weak-margin-screen-v1\\independent-audit.py",
+        "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "runs\\learning\\weak-margin-screen-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "experiment_evaluation_executed": false,
+  "experiment_training_executed": false,
+  "model_execution": false,
+  "passed": true,
+  "passed_count": 34,
+  "stdout_sha256": "90e7e4f34c4c5dd8d0fbb93fe20e1afd9405ad5db45c0225de97bc804f51dc4e",
+  "tested_auditor_sha256": "eee58c93e60ccfdd2c87ff2793529652f15cbf43a5a23554d6401477d2def790",
+  "tests_sha256": "3a73c75db642a95d0cc5f89647ee9959c21440b4409b671adcb910e5db9e0e1b"
+}

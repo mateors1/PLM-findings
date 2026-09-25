@@ -1,0 +1,147 @@
+{
+  "added_exact_availability": 0,
+  "all_checks_passed": true,
+  "audit_implementation_independence": "Separate bitmask reconstruction with no proof import, written by the same working agent; not a separate model/researcher replication.",
+  "audit_sha256": "e865ac6dc7f5baf561d61eaa198fa987a979bb6c0953778f441a49451d5b8bde",
+  "baseline_exact_count": 569,
+  "covered_without_exact_subset": 43,
+  "deduction": [
+    "Every added exact set duplicates an exact set already in the ten-slot pool.",
+    "Identical canonical members and fixed logits imply identical scores.",
+    "An old inexact winner already beats or precedes every old exact slot.",
+    "An added duplicate exact slot cannot displace that winner under old-first ties.",
+    "Existing exact answers may be lost; no previously inexact answer can become exact."
+  ],
+  "exact_availability_both_pools": 570,
+  "exact_gains_upper_bound": 0,
+  "fifteen_slot_selected_exact_upper_bound": 569,
+  "input_sha256": {
+    "data/processed/pokemon_v1_f1541479_20260924/vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "runs/learning/pair-unions-v1/independent-audit.json": "13d9b88135eb52c768932e213cc475ac5994636a7fc228b1a7b2ad8ab538a057",
+    "runs/learning/pair-unions-v1/independent-audit.py": "8fa4a7b273a5fa43289318242147b5cfd5a69e6b681317120740e4fd0fd8970e",
+    "runs/learning/pair-unions-v1/seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "runs/learning/pair-unions-v1/seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "runs/learning/pair-unions-v1/seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "runs/learning/pair-unions-v1/summary.json": "4e4c46d4ebc366e02aa04cc3abda1a65cc08cec5463453ba97e25b4bc3f53992",
+    "runs/learning/pair-unions-v1/summary.script.py": "334f8784c1e7488ceb23a1df8524fccb93ac94c49f3d48b17e17961726f90eed",
+    "runs/learning/set-candidate-coverage-v1/diagnose.py": "12f8d7853adadbbe087114f5099fa2b3c7c8add24512a1561ffcf2bb08964ef7",
+    "runs/learning/set-candidate-coverage-v1/summary.json": "67974a44184a48ecb67b62bbb5dab4c9f3ac05a2b30e4858fee771a767ea0dc4"
+  },
+  "limitations": [
+    "No new fifteen-slot scoring/selection, F1 sweep, model forward or training",
+    "No checkpoint payload, live source, corpus or protected-test validation",
+    "Authenticates pinned reports/audit/method files and vocabulary, not a full recursive archive audit",
+    "Bound applies only to these saved candidates, logits, eligibility and specified tie order",
+    "Does not establish the new policy's actual exact count or F1; no application promotion"
+  ],
+  "per_seed": [
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 191,
+      "covered_without_exact_subset": 11,
+      "fifteen_slot_exact_availability": 191,
+      "query_count": 222,
+      "seed": 1729,
+      "ten_slot_exact_availability": 191,
+      "truth_absent_from_union": 20
+    },
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 192,
+      "covered_without_exact_subset": 14,
+      "fifteen_slot_exact_availability": 192,
+      "query_count": 222,
+      "seed": 1730,
+      "ten_slot_exact_availability": 192,
+      "truth_absent_from_union": 16
+    },
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 186,
+      "covered_without_exact_subset": 18,
+      "fifteen_slot_exact_availability": 187,
+      "query_count": 222,
+      "seed": 1731,
+      "ten_slot_exact_availability": 187,
+      "truth_absent_from_union": 17
+    }
+  ],
+  "premises": {
+    "all_four_frozen_sources_eligible": true,
+    "canonical_ascending_ID_fsum": true,
+    "original_ten_slots_precede_added_five_on_ties": true,
+    "pool_order": [
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "unchanged_saved_FP32_logits": true
+  },
+  "python": "3.12.13",
+  "query_count": 666,
+  "raw_directory": "runs/learning/all-source-union-bound-v1",
+  "raw_summary_sha256": "57cc984b16583bc610997ee052fc2f9d8f77a8af9061372578fed79e867f3a70",
+  "scope": "Proof from existing saved validation sets; not a new policy experiment",
+  "script_sha256": "2a45afb5c218d03cc72ae6fb5bfc6db0ab9aaa35aa49cde3d78b8bd4ca2c0c6a",
+  "subset_inventories_checked": 9990,
+  "truth_absent_from_union": 53
+}

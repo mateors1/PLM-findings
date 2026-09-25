@@ -10,16 +10,29 @@
 | Training, checkpoint resume and prompt-only generation have tested reference paths. | Implemented and tested; correctness gates are scoped to their exercised cases. | [Lesson 1](../evidence/learning/01-training-correctness.md), [architecture](../evidence/source/architecture.md) |
 | Auxiliary supervision improves this fixed validation split. | Repeated across three training seeds; no protected-test claim. | [Lessons 6](../evidence/learning/06-seed-replication.md) and [12](../evidence/learning/12-symmetry-replication.md) |
 | Four-path learned set selection works in the application path. | Offline and native HTTP integration independently audited for the declared configuration. | [Lesson 24](../evidence/learning/24-integrating-set-selection.md) |
-| Pair unions reach 569/666 exact validation sets. | Offline experiment passes its gate; separate application replay does not yet pass exact HTTP score parity. | [Lessons 25](../evidence/learning/25-composing-candidate-sets.md) and [26](../evidence/learning/26-integrating-composed-sets.md) |
+| Pair unions reach 569/666 exact validation sets. | Offline experiment and revised shape-aware application verification pass; the first score-parity campaign remains failed. | [Lesson 25](../evidence/learning/25-composing-candidate-sets.md), [accepted v2 receipt](../evidence/updates/2026-09-25-composition-verification/experiments/2026-09-25-pair-composition-shape-aware.json) |
 | Direct unrestricted membership prediction should replace the candidate pool. | Rejected by its declared exact-answer gate: 339/666 exact. | [Lesson 28](../evidence/learning/28-direct-membership-ablation.md) |
 | PLM matches oracle answer quality. | Open: 569/666 offline validation observations are below 666/666; the protected final test is unused for these claims. | [Lessons 25](../evidence/learning/25-composing-candidate-sets.md) and [27](../evidence/learning/27-remaining-errors-and-score-signs.md) |
 | PLM has a serving or energy advantage over the oracle at matched quality. | Open: selected microbenchmarks, correctness checks and a fixed-prompt native concurrency probe do not provide this comparison. | [Source benchmarks](../evidence/source/benchmarks.md), [Paper 4](04-serving-and-reproducibility.md) |
 | The deferred complementary/compositional policy experiment succeeds. | Not tested here. | [Research log](../evidence/source/research_log.md), [Paper 1](01-research-question-and-protocol.md) |
 | Native serial serving scales throughput with additional callers. | Not observed in the 2026-09-25 fixed workload: approximately 156–159 HTTP output TPS through eight callers while p95 latency rises. | [Dated report](../evidence/updates/2026-09-25/experiments/2026-09-25-native-saturation.json), [Paper 4 addition](04-serving-and-reproducibility.md#2026-09-25-addition-concurrency-exposes-a-serial-scheduler) |
-| Historical model artifacts have traceable final-checkpoint identities. | 23 discovered final checkpoints pass byte/receipt/source consistency; complete lineage, payload validation and durable archival remain open. | [Inventory](../evidence/updates/2026-09-25/experiments/2026-09-25-model-version-inventory.json), [Paper 6](06-academic-versioning-and-next-hypothesis.md) |
+| Fixed-group GPU decoding reaches about 31,000 completed output TPS. | Observed offline on one RTX 5070 Ti at batch 640 (30,980 TPS, 188.3 completed requests/s); batch 656 is level and 672 slows. This is not HTTP serving capacity or proven GPU arithmetic saturation. | [Batch sweep receipt](../evidence/updates/2026-09-25-batch-saturation/experiments/2026-09-25-batch-saturation.json), [Paper 4](04-serving-and-reproducibility.md#2026-09-25-follow-up-offline-batch-throughput-peaks-near-640) |
+| Historical model artifacts have traceable final-checkpoint identities. | The original 23-run snapshot and later 25-run inventory pass byte/receipt/source consistency; complete historical lineage, payload validation and durable archival remain open. | [Original inventory](../evidence/updates/2026-09-25/experiments/2026-09-25-model-version-inventory.json), [Margin follow-up](08-hardest-boundary-margin-failure.md) |
+| Adding a hardest-boundary margin improves the current model. | Rejected for fixed margin 1.0 and coefficient 0.1 at seed 1729: fresh-control exact 192/222 falls to 6/222; no further-seed replication. | [Audited margin screen](08-hardest-boundary-margin-failure.md) |
+| A weaker fixed margin improves both exact sets and global membership separation. | Rejected at coefficient .001: exact sets rise 191/222 to 194/222, but strict separation falls 168/222 to 164/222. | [Paired screen](10-weaker-margin-mixed-result.md) |
+| Eager FP8 improves native serving throughput at similar validation quality. | Rejected on the measured guided seed-1729 path: serial output throughput falls from 148.5 to 12.0 tokens/s; compiled FP8 remains unmeasured. | [FP8 screen](12-fp8-inference-screen.md) |
 | Protocolized retrieval of genuinely learned relations is a supported application. | Future hypothesis only; requires independent labels and fair simple retrieval/ranking baselines. | [Hypothesis](../evidence/updates/2026-09-25/experiments/2026-09-25-learned-retrieval-hypothesis.md) |
 
 ## Evidence rules used throughout
+
+The [later rank diagnosis](07-ranking-and-threshold-limits.md) refines the next
+quality decision: adding all whole-source unions creates no new exact candidate,
+and even oracle-informed per-query thresholds on the frozen membership scores
+are limited to 479/666 exact answers. Thus a pool-only union expansion or a
+threshold-only replacement cannot beat the existing 569/666 on this evidence.
+The first fixed margin training intervention subsequently failed its declared
+screen, as [paper 8](08-hardest-boundary-margin-failure.md) records. Other training
+changes and different candidate constructions remain untested hypotheses.
 
 1. **Declare before measuring.** Plans fix candidates, metrics and acceptance gates. A failed gate remains a failure even when another metric improves. The [direct-membership plan](../evidence/experiments/2026-09-24-direct-membership-plan.md) and [report](../evidence/experiments/2026-09-24-direct-membership.json) illustrate this.
 2. **Keep identities complete.** A run binds graph, protocol, records, vocabulary, query split, code/archive, config, checkpoint, runtime, seeds and evaluator. A new inference policy is a new result identity even with identical weights. See [Lesson 2](../evidence/learning/02-data-and-evaluation.md).
@@ -29,7 +42,7 @@
 
 ## Next research decisions, in order
 
-1. **Resolve the composition HTTP comparison contract.** Re-run the two unexecuted HTTP checkpoints under a declared, shape-aware score reference while retaining exact source-path, selected-set, response and failure-contract checks. The existing exact-score failure is the motivating evidence, not a passed acceptance result.
+1. **Composition integration completed.** The two remaining HTTP checkpoints ran under the declared shape-aware contract; independent audit and separate acceptance pass. The original exact-score campaign remains failed. See [the follow-up](04-serving-and-reproducibility.md#2026-09-25-follow-up-revised-integration-accepted) for explicit fresh/reused accounting and limits.
 2. **Attack missing coverage without losing exact answers.** The fixed pool lacks an exact candidate in 96 of 97 remaining failures; direct sign-thresholding recovers many members but spoils 233 exact sets. Declare a candidate-construction hypothesis and paired per-seed nonregression gates before running it.
 3. **Seek oracle parity on validation and preserve baseline comparisons.** Track whole-set exactness, subgroup behavior, F1, validity and termination, not only token loss. Retain the deterministic graph lookup and existing controls.
 4. **Finalize once, on the protected test partition.** Freeze the selected source, data, model and inference policy; then run the protected evaluator and report its result without subsequent tuning on that partition.

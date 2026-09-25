@@ -48,9 +48,67 @@ TPS comparison with lower concurrency levels.
 
 These are fixed-prompt, closed-wave measurements. They do not establish an
 open-loop production SLO, independent-host performance, matched-quality oracle
-advantage or energy savings. A larger offline batch-size sweep is separate and
-has no result claimed in this update. The copied [raw report](../evidence/updates/2026-09-25/raw/native-saturation-summary.json)
+advantage or energy savings. The larger offline batch-size sweep is reported
+separately below. The copied [raw report](../evidence/updates/2026-09-25/raw/native-saturation-summary.json)
 matches the hash named by the portable report.
+
+## 2026-09-25 follow-up: revised integration accepted
+
+The [declared shape-aware contract](../evidence/updates/2026-09-25-composition-verification/experiments/2026-09-25-pair-composition-shape-aware-plan.md)
+has now completed with independent audit and separate acceptance. The
+[portable receipt](../evidence/updates/2026-09-25-composition-verification/experiments/2026-09-25-pair-composition-shape-aware.json)
+covers 666 HTTP responses: 222 reused from seed 1729 and 444 fresh from seeds
+1730/1731. All 666 serial references and 24 repeats are fresh. Offline evidence
+for 666 queries is reused, and the three HTTP auxiliary suites include one
+reused and two fresh executions.
+
+All 2,664 normal HTTP source paths, 666 selected slots/sets and 6,660 normal
+HTTP slot-score checks pass. Scores use exact same-shape references with zero
+tolerance; decisions remain identical across shapes. Exact answers are
+191/192/186 by seed, totaling 569/666, preserving the offline quality result.
+The first campaign remains failed, and the policy remains opt-in.
+
+The audit authenticates saved vectors rather than independently regenerating
+neural outputs. It checks nine owned-server shutdown receipts rather than
+independent socket probes. These limits are retained in acceptance. This closes
+the declared integration gate; protected test, oracle parity and matched-quality
+systems/energy claims remain open. Earlier copied lessons are historical and
+retain their pending status; the [new lesson copy](../evidence/updates/2026-09-25-composition-verification/learning/29-shape-aware-verification.md)
+describes the completed verification.
+
+## 2026-09-25 follow-up: offline batch throughput peaks near 640
+
+The [declared sweep](../evidence/updates/2026-09-25-batch-saturation/experiments/2026-09-25-batch-saturation-plan.md)
+timed fixed-group CUDA decoding on one RTX 5070 Ti with the guided seed-1729
+FP32 checkpoint. It repeated the same eight validation prompts evenly above
+batch eight. Three warmed timed repetitions per size counted completed generated
+tokens, including EOS; all completed outputs matched archived serial tokens.
+The [portable receipt](../evidence/updates/2026-09-25-batch-saturation/experiments/2026-09-25-batch-saturation.json)
+binds the checkpoint, source tree, policy and four copied raw summaries.
+
+| Batch size | Median completed output tokens/s | Completed requests/s | Median device-wide GPU busy | Peak device memory |
+| ---: | ---: | ---: | ---: | ---: |
+| 1 | 163 | 1.0 | 19% | 2.85 GiB |
+| 8 | 843 | 5.1 | 22% | 2.99 GiB |
+| 64 | 6,507 | 39.6 | 37% | 3.17 GiB |
+| 256 | 21,313 | 129.6 | 68% | 5.17 GiB |
+| 512 | 29,451 | 179.0 | 83% | 11.35 GiB |
+| 640 | **30,980** | **188.3** | 84% | 14.73 GiB |
+| 656 | 30,973 | 188.3 | 84% | 15.27 GiB |
+| 672 | 15,749 | 95.7 | 92% | 15.72 GiB |
+
+Batch 640 was the highest measured median for this fixed workload; 656 was
+effectively level, and 672 slowed sharply near device-memory capacity. Batch
+1024 preserved token parity but took 136.54 seconds for one untimed warmup, so
+it has no accepted TPS result. The memory-pressure explanation for the slowdown
+is an inference from telemetry, not a kernel-profiled cause. NVML GPU-busy time
+does not measure arithmetic occupancy or prove that compute capacity was
+saturated.
+
+This is **offline batched decoder throughput**, not current live HTTP capacity.
+The native HTTP scheduler remained near 156 output tokens/s in its separate
+serial concurrency probe. The sweep also provides no request-arrival, latency
+SLO, hydration, matched-quality oracle or energy-per-request comparison.
 
 ## The general reproducibility lesson
 

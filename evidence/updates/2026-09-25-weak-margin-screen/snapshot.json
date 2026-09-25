@@ -1,0 +1,206 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-weak-margin-plan.md",
+      "sha256": "3c0449a3154492ab4c053674b6cf76ad3a00e18974e07f05bfbb638ada0973d2",
+      "source": "docs/experiments/2026-09-25-weak-margin-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-weak-margin-screen.json",
+      "sha256": "7a3b1cee41f87af57128d36cd51307b6dfe7fc54d04f4ebdf425faad2113cd2b",
+      "source": "docs/experiments/2026-09-25-weak-margin-screen.json"
+    },
+    {
+      "path": "experiments/2026-09-25-weak-margin-model-version-inventory.json",
+      "sha256": "837d930dbfc75144cd1bc038278ad2ceeddae488de62ad14bed9f4891950b9f8",
+      "source": "docs/experiments/2026-09-25-weak-margin-model-version-inventory.json"
+    },
+    {
+      "path": "experiments/2026-09-25-learned-retrieval-feasibility.md",
+      "sha256": "439674c4b3c7718a915fcb93f1ab9331fc2b00459c5a670bd0f31477a54a7d8f",
+      "source": "docs/experiments/2026-09-25-learned-retrieval-feasibility.md"
+    },
+    {
+      "path": "experiments/2026-09-25-learned-retrieval-hypothesis.md",
+      "sha256": "2666844516d0aeff9b1b7dbfbb85b6ce737bacc444ed89177aacc75fc0db3ba7",
+      "source": "docs/experiments/2026-09-25-learned-retrieval-hypothesis.md"
+    },
+    {
+      "path": "learning/33-loss-weight-is-not-gradient-strength.md",
+      "sha256": "6bf46e191a507efec33c9e3d1c4abe3d4dda2e9a353824ffb1e0ffd525090656",
+      "source": "docs/learning/33-loss-weight-is-not-gradient-strength.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "7a6431de2f569b9bf3e8ad7fe72542990d44cacffd320fe4596725d73f2a1e10",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "scripts/run_weak_margin_screen.py",
+      "sha256": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+      "source": "scripts/run_weak_margin_screen.py"
+    },
+    {
+      "path": "tests/test_weak_margin_screen.py",
+      "sha256": "45057e62eca7a93c8cfc4346c58fc2ee4ac031bef21054237bab993b5ce34358",
+      "source": "tests/unit/test_weak_margin_screen.py"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "86fcd9dcba39c3d42e738d93b5241eb94030f9b2696b12912d081382f3a016d6",
+      "source": "runs/learning/weak-margin-screen-v1/summary.configs.zip"
+    },
+    {
+      "path": "campaign/summary.cpu-comparison.json",
+      "sha256": "7aaf83746196e6fad8ae680cd4e5141cfca72724b131a4e52080378bb3e063aa",
+      "source": "runs/learning/weak-margin-screen-v1/summary.cpu-comparison.json"
+    },
+    {
+      "path": "campaign/summary.cpu-receipt.json",
+      "sha256": "240764f7686a47a057941c5151cf6ac070303c1958065aa523aed0bbcb0995ef",
+      "source": "runs/learning/weak-margin-screen-v1/summary.cpu-receipt.json"
+    },
+    {
+      "path": "campaign/summary.failed-screen.json",
+      "sha256": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+      "source": "runs/learning/weak-margin-screen-v1/summary.failed-screen.json"
+    },
+    {
+      "path": "campaign/summary.gpu-smoke-raw.json",
+      "sha256": "8e5a3c211c21b11423db648855a9d000f80d39936be0c2cdf7d55241d0b9b6a5",
+      "source": "runs/learning/weak-margin-screen-v1/summary.gpu-smoke-raw.json"
+    },
+    {
+      "path": "campaign/summary.gpu-smoke.json",
+      "sha256": "2bb3716e49d25600181e34a427b6cbc21cf176f02d11e83179e55b325f8a9412",
+      "source": "runs/learning/weak-margin-screen-v1/summary.gpu-smoke.json"
+    },
+    {
+      "path": "campaign/summary.gradient-acceptance.json",
+      "sha256": "a66863691b2573e5fa8e1a44549b561ab2b46aaece9033e2dba64e8161700aed",
+      "source": "runs/learning/weak-margin-screen-v1/summary.gradient-acceptance.json"
+    },
+    {
+      "path": "campaign/summary.gradient-portable.json",
+      "sha256": "d44e1c656a09f53f1b32f1495b9a39ebc35a03085b3fb0639dc5bdaa0b4c87ad",
+      "source": "runs/learning/weak-margin-screen-v1/summary.gradient-portable.json"
+    },
+    {
+      "path": "campaign/summary.helper.py",
+      "sha256": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+      "source": "runs/learning/weak-margin-screen-v1/summary.helper.py"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "3d535d1e298497609169dda8791aef3920d3d8993afab9189df359644b8c7a93",
+      "source": "runs/learning/weak-margin-screen-v1/summary.json"
+    },
+    {
+      "path": "campaign/summary.original-recipe.json",
+      "sha256": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+      "source": "runs/learning/weak-margin-screen-v1/summary.original-recipe.json"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "3c0449a3154492ab4c053674b6cf76ad3a00e18974e07f05bfbb638ada0973d2",
+      "source": "runs/learning/weak-margin-screen-v1/summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+      "source": "runs/learning/weak-margin-screen-v1/summary.script.py"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+      "source": "runs/learning/weak-margin-screen-v1/summary.source.zip"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "eee58c93e60ccfdd2c87ff2793529652f15cbf43a5a23554d6401477d2def790",
+      "source": "runs/learning/weak-margin-screen-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "5cf9d5b556f06f068bcfda4709d737f351260f21144bc70ec42c305feef9caab",
+      "source": "runs/learning/weak-margin-screen-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "607b576806a618d9b658cc3213d4108d99f8eefaa61030e7b3588151018c7797",
+      "source": "runs/learning/weak-margin-screen-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "ee9561a061fb8c70a1f36dde9140af0cb104bf63e366fd0e3cb0137f742a8fc8",
+      "source": "runs/learning/weak-margin-screen-v1/record-decision.py"
+    },
+    {
+      "path": "campaign/training-control.json",
+      "sha256": "98bb3e7845bceeb2c3f35b43e99c04b698885f5d00db6bb231970b83a4329a0b",
+      "source": "runs/learning/weak-margin-screen-v1/training-control.json"
+    },
+    {
+      "path": "campaign/training-treatment.json",
+      "sha256": "0e8178cc74fe6f57da3a84a40dff89e82d6d818b462050c88247e3b0fabb4b3a",
+      "source": "runs/learning/weak-margin-screen-v1/training-treatment.json"
+    },
+    {
+      "path": "campaign/training-config-control.json",
+      "sha256": "7b870905e0595418390aac9cc65a60504649e5402bfe5cc357daded5d31f5242",
+      "source": "runs/learning/weak-margin-screen-v1/training-config-control.json"
+    },
+    {
+      "path": "campaign/training-config-treatment.json",
+      "sha256": "9c105f46c2e3f15b2661ce5b63140537aae3364390a049df1491b93c765eba83",
+      "source": "runs/learning/weak-margin-screen-v1/training-config-treatment.json"
+    },
+    {
+      "path": "campaign/training-seal.json",
+      "sha256": "c6f5c5c9fdb1e940d7de9cb28da4782b9645563c1cb86fc959a26b9844fae351",
+      "source": "runs/learning/weak-margin-screen-v1/training-seal.json"
+    },
+    {
+      "path": "campaign/launch-prerequisites.json",
+      "sha256": "6dd8e31824eb41ed7b6bc6583511b1c664f795f17db14eb9259b83e40fa1768f",
+      "source": "runs/learning/weak-margin-screen-v1/launch-prerequisites.json"
+    },
+    {
+      "path": "campaign/execution.log",
+      "sha256": "daa41354914d39934f5d0ea9ff5c5513553b39675646280ccf6f3cad5ac715b9",
+      "source": "runs/learning/weak-margin-screen-v1/execution.log"
+    },
+    {
+      "path": "verification/runner/stdout.txt",
+      "sha256": "04166d51d1381b4aec142c334d4b04009c49b01843f159fe8f81c6ba92df33b7",
+      "source": "runs/learning/weak-margin-runner-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/runner/test-receipt.json",
+      "sha256": "17ffaefec9344049189df18de8ca08c9c4130e27286cef5b8062ab288278ae54",
+      "source": "runs/learning/weak-margin-runner-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/stdout.txt",
+      "sha256": "90e7e4f34c4c5dd8d0fbb93fe20e1afd9405ad5db45c0225de97bc804f51dc4e",
+      "source": "runs/learning/weak-margin-auditor-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/auditor/test-receipt.json",
+      "sha256": "73eb6996ccd9e53b0843c1d1a81bf4776cfa9577b0de7abf738711d472651b66",
+      "source": "runs/learning/weak-margin-auditor-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/test_auditor.py",
+      "sha256": "3a73c75db642a95d0cc5f89647ee9959c21440b4409b671adcb910e5db9e0e1b",
+      "source": "runs/learning/weak-margin-auditor-tests-v1/test_auditor.py"
+    }
+  ],
+  "date": "2026-09-25",
+  "previous_manifest_entries_verified": 248,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true,
+  "status": "Single-seed screen fails; this fixed variant stops before additional seeds.",
+  "sync_script_sha256": "7d4b9daf3d5f9fe3f6407934ea4d4ef92cae0b1155da502b9a471f2a45f7d516"
+}

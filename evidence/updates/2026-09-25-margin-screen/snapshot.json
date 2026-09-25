@@ -1,0 +1,187 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-symmetric-margin-plan.md",
+      "sha256": "845663b5f739c43b84f372aaf098e097c6380719c2882bd64c56f0661b203803",
+      "source": "docs/experiments/2026-09-25-symmetric-margin-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-symmetric-margin-screen.json",
+      "sha256": "0098612f9372bf6ba05e851e3485049d4f25079ee3015c9c0d5bcfaa31d63f5b",
+      "source": "docs/experiments/2026-09-25-symmetric-margin-screen.json"
+    },
+    {
+      "path": "experiments/2026-09-25-margin-model-version-inventory.json",
+      "sha256": "58e5951903e64801d94d8f4c161a60418930cbf3f8e2b0d5ac73839c1ce24be6",
+      "source": "docs/experiments/2026-09-25-margin-model-version-inventory.json"
+    },
+    {
+      "path": "experiments/2026-09-25-margin-failure-diagnosis.json",
+      "sha256": "4d5c507efabb36ff2385cad1c77e50f36c3cd7466e9d48d65b895a2317b0f3c1",
+      "source": "docs/experiments/2026-09-25-margin-failure-diagnosis.json"
+    },
+    {
+      "path": "learning/31-hardest-boundary-margin.md",
+      "sha256": "5133f771cb3baf81e5bc9a540a249b28a63bcbbc4f1a027d618ef32c129e4835",
+      "source": "docs/learning/31-hardest-boundary-margin.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "7df1bb2f4d7d77415a80073572bc52f456b7588a05910f5ce2478d13f69003cf",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "scripts/run_symmetric_margin_screen.py",
+      "sha256": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+      "source": "scripts/run_symmetric_margin_screen.py"
+    },
+    {
+      "path": "tests/test_symmetric_margin_screen.py",
+      "sha256": "3fb950def4b63a39aad9b98a41fbe0f6bb192bd452c489bbb50ec1d62d89528e",
+      "source": "tests/unit/test_symmetric_margin_screen.py"
+    },
+    {
+      "path": "tests/test_symmetric_margin.py",
+      "sha256": "fecd245eb2ac99a4140cecab826f58aae50cced07573a2c31bb6ddb03c5f41c6",
+      "source": "tests/unit/test_symmetric_margin.py"
+    },
+    {
+      "path": "tests/test_symmetric_margin_config.py",
+      "sha256": "b0993544baf819bbff35f6de5013af522ade0294d22a4b50d75de8af166754e0",
+      "source": "tests/unit/test_symmetric_margin_config.py"
+    },
+    {
+      "path": "tests/test_symmetric_margin_training.py",
+      "sha256": "a756bb341bfd07b5ff811369a7843899e32fb520427bb1d0b2c38864026526cc",
+      "source": "tests/unit/training/test_symmetric_margin_training.py"
+    },
+    {
+      "path": "tests/test_independent_auditor.py",
+      "sha256": "3fa450a6b8e67c81534a7ebd10b1b280c3819f4b32de2556d72a4213210d9ac1",
+      "source": "runs/learning/margin-auditor-tests-v1/test_auditor.py"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+      "source": "runs/learning/symmetric-margin-screen-v1/summary.json"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "dcb7e190c5e35630edb5cfe83837fadcc792db4e490678de320edc28ef5db051",
+      "source": "runs/learning/symmetric-margin-screen-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "17afc9ca0fedf184ac9e9f2794947306883d4288860b22124cd9eb0c7751bcd9",
+      "source": "runs/learning/symmetric-margin-screen-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "50dffca4f2a1caf81160be1401d06fa7416572cc5dd89a4b3903c997580c232d",
+      "source": "runs/learning/symmetric-margin-screen-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "4800ad2fc8e3acc97316f8c29517746896657722096ec5353a43f152c1601178",
+      "source": "runs/learning/symmetric-margin-screen-v1/record-decision.py"
+    },
+    {
+      "path": "campaign/training-control.json",
+      "sha256": "8fa5ce8c4029719013757b65a3d5c78a4fbdb52686e2da2b256a70d87aef64f3",
+      "source": "runs/learning/symmetric-margin-screen-v1/training-control.json"
+    },
+    {
+      "path": "campaign/training-treatment.json",
+      "sha256": "450427afc01338d7789c36fc9362928d6979494ecd1bfe8eadfdffe1f8a2b8f5",
+      "source": "runs/learning/symmetric-margin-screen-v1/training-treatment.json"
+    },
+    {
+      "path": "campaign/training-seal.json",
+      "sha256": "1c0b9ae016d4c79925260f9732ad8a87f1dc688cebf4bf4bb56c1c2b6a8ff66d",
+      "source": "runs/learning/symmetric-margin-screen-v1/training-seal.json"
+    },
+    {
+      "path": "campaign/training-config-control.json",
+      "sha256": "bd0b551328c630776c0ad75d7edd5de21122f665f6d0253dbda4294d72b133b0",
+      "source": "runs/learning/symmetric-margin-screen-v1/training-config-control.json"
+    },
+    {
+      "path": "campaign/training-config-treatment.json",
+      "sha256": "967cb422c09f6ee34d65f8e02b1a8fd53307b41c5685a3001691ab9305f86e5d",
+      "source": "runs/learning/symmetric-margin-screen-v1/training-config-treatment.json"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+      "source": "runs/learning/symmetric-margin-screen-v1/summary.source.zip"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "86fcd9dcba39c3d42e738d93b5241eb94030f9b2696b12912d081382f3a016d6",
+      "source": "runs/learning/symmetric-margin-screen-v1/summary.configs.zip"
+    },
+    {
+      "path": "campaign/summary.original-recipe.json",
+      "sha256": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+      "source": "runs/learning/symmetric-margin-screen-v1/summary.original-recipe.json"
+    },
+    {
+      "path": "prerequisites/cpu-prerequisite.json",
+      "sha256": "240764f7686a47a057941c5151cf6ac070303c1958065aa523aed0bbcb0995ef",
+      "source": "runs/learning/margin-default-contract-v1/cpu-prerequisite.json"
+    },
+    {
+      "path": "prerequisites/gpu-prerequisite.json",
+      "sha256": "2bb3716e49d25600181e34a427b6cbc21cf176f02d11e83179e55b325f8a9412",
+      "source": "runs/learning/margin-default-contract-v1/gpu-prerequisite.json"
+    },
+    {
+      "path": "prerequisites/gpu-smoke.py",
+      "sha256": "969c05557318244ede92b93adf2068f028d84e8aed68e46af03be09b057c5c91",
+      "source": "runs/learning/margin-default-contract-v1/gpu-smoke.py"
+    },
+    {
+      "path": "prerequisites/gpu-smoke.json",
+      "sha256": "8e5a3c211c21b11423db648855a9d000f80d39936be0c2cdf7d55241d0b9b6a5",
+      "source": "runs/learning/margin-default-contract-v1/gpu-smoke.json"
+    },
+    {
+      "path": "prerequisites/summary.json",
+      "sha256": "7aaf83746196e6fad8ae680cd4e5141cfca72724b131a4e52080378bb3e063aa",
+      "source": "runs/learning/margin-default-contract-v1/summary.json"
+    },
+    {
+      "path": "prerequisites/capture.py",
+      "sha256": "7eb34c136bcf012373316030096cb4632fa54cc1cec9cd7b12e9b9a90985a3d7",
+      "source": "runs/learning/margin-default-contract-v1/capture.py"
+    },
+    {
+      "path": "diagnosis/summary.json",
+      "sha256": "4d5c507efabb36ff2385cad1c77e50f36c3cd7466e9d48d65b895a2317b0f3c1",
+      "source": "runs/learning/margin-failure-diagnosis-v1/summary.json"
+    },
+    {
+      "path": "diagnosis/executed-script.py",
+      "sha256": "872972a489fe1979b5bf13a5fd3bf29d356863105a6a3411c7bb36cfa92d111f",
+      "source": "runs/learning/margin-failure-diagnosis-v1/executed-script.py"
+    },
+    {
+      "path": "diagnosis/independent-audit.py",
+      "sha256": "d6abb98300b4f686d344739a9b40a392c565e01bc1c82bbc33d86aec0c63066f",
+      "source": "runs/learning/margin-failure-diagnosis-v1/independent-audit.py"
+    },
+    {
+      "path": "diagnosis/independent-audit.json",
+      "sha256": "d5b85d69c087bd595772c6ffb2cdc36ab816451944db34856b510dadb16ef1b5",
+      "source": "runs/learning/margin-failure-diagnosis-v1/independent-audit.json"
+    }
+  ],
+  "date": "2026-09-25",
+  "previous_manifest_entries_verified": 175,
+  "scope": "Research evidence copies, not a model release or complete raw artifact archive",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true,
+  "status": "completed audited negative result; variant rejected",
+  "sync_script_sha256": "a3f9ce06345f96912f19743bde8ee0cf74fbb0f51fc67a983fe09bba604bfee0"
+}

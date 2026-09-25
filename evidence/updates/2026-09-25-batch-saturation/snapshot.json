@@ -1,0 +1,34 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-batch-saturation-plan.md",
+      "sha256": "64bf6864171e595d803f7bac2927c1b941c0683b755032fe22536958a4102dd4",
+      "source": "docs/experiments/2026-09-25-batch-saturation-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-batch-saturation.json",
+      "sha256": "42caef1567976f91f55361f68eabdfb107a7540a2a612408a194a5c476a6d712",
+      "source": "docs/experiments/2026-09-25-batch-saturation.json"
+    },
+    {
+      "path": "raw/batch-saturation-20260925-summary.json",
+      "sha256": "551fa34b24c26e5810683e34f0012063ddadf74dfe95aab9ac15c24f4d3d6260",
+      "source": "runs/learning/batch-saturation-20260925/summary.json"
+    },
+    {
+      "path": "raw/batch-saturation-refinement-20260925-summary.json",
+      "sha256": "2a79c4de59a153150199edec207e69578f297cc1b74874e17afb11fe89571c9f",
+      "source": "runs/learning/batch-saturation-refinement-20260925/summary.json"
+    },
+    {
+      "path": "raw/batch-saturation-near656-20260925-summary.json",
+      "sha256": "ee6d8d471e1497d9403742f7b2b527ea810af3eaea9a382f8405182410b5308a",
+      "source": "runs/learning/batch-saturation-near656-20260925/summary.json"
+    },
+    {
+      "path": "raw/batch-saturation-near672-20260925-summary.json",
+      "sha256": "cf70445e242599ce9ed05dba6850ed1d148c1ce769010d9438f46768e7886ecc",
+      "source": "runs/learning/batch-saturation-near672-20260925/summary.json"
+    }
+  ]
+}

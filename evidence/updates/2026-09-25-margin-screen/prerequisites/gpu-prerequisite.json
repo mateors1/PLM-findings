@@ -1,0 +1,51 @@
+{
+  "config_files_sha256": {
+    "configs/config.yaml": "06b4eb9e3c74c9dc998cfd7e18af0a7a71d60f0340f2093b2be62297578fcf3a",
+    "configs/data/pokemon_v1.yaml": "b524769d5a0fd760b06624a5248eac9aaf72eaafe0790e0f39fea1729fbd3d3e",
+    "configs/eval/ranking.yaml": "ad2c15c5dc0f3caa91781eddc0a39379161fdd0151dc8845cce97d43fc8401d1",
+    "configs/experiment/checkpointing_lab.yaml": "0d793e4255f9b96d37195afe04f4887ca23ea58ac44bfc1bc50c7dc2a55a0f73",
+    "configs/experiment/continuation_set_lab.yaml": "774e9627619b351347be38a2d80a6ff15e0333461c0f7f522d0f75c011486ee6",
+    "configs/experiment/first_target_lab.yaml": "6cb4f76534346c267881e72bf27f594c5b2f332bd189cd38be00de923de12326",
+    "configs/experiment/moe_lab.yaml": "1749b2d19c87333cd8e01307eeb0430031800111541d5bb2534c116e3fa0ecfa",
+    "configs/experiment/national_dex_v1.yaml": "568e9d883c7c2205c7534076d3eb79d8ca01afd9350a73e7d2655f3c01245c9a",
+    "configs/experiment/prompt_set_lab.yaml": "822294ca346705510203582677cc5b3bb3ab40f8698c55f6bca117132a816b27",
+    "configs/experiment/symmetric_relation_lab.yaml": "6eeef56cdf8ffb4a838b2b430a0f6e03ebb17190650ede501a6db4f8707e7092",
+    "configs/experiment/tiny_smoke.yaml": "e801e5405db9c072a4d2668579d3c861eb44bbcc2d1ddb0f395a604ba35714b0",
+    "configs/model/overkill.yaml": "22c8fa2e9578484de507e32ba33503f1d9e606f1c87e6ada7080e970d0e1ef55",
+    "configs/model/tiny_decoder.yaml": "506730caf64c1ec8acc97b2c2317b79d638f782f99d2fb337d97a458ee833d25",
+    "configs/protocol/pokemon_v1.yaml": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+    "configs/serve/local.yaml": "816b6b05e326b678494386d9d41e1cbc4ea3930d4d421ce319ea2490934132f2",
+    "configs/train/local_cuda.yaml": "814ceb8df66d50f5bcd8ac3e78cd1fcc695cf9c2133131b767d94212a7510141"
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+    "source_tree_sha256": "93cbe4ed5ce77099ce2dfc2517abb46baefc574542bd8bc55b557a28fff04d82",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "implementation_source_sha256": {
+    "src/plm/config.py": "73a00712ef08da23fbc3d801551781bd4e08f0729d0d2d8db517737ac877906f",
+    "src/plm/configuration.py": "a3c0e828387d1989df0ced4c71a53f50ebe04816280c801026ab8b200f1db742",
+    "src/plm/model/interfaces.py": "0d89c3301e93bd61b0d59979dfb5358a2438faa4328882f12dbf55fe84225c97",
+    "src/plm/model/layers.py": "ae05c7165af4ef15d9897a0dbf6b80ffcfbbc14fa77d0c503035abfd4391aed6",
+    "src/plm/serving/runtime.py": "91dfeb5b0d6348a6c095f7711de3496e553f31fb14ed7350d28465885eb3b367",
+    "src/plm/training/trainer.py": "5b8ca309b5559dcdef712e26023a27ed3ae25c432ad7da22c5ca46bfb87179d1"
+  },
+  "passed": true,
+  "raw_receipt": {
+    "path": "runs/learning/margin-default-contract-v1/gpu-smoke.json",
+    "sha256": "8e5a3c211c21b11423db648855a9d000f80d39936be0c2cdf7d55241d0b9b6a5"
+  },
+  "real_corpus_used": false,
+  "scope": "Small CUDA BF16 synthetic model; finite gradients and FP32 auxiliary loss. Not full-model quality or GPU equivalence.",
+  "seal_script_sha256": "7f07df196719b90e4b48e871553714236bdca56f535b0ca6073e611a4c649c07",
+  "sealed_by": "primary agent from observed completed tool results",
+  "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "steps": 3,
+  "synthetic": true
+}

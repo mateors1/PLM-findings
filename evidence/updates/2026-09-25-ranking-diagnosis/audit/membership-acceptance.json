@@ -1,0 +1,31 @@
+{
+  "audit_sha256": "6585bbab913e9987a6b9997129c922cf2df2ec8cf8b214e4abe7eae6bc7f9bee",
+  "auditor_sha256": "9d079df3a1aa06b9eb77f0d6e5bcf3bf8da6581a25eae0143ee79c4a216f0592",
+  "date": "2026-09-25",
+  "diagnostic_accepted": true,
+  "focused_tests": {
+    "command": "uv run --no-sync pytest tests/unit/test_membership_separability.py",
+    "count": 31,
+    "passed": true,
+    "root_rerun": true,
+    "snapshot": "acceptance.tests.py",
+    "tests_sha256": "0f6f1c4572cfe5273e102c56ffcdeceab13a275b048466d41917080040ea0a48"
+  },
+  "limitations": [
+    "Separation and oracle top-K exactness diagnose exact-answer attainability; top-K precision/recall/F1 are privileged diagnostics, not threshold-performance upper bounds.",
+    "Three training seeds repeat the same 222 validation queries.",
+    "No threshold fitting, calibrator, training, forward, protected test or application promotion."
+  ],
+  "model_or_policy_promoted": false,
+  "plan_sha256": "b189638ba7c89e380934a0239537fd8a8f6a4f34f68058c619fe86fa5e7bca87",
+  "preflight_reproduced_baseline": {
+    "direct_exact": 339,
+    "direct_gains": 3,
+    "direct_losses": 233,
+    "pair_exact": 569,
+    "query_count": 666
+  },
+  "ruff_check_passed": true,
+  "scope": "Correctness of frozen validation diagnostic only; oracle-assisted exact attainability and top-K metrics are not deployable quality.",
+  "summary_sha256": "01188e47cf407f90da7eb705fc40c0865a7678c31cbecf592f18723ac42dc6fc"
+}

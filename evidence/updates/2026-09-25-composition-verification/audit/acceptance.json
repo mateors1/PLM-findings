@@ -1,0 +1,72 @@
+{
+  "accounting": {
+    "disabled_greedy_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "distinct_reference_slot_scores": 6660,
+    "four_path_compatibility_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "http_auxiliary_suites": {
+      "fresh": 2,
+      "reused": 1
+    },
+    "http_queries": {
+      "fresh": 444,
+      "reused": 222
+    },
+    "independent_audit_passed": true,
+    "integration_accepted": true,
+    "normal_http_slot_scores_checked": 6660,
+    "normal_http_slots": 6660,
+    "normal_http_sources": 2664,
+    "offline_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "offline_slots": {
+      "fresh": 0,
+      "reused": 6660
+    },
+    "offline_sources": {
+      "fresh": 0,
+      "reused": 2664
+    },
+    "same_shape_query_selection_checks": 666,
+    "serial_reference_queries": {
+      "fresh": 666,
+      "reused": 0
+    },
+    "serial_repeat_forwards": 24
+  },
+  "auditor_sha256": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+  "date": "2026-09-25",
+  "default_policy_changed": false,
+  "independent_audit_sha256": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+  "integration_accepted": true,
+  "limitations": [
+    "Saved FP32 vectors are authenticated evidence, not independently regenerated neural outputs.",
+    "HTTP source paths/selected slot/sets must match across shapes; only slot score references are shape-specific.",
+    "Seed 1729 HTTP and all offline executions are reused; HTTP seeds 1730/1731 and 690 head forwards are fresh.",
+    "Shutdown is checked from archived owned-server join/stop receipts, not independent socket probes.",
+    "Seal/prelaunch receipts bind phase order via the archived verifier; filesystem timestamps are not execution proof.",
+    "No protected test data, training, neural inference, throughput, energy, SLO, or oracle-quality claim."
+  ],
+  "metrics": {
+    "exact_count": 569,
+    "f1": 0.9668960529174291,
+    "precision": 0.9820461214803038,
+    "query_count": 666,
+    "recall": 0.9637964716104676,
+    "selected_source_eligible": 1.0,
+    "set_size": 125.52402402402403
+  },
+  "original_campaign_accepted": false,
+  "plan_sha256": "0e406e2515c582ba5f4e8f3897b58e7daa6c27c96711913ef5d335f7eef2861f",
+  "protected_test_used": false,
+  "scope": "Declared shape-aware v2 integration contract on three frozen checkpoints and validation split only.",
+  "summary_sha256": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+  "verifier_sha256": "5dbede7d99bbbedc38b8551a2b15e213056b146cb53b05bc32fa5c65f27ac8d5"
+}

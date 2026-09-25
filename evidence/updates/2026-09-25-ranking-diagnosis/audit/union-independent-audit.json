@@ -1,0 +1,64 @@
+{
+  "all_arithmetic_and_bindings_equal": true,
+  "audit_script_sha256": "1b36479c5e7355c59462a884b5fc623dd610cb6b71f9cc05beb7411e56c622d0",
+  "complete": true,
+  "duplicate_exact_witnesses_checked": 144,
+  "exact_gains_upper_bound": 0,
+  "input_sha256": {
+    "data/processed/pokemon_v1_f1541479_20260924/vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "runs/learning/all-source-union-bound-v1/proof.py": "2a45afb5c218d03cc72ae6fb5bfc6db0ab9aaa35aa49cde3d78b8bd4ca2c0c6a",
+    "runs/learning/all-source-union-bound-v1/summary.json": "57cc984b16583bc610997ee052fc2f9d8f77a8af9061372578fed79e867f3a70",
+    "runs/learning/pair-unions-v1/independent-audit.json": "13d9b88135eb52c768932e213cc475ac5994636a7fc228b1a7b2ad8ab538a057",
+    "runs/learning/pair-unions-v1/independent-audit.py": "8fa4a7b273a5fa43289318242147b5cfd5a69e6b681317120740e4fd0fd8970e",
+    "runs/learning/pair-unions-v1/seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "runs/learning/pair-unions-v1/seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "runs/learning/pair-unions-v1/seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "runs/learning/pair-unions-v1/summary.json": "4e4c46d4ebc366e02aa04cc3abda1a65cc08cec5463453ba97e25b4bc3f53992",
+    "runs/learning/pair-unions-v1/summary.script.py": "334f8784c1e7488ceb23a1df8524fccb93ac94c49f3d48b17e17961726f90eed",
+    "runs/learning/set-candidate-coverage-v1/diagnose.py": "12f8d7853adadbbe087114f5099fa2b3c7c8add24512a1561ffcf2bb08964ef7",
+    "runs/learning/set-candidate-coverage-v1/summary.json": "67974a44184a48ecb67b62bbb5dab4c9f3ac05a2b30e4858fee771a767ea0dc4"
+  },
+  "limitations": [
+    "No new15-slot score selection, metric sweep, model execution or protected-test access",
+    "Separate implementation, same working agent; not an independently staffed model replay",
+    "Authenticates proof-bound files; does not redo full recursive historical provenance"
+  ],
+  "method": "Bitmask enumeration from pinned raw paths; separate baseline winner loop; no producer imports",
+  "per_seed": [
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 191,
+      "covered_without_exact_subset": 11,
+      "fifteen_slot_exact_availability": 191,
+      "query_count": 222,
+      "seed": 1729,
+      "ten_slot_exact_availability": 191,
+      "truth_absent_from_union": 20
+    },
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 192,
+      "covered_without_exact_subset": 14,
+      "fifteen_slot_exact_availability": 192,
+      "query_count": 222,
+      "seed": 1730,
+      "ten_slot_exact_availability": 192,
+      "truth_absent_from_union": 16
+    },
+    {
+      "added_exact_availability": 0,
+      "baseline_exact": 186,
+      "covered_without_exact_subset": 18,
+      "fifteen_slot_exact_availability": 187,
+      "query_count": 222,
+      "seed": 1731,
+      "ten_slot_exact_availability": 187,
+      "truth_absent_from_union": 17
+    }
+  ],
+  "proof_script_sha256": "2a45afb5c218d03cc72ae6fb5bfc6db0ab9aaa35aa49cde3d78b8bd4ca2c0c6a",
+  "query_count": 666,
+  "selected_exact_upper_bound": 569,
+  "subset_inventory_count": 9990,
+  "summary_sha256": "57cc984b16583bc610997ee052fc2f9d8f77a8af9061372578fed79e867f3a70"
+}

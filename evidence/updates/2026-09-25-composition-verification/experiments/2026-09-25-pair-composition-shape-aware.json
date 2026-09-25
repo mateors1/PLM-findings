@@ -1,0 +1,372 @@
+{
+  "absolute_tolerance": 0,
+  "acceptance_sha256": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+  "accounting": {
+    "disabled_greedy_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "distinct_reference_slot_scores": 6660,
+    "four_path_compatibility_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "http_auxiliary_suites": {
+      "fresh": 2,
+      "reused": 1
+    },
+    "http_queries": {
+      "fresh": 444,
+      "reused": 222
+    },
+    "independent_audit_passed": true,
+    "integration_accepted": true,
+    "normal_http_slot_scores_checked": 6660,
+    "normal_http_slots": 6660,
+    "normal_http_sources": 2664,
+    "offline_queries": {
+      "fresh": 0,
+      "reused": 666
+    },
+    "offline_slots": {
+      "fresh": 0,
+      "reused": 6660
+    },
+    "offline_sources": {
+      "fresh": 0,
+      "reused": 2664
+    },
+    "same_shape_query_selection_checks": 666,
+    "serial_reference_queries": {
+      "fresh": 666,
+      "reused": 0
+    },
+    "serial_repeat_forwards": 24
+  },
+  "auditor_sha256": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+  "date": "2026-09-25",
+  "default_policy_changed": false,
+  "evaluator_version": "plm-pair-composition-shape-aware-v2",
+  "http_validations": [
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "reused",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "original_campaign_accepted": false,
+      "original_campaign_sha256": "7abc3a99ea8aa0e95749da2b379893572f7f76643a53ab98f8242c2c77da7042",
+      "original_exact_parity": false,
+      "owned_servers_stopped": 3,
+      "query_count": 222,
+      "reference_seal_sha256": "c8cece58cdd4f636cc24d5e5fbe1aa6fb79262353a8310e598d17441d89dff10",
+      "report_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\http-1729.json",
+      "report_sha256": "e6759659c0eec1130088c1324c8457cc2c0bf814af7773c05a8f6b251c421e87",
+      "seed": 1729,
+      "serial_reference_sha256": "4a2bc892dab090899bcc6b0565a1906fe3d04dc940b4596a4e09d2c62f1503d0",
+      "shutdown_evidence": "Archived owned-server finally receipt; reused shutdown booleans are not fresh listener probes",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    },
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "fresh",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "owned_servers_stopped": 3,
+      "prelaunch_receipt_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\http-prelaunch-1730.json",
+      "prelaunch_receipt_sha256": "2ee27c25f1f9c03847c61528887b6a2624674b232c9886b28800d61663b7c51a",
+      "query_count": 222,
+      "reference_seal_sha256": "c8cece58cdd4f636cc24d5e5fbe1aa6fb79262353a8310e598d17441d89dff10",
+      "report_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\http-1730.json",
+      "report_sha256": "798df721f9b47e755a7a11abd4ca1cad85faa32804a3f128979caa867593e5fd",
+      "seed": 1730,
+      "serial_reference_sha256": "4933bcbec94a8b0e9164860b294cfa7fcd0ae98a9db9482a9386bd175517250d",
+      "shutdown_evidence": "Archived owned-server finally receipt; reused shutdown booleans are not fresh listener probes",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    },
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "fresh",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "owned_servers_stopped": 3,
+      "prelaunch_receipt_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\http-prelaunch-1731.json",
+      "prelaunch_receipt_sha256": "0b90e15f7c6022736a934522e5334811a9699fd43852422b2bb946f0970c4a73",
+      "query_count": 222,
+      "reference_seal_sha256": "c8cece58cdd4f636cc24d5e5fbe1aa6fb79262353a8310e598d17441d89dff10",
+      "report_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\http-1731.json",
+      "report_sha256": "d5f796af35775a346edacafd68e599e3daadf3391281c21c1e7eb7667df63e95",
+      "seed": 1731,
+      "serial_reference_sha256": "51107438b54788b3c6665ae565fae3ed73a0536a31dcb0eb208ad061e4d9b498",
+      "shutdown_evidence": "Archived owned-server finally receipt; reused shutdown booleans are not fresh listener probes",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    }
+  ],
+  "independent_audit_sha256": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+  "integration_accepted": true,
+  "limitations": [
+    "Saved FP32 vectors are authenticated evidence, not independently regenerated neural outputs.",
+    "HTTP source paths/selected slot/sets must match across shapes; only slot score references are shape-specific.",
+    "Seed 1729 HTTP and all offline executions are reused; HTTP seeds 1730/1731 and 690 head forwards are fresh.",
+    "Shutdown is checked from archived owned-server join/stop receipts, not independent socket probes.",
+    "Seal/prelaunch receipts bind phase order via the archived verifier; filesystem timestamps are not execution proof.",
+    "No protected test data, training, neural inference, throughput, energy, SLO, or oracle-quality claim."
+  ],
+  "metrics": {
+    "exact_count": 569,
+    "f1": 0.9668960529174291,
+    "precision": 0.9820461214803038,
+    "query_count": 666,
+    "recall": 0.9637964716104676,
+    "selected_source_eligible": 1.0,
+    "set_size": 125.52402402402403
+  },
+  "original_campaign_accepted": false,
+  "plan_sha256": "0e406e2515c582ba5f4e8f3897b58e7daa6c27c96711913ef5d335f7eef2861f",
+  "protected_test_used": false,
+  "raw_directory": "runs/learning/pair-composition-integration-v2",
+  "references": [
+    {
+      "complete": true,
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\serial-1729.json",
+      "query_count": 222,
+      "repeat_forward_count": 8,
+      "seed": 1729,
+      "sha256": "4a2bc892dab090899bcc6b0565a1906fe3d04dc940b4596a4e09d2c62f1503d0"
+    },
+    {
+      "complete": true,
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\serial-1730.json",
+      "query_count": 222,
+      "repeat_forward_count": 8,
+      "seed": 1730,
+      "sha256": "4933bcbec94a8b0e9164860b294cfa7fcd0ae98a9db9482a9386bd175517250d"
+    },
+    {
+      "complete": true,
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\serial-1731.json",
+      "query_count": 222,
+      "repeat_forward_count": 8,
+      "seed": 1731,
+      "sha256": "51107438b54788b3c6665ae565fae3ed73a0536a31dcb0eb208ad061e4d9b498"
+    }
+  ],
+  "relative_tolerance": 0,
+  "report_sha256": {
+    "http-1730.json": "798df721f9b47e755a7a11abd4ca1cad85faa32804a3f128979caa867593e5fd",
+    "http-1731.json": "d5f796af35775a346edacafd68e599e3daadf3391281c21c1e7eb7667df63e95",
+    "http-prelaunch-1730.json": "2ee27c25f1f9c03847c61528887b6a2624674b232c9886b28800d61663b7c51a",
+    "http-prelaunch-1731.json": "0b90e15f7c6022736a934522e5334811a9699fd43852422b2bb946f0970c4a73",
+    "http-validation-1729.json": "90f74744bd86a791be8f779f9f9b1dc49881ac60423f5651045800ff6766469f",
+    "http-validation-1730.json": "028e1beb88bc50cc8c5e4bedf71cd01e7861675818d5370086ac5078a425d671",
+    "http-validation-1731.json": "1d9dac0710cfc8eacd7d96273dbbf7f3cd13fcd5685c7fbabfc8764035148d23",
+    "references-seal.json": "c8cece58cdd4f636cc24d5e5fbe1aa6fb79262353a8310e598d17441d89dff10",
+    "serial-1729.json": "4a2bc892dab090899bcc6b0565a1906fe3d04dc940b4596a4e09d2c62f1503d0",
+    "serial-1730.json": "4933bcbec94a8b0e9164860b294cfa7fcd0ae98a9db9482a9386bd175517250d",
+    "serial-1731.json": "51107438b54788b3c6665ae565fae3ed73a0536a31dcb0eb208ad061e4d9b498",
+    "summary.cpu-tests.json": "9a72ad4d7d7b219d8754cffc6068c650fdc79a7d4381410fa8a4700fe7063b5f",
+    "summary.gpu-release.json": "0505c3dbe34bfd34da32f9cd20607f4cc345bf38170619f5a9baac90a11551c7"
+  },
+  "runs": [
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "reused",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "http_sha256": "e6759659c0eec1130088c1324c8457cc2c0bf814af7773c05a8f6b251c421e87",
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "offline_groups": {
+        "COLOR": {
+          "exact_count": 102,
+          "f1": 0.9904061584420061,
+          "precision": 0.9904453690861458,
+          "query_count": 103,
+          "recall": 0.9903828540025646,
+          "selected_source_eligible": 1.0,
+          "set_size": 113.25242718446601
+        },
+        "TYPE_dual": {
+          "exact_count": 41,
+          "f1": 0.8942901951683502,
+          "precision": 0.957817709318077,
+          "query_count": 68,
+          "recall": 0.8700569666950081,
+          "selected_source_eligible": 1.0,
+          "set_size": 158.10294117647058
+        },
+        "TYPE_single": {
+          "exact_count": 48,
+          "f1": 0.9990050569513934,
+          "precision": 0.9987430869783811,
+          "query_count": 51,
+          "recall": 0.9992958489498283,
+          "selected_source_eligible": 1.0,
+          "set_size": 99.3921568627451
+        }
+      },
+      "offline_metrics": {
+        "exact_count": 191,
+        "f1": 0.9629406553851149,
+        "precision": 0.9823575436279265,
+        "query_count": 222,
+        "recall": 0.9555738558286755,
+        "selected_source_eligible": 1.0,
+        "set_size": 123.80630630630631
+      },
+      "owned_servers_stopped": 3,
+      "query_count": 222,
+      "seed": 1729,
+      "serial_reference_sha256": "4a2bc892dab090899bcc6b0565a1906fe3d04dc940b4596a4e09d2c62f1503d0",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    },
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "fresh",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "http_sha256": "798df721f9b47e755a7a11abd4ca1cad85faa32804a3f128979caa867593e5fd",
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "offline_groups": {
+        "COLOR": {
+          "exact_count": 103,
+          "f1": 1.0,
+          "precision": 1.0,
+          "query_count": 103,
+          "recall": 1.0,
+          "selected_source_eligible": 1.0,
+          "set_size": 113.66990291262135
+        },
+        "TYPE_dual": {
+          "exact_count": 43,
+          "f1": 0.9126757184950018,
+          "precision": 0.9519813801311113,
+          "query_count": 68,
+          "recall": 0.9019821637005241,
+          "selected_source_eligible": 1.0,
+          "set_size": 165.3235294117647
+        },
+        "TYPE_single": {
+          "exact_count": 46,
+          "f1": 0.9993000513622556,
+          "precision": 1.0,
+          "query_count": 51,
+          "recall": 0.9986100358309676,
+          "selected_source_eligible": 1.0,
+          "set_size": 99.25490196078431
+        }
+      },
+      "offline_metrics": {
+        "exact_count": 192,
+        "f1": 0.9730912228699782,
+        "precision": 0.9852915939140341,
+        "query_count": 222,
+        "recall": 0.9696572025180855,
+        "selected_source_eligible": 1.0,
+        "set_size": 126.18018018018019
+      },
+      "owned_servers_stopped": 3,
+      "query_count": 222,
+      "seed": 1730,
+      "serial_reference_sha256": "4933bcbec94a8b0e9164860b294cfa7fcd0ae98a9db9482a9386bd175517250d",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    },
+    {
+      "admission_503_checks": 2,
+      "complete": true,
+      "disabled_409_checks": 1,
+      "evidence_origin": "fresh",
+      "failure_502_checks": 1,
+      "filtered_checks": 2,
+      "http_sha256": "d5f796af35775a346edacafd68e599e3daadf3391281c21c1e7eb7667df63e95",
+      "invalid_422_checks": 5,
+      "legacy_checks": 1,
+      "metadata_checks": 10,
+      "offline_groups": {
+        "COLOR": {
+          "exact_count": 103,
+          "f1": 1.0,
+          "precision": 1.0,
+          "query_count": 103,
+          "recall": 1.0,
+          "selected_source_eligible": 1.0,
+          "set_size": 113.66990291262135
+        },
+        "TYPE_dual": {
+          "exact_count": 41,
+          "f1": 0.9064317255279347,
+          "precision": 0.960785336202183,
+          "query_count": 68,
+          "recall": 0.8911125202200594,
+          "selected_source_eligible": 1.0,
+          "set_size": 162.8235294117647
+        },
+        "TYPE_single": {
+          "exact_count": 42,
+          "f1": 0.9709085673426959,
+          "precision": 0.9586510884278167,
+          "query_count": 51,
+          "recall": 0.9978726228358121,
+          "selected_source_eligible": 1.0,
+          "set_size": 104.3529411764706
+        }
+      },
+      "offline_metrics": {
+        "exact_count": 186,
+        "f1": 0.964656280497194,
+        "precision": 0.9784892268989508,
+        "query_count": 222,
+        "recall": 0.9661583564846418,
+        "selected_source_eligible": 1.0,
+        "set_size": 126.58558558558559
+      },
+      "owned_servers_stopped": 3,
+      "query_count": 222,
+      "seed": 1731,
+      "serial_reference_sha256": "51107438b54788b3c6665ae565fae3ed73a0536a31dcb0eb208ad061e4d9b498",
+      "slot_scores_checked": 2220,
+      "source_paths": 888
+    }
+  ],
+  "scope": "Declared shape-aware v2 integration contract on three frozen checkpoints and validation split only.",
+  "snapshot_sha256": {
+    "configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "cpu-tests.json": "9a72ad4d7d7b219d8754cffc6068c650fdc79a7d4381410fa8a4700fe7063b5f",
+    "gpu-release.json": "0505c3dbe34bfd34da32f9cd20607f4cc345bf38170619f5a9baac90a11551c7",
+    "helper-arithmetic.py": "1d4f1fbe070e06b841cf695c0fb673bfbca79b7390537f13cd496464950bb98a",
+    "helper-server.py": "80d0a842d55d8f9f26e5d78a912e998fa9505b2f1beb1e104794bf162cfa2039",
+    "helper-transport.py": "e64b4d309c4cffee09106df46acc7f2546f423b8c1c51da674166524045c7036",
+    "plan.md": "0e406e2515c582ba5f4e8f3897b58e7daa6c27c96711913ef5d335f7eef2861f",
+    "script.py": "5dbede7d99bbbedc38b8551a2b15e213056b146cb53b05bc32fa5c65f27ac8d5",
+    "source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "tests.py": "331f2f7a5824978a59be51afda31e7bd5047b852aa088e2c3c55d3064539baa5"
+  },
+  "summary_sha256": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+  "verifier_sha256": "5dbede7d99bbbedc38b8551a2b15e213056b146cb53b05bc32fa5c65f27ac8d5"
+}

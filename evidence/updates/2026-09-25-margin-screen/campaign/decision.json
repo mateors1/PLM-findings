@@ -1,0 +1,31 @@
+{
+  "audit_sha256": "17afc9ca0fedf184ac9e9f2794947306883d4288860b22124cd9eb0c7751bcd9",
+  "checks": {
+    "all_sources_and_selected_eligible": true,
+    "exact_count_strictly_improved": false,
+    "groups_exact_nondecreased": false,
+    "macro_f1_nondecreased": false,
+    "strict_separation_strictly_improved": false
+  },
+  "date": "2026-09-25",
+  "decision": "Reject fixed m=1.0 lambda=0.1 variant; stop before seeds 1730/1731, retain both checkpoints and all failed gates.",
+  "decision_script_sha256": "4800ad2fc8e3acc97316f8c29517746896657722096ec5353a43f152c1601178",
+  "evidence_accepted_as_completed_negative_result": true,
+  "experiment": "plm-symmetric-margin-stage1-v1",
+  "gained_exact_count": 1,
+  "inference_default_changed": false,
+  "limitations": [
+    "Only seed 1729 fresh control/treatment is audited; no untested-seed or deployment claim.",
+    "Checkpoint bytes and authenticated receipts are checked without unpickling Torch payloads.",
+    "Saved FP32 logits and training diagnostics are authenticated, not neurally regenerated.",
+    "CPU prerequisite provenance: owner-attested tool results; original stdout not archived",
+    "Protected partition query identities only authenticate the split; its target fields are not measured.",
+    "Historical 191 is contextual only; the gate compares the fresh matched control."
+  ],
+  "lost_exact_count": 187,
+  "plan_sha256": "845663b5f739c43b84f372aaf098e097c6380719c2882bd64c56f0661b203803",
+  "protected_test_used": false,
+  "replication_authorized": false,
+  "summary_sha256": "39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701",
+  "variant_accepted": false
+}

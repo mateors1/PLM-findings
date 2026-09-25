@@ -1,0 +1,64 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "scripts\\diagnose_candidate_scores.py",
+        "tests\\unit\\test_candidate_scores.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "scripts\\diagnose_candidate_scores.py",
+        "tests\\unit\\test_candidate_scores.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "tests/unit/test_candidate_scores.py",
+        "-q",
+        "-o",
+        "addopts="
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "scripts/diagnose_candidate_scores.py",
+        "--preflight-only"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "scope": "Synthetic arithmetic/path tests and authenticated original diagonal preflight only; no new availability or off-diagonal measurement.",
+  "stdout_sha256": "357ea8e76b8e17c739822dd8b13ce3e58f76ac0f76b575037487b4ac791f2cb8",
+  "tested_files_sha256": {
+    "scripts/diagnose_candidate_scores.py": "3665fae41075851852a7cec787f3d75d6815697da0ab3ac7a9c26f365c078d51",
+    "tests/unit/test_candidate_scores.py": "f7055e9967e4944859fc8546b5a6ba1bbdc34b5a02631f7cbf302170e8771a78"
+  },
+  "tested_runner_sha256": "3665fae41075851852a7cec787f3d75d6815697da0ab3ac7a9c26f365c078d51",
+  "tested_test_file_sha256": "f7055e9967e4944859fc8546b5a6ba1bbdc34b5a02631f7cbf302170e8771a78"
+}

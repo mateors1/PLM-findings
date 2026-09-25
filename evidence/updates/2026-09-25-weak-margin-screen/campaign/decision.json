@@ -1,0 +1,157 @@
+{
+  "audit_sha256": "5cf9d5b556f06f068bcfda4709d737f351260f21144bc70ec42c305feef9caab",
+  "date": "2026-09-25",
+  "decision": "Reject fixed m=1 lambda=.001 variant at stage one; stop before seeds1730/1731 and retain both checkpoints.",
+  "decision_script_sha256": "ee9561a061fb8c70a1f36dde9140af0cb104bf63e366fd0e3cb0137f742a8fc8",
+  "evidence_accepted": true,
+  "experiment": "plm-weak-margin-stage1-v1",
+  "gate": {
+    "checks": {
+      "all_sources_and_selected_eligible": true,
+      "exact_count_strictly_improved": true,
+      "groups_exact_nondecreased": true,
+      "macro_f1_nondecreased": true,
+      "strict_separation_strictly_improved": false
+    },
+    "gained_exact": [
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 9,
+        "subject": "PKM_ARMALDO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 42,
+        "subject": "PKM_CORSOLA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 43,
+        "subject": "PKM_CRAMORANT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 54,
+        "subject": "PKM_DHELMISE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 58,
+        "subject": "PKM_DUCKLETT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 71,
+        "subject": "PKM_FLORAGATO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 84,
+        "subject": "PKM_GOLURK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 150,
+        "subject": "PKM_PILOSWINE"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 187,
+        "subject": "PKM_SUNFLORA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 190,
+        "subject": "PKM_TANGROWTH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 220,
+        "subject": "PKM_ZEKROM"
+      }
+    ],
+    "gained_exact_count": 11,
+    "independent_audit_status": "required",
+    "lost_exact": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 7,
+        "subject": "PKM_ARCTIBAX"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 17,
+        "subject": "PKM_BEAUTIFLY"
+      },
+      {
+        "dimension": "COLOR",
+        "group": "COLOR",
+        "index": 63,
+        "subject": "PKM_ELECTABUZZ"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 72,
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 97,
+        "subject": "PKM_INKAY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 151,
+        "subject": "PKM_POOCHYENA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 177,
+        "subject": "PKM_SKARMORY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 204,
+        "subject": "PKM_TURTONATOR"
+      }
+    ],
+    "lost_exact_count": 8,
+    "numerical_gates_passed": false,
+    "replication_authorized": false,
+    "stage_one_accepted": false
+  },
+  "inference_default_changed": false,
+  "limitations": [
+    "Only seed 1729 fresh control/treatment is audited; no untested-seed or deployment claim.",
+    "Checkpoint bytes and authenticated receipts are checked without unpickling Torch payloads.",
+    "Saved FP32 logits and training diagnostics are authenticated, not neurally regenerated.",
+    "CPU prerequisite provenance: owner-attested tool results; original stdout not archived",
+    "Protected partition query identities only authenticate the split; its target fields are not measured.",
+    "Historical 191 is contextual only; the gate compares the fresh matched control."
+  ],
+  "plan_sha256": "3c0449a3154492ab4c053674b6cf76ad3a00e18974e07f05bfbb638ada0973d2",
+  "primary_and_audit_preserved": true,
+  "protected_test_used": false,
+  "replication_authorized": false,
+  "stage_one_accepted": false,
+  "summary_sha256": "3d535d1e298497609169dda8791aef3920d3d8993afab9189df359644b8c7a93",
+  "variant_accepted_across_seeds": false
+}

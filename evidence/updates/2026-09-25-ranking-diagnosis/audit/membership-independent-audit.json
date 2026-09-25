@@ -1,0 +1,3533 @@
+{
+  "acceptance_authority": "campaign owner after reviewing this independent receipt",
+  "all_recomputed_outputs_equal": true,
+  "baseline_reconstruction": {
+    "direct_exact": 339,
+    "direct_gains": 3,
+    "direct_losses": 233,
+    "pair_exact": 569,
+    "query_count": 666
+  },
+  "complete": true,
+  "diagnostic_accepted": false,
+  "distinct_validation_queries": 222,
+  "groups": {
+    "COLOR": {
+      "counts": {
+        "boundary_tie": 0,
+        "direct_exact": 238,
+        "oracle_top_k_exact": 304,
+        "oracle_top_k_gained_exact": 1,
+        "oracle_top_k_lost_exact": 5,
+        "pair_exact": 308,
+        "separable_with_wrong_zero_threshold": 66,
+        "source_union_lacks_truth": 1,
+        "strict_rank_overlap": 5,
+        "strict_separable": 304
+      },
+      "cross_tab": [
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 1,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": true,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": true,
+          "query_count": 5,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 65,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": true,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 238,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        }
+      ],
+      "direct_metrics": {
+        "exact_count": 238,
+        "f1": 0.9979463258577925,
+        "fn": 2,
+        "fp": 114,
+        "precision": 0.9960532726016224,
+        "recall": 0.9998902967472986,
+        "set_size": 114.03236245954693,
+        "tp": 35122
+      },
+      "oracle_top_k_metrics": {
+        "exact_count": 304,
+        "f1": 0.9997856767272115,
+        "fn": 5,
+        "fp": 5,
+        "precision": 0.9997856767272115,
+        "recall": 0.9997856767272115,
+        "set_size": 113.66990291262135,
+        "tp": 35119
+      },
+      "pair_metrics": {
+        "exact_count": 308,
+        "f1": 0.9968020528140019,
+        "fn": 105,
+        "fp": 62,
+        "precision": 0.9968151230287152,
+        "recall": 0.9967942846675215,
+        "set_size": 113.53074433656958,
+        "tp": 35019
+      },
+      "query_count": 309,
+      "separation_cases": {
+        "empty_truth": 0,
+        "empty_universe": 0,
+        "full_truth": 0,
+        "mixed": 309
+      }
+    },
+    "TYPE_dual": {
+      "counts": {
+        "boundary_tie": 0,
+        "direct_exact": 13,
+        "oracle_top_k_exact": 41,
+        "oracle_top_k_gained_exact": 5,
+        "oracle_top_k_lost_exact": 89,
+        "pair_exact": 125,
+        "separable_with_wrong_zero_threshold": 28,
+        "source_union_lacks_truth": 52,
+        "strict_rank_overlap": 163,
+        "strict_separable": 41
+      },
+      "cross_tab": [
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": false,
+          "query_count": 26,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": false,
+          "query_count": 48,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": true,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 1,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 4,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": true,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": true,
+          "query_count": 89,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 23,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": true,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 13,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        }
+      ],
+      "direct_metrics": {
+        "exact_count": 13,
+        "f1": 0.9745867299055261,
+        "fn": 233,
+        "fp": 1408,
+        "precision": 0.9580749407326052,
+        "recall": 0.9928316035935546,
+        "set_size": 177.34803921568627,
+        "tp": 34771
+      },
+      "oracle_top_k_metrics": {
+        "exact_count": 41,
+        "f1": 0.9819905062827897,
+        "fn": 559,
+        "fp": 559,
+        "precision": 0.9819905062827897,
+        "recall": 0.9819905062827897,
+        "set_size": 171.58823529411765,
+        "tp": 34445
+      },
+      "pair_metrics": {
+        "exact_count": 125,
+        "f1": 0.904465879730429,
+        "fn": 3730,
+        "fp": 1791,
+        "precision": 0.9568614752171237,
+        "recall": 0.8877172168718639,
+        "set_size": 162.08333333333334,
+        "tp": 31274
+      },
+      "query_count": 204,
+      "separation_cases": {
+        "empty_truth": 0,
+        "empty_universe": 0,
+        "full_truth": 0,
+        "mixed": 204
+      }
+    },
+    "TYPE_single": {
+      "counts": {
+        "boundary_tie": 0,
+        "direct_exact": 88,
+        "oracle_top_k_exact": 134,
+        "oracle_top_k_gained_exact": 10,
+        "oracle_top_k_lost_exact": 12,
+        "pair_exact": 136,
+        "separable_with_wrong_zero_threshold": 46,
+        "source_union_lacks_truth": 0,
+        "strict_rank_overlap": 19,
+        "strict_separable": 134
+      },
+      "cross_tab": [
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": false,
+          "query_count": 7,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 7,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": true,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 3,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": true,
+          "query_count": 12,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 39,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": true,
+          "oracle_top_k_exact": true,
+          "pair_exact": true,
+          "query_count": 85,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        }
+      ],
+      "direct_metrics": {
+        "exact_count": 88,
+        "f1": 0.9926998601668797,
+        "fn": 11,
+        "fp": 151,
+        "precision": 0.986998648130756,
+        "recall": 0.998866997535592,
+        "set_size": 100.26797385620915,
+        "tp": 15190
+      },
+      "oracle_top_k_metrics": {
+        "exact_count": 134,
+        "f1": 0.9963652835327509,
+        "fn": 35,
+        "fp": 35,
+        "precision": 0.9963652835327509,
+        "recall": 0.9963652835327509,
+        "set_size": 99.3529411764706,
+        "tp": 15166
+      },
+      "pair_metrics": {
+        "exact_count": 136,
+        "f1": 0.9897378918854483,
+        "fn": 15,
+        "fp": 267,
+        "precision": 0.9857980584687326,
+        "recall": 0.9985928358722027,
+        "set_size": 101.0,
+        "tp": 15186
+      },
+      "query_count": 153,
+      "separation_cases": {
+        "empty_truth": 0,
+        "empty_universe": 0,
+        "full_truth": 0,
+        "mixed": 153
+      }
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\config.yaml": "06b4eb9e3c74c9dc998cfd7e18af0a7a71d60f0340f2093b2be62297578fcf3a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\data\\pokemon_v1.yaml": "b524769d5a0fd760b06624a5248eac9aaf72eaafe0790e0f39fea1729fbd3d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\eval\\ranking.yaml": "ad2c15c5dc0f3caa91781eddc0a39379161fdd0151dc8845cce97d43fc8401d1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\checkpointing_lab.yaml": "0d793e4255f9b96d37195afe04f4887ca23ea58ac44bfc1bc50c7dc2a55a0f73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\continuation_set_lab.yaml": "774e9627619b351347be38a2d80a6ff15e0333461c0f7f522d0f75c011486ee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\first_target_lab.yaml": "6cb4f76534346c267881e72bf27f594c5b2f332bd189cd38be00de923de12326",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\moe_lab.yaml": "1749b2d19c87333cd8e01307eeb0430031800111541d5bb2534c116e3fa0ecfa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\national_dex_v1.yaml": "568e9d883c7c2205c7534076d3eb79d8ca01afd9350a73e7d2655f3c01245c9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\prompt_set_lab.yaml": "822294ca346705510203582677cc5b3bb3ab40f8698c55f6bca117132a816b27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\symmetric_relation_lab.yaml": "6eeef56cdf8ffb4a838b2b430a0f6e03ebb17190650ede501a6db4f8707e7092",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiment\\tiny_smoke.yaml": "e801e5405db9c072a4d2668579d3c861eb44bbcc2d1ddb0f395a604ba35714b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\model\\overkill.yaml": "6e7b327c492a36c82edaf47781ed4ae6d2c36de4f338c6be7302d6687abd7ee5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\model\\tiny_decoder.yaml": "cb743d984a1cdca098cb0a174cdd2e16488be154cc594da5816dde143c32b240",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\protocol\\pokemon_v1.yaml": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\serve\\local.yaml": "816b6b05e326b678494386d9d41e1cbc4ea3930d4d421ce319ea2490934132f2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\train\\local_cuda.yaml": "814ceb8df66d50f5bcd8ac3e78cd1fcc695cf9c2133131b767d94212a7510141",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\manifests\\pokemon_v1_f1541479_20260924.json": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\sqlite\\pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-24-direct-membership-plan.md": "4004639897b88d54090ce94bfecf26adf5b2a75686be4b8cdf97da2155d19da0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-24-first-choice-paths-plan.md": "795d29cbf4edb1ec51ee6fcc8dba5ba37697e651f84691edfd3d2f4a73500a35",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-24-pair-union-plan.md": "36785cbec7cf9a6be08e35bcd141ef7d9738475194ca9a1bf2efbe89691f177d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-24-set-reranking-plan.md": "63332bdeb99e9a882478dc0af5eb4d186fb59d222587e474a2c444d4726aa76c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-membership-separability-plan.md": "b189638ba7c89e380934a0239537fd8a8f6a4f34f68058c619fe86fa5e7bca87",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\pyproject.toml": "30bfe2dae495c9641b6d38221948d30925986a5fcfee91b7ff09f0a8b65037e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\candidate-1729.json": "1ca663ec2a11fb7eefc373d60e4b6e6385f7800d3ef286c4f11f108827d1c979",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\candidate-1730.json": "a38487d3e2061631c876bcec12881e1a921700c98e227a30a0683e416a75152e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\candidate-1731.json": "d190290b5971617bf57672c804e87b94daf0c44baedb0798a23f2b691b81712d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\control-1729.json": "6c1202784ada3135fab960755c085d11e494ead2686f098a50789c2d7f1275d0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\control-1730.json": "e6da481b443b5f67052675be2ef48ca8fc4fe20eefb21c683cad0e50aaba1481",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\control-1731.json": "09e28be044d6c116d97e2cd909aad9e4d360b227d35bcd4a3807440bd9a3dd9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\launch.ps1": "47da9a79ebfc09226be4c9618e1aa451a42bed9225cef20abe6d86cfb7873eef",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\summary.helpers.py": "03331edf5294975bd9b4691936314a180af9ed7753b08cd8f9d86eb8be626f42",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\summary.json": "558d18391131333461efee09c3045848a8ffbca7a6a5e4b3d436ac7d49fbf819",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\summary.script.py": "69066fbd08f569c9b3233e10ccd9bce0aeb699947a72d826cb752e8ed2d42c57",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\continuation-set-v1\\summary.source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\independent-audit.json": "8111692647153787e095da94c64ec497ebc41537b6f6c3ea8ad1d5b046b8df42",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\independent-audit.py": "ed993baaeb19147f61a57a07c8bef3fa0d85f792bcca6f267b1986d763adcf11",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\seed-1729.json": "1225c2edc06d9162e2e240d5c38613266f846fe041a4b8fce35e76546ff9ce35",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\seed-1730.json": "4103699701ef8378ead1cf59e0dec072599a1ae81df2af134b16bbfe6f72e54c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\seed-1731.json": "e372898236964020a26866d2417c5ff9882f13eeb96f2b39c41777ef6918fc86",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\summary.json": "2cbe82aad296b6ff4a920a951de38a5999a23e0eb8507d40444254e5d404ceab",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\summary.plan.md": "4004639897b88d54090ce94bfecf26adf5b2a75686be4b8cdf97da2155d19da0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\direct-membership-v1\\summary.script.py": "4f9baef52a7f365bfafdb46041ede98cf4d04ff27c130e27c053bb4726f4e4c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\independent-audit.json": "e45dcfc7c2709ffa07bf8a719038bcabce812b8daefb62191b7caf0f01e91e48",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\independent-audit.py": "3e8492ff6dbcfa6d90014b02d708b3e05540d06a8e47f908c1f74bbc1e59214a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\seed-1729.json": "3ebf9fed1efefa8a27b1d3c62dde6458d61883e43a1e31d4eb58fb082b43e626",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\seed-1730.json": "9c519bcde08554b68e76b482f167d9b097ae8f96be99926656098e1d1bae5046",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\seed-1731.json": "2ad3a33cdd021705182ad20da9f58905ca3c528e71e4a9548d0c2df2adc5ee2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.helper-analyze_type_coverage.py": "03331edf5294975bd9b4691936314a180af9ed7753b08cd8f9d86eb8be626f42",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.helper-probe_matched_prefixes.py": "8b69b3284c5c9c8c6dced5f2f49bef9190994439836ae9e1f1ecccc5bb2f2838",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.helper-summarize_continuation_campaign.py": "6041eb127f62403717ddcfba528c5c02dbd7fd96255d1d0b944c63276ff65b8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.json": "7b9db0b137d53ce2c350932aec61b1a8e94295f9affbae16aa55cc52f659fa8a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.plan.md": "795d29cbf4edb1ec51ee6fcc8dba5ba37697e651f84691edfd3d2f4a73500a35",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.script.py": "a11594a6fdb950a16ffbd065eb292c42e4323112024e3067ae96c56124a28ffe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\first-choice-paths-v1\\summary.source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\seed-1729.json": "81d43a168eaeb72ddf51b5cc986d23da0ee57e3474a16fdc138832a4f6b95cb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\seed-1730.json": "b9aff369d671eec155e4e9fd752c0e7437c402b2585f6df9d39b0fc380bb5778",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\seed-1731.json": "c76fe77a8e87558a2813e14ee5d593e8f0d3fe052522bf59785e78a1eaf781ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\summary.helper-plan.md": "4004639897b88d54090ce94bfecf26adf5b2a75686be4b8cdf97da2155d19da0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\summary.helper.py": "4f9baef52a7f365bfafdb46041ede98cf4d04ff27c130e27c053bb4726f4e4c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\summary.json": "01188e47cf407f90da7eb705fc40c0865a7678c31cbecf592f18723ac42dc6fc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\summary.plan.md": "b189638ba7c89e380934a0239537fd8a8f6a4f34f68058c619fe86fa5e7bca87",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\membership-separability-v1\\summary.script.py": "f8ec5fffcdfd739b56c7eb5b93467b4922d1a20a4f7eb3ed4ad0b9cac91b78ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-error-diagnosis-v1\\diagnose.py": "249a770852c28a0f0b43e96e0809fef26d747cf25f39ebb5fff87a22016bb8e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-error-diagnosis-v1\\independent-audit.json": "1639c4b6fd2a45600436fbbd4d9a566e43be9016ed4e618750604c3315b7f895",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-error-diagnosis-v1\\independent-audit.py": "e386237ae50b80df6223080f20abf95859b8a1ad03d28ceb9787c84373bb3e80",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-error-diagnosis-v1\\summary.json": "f5c826295bfc30466dc435c5a995134fe198686f69f2890cac2e3f2435053523",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\independent-audit.json": "13d9b88135eb52c768932e213cc475ac5994636a7fc228b1a7b2ad8ab538a057",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\independent-audit.py": "8fa4a7b273a5fa43289318242147b5cfd5a69e6b681317120740e4fd0fd8970e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.helper.py": "80d0a842d55d8f9f26e5d78a912e998fa9505b2f1beb1e104794bf162cfa2039",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.json": "4e4c46d4ebc366e02aa04cc3abda1a65cc08cec5463453ba97e25b4bc3f53992",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.plan.md": "36785cbec7cf9a6be08e35bcd141ef7d9738475194ca9a1bf2efbe89691f177d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.script.py": "334f8784c1e7488ceb23a1df8524fccb93ac94c49f3d48b17e17961726f90eed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\summary.source.zip": "e66ae65f1156f697eeb06352c360e87bf3974a70575fe7bce6b5ac016c0f070c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-candidate-coverage-v1\\diagnose.py": "12f8d7853adadbbe087114f5099fa2b3c7c8add24512a1561ffcf2bb08964ef7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-candidate-coverage-v1\\summary.json": "67974a44184a48ecb67b62bbb5dab4c9f3ac05a2b30e4858fee771a767ea0dc4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-integration-v1\\independent-audit.json": "96cce95af7cfc5001a1b94ed5df34d30eeb729ae04bd7c2141cba53b47e1c3ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-integration-v1\\summary.configs.zip": "5c71d2b5fba701564484ee32cf44bf17bdf4d567c5e548775afa0ae5c2ae03a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-integration-v1\\summary.json": "780f2e219d55164acefaa3b29a6b25e803154baa057d64a5002f05733a4d99de",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-integration-v1\\summary.source.zip": "e66ae65f1156f697eeb06352c360e87bf3974a70575fe7bce6b5ac016c0f070c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\independent-audit.json": "22d55b7b58b988d53e78ef4f0bf167f24a2b52e2a27d3f53b603dd00fbeeb2aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\independent-audit.py": "0610f1a27c0fa70d866fc8c28577d13d38660d8215a62edc278bd9bdd23f6ab4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\seed-1729.json": "b9f89fd87bb2b45161c888d8d7b6a0e6757063ef5dd21642fd58349691f4527c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\seed-1730.json": "7e937892938ea54d342c20f0fcf06c5105f7106c8144df98f7ac086fff2c5533",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\seed-1731.json": "6428cfd97c0008af55c68c1e84324f99dd8ffa7c9d32b3147aeb3321a3a9f7fe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.helper-analyze_type_coverage.py": "03331edf5294975bd9b4691936314a180af9ed7753b08cd8f9d86eb8be626f42",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.helper-probe_matched_prefixes.py": "8b69b3284c5c9c8c6dced5f2f49bef9190994439836ae9e1f1ecccc5bb2f2838",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.helper-summarize_continuation_campaign.py": "6041eb127f62403717ddcfba528c5c02dbd7fd96255d1d0b944c63276ff65b8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.json": "c515fae06f7db1810e8697badf59d53ffb41675cbb8fc543d1a14feee7252c5c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.plan.md": "63332bdeb99e9a882478dc0af5eb4d186fb59d222587e474a2c444d4726aa76c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.script.py": "6fff6589ba12e1070656d5af7f56c36e5db5dfb40c3d10d924ee6326666c1525",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\set-reranking-v1\\summary.source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\training-result.json": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\training-result.json": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1729_v1\\checkpoint-final.pt": "c26a0699b6d5799c9a799c06306f00de38b4e418569a0f5df787f313d1af3f48",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1729_v1\\checkpoint-final.pt.json": "f8e20a181a05cd6caf398c377a7545afb7f812e927fec2d1601253c13dcb098c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1729_v1\\run.json": "340982e270d14f9a012269dc7898c5ece20e0577e3dace4a56bed84fb341bfce",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1729_v1\\training-result.json": "7902484b4f97b1fcea1c3a1b9da56d35cd0f46b12d61802645dc956d598daedf",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1730_v1\\checkpoint-final.pt": "da06667c3f8ee6cef19af5a6df581b0ea1aecf01732e046ed7ff52a9a5dc444f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1730_v1\\checkpoint-final.pt.json": "241929d6727ba5c6590873bbf3f0304b44a31fa5a021a5e0bc797616b83359cb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1730_v1\\run.json": "c2356d01d49cc1084d9863306a4af79112de0ddc105480ec6be84424f82654a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1730_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1730_v1\\training-result.json": "2ee3d61af321c05d23f0f2ccef40d6a5c45cbb4e70b5bef68caa8706247f4ff5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1731_v1\\checkpoint-final.pt": "f79391b82f4d68e9ca5c44b392d860e36c2d482f1914fb167b97c805effcba32",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1731_v1\\checkpoint-final.pt.json": "1b3f1feda5d567bb7eef997abf0026c16260527629fdeb265166467e076382e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1731_v1\\run.json": "78e21f310118b0b102603d493c7bb07b407a619b6788aa16216fa76b6488a76a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1731_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_set_s1731_v1\\training-result.json": "3d95797dd85f544bd957f1a5368f86a2bab36566e853db60aa9742322f8988d0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\analyze_type_coverage.py": "03331edf5294975bd9b4691936314a180af9ed7753b08cd8f9d86eb8be626f42",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_membership_separability.py": "f8ec5fffcdfd739b56c7eb5b93467b4922d1a20a4f7eb3ed4ad0b9cac91b78ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_direct_membership.py": "4f9baef52a7f365bfafdb46041ede98cf4d04ff27c130e27c053bb4726f4e4c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_pair_unions.py": "334f8784c1e7488ceb23a1df8524fccb93ac94c49f3d48b17e17961726f90eed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\explore_first_choices.py": "a11594a6fdb950a16ffbd065eb292c42e4323112024e3067ae96c56124a28ffe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\probe_matched_prefixes.py": "8b69b3284c5c9c8c6dced5f2f49bef9190994439836ae9e1f1ecccc5bb2f2838",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\rerank_candidate_sets.py": "6fff6589ba12e1070656d5af7f56c36e5db5dfb40c3d10d924ee6326666c1525",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\summarize_continuation_campaign.py": "6041eb127f62403717ddcfba528c5c02dbd7fd96255d1d0b944c63276ff65b8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\verify_set_reranking_integration.py": "80d0a842d55d8f9f26e5d78a912e998fa9505b2f1beb1e104794bf162cfa2039",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\__init__.py": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\__init__.py": "e2fc4f1a65963ac4a3cfbb63bbd80a811af5a3f7dbba51e0b9bd3e9c8457608a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\complex.py": "a23c4b179a92238d49fa48c4c4c6de466ab214bef91c3b438e4d08db7aa4f0df",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\oracle.py": "04bf088092dbe5c79f37b8613004ea2d0c3c25aeaf1a33b98cd09a576342a036",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\baselines\\popularity.py": "29aa93558c9b0595cd643fbb773f6aed1e373102855ba0dcc3a72da9886097ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\cli.py": "6fd5057947fa8c7f40473c287d2ec05d65c09408eaf6e94ab921cd2f0d29f478",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\config.py": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\configuration.py": "6577b86d8403b4c628546bbc80dfd94b63c818c80e482867ae4ff99e73882d1e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\__init__.py": "d84f2234bb4534acfd649f79e0c18286d71a8cea645515c2058e4db7c7c9df2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\compiler.py": "8e5c0f76860d0677e02c55ba023c7523673e3185387ab49485826c795de0cfd0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\snapshot.py": "ac61c110c0f1294cd1fa79ac966d56f8bb34c062ce5f6958dbf4fad18faacd51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\corpus\\validation.py": "38c1ecb76b55f3b7a774542551566261ec36b93750b49cef6d71af7adef6d912",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\__init__.py": "fb115cad4ab3bad67743b2d0187c741656c083e20a7a17b63dc1847c63271112",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\generation.py": "e38cfaba143643ad0b7339fa31a94a19b0cf3110893c54e45f9f8870cd3f7c37",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\plm.py": "d3c81820f8c61ade8f52fcf1c5c3950c8fb6a0717f7a3a52cbc274743e317a66",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\ranking.py": "83ee403c8b53d606199bea72bc83a06f4f5f116577d6da5662839a135e9eb693",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\set_composition.py": "265c8719633b21539d1eca1e693968fdb8a40c160fc64416482d80d268ef7b69",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\evaluation\\split.py": "9ad16d5b297c1dd7055b1a767c213162823f1db9be9b486e9c8c59636b67f3b1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\__init__.py": "a5203b2b72b0645b66bebda3e43fd92afaa19789813d98e06db3e76e7a26b45a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\comparison.py": "10281960c9c9617ccad814edd292d465ea69314b405bd3a19648cdb5741906e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\evidence.py": "ccb31095f096b4c81be2dcab9841f9f99d6d56b02129be9ab57b6d8f735b9509",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\firewall.py": "e2c71168741cb0c0deb514204c28f8a67300540cb65fed8b23ff6f7ccc31f3ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\identity.py": "ef3c8451d213b19981a89561d963abc75a4017eff5fc08b96806ed109a575e34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\lineage.py": "4286d7913b27a6a634786ae9db36ebc5637bcfd8e41687492272b4d0c6f250fa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\measurement.py": "22a94d5f6603eca2c4a131e7e8f3ebe8a36fbf138389385ddb55e417c2b247ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\experimentation\\provenance.py": "a71ae38e17e211c227b37dedf42b7d73c0162c42ec09bdc86ef6e40293a11437",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\__init__.py": "d541af95ab44a4c524f7289c18f7a22795d2e58fb4a5a3848a2e9310eab3dd83",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\importers.py": "bd9c8f1159aa7b0f65d015215679df63f26baef2e0e4dab2799e1a959f2ab701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\repository.py": "f4edca845bf44dba03194a0876d6e6518b8d992202e806a5fbf9d0fea3e9046c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\graph\\schema.py": "53924883936b701b930a27a618a35e09855ea16412c5c186e7e34351451c91d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\labeling\\__init__.py": "3eb12e9fbf63f3167229532ecc96b38905724008d16351f95fe72beba1c44837",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\labeling\\web.py": "44bea94ec405e6328c1866bc21afcc75e71becdb958756df607d68e95a340cc2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\__init__.py": "dbd7a7c96b70bdb13c12c9ed89ef3a8b6c16ab2e7af53c39d7582477046e1698",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\architecture.py": "5e14377afad2fefae1fccc6ece9c379a3bae1853b3d40c2b39b48554755ec5f8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\interfaces.py": "a6ba06429e244bfce78ef7c372a39fce8c44b5335296bbbd4557fdf31cc16b9d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\layers.py": "791adff33e330136f3a7fccbc6a0bebf6737c817e0ed920202fa4a48de7e59da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\legal_output.py": "ade361ca7531d79c328d34ba510ddefc4ebf27309d342133b387b7a70d5c55aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\model\\synthetic.py": "9638a8671cd07ec5bb9fe90bdd2161a9a8276665f1a46ac027000a8a277d78b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\observability\\__init__.py": "81ab11abbef8b39b44011e6c0948bf3f270d971244806836db3fd76f22b0913a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\__init__.py": "e90fe7a8e44bf8307431d71951b20db24a3958001f8383b4fe50506f8e1f30e7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\config.py": "f3d2732694a472db2b624caba8993385b6cd0f35fc683ace42d6de5e76fdbd59",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\protocol\\tokenizer.py": "d38c166afa0a5dc0f170687ca10ec2f1e6bb9bc5c66e7003a6ad9fcd98b6c61f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\reproducibility.py": "201ea15a0a5f69c1f3f966fcae3cbe202fda0bdc4814e8aa8b995a84ac8762b7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\__init__.py": "af77c53d2e18dd9136fc4c604ce7e999b69a75ca5157ac6a26c227c8c00c75f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\generation.py": "3706eb262d016ae72783530628948b3bdf25a7571ad03e7859db15adcf70793e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\generation_batch.py": "c397b3a045d052e4f2a4d96976a513e54cd1e43ee964fa9dc04fe9729adf3d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\guidance.py": "64da07bf0e351ff4566dce4e5b9881352c3ccfebf2e429743b1643bc23743827",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\hydration.py": "c3118da146b573ae2d78177c442bc192c71cc321955963413ed3df08b299cf25",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\native.py": "0c456bc6c246989af77e85e78a962143f9bc06312533ddd3d74ae460f59a2a8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\parser.py": "d370557359702d3456e560f4cb58a47a05d94200826bcc6477d03dd4d9331072",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\postprocess.py": "a420ed8b3fa14c507c99e9168153f70ada75eba2aac9ce3a8415befed9907727",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\runtime.py": "7884510497b015b5fa2e1494c8ea492415bb38d1e16154e96b2e2f257d382468",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\set_composition.py": "0f9e7907aa95df5a60e492f0f220bf8ef297bec9c35382d84ae7f6314ebfe2a9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\set_reranking.py": "b5fc41463695c6758ff98471e6c1af5a2cb5ddfb7ca9a85a545b6616908629da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\serving\\web.py": "17fcaddf1583c53109761a91a6a87559fede00ec27698a10a5e6f96ed189818d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\__init__.py": "0caaf782b8b1a92d3907f6da86cc6ecfef1c2903c59e13f09d2cab5b7830e7f9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\checkpoint.py": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\data.py": "cd8767a7b6e4cf7b9af6546b689151928cc1c329b9c12ef06014e58e9e732d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\optim.py": "92cad98334129c39c818a02e4bbd5791b2e7efc2d56804011f4d3aeb7b596c18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\resume.py": "f6a800ae9a56eb7732a89b941ba1d5346e601c3c0a9a14c8bedeff4b6dc96bf4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\runner.py": "8102f84b4714aa593f30b3e2b3636c3a213c44dfaa33d1eda677a18deaccb95a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\src\\plm\\training\\trainer.py": "0c45be0400cc8d3b6cf0497ad393f7934fbe1edeeca7cdcbf25680c91d05b196",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\uv.lock": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0"
+  },
+  "limitations": [
+    "Authenticated saved batch-eight FP32 logits; no independent neural regeneration.",
+    "Expected labels and cardinalities are privileged diagnostic information.",
+    "Exact-answer attainability applies only to the declared rule families; top-K precision/recall/F1 are not threshold-family upper bounds.",
+    "Three training seeds repeat the same 222 validation queries.",
+    "No threshold fitting, alternate policy selection, protected test, or model/application promotion."
+  ],
+  "pair_failures": {
+    "groups": {
+      "COLOR": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 0,
+          "oracle_top_k_exact": 1,
+          "oracle_top_k_gained_exact": 1,
+          "oracle_top_k_lost_exact": 0,
+          "pair_exact": 0,
+          "separable_with_wrong_zero_threshold": 1,
+          "source_union_lacks_truth": 1,
+          "strict_rank_overlap": 0,
+          "strict_separable": 1
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 0,
+          "f1": 0.9906542056074766,
+          "fn": 0,
+          "fp": 2,
+          "precision": 0.9814814814814815,
+          "recall": 1.0,
+          "set_size": 108.0,
+          "tp": 106
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 1,
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "set_size": 106.0,
+          "tp": 106
+        },
+        "pair_metrics": {
+          "exact_count": 0,
+          "f1": 0.011834319526627219,
+          "fn": 105,
+          "fp": 62,
+          "precision": 0.015873015873015872,
+          "recall": 0.009433962264150943,
+          "set_size": 63.0,
+          "tp": 1
+        },
+        "query_count": 1,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 1
+        }
+      },
+      "TYPE_dual": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 0,
+          "oracle_top_k_exact": 5,
+          "oracle_top_k_gained_exact": 5,
+          "oracle_top_k_lost_exact": 0,
+          "pair_exact": 0,
+          "separable_with_wrong_zero_threshold": 5,
+          "source_union_lacks_truth": 52,
+          "strict_rank_overlap": 74,
+          "strict_separable": 5
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 26,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 48,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 4,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 0,
+          "f1": 0.9615929587625246,
+          "fn": 139,
+          "fp": 823,
+          "precision": 0.9376148613280925,
+          "recall": 0.9885531742174263,
+          "set_size": 173.78481012658227,
+          "tp": 12906
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 5,
+          "f1": 0.9714683990695157,
+          "fn": 336,
+          "fp": 336,
+          "precision": 0.9714683990695157,
+          "recall": 0.9714683990695157,
+          "set_size": 165.126582278481,
+          "tp": 12709
+        },
+        "pair_metrics": {
+          "exact_count": 0,
+          "f1": 0.7533042970254114,
+          "fn": 3730,
+          "fp": 1791,
+          "precision": 0.8886043157505473,
+          "recall": 0.7100545853400029,
+          "set_size": 140.58227848101265,
+          "tp": 9315
+        },
+        "query_count": 79,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 79
+        }
+      },
+      "TYPE_single": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 3,
+          "oracle_top_k_exact": 10,
+          "oracle_top_k_gained_exact": 10,
+          "oracle_top_k_lost_exact": 0,
+          "pair_exact": 0,
+          "separable_with_wrong_zero_threshold": 7,
+          "source_union_lacks_truth": 0,
+          "strict_rank_overlap": 7,
+          "strict_separable": 10
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 7,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 7,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 3,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 3,
+          "f1": 0.9767376513185717,
+          "fn": 4,
+          "fp": 53,
+          "precision": 0.9590233802645658,
+          "recall": 0.9965397923875433,
+          "set_size": 77.6470588235294,
+          "tp": 1267
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 10,
+          "f1": 0.9866857673398938,
+          "fn": 15,
+          "fp": 15,
+          "precision": 0.9866857673398938,
+          "recall": 0.9866857673398938,
+          "set_size": 74.76470588235294,
+          "tp": 1256
+        },
+        "pair_metrics": {
+          "exact_count": 0,
+          "f1": 0.9076410269690348,
+          "fn": 15,
+          "fp": 267,
+          "precision": 0.8721825262185933,
+          "recall": 0.9873355228498241,
+          "set_size": 89.58823529411765,
+          "tp": 1256
+        },
+        "query_count": 17,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 17
+        }
+      }
+    },
+    "totals": {
+      "counts": {
+        "boundary_tie": 0,
+        "direct_exact": 3,
+        "oracle_top_k_exact": 16,
+        "oracle_top_k_gained_exact": 16,
+        "oracle_top_k_lost_exact": 0,
+        "pair_exact": 0,
+        "separable_with_wrong_zero_threshold": 13,
+        "source_union_lacks_truth": 53,
+        "strict_rank_overlap": 81,
+        "strict_separable": 16
+      },
+      "cross_tab": [
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": false,
+          "query_count": 33,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": false,
+          "pair_exact": false,
+          "query_count": 48,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": true,
+          "strict_rank_overlap": true,
+          "strict_separable": false
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 8,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": false,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 5,
+          "separable_with_wrong_zero_threshold": true,
+          "source_union_lacks_truth": true,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        },
+        {
+          "boundary_tie": false,
+          "direct_exact": true,
+          "oracle_top_k_exact": true,
+          "pair_exact": false,
+          "query_count": 3,
+          "separable_with_wrong_zero_threshold": false,
+          "source_union_lacks_truth": false,
+          "strict_rank_overlap": false,
+          "strict_separable": true
+        }
+      ],
+      "direct_metrics": {
+        "exact_count": 3,
+        "f1": 0.9645467837140479,
+        "fn": 143,
+        "fp": 878,
+        "precision": 0.9418191029989527,
+        "recall": 0.9900708993171642,
+        "set_size": 156.2577319587629,
+        "tp": 14279
+      },
+      "oracle_top_k_metrics": {
+        "exact_count": 16,
+        "f1": 0.9744295007347415,
+        "fn": 351,
+        "fp": 351,
+        "precision": 0.9744295007347415,
+        "recall": 0.9744295007347415,
+        "set_size": 148.68041237113403,
+        "tp": 14071
+      },
+      "pair_metrics": {
+        "exact_count": 0,
+        "f1": 0.7727089818866775,
+        "fn": 3850,
+        "fp": 2120,
+        "precision": 0.8767290402668282,
+        "recall": 0.751427320541973,
+        "set_size": 130.84536082474227,
+        "tp": 10572
+      },
+      "query_count": 97,
+      "separation_cases": {
+        "empty_truth": 0,
+        "empty_universe": 0,
+        "full_truth": 0,
+        "mixed": 97
+      }
+    }
+  },
+  "plan_sha256": "b189638ba7c89e380934a0239537fd8a8f6a4f34f68058c619fe86fa5e7bca87",
+  "query_count": 666,
+  "runs": [
+    {
+      "groups": {
+        "COLOR": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 75,
+            "oracle_top_k_exact": 102,
+            "oracle_top_k_gained_exact": 1,
+            "oracle_top_k_lost_exact": 1,
+            "pair_exact": 102,
+            "separable_with_wrong_zero_threshold": 27,
+            "source_union_lacks_truth": 1,
+            "strict_rank_overlap": 1,
+            "strict_separable": 102
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 26,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 75,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 75,
+            "f1": 0.9977532345677808,
+            "fn": 0,
+            "fp": 43,
+            "precision": 0.9955625230283973,
+            "recall": 1.0,
+            "set_size": 114.0873786407767,
+            "tp": 11708
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 102,
+            "f1": 0.9998884053119071,
+            "fn": 1,
+            "fp": 1,
+            "precision": 0.9998884053119071,
+            "recall": 0.9998884053119071,
+            "set_size": 113.66990291262135,
+            "tp": 11707
+          },
+          "pair_metrics": {
+            "exact_count": 102,
+            "f1": 0.9904061584420061,
+            "fn": 105,
+            "fp": 62,
+            "precision": 0.9904453690861458,
+            "recall": 0.9903828540025646,
+            "set_size": 113.25242718446601,
+            "tp": 11603
+          },
+          "query_count": 103,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 103
+          }
+        },
+        "TYPE_dual": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 5,
+            "oracle_top_k_exact": 17,
+            "oracle_top_k_gained_exact": 2,
+            "oracle_top_k_lost_exact": 26,
+            "pair_exact": 41,
+            "separable_with_wrong_zero_threshold": 12,
+            "source_union_lacks_truth": 19,
+            "strict_rank_overlap": 51,
+            "strict_separable": 17
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 7,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 18,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 26,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 10,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 5,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 5,
+            "f1": 0.9766385544057118,
+            "fn": 71,
+            "fp": 430,
+            "precision": 0.9617566332610925,
+            "recall": 0.9931878215475363,
+            "set_size": 176.86764705882354,
+            "tp": 11597
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 17,
+            "f1": 0.98379791653323,
+            "fn": 166,
+            "fp": 166,
+            "precision": 0.98379791653323,
+            "recall": 0.98379791653323,
+            "set_size": 171.58823529411765,
+            "tp": 11502
+          },
+          "pair_metrics": {
+            "exact_count": 41,
+            "f1": 0.8942901951683502,
+            "fn": 1476,
+            "fp": 559,
+            "precision": 0.957817709318077,
+            "recall": 0.8700569666950081,
+            "set_size": 158.10294117647058,
+            "tp": 10192
+          },
+          "query_count": 68,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 68
+          }
+        },
+        "TYPE_single": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 32,
+            "oracle_top_k_exact": 46,
+            "oracle_top_k_gained_exact": 2,
+            "oracle_top_k_lost_exact": 4,
+            "pair_exact": 48,
+            "separable_with_wrong_zero_threshold": 14,
+            "source_union_lacks_truth": 0,
+            "strict_rank_overlap": 5,
+            "strict_separable": 46
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 4,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 13,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 31,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 32,
+            "f1": 0.9937826185197096,
+            "fn": 5,
+            "fp": 39,
+            "precision": 0.9896858815506382,
+            "recall": 0.9982818658168919,
+            "set_size": 100.01960784313725,
+            "tp": 5062
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 46,
+            "f1": 0.9969923118396885,
+            "fn": 9,
+            "fp": 9,
+            "precision": 0.9969923118396885,
+            "recall": 0.9969923118396885,
+            "set_size": 99.3529411764706,
+            "tp": 5058
+          },
+          "pair_metrics": {
+            "exact_count": 48,
+            "f1": 0.9990050569513934,
+            "fn": 3,
+            "fp": 5,
+            "precision": 0.9987430869783811,
+            "recall": 0.9992958489498283,
+            "set_size": 99.3921568627451,
+            "tp": 5064
+          },
+          "query_count": 51,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 51
+          }
+        }
+      },
+      "pair_failures": {
+        "groups": {
+          "COLOR": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 1,
+              "oracle_top_k_gained_exact": 1,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 1,
+              "source_union_lacks_truth": 1,
+              "strict_rank_overlap": 0,
+              "strict_separable": 1
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": 0.9906542056074766,
+              "fn": 0,
+              "fp": 2,
+              "precision": 0.9814814814814815,
+              "recall": 1.0,
+              "set_size": 108.0,
+              "tp": 106
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 1,
+              "f1": 1.0,
+              "fn": 0,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "set_size": 106.0,
+              "tp": 106
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.011834319526627219,
+              "fn": 105,
+              "fp": 62,
+              "precision": 0.015873015873015872,
+              "recall": 0.009433962264150943,
+              "set_size": 63.0,
+              "tp": 1
+            },
+            "query_count": 1,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 1
+            }
+          },
+          "TYPE_dual": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 2,
+              "oracle_top_k_gained_exact": 2,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 2,
+              "source_union_lacks_truth": 19,
+              "strict_rank_overlap": 25,
+              "strict_separable": 2
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 7,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 18,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": 0.9632410395670615,
+              "fn": 45,
+              "fp": 271,
+              "precision": 0.9409036693198217,
+              "recall": 0.9889311445535293,
+              "set_size": 173.40740740740742,
+              "tp": 4411
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 2,
+              "f1": 0.9745582211807899,
+              "fn": 103,
+              "fp": 103,
+              "precision": 0.9745582211807899,
+              "recall": 0.9745582211807899,
+              "set_size": 165.03703703703704,
+              "tp": 4353
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.7337678989425116,
+              "fn": 1476,
+              "fp": 559,
+              "precision": 0.8937631197640454,
+              "recall": 0.6727360642689093,
+              "set_size": 131.07407407407408,
+              "tp": 2980
+            },
+            "query_count": 27,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 27
+            }
+          },
+          "TYPE_single": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 1,
+              "oracle_top_k_exact": 2,
+              "oracle_top_k_gained_exact": 2,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 1,
+              "source_union_lacks_truth": 0,
+              "strict_rank_overlap": 1,
+              "strict_separable": 2
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": true,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 1,
+              "f1": 0.9666517524235645,
+              "fn": 0,
+              "fp": 15,
+              "precision": 0.9386449864498645,
+              "recall": 1.0,
+              "set_size": 95.66666666666667,
+              "tp": 272
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 2,
+              "f1": 0.9852941176470589,
+              "fn": 3,
+              "fp": 3,
+              "precision": 0.9852941176470589,
+              "recall": 0.9852941176470589,
+              "set_size": 90.66666666666667,
+              "tp": 269
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.9830859681736874,
+              "fn": 3,
+              "fp": 5,
+              "precision": 0.9786324786324787,
+              "recall": 0.9880294321470792,
+              "set_size": 91.33333333333333,
+              "tp": 269
+            },
+            "query_count": 3,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 3
+            }
+          }
+        },
+        "totals": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 1,
+            "oracle_top_k_exact": 5,
+            "oracle_top_k_gained_exact": 5,
+            "oracle_top_k_lost_exact": 0,
+            "pair_exact": 0,
+            "separable_with_wrong_zero_threshold": 4,
+            "source_union_lacks_truth": 20,
+            "strict_rank_overlap": 26,
+            "strict_separable": 5
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 8,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 18,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 2,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 2,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 1,
+            "f1": 0.9644554042318978,
+            "fn": 45,
+            "fp": 288,
+            "precision": 0.9419940487892342,
+            "recall": 0.9903593839659771,
+            "set_size": 163.7741935483871,
+            "tp": 4789
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 5,
+            "f1": 0.9764178814458871,
+            "fn": 106,
+            "fp": 106,
+            "precision": 0.9764178814458871,
+            "recall": 0.9764178814458871,
+            "set_size": 155.93548387096774,
+            "tp": 4728
+          },
+          "pair_metrics": {
+            "exact_count": 0,
+            "f1": 0.734607274048242,
+            "fn": 1584,
+            "fp": 626,
+            "precision": 0.8736572479161187,
+            "recall": 0.6818514836763208,
+            "set_size": 125.03225806451613,
+            "tp": 3250
+          },
+          "query_count": 31,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 31
+          }
+        }
+      },
+      "query_count": 222,
+      "seed": 1729,
+      "totals": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 112,
+          "oracle_top_k_exact": 165,
+          "oracle_top_k_gained_exact": 5,
+          "oracle_top_k_lost_exact": 31,
+          "pair_exact": 191,
+          "separable_with_wrong_zero_threshold": 53,
+          "source_union_lacks_truth": 20,
+          "strict_rank_overlap": 57,
+          "strict_separable": 165
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 8,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 18,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 2,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 2,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": true,
+            "query_count": 31,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 49,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 111,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 112,
+          "f1": 0.9903735063269145,
+          "fn": 76,
+          "fp": 512,
+          "precision": 0.9838575265439718,
+          "recall": 0.9975186802788016,
+          "set_size": 130.0855855855856,
+          "tp": 28367
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 165,
+          "f1": 0.9942944683568027,
+          "fn": 176,
+          "fp": 176,
+          "precision": 0.9942944683568027,
+          "recall": 0.9942944683568027,
+          "set_size": 128.1216216216216,
+          "tp": 28267
+        },
+        "pair_metrics": {
+          "exact_count": 191,
+          "f1": 0.9629406553851149,
+          "fn": 1584,
+          "fp": 626,
+          "precision": 0.9823575436279265,
+          "recall": 0.9555738558286755,
+          "set_size": 123.80630630630631,
+          "tp": 26859
+        },
+        "query_count": 222,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 222
+        }
+      }
+    },
+    {
+      "groups": {
+        "COLOR": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 81,
+            "oracle_top_k_exact": 103,
+            "oracle_top_k_gained_exact": 0,
+            "oracle_top_k_lost_exact": 0,
+            "pair_exact": 103,
+            "separable_with_wrong_zero_threshold": 22,
+            "source_union_lacks_truth": 0,
+            "strict_rank_overlap": 0,
+            "strict_separable": 103
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 22,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 81,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 81,
+            "f1": 0.998465823947548,
+            "fn": 0,
+            "fp": 30,
+            "precision": 0.9969682781019737,
+            "recall": 1.0,
+            "set_size": 113.96116504854369,
+            "tp": 11708
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "set_size": 113.66990291262135,
+            "tp": 11708
+          },
+          "pair_metrics": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "set_size": 113.66990291262135,
+            "tp": 11708
+          },
+          "query_count": 103,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 103
+          }
+        },
+        "TYPE_dual": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 5,
+            "oracle_top_k_exact": 13,
+            "oracle_top_k_gained_exact": 1,
+            "oracle_top_k_lost_exact": 31,
+            "pair_exact": 43,
+            "separable_with_wrong_zero_threshold": 8,
+            "source_union_lacks_truth": 16,
+            "strict_rank_overlap": 55,
+            "strict_separable": 13
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 9,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 31,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 7,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 5,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 5,
+            "f1": 0.9763572842997441,
+            "fn": 70,
+            "fp": 436,
+            "precision": 0.9607311773933468,
+            "recall": 0.9935551607279355,
+            "set_size": 176.97058823529412,
+            "tp": 11598
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 13,
+            "f1": 0.9818080535882141,
+            "fn": 187,
+            "fp": 187,
+            "precision": 0.9818080535882141,
+            "recall": 0.9818080535882141,
+            "set_size": 171.58823529411765,
+            "tp": 11481
+          },
+          "pair_metrics": {
+            "exact_count": 43,
+            "f1": 0.9126757184950018,
+            "fn": 1042,
+            "fp": 616,
+            "precision": 0.9519813801311113,
+            "recall": 0.9019821637005241,
+            "set_size": 165.3235294117647,
+            "tp": 10626
+          },
+          "query_count": 68,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 68
+          }
+        },
+        "TYPE_single": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 30,
+            "oracle_top_k_exact": 44,
+            "oracle_top_k_gained_exact": 4,
+            "oracle_top_k_lost_exact": 6,
+            "pair_exact": 46,
+            "separable_with_wrong_zero_threshold": 14,
+            "source_union_lacks_truth": 0,
+            "strict_rank_overlap": 7,
+            "strict_separable": 44
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 3,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 6,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 11,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 29,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 30,
+            "f1": 0.9929225914243284,
+            "fn": 3,
+            "fp": 49,
+            "precision": 0.9870770756675671,
+            "recall": 0.999184178692998,
+            "set_size": 100.25490196078431,
+            "tp": 5064
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 44,
+            "f1": 0.9962421752685472,
+            "fn": 12,
+            "fp": 12,
+            "precision": 0.9962421752685472,
+            "recall": 0.9962421752685472,
+            "set_size": 99.3529411764706,
+            "tp": 5055
+          },
+          "pair_metrics": {
+            "exact_count": 46,
+            "f1": 0.9993000513622556,
+            "fn": 5,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 0.9986100358309676,
+            "set_size": 99.25490196078431,
+            "tp": 5062
+          },
+          "query_count": 51,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 51
+          }
+        }
+      },
+      "pair_failures": {
+        "groups": {
+          "COLOR": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 0,
+              "oracle_top_k_gained_exact": 0,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 0,
+              "source_union_lacks_truth": 0,
+              "strict_rank_overlap": 0,
+              "strict_separable": 0
+            },
+            "cross_tab": [],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "query_count": 0,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 0
+            }
+          },
+          "TYPE_dual": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 1,
+              "oracle_top_k_gained_exact": 1,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 1,
+              "source_union_lacks_truth": 16,
+              "strict_rank_overlap": 24,
+              "strict_separable": 1
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 9,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 15,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": 0.966128590493075,
+              "fn": 44,
+              "fp": 227,
+              "precision": 0.9454565411668686,
+              "recall": 0.9887574471228756,
+              "set_size": 173.44,
+              "tp": 4109
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 1,
+              "f1": 0.9713638448944499,
+              "fn": 108,
+              "fp": 108,
+              "precision": 0.9713638448944499,
+              "recall": 0.9713638448944499,
+              "set_size": 166.12,
+              "tp": 4045
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.762477954306405,
+              "fn": 1042,
+              "fp": 616,
+              "precision": 0.8693893539566229,
+              "recall": 0.7333914852654254,
+              "set_size": 149.08,
+              "tp": 3111
+            },
+            "query_count": 25,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 25
+            }
+          },
+          "TYPE_single": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 1,
+              "oracle_top_k_exact": 4,
+              "oracle_top_k_gained_exact": 4,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 3,
+              "source_union_lacks_truth": 0,
+              "strict_rank_overlap": 1,
+              "strict_separable": 4
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 3,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": true,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 1,
+              "f1": 0.9901775390637809,
+              "fn": 1,
+              "fp": 6,
+              "precision": 0.9835469755469756,
+              "recall": 0.9970588235294118,
+              "set_size": 71.6,
+              "tp": 352
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 4,
+              "f1": 0.9972222222222221,
+              "fn": 1,
+              "fp": 1,
+              "precision": 0.9972222222222221,
+              "recall": 0.9972222222222221,
+              "set_size": 70.6,
+              "tp": 352
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.9928605238950066,
+              "fn": 5,
+              "fp": 0,
+              "precision": 1.0,
+              "recall": 0.9858223654758707,
+              "set_size": 69.6,
+              "tp": 348
+            },
+            "query_count": 5,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 5
+            }
+          }
+        },
+        "totals": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 1,
+            "oracle_top_k_exact": 5,
+            "oracle_top_k_gained_exact": 5,
+            "oracle_top_k_lost_exact": 0,
+            "pair_exact": 0,
+            "separable_with_wrong_zero_threshold": 4,
+            "source_union_lacks_truth": 16,
+            "strict_rank_overlap": 25,
+            "strict_separable": 5
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 10,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 3,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 1,
+            "f1": 0.9701367485881927,
+            "fn": 45,
+            "fp": 233,
+            "precision": 0.9518049468968866,
+            "recall": 0.9901410098572982,
+            "set_size": 156.46666666666667,
+            "tp": 4461
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 5,
+            "f1": 0.9756735744490788,
+            "fn": 109,
+            "fp": 109,
+            "precision": 0.9756735744490788,
+            "recall": 0.9756735744490788,
+            "set_size": 150.2,
+            "tp": 4397
+          },
+          "pair_metrics": {
+            "exact_count": 0,
+            "f1": 0.8008750492378386,
+            "fn": 1047,
+            "fp": 616,
+            "precision": 0.8911577949638524,
+            "recall": 0.7754632986338329,
+            "set_size": 135.83333333333334,
+            "tp": 3459
+          },
+          "query_count": 30,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 30
+          }
+        }
+      },
+      "query_count": 222,
+      "seed": 1730,
+      "totals": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 116,
+          "oracle_top_k_exact": 160,
+          "oracle_top_k_gained_exact": 5,
+          "oracle_top_k_lost_exact": 37,
+          "pair_exact": 192,
+          "separable_with_wrong_zero_threshold": 44,
+          "source_union_lacks_truth": 16,
+          "strict_rank_overlap": 62,
+          "strict_separable": 160
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 10,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 15,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 3,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": true,
+            "query_count": 37,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 40,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 115,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 116,
+          "f1": 0.9904203935208143,
+          "fn": 73,
+          "fp": 515,
+          "precision": 0.9835963223707063,
+          "recall": 0.9978384866794707,
+          "set_size": 130.11261261261262,
+          "tp": 28370
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 160,
+          "f1": 0.9935644080301553,
+          "fn": 199,
+          "fp": 199,
+          "precision": 0.9935644080301553,
+          "recall": 0.9935644080301553,
+          "set_size": 128.1216216216216,
+          "tp": 28244
+        },
+        "pair_metrics": {
+          "exact_count": 192,
+          "f1": 0.9730912228699782,
+          "fn": 1047,
+          "fp": 616,
+          "precision": 0.9852915939140341,
+          "recall": 0.9696572025180855,
+          "set_size": 126.18018018018019,
+          "tp": 27396
+        },
+        "query_count": 222,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 222
+        }
+      }
+    },
+    {
+      "groups": {
+        "COLOR": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 82,
+            "oracle_top_k_exact": 99,
+            "oracle_top_k_gained_exact": 0,
+            "oracle_top_k_lost_exact": 4,
+            "pair_exact": 103,
+            "separable_with_wrong_zero_threshold": 17,
+            "source_union_lacks_truth": 0,
+            "strict_rank_overlap": 4,
+            "strict_separable": 99
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 4,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 17,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 82,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 82,
+            "f1": 0.9976199190580491,
+            "fn": 2,
+            "fp": 41,
+            "precision": 0.9956290166744958,
+            "recall": 0.9996708902418957,
+            "set_size": 114.04854368932038,
+            "tp": 11706
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 99,
+            "f1": 0.9994686248697274,
+            "fn": 4,
+            "fp": 4,
+            "precision": 0.9994686248697274,
+            "recall": 0.9994686248697274,
+            "set_size": 113.66990291262135,
+            "tp": 11704
+          },
+          "pair_metrics": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "set_size": 113.66990291262135,
+            "tp": 11708
+          },
+          "query_count": 103,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 103
+          }
+        },
+        "TYPE_dual": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 3,
+            "oracle_top_k_exact": 11,
+            "oracle_top_k_gained_exact": 2,
+            "oracle_top_k_lost_exact": 32,
+            "pair_exact": 41,
+            "separable_with_wrong_zero_threshold": 8,
+            "source_union_lacks_truth": 17,
+            "strict_rank_overlap": 57,
+            "strict_separable": 11
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 10,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 2,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 32,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 6,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 3,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 3,
+            "f1": 0.9707643510111226,
+            "fn": 92,
+            "fp": 542,
+            "precision": 0.9517370115433763,
+            "recall": 0.9917518285051922,
+            "set_size": 178.2058823529412,
+            "tp": 11576
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 11,
+            "f1": 0.980365548726925,
+            "fn": 206,
+            "fp": 206,
+            "precision": 0.980365548726925,
+            "recall": 0.980365548726925,
+            "set_size": 171.58823529411765,
+            "tp": 11462
+          },
+          "pair_metrics": {
+            "exact_count": 41,
+            "f1": 0.9064317255279347,
+            "fn": 1212,
+            "fp": 616,
+            "precision": 0.960785336202183,
+            "recall": 0.8911125202200594,
+            "set_size": 162.8235294117647,
+            "tp": 10456
+          },
+          "query_count": 68,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 68
+          }
+        },
+        "TYPE_single": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 26,
+            "oracle_top_k_exact": 44,
+            "oracle_top_k_gained_exact": 4,
+            "oracle_top_k_lost_exact": 2,
+            "pair_exact": 42,
+            "separable_with_wrong_zero_threshold": 18,
+            "source_union_lacks_truth": 0,
+            "strict_rank_overlap": 7,
+            "strict_separable": 44
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 5,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 3,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": true,
+              "query_count": 2,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": true,
+              "query_count": 25,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 26,
+            "f1": 0.9913943705566016,
+            "fn": 3,
+            "fp": 63,
+            "precision": 0.9842329871740626,
+            "recall": 0.9991349480968857,
+            "set_size": 100.52941176470588,
+            "tp": 5064
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 44,
+            "f1": 0.995861363490017,
+            "fn": 14,
+            "fp": 14,
+            "precision": 0.995861363490017,
+            "recall": 0.995861363490017,
+            "set_size": 99.3529411764706,
+            "tp": 5053
+          },
+          "pair_metrics": {
+            "exact_count": 42,
+            "f1": 0.9709085673426959,
+            "fn": 7,
+            "fp": 262,
+            "precision": 0.9586510884278167,
+            "recall": 0.9978726228358121,
+            "set_size": 104.3529411764706,
+            "tp": 5060
+          },
+          "query_count": 51,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 51
+          }
+        }
+      },
+      "pair_failures": {
+        "groups": {
+          "COLOR": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 0,
+              "oracle_top_k_gained_exact": 0,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 0,
+              "source_union_lacks_truth": 0,
+              "strict_rank_overlap": 0,
+              "strict_separable": 0
+            },
+            "cross_tab": [],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": null,
+              "fn": 0,
+              "fp": 0,
+              "precision": null,
+              "recall": null,
+              "set_size": null,
+              "tp": 0
+            },
+            "query_count": 0,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 0
+            }
+          },
+          "TYPE_dual": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 0,
+              "oracle_top_k_exact": 2,
+              "oracle_top_k_gained_exact": 2,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 2,
+              "source_union_lacks_truth": 17,
+              "strict_rank_overlap": 25,
+              "strict_separable": 2
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 10,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 15,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 2,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": true,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 0,
+              "f1": 0.955745218948219,
+              "fn": 50,
+              "fp": 325,
+              "precision": 0.9270652386708295,
+              "recall": 0.9879860623022039,
+              "set_size": 174.4814814814815,
+              "tp": 4386
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 2,
+              "f1": 0.9684753863795987,
+              "fn": 125,
+              "fp": 125,
+              "precision": 0.9684753863795987,
+              "recall": 0.9684753863795987,
+              "set_size": 164.2962962962963,
+              "tp": 4311
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.7643465679962801,
+              "fn": 1212,
+              "fp": 616,
+              "precision": 0.9012371430277198,
+              "recall": 0.7257648657394088,
+              "set_size": 142.22222222222223,
+              "tp": 3224
+            },
+            "query_count": 27,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 27
+            }
+          },
+          "TYPE_single": {
+            "counts": {
+              "boundary_tie": 0,
+              "direct_exact": 1,
+              "oracle_top_k_exact": 4,
+              "oracle_top_k_gained_exact": 4,
+              "oracle_top_k_lost_exact": 0,
+              "pair_exact": 0,
+              "separable_with_wrong_zero_threshold": 3,
+              "source_union_lacks_truth": 0,
+              "strict_rank_overlap": 5,
+              "strict_separable": 4
+            },
+            "cross_tab": [
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": false,
+                "pair_exact": false,
+                "query_count": 5,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": true,
+                "strict_separable": false
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": false,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 3,
+                "separable_with_wrong_zero_threshold": true,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              },
+              {
+                "boundary_tie": false,
+                "direct_exact": true,
+                "oracle_top_k_exact": true,
+                "pair_exact": false,
+                "query_count": 1,
+                "separable_with_wrong_zero_threshold": false,
+                "source_union_lacks_truth": false,
+                "strict_rank_overlap": false,
+                "strict_separable": true
+              }
+            ],
+            "direct_metrics": {
+              "exact_count": 1,
+              "f1": 0.9726330133140135,
+              "fn": 3,
+              "fp": 32,
+              "precision": 0.9521919586014607,
+              "recall": 0.9950980392156862,
+              "set_size": 75.0,
+              "tp": 643
+            },
+            "oracle_top_k_metrics": {
+              "exact_count": 4,
+              "f1": 0.9812960645251009,
+              "fn": 11,
+              "fp": 11,
+              "precision": 0.9812960645251009,
+              "recall": 0.9812960645251009,
+              "set_size": 71.77777777777777,
+              "tp": 635
+            },
+            "pair_metrics": {
+              "exact_count": 0,
+              "f1": 0.8351485482752774,
+              "fn": 7,
+              "fp": 262,
+              "precision": 0.765689501090961,
+              "recall": 0.9879448627362686,
+              "set_size": 100.11111111111111,
+              "tp": 639
+            },
+            "query_count": 9,
+            "separation_cases": {
+              "empty_truth": 0,
+              "empty_universe": 0,
+              "full_truth": 0,
+              "mixed": 9
+            }
+          }
+        },
+        "totals": {
+          "counts": {
+            "boundary_tie": 0,
+            "direct_exact": 1,
+            "oracle_top_k_exact": 6,
+            "oracle_top_k_gained_exact": 6,
+            "oracle_top_k_lost_exact": 0,
+            "pair_exact": 0,
+            "separable_with_wrong_zero_threshold": 5,
+            "source_union_lacks_truth": 17,
+            "strict_rank_overlap": 30,
+            "strict_separable": 6
+          },
+          "cross_tab": [
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": false,
+              "pair_exact": false,
+              "query_count": 15,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": true,
+              "strict_separable": false
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 3,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": false,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 2,
+              "separable_with_wrong_zero_threshold": true,
+              "source_union_lacks_truth": true,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            },
+            {
+              "boundary_tie": false,
+              "direct_exact": true,
+              "oracle_top_k_exact": true,
+              "pair_exact": false,
+              "query_count": 1,
+              "separable_with_wrong_zero_threshold": false,
+              "source_union_lacks_truth": false,
+              "strict_rank_overlap": false,
+              "strict_separable": true
+            }
+          ],
+          "direct_metrics": {
+            "exact_count": 1,
+            "f1": 0.9599671675396676,
+            "fn": 53,
+            "fp": 357,
+            "precision": 0.9333469186534873,
+            "recall": 0.9897640565305744,
+            "set_size": 149.61111111111111,
+            "tp": 5029
+          },
+          "oracle_top_k_metrics": {
+            "exact_count": 6,
+            "f1": 0.9716805559159742,
+            "fn": 136,
+            "fp": 136,
+            "precision": 0.9716805559159742,
+            "recall": 0.9716805559159742,
+            "set_size": 141.16666666666666,
+            "tp": 4946
+          },
+          "pair_metrics": {
+            "exact_count": 0,
+            "f1": 0.7820470630660294,
+            "fn": 1219,
+            "fp": 878,
+            "precision": 0.86735023254353,
+            "recall": 0.7913098649886238,
+            "set_size": 131.69444444444446,
+            "tp": 3863
+          },
+          "query_count": 36,
+          "separation_cases": {
+            "empty_truth": 0,
+            "empty_universe": 0,
+            "full_truth": 0,
+            "mixed": 36
+          }
+        }
+      },
+      "query_count": 222,
+      "seed": 1731,
+      "totals": {
+        "counts": {
+          "boundary_tie": 0,
+          "direct_exact": 111,
+          "oracle_top_k_exact": 154,
+          "oracle_top_k_gained_exact": 6,
+          "oracle_top_k_lost_exact": 38,
+          "pair_exact": 186,
+          "separable_with_wrong_zero_threshold": 43,
+          "source_union_lacks_truth": 17,
+          "strict_rank_overlap": 68,
+          "strict_separable": 154
+        },
+        "cross_tab": [
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 15,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": false,
+            "query_count": 15,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 3,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 2,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": true,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": false,
+            "query_count": 1,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": false,
+            "pair_exact": true,
+            "query_count": 38,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": true,
+            "strict_separable": false
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": false,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 38,
+            "separable_with_wrong_zero_threshold": true,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          },
+          {
+            "boundary_tie": false,
+            "direct_exact": true,
+            "oracle_top_k_exact": true,
+            "pair_exact": true,
+            "query_count": 110,
+            "separable_with_wrong_zero_threshold": false,
+            "source_union_lacks_truth": false,
+            "strict_rank_overlap": false,
+            "strict_separable": true
+          }
+        ],
+        "direct_metrics": {
+          "exact_count": 111,
+          "f1": 0.9879636956311806,
+          "fn": 97,
+          "fp": 646,
+          "precision": 0.9795666119292786,
+          "recall": 0.9971221098477906,
+          "set_size": 130.59459459459458,
+          "tp": 28346
+        },
+        "oracle_top_k_metrics": {
+          "exact_count": 154,
+          "f1": 0.9927885369955122,
+          "fn": 224,
+          "fp": 224,
+          "precision": 0.9927885369955122,
+          "recall": 0.9927885369955122,
+          "set_size": 128.1216216216216,
+          "tp": 28219
+        },
+        "pair_metrics": {
+          "exact_count": 186,
+          "f1": 0.964656280497194,
+          "fn": 1219,
+          "fp": 878,
+          "precision": 0.9784892268989508,
+          "recall": 0.9661583564846418,
+          "set_size": 126.58558558558559,
+          "tp": 27224
+        },
+        "query_count": 222,
+        "separation_cases": {
+          "empty_truth": 0,
+          "empty_universe": 0,
+          "full_truth": 0,
+          "mixed": 222
+        }
+      }
+    }
+  ],
+  "script_sha256": "9d079df3a1aa06b9eb77f0d6e5bcf3bf8da6581a25eae0143ee79c4a216f0592",
+  "summary_sha256": "01188e47cf407f90da7eb705fc40c0865a7678c31cbecf592f18723ac42dc6fc",
+  "totals": {
+    "counts": {
+      "boundary_tie": 0,
+      "direct_exact": 339,
+      "oracle_top_k_exact": 479,
+      "oracle_top_k_gained_exact": 16,
+      "oracle_top_k_lost_exact": 106,
+      "pair_exact": 569,
+      "separable_with_wrong_zero_threshold": 140,
+      "source_union_lacks_truth": 53,
+      "strict_rank_overlap": 187,
+      "strict_separable": 479
+    },
+    "cross_tab": [
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": false,
+        "pair_exact": false,
+        "query_count": 33,
+        "separable_with_wrong_zero_threshold": false,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": true,
+        "strict_separable": false
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": false,
+        "pair_exact": false,
+        "query_count": 48,
+        "separable_with_wrong_zero_threshold": false,
+        "source_union_lacks_truth": true,
+        "strict_rank_overlap": true,
+        "strict_separable": false
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": true,
+        "pair_exact": false,
+        "query_count": 8,
+        "separable_with_wrong_zero_threshold": true,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": false,
+        "strict_separable": true
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": true,
+        "pair_exact": false,
+        "query_count": 5,
+        "separable_with_wrong_zero_threshold": true,
+        "source_union_lacks_truth": true,
+        "strict_rank_overlap": false,
+        "strict_separable": true
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": true,
+        "oracle_top_k_exact": true,
+        "pair_exact": false,
+        "query_count": 3,
+        "separable_with_wrong_zero_threshold": false,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": false,
+        "strict_separable": true
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": false,
+        "pair_exact": true,
+        "query_count": 106,
+        "separable_with_wrong_zero_threshold": false,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": true,
+        "strict_separable": false
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": false,
+        "oracle_top_k_exact": true,
+        "pair_exact": true,
+        "query_count": 127,
+        "separable_with_wrong_zero_threshold": true,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": false,
+        "strict_separable": true
+      },
+      {
+        "boundary_tie": false,
+        "direct_exact": true,
+        "oracle_top_k_exact": true,
+        "pair_exact": true,
+        "query_count": 336,
+        "separable_with_wrong_zero_threshold": false,
+        "source_union_lacks_truth": false,
+        "strict_rank_overlap": false,
+        "strict_separable": true
+      }
+    ],
+    "direct_metrics": {
+      "exact_count": 339,
+      "f1": 0.9895858651596365,
+      "fn": 246,
+      "fp": 1673,
+      "precision": 0.9823401536146523,
+      "recall": 0.9974930922686877,
+      "set_size": 130.26426426426426,
+      "tp": 85083
+    },
+    "oracle_top_k_metrics": {
+      "exact_count": 479,
+      "f1": 0.9935491377941567,
+      "fn": 599,
+      "fp": 599,
+      "precision": 0.9935491377941567,
+      "recall": 0.9935491377941567,
+      "set_size": 128.1216216216216,
+      "tp": 84730
+    },
+    "pair_metrics": {
+      "exact_count": 569,
+      "f1": 0.9668960529174291,
+      "fn": 3850,
+      "fp": 2120,
+      "precision": 0.9820461214803038,
+      "recall": 0.9637964716104676,
+      "set_size": 125.52402402402403,
+      "tp": 81479
+    },
+    "query_count": 666,
+    "separation_cases": {
+      "empty_truth": 0,
+      "empty_universe": 0,
+      "full_truth": 0,
+      "mixed": 666
+    }
+  },
+  "training_seed_replicas": 3
+}

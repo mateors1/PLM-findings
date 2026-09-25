@@ -1,0 +1,13 @@
+$ uv run --no-sync ruff check scripts\diagnose_candidate_scores.py tests\unit\test_candidate_scores.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check scripts\diagnose_candidate_scores.py tests\unit\test_candidate_scores.py
+2 files already formatted
+
+$ uv run --no-sync pytest tests/unit/test_candidate_scores.py -q -o addopts=
+.......................                                                  [100%]
+23 passed in 0.16s
+
+$ uv run --no-sync python scripts/diagnose_candidate_scores.py --preflight-only
+{"preflight": "passed", "torch_imported": false, "new_diagnostic_executed": false, "diagonal_reconstruction_exact": true, "query_count": 222}
+

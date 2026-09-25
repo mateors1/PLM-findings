@@ -1,0 +1,18 @@
+C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\.venv\Lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+gradient diagnostic initial batch 0: complete
+gradient diagnostic initial batch 800: complete
+gradient diagnostic initial batch 1600: complete
+gradient diagnostic control_500 batch 0: complete
+gradient diagnostic control_500 batch 800: complete
+gradient diagnostic control_500 batch 1600: complete
+gradient diagnostic treatment_500 batch 0: complete
+gradient diagnostic treatment_500 batch 800: complete
+gradient diagnostic treatment_500 batch 1600: complete
+gradient diagnostic control_2000 batch 0: complete
+gradient diagnostic control_2000 batch 800: complete
+gradient diagnostic control_2000 batch 1600: complete
+gradient diagnostic treatment_2000 batch 0: complete
+gradient diagnostic treatment_2000 batch 800: complete
+gradient diagnostic treatment_2000 batch 1600: complete
+{"complete": true, "diagnostic_accepted": false, "observations": 15, "summary_sha256": "5a0927acf533a2a170d829a781e52e45686961e909e5a7f697ad193de3dcc607"}

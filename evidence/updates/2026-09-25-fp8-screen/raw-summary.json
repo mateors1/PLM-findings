@@ -1,0 +1,215 @@
+{
+  "arms": {
+    "fp32": {
+      "conversion": null,
+      "offline_batches": [
+        {
+          "batch_size": 1,
+          "median_completed_output_tps": 150.1885401410389,
+          "median_completed_rps": 1.0804930945398483,
+          "median_seconds": 0.9256526000008307,
+          "peak_allocated_bytes": 72901120,
+          "repetitions": 2
+        },
+        {
+          "batch_size": 8,
+          "median_completed_output_tps": 776.3286981046231,
+          "median_completed_rps": 4.719323392733271,
+          "median_seconds": 1.695240000000922,
+          "peak_allocated_bytes": 91266048,
+          "repetitions": 2
+        },
+        {
+          "batch_size": 32,
+          "median_completed_output_tps": 2968.8134718655256,
+          "median_completed_rps": 18.047498309212926,
+          "median_seconds": 1.7731085499999608,
+          "peak_allocated_bytes": 155384832,
+          "repetitions": 2
+        }
+      ],
+      "quality": {
+        "evaluation": "postprocessed SAME sets on the full validation split",
+        "exact_set_accuracy": 0.6801801801801802,
+        "exact_set_count": 151,
+        "macro_f1": 0.8857111644302244,
+        "percent_of_frontier_f1": 91.0203631081945,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "termination_rate": 1.0
+      },
+      "serving": [
+        {
+          "client_seconds_p50": 1.1158697000000757,
+          "client_seconds_p95": 1.716643000001568,
+          "completed_output_tps": 148.46320166942226,
+          "completed_rps": 0.902511864251807,
+          "concurrency": 1,
+          "generation_seconds_p50": 1.1156039500001498,
+          "path": "NativePredictor.predict; direct call including postprocessing and hydration",
+          "queue_seconds_p95": 1.2999989849049598e-06,
+          "requests": 16
+        },
+        {
+          "client_seconds_p50": 4.43196480000006,
+          "client_seconds_p95": 5.389157100000375,
+          "completed_output_tps": 148.17528943075382,
+          "completed_rps": 0.9007616378769229,
+          "concurrency": 4,
+          "generation_seconds_p50": 1.1132971500001076,
+          "path": "NativePredictor.predict; direct call including postprocessing and hydration",
+          "queue_seconds_p95": 4.344101700000465,
+          "requests": 16
+        }
+      ]
+    },
+    "fp8": {
+      "conversion": {
+        "activation_dtype": "float8_e4m3fn",
+        "converted_linear_count": 56,
+        "converted_linear_names": [
+          "blocks.0.attention.q_proj",
+          "blocks.0.attention.k_proj",
+          "blocks.0.attention.v_proj",
+          "blocks.0.attention.out_proj",
+          "blocks.0.ffn.gate_proj",
+          "blocks.0.ffn.up_proj",
+          "blocks.0.ffn.down_proj",
+          "blocks.1.attention.q_proj",
+          "blocks.1.attention.k_proj",
+          "blocks.1.attention.v_proj",
+          "blocks.1.attention.out_proj",
+          "blocks.1.ffn.gate_proj",
+          "blocks.1.ffn.up_proj",
+          "blocks.1.ffn.down_proj",
+          "blocks.2.attention.q_proj",
+          "blocks.2.attention.k_proj",
+          "blocks.2.attention.v_proj",
+          "blocks.2.attention.out_proj",
+          "blocks.2.ffn.gate_proj",
+          "blocks.2.ffn.up_proj",
+          "blocks.2.ffn.down_proj",
+          "blocks.3.attention.q_proj",
+          "blocks.3.attention.k_proj",
+          "blocks.3.attention.v_proj",
+          "blocks.3.attention.out_proj",
+          "blocks.3.ffn.gate_proj",
+          "blocks.3.ffn.up_proj",
+          "blocks.3.ffn.down_proj",
+          "blocks.4.attention.q_proj",
+          "blocks.4.attention.k_proj",
+          "blocks.4.attention.v_proj",
+          "blocks.4.attention.out_proj",
+          "blocks.4.ffn.gate_proj",
+          "blocks.4.ffn.up_proj",
+          "blocks.4.ffn.down_proj",
+          "blocks.5.attention.q_proj",
+          "blocks.5.attention.k_proj",
+          "blocks.5.attention.v_proj",
+          "blocks.5.attention.out_proj",
+          "blocks.5.ffn.gate_proj",
+          "blocks.5.ffn.up_proj",
+          "blocks.5.ffn.down_proj",
+          "blocks.6.attention.q_proj",
+          "blocks.6.attention.k_proj",
+          "blocks.6.attention.v_proj",
+          "blocks.6.attention.out_proj",
+          "blocks.6.ffn.gate_proj",
+          "blocks.6.ffn.up_proj",
+          "blocks.6.ffn.down_proj",
+          "blocks.7.attention.q_proj",
+          "blocks.7.attention.k_proj",
+          "blocks.7.attention.v_proj",
+          "blocks.7.attention.out_proj",
+          "blocks.7.ffn.gate_proj",
+          "blocks.7.ffn.up_proj",
+          "blocks.7.ffn.down_proj"
+        ],
+        "excluded": [
+          "token_embedding",
+          "lm_head",
+          "prompt_set_projection",
+          "symmetric_relation_projection"
+        ],
+        "nonlinear_and_kv_dtype": "bfloat16",
+        "recipe": "torchao-dynamic-e4m3-per-tensor-block-linears-v1",
+        "torch": "2.11.0+cu128",
+        "torchao": "0.17.0",
+        "weight_dtype": "float8_e4m3fn"
+      },
+      "offline_batches": [
+        {
+          "batch_size": 1,
+          "median_completed_output_tps": 12.492627895251111,
+          "median_completed_rps": 0.0898750208291447,
+          "median_seconds": 11.126565749998917,
+          "peak_allocated_bytes": 59500032,
+          "repetitions": 2
+        },
+        {
+          "batch_size": 8,
+          "median_completed_output_tps": 65.84723004088305,
+          "median_completed_rps": 0.39165638686027093,
+          "median_seconds": 20.42620954999893,
+          "peak_allocated_bytes": 68034560,
+          "repetitions": 2
+        },
+        {
+          "batch_size": 32,
+          "median_completed_output_tps": 232.8076362715767,
+          "median_completed_rps": 1.5019847501392047,
+          "median_seconds": 21.307625299999927,
+          "peak_allocated_bytes": 101824512,
+          "repetitions": 2
+        }
+      ],
+      "quality": {
+        "evaluation": "postprocessed SAME sets on the full validation split",
+        "exact_set_accuracy": 0.6846846846846847,
+        "exact_set_count": 152,
+        "macro_f1": 0.8818409065753677,
+        "percent_of_frontier_f1": 90.62263494418518,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "raw_token_agreement_with_fp32": 0.9504504504504504,
+        "termination_rate": 1.0
+      },
+      "serving": [
+        {
+          "client_seconds_p50": 11.476429150000513,
+          "client_seconds_p95": 21.98338110000077,
+          "completed_output_tps": 11.97884065691635,
+          "completed_rps": 0.07539789555887554,
+          "concurrency": 1,
+          "generation_seconds_p50": 11.47620525000093,
+          "path": "NativePredictor.predict; direct call including postprocessing and hydration",
+          "queue_seconds_p95": 5.000001692678779e-07,
+          "requests": 16
+        },
+        {
+          "client_seconds_p50": 51.21517700000004,
+          "client_seconds_p95": 74.01285329999882,
+          "completed_output_tps": 11.46696816871635,
+          "completed_rps": 0.07217603882748293,
+          "concurrency": 4,
+          "generation_seconds_p50": 11.749245999999403,
+          "path": "NativePredictor.predict; direct call including postprocessing and hydration",
+          "queue_seconds_p95": 62.430865399999675,
+          "requests": 16
+        }
+      ]
+    }
+  },
+  "frontier": {
+    "checkpoint_and_policy": "pair-composition shape-aware v2",
+    "definition": "best accepted single-seed PLM validation macro F1 in the selected report",
+    "macro_f1": 0.9730912228699782,
+    "query_count": 222,
+    "report_sha256": "a5681c0bb0ddfa15836e8d2a9b3bfaf2a3acaa7463587bd19d06db3899e12908",
+    "seed": 1730
+  },
+  "receipt_sha256": "2c5f724606d224b55b52faa8e2735922a509c8a55cf72ae67efeedd3d89113ab",
+  "reference_checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "scope": "paired native serving and offline fixed-group decoding on validation prompts",
+  "script_sha256": "61c5eddf4cb77185968e41e92eb146d563726dbd47a609b31c7dfd678ea30779"
+}

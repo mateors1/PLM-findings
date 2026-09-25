@@ -1,0 +1,62 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py",
+        "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py",
+        "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-o",
+        "addopts=",
+        "-q",
+        "runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "runs\\learning\\candidate-score-decomposition-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "passed_count": 22,
+  "stdout_sha256": "42210561fccf3786abebdbada141d3dd38785156a064825726c0ce20941a3c67",
+  "tested_auditor_sha256": "5f5af47c73fd641987d4dcf3d3e146672e739c37d7a29df57f5f0062df3ac8fa",
+  "tests_sha256": "f604a59268eabf5ad89a15d90929f504a94d69055ea5342f4f59eb7c7a24c243"
+}

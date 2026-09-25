@@ -1,0 +1,47 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-pair-composition-shape-aware-plan.md",
+      "sha256": "0e406e2515c582ba5f4e8f3897b58e7daa6c27c96711913ef5d335f7eef2861f",
+      "source": "docs/experiments/2026-09-25-pair-composition-shape-aware-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-pair-composition-shape-aware.json",
+      "sha256": "a5681c0bb0ddfa15836e8d2a9b3bfaf2a3acaa7463587bd19d06db3899e12908",
+      "source": "docs/experiments/2026-09-25-pair-composition-shape-aware.json"
+    },
+    {
+      "path": "learning/29-shape-aware-verification.md",
+      "sha256": "01c1fe3afb82112f4ed7c69d2e3135f52501bef60925810a3da6aed77161cb6c",
+      "source": "docs/learning/29-shape-aware-verification.md"
+    },
+    {
+      "path": "audit/independent-audit.json",
+      "sha256": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+      "source": "runs/learning/pair-composition-integration-v2/independent-audit.json"
+    },
+    {
+      "path": "audit/acceptance.json",
+      "sha256": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+      "source": "runs/learning/pair-composition-integration-v2/acceptance.json"
+    },
+    {
+      "path": "audit/independent-audit.py",
+      "sha256": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+      "source": "runs/learning/pair-composition-integration-v2/independent-audit.py"
+    },
+    {
+      "path": "scripts/verify_pair_composition_shapes.py",
+      "sha256": "5dbede7d99bbbedc38b8551a2b15e213056b146cb53b05bc32fa5c65f27ac8d5",
+      "source": "scripts/verify_pair_composition_shapes.py"
+    },
+    {
+      "path": "tests/test_pair_composition_shapes.py",
+      "sha256": "331f2f7a5824978a59be51afda31e7bd5047b852aa088e2c3c55d3064539baa5",
+      "source": "tests/unit/test_pair_composition_shapes.py"
+    }
+  ],
+  "date": "2026-09-25",
+  "scope": "Accepted v2 application verification with mixed reused/fresh validation evidence; no new weights or default-policy change.",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition"
+}

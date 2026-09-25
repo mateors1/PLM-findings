@@ -1,0 +1,67 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-all-source-union-bound.json",
+      "sha256": "4314e40a4b74a124ad01ad72453c9546387f824be5fb0cdef6dec69f0ccd4d16",
+      "source": "docs/experiments/2026-09-25-all-source-union-bound.json"
+    },
+    {
+      "path": "experiments/2026-09-25-membership-separability-plan.md",
+      "sha256": "b189638ba7c89e380934a0239537fd8a8f6a4f34f68058c619fe86fa5e7bca87",
+      "source": "docs/experiments/2026-09-25-membership-separability-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-membership-separability.json",
+      "sha256": "76b6b571c523ef555e114f7a13262b96bff91884778e4e218b21a6ed8df38cbe",
+      "source": "docs/experiments/2026-09-25-membership-separability.json"
+    },
+    {
+      "path": "learning/30-ranking-versus-threshold.md",
+      "sha256": "06a412af78dbb75f2ec63dc21c43a0f7decfdd950df78504a9d362ee654ba82e",
+      "source": "docs/learning/30-ranking-versus-threshold.md"
+    },
+    {
+      "path": "scripts/diagnose_membership_separability.py",
+      "sha256": "f8ec5fffcdfd739b56c7eb5b93467b4922d1a20a4f7eb3ed4ad0b9cac91b78ed",
+      "source": "scripts/diagnose_membership_separability.py"
+    },
+    {
+      "path": "tests/test_membership_separability.py",
+      "sha256": "0f6f1c4572cfe5273e102c56ffcdeceab13a275b048466d41917080040ea0a48",
+      "source": "tests/unit/test_membership_separability.py"
+    },
+    {
+      "path": "audit/membership-independent-audit.py",
+      "sha256": "9d079df3a1aa06b9eb77f0d6e5bcf3bf8da6581a25eae0143ee79c4a216f0592",
+      "source": "runs/learning/membership-separability-v1/independent-audit.py"
+    },
+    {
+      "path": "audit/membership-independent-audit.json",
+      "sha256": "6585bbab913e9987a6b9997129c922cf2df2ec8cf8b214e4abe7eae6bc7f9bee",
+      "source": "runs/learning/membership-separability-v1/independent-audit.json"
+    },
+    {
+      "path": "audit/membership-acceptance.json",
+      "sha256": "327887786c0f7eaa06f97d4512cad7066129b466a13a9ac814b9145190c997d3",
+      "source": "runs/learning/membership-separability-v1/acceptance.json"
+    },
+    {
+      "path": "audit/union-proof.py",
+      "sha256": "2a45afb5c218d03cc72ae6fb5bfc6db0ab9aaa35aa49cde3d78b8bd4ca2c0c6a",
+      "source": "runs/learning/all-source-union-bound-v1/proof.py"
+    },
+    {
+      "path": "audit/union-independent-audit.py",
+      "sha256": "1b36479c5e7355c59462a884b5fc623dd610cb6b71f9cc05beb7411e56c622d0",
+      "source": "runs/learning/all-source-union-bound-v1/independent-audit.py"
+    },
+    {
+      "path": "audit/union-independent-audit.json",
+      "sha256": "e865ac6dc7f5baf561d61eaa198fa987a979bb6c0953778f441a49451d5b8bde",
+      "source": "runs/learning/all-source-union-bound-v1/independent-audit.json"
+    }
+  ],
+  "date": "2026-09-25",
+  "scope": "Frozen validation diagnosis; source worktree contains uncommitted changes. No new model weights or deployable policy.",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition"
+}

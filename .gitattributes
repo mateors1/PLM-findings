@@ -1,6 +1,7 @@
 # Preserve exact source evidence bytes for SHA256SUMS.txt across platforms.
-evidence/** -text whitespace=cr-at-eol
+evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 
 # Keep authored research text portable.
 README.md text eol=lf
 papers/*.md text eol=lf
+.github/*.yml text eol=lf

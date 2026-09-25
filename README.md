@@ -10,6 +10,13 @@ Research synthesis for **PLM / Pika Edition**, a decoder-only model that emits p
 4. [Serving and numerical reproducibility](papers/04-serving-and-reproducibility.md) — what application and performance tests established.
 5. [Evidence ledger and next experiments](papers/05-evidence-ledger.md) — claim status, source map, and acceptance work still open.
 6. [Academic versioning and the next hypothesis](papers/06-academic-versioning-and-next-hypothesis.md) — 23 final-checkpoint identities, remaining archival work, and learned relational retrieval.
+7. [Rank ordering and threshold limits](papers/07-ranking-and-threshold-limits.md) — why adding larger unions or tuning cutoffs alone cannot exceed the current selector's exact-set count on frozen evidence.
+8. [A failed hardest-boundary margin](papers/08-hardest-boundary-margin-failure.md) — a fresh paired training screen regressed from 192 to 6 exact answers, with both checkpoints and the failed gates preserved.
+9. [Gradient strength and interference](papers/09-gradient-strength-and-interference.md) — fixed training-query probes reveal substantial gradients and local opposition, with explicit limits on causal and optimizer claims.
+10. [A weaker margin gives a mixed result](papers/10-weaker-margin-mixed-result.md) — exact answers improve from 191 to 194, but separation falls from 168 to 164; the unchanged gate rejects the variant.
+11. [Candidate availability and selection](papers/11-candidate-availability-and-selection.md) — both saved selectors find every available exact answer; missing candidates limit the remaining exactness.
+12. [FP8 inference screen](papers/12-fp8-inference-screen.md) — eager FP8 kept similar validation quality but was much slower on the measured native path.
+13. [Decoder-only architecture and applications](papers/13-decoder-and-applications.md) — why this reference model generates IDs sequentially, and which uses remain hypotheses.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -17,7 +24,7 @@ The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, e
 
 The main quality comparisons reuse **222 validation queries** under each of three training seeds. Thus **666 query-seed observations** represent repeated model evaluations on the same queries, not 666 independent held-out queries. The protected final-test partition has **191 queries** and has not been used to support the findings here. Validation has guided many choices, so its results are developmental evidence. The graph/compiler oracle is correct by construction for the scoped task; a model result below 100% exactness is below oracle parity.
 
-The latest offline composition result is **569/666 exact sets** with **96.69% macro F1**. A distinct, newer application replay did not pass its exact HTTP score-parity gate because FP32 scores changed with batch shape; the selected answers in the tested HTTP checkpoint matched. The failed gate remains failed. No matched-quality concurrent throughput or energy advantage is established.
+The composition result is **569/666 exact sets** with **96.69% macro F1**, now preserved by the accepted shape-aware application verification. The first application campaign failed exact HTTP score parity because FP32 scores changed with batch shape; that failed gate remains failed. The revised contract uses exact same-shape score references and unchanged cross-shape decisions, with explicit mixed fresh/reused evidence. No matched-quality concurrent throughput or energy advantage is established.
 
 ## Snapshot and reuse
 
@@ -26,6 +33,54 @@ checkpoint inventory, the revised verification contract, a completed native
 concurrency probe and the future learned-retrieval hypothesis. Original evidence
 copies remain unchanged; the addition has its own checksum inventory.
 
+The later [rank-diagnosis follow-up](evidence/updates/2026-09-25-ranking-diagnosis/README.md)
+adds an audited 479/666 exact-recovery bound for per-query scalar thresholds on
+the saved membership scores, and the proof that triple/four-way unions create
+no new exact-answer availability. These are diagnostic limits, not new policies.
+
+The [completed composition verification](evidence/updates/2026-09-25-composition-verification/README.md)
+records 666 HTTP responses, fresh serial references, independent audit and
+separate acceptance. Earlier dated copies retain their original pending status.
+
+The [margin training screen](evidence/updates/2026-09-25-margin-screen/README.md)
+records an independently audited negative result and a new 25-checkpoint
+inventory. The failed variant was stopped before additional-seed replication;
+the earlier 23-checkpoint inventory remains unchanged.
+
+The [gradient-diagnosis addition](evidence/updates/2026-09-25-gradient-diagnosis/README.md)
+records 15 audited observations on existing parameter states and 96 fixed
+training queries. It examines gradient strength, alignment and radial score
+scaling without training another model or changing the rejected margin gate.
+
+The [weaker-margin screen](evidence/updates/2026-09-25-weak-margin-screen/README.md)
+records a separately declared .001-coefficient intervention with fresh paired
+training. Complete-answer quality improved, but the required separation gain
+failed. The audited result is retained without additional-seed replication
+or promotion, together with a new 27-checkpoint inventory.
+
+The [candidate-score diagnosis](evidence/updates/2026-09-25-candidate-score-decomposition/README.md)
+reconstructs all four fixed pool/score combinations and separates candidate
+availability from selection errors. It adds no checkpoint or promoted policy.
+The same dated addition includes the future learned-retrieval data review.
+
+The [offline batch-saturation sweep](evidence/updates/2026-09-25-batch-saturation/README.md)
+reached 30,980 completed output tokens/s and 188.3 completed requests/s at
+batch 640 on one RTX 5070 Ti. This fixed-group decoder result does not change
+the measured serial HTTP throughput or establish GPU arithmetic saturation.
+
+The [eager FP8 screen](evidence/updates/2026-09-25-fp8-screen/README.md)
+retained similar validation quality on one guided checkpoint but reduced serial
+native throughput from 148.5 to 12.0 completed output tokens/s. The compiled
+FP8 follow-up is a declared experiment without a result in this snapshot.
+
 Source checkout: `mateors1/Plm-protocolized-language-model-pika-edition`, `HEAD` `8afff361447b1357a041aa65f5b588af5b7ba5b5`; the copied source material also contained uncommitted changes. The copy was made on 2026-09-25 from the 2026-09-24 research state. [`evidence/SHA256SUMS.txt`](evidence/SHA256SUMS.txt) records the copied file hashes, allowing exact verification without pretending that the source `HEAD` alone identifies this snapshot. The papers are interpretive syntheses; the evidence copies remain the detailed record.
 
-This repository is private by default when published because it contains an uncommitted research snapshot. Review its visibility before changing that setting.
+This public repository includes research material copied from a source working
+tree with uncommitted changes. The dated evidence inventories identify the copied
+bytes; source `HEAD` alone does not identify them. Results and status statements
+should be read with their original dates and declared acceptance gates.
+
+## Support
+
+To support the maintainer, [sponsor @mateors1](https://github.com/sponsors/mateors1).
+The repository's GitHub Sponsor button is configured in [`.github/FUNDING.yml`](.github/FUNDING.yml).

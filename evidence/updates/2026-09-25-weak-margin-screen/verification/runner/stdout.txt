@@ -1,0 +1,13 @@
+$ uv run --no-sync ruff check scripts\run_weak_margin_screen.py tests\unit\test_weak_margin_screen.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check scripts\run_weak_margin_screen.py tests\unit\test_weak_margin_screen.py
+2 files already formatted
+
+$ uv run --no-sync pytest tests/unit/test_weak_margin_screen.py -q -o addopts=
+..............                                                           [100%]
+14 passed in 0.28s
+
+$ uv run --no-sync python scripts/run_weak_margin_screen.py --preflight-only
+{"preflight": "passed", "torch_imported": false, "training_executed": false, "evaluation_executed": false, "validation_query_count": 222, "arms": ["national_dex_rank_margin_weak_control_s1729_v1", "national_dex_rank_margin_m1_w0001_s1729_v1"], "treatment_coefficient": 0.001, "helper_sha256": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8"}
+

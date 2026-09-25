@@ -1,0 +1,10 @@
+{
+  "both_trainings_completed_before_evaluation": true,
+  "helper_sha256": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+  "script_sha256": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+  "source_archive_sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+  "training_receipt_sha256": {
+    "control": "98bb3e7845bceeb2c3f35b43e99c04b698885f5d00db6bb231970b83a4329a0b",
+    "treatment": "0e8178cc74fe6f57da3a84a40dff89e82d6d818b462050c88247e3b0fabb4b3a"
+  }
+}

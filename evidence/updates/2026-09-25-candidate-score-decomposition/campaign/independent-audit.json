@@ -1,0 +1,519 @@
+{
+  "all_recomputed_outputs_equal": true,
+  "audit_passed": true,
+  "cells_checked": 888,
+  "complete": true,
+  "diagnostic_accepted": false,
+  "distinct_queries": 222,
+  "gained_exact_count": 11,
+  "groups": {
+    "COLOR": {
+      "arm_availability": {
+        "control": {
+          "all_exact_available_count": 101,
+          "original_exact_available_count": 101,
+          "query_count": 103,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 101,
+          "selected_f1": 0.9908574972551627,
+          "source_union_contains_truth_count": 101,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 2,
+            "selected_exact": 101
+          }
+        },
+        "treatment": {
+          "all_exact_available_count": 101,
+          "original_exact_available_count": 101,
+          "query_count": 103,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 101,
+          "selected_f1": 0.9998877602559066,
+          "source_union_contains_truth_count": 102,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 2,
+            "selected_exact": 101
+          }
+        }
+      },
+      "cell_metrics": {
+        "cc": {
+          "exact_set_count": 101,
+          "f1": 0.9908574972551627,
+          "failure_count": 0,
+          "mean_set_size": 113.11650485436893,
+          "precision": 0.99126213592233,
+          "query_count": 103,
+          "recall": 0.9906376267810407
+        },
+        "ct": {
+          "exact_set_count": 101,
+          "f1": 0.9908574972551627,
+          "failure_count": 0,
+          "mean_set_size": 113.11650485436893,
+          "precision": 0.99126213592233,
+          "query_count": 103,
+          "recall": 0.9906376267810407
+        },
+        "tc": {
+          "exact_set_count": 101,
+          "f1": 0.9998877602559066,
+          "failure_count": 0,
+          "mean_set_size": 113.6504854368932,
+          "precision": 1.0,
+          "query_count": 103,
+          "recall": 0.9997768106238143
+        },
+        "tt": {
+          "exact_set_count": 101,
+          "f1": 0.9998877602559066,
+          "failure_count": 0,
+          "mean_set_size": 113.6504854368932,
+          "precision": 1.0,
+          "query_count": 103,
+          "recall": 0.9997768106238143
+        }
+      },
+      "decompositions": {
+        "exact_set_count": {
+          "diagonal_change": 0,
+          "interaction": 0,
+          "pool_then_score": {
+            "pool_effect": 0,
+            "score_effect": 0,
+            "sum": 0
+          },
+          "score_then_pool": {
+            "pool_effect": 0,
+            "score_effect": 0,
+            "sum": 0
+          }
+        },
+        "f1": {
+          "diagonal_change": 0.009030263000743943,
+          "interaction": 0.0,
+          "pool_then_score": {
+            "pool_effect": 0.009030263000743943,
+            "score_effect": 0.0,
+            "sum": 0.009030263000743943
+          },
+          "score_then_pool": {
+            "pool_effect": 0.009030263000743943,
+            "score_effect": 0.0,
+            "sum": 0.009030263000743943
+          }
+        }
+      },
+      "query_count": 103,
+      "transitions": {
+        "exact_available_but_missed": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 0,
+          "selected_exact": 0
+        },
+        "exact_unavailable": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 0,
+          "selected_exact": 2
+        },
+        "selected_exact": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 2,
+          "selected_exact": 99
+        }
+      }
+    },
+    "TYPE_dual": {
+      "arm_availability": {
+        "control": {
+          "all_exact_available_count": 45,
+          "original_exact_available_count": 15,
+          "query_count": 68,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 45,
+          "selected_f1": 0.9178336507594158,
+          "source_union_contains_truth_count": 50,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 23,
+            "selected_exact": 45
+          }
+        },
+        "treatment": {
+          "all_exact_available_count": 47,
+          "original_exact_available_count": 19,
+          "query_count": 68,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 47,
+          "selected_f1": 0.9227904767043474,
+          "source_union_contains_truth_count": 55,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 21,
+            "selected_exact": 47
+          }
+        }
+      },
+      "cell_metrics": {
+        "cc": {
+          "exact_set_count": 45,
+          "f1": 0.9178336507594158,
+          "failure_count": 0,
+          "mean_set_size": 164.66176470588235,
+          "precision": 0.9558019155842398,
+          "query_count": 68,
+          "recall": 0.9084011965176638
+        },
+        "ct": {
+          "exact_set_count": 45,
+          "f1": 0.9120245446593291,
+          "failure_count": 0,
+          "mean_set_size": 162.98529411764707,
+          "precision": 0.951682397504206,
+          "query_count": 68,
+          "recall": 0.9000549371214104
+        },
+        "tc": {
+          "exact_set_count": 47,
+          "f1": 0.9227904767043474,
+          "failure_count": 0,
+          "mean_set_size": 161.85294117647058,
+          "precision": 0.9630915440260277,
+          "query_count": 68,
+          "recall": 0.9086878621366342
+        },
+        "tt": {
+          "exact_set_count": 47,
+          "f1": 0.9227904767043474,
+          "failure_count": 0,
+          "mean_set_size": 161.85294117647058,
+          "precision": 0.9630915440260277,
+          "query_count": 68,
+          "recall": 0.9086878621366342
+        }
+      },
+      "decompositions": {
+        "exact_set_count": {
+          "diagonal_change": 2,
+          "interaction": 0,
+          "pool_then_score": {
+            "pool_effect": 2,
+            "score_effect": 0,
+            "sum": 2
+          },
+          "score_then_pool": {
+            "pool_effect": 2,
+            "score_effect": 0,
+            "sum": 2
+          }
+        },
+        "f1": {
+          "diagonal_change": 0.004956825944931631,
+          "interaction": 0.0058091061000866695,
+          "pool_then_score": {
+            "pool_effect": 0.004956825944931631,
+            "score_effect": 0.0,
+            "sum": 0.004956825944931631
+          },
+          "score_then_pool": {
+            "pool_effect": 0.0107659320450183,
+            "score_effect": -0.0058091061000866695,
+            "sum": 0.004956825944931631
+          }
+        }
+      },
+      "query_count": 68,
+      "transitions": {
+        "exact_available_but_missed": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 0,
+          "selected_exact": 0
+        },
+        "exact_unavailable": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 16,
+          "selected_exact": 7
+        },
+        "selected_exact": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 5,
+          "selected_exact": 40
+        }
+      }
+    },
+    "TYPE_single": {
+      "arm_availability": {
+        "control": {
+          "all_exact_available_count": 45,
+          "original_exact_available_count": 44,
+          "query_count": 51,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 45,
+          "selected_f1": 0.987233322073943,
+          "source_union_contains_truth_count": 51,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 6,
+            "selected_exact": 45
+          }
+        },
+        "treatment": {
+          "all_exact_available_count": 46,
+          "original_exact_available_count": 46,
+          "query_count": 51,
+          "recoverable_exact_miss_count": 0,
+          "selected_exact_count": 46,
+          "selected_f1": 0.9935696615381631,
+          "source_union_contains_truth_count": 51,
+          "state_counts": {
+            "exact_available_but_missed": 0,
+            "exact_unavailable": 5,
+            "selected_exact": 46
+          }
+        }
+      },
+      "cell_metrics": {
+        "cc": {
+          "exact_set_count": 45,
+          "f1": 0.987233322073943,
+          "failure_count": 0,
+          "mean_set_size": 101.80392156862744,
+          "precision": 0.9811754874175526,
+          "query_count": 51,
+          "recall": 0.999089178154922
+        },
+        "ct": {
+          "exact_set_count": 45,
+          "f1": 0.987233322073943,
+          "failure_count": 0,
+          "mean_set_size": 101.80392156862744,
+          "precision": 0.9811754874175526,
+          "query_count": 51,
+          "recall": 0.999089178154922
+        },
+        "tc": {
+          "exact_set_count": 46,
+          "f1": 0.9935696615381631,
+          "failure_count": 0,
+          "mean_set_size": 100.54901960784314,
+          "precision": 0.9908308647199887,
+          "query_count": 51,
+          "recall": 0.999112063125904
+        },
+        "tt": {
+          "exact_set_count": 46,
+          "f1": 0.9935696615381631,
+          "failure_count": 0,
+          "mean_set_size": 100.54901960784314,
+          "precision": 0.9908308647199887,
+          "query_count": 51,
+          "recall": 0.999112063125904
+        }
+      },
+      "decompositions": {
+        "exact_set_count": {
+          "diagonal_change": 1,
+          "interaction": 0,
+          "pool_then_score": {
+            "pool_effect": 1,
+            "score_effect": 0,
+            "sum": 1
+          },
+          "score_then_pool": {
+            "pool_effect": 1,
+            "score_effect": 0,
+            "sum": 1
+          }
+        },
+        "f1": {
+          "diagonal_change": 0.0063363394642200754,
+          "interaction": 0.0,
+          "pool_then_score": {
+            "pool_effect": 0.0063363394642200754,
+            "score_effect": 0.0,
+            "sum": 0.0063363394642200754
+          },
+          "score_then_pool": {
+            "pool_effect": 0.0063363394642200754,
+            "score_effect": 0.0,
+            "sum": 0.0063363394642200754
+          }
+        }
+      },
+      "query_count": 51,
+      "transitions": {
+        "exact_available_but_missed": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 0,
+          "selected_exact": 0
+        },
+        "exact_unavailable": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 4,
+          "selected_exact": 2
+        },
+        "selected_exact": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 1,
+          "selected_exact": 44
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-candidate-score-decomposition-plan.md": "cafbe8df1ae0507cee417b8ebf56f49fab18dbaec8bffca090c1dc2f1300b952",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-auditor-tests-v1\\stdout.txt": "42210561fccf3786abebdbada141d3dd38785156a064825726c0ce20941a3c67",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-auditor-tests-v1\\test-receipt.json": "2eeecad447c6a140aa03eb39b5b5fcc5391cd937a41104514ff0f6f2b1fe0d91",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-auditor-tests-v1\\test_auditor.py": "f604a59268eabf5ad89a15d90929f504a94d69055ea5342f4f59eb7c7a24c243",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-decomposition-v1\\summary.json": "c325c76d0137da15ca73a157b1289e1743063489397690a8b6976276e2beef2d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-decomposition-v1\\summary.plan.md": "cafbe8df1ae0507cee417b8ebf56f49fab18dbaec8bffca090c1dc2f1300b952",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-decomposition-v1\\summary.script.py": "3665fae41075851852a7cec787f3d75d6815697da0ab3ac7a9c26f365c078d51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-runner-tests-v1\\stdout.txt": "357ea8e76b8e17c739822dd8b13ce3e58f76ac0f76b575037487b4ac791f2cb8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\candidate-score-runner-tests-v1\\test-receipt.json": "a7fb0b90e399efe3d0eee293a52b016e1318ca3c7890529f8829c74031e27548",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\decision.json": "607b576806a618d9b658cc3213d4108d99f8eefaa61030e7b3588151018c7797",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\evaluation-control.json": "beb9173979f77dee7af8f3c333c1345ee01436c54e00855c1eb888bb97195670",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\evaluation-treatment.json": "3861f67a652733de242110bb18b7d739220f7bfdf7f991470bbb1454566e1c81",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\independent-audit.json": "5cf9d5b556f06f068bcfda4709d737f351260f21144bc70ec42c305feef9caab",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\independent-audit.py": "eee58c93e60ccfdd2c87ff2793529652f15cbf43a5a23554d6401477d2def790",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\record-decision.py": "ee9561a061fb8c70a1f36dde9140af0cb104bf63e366fd0e3cb0137f742a8fc8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\weak-margin-screen-v1\\summary.json": "3d535d1e298497609169dda8791aef3920d3d8993afab9189df359644b8c7a93",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_candidate_scores.py": "3665fae41075851852a7cec787f3d75d6815697da0ab3ac7a9c26f365c078d51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_candidate_scores.py": "f7055e9967e4944859fc8546b5a6ba1bbdc34b5a02631f7cbf302170e8771a78"
+  },
+  "limitations": [
+    "Fixed saved-pool/head-vector substitutions do not regenerate guidance or outputs.",
+    "Fraction sums round once to binary64 and match every stored canonical fsum score exactly.",
+    "Floating decompositions preserve the declared subtraction order; no exact reassociation claim.",
+    "222 aligned validation queries across four cells are not 888 independent samples.",
+    "Prior accepted audit binds neural outputs and training identities; no neural/autograd proof or retraining audit is claimed.",
+    "The failed weak-margin gate remains closed; no causal module attribution or deployment selection."
+  ],
+  "lost_exact_count": 8,
+  "overall": {
+    "arm_availability": {
+      "control": {
+        "all_exact_available_count": 191,
+        "original_exact_available_count": 160,
+        "query_count": 222,
+        "recoverable_exact_miss_count": 0,
+        "selected_exact_count": 191,
+        "selected_f1": 0.967657251777897,
+        "source_union_contains_truth_count": 202,
+        "state_counts": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 31,
+          "selected_exact": 191
+        }
+      },
+      "treatment": {
+        "all_exact_available_count": 194,
+        "original_exact_available_count": 166,
+        "query_count": 222,
+        "recoverable_exact_miss_count": 0,
+        "selected_exact_count": 194,
+        "selected_f1": 0.9748209209941456,
+        "source_union_contains_truth_count": 208,
+        "state_counts": {
+          "exact_available_but_missed": 0,
+          "exact_unavailable": 28,
+          "selected_exact": 194
+        }
+      }
+    },
+    "cell_metrics": {
+      "cc": {
+        "exact_set_count": 191,
+        "f1": 0.967657251777897,
+        "failure_count": 0,
+        "mean_set_size": 126.30630630630631,
+        "precision": 0.9780832437748805,
+        "query_count": 222,
+        "recall": 0.9673896621961683
+      },
+      "ct": {
+        "exact_set_count": 191,
+        "f1": 0.965877885945438,
+        "failure_count": 0,
+        "mean_set_size": 125.7927927927928,
+        "precision": 0.9768214094080234,
+        "query_count": 222,
+        "recall": 0.9648331503090276
+      },
+      "tc": {
+        "exact_set_count": 194,
+        "f1": 0.9748209209941456,
+        "failure_count": 0,
+        "mean_set_size": 125.4054054054054,
+        "precision": 0.9865882842094114,
+        "query_count": 222,
+        "recall": 0.9717229790043473
+      },
+      "tt": {
+        "exact_set_count": 194,
+        "f1": 0.9748209209941456,
+        "failure_count": 0,
+        "mean_set_size": 125.4054054054054,
+        "precision": 0.9865882842094114,
+        "query_count": 222,
+        "recall": 0.9717229790043473
+      }
+    },
+    "decompositions": {
+      "exact_set_count": {
+        "diagonal_change": 3,
+        "interaction": 0,
+        "pool_then_score": {
+          "pool_effect": 3,
+          "score_effect": 0,
+          "sum": 3
+        },
+        "score_then_pool": {
+          "pool_effect": 3,
+          "score_effect": 0,
+          "sum": 3
+        }
+      },
+      "f1": {
+        "diagonal_change": 0.007163669216248669,
+        "interaction": 0.0017793658324589678,
+        "pool_then_score": {
+          "pool_effect": 0.007163669216248669,
+          "score_effect": 0.0,
+          "sum": 0.007163669216248669
+        },
+        "score_then_pool": {
+          "pool_effect": 0.008943035048707637,
+          "score_effect": -0.0017793658324589678,
+          "sum": 0.007163669216248669
+        }
+      }
+    },
+    "query_count": 222,
+    "transitions": {
+      "exact_available_but_missed": {
+        "exact_available_but_missed": 0,
+        "exact_unavailable": 0,
+        "selected_exact": 0
+      },
+      "exact_unavailable": {
+        "exact_available_but_missed": 0,
+        "exact_unavailable": 20,
+        "selected_exact": 11
+      },
+      "selected_exact": {
+        "exact_available_but_missed": 0,
+        "exact_unavailable": 8,
+        "selected_exact": 183
+      }
+    }
+  },
+  "plan_sha256": "cafbe8df1ae0507cee417b8ebf56f49fab18dbaec8bffca090c1dc2f1300b952",
+  "runner_test_receipt_sha256": "a7fb0b90e399efe3d0eee293a52b016e1318ca3c7890529f8829c74031e27548",
+  "script_sha256": "5f5af47c73fd641987d4dcf3d3e146672e739c37d7a29df57f5f0062df3ac8fa",
+  "slot_scores_checked": 8880,
+  "source_paths_checked": 1776,
+  "summary_sha256": "c325c76d0137da15ca73a157b1289e1743063489397690a8b6976276e2beef2d",
+  "test_receipt_sha256": "2eeecad447c6a140aa03eb39b5b5fcc5391cd937a41104514ff0f6f2b1fe0d91"
+}

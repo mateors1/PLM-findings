@@ -1,0 +1,65 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "scripts\\run_weak_margin_screen.py",
+        "tests\\unit\\test_weak_margin_screen.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "scripts\\run_weak_margin_screen.py",
+        "tests\\unit\\test_weak_margin_screen.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "tests/unit/test_weak_margin_screen.py",
+        "-q",
+        "-o",
+        "addopts="
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "scripts/run_weak_margin_screen.py",
+        "--preflight-only"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "cuda_visible_devices": "-1",
+  "experiment_evaluation_executed": false,
+  "experiment_training_executed": false,
+  "passed": true,
+  "scope": "Focused synthetic runner checks and authenticated Torch-free preflight; optional archive-backed coverage skips if local evidence absent.",
+  "stdout_sha256": "04166d51d1381b4aec142c334d4b04009c49b01843f159fe8f81c6ba92df33b7",
+  "tested_files_sha256": {
+    "scripts/run_weak_margin_screen.py": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+    "tests/unit/test_weak_margin_screen.py": "45057e62eca7a93c8cfc4346c58fc2ee4ac031bef21054237bab993b5ce34358"
+  },
+  "tested_runner_sha256": "df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5",
+  "tested_test_file_sha256": "45057e62eca7a93c8cfc4346c58fc2ee4ac031bef21054237bab993b5ce34358"
+}

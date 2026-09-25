@@ -1,0 +1,176 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-margin-gradient-diagnosis.json",
+      "sha256": "d44e1c656a09f53f1b32f1495b9a39ebc35a03085b3fb0639dc5bdaa0b4c87ad",
+      "source": "docs\\experiments\\2026-09-25-margin-gradient-diagnosis.json"
+    },
+    {
+      "path": "experiments/2026-09-25-margin-gradient-diagnosis-plan.md",
+      "sha256": "a0b5af7a3d31ad9e1ac5a5616b13152dd946cec771e5164dbc98dff703f5bbd6",
+      "source": "docs\\experiments\\2026-09-25-margin-gradient-diagnosis-plan.md"
+    },
+    {
+      "path": "learning/32-measuring-gradient-interference.md",
+      "sha256": "f582af6ef22887a025f876bf9bbdeac320da7e39563b7599c6c8eac9b07cdafe",
+      "source": "docs\\learning\\32-measuring-gradient-interference.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "690297d2a8e6ae3d2fdb498162799ff60ec9ff3d0d16bb4666f56dc65e66b61d",
+      "source": "docs\\model-versions.md"
+    },
+    {
+      "path": "scripts/diagnose_margin_gradients.py",
+      "sha256": "ed889b7785e346065ceb732a89ae78fdaec7a52df3254e2f1502628a73ec400c",
+      "source": "scripts\\diagnose_margin_gradients.py"
+    },
+    {
+      "path": "tests/test_margin_gradient_diagnosis.py",
+      "sha256": "01c6b080f4c6042279849978c9c6b5173898f5fb8c11772f5ba6b307f82f78f4",
+      "source": "tests\\unit\\test_margin_gradient_diagnosis.py"
+    },
+    {
+      "path": "tests/test_auditor.py",
+      "sha256": "d97e196470aa8cfeef730b08faafdb26be00a98c3d2f11ebc83fdc2b45e567a5",
+      "source": "runs\\learning\\gradient-auditor-tests-v1\\test_auditor.py"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "5a0927acf533a2a170d829a781e52e45686961e909e5a7f697ad193de3dcc607",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.json"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "ed889b7785e346065ceb732a89ae78fdaec7a52df3254e2f1502628a73ec400c",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.script.py"
+    },
+    {
+      "path": "campaign/summary.helper.py",
+      "sha256": "a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.helper.py"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "a0b5af7a3d31ad9e1ac5a5616b13152dd946cec771e5164dbc98dff703f5bbd6",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.source.zip"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "86fcd9dcba39c3d42e738d93b5241eb94030f9b2696b12912d081382f3a016d6",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\summary.configs.zip"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "c2fe33de149f1ade6d28475b952833a304739c9fd32aafd0064b5ea080b0cbd5",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\independent-audit.json"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "9785b72494c5b41ecc6449aa7cfe82ded39d60e462510d88c3ce8f9c065f583b",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\independent-audit.py"
+    },
+    {
+      "path": "campaign/acceptance.json",
+      "sha256": "a66863691b2573e5fa8e1a44549b561ab2b46aaece9033e2dba64e8161700aed",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\acceptance.json"
+    },
+    {
+      "path": "campaign/record-acceptance.py",
+      "sha256": "da454a9fe797506fe2434c40fb1e0f4d552e7148f1a4b41c4bc608219894105a",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\record-acceptance.py"
+    },
+    {
+      "path": "campaign/execution.log",
+      "sha256": "bebcf811da65fcb9da0cadb391f2e086c2ba14df4b828a0083ff626f3ba5c85a",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\execution.log"
+    },
+    {
+      "path": "campaign/control_2000-batch-0.json",
+      "sha256": "01df38b8d3ac586bd7cf1e3304b88e7ed4522ee762d16b438f76a5073d8546bb",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_2000-batch-0.json"
+    },
+    {
+      "path": "campaign/control_2000-batch-1600.json",
+      "sha256": "62163b44f74abc1e05399f83fce308b9f3deba0724abd1d0111c4210acd3cd45",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_2000-batch-1600.json"
+    },
+    {
+      "path": "campaign/control_2000-batch-800.json",
+      "sha256": "b8c6fed64ef104ee45fc151ea5fe1c56490511f3068caa12dc4a53a643badf26",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_2000-batch-800.json"
+    },
+    {
+      "path": "campaign/control_500-batch-0.json",
+      "sha256": "10f9c5775890395690df75da54e58cd97e68727841e9f0cc4001639e5b31e375",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_500-batch-0.json"
+    },
+    {
+      "path": "campaign/control_500-batch-1600.json",
+      "sha256": "0107e00d9e34ee67140ac4e80bce446eb16f50175da033e90668073fbffaecf1",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_500-batch-1600.json"
+    },
+    {
+      "path": "campaign/control_500-batch-800.json",
+      "sha256": "201861b595dfcfa47a78202107eb9eb9091c3a471fcc703abb3cdd7421d34eba",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\control_500-batch-800.json"
+    },
+    {
+      "path": "campaign/initial-batch-0.json",
+      "sha256": "d7f61e738509258be609443d347d598f096ac262668da111f150ca16ffafd653",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\initial-batch-0.json"
+    },
+    {
+      "path": "campaign/initial-batch-1600.json",
+      "sha256": "fde60e4a766e5915112941fdf90750503eb0dec3ba259cf964d63be26f4bb626",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\initial-batch-1600.json"
+    },
+    {
+      "path": "campaign/initial-batch-800.json",
+      "sha256": "3e2500c41c9a90f5cdb83480a48f54250c5cfee0c24dc2d442211761a33ecdfd",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\initial-batch-800.json"
+    },
+    {
+      "path": "campaign/treatment_2000-batch-0.json",
+      "sha256": "b896058797190e3557b4620bb1e436cfa104d31eff463304cab5f374840772b0",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_2000-batch-0.json"
+    },
+    {
+      "path": "campaign/treatment_2000-batch-1600.json",
+      "sha256": "bdf603d57ea4442fce6837aa9d50ffcafff2f194408186bfec750c1817b52a01",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_2000-batch-1600.json"
+    },
+    {
+      "path": "campaign/treatment_2000-batch-800.json",
+      "sha256": "5accfd6dee564db540c48ef1bca03cf7668427bb0ea4c898354cea83646f755a",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_2000-batch-800.json"
+    },
+    {
+      "path": "campaign/treatment_500-batch-0.json",
+      "sha256": "066eab31ce20364409fa7e3b501147d5217bad8e83daaaf2cde597372cfa162b",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_500-batch-0.json"
+    },
+    {
+      "path": "campaign/treatment_500-batch-1600.json",
+      "sha256": "e02777e5c36fef058222a4d58a4606c78c660d61b47f78afacbe659326f77040",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_500-batch-1600.json"
+    },
+    {
+      "path": "campaign/treatment_500-batch-800.json",
+      "sha256": "1b3b95110c99b4c297bfc41e5d92ee6a02bc92643fe8a25aa56c8f7732977901",
+      "source": "runs\\learning\\margin-gradient-diagnosis-v1\\treatment_500-batch-800.json"
+    }
+  ],
+  "date": "2026-09-25",
+  "previous_manifest_entries_verified": 213,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true,
+  "status": "accepted diagnostic; no model promotion",
+  "sync_script_sha256": "9aba26d6c752909eac706e465caaddaccd877532deb282016b6305c0132e1251"
+}

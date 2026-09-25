@@ -1,0 +1,29 @@
+COMMAND: ["uv", "run", "--no-sync", "ruff", "check", "runs\\learning\\weak-margin-screen-v1\\independent-audit.py", "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+All checks passed!
+
+
+COMMAND: ["uv", "run", "--no-sync", "ruff", "format", "--check", "runs\\learning\\weak-margin-screen-v1\\independent-audit.py", "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+2 files already formatted
+
+
+COMMAND: ["uv", "run", "--no-sync", "pytest", "-o", "addopts=", "-q", "runs\\learning\\weak-margin-auditor-tests-v1\\test_auditor.py"]
+EXIT: 0
+..................................                                       [100%]
+34 passed in 1.81s
+
+
+COMMAND: ["uv", "run", "--no-sync", "python", "runs\\learning\\weak-margin-screen-v1\\independent-audit.py", "--help"]
+EXIT: 0
+usage: independent-audit.py [-h] --summary SUMMARY
+
+Independent stdlib audit of the declared fresh-control weak-margin screen. No
+runner, model, or shared measurement helper imports. Protocol/set arithmetic
+is independently reconstructed from raw saved paths and same-shape FP32
+vectors. Run only after the complete primary campaign and owner authorization.
+
+options:
+  -h, --help         show this help message and exit
+  --summary SUMMARY
+
