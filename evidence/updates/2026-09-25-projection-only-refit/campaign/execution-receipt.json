@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "gpu_campaign_complete": true,
+  "lm_studio_backend": "Stopped by owner at user's request before run; remained offline.",
+  "observed_at_utc": "2026-09-25T20:15:51.492492+00:00",
+  "stdout_sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+  "summary_sha256": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61",
+  "terminal_completion_observed_by_primary": true,
+  "terminal_session_id": 94155,
+  "timing_scope": "Descriptive local measurements; no isolated serving comparison."
+}

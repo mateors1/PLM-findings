@@ -1,0 +1,35 @@
+["uv", "run", "--no-sync", "ruff", "check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-auditor-tests-v1\\test_auditor.py"]
+All checks passed!
+
+exit_code=0
+
+["uv", "run", "--no-sync", "ruff", "format", "--check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-auditor-tests-v1\\test_auditor.py"]
+2 files already formatted
+
+exit_code=0
+
+["uv", "run", "--no-sync", "pytest", "-o", "addopts=", "-q", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-auditor-tests-v1\\test_auditor.py"]
+......................................................................   [100%]
+============================== warnings summary ===============================
+runs/learning/projection-only-refit-auditor-tests-v1/test_auditor.py::test_state_hashes_prove_only_W_changed
+  C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\.venv\Lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+    import pynvml  # type: ignore[import]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+70 passed, 1 warning in 2.53s
+
+exit_code=0
+
+["uv", "run", "--no-sync", "python", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py", "--help"]
+usage: independent-audit.py [-h] [--summary SUMMARY]
+
+Independent saved-evidence projection refit audit; CPU payload inspection
+only. No primary prediction/aggregation imports and no neural or optimizer
+execution. Checkpoint bytes prove saved state; a trace is not independent
+training replication.
+
+options:
+  -h, --help         show this help message and exit
+  --summary SUMMARY
+
+exit_code=0

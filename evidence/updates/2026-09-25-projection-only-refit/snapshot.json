@@ -1,0 +1,190 @@
+{
+  "audit_sha256": "6535d9e85920c1c0e316ff0f9f60f391629c1c74be90d095759d5954692cf3bc",
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-projection-only-refit-plan.md",
+      "sha256": "2ac4d157ad8c079561d642199fec8de2c3da1866819baa48f52080e9b0f39bfe",
+      "source": "docs/experiments/2026-09-25-projection-only-refit-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-projection-only-refit.json",
+      "sha256": "c1f23d30d92947cffb442e3ec2bbe7631971812140925eedea64c182761c1cd5",
+      "source": "docs/experiments/2026-09-25-projection-only-refit.json"
+    },
+    {
+      "path": "scripts/refit_membership_projection.py",
+      "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "source": "scripts/refit_membership_projection.py"
+    },
+    {
+      "path": "configs/experiments/projection_only_refit_v1.json",
+      "sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+      "source": "configs/experiments/projection_only_refit_v1.json"
+    },
+    {
+      "path": "tests/unit/test_projection_only_refit.py",
+      "sha256": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+      "source": "tests/unit/test_projection_only_refit.py"
+    },
+    {
+      "path": "tests/fixtures/projection_refit_runtime_source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "tests/fixtures/projection_refit_runtime_source.zip"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61",
+      "source": "runs/learning/projection-only-refit-v1/summary.json"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "source": "runs/learning/projection-only-refit-v1/summary.script.py"
+    },
+    {
+      "path": "campaign/summary.helper.py",
+      "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+      "source": "runs/learning/projection-only-refit-v1/summary.helper.py"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "2ac4d157ad8c079561d642199fec8de2c3da1866819baa48f52080e9b0f39bfe",
+      "source": "runs/learning/projection-only-refit-v1/summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.recipe.json",
+      "sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+      "source": "runs/learning/projection-only-refit-v1/summary.recipe.json"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "runs/learning/projection-only-refit-v1/summary.source.zip"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "source": "runs/learning/projection-only-refit-v1/summary.configs.zip"
+    },
+    {
+      "path": "campaign/summary.inputs.json",
+      "sha256": "c9d5ff6983af8a3455dab3f41b76a96caac2ce83b3f82556130e07f1f66db53a",
+      "source": "runs/learning/projection-only-refit-v1/summary.inputs.json"
+    },
+    {
+      "path": "campaign/summary.test-receipt.json",
+      "sha256": "17e61b9c9f6182defb52534c4962d378a33569396bbec2c504563c7fb5f2418f",
+      "source": "runs/learning/projection-only-refit-v1/summary.test-receipt.json"
+    },
+    {
+      "path": "campaign/summary.test-stdout.txt",
+      "sha256": "035c270712af5f9d03dcd7bf2b0c4b3f20152aaaa69aff2a5f18753198245e17",
+      "source": "runs/learning/projection-only-refit-v1/summary.test-stdout.txt"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+      "source": "runs/learning/projection-only-refit-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "6535d9e85920c1c0e316ff0f9f60f391629c1c74be90d095759d5954692cf3bc",
+      "source": "runs/learning/projection-only-refit-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "da0bbc0bd9a1284c6dae6f072e46bcddf30b0c13cdd0a81e34328768042e90a6",
+      "source": "runs/learning/projection-only-refit-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "c46f94251bb0f555abcfb7580305f07c3dcb01061b144aa3bb6ec0427020d510",
+      "source": "runs/learning/projection-only-refit-v1/record-decision.py"
+    },
+    {
+      "path": "campaign/execution-stdout.txt",
+      "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+      "source": "runs/learning/projection-only-refit-v1/execution-stdout.txt"
+    },
+    {
+      "path": "campaign/run.json",
+      "sha256": "749f5ea7638a638c39a49f59b6c28eacdef2788af4745e18c3a8250476987627",
+      "source": "runs/learning/projection-only-refit-v1/run.json"
+    },
+    {
+      "path": "campaign/training.json",
+      "sha256": "f0544e1464b88330873f764a1927c949168452610f45a5824cb03d8d4e038d61",
+      "source": "runs/learning/projection-only-refit-v1/training.json"
+    },
+    {
+      "path": "campaign/checkpoint-final.pt.json",
+      "sha256": "6b82e04e81d2f717bb4c8fd40d22a14366ea18356fe102b5ea01480a7da5ccaa",
+      "source": "runs/learning/projection-only-refit-v1/checkpoint-final.pt.json"
+    },
+    {
+      "path": "verification/runner/stdout.txt",
+      "sha256": "035c270712af5f9d03dcd7bf2b0c4b3f20152aaaa69aff2a5f18753198245e17",
+      "source": "runs/learning/projection-only-refit-runner-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/runner/test-receipt.json",
+      "sha256": "17e61b9c9f6182defb52534c4962d378a33569396bbec2c504563c7fb5f2418f",
+      "source": "runs/learning/projection-only-refit-runner-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/actual-audit-stdout.txt",
+      "sha256": "726c6f2dd884d7924ccbcc963c917e0acd3cf267a3cedb9ba05421150ee59dc1",
+      "source": "runs/learning/projection-only-refit-auditor-tests-v1/actual-audit-stdout.txt"
+    },
+    {
+      "path": "verification/auditor/stdout.txt",
+      "sha256": "eb9fec169fb0be7faffa3d5d345c8f8a4828c7e2ad825624e0fb2bd223b0ea79",
+      "source": "runs/learning/projection-only-refit-auditor-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/auditor/test-receipt.json",
+      "sha256": "fe3595d0566258f58a3c787acd59d0470e74c39b6c2e88d257c6def5528817e2",
+      "source": "runs/learning/projection-only-refit-auditor-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/test_auditor.py",
+      "sha256": "00080813d022ac5efe47935b38a2e3258ba17c3a81222e1c40880ed6cedc94da",
+      "source": "runs/learning/projection-only-refit-auditor-tests-v1/test_auditor.py"
+    },
+    {
+      "path": "learning/39-refitting-a-frozen-feature-head.md",
+      "sha256": "653a0565c82f31b4e6f1b10ee7595aaedf092bfa37961b9c93e21b8eb2c65be9",
+      "source": "docs/learning/39-refitting-a-frozen-feature-head.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "6ab4a05f2b3cb1638bdde8b60e7b77bf5f34554647a96f5d7f0b9be86900d698",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "experiments/2026-09-25-projection-only-model-version-inventory.json",
+      "sha256": "cc2b86313e7e00072f08f7cb71fc4a5a030b8a02bef83019000af07d656d33c0",
+      "source": "docs/experiments/2026-09-25-projection-only-model-version-inventory.json"
+    },
+    {
+      "path": "campaign/execution-receipt.json",
+      "sha256": "372cf167c0142cf4c06224bda6018bd20251271c0edb52f2949f123af73a1596",
+      "source": "runs/learning/projection-only-refit-v1/execution-receipt.json"
+    },
+    {
+      "path": "campaign/register-checkpoint.py",
+      "sha256": "f4be146c437a7be15e4b0ed9e79fd709f738b40d8501f16b9592a75b3e1113d1",
+      "source": "runs/learning/projection-only-refit-v1/register-checkpoint.py"
+    }
+  ],
+  "date": "2026-09-25",
+  "decision_sha256": "da0bbc0bd9a1284c6dae6f072e46bcddf30b0c13cdd0a81e34328768042e90a6",
+  "executed_source_identity": "Campaign source/config/runner snapshots and training identities; current checkout commit is copying provenance only.",
+  "local_dependencies_manifest_sha256": "837ffb734816775b9ccced3497aedb6129826e29f580dd7150cb6d44fb4b2433",
+  "previous_manifest_entries_verified": 419,
+  "primary_copy_batch_manifest_sha256": "6376f83274ddbc8b787ae75f1b896016e27d13e441d5b46c9881b94dbe17f612",
+  "primary_summary_sha256": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true
+}
