@@ -39,6 +39,7 @@ These are application directions, not validated product claims. The [architectur
 14. [Wider first-choice search](papers/14-wider-first-choice-search.md) — eight branches improve offline exact answers from 569 to 603, with roughly doubled generation time and one query regression.
 15. [Eight-source unions and intersections](papers/15-eight-source-set-operations.md) — two exact gains fail the per-seed F1 gate; exhaustive diagnostics bound what fixed set operations can recover.
 16. [Membership support for omitted products](papers/16-membership-scores-for-omitted-products.md) — 1,394/1,407 omitted correct-member occurrences receive positive head scores; this diagnosis does not claim a quality gain.
+17. [More coverage, fewer exact answers](papers/17-coverage-seeking-branch.md) — one extra branch raises exact candidate availability from 605 to 608 but lowers selected exact answers from 603 to 600; the fixed gate rejects it.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -49,6 +50,12 @@ The main quality comparisons reuse **222 validation queries** under each of thre
 The composition result is **569/666 exact sets** with **96.69% macro F1**, now preserved by the accepted shape-aware application verification. The first application campaign failed exact HTTP score parity because FP32 scores changed with batch shape; that failed gate remains failed. The revised contract uses exact same-shape score references and unchanged cross-shape decisions, with explicit mixed fresh/reused evidence. No matched-quality concurrent throughput or energy advantage is established.
 
 ## Snapshot and reuse
+The [coverage-seeking branch screen](evidence/updates/2026-09-25-coverage-seeking-branch/README.md)
+is an audited negative result: exact candidate availability rises 605→608, but
+selected exact answers fall 603→600 under the fixed quality gate. Only 30 of 205
+anchors are correct. Higher pooled F1 does not rescue the exact-answer regression;
+the accepted baseline and serving defaults remain unchanged.
+
 
 The [2026-09-25 update](evidence/updates/2026-09-25/README.md) adds a historical
 checkpoint inventory, the revised verification contract, a completed native

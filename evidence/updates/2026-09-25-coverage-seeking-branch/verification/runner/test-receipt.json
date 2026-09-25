@@ -1,0 +1,54 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_coverage_seeking_branch.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_coverage_seeking_branch.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_coverage_seeking_branch.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_coverage_seeking_branch.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_coverage_seeking_branch.py",
+      "-o",
+      "addopts=",
+      "-q"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_coverage_seeking_branch.py",
+      "--preflight-only"
+    ]
+  ],
+  "gpu_used": false,
+  "new_branch_measured": false,
+  "passed": true,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\coverage-seeking-branch-runner-tests-v1\\stdout.txt",
+    "sha256": "06b537e0e93673f97e608d8b143c9e1a965474b43a8700f5fc1fb29b7b4ca174"
+  },
+  "synthetic_cpu_model_only": true,
+  "test_count": 28,
+  "test_source": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_coverage_seeking_branch.py",
+  "tested_script_sha256": "ff41f533bd20e004391ed0337c1d7e8a5ecf24b159331fe1db27945d06609e7f",
+  "tested_test_sha256": "7229c034f6dca5bfc0f65dbc8bc301edd8068d1536524de9b30cba2e13548328"
+}

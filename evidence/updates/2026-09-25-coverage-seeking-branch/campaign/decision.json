@@ -1,0 +1,30 @@
+{
+  "audit_sha256": "3e5f62a30aa2124519d92df8d6d4cf88f349e81e118b4f193286ee2f4fa008fc",
+  "auditor_sha256": "52f9c648e3b0df992b3d624b45f64faece6255480cec5bd3332deea864705668",
+  "basis": "Independent reconstruction verifies anchors, controls, head equality, raw paths, candidates, canonical scores, metrics, work counts, identities and fixed quality gate.",
+  "campaign_version": "coverage-seeking-branch-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "3d9caba8c428d7c7b03cf5fbe902c281bdad0577334b7b81d33b1c2edb0518ff",
+  "default_changed": false,
+  "evidence_accepted": true,
+  "fixed_quality_gate_passed": false,
+  "gate": {
+    "checks": {
+      "active_sources_valid": true,
+      "all_selected_eligible": true,
+      "complete_exact_replay": true,
+      "per_seed_exact_nonregression": false,
+      "per_seed_f1_nonregression": false,
+      "pooled_dual_improvement": true,
+      "pooled_exact_improvement": false,
+      "pooled_group_nonregression": false
+    },
+    "quality_passed": false
+  },
+  "new_checkpoint_created": false,
+  "outcome": "Reject this prediction variant under the fixed quality gate; retain complete evidence and diagnosis.",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "summary_sha256": "15a4d408fe59c53ed76bcdac8588403677342bd7af5df80691a2461a0667676c",
+  "training_executed": false
+}

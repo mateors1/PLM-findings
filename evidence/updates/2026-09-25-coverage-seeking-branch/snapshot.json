@@ -1,0 +1,125 @@
+{
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-coverage-seeking-branch-plan.md",
+      "sha256": "4d718ca6b19d77d8387ef7b90089e2692058bfc99577ac9affcafe765e5a1551",
+      "source": "docs/experiments/2026-09-25-coverage-seeking-branch-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-coverage-seeking-branch.json",
+      "sha256": "4de9823ffa6f2007e9dc462768b6662d2b4ad00107932403dd43510cc20e5ffc",
+      "source": "docs/experiments/2026-09-25-coverage-seeking-branch.json"
+    },
+    {
+      "path": "learning/38-a-branch-for-uncovered-products.md",
+      "sha256": "1668f4fe7d9683148bda126b382eededd925dc0cdee082eecde5ae4c921e53d3",
+      "source": "docs/learning/38-a-branch-for-uncovered-products.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "fddee2806bdcd7f30794b5a9fdc30448d27cbc32eff5411bbaf26ce6b4127708",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "scripts/evaluate_coverage_seeking_branch.py",
+      "sha256": "ff41f533bd20e004391ed0337c1d7e8a5ecf24b159331fe1db27945d06609e7f",
+      "source": "scripts/evaluate_coverage_seeking_branch.py"
+    },
+    {
+      "path": "tests/test_coverage_seeking_branch.py",
+      "sha256": "7229c034f6dca5bfc0f65dbc8bc301edd8068d1536524de9b30cba2e13548328",
+      "source": "tests/unit/test_coverage_seeking_branch.py"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "15a4d408fe59c53ed76bcdac8588403677342bd7af5df80691a2461a0667676c",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.json"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "ff41f533bd20e004391ed0337c1d7e8a5ecf24b159331fe1db27945d06609e7f",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.script.py"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "4d718ca6b19d77d8387ef7b90089e2692058bfc99577ac9affcafe765e5a1551",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.inputs.json",
+      "sha256": "db0787f717a6949322444598abdd3e2b5dfddbdbc96762c0014eaa3eeceaf3a2",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.inputs.json"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "52f9c648e3b0df992b3d624b45f64faece6255480cec5bd3332deea864705668",
+      "source": "runs/learning/coverage-seeking-branch-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "3e5f62a30aa2124519d92df8d6d4cf88f349e81e118b4f193286ee2f4fa008fc",
+      "source": "runs/learning/coverage-seeking-branch-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "f645b4b086c7ef30b7057a6b3969254bf3a4d50fa01917d003a28967d3788fb8",
+      "source": "runs/learning/coverage-seeking-branch-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "3d9caba8c428d7c7b03cf5fbe902c281bdad0577334b7b81d33b1c2edb0518ff",
+      "source": "runs/learning/coverage-seeking-branch-v1/record-decision.py"
+    },
+    {
+      "path": "campaign/summary.helper.py",
+      "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.helper.py"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.source.zip"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "source": "runs/learning/coverage-seeking-branch-v1/summary.configs.zip"
+    },
+    {
+      "path": "verification/runner/stdout.txt",
+      "sha256": "06b537e0e93673f97e608d8b143c9e1a965474b43a8700f5fc1fb29b7b4ca174",
+      "source": "runs/learning/coverage-seeking-branch-runner-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/runner/test-receipt.json",
+      "sha256": "0659157a47c8c49e99270aee5eecf959d45543f21d055090203b3db7fa0f082a",
+      "source": "runs/learning/coverage-seeking-branch-runner-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/actual-audit-stdout.txt",
+      "sha256": "133b94bbe068fac3ee490aef06ac789a66025b269f4d8538d1649eb3d4ce0af4",
+      "source": "runs/learning/coverage-seeking-branch-auditor-tests-v1/actual-audit-stdout.txt"
+    },
+    {
+      "path": "verification/auditor/stdout.txt",
+      "sha256": "e26ca40c770cc4cfd2e9e612dd64ee2747549e8c9c273d42b3344cc025430318",
+      "source": "runs/learning/coverage-seeking-branch-auditor-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/auditor/test-receipt.json",
+      "sha256": "a4c137aa5dcb55c8873caab19f1593df7ea97c493b0b5b133e166c2c4f6570c9",
+      "source": "runs/learning/coverage-seeking-branch-auditor-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/test_auditor.py",
+      "sha256": "d4a833eb5d36566884b25d9d87688777805b9c8d95ea768b4549597610661102",
+      "source": "runs/learning/coverage-seeking-branch-auditor-tests-v1/test_auditor.py"
+    }
+  ],
+  "date": "2026-09-25",
+  "previous_manifest_entries_verified": 394,
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true,
+  "sync_script_sha256": "4f35832bd9f33063eaecad242fd88d54486954803526132d978152c0b4d3349d"
+}
