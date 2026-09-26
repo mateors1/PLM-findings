@@ -1,0 +1,10 @@
+{
+  "candidate_quality_result": false,
+  "exit_code": 1,
+  "status": "failed-parent-runtime-admission",
+  "stdout_sha256": "c2e1f5ce1e9ac4e135c110310c78b733a34fcf1f6587468d25ada1491f3d4dd9",
+  "summary_sha256": "4f1471ec7880d1718ed08d1fabc6bb414f7e55f48b52cbe9ad604e57193425ec",
+  "terminal_chunk_id": "50ba53",
+  "terminal_completion_observed_by_primary": true,
+  "training_sha256": "40e783b5380236f56cc21e85563e99d82418a35c45a14ed42cf214d285f1b591"
+}

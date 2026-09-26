@@ -1,0 +1,16 @@
+{
+  "checkpoint_payload_read_cpu_only": true,
+  "command": "uv run --no-sync python runs/learning/symmetric-affine8000-failure-diagnosis-v1/diagnose.py",
+  "cuda_initialized": false,
+  "diagnosis_id": "symmetric-affine8000-failure-diagnosis-v1",
+  "diagnosis_sha256": "6fafc78ad3bb24c4f9762e7516639d6ff73adb70044816bbf8c50df3d721d696",
+  "exit_code": 0,
+  "gpu_used": false,
+  "model_forward_executed": false,
+  "observed_at_utc": "2026-09-26T13:32:00.225075+00:00",
+  "script_sha256": "6886cc37c5317dcadaecfbaffcd2ef0f08b423717501a080fa48320c6a5da935",
+  "terminal_completion_observed": true,
+  "tool_chunk_id": "fe36d8",
+  "training_executed": false,
+  "wall_time_seconds": 2.2729999
+}

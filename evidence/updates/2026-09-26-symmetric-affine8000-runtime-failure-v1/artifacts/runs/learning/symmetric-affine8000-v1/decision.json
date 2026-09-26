@@ -1,0 +1,20 @@
+{
+  "audit_execution_receipt_sha256": "9fca33ba465193d85e29fee53ac0091b8157d8f792d963098711a20734ae2859",
+  "audit_sha256": "f012162aae60dcd9211ce9db919864282fe7ef7c388c70113936cbf04dee6dbb",
+  "campaign": "symmetric-affine8000-v1",
+  "checkpoint_inventory_count": 37,
+  "decision_version": 1,
+  "diagnosis_sha256": "6fafc78ad3bb24c4f9762e7516639d6ff73adb70044816bbf8c50df3d721d696",
+  "execution_exit_code": 1,
+  "execution_receipt_sha256": "c738bdf031ca2bfe6e1e4834f1cce8e5c171408e9bc1d27dce6590314ef2c290",
+  "execution_terminal": true,
+  "experiment_completed": false,
+  "failure_evidence_accepted": true,
+  "model_promoted": false,
+  "new_checkpoint_created": false,
+  "quality_gate_applicable": false,
+  "quality_gate_passed": null,
+  "reason": "Verified runtime admission failure: checkpoint TrainConfig compared with enclosing RootConfig. No optimization or predictions. Preserve v1; separate v2 repair retains scientific gates.",
+  "scientific_hypothesis_evaluated": false,
+  "summary_sha256": "4f1471ec7880d1718ed08d1fabc6bb414f7e55f48b52cbe9ad604e57193425ec"
+}

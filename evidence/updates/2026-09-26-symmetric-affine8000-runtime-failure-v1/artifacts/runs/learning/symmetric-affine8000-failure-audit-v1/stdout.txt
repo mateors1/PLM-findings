@@ -1,0 +1,1 @@
+{"audit_passed": true, "report_sha256": "f012162aae60dcd9211ce9db919864282fe7ef7c388c70113936cbf04dee6dbb", "candidate_quality_result": false, "training_updates": 0}

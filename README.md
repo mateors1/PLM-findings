@@ -220,3 +220,7 @@ dual-TYPE; oracle parity remains unmet. Four exact trace chunks preserve all
 The [8000-update parent-seed replication](evidence/updates/2026-09-25-bilinear-budget8000-replication/README.md) preserves the two original-parent fits, eight exact training-history chunks, versioned verifier repair and 37-checkpoint inventory. Both fresh per-seed gates pass with 14 gains and no losses against matched 2000-update controls. The aggregate and independent-audit records retain `acceptance=false`; their `audit_passed=true` and the owner decision's `evidence_accepted=true` are separate statuses. No oracle parity, serving promotion or weight archival is claimed.
 
 The [paired budget geometry packet](evidence/updates/2026-09-25-bilinear-budget-geometry/README.md) preserves nine complete reduced reports and independent verification. It accepts a descriptive diagnostic, selects no threshold or routing rule, and creates no checkpoint; the inventory remains 37. Historical 1729 remains development-selected, and all comparisons reuse the same 222 validation questions.
+
+29. [Affine runtime admission failure](papers/29-affine-runtime-admission.md) — a configuration-scope mismatch stopped the first attempt before training; the independently audited failure provides no model-quality conclusion.
+
+The [failure evidence bundle](evidence/updates/2026-09-26-symmetric-affine8000-runtime-failure-v1/README.md) preserves source snapshots, tests, receipts, diagnosis and owner decision. No checkpoint was created; the inventory remains37.

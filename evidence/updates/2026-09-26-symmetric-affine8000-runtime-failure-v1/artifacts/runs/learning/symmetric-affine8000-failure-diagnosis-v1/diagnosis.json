@@ -1,0 +1,136 @@
+{
+  "admission_predicates": {
+    "checkpoint_config_equals_run_root_config": false,
+    "checkpoint_hash_original": true,
+    "corpus_identity_equals_historical": true,
+    "global_step_2000": true,
+    "training_evaluator_current": true,
+    "training_identity_corpus_fields_match": true,
+    "training_metadata_equals_sidecar": true,
+    "training_model_config_equals_resolved_model": true,
+    "training_objective_causal_next_token": true
+  },
+  "candidate_retry_executed": false,
+  "configuration_keys": {
+    "checkpoint_config": [
+      "batch_size",
+      "checkpoint_every",
+      "compile",
+      "ema_decay",
+      "eval_every",
+      "grad_accum_steps",
+      "grad_clip_norm",
+      "max_steps",
+      "name",
+      "num_workers",
+      "optimizer",
+      "pin_memory",
+      "precision",
+      "scheduler",
+      "seq_len"
+    ],
+    "run_root_config": [
+      "baseline",
+      "data",
+      "deterministic",
+      "eval",
+      "model",
+      "paths",
+      "run_name",
+      "seed",
+      "train"
+    ],
+    "run_train_config": [
+      "batch_size",
+      "checkpoint_every",
+      "compile",
+      "ema_decay",
+      "eval_every",
+      "grad_accum_steps",
+      "grad_clip_norm",
+      "max_steps",
+      "name",
+      "num_workers",
+      "optimizer",
+      "pin_memory",
+      "precision",
+      "scheduler",
+      "seq_len"
+    ]
+  },
+  "corpus_graph_or_protected_files_opened": false,
+  "cpu_checkpoint_load": {
+    "map_location": "cpu",
+    "model_state_count": 93,
+    "sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "sidecar_payload_metadata_equal": {
+      "config": true,
+      "corpus_identity": true,
+      "experiment_identity": true,
+      "global_step": true,
+      "split_hash": true,
+      "training_metadata": true
+    }
+  },
+  "created_at_utc": "2026-09-26T13:31:18.894274+00:00",
+  "cuda_initialized_after_cpu_load": false,
+  "diagnosis_complete": true,
+  "diagnosis_id": "symmetric-affine8000-failure-diagnosis-v1",
+  "failed_campaign": "symmetric-affine8000-v1",
+  "failure_stage": {
+    "completed_updates": 0,
+    "outer_model_available": false,
+    "outer_optimizer_available": false,
+    "parent_model_loaded_on_cpu": true,
+    "residual_parameters_attached": false,
+    "runtime_returned": false,
+    "training_history_length": 0
+  },
+  "gpu_used": false,
+  "input_sha256": {
+    "runs\\learning\\bilinear-budget8000-v1\\summary.json": "e4067b516e055cba55c0ba651c9d1171dc0ee406b80b4f969fb8ada5934f24e8",
+    "runs\\learning\\symmetric-affine8000-failure-diagnosis-v1\\diagnose.py": "6886cc37c5317dcadaecfbaffcd2ef0f08b423717501a080fa48320c6a5da935",
+    "runs\\learning\\symmetric-affine8000-v1\\runtime\\src\\plm\\__init__.py": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "runs\\learning\\symmetric-affine8000-v1\\runtime\\src\\plm\\config.py": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d",
+    "runs\\learning\\symmetric-affine8000-v1\\runtime\\src\\plm\\training\\checkpoint.py": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410",
+    "runs\\learning\\symmetric-affine8000-v1\\runtime\\src\\plm\\training\\trainer.py": "0c45be0400cc8d3b6cf0497ad393f7934fbe1edeeca7cdcbf25680c91d05b196",
+    "runs\\learning\\symmetric-affine8000-v1\\summary.json": "4f1471ec7880d1718ed08d1fabc6bb414f7e55f48b52cbe9ad604e57193425ec",
+    "runs\\learning\\symmetric-affine8000-v1\\summary.script.py": "a9899d4c494198afcf35346903f93bc39d5771d60a6711dc164d12a42ad11568",
+    "runs\\learning\\symmetric-affine8000-v1\\training.json": "40e783b5380236f56cc21e85563e99d82418a35c45a14ed42cf214d285f1b591",
+    "runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "scripts\\refit_symmetric_affine.py": "a9899d4c494198afcf35346903f93bc39d5771d60a6711dc164d12a42ad11568"
+  },
+  "module_sha256": {
+    "plm": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "plm.config": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d"
+  },
+  "neural_forward_executed": false,
+  "optimizer_steps_executed": 0,
+  "read_only_originals": true,
+  "recommended_v2_repair": [
+    "Preserve frozen v1 artifacts and declare a separately versioned adapter/runner attempt.",
+    "Compare authoritative payload config to authenticated parent_run.config.train, not the entire root config.",
+    "Keep original checkpoint hash, complete identity, corpus/split, training objective, model configuration, step count and sidecar-payload equality checks unchanged.",
+    "Add a synthetic actual-schema fixture: RootConfig in run.json and TrainConfig in checkpoint; require success only for exact matching train config and reject tampered optimizer or sequence-length settings.",
+    "Revalidate independent auditor input/source identities and create new test/readiness receipts before a v2 attempt."
+  ],
+  "root_cause": "Checkpoint config stores TrainConfig; run.json config stores RootConfig. The v1 adapter compared different configuration schemas.",
+  "schema_version": 1,
+  "sole_failing_predicate": "raw[\"config\"] == context[\"parent_run\"][\"config\"]",
+  "source_evidence": {
+    "archived_loader": "runs/learning/symmetric-affine8000-v1/runtime/src/plm/training/checkpoint.py:163",
+    "archived_save_argument": "config=self.config (Trainer receives TrainConfig)",
+    "archived_trainer": "runs/learning/symmetric-affine8000-v1/runtime/src/plm/training/trainer.py:342",
+    "frozen_runner": "scripts/refit_symmetric_affine.py:466"
+  },
+  "test_gap": "The v1 synthetic runtime fixture stored the same synthetic config dict in both locations, so it did not represent the archived checkpoint schema.",
+  "training_executed": false,
+  "verified_repair_equivalence": {
+    "checkpoint_config_equals_run_train_config": true,
+    "checkpoint_identity_equals_original_run_identity": true,
+    "checkpoint_training_model_config_equals_resolved_root_model_config": true,
+    "inherited_architecture_matches_resolved_model": true
+  }
+}
