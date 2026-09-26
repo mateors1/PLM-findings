@@ -1,0 +1,22 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "mkdocs",
+    "build"
+  ],
+  "document_sha256": {
+    "docs\\index.md": "abe18cd2c617aa40bb47fda8d28eb4bedc531017fafcb0bb7f4208cc7e0d3776",
+    "docs\\learning\\00-project-so-far.md": "0aaef7402c72d4295a77351d021c84785424c086d78c576d6f8bc8e8d954d40b",
+    "docs\\learning\\48-testing-a-budget-across-parent-seeds.md": "4a0caad42e41aac683f8a89e3b65f8cf38467c60491c5f05cfe05b75ebea27af",
+    "docs\\model-versions.md": "0e60db8a8defbe4a14d07004d16a54fc23485c8f7b73fa4586b3d4b666e78c7e",
+    "registry.md": "d8593972b9988c6d1ee04d8b4ee89b85aafcdae0afb9160a536add90ae6a3e94"
+  },
+  "exit_code": 0,
+  "observed_at_utc": "2026-09-26T02:51:05.249121+00:00",
+  "scope": "Normal documentation build after completed replication documentation; no claim about preexisting strict-link warnings.",
+  "stdout_sha256": "03dc016c3c16fbf21a0a25bb8e780c3b949ec9edb22777095abb920fb431d569",
+  "terminal_chunk_id": "27a91a",
+  "terminal_completion_observed_by_primary": true
+}

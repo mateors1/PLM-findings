@@ -1,0 +1,23 @@
+{
+  "comparison_scope": "saved historical output; no rerun",
+  "historical2000_child_sha256": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+  "historical2000_summary_sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+  "paired_vs_historical2000": {
+    "gains": 9,
+    "groups": {
+      "COLOR": {
+        "gains": 0,
+        "losses": 0
+      },
+      "TYPE_dual": {
+        "gains": 8,
+        "losses": 0
+      },
+      "TYPE_single": {
+        "gains": 1,
+        "losses": 0
+      }
+    },
+    "losses": 0
+  }
+}

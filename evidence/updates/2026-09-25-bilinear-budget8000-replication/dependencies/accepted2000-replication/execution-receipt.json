@@ -1,0 +1,9 @@
+{
+  "explanation": "PowerShell parsed the UTC launch timestamp to a DateTime and serialized the same instant with local -05:00 offset; the frozen aggregator compares strings.",
+  "stdout_sha256": "68736e31ddca6d572c4384273d7317dbfb02bdbb37896de8b555df40296fbce3",
+  "summary_sha256": "c3d79ed3effe7504b67121b25274603b2a5870f9150a5e8043b975f9dc478c2c",
+  "exit_code": 1,
+  "failure": "launch/terminal chronology binding",
+  "terminal_completion_observed_by_primary": true,
+  "finished_at_utc": "2026-09-26T00:41:28.6251540+00:00"
+}

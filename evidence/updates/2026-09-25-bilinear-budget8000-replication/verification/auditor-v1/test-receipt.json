@@ -1,0 +1,76 @@
+{
+  "aggregation_source_sha256": "78cae68bdf741ec35c6deff6a62b57673092be0cf61968e88bbf40274878789f",
+  "aggregation_test_receipt_sha256": "0dc5c87d41db7ae3e1a3d9cd591717d0941501df201e836abcad765ead2e3f36",
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-q",
+        "-o",
+        "addopts=",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "finished_at_utc": "2026-09-26T02:23:37.315584+00:00",
+  "gpu_used": false,
+  "limitations": [
+    "Synthetic CPU tests only; no real checkpoints, training, evaluation reports or dataset loaded.",
+    "Synthetic AdamW state tensors are constructed on CPU without optimizer execution."
+  ],
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "plan_sha256": "750d115b2fd0daf356cb3a633248e826c264f30533ddf8e8df2ee125d2ecdc6b",
+  "primary_source_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+  "primary_test_receipt_sha256": "9b01b18b15b00a98653d057f952bc8882b2d002d81b17a1cc20438e5dc1583a0",
+  "skipped": 0,
+  "started_at_utc": "2026-09-26T02:23:32.857751+00:00",
+  "stdout_sha256": "cafaae1420fedefb3e08ae7fed816b196ce9786a4da31d665d019dbaa3ee7cbe",
+  "terminal_completion_observed": true,
+  "test_count": 131,
+  "tested_auditor_sha256": "495db4e3d65e3893fdc68579cad62792c3ab73fd614738b7e97263935af00daa",
+  "tests_sha256": "faf13054239d50b194595c66f30406180c77ab4f3e3303872a408860fd22eab2"
+}

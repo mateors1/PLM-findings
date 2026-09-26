@@ -1,0 +1,23 @@
+{
+  "comparison_scope": "saved seed-matched historical output; no rerun",
+  "historical2000_child_sha256": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+  "historical2000_summary_sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+  "paired_vs_historical2000": {
+    "gains": 8,
+    "groups": {
+      "COLOR": {
+        "gains": 0,
+        "losses": 0
+      },
+      "TYPE_dual": {
+        "gains": 8,
+        "losses": 0
+      },
+      "TYPE_single": {
+        "gains": 0,
+        "losses": 0
+      }
+    },
+    "losses": 0
+  }
+}
