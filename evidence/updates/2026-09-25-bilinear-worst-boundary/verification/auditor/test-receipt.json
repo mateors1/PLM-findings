@@ -1,0 +1,71 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-q",
+        "-o",
+        "addopts=",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "created_at_utc": "2026-09-26T01:31:22.063558+00:00",
+  "exit_code": 0,
+  "gpu_used": false,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "plan_sha256": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+  "primary_recipe_sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+  "primary_script_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+  "primary_test_receipt_sha256": "3d11d683e954fa0d74f416dc8a8fe7d20aa3073d3150e063f2118391a197547c",
+  "real_checkpoint_loaded": false,
+  "recipe_contract_preflight": true,
+  "skipped": 0,
+  "stdout_sha256": "4aaf8bb9301f58b5b4932eea641d53775a4c9cef0d76b8848d03aa74267e8753",
+  "synthetic_cpu_tensors_only": true,
+  "test_count": 68,
+  "tested_auditor_sha256": "9e250d3b5f978a1942b8a2499e731d2bbc3970e4d24ec9aa7e1e81a57f90ec2b",
+  "tests_sha256": "45ca8e490328ccc2cd2cb43efb1a011629de1bf845466e20c21b90a40dba7782"
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "path": "experiments/2026-09-25-bilinear-worst-boundary-plan.md",
+    "sha256": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+    "source": "docs/experiments/2026-09-25-bilinear-worst-boundary-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-residual-plan.md",
+    "sha256": "b1cd8a897e5db7d0dc0adc3e3bd40a87b0ae5830714b63ea86649f1599c9e132",
+    "source": "docs/experiments/2026-09-25-bilinear-residual-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-worst-boundary.json",
+    "sha256": "a639aa2f9713da0ef95f75ee5f8fb4d4c777b13dc4768140c77f7709bdccf71d",
+    "source": "docs/experiments/2026-09-25-bilinear-worst-boundary.json"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-worst-boundary-model-version-inventory.json",
+    "sha256": "d18c7cd521d758593fbad803452dde6fa820e542fed52b7ae4557025e2ebfa2a",
+    "source": "docs/experiments/2026-09-25-bilinear-worst-boundary-model-version-inventory.json"
+  },
+  {
+    "path": "scripts/refit_bilinear_worst_boundary.py",
+    "sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "source": "scripts/refit_bilinear_worst_boundary.py"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-worst-boundary-training.json",
+    "sha256": "13562d8b5dcab34c6e0cbe49af448de2f1beba3f0c1ab21d687a8f70b0506381",
+    "source": "docs/experiments/2026-09-25-bilinear-worst-boundary-training.json"
+  },
+  {
+    "path": "scripts/refit_bilinear_budget.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "scripts/refit_bilinear_budget.py"
+  },
+  {
+    "path": "scripts/refit_worst_boundary_projection.py",
+    "sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "source": "scripts/refit_worst_boundary_projection.py"
+  },
+  {
+    "path": "scripts/refit_bilinear_residual.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "scripts/refit_bilinear_residual.py"
+  },
+  {
+    "path": "scripts/refit_membership_projection.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "scripts/refit_membership_projection.py"
+  },
+  {
+    "path": "configs/experiments/bilinear_worst_boundary_v1.json",
+    "sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+    "source": "configs/experiments/bilinear_worst_boundary_v1.json"
+  },
+  {
+    "path": "configs/experiments/bilinear_budget2000_v1.json",
+    "sha256": "e454c52a315acb389b2bda3c126367e13df63b96230f9f698517705b531d51da",
+    "source": "configs/experiments/bilinear_budget2000_v1.json"
+  },
+  {
+    "path": "configs/experiments/projection_worst_boundary_v1.json",
+    "sha256": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+    "source": "configs/experiments/projection_worst_boundary_v1.json"
+  },
+  {
+    "path": "configs/experiments/bilinear_residual_refit_v1.json",
+    "sha256": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+    "source": "configs/experiments/bilinear_residual_refit_v1.json"
+  },
+  {
+    "path": "configs/experiments/projection_only_refit_v1.json",
+    "sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "source": "configs/experiments/projection_only_refit_v1.json"
+  },
+  {
+    "path": "tests/unit/test_bilinear_worst_boundary.py",
+    "sha256": "93c45e51e418866077b5f610eb2349dc9c383551a60ff57c4d8db0a000fbe4c8",
+    "source": "tests/unit/test_bilinear_worst_boundary.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_budget.py",
+    "sha256": "b9ed564e6b65196c225f57a376b40d90bade0d7696a4cbfbf1c8b9c8fd221d18",
+    "source": "tests/unit/test_bilinear_budget.py"
+  },
+  {
+    "path": "tests/unit/test_projection_worst_boundary.py",
+    "sha256": "b4e5b1968c0f322ba9e5451c97d45e60bafbfe85f375ef7ce4993cce14d68e7d",
+    "source": "tests/unit/test_projection_worst_boundary.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_residual.py",
+    "sha256": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34",
+    "source": "tests/unit/test_bilinear_residual.py"
+  },
+  {
+    "path": "tests/unit/test_projection_only_refit.py",
+    "sha256": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+    "source": "tests/unit/test_projection_only_refit.py"
+  },
+  {
+    "path": "tests/fixtures/projection_refit_runtime_source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "tests/fixtures/projection_refit_runtime_source.zip"
+  },
+  {
+    "path": "campaign/checkpoint-final.pt.json",
+    "sha256": "fee5aa9b52cfb17b6c86df41027283f5823ef0a78b35536918e56d66cce6b451",
+    "source": "runs/learning/bilinear-worst-boundary-v1/checkpoint-final.pt.json"
+  },
+  {
+    "path": "campaign/comparisons.json",
+    "sha256": "b72936e3321ab77608a79ae99290091c7f707cbe30b9ac54050b728df3f13c53",
+    "source": "runs/learning/bilinear-worst-boundary-v1/comparisons.json"
+  },
+  {
+    "path": "campaign/decision.json",
+    "sha256": "6dd49574b54b0bea9d64c79650eb57c1090157254d8e2fdaec0f7dcb8cf5b8a4",
+    "source": "runs/learning/bilinear-worst-boundary-v1/decision.json"
+  },
+  {
+    "path": "campaign/execution-receipt.json",
+    "sha256": "049bb85fb6d499a6a2783a748aa54471e1bfd96dcda2ba82ab3e574cfc12a262",
+    "source": "runs/learning/bilinear-worst-boundary-v1/execution-receipt.json"
+  },
+  {
+    "path": "campaign/independent-audit.json",
+    "sha256": "f92b759a908bf3bfa63f8a9a2c49d15bf533b44940b56d34465f8e5a47907455",
+    "source": "runs/learning/bilinear-worst-boundary-v1/independent-audit.json"
+  },
+  {
+    "path": "campaign/independent-audit.py",
+    "sha256": "9e250d3b5f978a1942b8a2499e731d2bbc3970e4d24ec9aa7e1e81a57f90ec2b",
+    "source": "runs/learning/bilinear-worst-boundary-v1/independent-audit.py"
+  },
+  {
+    "path": "campaign/primary-stdout.txt",
+    "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "source": "runs/learning/bilinear-worst-boundary-v1/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/record-decision.py",
+    "sha256": "a8b356d58561144eb6a5fc911a48be26acd050841c41b642bb95df8a88b6cbb5",
+    "source": "runs/learning/bilinear-worst-boundary-v1/record-decision.py"
+  },
+  {
+    "path": "campaign/register-checkpoint.py",
+    "sha256": "af4fb6f0e072f5177e88686ff234eae919b0a3bbe72dbbaeca509ec26e5aaf80",
+    "source": "runs/learning/bilinear-worst-boundary-v1/register-checkpoint.py"
+  },
+  {
+    "path": "campaign/run.json",
+    "sha256": "b4b2ffe739c429bd38355b90edf6cccdc231cd6947d2b6118e2b1be8ffab3498",
+    "source": "runs/learning/bilinear-worst-boundary-v1/run.json"
+  },
+  {
+    "path": "campaign/summary.bilinear-helper.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.bilinear-helper.py"
+  },
+  {
+    "path": "campaign/summary.budget-helper.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.budget-helper.py"
+  },
+  {
+    "path": "campaign/summary.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.configs.zip"
+  },
+  {
+    "path": "campaign/summary.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.helper.py"
+  },
+  {
+    "path": "campaign/summary.inputs.json",
+    "sha256": "646e6b9b6b0e7e471c18281add36cec06fa854029729520cb98e976eb74f375a",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.inputs.json"
+  },
+  {
+    "path": "campaign/summary.json",
+    "sha256": "167085de1533f72a27f35f6249f2d5348a6887da73a9f706de373eb76c6275e0",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.json"
+  },
+  {
+    "path": "campaign/summary.loss-helper.py",
+    "sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.loss-helper.py"
+  },
+  {
+    "path": "campaign/summary.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.mean-helper.py"
+  },
+  {
+    "path": "campaign/summary.plan.md",
+    "sha256": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.plan.md"
+  },
+  {
+    "path": "campaign/summary.recipe.json",
+    "sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.recipe.json"
+  },
+  {
+    "path": "campaign/summary.script.py",
+    "sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.script.py"
+  },
+  {
+    "path": "campaign/summary.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.source.zip"
+  },
+  {
+    "path": "campaign/summary.test-receipt.json",
+    "sha256": "3d11d683e954fa0d74f416dc8a8fe7d20aa3073d3150e063f2118391a197547c",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/summary.test-stdout.txt",
+    "sha256": "e4337530be18d0e80d6e776f6abe6df379be3bfe12a4af0a74909b5ff1085b45",
+    "source": "runs/learning/bilinear-worst-boundary-v1/summary.test-stdout.txt"
+  },
+  {
+    "path": "campaign/training.json",
+    "sha256": "85488d64d247841a6cec2f7fb68f044cbd1c6e2247fd569b7d336fbb6903904e",
+    "source": "runs/learning/bilinear-worst-boundary-v1/training.json"
+  },
+  {
+    "path": "campaign/zero-replay.json",
+    "sha256": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "source": "runs/learning/bilinear-worst-boundary-v1/zero-replay.json"
+  },
+  {
+    "path": "verification/runner/receipt.json",
+    "sha256": "3d11d683e954fa0d74f416dc8a8fe7d20aa3073d3150e063f2118391a197547c",
+    "source": "runs/learning/bilinear-worst-boundary-runner-tests-v1/receipt.json"
+  },
+  {
+    "path": "verification/runner/stdout.txt",
+    "sha256": "e4337530be18d0e80d6e776f6abe6df379be3bfe12a4af0a74909b5ff1085b45",
+    "source": "runs/learning/bilinear-worst-boundary-runner-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor/actual-audit-receipt.json",
+    "sha256": "ee0021ef0b3e335545591fbe180f8a16bd56ef478c67d9614218fd596387652b",
+    "source": "runs/learning/bilinear-worst-boundary-auditor-tests-v1/actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor/actual-stdout.txt",
+    "sha256": "85a86f42753e868c2447e22807c296c57533ca9d5feab6bc6fe42a92e1aee285",
+    "source": "runs/learning/bilinear-worst-boundary-auditor-tests-v1/actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor/stdout.txt",
+    "sha256": "4aaf8bb9301f58b5b4932eea641d53775a4c9cef0d76b8848d03aa74267e8753",
+    "source": "runs/learning/bilinear-worst-boundary-auditor-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor/test-receipt.json",
+    "sha256": "ca1b85f60387852cd4e807f93f3dcc3c48bc6743b817a8d1618e3098245669e2",
+    "source": "runs/learning/bilinear-worst-boundary-auditor-tests-v1/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor/test_auditor.py",
+    "sha256": "45ca8e490328ccc2cd2cb43efb1a011629de1bf845466e20c21b90a40dba7782",
+    "source": "runs/learning/bilinear-worst-boundary-auditor-tests-v1/test_auditor.py"
+  },
+  {
+    "path": "dependencies/mean-refit-independent-audit.py",
+    "sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "source": "runs/learning/projection-only-refit-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical500/summary.json",
+    "sha256": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+    "source": "runs/learning/bilinear-residual-refit-v1/summary.json"
+  },
+  {
+    "path": "dependencies/historical500/independent-audit.json",
+    "sha256": "2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417",
+    "source": "runs/learning/bilinear-residual-refit-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/historical500/decision.json",
+    "sha256": "d7d38687e2d099348af61bd52ed62df28211464e4209cb00df43db21d1d93234",
+    "source": "runs/learning/bilinear-residual-refit-v1/decision.json"
+  },
+  {
+    "path": "dependencies/historical500/independent-audit.py",
+    "sha256": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+    "source": "runs/learning/bilinear-residual-refit-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical500/training.json",
+    "sha256": "df78c400adee070a4a8065b1ac63f0561ff7e040291bdaec139d25ee6467f647",
+    "source": "runs/learning/bilinear-residual-refit-v1/training.json"
+  },
+  {
+    "path": "dependencies/historical500/run.json",
+    "sha256": "125eb543786e8b5c0460491eae4775e105de4ed9cdc09898f818d4181cd702a0",
+    "source": "runs/learning/bilinear-residual-refit-v1/run.json"
+  },
+  {
+    "path": "dependencies/historical500/zero-replay.json",
+    "sha256": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "source": "runs/learning/bilinear-residual-refit-v1/zero-replay.json"
+  },
+  {
+    "path": "dependencies/historical2000/summary.json",
+    "sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "source": "runs/learning/bilinear-budget2000-v1/summary.json"
+  },
+  {
+    "path": "dependencies/historical2000/independent-audit.json",
+    "sha256": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "source": "runs/learning/bilinear-budget2000-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/historical2000/decision.json",
+    "sha256": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "source": "runs/learning/bilinear-budget2000-v1/decision.json"
+  },
+  {
+    "path": "dependencies/historical2000/independent-audit.py",
+    "sha256": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+    "source": "runs/learning/bilinear-budget2000-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical2000/training.json",
+    "sha256": "c2942ede18f9316b8f885f36adcbea73bfb92bcf03f6f5c5a8f4a0e4d242ae4c",
+    "source": "runs/learning/bilinear-budget2000-v1/training.json"
+  },
+  {
+    "path": "dependencies/historical2000/run.json",
+    "sha256": "4e6b417f348a1b3f7eac2670b28b63e3db209600e615a3f2209768f7cfe58044",
+    "source": "runs/learning/bilinear-budget2000-v1/run.json"
+  },
+  {
+    "path": "dependencies/historical2000/zero-replay.json",
+    "sha256": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "source": "runs/learning/bilinear-budget2000-v1/zero-replay.json"
+  },
+  {
+    "path": "dependencies/historical2000/checkpoint-final.pt.json",
+    "sha256": "0cd646837dd6084fe0495d7171cc4636c835e16dd2c398f5c56a2bd7d61bceae",
+    "source": "runs/learning/bilinear-budget2000-v1/checkpoint-final.pt.json"
+  }
+]

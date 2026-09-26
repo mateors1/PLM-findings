@@ -74,6 +74,7 @@ These are application directions, not validated product claims. The [architectur
 23. [Bilinear parent-seed replication](papers/23-bilinear-parent-seed-replication.md) - both fresh seeds pass their own fixed gates, reaching 212 and 208 exact answers; 627/666 includes the historical selection seed, with verifier repairs preserved.
 
 24. [Bilinear error geometry](papers/24-bilinear-error-geometry.md) - 15 fresh mistakes retain strict ranking separation and nine do not; no shared constant can make every saved dual-TYPE answer exact, and no threshold is selected.
+25. [Worst-member bilinear training](papers/25-bilinear-worst-boundary.md) — 208 exact answers beat the sibling by one, but macro F1 and single-TYPE exactness fail the fixed gate. Checkpoint 34 and separate loss diagnostics are preserved.
 
 
 26. [More updates with the same objective](papers/26-bilinear-budget8000.md) - the fixed 8000-update screen reaches 216 exact answers, with nine gains and no losses against the 2000-update sibling; the audited gate passes and checkpoint 35 is registered.
@@ -236,3 +237,10 @@ The [bilinear error-geometry diagnostic](evidence/updates/2026-09-25-bilinear-er
 accepts independently audited reductions of the existing scores. The 39 wrong
 model-query observations concern 28 shared questions; 25 mistakes are strictly
 separated but wrong at zero. No checkpoint, threshold or prediction policy changes.
+
+The [worst-member bilinear screen](evidence/updates/2026-09-25-bilinear-worst-boundary/README.md)
+preserves the audited negative result: 208 exact sets versus 207, while macro
+F1 and single-TYPE exactness fail the fixed gate. Checkpoint 34 has its own
+objective and evaluator; it does not replace the accepted balanced-BCE sibling.
+The additive inventory hashes 34 final checkpoint files in its local scope.
+Neither those hashes nor this publication archive the weight payloads.

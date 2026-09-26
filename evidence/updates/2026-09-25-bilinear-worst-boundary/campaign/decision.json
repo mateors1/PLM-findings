@@ -1,0 +1,39 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "audit_sha256": "f92b759a908bf3bfa63f8a9a2c49d15bf533b44940b56d34465f8e5a47907455",
+  "auditor_sha256": "9e250d3b5f978a1942b8a2499e731d2bbc3970e4d24ec9aa7e1e81a57f90ec2b",
+  "basis": "Independent saved-evidence audit of split, labels, selected sets, metrics, zero-start replay records, tensor lineage, optimizer and declared gate. This does not independently repeat neural training or regenerate CUDA logits.",
+  "campaign_version": "bilinear-worst-boundary-v1",
+  "child_checkpoint_sha256": "bf30482b79027566a37c560cc7d49746b0c6158a3f21f1e91094677bcb115b1d",
+  "date": "2026-09-25",
+  "decision_script_sha256": "a8b356d58561144eb6a5fc911a48be26acd050841c41b642bb95df8a88b6cbb5",
+  "default_changed": false,
+  "evaluator": "plm-bilinear-worst-boundary-screen-v1",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "049bb85fb6d499a6a2783a748aa54471e1bfd96dcda2ba82ab3e574cfc12a262",
+  "fixed_quality_gate_passed": false,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "exact_above_historical2000": true,
+      "execution_invariants": true,
+      "f1_at_least_historical2000": false,
+      "group_exact_nonregression": false,
+      "serialization_compatible": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": false
+  },
+  "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+  "new_checkpoint_created": true,
+  "objective": "plm-bilinear-worst-boundary-softplus-v1",
+  "outcome": "Fixed quality screen fails; preserve the derivative and negative evidence.",
+  "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+  "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "standard_serving_supported": false,
+  "summary_sha256": "167085de1533f72a27f35f6249f2d5348a6887da73a9f706de373eb76c6275e0",
+  "training_executed": true
+}

@@ -1,0 +1,3870 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "audit_sha256": "f92b759a908bf3bfa63f8a9a2c49d15bf533b44940b56d34465f8e5a47907455",
+  "campaign_version": "bilinear-worst-boundary-v1",
+  "checkpoint": {
+    "architecture": {
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "dimensions": [
+        "TYPE",
+        "COLOR"
+      ],
+      "dtype": "float32",
+      "id": "plm-frozen-symmetric-bilinear-residual-v1",
+      "initialization": "exact-zero",
+      "parameter": "symmetric_bilinear_residual",
+      "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+      "shape": [
+        2,
+        256,
+        256
+      ],
+      "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+    },
+    "child_checkpoint_sha256": "bf30482b79027566a37c560cc7d49746b0c6158a3f21f1e91094677bcb115b1d",
+    "child_sidecar_sha256": "fee5aa9b52cfb17b6c86df41027283f5823ef0a78b35536918e56d66cce6b451",
+    "child_tensor_count": 94,
+    "final_post_update_loss": 0.003092526225373149,
+    "global_step": 2000,
+    "initial_pre_update_loss": 0.44132092595100403,
+    "initial_residual": {
+      "dtype": "torch.float32",
+      "sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+      "shape": [
+        2,
+        256,
+        256
+      ]
+    },
+    "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "mean_bce_diagnostic": {
+      "final": 0.00016030404367484152,
+      "initial": 0.003822767175734043,
+      "initial_replay_exact": true,
+      "update_points": [
+        0,
+        2000
+      ],
+      "used_for_updates": false
+    },
+    "new_trained_tensor": "symmetric_bilinear_residual",
+    "optimizer_step": 2000,
+    "original_tensor_count": 93,
+    "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "parent_training_steps": 2000,
+    "payload_loaded_on": "cpu",
+    "refit_seconds": 5.227974299999914,
+    "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "train_query_count": 1637,
+    "trained_residual": {
+      "dtype": "torch.float32",
+      "sha256": "997cc237139404ab325bbacda72806e708a24ae7906610a616b109e30349c7e1",
+      "shape": [
+        2,
+        256,
+        256
+      ]
+    },
+    "unchanged_original_tensor_count": 93,
+    "updates_verified": 2000
+  },
+  "child": {
+    "aggregate": {
+      "exact_count": 208,
+      "f1": 0.9996521511729153,
+      "false_negative_count": 15,
+      "false_positive_count": 5,
+      "precision": 0.9998046978800819,
+      "query_count": 222,
+      "recall": 0.9995024821582545,
+      "serialization_compatible": 222,
+      "set_size": 128.07657657657657,
+      "strict_separation_count": 215
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 103,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 103,
+        "recall": 1.0,
+        "serialization_compatible": 103,
+        "set_size": 113.66990291262135,
+        "strict_separation_count": 103
+      },
+      "TYPE_dual": {
+        "exact_count": 56,
+        "f1": 0.9991225436712893,
+        "false_negative_count": 14,
+        "false_positive_count": 4,
+        "precision": 0.999561124160172,
+        "query_count": 68,
+        "recall": 0.9986886416893705,
+        "serialization_compatible": 68,
+        "set_size": 171.44117647058823,
+        "strict_separation_count": 61
+      },
+      "TYPE_single": {
+        "exact_count": 49,
+        "f1": 0.9996557762890101,
+        "false_negative_count": 1,
+        "false_positive_count": 1,
+        "precision": 0.9997350291467938,
+        "query_count": 51,
+        "recall": 0.9995828118481436,
+        "serialization_compatible": 51,
+        "set_size": 99.3529411764706,
+        "strict_separation_count": 51
+      }
+    },
+    "paired_vs_historical2000": {
+      "gains": 4,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 3,
+          "losses": 1
+        },
+        "TYPE_single": {
+          "gains": 1,
+          "losses": 2
+        }
+      },
+      "losses": 3
+    },
+    "paired_vs_parent_dense": {
+      "gains": 96,
+      "groups": {
+        "COLOR": {
+          "gains": 28,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 51,
+          "losses": 0
+        },
+        "TYPE_single": {
+          "gains": 17,
+          "losses": 0
+        }
+      },
+      "losses": 0
+    },
+    "paired_vs_width8": {
+      "gains": 14,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 13,
+          "losses": 5
+        },
+        "TYPE_single": {
+          "gains": 1,
+          "losses": 2
+        }
+      },
+      "losses": 7
+    }
+  },
+  "child_training_identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "recipe_sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+      "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "torch": "2.11.0+cu128"
+    },
+    "evaluator_version": "plm-bilinear-worst-boundary-screen-v1",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "2dc643a7459f03ed26484e628e7bd6ff71aacf048c918597c454103428f41486",
+    "seeds": [
+      1729
+    ],
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "comparisons": {
+    "versus_historical2000": {
+      "gains": 4,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 3,
+          "losses": 1
+        },
+        "TYPE_single": {
+          "gains": 1,
+          "losses": 2
+        }
+      },
+      "losses": 3
+    },
+    "versus_parent_dense": {
+      "gains": 96,
+      "groups": {
+        "COLOR": {
+          "gains": 28,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 51,
+          "losses": 0
+        },
+        "TYPE_single": {
+          "gains": 17,
+          "losses": 0
+        }
+      },
+      "losses": 0
+    },
+    "versus_width8": {
+      "gains": 14,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 0
+        },
+        "TYPE_dual": {
+          "gains": 13,
+          "losses": 5
+        },
+        "TYPE_single": {
+          "gains": 1,
+          "losses": 2
+        }
+      },
+      "losses": 7
+    }
+  },
+  "date": "2026-09-25",
+  "decision": {
+    "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+    "audit_sha256": "f92b759a908bf3bfa63f8a9a2c49d15bf533b44940b56d34465f8e5a47907455",
+    "auditor_sha256": "9e250d3b5f978a1942b8a2499e731d2bbc3970e4d24ec9aa7e1e81a57f90ec2b",
+    "basis": "Independent saved-evidence audit of split, labels, selected sets, metrics, zero-start replay records, tensor lineage, optimizer and declared gate. This does not independently repeat neural training or regenerate CUDA logits.",
+    "campaign_version": "bilinear-worst-boundary-v1",
+    "child_checkpoint_sha256": "bf30482b79027566a37c560cc7d49746b0c6158a3f21f1e91094677bcb115b1d",
+    "date": "2026-09-25",
+    "decision_script_sha256": "a8b356d58561144eb6a5fc911a48be26acd050841c41b642bb95df8a88b6cbb5",
+    "default_changed": false,
+    "evaluator": "plm-bilinear-worst-boundary-screen-v1",
+    "evidence_accepted": true,
+    "execution_receipt_sha256": "049bb85fb6d499a6a2783a748aa54471e1bfd96dcda2ba82ab3e574cfc12a262",
+    "fixed_quality_gate_passed": false,
+    "gate": {
+      "accepted": false,
+      "checks": {
+        "exact_above_historical2000": true,
+        "execution_invariants": true,
+        "f1_at_least_historical2000": false,
+        "group_exact_nonregression": false,
+        "serialization_compatible": true
+      },
+      "independent_audit_required": true,
+      "primary_checks_passed": false
+    },
+    "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "new_checkpoint_created": true,
+    "objective": "plm-bilinear-worst-boundary-softplus-v1",
+    "outcome": "Fixed quality screen fails; preserve the derivative and negative evidence.",
+    "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "policy_promoted": false,
+    "protected_test_used": false,
+    "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "standard_serving_supported": false,
+    "summary_sha256": "167085de1533f72a27f35f6249f2d5348a6887da73a9f706de373eb76c6275e0",
+    "training_executed": true
+  },
+  "decision_sha256": "6dd49574b54b0bea9d64c79650eb57c1090157254d8e2fdaec0f7dcb8cf5b8a4",
+  "descriptive_posthoc_diagnostics": {
+    "error_count_histogram": {
+      "0": 208,
+      "1": 8,
+      "2": 6
+    },
+    "per_query": [
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 0,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_ABSOL"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 125,
+        "false_negative_ids": [
+          1821
+        ],
+        "false_positive_ids": [
+          1192
+        ],
+        "group": "TYPE_dual",
+        "index": 1,
+        "selected_count": 125,
+        "strict_separation": false,
+        "subject": "PKM_AEGISLASH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 178,
+        "false_negative_ids": [],
+        "false_positive_ids": [
+          1052
+        ],
+        "group": "TYPE_dual",
+        "index": 2,
+        "selected_count": 179,
+        "strict_separation": true,
+        "subject": "PKM_AERODACTYL"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 191,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 3,
+        "selected_count": 191,
+        "strict_separation": true,
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 4,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_APPLIN"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 240,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 5,
+        "selected_count": 240,
+        "strict_separation": true,
+        "subject": "PKM_ARAQUANID"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 131,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 6,
+        "selected_count": 131,
+        "strict_separation": true,
+        "subject": "PKM_ARCHALUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 113,
+        "false_negative_ids": [
+          1088
+        ],
+        "false_positive_ids": [
+          1029
+        ],
+        "group": "TYPE_dual",
+        "index": 7,
+        "selected_count": 113,
+        "strict_separation": false,
+        "subject": "PKM_ARCTIBAX"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 8,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_ARCTOVISH"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 9,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_ARMALDO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 179,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 10,
+        "selected_count": 179,
+        "strict_separation": true,
+        "subject": "PKM_ARMAROUGE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 63,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 11,
+        "selected_count": 63,
+        "strict_separation": true,
+        "subject": "PKM_AROMATISSE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 213,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 12,
+        "selected_count": 213,
+        "strict_separation": true,
+        "subject": "PKM_AZUMARILL"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 13,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_AZURILL"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 113,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 14,
+        "selected_count": 113,
+        "strict_separation": true,
+        "subject": "PKM_BAXCALIBUR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 15,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_BAXCALIBUR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 126,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 16,
+        "selected_count": 126,
+        "strict_separation": true,
+        "subject": "PKM_BAYLEEF"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 17,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_BEAUTIFLY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 18,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_BELLIBOLT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 47,
+        "false_negative_ids": [
+          1052
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 19,
+        "selected_count": 46,
+        "strict_separation": true,
+        "subject": "PKM_BERGMITE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 20,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_BOLDORE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 21,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_BOLTUND"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 73,
+        "false_negative_ids": [],
+        "false_positive_ids": [
+          1109
+        ],
+        "group": "TYPE_single",
+        "index": 22,
+        "selected_count": 74,
+        "strict_separation": true,
+        "subject": "PKM_BONSLY"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 188,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 23,
+        "selected_count": 188,
+        "strict_separation": true,
+        "subject": "PKM_BRUTE_BONNET"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 195,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 24,
+        "selected_count": 195,
+        "strict_separation": true,
+        "subject": "PKM_BUDEW"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 25,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_BUIZEL"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 26,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_CAMERUPT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 135,
+        "false_negative_ids": [
+          1361
+        ],
+        "false_positive_ids": [
+          1673
+        ],
+        "group": "TYPE_dual",
+        "index": 27,
+        "selected_count": 135,
+        "strict_separation": false,
+        "subject": "PKM_CARBINK"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 28,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_CARNIVINE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 29,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_CARRACOSTA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 30,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_CASTFORM"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 31,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_CENTISKORCH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 47,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 32,
+        "selected_count": 47,
+        "strict_separation": true,
+        "subject": "PKM_CETITAN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 33,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_CHARMANDER"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 126,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 34,
+        "selected_count": 126,
+        "strict_separation": true,
+        "subject": "PKM_CHERUBI"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 35,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_CHEWTLE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 145,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 36,
+        "selected_count": 145,
+        "strict_separation": true,
+        "subject": "PKM_CHI_YU"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 63,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 37,
+        "selected_count": 63,
+        "strict_separation": true,
+        "subject": "PKM_CLEFAIRY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 38,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_CLODSIRE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 187,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 39,
+        "selected_count": 187,
+        "strict_separation": true,
+        "subject": "PKM_COMBEE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 72,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 40,
+        "selected_count": 72,
+        "strict_separation": true,
+        "subject": "PKM_CONKELDURR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 41,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_CORPHISH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 216,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 42,
+        "selected_count": 216,
+        "strict_separation": true,
+        "subject": "PKM_CORSOLA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 254,
+        "false_negative_ids": [
+          1825
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 43,
+        "selected_count": 253,
+        "strict_separation": true,
+        "subject": "PKM_CRAMORANT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 218,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 44,
+        "selected_count": 218,
+        "strict_separation": true,
+        "subject": "PKM_CRAWDAUNT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 45,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_CUBONE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 46,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_DARKRAI"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 47,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_DARKRAI"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 80,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 48,
+        "selected_count": 80,
+        "strict_separation": true,
+        "subject": "PKM_DARUMAKA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 133,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 49,
+        "selected_count": 133,
+        "strict_separation": true,
+        "subject": "PKM_DEINO"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 50,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_DELPHOX"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 101,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 51,
+        "selected_count": 101,
+        "strict_separation": true,
+        "subject": "PKM_DEOXYS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 52,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_DEOXYS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 53,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_DEWGONG"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 181,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 54,
+        "selected_count": 181,
+        "strict_separation": true,
+        "subject": "PKM_DHELMISE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 125,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 55,
+        "selected_count": 125,
+        "strict_separation": true,
+        "subject": "PKM_DOUBLADE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 56,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_DRAPION"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 57,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_DRIFBLIM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 254,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 58,
+        "selected_count": 254,
+        "strict_separation": true,
+        "subject": "PKM_DUCKLETT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 59,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_DUNSPARCE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 60,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_DUSTOX"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 61,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_EELEKTRIK"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 82,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 62,
+        "selected_count": 82,
+        "strict_separation": true,
+        "subject": "PKM_EKANS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 63,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_ELECTABUZZ"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 64,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_ELECTRIKE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 65,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_EXEGGUTOR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 66,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_FERALIGATR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 145,
+        "false_negative_ids": [
+          1407,
+          1451
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 67,
+        "selected_count": 143,
+        "strict_separation": false,
+        "subject": "PKM_FEZANDIPITI"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 68,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_FINIZEN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 69,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_FLAPPLE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 70,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_FLITTLE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 126,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 71,
+        "selected_count": 126,
+        "strict_separation": true,
+        "subject": "PKM_FLORAGATO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 138,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 72,
+        "selected_count": 138,
+        "strict_separation": true,
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 73,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_FOONGUS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 111,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 74,
+        "selected_count": 111,
+        "strict_separation": true,
+        "subject": "PKM_FROSLASS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 137,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 75,
+        "selected_count": 137,
+        "strict_separation": true,
+        "subject": "PKM_FROSMOTH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 138,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 76,
+        "selected_count": 138,
+        "strict_separation": true,
+        "subject": "PKM_GABITE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 77,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_GENGAR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 78,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_GIRATINA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 79,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_GLASTRIER"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 80,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_GLIGAR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 81,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_GOLDEEN"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 139,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 82,
+        "selected_count": 139,
+        "strict_separation": true,
+        "subject": "PKM_GOLEM"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 83,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_GOLEM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 134,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 84,
+        "selected_count": 134,
+        "strict_separation": true,
+        "subject": "PKM_GOLURK"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 69,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 85,
+        "selected_count": 69,
+        "strict_separation": true,
+        "subject": "PKM_GOODRA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 86,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_GOREBYSS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 126,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 87,
+        "selected_count": 126,
+        "strict_separation": true,
+        "subject": "PKM_GOSSIFLEUR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 88,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_GRAPPLOCT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 89,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_GREAVARD"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 74,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 90,
+        "selected_count": 74,
+        "strict_separation": true,
+        "subject": "PKM_GROUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 157,
+        "false_negative_ids": [
+          1306
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 91,
+        "selected_count": 156,
+        "strict_separation": true,
+        "subject": "PKM_HATTERENE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 59,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 92,
+        "selected_count": 59,
+        "strict_separation": true,
+        "subject": "PKM_HATTREM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 93,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_HERDIER"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 94,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_HONCHKROW"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 59,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 95,
+        "selected_count": 59,
+        "strict_separation": true,
+        "subject": "PKM_HOPPIP"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 59,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 96,
+        "selected_count": 59,
+        "strict_separation": true,
+        "subject": "PKM_IMPIDIMP"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 168,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 97,
+        "selected_count": 168,
+        "strict_separation": true,
+        "subject": "PKM_INKAY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 98,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_INKAY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 99,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_JANGMO_O"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 100,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_KABUTO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 216,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 101,
+        "selected_count": 216,
+        "strict_separation": true,
+        "subject": "PKM_KABUTOPS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 102,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_KARTANA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 103,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_KECLEON"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 223,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 104,
+        "selected_count": 223,
+        "strict_separation": true,
+        "subject": "PKM_KELDEO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 159,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 105,
+        "selected_count": 159,
+        "strict_separation": true,
+        "subject": "PKM_KLEAVOR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 106,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_KLEFKI"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 107,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_KRABBY"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 91,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 108,
+        "selected_count": 91,
+        "strict_separation": true,
+        "subject": "PKM_KRICKETOT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 109,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_KRICKETOT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 110,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_KYOGRE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 113,
+        "false_negative_ids": [
+          1954
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 111,
+        "selected_count": 112,
+        "strict_separation": true,
+        "subject": "PKM_KYUREM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 139,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 112,
+        "selected_count": 139,
+        "strict_separation": true,
+        "subject": "PKM_LAMPENT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 113,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_LANTURN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 114,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_LARVITAR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 115,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_LATIOS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 187,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 116,
+        "selected_count": 187,
+        "strict_separation": true,
+        "subject": "PKM_LEDIAN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 117,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_LITLEO"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 118,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_LITTEN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 119,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_LOPUNNY"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 120,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_LUMINEON"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 73,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 121,
+        "selected_count": 73,
+        "strict_separation": true,
+        "subject": "PKM_LYCANROC"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 122,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_MACHOKE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 80,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 123,
+        "selected_count": 80,
+        "strict_separation": true,
+        "subject": "PKM_MAGMORTAR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 254,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 124,
+        "selected_count": 254,
+        "strict_separation": true,
+        "subject": "PKM_MANTYKE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 230,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 125,
+        "selected_count": 230,
+        "strict_separation": true,
+        "subject": "PKM_MAREANIE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 213,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 126,
+        "selected_count": 213,
+        "strict_separation": true,
+        "subject": "PKM_MARILL"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 74,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 127,
+        "selected_count": 74,
+        "strict_separation": true,
+        "subject": "PKM_MAROWAK"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 128,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_MAWILE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 171,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 129,
+        "selected_count": 171,
+        "strict_separation": true,
+        "subject": "PKM_MEDICHAM"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 130,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_MEDITITE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 131,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_MEOWSTIC"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 91,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 132,
+        "selected_count": 91,
+        "strict_separation": true,
+        "subject": "PKM_METAPOD"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 133,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_MEWTWO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 134,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_MIGHTYENA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 135,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_MISDREAVUS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 136,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_MR_RIME"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 86,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 137,
+        "selected_count": 86,
+        "strict_separation": true,
+        "subject": "PKM_MUK"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 138,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_NIDOQUEEN"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 82,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 139,
+        "selected_count": 82,
+        "strict_separation": true,
+        "subject": "PKM_NIDORAN_F"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 140,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_OINKOLOGNE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 141,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_OKIDOGI"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 142,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_ONIX"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 218,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 143,
+        "selected_count": 218,
+        "strict_separation": true,
+        "subject": "PKM_PALKIA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 72,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 144,
+        "selected_count": 72,
+        "strict_separation": true,
+        "subject": "PKM_PANCHAM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 145,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_PANPOUR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 146,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_PARAS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 147,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_PHANPY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 148,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_PHANTUMP"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 149,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_PIKACHU"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 119,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 150,
+        "selected_count": 119,
+        "strict_separation": true,
+        "subject": "PKM_PILOSWINE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 151,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_POOCHYENA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 152,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_PORYGON2"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 153,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_PORYGON_Z"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 213,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 154,
+        "selected_count": 213,
+        "strict_separation": true,
+        "subject": "PKM_PRIMARINA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 155,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_PRIMEAPE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 156,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_PYROAR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 157,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_QUAGSIRE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 158,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_QUAXLY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 159,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_RABSCA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 134,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 160,
+        "selected_count": 134,
+        "strict_separation": true,
+        "subject": "PKM_RAGING_BOLT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 161,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_RAGING_BOLT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 162,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_RAIKOU"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 163,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_RATICATE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 147,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 164,
+        "selected_count": 147,
+        "strict_separation": true,
+        "subject": "PKM_RESHIRAM"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 165,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_RHYHORN"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 166,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_ROARING_MOON"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 167,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_ROLYCOLY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 168,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_ROTOM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 131,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 169,
+        "selected_count": 131,
+        "strict_separation": true,
+        "subject": "PKM_SABLEYE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 170,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_SCRAFTY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 171,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_SEEDOT"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 172,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_SEVIPER"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 212,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 173,
+        "selected_count": 212,
+        "strict_separation": true,
+        "subject": "PKM_SEWADDLE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 174,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_SHIFTRY"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 181,
+        "false_negative_ids": [
+          1028
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 175,
+        "selected_count": 180,
+        "strict_separation": true,
+        "subject": "PKM_SINISTCHA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 176,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_SINISTCHA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 170,
+        "false_negative_ids": [
+          1193,
+          1894
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 177,
+        "selected_count": 168,
+        "strict_separation": false,
+        "subject": "PKM_SKARMORY"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 229,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 178,
+        "selected_count": 229,
+        "strict_separation": true,
+        "subject": "PKM_SKIPLOOM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 130,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 179,
+        "selected_count": 130,
+        "strict_separation": true,
+        "subject": "PKM_SLAKING"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 160,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 180,
+        "selected_count": 160,
+        "strict_separation": true,
+        "subject": "PKM_SLITHER_WING"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 249,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 181,
+        "selected_count": 249,
+        "strict_separation": true,
+        "subject": "PKM_SLOWBRO"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 182,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_SMEARGLE"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 183,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_SOLGALEO"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 172,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 184,
+        "selected_count": 172,
+        "strict_separation": true,
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 96,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 185,
+        "selected_count": 96,
+        "strict_separation": true,
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 136,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 186,
+        "selected_count": 136,
+        "strict_separation": true,
+        "subject": "PKM_STEELIX"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 187,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_SUNFLORA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 254,
+        "false_negative_ids": [
+          1138,
+          1825
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 188,
+        "selected_count": 252,
+        "strict_separation": false,
+        "subject": "PKM_SWANNA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 189,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_SWANNA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 126,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 190,
+        "selected_count": 126,
+        "strict_separation": true,
+        "subject": "PKM_TANGROWTH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 185,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 191,
+        "selected_count": 185,
+        "strict_separation": true,
+        "subject": "PKM_TAPU_BULU"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 192,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_TEDDIURSA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 193,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_TERAPAGOS"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 194,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_TERRAKION"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 172,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 195,
+        "selected_count": 172,
+        "strict_separation": true,
+        "subject": "PKM_THUNDURUS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 72,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 196,
+        "selected_count": 72,
+        "strict_separation": true,
+        "subject": "PKM_TIMBURR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 122,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 197,
+        "selected_count": 122,
+        "strict_separation": true,
+        "subject": "PKM_TINKATON"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 122,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 198,
+        "selected_count": 122,
+        "strict_separation": true,
+        "subject": "PKM_TINKATUFF"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 212,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 199,
+        "selected_count": 212,
+        "strict_separation": true,
+        "subject": "PKM_TOUCANNON"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 169,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 200,
+        "selected_count": 169,
+        "strict_separation": true,
+        "subject": "PKM_TOXAPEX"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 151,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 201,
+        "selected_count": 151,
+        "strict_separation": true,
+        "subject": "PKM_TOXICROAK"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 149,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 202,
+        "selected_count": 149,
+        "strict_separation": true,
+        "subject": "PKM_TOXTRICITY"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 203,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_TRAPINCH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": false,
+        "expected_count": 147,
+        "false_negative_ids": [
+          1495
+        ],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 204,
+        "selected_count": 146,
+        "strict_separation": false,
+        "subject": "PKM_TURTONATOR"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 205,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_TYNAMO"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 87,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 206,
+        "selected_count": 87,
+        "strict_separation": true,
+        "subject": "PKM_TYPHLOSION"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 141,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 207,
+        "selected_count": 141,
+        "strict_separation": true,
+        "subject": "PKM_TYRANITAR"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 50,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 208,
+        "selected_count": 50,
+        "strict_separation": true,
+        "subject": "PKM_UMBREON"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 209,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_URSALUNA"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 146,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 210,
+        "selected_count": 146,
+        "strict_separation": true,
+        "subject": "PKM_URSARING"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 162,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 211,
+        "selected_count": 162,
+        "strict_separation": true,
+        "subject": "PKM_VENOMOTH"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 91,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 212,
+        "selected_count": 91,
+        "strict_separation": true,
+        "subject": "PKM_VOLBEAT"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 80,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 213,
+        "selected_count": 80,
+        "strict_separation": true,
+        "subject": "PKM_VULPIX"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 153,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 214,
+        "selected_count": 153,
+        "strict_separation": true,
+        "subject": "PKM_WAILMER"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 129,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 215,
+        "selected_count": 129,
+        "strict_separation": true,
+        "subject": "PKM_WEEPINBELL"
+      },
+      {
+        "dimension": "COLOR",
+        "exact": true,
+        "expected_count": 106,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "COLOR",
+        "index": 216,
+        "selected_count": 106,
+        "strict_separation": true,
+        "subject": "PKM_WIMPOD"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 91,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 217,
+        "selected_count": 91,
+        "strict_separation": true,
+        "subject": "PKM_WURMPLE"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 172,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 218,
+        "selected_count": 172,
+        "strict_separation": true,
+        "subject": "PKM_ZAPDOS"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 68,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_single",
+        "index": 219,
+        "selected_count": 68,
+        "strict_separation": true,
+        "subject": "PKM_ZEBSTRIKA"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 134,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 220,
+        "selected_count": 134,
+        "strict_separation": true,
+        "subject": "PKM_ZEKROM"
+      },
+      {
+        "dimension": "TYPE",
+        "exact": true,
+        "expected_count": 188,
+        "false_negative_ids": [],
+        "false_positive_ids": [],
+        "group": "TYPE_dual",
+        "index": 221,
+        "selected_count": 188,
+        "strict_separation": true,
+        "subject": "PKM_ZUBAT"
+      }
+    ],
+    "strictly_separated_nonexact": 7,
+    "used_for_selection_or_updates": false
+  },
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128"
+  },
+  "evaluator": "plm-bilinear-worst-boundary-screen-v1",
+  "final_post_update_loss": 0.003092526225373149,
+  "inference_policy": "dense-positive-bilinear-residual-subject-excluded-ascending-fp32-b8-last6-v1",
+  "initial_pre_update_loss": 0.44132092595100403,
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_budget2000_v1.json": "e454c52a315acb389b2bda3c126367e13df63b96230f9f698517705b531d51da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_residual_refit_v1.json": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_worst_boundary_v1.json": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_only_refit_v1.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_worst_boundary_v1.json": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\manifests\\pokemon_v1_f1541479_20260924.json": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\sqlite\\pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-worst-boundary-plan.md": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-wide-first-choice-plan.md": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\checkpoint-final.pt": "8d9ddadc6d63f7ab8f767fb484193dbdfdf1b9fb369fad1dab38fef8bd028c2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\checkpoint-final.pt.json": "0cd646837dd6084fe0495d7171cc4636c835e16dd2c398f5c56a2bd7d61bceae",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\child.json": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\comparisons.json": "8163866649c8e34281100144688e269417ec8be236eecadf2c4b7c54174f7cc9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\decision.json": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.json": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.py": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\parent.json": "aab74dc35c13f797f813c265961e0595a5392c6a014444a8a8ef00d1873a1343",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\run.json": "4e6b417f348a1b3f7eac2670b28b63e3db209600e615a3f2209768f7cfe58044",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.plan.md": "18c08693790880740b20cf25633b56880392362ffbc6b398cd7069116b26edbe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.recipe.json": "e454c52a315acb389b2bda3c126367e13df63b96230f9f698517705b531d51da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\training.json": "c2942ede18f9316b8f885f36adcbea73bfb92bcf03f6f5c5a8f4a0e4d242ae4c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\zero-replay.json": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\checkpoint-final.pt": "1f6e9a593ac5c5c83f0d003f273adc02213845ab94f7d5118b1b55bf5bab43d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\checkpoint-final.pt.json": "680a2146fe388ca3b98b09baf85e616078f0a10a3ac1476a8da6cfba6bcd8b55",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\child.json": "7fbccfdd7407f88645f78889f562f3ec6a1ef8922a0bfed1316c7172f3f48eb6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\decision.json": "d7d38687e2d099348af61bd52ed62df28211464e4209cb00df43db21d1d93234",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.json": "2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.py": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\parent.json": "e1d72da663f239e9fd3f7fb933bbbd2dc49d8d6e6ca9ea7f1f5e369e0de9f28b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\run.json": "125eb543786e8b5c0460491eae4775e105de4ed9cdc09898f818d4181cd702a0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\summary.json": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\summary.plan.md": "b1cd8a897e5db7d0dc0adc3e3bd40a87b0ae5830714b63ea86649f1599c9e132",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\summary.recipe.json": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\training.json": "df78c400adee070a4a8065b1ac63f0561ff7e040291bdaec139d25ee6467f647",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\zero-replay.json": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-runner-tests-v1\\receipt.json": "3d11d683e954fa0d74f416dc8a8fe7d20aa3073d3150e063f2118391a197547c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-runner-tests-v1\\stdout.txt": "e4337530be18d0e80d6e776f6abe6df379be3bfe12a4af0a74909b5ff1085b45",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1729.json": "c7ad1db44d3c7e0387369b1ffc982d5e7b96afb046c4f8a68111b235ae5a3f67",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1730.json": "932ad33ad4d0b00e29cd7d64966b3f0d5820df91764d9ba1188a22cdd84e1659",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1731.json": "cd713d451a1235f7ad73d8b524acbf3c250b482f78e84c2cfd08f778e3c5ae73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\acceptance.json": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.json": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.py": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\summary.json": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\decision.json": "da0bbc0bd9a1284c6dae6f072e46bcddf30b0c13cdd0a81e34328768042e90a6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.json": "6535d9e85920c1c0e316ff0f9f60f391629c1c74be90d095759d5954692cf3bc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.json": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.plan.md": "2ac4d157ad8c079561d642199fec8de2c3da1866819baa48f52080e9b0f39bfe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.recipe.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\training.json": "f0544e1464b88330873f764a1927c949168452610f45a5824cb03d8d4e038d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\decision.json": "70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.json": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.py": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1729.json": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.json": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\training-result.json": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\training-result.json": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_budget.py": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_worst_boundary.py": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget.py": "b9ed564e6b65196c225f57a376b40d90bade0d7696a4cbfbf1c8b9c8fd221d18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_worst_boundary.py": "93c45e51e418866077b5f610eb2349dc9c383551a60ff57c4d8db0a000fbe4c8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py": "b4e5b1968c0f322ba9e5451c97d45e60bafbfe85f375ef7ce4993cce14d68e7d"
+  },
+  "limitations": [
+    "Single-seed adaptive validation screen, no protected evaluation.",
+    "Only declared objective and quality comparator change versus historical2000; adaptive single-seed comparison does not establish convergence or generalization.",
+    "Historical balanced-BCE2000 output reused, not freshly rerun or a timing control.",
+    "Mathematical symmetry does not promise swapped FP32 bitwise equality.",
+    "Inherited decoder forward is not the new membership scorer.",
+    "Dense head evaluation does not establish autoregressive generation quality.",
+    "No serving throughput/energy or durable remote weight archival claim.",
+    "Saved-evidence and CPU checkpoint inspection; no neural forward or repeated training.",
+    "Loss/update receipts are authenticated, not independently regenerated.",
+    "All 93 parent tensors match; saved A and optimizer moments are inspected.",
+    "Reload/optimizer chronology is authenticated, not independently replayed.",
+    "Saved logits/zero-initialization hashes are bound, not recomputed on CUDA.",
+    "The inherited decoder output does not represent the new architecture/scorer.",
+    "Dense validation does not prove serving, protected quality or durable weight backup."
+  ],
+  "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+  "mean_bce_diagnostic": {
+    "final": 0.00016030404367484152,
+    "initial": 0.003822767175734043,
+    "initial_replay_exact": true,
+    "update_points": [
+      0,
+      2000
+    ],
+    "used_for_updates": false
+  },
+  "numerical_settings": {
+    "autocast_cpu_enabled": false,
+    "autocast_cuda_enabled": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest"
+  },
+  "objective": "plm-bilinear-worst-boundary-softplus-v1",
+  "parent": {
+    "aggregate": {
+      "exact_count": 112,
+      "f1": 0.9903735063269145,
+      "false_negative_count": 76,
+      "false_positive_count": 512,
+      "precision": 0.9838575265439718,
+      "query_count": 222,
+      "recall": 0.9975186802788016,
+      "serialization_compatible": 222,
+      "set_size": 130.0855855855856,
+      "strict_separation_count": 165
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 75,
+        "f1": 0.9977532345677808,
+        "false_negative_count": 0,
+        "false_positive_count": 43,
+        "precision": 0.9955625230283973,
+        "query_count": 103,
+        "recall": 1.0,
+        "serialization_compatible": 103,
+        "set_size": 114.0873786407767,
+        "strict_separation_count": 102
+      },
+      "TYPE_dual": {
+        "exact_count": 5,
+        "f1": 0.9766385544057118,
+        "false_negative_count": 71,
+        "false_positive_count": 430,
+        "precision": 0.9617566332610925,
+        "query_count": 68,
+        "recall": 0.9931878215475363,
+        "serialization_compatible": 68,
+        "set_size": 176.86764705882354,
+        "strict_separation_count": 17
+      },
+      "TYPE_single": {
+        "exact_count": 32,
+        "f1": 0.9937826185197096,
+        "false_negative_count": 5,
+        "false_positive_count": 39,
+        "precision": 0.9896858815506382,
+        "query_count": 51,
+        "recall": 0.9982818658168919,
+        "serialization_compatible": 51,
+        "set_size": 100.01960784313725,
+        "strict_separation_count": 46
+      }
+    },
+    "paired_vs_width8": {
+      "gains": 0,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 28
+        },
+        "TYPE_dual": {
+          "gains": 0,
+          "losses": 43
+        },
+        "TYPE_single": {
+          "gains": 0,
+          "losses": 18
+        }
+      },
+      "losses": 89
+    }
+  },
+  "peak_memory": {
+    "allocated_bytes": 107951104,
+    "reserved_bytes": 169869312
+  },
+  "plan_sha256": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+  "recipe_sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+  "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+  "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "snapshot_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.bilinear-helper.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.budget-helper.py": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.helper.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.inputs.json": "646e6b9b6b0e7e471c18281add36cec06fa854029729520cb98e976eb74f375a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.loss-helper.py": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.mean-helper.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.plan.md": "d2e7ee91ceb1f0128b0d255dde5a22a7f0c3550503497120569e94c6490ef337",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.recipe.json": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.script.py": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.test-receipt.json": "3d11d683e954fa0d74f416dc8a8fe7d20aa3073d3150e063f2118391a197547c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-worst-boundary-v1\\summary.test-stdout.txt": "e4337530be18d0e80d6e776f6abe6df379be3bfe12a4af0a74909b5ff1085b45"
+  },
+  "status": "rejected by fixed quality gate",
+  "summary_sha256": "167085de1533f72a27f35f6249f2d5348a6887da73a9f706de373eb76c6275e0",
+  "training_history_artifact": {
+    "path": "2026-09-25-bilinear-worst-boundary-training.json",
+    "sha256": "13562d8b5dcab34c6e0cbe49af448de2f1beba3f0c1ab21d687a8f70b0506381"
+  },
+  "wall_seconds": 12.819358700000066,
+  "zero_replay": {
+    "batch_sizes": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      6
+    ],
+    "batches": [
+      {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "logits_sha256": "865d66d616a26fd7947e4663abda2488ad1c75cc9aeaf0ae00d9848c6bf668da",
+        "parent_logits_sha256": "865d66d616a26fd7947e4663abda2488ad1c75cc9aeaf0ae00d9848c6bf668da",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "logits_sha256": "426cb9dac6a5348a12669721e8e548b5b4f638ad681b9c2034694c591dc8daa4",
+        "parent_logits_sha256": "426cb9dac6a5348a12669721e8e548b5b4f638ad681b9c2034694c591dc8daa4",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "logits_sha256": "eb0b105b28578f5217dffaad11201c69502a4bebb35b4ca7189aabc38196b49d",
+        "parent_logits_sha256": "eb0b105b28578f5217dffaad11201c69502a4bebb35b4ca7189aabc38196b49d",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "logits_sha256": "b21bdb5f52c8f78253039496d4d3a5125451e823ecf850c138c2c72cfe6050ea",
+        "parent_logits_sha256": "b21bdb5f52c8f78253039496d4d3a5125451e823ecf850c138c2c72cfe6050ea",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "logits_sha256": "8e93d2c40cce6cd572b7e11acf919557bcbdc92852477b11387c25bb199bcd49",
+        "parent_logits_sha256": "8e93d2c40cce6cd572b7e11acf919557bcbdc92852477b11387c25bb199bcd49",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "logits_sha256": "b4301d0f1e5f4d2daa06cf272427f87bf8133bfadf5aa83656d9183211187783",
+        "parent_logits_sha256": "b4301d0f1e5f4d2daa06cf272427f87bf8133bfadf5aa83656d9183211187783",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "logits_sha256": "f15628dabcf119210612a2ed70c897fae3c8b3d0e4e95fa8a9b7b6f4a2c0e0ca",
+        "parent_logits_sha256": "f15628dabcf119210612a2ed70c897fae3c8b3d0e4e95fa8a9b7b6f4a2c0e0ca",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "logits_sha256": "f2d1f07c1a674f2507f3be3ba83fe4fff235782a9499e1342b69e0e6a9e08a3a",
+        "parent_logits_sha256": "f2d1f07c1a674f2507f3be3ba83fe4fff235782a9499e1342b69e0e6a9e08a3a",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "logits_sha256": "a51d233b8b08b62fbe434991e838f30c99650a1fa1dabaf24af70bed8c1992b3",
+        "parent_logits_sha256": "a51d233b8b08b62fbe434991e838f30c99650a1fa1dabaf24af70bed8c1992b3",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "logits_sha256": "30fe134a6eaa4b34a00d8c083ffab3842b6f0fbfebcd18796ea2e27ca79496eb",
+        "parent_logits_sha256": "30fe134a6eaa4b34a00d8c083ffab3842b6f0fbfebcd18796ea2e27ca79496eb",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87
+        ],
+        "logits_sha256": "2a05bcce0eb37ab34b00037bd4b21d7a5654ef0fad105c6c01ce2dd6fde2508b",
+        "parent_logits_sha256": "2a05bcce0eb37ab34b00037bd4b21d7a5654ef0fad105c6c01ce2dd6fde2508b",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "logits_sha256": "4904f73253a71bf66e6d73fd2c182ef9eb80ecdc5b3e7214b054bc660ab094ba",
+        "parent_logits_sha256": "4904f73253a71bf66e6d73fd2c182ef9eb80ecdc5b3e7214b054bc660ab094ba",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103
+        ],
+        "logits_sha256": "a340ac92bf73d403031395198033060677d0a5115bf30afe63c31bf8d240f0a0",
+        "parent_logits_sha256": "a340ac92bf73d403031395198033060677d0a5115bf30afe63c31bf8d240f0a0",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ],
+        "logits_sha256": "bddae5b5cd03bb79864c2fb3354be65ca356a42c8a1992a1658dda0da5bf182e",
+        "parent_logits_sha256": "bddae5b5cd03bb79864c2fb3354be65ca356a42c8a1992a1658dda0da5bf182e",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119
+        ],
+        "logits_sha256": "d606907a0a05ea9e1b08a5caa399836c7e5905d3fbdc161b63e4b8689df09c69",
+        "parent_logits_sha256": "d606907a0a05ea9e1b08a5caa399836c7e5905d3fbdc161b63e4b8689df09c69",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127
+        ],
+        "logits_sha256": "f537b48382406196904b368c1f7db493063e543835e2a6dc3119b18ab403b254",
+        "parent_logits_sha256": "f537b48382406196904b368c1f7db493063e543835e2a6dc3119b18ab403b254",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135
+        ],
+        "logits_sha256": "a20ed0c508d8f92c748398eb429ff086def29f1575402436de8cc2daa938818e",
+        "parent_logits_sha256": "a20ed0c508d8f92c748398eb429ff086def29f1575402436de8cc2daa938818e",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143
+        ],
+        "logits_sha256": "55640916783043decc1f92e48e6470cdf8e47f72f55e4c59901e5499eee7bf74",
+        "parent_logits_sha256": "55640916783043decc1f92e48e6470cdf8e47f72f55e4c59901e5499eee7bf74",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151
+        ],
+        "logits_sha256": "6b17de393e16fe97230b8bab3f9b28ae075b45923fba542c632ea967ed7e6a79",
+        "parent_logits_sha256": "6b17de393e16fe97230b8bab3f9b28ae075b45923fba542c632ea967ed7e6a79",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159
+        ],
+        "logits_sha256": "e6f6a344368fe169b63cd93d6195d90added7527ac8880a13af84007949bde3b",
+        "parent_logits_sha256": "e6f6a344368fe169b63cd93d6195d90added7527ac8880a13af84007949bde3b",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167
+        ],
+        "logits_sha256": "4e2427892f769d3ede3a23311963573827000d03dac82180480d40137d6ebd92",
+        "parent_logits_sha256": "4e2427892f769d3ede3a23311963573827000d03dac82180480d40137d6ebd92",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "logits_sha256": "2483f76a3a72dcd99f61716cac3d94391b6d8ccc263b329c3fee3f5625368155",
+        "parent_logits_sha256": "2483f76a3a72dcd99f61716cac3d94391b6d8ccc263b329c3fee3f5625368155",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183
+        ],
+        "logits_sha256": "4153c697eaeadbe1b30adbb073d8e1a44dd2e33045f9fac12e7dffc8931e1309",
+        "parent_logits_sha256": "4153c697eaeadbe1b30adbb073d8e1a44dd2e33045f9fac12e7dffc8931e1309",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191
+        ],
+        "logits_sha256": "c875042b3ca50da984d844d084d84c426d8a1e06d018efaf266cf5d4fc0a50bc",
+        "parent_logits_sha256": "c875042b3ca50da984d844d084d84c426d8a1e06d018efaf266cf5d4fc0a50bc",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199
+        ],
+        "logits_sha256": "32fbfe35f62b3eafa39a2df7d8ea894edf49f49d78db694403553ae459e27ce2",
+        "parent_logits_sha256": "32fbfe35f62b3eafa39a2df7d8ea894edf49f49d78db694403553ae459e27ce2",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207
+        ],
+        "logits_sha256": "f5af2645d262e84d2f8a8ef64a29298c979b739ef86520d9a3465a66156bcc1e",
+        "parent_logits_sha256": "f5af2645d262e84d2f8a8ef64a29298c979b739ef86520d9a3465a66156bcc1e",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ],
+        "logits_sha256": "d6f4958a345b2fae1289cf7c5009e8f36f05b576f178b12bb4882a250d8ffbe3",
+        "parent_logits_sha256": "d6f4958a345b2fae1289cf7c5009e8f36f05b576f178b12bb4882a250d8ffbe3",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "e501b780f5d9fdd80981d60179b39e830b129dfab5eeed2d4e89d575924da29a",
+        "shape": [
+          8,
+          1025
+        ]
+      },
+      {
+        "indices": [
+          216,
+          217,
+          218,
+          219,
+          220,
+          221
+        ],
+        "logits_sha256": "82fd95be135d5f68b8aae8c44dc8da8e6b377ff1ec9e90b353c256e5ba7bf878",
+        "parent_logits_sha256": "82fd95be135d5f68b8aae8c44dc8da8e6b377ff1ec9e90b353c256e5ba7bf878",
+        "residual_nonzero_count": 0,
+        "residual_sha256": "939506aa9ccbf7a8ba074e8a59c0c06e789ff09e7973eb342af903a8d18bad68",
+        "shape": [
+          6,
+          1025
+        ]
+      }
+    ],
+    "complete": true,
+    "dtype": "float32",
+    "logits_sha256": "4165a9ad8539256c6c360d4c76f4bdd4ccd9d8ec14ff20cf699d62e70cccefb9",
+    "logits_shape": [
+      222,
+      1025
+    ],
+    "parent_logits_sha256": "4165a9ad8539256c6c360d4c76f4bdd4ccd9d8ec14ff20cf699d62e70cccefb9",
+    "query_count": 222,
+    "residual_nonzero_count": 0,
+    "residual_sha256": "39444cdacbc8c09198ca80ec8097c4a917fbd971253b1b46053be3e2f083ab26"
+  }
+}

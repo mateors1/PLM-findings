@@ -1,0 +1,691 @@
+# Academic model version register
+
+Academic traceability is a project requirement. A result must identify the
+trained artifact, inference procedure and evaluation procedure separately.
+The package version (`0.1.0`) does not identify a trained model.
+
+## What receives a version
+
+| Object | Identity and change rule |
+| --- | --- |
+| Model recipe | Architecture, objectives, training schedule and resolved configuration. A changed recipe receives a new named experiment revision. |
+| Trained artifact | Existing run ID, seed, global step and checkpoint SHA256. Further training produces a new artifact; replicas keep distinct seed identities. |
+| Inference policy | Decoder constraints, guidance, candidate construction, selection and serving configuration/source hashes. A changed policy is a new system variant even with unchanged weights. |
+| Evaluation | Declared plan, evaluator source/version, data/split hashes, runtime, numerical settings, batch shape and report hashes. A revised verification contract receives a new campaign identity. |
+
+Retain parent checkpoint/run references for continued training and state the
+change and hypothesis. A new random-seed replica is not an improvement claim.
+Unknown historical parentage must remain explicitly unknown until verified.
+Do not infer parentage from names such as `continuation` or `control`.
+
+Preserve old checkpoints, configs, source archives, predictions and failed
+reports. Corrections are new records referencing the superseded evidence.
+Human-readable labels are aliases for content identities, never substitutes
+for hashes. A Git commit alone is insufficient when a run uses a dirty tree;
+retain the executed source archive and its manifest too.
+
+## Current checkpoint family used in composition experiments
+
+Registered on 2026-09-25 using existing run IDs, without renaming artifacts.
+All three checkpoint files were rehashed and matched their sidecars. Each is
+at global step 2000. This table identifies the current family. The historical
+inventory below covers available final checkpoints in a declared local scope.
+
+| Run ID | Seed | Checkpoint SHA256 |
+| --- | ---: | --- |
+| `national_dex_continuation_control_s1729_v1` | 1729 | `e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1` |
+| `national_dex_continuation_control_s1730_v1` | 1730 | `5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2` |
+| `national_dex_continuation_control_s1731_v1` | 1731 | `ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d` |
+
+Local artifact paths follow `runs/<run ID>/checkpoint-final.pt`, with a
+`checkpoint-final.pt.json` sidecar and `run.json` receipt. Those receipts retain
+resolved configuration and experiment identity. Their recorded training source
+commit is `8afff361447b1357a041aa65f5b588af5b7ba5b5`; use the bound source archive
+as well when reconstructing the executed code.
+
+| Seed | Recorded training configuration hash |
+| ---: | --- |
+| 1729 | `6e0314a34ddec1ae31eb1b591c14e289339b950a1894f7e66f29ecc3a1508148` |
+| 1730 | `0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31` |
+| 1731 | `9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3` |
+
+These weights are reused by the four-path selector, pair-composition experiment
+and direct-membership ablation. Those are different inference variants, not
+three newly trained models. Likewise, shape-aware verification v2 changes the
+verification contract; it does not create new weights or erase v1's failure.
+See [lesson 29](learning/29-shape-aware-verification.md) for that distinction.
+
+The [v2 integration receipt](experiments/2026-09-25-pair-composition-shape-aware.json)
+now records acceptance for these three checkpoints under that revised contract.
+The [membership separability diagnosis](experiments/2026-09-25-membership-separability.json)
+is a separate evaluator result on the same weights, not a new checkpoint or a
+promoted inference policy.
+
+## Hardest-boundary margin family: completed, quality gate failed
+
+The [declared margin experiment](experiments/2026-09-25-symmetric-margin-plan.md)
+has completed both fresh initialization runs at seed 1729. Stage one pairs
+`national_dex_rank_margin_control_s1729_v1` with
+`national_dex_rank_margin_m1_w01_s1729_v1`: the existing recipe with margin
+coefficient 0.0 versus 0.1, margin 1.0, and final step 2000. Seeds 1730/1731 are
+conditional on the declared first-screen gate and are not run after its failure.
+
+Both final checkpoints reached step 2000 before generated-answer evaluation
+began. The frozen campaign harness calls fresh training without a resume
+checkpoint and refuses existing run directories; its training seal binds both
+completed receipts. This establishes fresh initialization for these two runs
+separately from the older inventory's unestablished lineages. Quality evaluation
+is complete and independently audited: exact answers fall 192/222 to 6/222,
+macro F1 falls 96.77% to 61.56%, and strictly separable rankings fall 167 to zero.
+The declared gate fails, with one exact gain and 187 losses. Neither checkpoint
+is promoted; the existing composition family remains the application reference.
+
+| Run ID | Seed | Checkpoint SHA256 |
+| --- | ---: | --- |
+| `national_dex_rank_margin_control_s1729_v1` | 1729 | `8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487` |
+| `national_dex_rank_margin_m1_w01_s1729_v1` | 1729 | `0bb697a4a0c8a05441fb2c825ffcfc47023f91596be8f48cda639d4e57c1e8ef` |
+
+| Arm | Recorded training configuration hash | Campaign training receipt SHA256 |
+| --- | --- | --- |
+| Control | `d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332` | `8fa5ce8c4029719013757b65a3d5c78a4fbdb52686e2da2b256a70d87aef64f3` |
+| Treatment | `13acb9380d3f5edffee21d8d15c72c92e76a8572569402e31a9707742f3830ce` | `450427afc01338d7789c36fc9362928d6979494ecd1bfe8eadfdffe1f8a2b8f5` |
+
+The receipts are `runs/learning/symmetric-margin-screen-v1/training-control.json`
+and `training-treatment.json`. Both bind source archive SHA256
+`e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b`;
+`training-seal.json` records completion before evaluation. The executed harness
+SHA256 is `a5d50dc4b57277bde1cefb1cf533b4958b28b04eb515182f855b3a4aa81311b8`.
+[Lesson 31](learning/31-hardest-boundary-margin.md) explains the objective and
+its implementation checks and negative result. The campaign's summary SHA256 is
+`39aafceac5c81d73bc7f38b2cd4f619c23d1480829456e031a352c5c1c6bd701`;
+its independent audit SHA256 is
+`17afc9ca0fedf184ac9e9f2794947306883d4288860b22124cd9eb0c7751bcd9`.
+The audit verifies the evidence, while the treatment fails its scientific gate.
+The [portable result](experiments/2026-09-25-symmetric-margin-screen.json)
+binds the independent audit and separate owner decision to these artifacts.
+Historical raw configuration hashes remain historical identities: paired missing
+margin fields may acquire disabled defaults only after authentication, and the
+effective configuration receives a separate hash. This loading compatibility
+does not permit silent historical training resume.
+
+## Weak-margin family: completed, separation gate failed
+
+The separately [declared weak-margin screen](experiments/2026-09-25-weak-margin-plan.md)
+has completed fresh control and treatment training at seed 1729, both at final
+step 2000. The control uses margin coefficient 0.0; the treatment uses 0.001
+with margin 1.0. These are new training runs, not continued training from the
+failed 0.1 treatment or the existing composition checkpoints.
+
+| Run ID | Seed | Checkpoint SHA256 |
+| --- | ---: | --- |
+| `national_dex_rank_margin_weak_control_s1729_v1` | 1729 | `1024045780668d961e993881dbfa89edac0bebc99a8f6e9c048092607a804f63` |
+| `national_dex_rank_margin_m1_w0001_s1729_v1` | 1729 | `75dab72aa7f4d6ae3d5d10deda2a34fec473b43d47b702ecbce5c899d7054e16` |
+
+| Arm | Recorded training configuration hash | Campaign training receipt SHA256 |
+| --- | --- | --- |
+| Control | `d55cd61326279169d2207790d4bbdcd9a8b85754fd9590193bb2e0075368e332` | `98bb3e7845bceeb2c3f35b43e99c04b698885f5d00db6bb231970b83a4329a0b` |
+| Treatment | `faf03894c030ecb25c045f31bec7855aa617acb9965c60f6b4f9b5a278784a67` | `0e8178cc74fe6f57da3a84a40dff89e82d6d818b462050c88247e3b0fabb4b3a` |
+
+The receipts are `runs/learning/weak-margin-screen-v1/training-control.json`
+and `training-treatment.json`. The campaign calls training without a resume
+checkpoint; its `training-seal.json` binds both completed receipts before
+generated-answer evaluation. This fresh-initialization evidence is separate
+from the older families' unestablished lineage. The control's configuration
+hash matches the earlier margin control because run names are excluded from
+that identity; its different checkpoint hash identifies a distinct trained
+artifact, not a reused checkpoint.
+
+The seal binds executed runner SHA256
+`df4b41f30d4a399cda88e62cc8334ad58522da7de191741ced31786caef8dff5`
+and unchanged neural source archive SHA256
+`e806549e1c778b5fc1529423e346ccf915b1484e3a5b322072fff5316c35ab6b`.
+Quality evaluation and independent audit are complete. Exact selected sets
+improve 191/222 to 194/222, with 11 gains and 8 losses, and macro F1 rises
+.967657 to .974821. Strict head separation declines 168 to 164, failing the
+unchanged gate despite nondecreasing exact counts in all three groups.
+The [portable result and owner decision](experiments/2026-09-25-weak-margin-screen.json)
+accept the evidence and reject the variant. No further-seed replication,
+default change or checkpoint promotion is authorized; the existing composition
+family remains the application reference.
+
+The completed summary SHA256 is
+`3d535d1e298497609169dda8791aef3920d3d8993afab9189df359644b8c7a93`;
+the independent audit SHA256 is
+`5cf9d5b556f06f068bcfda4709d737f351260f21144bc70ec42c305feef9caab`.
+[Lesson 33](learning/33-loss-weight-is-not-gradient-strength.md) explains why
+candidate selection can improve while global score separation worsens, and why
+this adaptive single-seed result is not an accepted training recipe.
+
+## Historical final-checkpoint inventory
+
+The [2026-09-25 inventory](experiments/2026-09-25-model-version-inventory.json)
+discovers **23 runs** through immediate `runs/*/run.json` files. All 23 final
+checkpoint byte hashes agree with their training results and sidecars. Recorded
+training/model settings, seeds, steps and data/split identities agree; archived
+source, source-tree and dependency-lock hashes also pass. The inventory retains
+full historical configurations rather than filling in today's new defaults.
+
+This checks bytes and receipt consistency without loading Torch or deserializing
+checkpoint payloads. It does not rerun models, validate all tensor contents,
+rehash corpus files or reassess quality. Periodic checkpoints and nested scratch
+runs are outside this inventory. Parent checkpoint provenance is explicitly
+unestablished by these receipts; a run name is not evidence of continuation.
+
+The producing script is `scripts/inventory_model_versions.py`; its hash is bound
+in the report. The immutable local report is
+`runs/learning/model-version-inventory-20260925/summary.json`, SHA256
+`0c9480d6dd542fc5ea69e60ebb66c945612bbcd81964d1c27abd6d366b76751f`.
+Sixteen focused CPU tests cover contradictions, missing metadata, empty inventory
+and overwrite refusal. Independent review corrected a training-subsection schema
+assumption before the inventory was produced.
+
+### 2026-09-25 follow-up: 25 completed final checkpoints
+
+The [margin follow-up inventory](experiments/2026-09-25-margin-model-version-inventory.json)
+adds the two completed runs above: **25/25** discovered final checkpoints pass
+the byte-and-receipt consistency checks, with zero failed runs. Its SHA256 is
+`58e5951903e64801d94d8f4c161a60418930cbf3f8e2b0d5ac73839c1ce24be6`.
+The earlier 23-run inventory remains an unchanged historical snapshot.
+
+The same immediate-directory scope and limitations apply: no payload tensor
+inspection, model replay, independent corpus/evaluation revalidation or quality
+ranking is established by this inventory. It does not infer training parents;
+the fresh-initialization evidence for the two new runs comes from the separate
+campaign harness and seal described above. This inventory records completed
+artifacts; the failed quality comparison is established separately by the
+campaign evaluation and audit, not by the inventory checks.
+
+### 2026-09-25 weak-margin follow-up: 27 completed final checkpoints
+
+The [weak-margin follow-up inventory](experiments/2026-09-25-weak-margin-model-version-inventory.json)
+adds the two newly completed weak-margin runs: **27/27** discovered final
+checkpoints pass the byte-and-receipt consistency checks, with zero failed
+runs. Its SHA256 is
+`837d930dbfc75144cd1bc038278ad2ceeddae488de62ad14bed9f4891950b9f8`.
+The earlier 23-run and 25-run inventories remain unchanged historical snapshots.
+
+The same immediate-directory scope and limitations apply. This inventory does
+not deserialize checkpoint tensors, replay models, establish training parentage
+or measure quality. The new campaign's training seal supplies the separate
+fresh-training evidence; the separately audited scientific comparison rejects
+this variant. Both completed checkpoints remain registered, keeping the count
+at 27 rather than deleting an unsuccessful experiment.
+
+## Gradient diagnosis: new evaluator, existing parameter states
+
+The [gradient lesson](learning/32-measuring-gradient-interference.md) and
+[portable result](experiments/2026-09-25-margin-gradient-diagnosis.json) report a
+completed, independently audited diagnostic under its
+[fixed plan](experiments/2026-09-25-margin-gradient-diagnosis-plan.md). It measures
+96 training queries at five states: regenerated shared initialization, each
+margin-screen arm's step-500 checkpoint and each final step-2000 checkpoint.
+No optimizer or parameter update is performed; the final-checkpoint inventory
+remains 25. The regenerated initialization has a recorded content identity but
+is not a historically saved training checkpoint.
+
+The two step-500 artifacts receive new explicit verification here, separately
+from the earlier final-checkpoint seal:
+
+| Existing periodic checkpoint | Checkpoint SHA256 |
+| --- | --- |
+| `national_dex_rank_margin_control_s1729_v1/checkpoint-step-500.pt` | `ba31f3d3e7e3aa56cd5ee7020a7458c93f16767c018b72ff8b4fdc4ca7337fac` |
+| `national_dex_rank_margin_m1_w01_s1729_v1/checkpoint-step-500.pt` | `f74cf4774905d70bc8d8fc9643373c1ae1c53778d9bca2ade5c7b1fb6b45efd8` |
+
+The plan pins their sidecars as well; the runner validates payload/config/run
+identity. Its full-model state hashes and empty gradient buffers attest no
+mutation, while the independent auditor checks the saved parameter blocks and
+gradient arithmetic. This does not independently prove autograd or replay the
+historical optimizer. The local summary SHA256 is
+`5a0927acf533a2a170d829a781e52e45686961e909e5a7f697ad193de3dcc607`;
+the audit SHA256 is
+`c2fe33de149f1ade6d28475b952833a304739c9fd32aafd0064b5ea080b0cbd5`.
+This diagnostic adds no new answer-quality result or promoted checkpoint.
+
+## Saved candidate/score diagnosis, 2026-09-25
+
+The [candidate-score report](experiments/2026-09-25-candidate-score-decomposition.json)
+reuses the two retained weak-margin checkpoints through their authenticated
+evaluation reports. It adds no recipe, weights or inference-policy version.
+The final-checkpoint inventory remains 27. Four offline pool/score combinations
+are diagnostic cells, not four newly trained or deployed models.
+
+Primary SHA256 `c325c76d0137da15ca73a157b1289e1743063489397690a8b6976276e2beef2d`,
+independent audit `7d65ffca77cf4a34f991880c9c0ebcf76d47a40e57f4e4bdefd49f2dac9ab23e`,
+and separate decision `b291793026ca7f65ee0c18b4d851041896e491403f6a30032a591acf685329da`
+bind this analysis. Acceptance concerns reconstruction of saved evidence;
+the weak-margin gate remains failed and the accepted application family unchanged.
+Raw neural reports and checkpoint payloads remain local, hash-bound artifacts.
+
+## FP8 inference variant, 2026-09-25
+
+The [paired FP8 report](experiments/2026-09-25-fp8-paired.json) reuses the
+guided seed-1729 trained checkpoint with SHA256
+`3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1`.
+Dynamic E4M3 conversion of 56 decoder-block linear layers is a separate
+inference variant; it does not alter this checkpoint or the historical trained
+artifact inventory. The FP8 variant retains 90.62% of the selected accepted
+PLM validation F1 frontier, versus 91.02% for FP32, but is much slower in
+native direct serving. It is not promoted as the serving default.
+
+The [compiled FP8 follow-up](experiments/2026-09-25-fp8-compiled.json) adds a
+TorchInductor execution variant over the same FP8 recipe and original trained
+checkpoint. It reaches 90.77% of the selected PLM frontier versus fresh FP32's
+91.02%, and remains slower in direct native serving. It is another inference
+system variant, not a new checkpoint or a promoted serving default.
+
+The [full-decode FP8 follow-up](experiments/2026-09-25-fp8-full-decode.json)
+compiles the cached decoder step for the same FP8 conversion and unchanged
+seed-1729 checkpoint. It retains 90.90% of the selected accepted PLM frontier
+against fresh FP32's 91.02% and improves warmed direct native throughput, with
+a large first-call compilation cost. This is a third inference execution
+variant, not a new trained model or a serving-default promotion.
+
+## Full-validation fixed-group batch-640 evaluation, 2026-09-25
+
+The [batch-640 evaluation](experiments/2026-09-25-full-validation-batch640.json)
+uses the same seed-1729 checkpoint SHA256
+`3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1`, graph
+snapshot, corpus and guided decoder policy as the paired native HTTP comparison.
+It changes the offline inference call shape to one 640-row fixed group; the
+group contains every validation query and deterministic repeats. This is a new
+evaluation/serving-workload identity, not new weights, a new decoding policy or
+an online HTTP capability.
+
+The [plan](experiments/2026-09-25-full-validation-batch640-plan.md),
+[audit](experiments/2026-09-25-full-validation-batch640-audit-v2.json) and
+[decision](experiments/2026-09-25-full-validation-batch640-decision.json) keep
+procedure, verification and outcome separate. Exact PLM output parity holds
+across batch and serial paths, while the graph oracle remains at 222/222 exact
+sets and PLM at 151/222. The model register remains at 27 checkpoint artifacts;
+no checkpoint was changed or promoted.
+
+## Eight-first-choice inference experiment, 2026-09-25
+
+The [fixed plan](experiments/2026-09-25-wide-first-choice-plan.md) and
+[portable report](experiments/2026-09-25-wide-first-choice.json) identify
+`+first8-pair28-symmetric-set-logit-sum-v1` over the original accepted control
+checkpoints for seeds 1729/1730/1731. Their hashes, historical training identity,
+data/split identity and archived runtime are bound in the report. This is a new
+inference experiment, with no new weights; the checkpoint inventory remains 27.
+
+Exact baseline replay precedes expansion. The independent audit reconstructs
+all 5,328 source paths and 23,976 slots: selected exact answers improve 569→603
+out of 666 validation query-seed observations, and macro F1 improves
+0.9668960529174291→0.9834927532993669. All declared quality gates pass.
+Primary SHA256 `1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183`,
+audit `eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95`,
+and decision `70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601`
+bind the accepted offline evidence. This does not promote a serving default,
+use protected-test predictions, establish overall oracle parity or supply a
+durable archive of local weights and large raw neural reports.
+
+## Rejected pair-intersection inference screen, 2026-09-25
+
+The [set-operation plan](experiments/2026-09-25-eight-source-set-algebra-plan.md)
+and [portable result](experiments/2026-09-25-eight-source-set-algebra.json)
+identify `+first8-pair28-intersection28-symmetric-set-logit-sum-v1`. This saved-only
+screen reuses the preceding three accepted control checkpoint outputs; there
+is no model execution or new trained checkpoint. The inventory remains 27.
+
+Appending 28 pair intersections improves exact answers 603→605/666 and pooled
+macro F1 .9834927532993669→.9846697745678721. Seed 1729's macro F1 decreases
+.9799255176742276→.9795420258136825, failing the declared per-seed nonregression
+gate. The variant is rejected, without altering the earlier width-eight result
+or deploying a new default. Exhaustive pure-operation witnesses are diagnostics,
+not predictions or promoted policies.
+
+Primary SHA256 `1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d`,
+audit `27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c`,
+and decision `01a51a5a9d5957ec68f32b0d81d23acace29d7eb3aa5684d99939582e88cb32a`
+bind the faithful reconstruction and separate quality rejection. Local raw
+reports retain hashes; copied compact evidence does not archive weight payloads.
+
+## Missing-source membership diagnosis, 2026-09-25
+
+The [frozen plan](experiments/2026-09-25-missing-source-membership-plan.md) and
+[portable report](experiments/2026-09-25-missing-source-membership.json) identify
+`missing-source-membership-v1`, a saved-output evaluator revision over the same
+three accepted control checkpoints and width-eight outputs. The inventory
+remains 27. There is no new inference policy, neural execution or training.
+
+Independent reconstruction verifies all 666 coverage records and the 30 focused
+query-seed observations (22 distinct queries). Of 1,407 omitted true-member
+occurrences, 1,394 have positive head logits and 1,367 fall within oracle top-K.
+The teacher supplies K; it is not a prediction input. These are head ranks,
+not combined decoder/guidance ranks or evidence of a quality gain.
+
+Primary SHA256 `47bf9d54967009a2be6e46bedc28f7949231be9bc14e18798fd66ad776c59805`,
+audit `dc4bda47ac580f2c49d8cdfdd4e8cecc6c17d75c421ba970a1383268403ee16a`,
+and decision `ffd804c63618d79f1de986305bf31ec7cc9699a0bb965abbc1399af52261c422`
+bind accepted diagnostic evidence. The rejected intersection policy stays
+rejected, protected tests stay unused, and local weights are not archived by
+the publication of this report.
+
+## Rejected coverage-seeking branch, 2026-09-25
+
+The [frozen plan](experiments/2026-09-25-coverage-seeking-branch-plan.md) and
+[portable report](experiments/2026-09-25-coverage-seeking-branch.json) identify
+`first8-pair28-plus-positive-uncovered-anchor9-unions8-v1`. This inference
+experiment reuses the three accepted control checkpoints and eight historical
+paths, with 666 fresh head/control replays and one additional path per original
+batch row. Of these paths, 205 are active and 461 are numerical padding.
+No new checkpoint is created; the inventory remains 27.
+
+Independent audit verifies all 25,821 candidate slots and the failed fixed gate:
+exact answers decrease 603→600, despite pooled F1 .9834927532993669→.985452019372604.
+Seeds 1729/1730 lose exact answers; seed 1730 loses F1. COLOR and single-TYPE
+exactness also decline. Candidate availability improves 605→608, but selection
+misses grow 2→8. Reject this variant without changing the accepted baseline.
+
+Primary SHA256 `15a4d408fe59c53ed76bcdac8588403677342bd7af5df80691a2461a0667676c`,
+audit `3e5f62a30aa2124519d92df8d6d4cf88f349e81e118b4f193286ee2f4fa008fc`,
+and decision `f645b4b086c7ef30b7057a6b3969254bf3a4d50fa01917d003a28967d3788fb8`
+identify faithful evidence separately from policy rejection. The experiment
+uses no protected-test predictions, changes no defaults and makes no serving
+or durable-weight-archive claim.
+
+## Projection-only derivative: completed, strong quality gate failed
+
+The [frozen plan](experiments/2026-09-25-projection-only-refit-plan.md), SHA256
+`2ac4d157ad8c079561d642199fec8de2c3da1866819baa48f52080e9b0f39bfe`, declares
+a seed-1729 derivative with only `symmetric_relation_projection.weight`
+trainable. All 500 full-batch updates over 1,637 training queries completed.
+The independent audit inspects all 93 state tensors, confirms that only W
+changed, verifies the new checkpoint contract and reconstructs the saved metrics.
+
+The objective `plm-projection-only-balanced-bce-v1` and evaluator
+`plm-projection-refit-screen-v1` explicitly differ from causal training and
+autoregressive generation. The inherited architecture and parent's 2,000 steps
+are separate from the refit's 500 updates, recorded as child global_step=500.
+
+| Artifact | Identity |
+| --- | --- |
+| Run | `projection-only-refit-v1` |
+| Local checkpoint | `runs/learning/projection-only-refit-v1/checkpoint-final.pt` |
+| Parent checkpoint SHA256 | `e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1` |
+| Child checkpoint SHA256 | `84a3ba02ab5f43e9073f1f8b8c7afc85ad7a5363e8cb180e1424a77e6a44ab87` |
+| Child sidecar SHA256 | `6b82e04e81d2f717bb4c8fd40d22a14366ea18356fe102b5ea01480a7da5ccaa` |
+| Child resolved configuration SHA256 | `bc8255923b30007c8edbd86e6dd8e4e1d63c58313413fcfdeb81610f921e8477` |
+| Fixed recipe file SHA256 | `a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22` |
+
+The [portable result](experiments/2026-09-25-projection-only-refit.json) records
+dense exact answers 112 to 122 and macro F1 .9903735063 to .9918551978. Against
+the accepted width-eight seed-1729 comparator's 201 exact answers, this fails
+the fixed exact and group gates. Preserve the checkpoint as a rejected trained
+derivative; no further-seed replication or serving promotion follows.
+
+The [additive inventory](experiments/2026-09-25-projection-only-model-version-inventory.json)
+adds this nested artifact to the historical 27, giving **28 final checkpoints**.
+All 28 checkpoint file byte hashes were freshly verified. Older payloads and
+configurations were not revalidated; their historical inventory scope remains
+unchanged. This new child has the separate CPU payload audit described above.
+The checkpoint remains local, with no durable weight archive established.
+
+Primary SHA256 `0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61`,
+audit `6535d9e85920c1c0e316ff0f9f60f391629c1c74be90d095759d5954692cf3bc`,
+and decision `da0bbc0bd9a1284c6dae6f072e46bcddf30b0c13cdd0a81e34328768042e90a6`
+bind this outcome. See [Lesson 39](learning/39-refitting-a-frozen-feature-head.md)
+for the loss, tensor shapes and exact-set versus membership distinction.
+
+## Worst-boundary sibling: completed, strong quality gate failed
+
+The [frozen plan](experiments/2026-09-25-projection-worst-boundary-plan.md), SHA256
+`03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c`, declares a
+new refit from original parent `e844dd73...cd4e1`. It does not continue rejected
+child `84a3ba02...ab87`. Only the objective changes to worst-member softplus;
+W-only optimization, data, 500-update budget and strong quality gate stay fixed.
+The objective is `plm-projection-worst-boundary-softplus-v1`; evaluator is
+`plm-projection-worst-boundary-screen-v1`. All 500 full-batch updates completed
+from the original parent with a fresh optimizer. Parent steps 2,000 and child
+global_step=500 remain separate. The independent CPU audit checks all 93 state
+tensors and confirms that only W changed; exact model/optimizer reload passes.
+
+| Artifact | Identity |
+| --- | --- |
+| Run | `projection-worst-boundary-v1` |
+| Child checkpoint SHA256 | `0abfbef2af5e12bcdaf21292a3b62a5a047fcdb7e6e77a8be5f5a0bb6fc4323b` |
+| Child sidecar SHA256 | `1b6cae108d0d2923e71263ec290df8787183022549019661e0b7d1ed18ccbaea` |
+| Child resolved configuration SHA256 | `6570dc9fbb0347b099316ed534ae8d83712768e2249ca2b92f2c9a8fe45cbd83` |
+| Recipe file SHA256 | `023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c` |
+
+The [portable result](experiments/2026-09-25-projection-worst-boundary.json)
+records 128/222 dense exact answers and macro F1 .9923462036, versus the
+original parent's 112 and historical mean-refit sibling's 122. The stronger
+eight-branch comparator still has 201. Exact/group gates fail; no promotion or
+further-seed replication follows. Strict separation declines from 165 to 160.
+Worst-member training loss decreases while diagnostic mean BCE increases;
+these are distinct objectives, not interchangeable loss magnitudes.
+
+The [additive inventory](experiments/2026-09-25-worst-boundary-model-version-inventory.json)
+freshly verifies all **29 final checkpoint file hashes** and adds this rejected
+sibling. Older configurations/payloads are not revalidated by that file-hash
+check. Local weights remain unarchived durably, and ordinary serving does not
+support the new objective contract.
+
+Primary SHA256 `23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0`,
+audit `a8f0d320d3408cb65e725c5e1849ffda3cd63854592065a3b8b066a0da6938be`,
+and decision `d315b51f9f53da3ab9157a1ae57311a1a99b90fa1e099f57513531daaf969eee`
+bind the outcome. See [Lesson 40](learning/40-training-the-weakest-membership-decisions.md).
+
+## Diagonal feasibility diagnostic (completed inconclusive; no new checkpoint)
+
+The [declared diagnostic](experiments/2026-09-25-diagonal-feasibility-plan.md),
+SHA256 `7b2e575dfd651d10edbf2d8c2a5f4a9f3268d6ad350248fafd35f1e09efe694b`,
+reused original parent `e844dd73...cd4e1` to extract frozen normalized
+embeddings and test training representability in an exact-real diagonal head.
+It is neither continuation of a refit child nor a new validation quality screen.
+
+Run ID `diagonal-feasibility-v1` and evaluator `plm-diagonal-feasibility-v1`
+identify the completed diagnostic. Both dimensions are inconclusive: exact
+sign failures hidden by FP64 triggered the declared stop rule after one primal
+LP on2,048constraints each. Full checks cover805TYPE and832COLOR training
+queries, or1,676,288nonself constraints. Rank-two steering is verified exactly;
+there is neither a feasible witness nor an infeasibility certificate.
+
+The two rejected FP64 proposals remain versioned in TYPE/COLOR reports, bound
+to normalized feature file SHA256
+`b15ec05b20f0d9c2b65849c85e6a0f1febcb188a93b2183ba2610e6a94981bd5`.
+They are diagnostic coefficients, not neural checkpoints or promoted policies.
+The registered final neural checkpoint count remains29; this diagnostic creates
+no new final-checkpoint inventory and does not freshly reverify all older weights.
+
+Primary SHA256 `453d0a7a5e4d222500e064a81b019eed0fb56373b5ad74c9350ee897dd4acbd9`,
+audit `8d58b54ecde7f2062e89851b6a0a55d237cf71924a6d0fe218f17f09abc0b3ba`,
+and decision `4166b4816cdd6773aceaf63b854d904aec6eaeac10ea7392688af3477eb3a3a2`
+bind accepted evidence separately from the inconclusive mathematical outcome.
+See the [portable result](experiments/2026-09-25-diagonal-feasibility.json) and
+[Lesson41](learning/41-can-the-frozen-features-fit-the-training-relations.md).
+
+## Bilinear residual derivative (completed; quality gate failed)
+
+The [frozen plan](experiments/2026-09-25-bilinear-residual-plan.md), SHA256
+`b1cd8a897e5db7d0dc0adc3e3bd40a87b0ae5830714b63ea86649f1599c9e132`,
+declares `bilinear-residual-refit-v1` from original parent `e844dd73...cd4e1`.
+All 93 inherited state tensors remain frozen. A zero-initialized registered
+parameter `symmetric_bilinear_residual` of shape [2,256,256] supplies TYPE/COLOR
+cross-coordinate corrections through an explicit experiment-local scorer.
+
+Architecture `plm-frozen-symmetric-bilinear-residual-v1`, objective
+`plm-bilinear-residual-balanced-bce-v1` and evaluator
+`plm-bilinear-residual-screen-v1` distinguish the completed derivative from the
+parent and W-only refits. The independently inspected full checkpoint contains
+94 state entries: all 93 original tensors are byte-identical, and A is the sole
+new trained tensor. Parent steps 2000 and residual updates 500 remain separate.
+Exact zero-start validation/full-training-loss replay and checkpoint/optimizer
+reload pass. Ordinary decoder forward and standard serving do not implement
+this new head; it is not promoted.
+
+Child SHA256 `1f6e9a593ac5c5c83f0d003f273adc02213845ab94f7d5118b1b55bf5bab43d9`,
+sidecar `680a2146fe388ca3b98b09baf85e616078f0a10a3ac1476a8da6cfba6bcd8b55`,
+resolved configuration `c26c4914c6772f0281c86fdd08d66afb7165eab32f9b0bdb5655601db61291bf`.
+Local path: `runs/learning/bilinear-residual-refit-v1/checkpoint-final.pt`.
+The [additive inventory](experiments/2026-09-25-bilinear-residual-model-version-inventory.json),
+SHA256 `d616cf34571847f42797124dc08fbe40dafd397777544111e29aaa8bd7d38745`,
+freshly verifies all 30 final checkpoint files. Older payloads/configs were not
+all revalidated, periodic checkpoints remain outside scope, and no durable
+remote weight archive is established.
+
+The child achieves 198/222 exact sets, macro F1 0.9994061705410997 and group
+exact counts COLOR103/single-TYPE48/dual-TYPE47. It gains 86 exact answers over
+the original dense parent with no losses, but fails the unchanged >201 exact
+and TYPE group gates. Training balanced BCE decreases from 0.003822767175734043
+to 0.0002471808111295104. No protected evaluation or extra-seed replication ran.
+
+Primary SHA256 `92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5`,
+audit `2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417`,
+and decision `d7d38687e2d099348af61bd52ed62df28211464e4209cb00df43db21d1d93234`
+bind accepted evidence separately from quality rejection. The
+[portable result](experiments/2026-09-25-bilinear-residual-refit.json) preserves
+the frozen gate and explicitly labeled descriptive diagnostics.
+See [Lesson 42](learning/42-learning-cross-coordinate-relations.md).
+
+## Bilinear 2000-update sibling — single-seed screen passed
+
+The [frozen budget plan](experiments/2026-09-25-bilinear-budget2000-plan.md) starts
+from the original seed-1729 parent with zero residual and fresh AdamW. Campaign
+`bilinear-budget2000-v1` changes only the declared residual training budget from
+500 to 2000. Architecture/objective/evaluator identities remain unchanged.
+It is a sibling of checkpoint 30, not a resume of that rejected derivative.
+
+The [additive inventory](experiments/2026-09-25-bilinear-budget2000-model-version-inventory.json),
+SHA256 `6fdfd6aa9780152f4c268c650b82e0f7453313db606dc068fd0718489c740748`,
+registers final checkpoint **31** and freshly verifies all 31 final weight files.
+Older payload/config contents and periodic checkpoints were not all revalidated.
+New checkpoint SHA256
+`8d9ddadc6d63f7ab8f767fb484193dbdfdf1b9fb369fad1dab38fef8bd028c2c`;
+sidecar `0cd646837dd6084fe0495d7171cc4636c835e16dd2c398f5c56a2bd7d61bceae`.
+All 93 original tensors remain unchanged; the 94th tensor A alone trains.
+Parent pretraining 2000 and residual fitting 2000 are separate lineage fields.
+
+The explicit experimental scorer remains SHA256
+`5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee`;
+new orchestration is `f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930`.
+The ordinary inherited decoder forward still ignores A. This result does not
+expand the standard serving contract or change the default predictor.
+
+Independent audit verifies 207/222 exact sets, macro F1 0.9997456353806234,
+FP8/FN10, and COLOR/single-TYPE/dual-TYPE exact counts 103/50/54. All unchanged
+quality checks pass. Compared with historical 500-update output, 10 answers
+become exact and one stops being exact. This is adaptive single-seed validation,
+not oracle parity, replication or protected-test evidence.
+
+Primary `c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3`,
+audit `475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d`,
+and owner decision `edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb`
+bind accepted evidence and the passed screen separately from promotion.
+See the [portable result](experiments/2026-09-25-bilinear-budget2000.json) and
+[Lesson 43](learning/43-training-longer-without-moving-the-goalposts.md).
+
+## Bilinear parent-seed replication — both fresh seeds passed
+
+The [frozen plan](experiments/2026-09-25-bilinear-seed-replication-plan.md) applies
+the same zero-residual, fresh-optimizer, fixed 2000-update recipe to original
+parents 1730 and 1731. Accepted 1729 remains historical development evidence.
+Evaluator `plm-bilinear-seed-replication-v1` names the per-seed floors and their
+conjunction; architecture, objective and scorer remain unchanged.
+
+| Seed | Exact / 222 | Matching selector exact | COLOR / single TYPE / dual TYPE exact | Gate |
+| --- | ---: | ---: | --- | --- |
+| 1730 | 212 | 205 | 103 / 51 / 58 | Passed |
+| 1731 | 208 | 197 | 103 / 51 / 54 | Passed |
+
+Each child preserves its own parent's 93 tensors and adds one trained
+A[2,256,256] tensor. Full 94-entry state and optimizer reload, 2000 residual
+updates and matching-parent zero-start replay pass independent inspection.
+Parent pretraining 2000 and residual training 2000 remain separate fields.
+
+- Seed 1730 checkpoint: `735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4`.
+- Seed 1731 checkpoint: `ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2`.
+
+Both live under `runs/learning/bilinear-seed-replication-v1/seed-<seed>/checkpoint-final.pt`.
+The [additive inventory](experiments/2026-09-25-bilinear-seed-replication-model-version-inventory.json),
+SHA256 `5e84f1546fda3ae4e230ad28c98b936043d09e6834e4f26046e7ab9eb2f26034`,
+registers **33 final checkpoints** and freshly verifies all their bytes. Reused
+1729 adds no checkpoint. Older payloads/configs and periodic checkpoints were
+not all revalidated, and no durable remote weight archive is established.
+
+Fresh results total 420/444 exact, macro F1 0.9997309695218274; including historical
+1729 gives 627/666 and 0.9997358581414261. These observations share 222 validation
+queries. Both fresh gates pass individually; pooling does not rescue failures.
+No protected evaluation, oracle parity, standard-serving support or promotion
+follows from this result. The inherited decoder forward still ignores A.
+
+Execution runner `24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde`
+is separate from aggregate-only recovery runner
+`6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4`.
+The [repair declaration](experiments/2026-09-25-bilinear-replication-evidence-repair.md)
+preserves an auditor metadata-schema failure and a UTC/local timestamp-string
+failure. Versioned repairs changed neither neural execution nor the gate.
+
+Recovered aggregate `338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0`,
+independent audit `ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8`,
+and owner decision `62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978`
+bind accepted evidence separately from promotion. See the
+[portable result](experiments/2026-09-25-bilinear-seed-replication.json) and
+[Lesson 44](learning/44-replicating-across-trained-parent-seeds.md).
+
+## Saved-error diagnostic after bilinear replication
+
+`bilinear-error-geometry-v1` reuses the accepted saved validation scores of the
+three bilinear children. It creates no checkpoint and leaves the final inventory
+at **33**. It changes neither their inference policy nor evaluator quality gates.
+The fresh models' 24 errors comprise 15 strictly separated and 9 overlapping/tied
+cases; these are descriptive categories, not repaired predictions.
+
+Primary summary `1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606`,
+independent audit `1b10b77db77ebb79b5f1327bcc1538331eb876216c424036a516a0ac04cdba96`,
+and decision `4f2d624341cf03d4af8e7c6976135a1b6766071899e745ea4071f9f1cf04e652`
+bind this additional analysis to the existing lineage. See the
+[portable diagnostic](experiments/2026-09-25-bilinear-error-geometry.json) and
+[Lesson 45](learning/45-ranking-errors-and-zero-threshold-errors.md).
+
+## Bilinear worst-member sibling: completed, quality gate failed
+
+`bilinear-worst-boundary-v1` restarts from the original1729 parent with A=0,
+retains the bilinear architecture/scorer and uses2000 fresh optimizer updates.
+Objective `plm-bilinear-worst-boundary-softplus-v1` replaces mean BCE; evaluator
+`plm-bilinear-worst-boundary-screen-v1` requires improvement over the accepted
+balanced-BCE2000 sibling. Recipe SHA
+`c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34`.
+
+Final checkpoint `bf30482b79027566a37c560cc7d49746b0c6158a3f21f1e91094677bcb115b1d`
+contains the unchanged93 original tensors plus the trained A tensor and optimizer
+state. Exactness rises207 to208, but macro F1 falls to0.9996521511729153 and
+single-TYPE exactness falls50 to49. The declared quality gate fails; this is a
+registered rejected derivative, not a promoted policy.
+
+Summary `167085de1533f72a27f35f6249f2d5348a6887da73a9f706de373eb76c6275e0`,
+audit `f92b759a908bf3bfa63f8a9a2c49d15bf533b44940b56d34465f8e5a47907455`,
+and decision `6dd49574b54b0bea9d64c79650eb57c1090157254d8e2fdaec0f7dcb8cf5b8a4`
+separate evidence acceptance from the failed quality result. Runner SHA
+`3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03`
+and loss-helper SHA `8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480`
+are distinct from the unchanged scorer identity recorded above.
+
+The [additive inventory](experiments/2026-09-25-bilinear-worst-boundary-model-version-inventory.json),
+SHA `d18c7cd521d758593fbad803452dde6fa820e542fed52b7ae4557025e2ebfa2a`,
+freshly verifies bytes for all **34 final checkpoints**. Older payloads and
+periodic checkpoints are not comprehensively re-audited; local hashes do not
+establish durable archival. See the [result](experiments/2026-09-25-bilinear-worst-boundary.json)
+and [Lesson46](learning/46-changing-which-mistakes-drive-learning.md).
+
+## Minimum record for a reported result
+
+Every future reported variant should link its recipe/run IDs and parent lineage,
+checkpoint hash, training data/protocol/vocabulary/split identities, executed
+source/configuration, seeds, environment and inference policy. Bind the exact
+evaluation plan and reports, including failed gates and development versus
+protected-test status. State whether evidence is fresh or reused.
+
+Use a descriptive citation tuple such as
+`run ID + checkpoint hash + inference policy + evaluation report hash`.
+Do not cite an unqualified "latest model". Selection or publication requires
+an explicit evidence status; presence in this register is not promotion.
+
+Checkpoint and raw run files currently live in Git-ignored local directories.
+Hashes establish identity, not availability or backup. Before academic release,
+archive the referenced artifact bundle durably and record its retrieval location,
+license and checksums. No public archive, DOI or backup is established by this
+register. Periodic checkpoints, verified parent lineage and links from every
+historical variant to its evaluations still need cataloguing before a complete
+version-history claim.

@@ -1,0 +1,381 @@
+{
+  "checkpoint_hash": "bf30482b79027566a37c560cc7d49746b0c6158a3f21f1e91094677bcb115b1d",
+  "config": {
+    "bilinear_residual_architecture": {
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "dimensions": [
+        "TYPE",
+        "COLOR"
+      ],
+      "dtype": "float32",
+      "id": "plm-frozen-symmetric-bilinear-residual-v1",
+      "initialization": "exact-zero",
+      "parameter": "symmetric_bilinear_residual",
+      "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+      "shape": [
+        2,
+        256,
+        256
+      ],
+      "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+    },
+    "bilinear_residual_recipe": {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "autocast": false,
+      "batching": "full-training-partition-in-split-order",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "deterministic_algorithms": false,
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "entity_base": 1024,
+      "evaluator": "plm-bilinear-worst-boundary-screen-v1",
+      "experiment": "bilinear-worst-boundary-v1",
+      "float32_matmul_precision": "highest",
+      "gradient_accumulation": 1,
+      "gradient_clipping": null,
+      "initialization": "exact-zero",
+      "loss_coefficient": 1.0,
+      "loss_definition": "query-mean-half-softplus-negative-amin-true-plus-softplus-amax-negative-fp32-v1",
+      "mean_bce_diagnostic": {
+        "initial_expected": 0.003822767175734043,
+        "update_points": [
+          0,
+          2000
+        ],
+        "used_for_updates": false
+      },
+      "objective": "plm-bilinear-worst-boundary-softplus-v1",
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "decay_excludes_norm_and_bias": true,
+        "eps": 1e-08,
+        "lr": 0.0003,
+        "name": "adamw",
+        "weight_decay": 0.0
+      },
+      "parameter_dtype": "float32",
+      "parent_training_steps": 2000,
+      "product_count": 1025,
+      "residual_shape": [
+        2,
+        256,
+        256
+      ],
+      "residual_updates": 2000,
+      "scheduler": null,
+      "schema_version": 1,
+      "seed": 1729,
+      "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+      "serialization_max_products": 506,
+      "serialization_min_products": 1,
+      "strong_comparator_exact": 207,
+      "strong_comparator_f1": 0.9997456353806234,
+      "strong_comparator_group_exact": {
+        "COLOR": 103,
+        "TYPE_dual": 54,
+        "TYPE_single": 50
+      },
+      "threshold": 0.0,
+      "train_query_count": 1637,
+      "trainable_parameter": "symmetric_bilinear_residual",
+      "validation_batch_size": 8,
+      "validation_query_count": 222
+    },
+    "implementation_identity": {
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+    },
+    "inherited_parent_config": {
+      "baseline": {
+        "complex": {
+          "batch_size": 32,
+          "dimension": 32,
+          "epochs": 100,
+          "learning_rate": 0.01,
+          "negative_samples": 1,
+          "regularization": 0.0
+        }
+      },
+      "data": {
+        "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+        "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+        "held_out_query_fraction": null,
+        "name": "pokemon_v1_f1541479_20260924",
+        "protocol_version": "pokemon-v1",
+        "split_seed": 1729,
+        "test_query_fraction": 0.1,
+        "tokenizer_version": "pokemon-v1",
+        "validation_query_fraction": 0.1
+      },
+      "deterministic": false,
+      "eval": {
+        "constrained_decoding": true,
+        "device": "auto",
+        "filtered": false,
+        "first_target_guidance_alpha": 0.0,
+        "generation_batch_size": 1,
+        "hits_at": [
+          1,
+          3,
+          10
+        ],
+        "max_new_tokens": 507,
+        "metrics": [
+          "mrr",
+          "hits"
+        ],
+        "name": "ranking",
+        "prevent_repeated_targets": false,
+        "use_kv_cache": false
+      },
+      "model": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "continuation_set_loss_weight": 0.0,
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "first_target_loss_weight": 1.0,
+        "gradient_checkpointing": false,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": false,
+          "experts_per_token": 2,
+          "num_experts": 8,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "prompt_set_loss_weight": 1.0,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "symmetric_relation_loss_weight": 1.0,
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "paths": {
+        "data_root": "data",
+        "run_root": "runs"
+      },
+      "run_name": "national_dex_continuation_control_s1729_v1",
+      "seed": 1729,
+      "train": {
+        "batch_size": 32,
+        "checkpoint_every": 500,
+        "compile": false,
+        "ema_decay": null,
+        "eval_every": 200,
+        "grad_accum_steps": 1,
+        "grad_clip_norm": 1.0,
+        "max_steps": 2000,
+        "name": "local_cuda",
+        "num_workers": 0,
+        "optimizer": {
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "decay_excludes_norm_and_bias": true,
+          "eps": 1e-08,
+          "lr": 0.0003,
+          "name": "adamw_fused",
+          "weight_decay": 0.1
+        },
+        "pin_memory": false,
+        "precision": "bf16",
+        "scheduler": {
+          "min_lr_ratio": 0.1,
+          "name": "cosine",
+          "warmup_steps": 200
+        },
+        "seq_len": 512
+      }
+    }
+  },
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "experiment_identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "recipe_sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+      "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "torch": "2.11.0+cu128"
+    },
+    "evaluator_version": "plm-bilinear-worst-boundary-screen-v1",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "2dc643a7459f03ed26484e628e7bd6ff71aacf048c918597c454103428f41486",
+    "seeds": [
+      1729
+    ],
+    "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "global_step": 2000,
+  "schema_version": 1,
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "training_metadata": {
+    "architecture": {
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "dimensions": [
+        "TYPE",
+        "COLOR"
+      ],
+      "dtype": "float32",
+      "id": "plm-frozen-symmetric-bilinear-residual-v1",
+      "initialization": "exact-zero",
+      "parameter": "symmetric_bilinear_residual",
+      "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+      "shape": [
+        2,
+        256,
+        256
+      ],
+      "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+    },
+    "evaluator": "plm-bilinear-worst-boundary-screen-v1",
+    "final_post_update_loss": 0.003092526225373149,
+    "implementation_identity": {
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+    },
+    "initial_pre_update_loss": 0.44132092595100403,
+    "initial_state_sha256": "1f6cd29a6c93ed1a268f2d8848c867b92d5bea4eb8c9b8725f3e3dff039955f2",
+    "loss_helper_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "mean_bce_diagnostic": {
+      "final": 0.00016030404367484152,
+      "initial": 0.003822767175734043,
+      "initial_replay_exact": true,
+      "update_points": [
+        0,
+        2000
+      ],
+      "used_for_updates": false
+    },
+    "model_config": {
+      "activation": "swiglu",
+      "attention": {
+        "backend": "sdpa",
+        "causal": true,
+        "dropout": 0.0,
+        "logit_soft_cap": null,
+        "qk_norm": true,
+        "sliding_window": null
+      },
+      "continuation_set_loss_weight": 0.0,
+      "dim": 256,
+      "dtype": "bf16",
+      "embed_dropout": 0.0,
+      "ffn_multiple": 2.6667,
+      "ffn_multiple_of": 256,
+      "first_target_loss_weight": 1.0,
+      "gradient_checkpointing": false,
+      "head_dim": null,
+      "init_std": 0.02,
+      "max_seq_len": 512,
+      "moe": {
+        "aux_loss_weight": 0.01,
+        "enabled": false,
+        "experts_per_token": 2,
+        "num_experts": 8,
+        "shared_experts": 0
+      },
+      "n_heads": 8,
+      "n_kv_heads": 2,
+      "n_layers": 8,
+      "name": "tiny_decoder",
+      "norm": "rmsnorm",
+      "norm_eps": 1e-05,
+      "prompt_set_loss_weight": 1.0,
+      "resid_dropout": 0.0,
+      "rope": {
+        "original_max_seq_len": null,
+        "scaling_factor": 1.0,
+        "scaling_type": "none",
+        "theta": 10000.0
+      },
+      "symmetric_relation_loss_weight": 1.0,
+      "tie_embeddings": true,
+      "use_mup": false,
+      "vocab_size": 2049,
+      "z_loss_weight": 0.0
+    },
+    "model_config_scope": "inherited archived base only; residual architecture is separate",
+    "objective": "plm-bilinear-worst-boundary-softplus-v1",
+    "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "parent_state_sha256": "eefe767624fd329882f6c2cc2f4f7d1159c52b7ef028c1ba438020b219fda746",
+    "parent_training_steps": 2000,
+    "recipe_sha256": "c3b915b270d140faaab88da37bcb711a62641231a444005410c5b91afe4b2d34",
+    "record_count": 1637,
+    "residual_updates": 2000,
+    "runner_sha256": "3e9937dfaba5d571103d611d78115e212e191932c7b926d100b75b25537b9c03",
+    "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "standard_serving_supported": false,
+    "train_query_order_sha256": "7ef5ca0d3bb2440f4f3a4596d40fba65f25fd0ed423aaa32a4f119512938653e",
+    "trainable_parameters": [
+      "symmetric_bilinear_residual"
+    ]
+  }
+}
