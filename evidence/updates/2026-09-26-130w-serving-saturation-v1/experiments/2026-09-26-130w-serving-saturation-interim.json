@@ -1,0 +1,95 @@
+{
+  "experiment": "130w-serving-saturation-calibration-v1",
+  "date": "2026-09-26",
+  "status": "partial-no-valid-130w-point",
+  "plan_path": "docs/experiments/2026-09-26-130w-serving-saturation-plan.md",
+  "plan_sha256": "73fa6ac4b4f7bb4ca5de91663dcde697fc69d4f1db15552e7c32f48decadd99e",
+  "cpu_arm": {
+    "scope": "single-process loopback SQLite graph HTTP; cap 16 product IDs; first eight frozen validation prompts",
+    "clean_levels": [
+      {
+        "client_concurrency": 1,
+        "completed_servings": 10291,
+        "completed_servings_per_second": 1029.1,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 5,
+        "cpu_package_power_median_watts": 45.58027928605621,
+        "cpu_package_power_min_watts": 41.199868642892895,
+        "cpu_package_power_max_watts": 52.40232096752717,
+        "latency_seconds_median": 0.0009415000022272579,
+        "latency_seconds_p95": 0.0011262999978498556
+      },
+      {
+        "client_concurrency": 4,
+        "completed_servings": 5974,
+        "completed_servings_per_second": 597.4,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 5,
+        "cpu_package_power_median_watts": 68.29478628653318,
+        "cpu_package_power_min_watts": 61.08095443355073,
+        "cpu_package_power_max_watts": 75.0371646096756,
+        "latency_seconds_median": 0.006321649994788459,
+        "latency_seconds_p95": 0.010532899999816436
+      },
+      {
+        "client_concurrency": 8,
+        "completed_servings": 4974,
+        "completed_servings_per_second": 497.4,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 6,
+        "cpu_package_power_median_watts": 75.58818685359554,
+        "cpu_package_power_min_watts": 69.63628414883507,
+        "cpu_package_power_max_watts": 82.06041761136663,
+        "latency_seconds_median": 0.014845549998426577,
+        "latency_seconds_p95": 0.02583530000265455
+      },
+      {
+        "client_concurrency": 16,
+        "completed_servings": 4885,
+        "completed_servings_per_second": 488.5,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 5,
+        "cpu_package_power_median_watts": 75.2449471695669,
+        "cpu_package_power_min_watts": 69.94763153311358,
+        "cpu_package_power_max_watts": 76.4469858767636,
+        "latency_seconds_median": 0.029791799999657087,
+        "latency_seconds_p95": 0.05293040000105975
+      }
+    ],
+    "clean_power_plateau_observed": "Concurrency 8 and 16 both measured about 75 W package power; no clean level reached the requested 125-135 W band.",
+    "excluded_levels": {
+      "client_concurrency": [
+        32,
+        64,
+        128
+      ],
+      "reason": "A separate GPU training run started at 2026-09-26 14:55:03 UTC during the concurrency-32 level. The 32 level was mixed and the 64/128 levels overlapped GPU activity; exclude them from the CPU-only power curve."
+    },
+    "power_sampling": {
+      "source": "Windows Energy Meter(RAPL_Package0_PKG) Power counter; CookedValue / 1000",
+      "samples": 38,
+      "observed_median_spacing_seconds": 1.910091,
+      "note": "Observed spacing was about 1.9 seconds because Get-Counter call time was followed by a 0.9 second sleep; this is sparser than the intended one-second cadence."
+    }
+  },
+  "gpu_arm": {
+    "status": "not-run",
+    "candidate_batch_size": 320,
+    "reason": "An independent PLM training campaign requested and began exclusive GPU use; no serving batch was measured."
+  },
+  "raw_cpu_report_path": "runs/learning/power-target-saturation-20260926/graph-arm.json",
+  "raw_cpu_report_sha256": "95c02f4d3cce0c00f1739e8054fed9b46096a573111fea88ccef5fa6a9c366ec",
+  "cpu_runner_path": "runs/learning/power-target-saturation-20260926/graph_arm.py",
+  "cpu_runner_sha256": "143adfec5ca7466b41556a366a37d94419b1b3b3afc4f99327a8fbc0e2752c6a",
+  "serving_receipt_sha256": "83f1ff5a9e72a959af2781b9a547b06125d1ab98b2a74393abe26675c0aa0046",
+  "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+  "limitations": [
+    "No CPU or GPU 130 W serving rate is accepted from this partial run.",
+    "No PLM serving rate or batch-size recommendation is established.",
+    "The clean single-process graph sweep did verify exact 16-ID responses with zero failed responses through concurrency 16."
+  ]
+}

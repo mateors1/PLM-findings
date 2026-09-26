@@ -1,0 +1,26 @@
+{
+  "decision_version": 1,
+  "experiment_id": "130w-serving-saturation-v1",
+  "experiment_completed": true,
+  "quality_gate_applicable": false,
+  "model_promoted": false,
+  "outcome": "Select PLM batch 336 as the measured offline operating point near 130 W. The single-process graph endpoint reached a lower CPU-package power plateau and has no valid 130 W rate.",
+  "selected_followup_settings": {
+    "plm_gpu_batch_size": 336,
+    "plm_median_completed_servings_per_second": 151.20040068092243,
+    "plm_median_gpu_board_watts": 129.751,
+    "graph_client_concurrency_at_power_plateau": 4,
+    "graph_servings_per_second_at_plateau_entry": 580.1,
+    "graph_cpu_package_watts_at_plateau_entry": 86.18189311885905
+  },
+  "accuracy_conclusion": "On archived validation responses post-processed to 16 IDs, PLM matches the graph exact ID set on 153/222 queries (macro F1 0.8305); graph oracle is exact by construction. This is not protected-test evidence.",
+  "limitations": [
+    "No CPU 130 W result.",
+    "GPU throughput is offline batched generation plus a post-decode 16-ID cap, not online HTTP capacity.",
+    "The CPU and GPU rates are measured through different execution paths and should not be compared as a matched serving SLO."
+  ],
+  "summary_path": "docs/experiments/2026-09-26-130w-serving-saturation.json",
+  "summary_sha256": "90e044305a79b9228ed7f114ff16a25fe03252a694444c2c46f1b93fe11cf626",
+  "audit_path": "docs/experiments/2026-09-26-130w-serving-saturation-audit.json",
+  "audit_sha256": "d885864c9b5f342298d2649cce9af645f5bb33b0c5ba89de7051bbb40b9c0760"
+}

@@ -1,0 +1,49 @@
+{
+  "audit_version": 1,
+  "experiment_id": "130w-serving-saturation-v1",
+  "auditor": "primary research task",
+  "audit_method": "Separate post-run recomputation from the raw graph and GPU receipts; no additional timed inference was performed.",
+  "audit_complete": true,
+  "independent_execution_or_external_review": false,
+  "checks": {
+    "frozen_plan_hash_matches_cpu_runner": true,
+    "cpu_report_json_readable_and_complete": true,
+    "cpu_every_level_completed_16_id_responses": true,
+    "cpu_servings_per_second_recomputed_from_counts": true,
+    "cpu_power_sample_interval_near_one_second": true,
+    "cpu_130w_sustained_point_absent": true,
+    "gpu_320_terminal_and_strict_parity": true,
+    "gpu_336_terminal_and_strict_parity": true,
+    "gpu_336_three_repetitions_each_within_125_135w": true,
+    "gpu_336_serving_rate_recomputed_as_rows_over_seconds": true,
+    "gpu_336_selected_batch_closest_to_130w": true,
+    "capped_validation_quality_recomputed_on_222_rows": true,
+    "protected_test_not_used": true,
+    "executed_gpu_source_unchanged": true
+  },
+  "input_hashes": {
+    "plan_sha256": "73fa6ac4b4f7bb4ca5de91663dcde697fc69d4f1db15552e7c32f48decadd99e",
+    "cpu_raw_sha256": "8e07c3cdd4d1c55d0b0c5ecd3ff90a2b905e783174c5a3e81aea93493ee252e5",
+    "gpu_batch320_sha256": "78632398c26b551f77e97372d43436741286e76e1c4e58f8408d3c4bca031125",
+    "gpu_batch336_sha256": "9b11e85e1802dd5cb00cf47637b6f0714f2fa3157176305a032efdee6f78879f",
+    "graph_plm_validation_source_sha256": "2885f25a342e6338068b5c6d82671f0c27ade3f827c708e84a11e6f395cec680"
+  },
+  "recomputed_values": {
+    "cpu_clean_levels": 13,
+    "cpu_median_sample_interval_seconds": 1.000817,
+    "cpu_maximum_level_median_watts": 86.27705653019284,
+    "batch320_median_rps": 139.71373151221297,
+    "batch320_median_repetition_power_watts": 125.071,
+    "batch336_median_rps": 151.20040068092243,
+    "batch336_median_output_tokens_per_second": 24872.46591201174,
+    "batch336_median_repetition_power_watts": 129.751,
+    "batch336_all_sample_median_power_watts": 131.238,
+    "capped16_validation_exact_count": 153,
+    "capped16_validation_macro_f1": 0.8305180180180181
+  },
+  "audit_limits": [
+    "The secondary calculations were run by the primary task, not a second agent or external reviewer.",
+    "This audit verifies result arithmetic, hashes, parity receipts and validation-set derivations; it does not independently instrument hardware or re-run the 222-query quality campaign."
+  ],
+  "result_sha256": "90e044305a79b9228ed7f114ff16a25fe03252a694444c2c46f1b93fe11cf626"
+}

@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-25",
+  "scope": "Offline fixed-group CUDA decoding on one NVIDIA GeForce RTX 5070 Ti; not the native HTTP scheduler",
+  "checkpoint_hash": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "source_tree_sha256": "82b0c7d8fd00ca5ba9a0be44be5b50e6d690b0d8255abf7fc54590e6e63d7d84",
+  "policy": "greedy-protocol-mask-v1+unique-v1+kv-v1+first-relation-logsigmoid-alpha16-v1",
+  "workload": "Eight fixed validation prompts, replicated evenly above batch 8; three timed repetitions per size, each at least five seconds; CUDA synchronization at timing boundaries; warmup and exact token parity outside timing",
+  "token_definition": "Completed generated tokens including EOS, excluding five prompt tokens and finished-row dummy slots",
+  "all_completed_outputs_match_archived_serial_tokens": true,
+  "all_source_tree_hashes_match": true,
+  "measurements": [
+    {"batch_size": 1, "median_output_tps": 163.4, "median_rps": 1.0, "median_gpu_busy_percent": 19, "peak_device_memory_gib": 2.85, "median_power_watts": 51.9},
+    {"batch_size": 2, "median_output_tps": 264.7, "median_rps": 1.6, "median_gpu_busy_percent": 19, "peak_device_memory_gib": 2.84, "median_power_watts": 51.6},
+    {"batch_size": 4, "median_output_tps": 433.5, "median_rps": 2.6, "median_gpu_busy_percent": 21, "peak_device_memory_gib": 2.93, "median_power_watts": 54.1},
+    {"batch_size": 8, "median_output_tps": 842.8, "median_rps": 5.1, "median_gpu_busy_percent": 22, "peak_device_memory_gib": 2.99, "median_power_watts": 55.1},
+    {"batch_size": 16, "median_output_tps": 1699.0, "median_rps": 10.3, "median_gpu_busy_percent": 25, "peak_device_memory_gib": 3.04, "median_power_watts": 58.1},
+    {"batch_size": 32, "median_output_tps": 3178.6, "median_rps": 19.3, "median_gpu_busy_percent": 30, "peak_device_memory_gib": 3.12, "median_power_watts": 62.2},
+    {"batch_size": 64, "median_output_tps": 6507.4, "median_rps": 39.6, "median_gpu_busy_percent": 37, "peak_device_memory_gib": 3.17, "median_power_watts": 71.8},
+    {"batch_size": 128, "median_output_tps": 12557.7, "median_rps": 76.3, "median_gpu_busy_percent": 50, "peak_device_memory_gib": 3.57, "median_power_watts": 93.6},
+    {"batch_size": 256, "median_output_tps": 21312.8, "median_rps": 129.6, "median_gpu_busy_percent": 68, "peak_device_memory_gib": 5.17, "median_power_watts": 120.8},
+    {"batch_size": 384, "median_output_tps": 26575.5, "median_rps": 161.6, "median_gpu_busy_percent": 80, "peak_device_memory_gib": 6.41, "median_power_watts": 136.2},
+    {"batch_size": 512, "median_output_tps": 29451.1, "median_rps": 179.0, "median_gpu_busy_percent": 83, "peak_device_memory_gib": 11.35, "median_power_watts": 153.4},
+    {"batch_size": 640, "median_output_tps": 30980.0, "median_rps": 188.3, "median_gpu_busy_percent": 84, "peak_device_memory_gib": 14.73, "median_power_watts": 152.2},
+    {"batch_size": 656, "median_output_tps": 30973.3, "median_rps": 188.3, "median_gpu_busy_percent": 84, "peak_device_memory_gib": 15.27, "median_power_watts": 150.9},
+    {"batch_size": 672, "median_output_tps": 15748.5, "median_rps": 95.7, "median_gpu_busy_percent": 92, "peak_device_memory_gib": 15.72, "median_power_watts": 107.4}
+  ],
+  "best_observed": {
+    "batch_size": 640,
+    "median_completed_output_tps": 30980.0,
+    "median_completed_rps": 188.3,
+    "batch_warmup_seconds": 3.45,
+    "interpretation": "Practical throughput peak for this fixed FP32 workload; batch 656 is equivalent within observed variation, while 672 is slower under severe device-memory pressure"
+  },
+  "untimed_limit": {
+    "batch_size": 1024,
+    "warmup_seconds": 136.54,
+    "output_parity": true,
+    "reason": "Exceeded 30-second work-unit limit near device-memory capacity; no timed TPS accepted"
+  },
+  "raw_reports": [
+    {"path": "runs/learning/batch-saturation-20260925/summary.json", "sha256": "551fa34b24c26e5810683e34f0012063ddadf74dfe95aab9ac15c24f4d3d6260"},
+    {"path": "runs/learning/batch-saturation-refinement-20260925/summary.json", "sha256": "2a79c4de59a153150199edec207e69578f297cc1b74874e17afb11fe89571c9f"},
+    {"path": "runs/learning/batch-saturation-near656-20260925/summary.json", "sha256": "ee6d8d471e1497d9403742f7b2b527ea810af3eaea9a382f8405182410b5308a"},
+    {"path": "runs/learning/batch-saturation-near672-20260925/summary.json", "sha256": "cf70445e242599ce9ed05dba6850ed1d148c1ce769010d9438f46768e7886ecc"}
+  ],
+  "limits": "NVML GPU-busy is a device-wide sample, not SM occupancy or FLOP utilization. Other desktop GPU activity contributes. This is offline fixed batching, without HTTP admission, dynamic scheduling, hydration, request arrivals, or serving latency SLO. The memory-pressure mechanism behind batch 672's slowdown is inferred from device-memory, reserved-memory, power and throughput observations, not a kernel profiler."
+}

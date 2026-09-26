@@ -1,0 +1,3 @@
+## 2026-09-26 — Per-watt serving metric clarification
+
+Derived serving-equivalent efficiency from the recorded PLM row rates and GPU board power: batch 320 measured 139.71 capped responses/s at 125.071 W (1.117/W), batch 336 measured 151.20/s at 129.751 W (1.165/W), and the prior batch-640 saturation point measured 188.30/s at 152.2 W (1.237/W). Batch 656 tied batch 640's reported throughput and yields 1.248/W from its 150.9 W median. These are full-decode request rows with a 16-ID response cap applied afterward, not early-stop 16-ID generation rates. The batch-640/656 values come from the earlier sweep, whose device isolation was unestablished. See `docs/experiments/2026-09-26-plm-serving-efficiency.svg`.

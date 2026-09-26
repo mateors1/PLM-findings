@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="720" viewBox="0 0 1120 720">
+<title>PLM capped serving-equivalent efficiency by batch size</title>
+<desc>Efficiency is completed request rows per second divided by median GPU board watts. Each row is counted as one returned serving with a 16-ID post-decode cap. The GPU still decoded the full response before capping.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#182230}.small{font-size:14px}.axis{font-size:16px}.title{font-size:27px;font-weight:700}.subtitle{font-size:15px;fill:#475467}.label{font-size:13px;font-weight:700}</style>
+<text class="title" x="100" y="42">PLM serving efficiency by batch size</text>
+<text class="subtitle" x="100" y="70">Completed serving-equivalents per GPU board watt (responses capped to 16 IDs after full decode)</text>
+<line x1="100" y1="565.0" x2="1066" y2="565.0" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="570.0" text-anchor="end">0.00</text>
+<line x1="100" y1="487.3" x2="1066" y2="487.3" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="492.3" text-anchor="end">0.25</text>
+<line x1="100" y1="409.6" x2="1066" y2="409.6" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="414.6" text-anchor="end">0.50</text>
+<line x1="100" y1="332.0" x2="1066" y2="332.0" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="337.0" text-anchor="end">0.75</text>
+<line x1="100" y1="254.3" x2="1066" y2="254.3" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="259.3" text-anchor="end">1.00</text>
+<line x1="100" y1="176.6" x2="1066" y2="176.6" stroke="#e4e7ec" stroke-width="1"/>
+<text class="small" x="86" y="181.6" text-anchor="end">1.25</text>
+<line x1="100.0" y1="130" x2="100.0" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="100.0" y1="565" x2="100.0" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="100.0" y="592" text-anchor="middle">1</text>
+<line x1="408.6" y1="130" x2="408.6" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="408.6" y1="565" x2="408.6" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="408.6" y="592" text-anchor="middle">8</text>
+<line x1="614.3" y1="130" x2="614.3" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="614.3" y1="565" x2="614.3" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="614.3" y="592" text-anchor="middle">32</text>
+<line x1="717.1" y1="130" x2="717.1" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="717.1" y1="565" x2="717.1" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="717.1" y="592" text-anchor="middle">64</text>
+<line x1="820.0" y1="130" x2="820.0" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="820.0" y1="565" x2="820.0" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="820.0" y="592" text-anchor="middle">128</text>
+<line x1="922.8" y1="130" x2="922.8" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="922.8" y1="565" x2="922.8" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="922.8" y="592" text-anchor="middle">256</text>
+<line x1="983.0" y1="130" x2="983.0" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="983.0" y1="565" x2="983.0" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="983.0" y="592" text-anchor="middle">384</text>
+<line x1="1025.7" y1="130" x2="1025.7" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="1025.7" y1="565" x2="1025.7" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="1025.7" y="592" text-anchor="middle">512</text>
+<line x1="1058.8" y1="130" x2="1058.8" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="1058.8" y1="565" x2="1058.8" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="1058.8" y="592" text-anchor="middle">640</text>
+<line x1="1066.0" y1="130" x2="1066.0" y2="565" stroke="#f2f4f7" stroke-width="1"/>
+<line x1="1066.0" y1="565" x2="1066.0" y2="571" stroke="#475467" stroke-width="1"/>
+<text class="small" x="1066.0" y="592" text-anchor="middle">672</text>
+<line x1="100" y1="565" x2="1066" y2="565" stroke="#475467" stroke-width="1.5"/>
+<line x1="100" y1="130" x2="100" y2="565" stroke="#475467" stroke-width="1.5"/>
+<text class="axis" x="583.0" y="625" text-anchor="middle">PLM fixed batch size (log₂ scale)</text>
+<text class="axis" transform="translate(30 347.5) rotate(-90)" text-anchor="middle">Serving-equivalents per watt</text>
+<path d="M 100.0 559.0 L 202.9 555.4 L 305.7 550.1 L 408.6 536.2 L 511.4 509.9 L 614.3 468.6 L 717.1 393.6 L 820.0 311.7 L 922.8 231.7 L 983.0 196.3 L 1025.7 202.4 L 1058.8 180.6 L 1062.4 177.3 L 1066.0 288.1" fill="none" stroke="#175cd3" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="100.0" cy="559.0" r="5.5" fill="#175cd3"><title>Batch 1: 1.0 servings/s, 51.9 W, 0.019 servings/W</title></circle>
+<circle cx="202.9" cy="555.4" r="5.5" fill="#175cd3"><title>Batch 2: 1.6 servings/s, 51.6 W, 0.031 servings/W</title></circle>
+<circle cx="305.7" cy="550.1" r="5.5" fill="#175cd3"><title>Batch 4: 2.6 servings/s, 54.1 W, 0.048 servings/W</title></circle>
+<circle cx="408.6" cy="536.2" r="5.5" fill="#175cd3"><title>Batch 8: 5.1 servings/s, 55.1 W, 0.093 servings/W</title></circle>
+<circle cx="511.4" cy="509.9" r="5.5" fill="#175cd3"><title>Batch 16: 10.3 servings/s, 58.1 W, 0.177 servings/W</title></circle>
+<circle cx="614.3" cy="468.6" r="5.5" fill="#175cd3"><title>Batch 32: 19.3 servings/s, 62.2 W, 0.310 servings/W</title></circle>
+<circle cx="717.1" cy="393.6" r="5.5" fill="#175cd3"><title>Batch 64: 39.6 servings/s, 71.8 W, 0.552 servings/W</title></circle>
+<circle cx="820.0" cy="311.7" r="5.5" fill="#175cd3"><title>Batch 128: 76.3 servings/s, 93.6 W, 0.815 servings/W</title></circle>
+<circle cx="922.8" cy="231.7" r="5.5" fill="#175cd3"><title>Batch 256: 129.6 servings/s, 120.8 W, 1.073 servings/W</title></circle>
+<circle cx="983.0" cy="196.3" r="5.5" fill="#175cd3"><title>Batch 384: 161.6 servings/s, 136.2 W, 1.186 servings/W</title></circle>
+<circle cx="1025.7" cy="202.4" r="5.5" fill="#175cd3"><title>Batch 512: 179.0 servings/s, 153.4 W, 1.167 servings/W</title></circle>
+<circle cx="1058.8" cy="180.6" r="5.5" fill="#175cd3"><title>Batch 640: 188.3 servings/s, 152.2 W, 1.237 servings/W</title></circle>
+<circle cx="1062.4" cy="177.3" r="5.5" fill="#175cd3"><title>Batch 656: 188.3 servings/s, 150.9 W, 1.248 servings/W</title></circle>
+<circle cx="1066.0" cy="288.1" r="5.5" fill="#175cd3"><title>Batch 672: 95.7 servings/s, 107.4 W, 0.891 servings/W</title></circle>
+<rect x="949.9" y="211.9" width="12" height="12" transform="rotate(45 955.9 217.9)" fill="#f79009" stroke="#ffffff" stroke-width="1"><title>Batch 320: 139.71 servings/s, 125.071 W, 1.117 servings/W</title></rect>
+<rect x="957.1" y="196.9" width="12" height="12" transform="rotate(45 963.1 202.9)" fill="#f79009" stroke="#ffffff" stroke-width="1"><title>Batch 336: 151.20 servings/s, 129.751 W, 1.165 servings/W</title></rect>
+<line x1="955.9" y1="217.9" x2="835.9" y2="244.9" stroke="#667085" stroke-width="1"/>
+<text class="label" x="839.9" y="248.9" text-anchor="end">320: 1.117</text>
+<line x1="963.1" y1="202.9" x2="843.1" y2="177.9" stroke="#667085" stroke-width="1"/>
+<text class="label" x="847.1" y="181.9" text-anchor="end">336: 1.165</text>
+<line x1="1058.8" y1="180.6" x2="1030.8" y2="152.6" stroke="#667085" stroke-width="1"/>
+<text class="label" x="1034.8" y="156.6" text-anchor="end">640: 1.237</text>
+<line x1="100" y1="102" x2="134" y2="102" stroke="#175cd3" stroke-width="3"/>
+<circle cx="117" cy="102" r="5.5" fill="#175cd3"/>
+<text class="small" x="144" y="107">2025 full-length batch sweep</text>
+<rect x="405" y="96" width="12" height="12" transform="rotate(45 411 102)" fill="#f79009"/>
+<text class="small" x="426" y="107">2026 targeted run (batches 320, 336)</text>
+<text class="small" x="100" y="610">Method: completed requests/s ÷ median measured GPU board power. One completed request counts as one serving-equivalent.</text>
+<text class="small" x="100" y="632">The serving payload is limited to 16 IDs after decode; these measurements do not stop autoregressive decode at ID 16.</text>
+<text class="small" x="100" y="654">Batch 640 is from the prior sweep; device isolation was unestablished there. Batch 320/336 are the later targeted measurements.</text>
+</svg>

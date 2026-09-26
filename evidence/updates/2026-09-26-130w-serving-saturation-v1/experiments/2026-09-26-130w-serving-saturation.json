@@ -1,0 +1,367 @@
+{
+  "experiment_id": "130w-serving-saturation-v1",
+  "date": "2026-09-26",
+  "status": "complete",
+  "plan_path": "docs/experiments/2026-09-26-130w-serving-saturation-plan.md",
+  "plan_sha256": "73fa6ac4b4f7bb4ca5de91663dcde697fc69d4f1db15552e7c32f48decadd99e",
+  "question": "Measure SQLite graph serving through CPU power saturation and select a PLM fixed batch near 130 W, with a 16-product-ID response cap.",
+  "hardware": {
+    "cpu": "Intel Core i9-14900K",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "gpu_board_power_limit_watts": 300
+  },
+  "response_cap_ids": 16,
+  "cpu_power_target_watts": 130,
+  "gpu_power_target_watts": 130,
+  "power_domains": "CPU package RAPL for graph; GPU board NVML for PLM; neither is whole-system wall power.",
+  "runtime_identity": {
+    "checkpoint_sha256": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "inference_config_hash": "ba77b8883abba757e2fe8d72880ba768960e251ed502e93c05a90fa3fa1fa030",
+    "corpus_identity": {
+      "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+      "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+      "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+    },
+    "deployment_receipt_path": "runs/learning/native-saturation-20260925/deployments/native-a2hhcdo7/serving.json",
+    "deployment_receipt_sha256": "83f1ff5a9e72a959af2781b9a547b06125d1ab98b2a74393abe26675c0aa0046",
+    "protocol_policy": {
+      "first_target_guidance_alpha": 16.0,
+      "max_new_tokens": 507,
+      "prevent_repeated_targets": true,
+      "use_kv_cache": true
+    }
+  },
+  "cpu_graph": {
+    "source_path": "runs/learning/power-target-saturation-20260926/graph-arm-clean-v2.json",
+    "source_sha256": "8e07c3cdd4d1c55d0b0c5ecd3ff90a2b905e783174c5a3e81aea93493ee252e5",
+    "runner_path": "runs/learning/power-target-saturation-20260926/graph_arm.py",
+    "runner_sha256": "e2c97994263633888dd7d5b8126235dfeb3415a14e9125e41f72918ac0a9d11e",
+    "result": "single-process loopback SQLite graph path saturated below 130 W CPU-package power",
+    "response_limit_ids": 16,
+    "all_levels_zero_failed_responses": true,
+    "power_source": "Windows Energy Meter(RAPL_Package0_PKG) Power counter; CookedValue / 1000",
+    "power_sample_count": 132,
+    "observed_median_sample_interval_seconds": 1.000817,
+    "levels": [
+      {
+        "client_concurrency": 1,
+        "completed_servings": 10157,
+        "completed_servings_per_second": 1015.7,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 50.70061361718962,
+        "cpu_package_power_min_watts": 47.13491121027819,
+        "cpu_package_power_max_watts": 58.970571713383976,
+        "latency_seconds_median": 0.0009518000006210059,
+        "latency_seconds_p95": 0.0011438000001362525
+      },
+      {
+        "client_concurrency": 4,
+        "completed_servings": 5801,
+        "completed_servings_per_second": 580.1,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 86.18189311885905,
+        "cpu_package_power_min_watts": 60.16137007579302,
+        "cpu_package_power_max_watts": 138.195655035412,
+        "latency_seconds_median": 0.006411499998648651,
+        "latency_seconds_p95": 0.010812499996973202
+      },
+      {
+        "client_concurrency": 8,
+        "completed_servings": 4847,
+        "completed_servings_per_second": 484.7,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 86.27705653019284,
+        "cpu_package_power_min_watts": 74.59667508589703,
+        "cpu_package_power_max_watts": 128.42419607341907,
+        "latency_seconds_median": 0.015109499996469822,
+        "latency_seconds_p95": 0.026571700000204146
+      },
+      {
+        "client_concurrency": 16,
+        "completed_servings": 4804,
+        "completed_servings_per_second": 480.4,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 79.5115197165058,
+        "cpu_package_power_min_watts": 69.03457552882054,
+        "cpu_package_power_max_watts": 93.36166216381638,
+        "latency_seconds_median": 0.030098350001935614,
+        "latency_seconds_p95": 0.05400969999755034
+      },
+      {
+        "client_concurrency": 32,
+        "completed_servings": 4547,
+        "completed_servings_per_second": 454.7,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 78.43248708721968,
+        "cpu_package_power_min_watts": 73.01703349904066,
+        "cpu_package_power_max_watts": 130.94194806666812,
+        "latency_seconds_median": 0.061231499996210914,
+        "latency_seconds_p95": 0.11122359999717446
+      },
+      {
+        "client_concurrency": 48,
+        "completed_servings": 4652,
+        "completed_servings_per_second": 465.2,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 81.54753222196544,
+        "cpu_package_power_min_watts": 68.01667932358838,
+        "cpu_package_power_max_watts": 88.52848527130666,
+        "latency_seconds_median": 0.09124234999762848,
+        "latency_seconds_p95": 0.1634868999972241
+      },
+      {
+        "client_concurrency": 56,
+        "completed_servings": 4683,
+        "completed_servings_per_second": 468.3,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 79.08315577797916,
+        "cpu_package_power_min_watts": 69.68123959810279,
+        "cpu_package_power_max_watts": 81.21102824718446,
+        "latency_seconds_median": 0.106470899998385,
+        "latency_seconds_p95": 0.18982069999765372
+      },
+      {
+        "client_concurrency": 64,
+        "completed_servings": 4648,
+        "completed_servings_per_second": 464.8,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 78.77277277525621,
+        "cpu_package_power_min_watts": 72.63890739040748,
+        "cpu_package_power_max_watts": 88.39805571854897,
+        "latency_seconds_median": 0.12237555000319844,
+        "latency_seconds_p95": 0.21861619999981485
+      },
+      {
+        "client_concurrency": 72,
+        "completed_servings": 4635,
+        "completed_servings_per_second": 463.5,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 77.6877515977325,
+        "cpu_package_power_min_watts": 71.43584086228994,
+        "cpu_package_power_max_watts": 86.28731096145331,
+        "latency_seconds_median": 0.13824429999658605,
+        "latency_seconds_p95": 0.24488460000429768
+      },
+      {
+        "client_concurrency": 80,
+        "completed_servings": 4618,
+        "completed_servings_per_second": 461.8,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 79.3480374257721,
+        "cpu_package_power_min_watts": 74.44848880742138,
+        "cpu_package_power_max_watts": 91.34168413154798,
+        "latency_seconds_median": 0.15465765000044485,
+        "latency_seconds_p95": 0.2720310000004247
+      },
+      {
+        "client_concurrency": 96,
+        "completed_servings": 4551,
+        "completed_servings_per_second": 455.1,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 11,
+        "cpu_package_power_median_watts": 76.99418023697484,
+        "cpu_package_power_min_watts": 70.38475616728351,
+        "cpu_package_power_max_watts": 80.00531674892275,
+        "latency_seconds_median": 0.18754510000144364,
+        "latency_seconds_p95": 0.32461809999949764
+      },
+      {
+        "client_concurrency": 112,
+        "completed_servings": 4546,
+        "completed_servings_per_second": 454.6,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 78.86557261652277,
+        "cpu_package_power_min_watts": 64.74060287002102,
+        "cpu_package_power_max_watts": 84.62723456687957,
+        "latency_seconds_median": 0.219139400000131,
+        "latency_seconds_p95": 0.37395290000131354
+      },
+      {
+        "client_concurrency": 128,
+        "completed_servings": 4555,
+        "completed_servings_per_second": 455.5,
+        "failed_responses": 0,
+        "all_successes_returned_16_ids": true,
+        "cpu_package_power_sample_count": 10,
+        "cpu_package_power_median_watts": 76.26930031333077,
+        "cpu_package_power_min_watts": 71.88789808520669,
+        "cpu_package_power_max_watts": 90.18231494606201,
+        "latency_seconds_median": 0.25290149999636924,
+        "latency_seconds_p95": 0.4189239999977872
+      }
+    ],
+    "plateau_interpretation": {
+      "client_concurrency_4": {
+        "servings_per_second": 580.1,
+        "median_cpu_package_watts": 86.18189311885905
+      },
+      "client_concurrency_8": {
+        "servings_per_second": 484.7,
+        "median_cpu_package_watts": 86.27705653019284
+      },
+      "highest_clean_median_cpu_package_watts": 86.27705653019284,
+      "130w_band_reached": false,
+      "note": "Median package power flattened in the 77-86 W range; increasing concurrency did not produce sustained 130 W. Concurrency 4 is the first near-maximum-power point; concurrency 1 was fastest."
+    }
+  },
+  "plm_batch_320": {
+    "path": "runs/learning/power-target-saturation-20260926/gpu-batch-320.json",
+    "sha256": "78632398c26b551f77e97372d43436741286e76e1c4e58f8408d3c4bca031125",
+    "batch_size": 320,
+    "status": "complete",
+    "stop_reason": null,
+    "repetition_count": 3,
+    "repetitions": [
+      {
+        "repetition": 0,
+        "completed_servings_per_second": 137.9097278260713,
+        "completed_output_tokens_per_second": 22686.15022738873,
+        "median_gpu_board_watts": 123.367,
+        "peak_gpu_board_watts": 146.133,
+        "gpu_busy_median_percent": 74.0,
+        "power_sample_count": 35,
+        "work_units": 3
+      },
+      {
+        "repetition": 1,
+        "completed_servings_per_second": 144.79522915409393,
+        "completed_output_tokens_per_second": 23818.81519584845,
+        "median_gpu_board_watts": 126.769,
+        "peak_gpu_board_watts": 146.758,
+        "gpu_busy_median_percent": 75.0,
+        "power_sample_count": 34,
+        "work_units": 3
+      },
+      {
+        "repetition": 2,
+        "completed_servings_per_second": 139.71373151221297,
+        "completed_output_tokens_per_second": 22982.908833759036,
+        "median_gpu_board_watts": 125.071,
+        "peak_gpu_board_watts": 147.244,
+        "gpu_busy_median_percent": 68.0,
+        "power_sample_count": 35,
+        "work_units": 3
+      }
+    ],
+    "median_completed_servings_per_second": 139.71373151221297,
+    "median_completed_output_tokens_per_second": 22982.908833759036,
+    "median_of_repetition_median_gpu_board_watts": 125.071,
+    "all_power_samples_median_watts": 125.071,
+    "all_power_samples_range_watts": [
+      99.602,
+      147.244
+    ],
+    "all_timed_outputs_match_serial": true,
+    "serial_reference_agreement": 1.0,
+    "source_unchanged_at_end": true,
+    "scope": "offline fixed-group CUDA decoding; no HTTP admission or scheduling"
+  },
+  "plm_selected_operating_point": {
+    "path": "runs/learning/power-target-saturation-20260926/gpu-batch-336.json",
+    "sha256": "9b11e85e1802dd5cb00cf47637b6f0714f2fa3157176305a032efdee6f78879f",
+    "batch_size": 336,
+    "status": "complete",
+    "stop_reason": null,
+    "repetition_count": 3,
+    "repetitions": [
+      {
+        "repetition": 0,
+        "completed_servings_per_second": 153.2047492559926,
+        "completed_output_tokens_per_second": 25202.18125261078,
+        "median_gpu_board_watts": 129.751,
+        "peak_gpu_board_watts": 149.642,
+        "gpu_busy_median_percent": 78.0,
+        "power_sample_count": 33,
+        "work_units": 3
+      },
+      {
+        "repetition": 1,
+        "completed_servings_per_second": 151.20040068092243,
+        "completed_output_tokens_per_second": 24872.46591201174,
+        "median_gpu_board_watts": 131.915,
+        "peak_gpu_board_watts": 146.287,
+        "gpu_busy_median_percent": 74.0,
+        "power_sample_count": 34,
+        "work_units": 3
+      },
+      {
+        "repetition": 2,
+        "completed_servings_per_second": 132.61464091689282,
+        "completed_output_tokens_per_second": 21815.10843082887,
+        "median_gpu_board_watts": 129.602,
+        "peak_gpu_board_watts": 148.951,
+        "gpu_busy_median_percent": 68.0,
+        "power_sample_count": 26,
+        "work_units": 2
+      }
+    ],
+    "median_completed_servings_per_second": 151.20040068092243,
+    "median_completed_output_tokens_per_second": 24872.46591201174,
+    "median_of_repetition_median_gpu_board_watts": 129.751,
+    "all_power_samples_median_watts": 131.238,
+    "all_power_samples_range_watts": [
+      95.17,
+      149.642
+    ],
+    "all_timed_outputs_match_serial": true,
+    "serial_reference_agreement": 1.0,
+    "source_unchanged_at_end": true,
+    "scope": "offline fixed-group CUDA decoding; no HTTP admission or scheduling",
+    "selected_for_followup": true,
+    "selection_reason": "All three repetition medians fell inside 125-135 W and their median, 129.751 W, was closest to the 130 W target among the measured candidates.",
+    "response_size_note": "PLM internally decodes the full valid answer; the 16-ID cap is post-processing and does not shorten decode. The measured rate is offline completed output rows/s, not HTTP requests/s or online API capacity."
+  },
+  "capped_validation_quality": {
+    "source": "archived 222-query validation responses from the same seed-1729 checkpoint and inference policy",
+    "source_report_path": "runs/learning/native-graph-oracle-20260925/summary.json",
+    "source_report_sha256": "2885f25a342e6338068b5c6d82671f0c27ade3f827c708e84a11e6f395cec680",
+    "method": "Cap each graph and PLM response to its first 16 product IDs, then compare ID sets.",
+    "query_count": 222,
+    "response_size_ids": {
+      "graph_min": 16,
+      "graph_max": 16,
+      "plm_min": 16,
+      "plm_max": 16
+    },
+    "graph_exact_set_accuracy": 1.0,
+    "plm_exact_set_count": 153,
+    "plm_exact_set_accuracy": 0.6891891891891891,
+    "plm_macro_precision": 0.8305180180180181,
+    "plm_macro_recall": 0.8305180180180181,
+    "plm_macro_f1": 0.8305180180180181,
+    "plm_micro_precision": 0.8305180180180181,
+    "plm_micro_recall": 0.8305180180180181,
+    "protected_test_used": false,
+    "scope_note": "The timed PLM sweep repeats the first eight validation prompts. Its batch outputs have strict exact full-token parity to the archived serial responses; the 222-query capped quality metrics are a post-run calculation over the existing validation archive, not 222 newly timed generations."
+  },
+  "interpretation_limits": [
+    "The CPU graph path did not reach 130 W; it saturated around 77-86 W in this single-process loopback configuration. Do not report a CPU 130 W serving rate.",
+    "Graph throughput is loopback HTTP with the request generator on the same Windows host. The PLM result is offline fixed-group CUDA decoding; the two rates are not an apples-to-apples online capacity comparison.",
+    "The eight PLM prompts are repeated to form each fixed batch. Their measured outputs match the archived serial PLM outputs exactly.",
+    "Capped quality metrics are validation-only and derive from the archived 222-query PLM-versus-graph response report. No protected test data was used.",
+    "Power is reported by package/board telemetry, not wall-meter energy. Instantaneous GPU samples fluctuate around the sustained repetition medians."
+  ]
+}

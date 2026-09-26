@@ -244,3 +244,16 @@ F1 and single-TYPE exactness fail the fixed gate. Checkpoint 34 has its own
 objective and evaluator; it does not replace the accepted balanced-BCE sibling.
 The additive inventory hashes 34 final checkpoint files in its local scope.
 Neither those hashes nor this publication archive the weight payloads.
+
+
+
+## PLM power-target serving calibration — 2026-09-26
+
+The SQLite graph path flattened below the requested 130 W CPU-package target. PLM batch 336 measured 151.20 completed offline rows/s at 129.751 W GPU-board power; its 16-ID response cap was applied after full decoding. Capped validation exactness was 153/222 against the graph oracle's 222/222. This is not an online serving or matched-quality advantage claim.
+
+- [Plan](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-130w-serving-saturation-plan.md)
+- [Portable result](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-130w-serving-saturation.json)
+- [Audit](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-130w-serving-saturation-audit.json)
+- [Decision](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-130w-serving-saturation-decision.json)
+- [Per-watt batch graph](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-plm-serving-efficiency.svg)
+- [Historical batch-saturation source](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-25-batch-saturation.json)
