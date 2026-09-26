@@ -6,6 +6,31 @@ Research synthesis for **PLM / Pika Edition**, a decoder-only model that emits p
 while pursuing oracle parity and the intended evolutions. External dataset reviews
 remain parked references; another dataset requires an explicit user request.
 
+## Current model size and retained techniques
+
+**Verified 2026-09-25.** The measured family uses the dense `tiny_decoder`: **8 transformer layers**, width **256**, **8 query heads / 2 KV heads** (head width 32), SwiGLU hidden width **768**, a **2,049-entry vocabulary**, and a **512-token context**. The catalog contains 1,025 Pokémon entities.
+
+| Component / variant | Unique learned parameters |
+| --- | ---: |
+| Dense decoder with tied input/output embeddings | 6,558,720 |
+| Prompt-set projection, `[256,256]` | +65,536 |
+| Symmetric relation projection, `[256,256]` | +65,536 |
+| **Parent model used by the verified composition application** | **6,689,792 (~6.69M)** |
+| New per-dimension bilinear residual, `[2,256,256]` | +131,072 |
+| **Latest bilinear research derivative, including frozen parent** | **6,820,864 (~6.82M)** |
+
+Counts were checked by loading the local parent checkpoint on CPU, reconstructing its recorded model config, and counting unique model parameters. Tied embeddings count once; optimizer state and positional buffers are excluded. The derivative adds only the stated residual. During that refit, **131,072 parameters are trainable** and the original 93 saved tensors remain unchanged. The latest derivative is a research variant, not a promoted serving default.
+
+The main techniques retained so far are:
+
+- **Dense decoder architecture:** pre-norm RMSNorm, RoPE, grouped-query attention with QK normalization, SwiGLU, and tied embeddings. The measured model is distinct from the larger `overkill` configuration and separate MoE trials.
+- **Protocol and output constraints:** a subject/dimension/`SAME` prefix, an `ANSWER` loss boundary, legal entity-ID/EOS decoding, and deterministic parsing, post-processing and hydration. Attribute values remain outside the model vocabulary.
+- **Auxiliary supervision:** masked causal next-token loss plus prompt-set membership supervision and a shared-embedding symmetric relation objective. The parent uses AdamW with BF16 mixed-precision training; its learned weights are stored in FP32.
+- **Verified autoregressive inference variants:** KV caching, first-target relation guidance, candidate branching, and learned set selection/composition. These are separately configured inference procedures, not extra transformer parameters. See the [set study](papers/03-set-prediction.md) and [serving study](papers/04-serving-and-reproducibility.md).
+- **Newest research direction:** freeze the parent and fit a symmetric bilinear residual for TYPE/COLOR using query-balanced positive/negative binary cross-entropy. Its dedicated scorer predicts membership from frozen embeddings and learned relation matrices; it does **not** apply the residual through ordinary autoregressive decoder forward calls. Its accepted validation screen is separate from application integration, protected-test evaluation and serving promotion.
+
+The architecture and auxiliary-head design are documented in the copied [architecture](evidence/source/architecture.md), [prompt-set lesson](evidence/learning/05-prompt-supervision.md) and [symmetric-relation lesson](evidence/learning/11-symmetric-relations.md). This size snapshot identifies parent checkpoint `e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1` and local `bilinear-budget8000-v1` derivative `6979013750eb8f2780917f714192850aae411a48490757236a891fea7e351f91`. These hashes identify local artifacts; they do not imply that weights are published or backed up.
+
 ## What the research aims to prove
 
 PLM tests whether a constrained vocabulary and an explicit query protocol can support reliable **relation-to-ID retrieval**. A deterministic pipeline parses a request, supplies the model with a subject and relation, validates its generated product IDs, and hydrates those IDs outside the model. The model does not generate prose or attribute descriptions.
@@ -44,6 +69,8 @@ These are application directions, not validated product claims. The [architectur
 19. [Worst-boundary projection refit](papers/19-worst-boundary-projection-refit.md) — the new sibling reaches 128 exact answers, but fails the unchanged 201-answer comparator and per-group gates; targeted worst-member loss improves while ordinary mean BCE worsens.
 20. [Frozen diagonal-head feasibility](papers/20-frozen-diagonal-feasibility.md) — both bounded training-feasibility probes stop inconclusive when exact sign failures are hidden by FP64 residuals; no capacity or quality conclusion follows.
 21. [Cross-coordinate bilinear relations](papers/21-bilinear-residual-refit.md) - dense exact answers reach 198 with 99.9406% macro F1, but miss the stronger selector's 201-answer and TYPE group gates; only the new residual tensor changes.
+
+22. [A longer fixed bilinear fit](papers/22-bilinear-training-budget.md) - 2000 updates reach 207 exact answers and pass the unchanged single-seed quality gate; historical500 comparison, remaining errors and replication limits are preserved.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -93,6 +120,11 @@ The [diagonal-feasibility diagnostic](evidence/updates/2026-09-25-diagonal-feasi
 records accepted evidence with an inconclusive mathematical result. Exact checks
 reject both numerical proposals; no neural checkpoint or validation prediction
 is created, and the frozen head's training capacity remains unresolved.
+
+The [fixed 2000-update bilinear screen](evidence/updates/2026-09-25-bilinear-budget2000/README.md)
+passes the independently audited single-seed quality gate with 207 exact sets.
+Its 31st checkpoint starts afresh from the original parent; the earlier 500-step
+failed gate remains unchanged. Replication and serving promotion remain separate.
 
 The [bilinear residual refit](evidence/updates/2026-09-25-bilinear-residual-refit/README.md)
 records a substantial dense-membership gain and a rejected exact-answer gate.

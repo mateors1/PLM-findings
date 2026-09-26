@@ -1,0 +1,23 @@
+{
+  "audit_sha256": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+  "auditor_sha256": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "python",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.py",
+    "--summary",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json"
+  ],
+  "elapsed_seconds": 5.744676828384399,
+  "exit_code": 0,
+  "gpu_used": false,
+  "observed_terminal_completion": true,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-auditor-tests-v1\\actual-stdout.txt",
+    "sha256": "ce9403fa2fea9f042635711817d0dabca806733a6962a14e3d720e8c87b51de1"
+  },
+  "summary_sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+  "test_receipt_sha256": "8351f9d016791092867dc2836cd7747399febbf078019f03c94c2949440df41f"
+}
