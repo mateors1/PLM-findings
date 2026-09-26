@@ -1,0 +1,77 @@
+{
+  "affine_bias_shape": [
+    2
+  ],
+  "affine_linear_shape": [
+    2,
+    256
+  ],
+  "affine_scale": 16,
+  "architecture": "plm-frozen-symmetric-affine-residual-v1",
+  "autocast": false,
+  "batching": "full-training-partition-in-split-order",
+  "cuda_matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "deterministic_algorithms": false,
+  "dimension_token_ids": [
+    32,
+    33
+  ],
+  "entity_base": 1024,
+  "evaluator": "plm-symmetric-affine8000-screen-v2",
+  "experiment": "symmetric-affine8000-v2",
+  "float32_matmul_precision": "highest",
+  "gradient_accumulation": 1,
+  "gradient_clipping": null,
+  "inference": "plm-symmetric-affine-positive-set-v1",
+  "initial_training_loss": 0.003822767175734043,
+  "initialization": "exact-zero",
+  "input_adapter": "plm-authenticated-partition-membership-v1",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "loss_coefficient": 1.0,
+  "objective": "plm-affine-residual-balanced-bce-v1",
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "decay_excludes_norm_and_bias": true,
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "name": "adamw",
+    "weight_decay": 0.0
+  },
+  "parameter_dtype": "float32",
+  "parent_training_steps": 2000,
+  "product_count": 1025,
+  "repair_declaration_sha256": "8ac4fbc66d40bf26e249d0ee9a0cd9117d06653e762552629c98e2b53a2c5a18",
+  "residual_shape": [
+    2,
+    256,
+    256
+  ],
+  "residual_updates": 8000,
+  "scheduler": null,
+  "schema_version": 1,
+  "seed": 1729,
+  "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+  "serialization_max_products": 506,
+  "serialization_min_products": 1,
+  "standard_serving_supported": false,
+  "strong_comparator_exact": 216,
+  "strong_comparator_f1": 0.9998843626799785,
+  "strong_comparator_group_exact": {
+    "COLOR": 103,
+    "TYPE_dual": 62,
+    "TYPE_single": 51
+  },
+  "threshold": 0.0,
+  "train_query_count": 1637,
+  "trainable_parameters": [
+    "symmetric_bilinear_residual",
+    "symmetric_affine_linear",
+    "symmetric_affine_bias"
+  ],
+  "validation_batch_size": 8,
+  "validation_query_count": 222
+}

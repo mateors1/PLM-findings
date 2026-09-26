@@ -224,3 +224,7 @@ The [paired budget geometry packet](evidence/updates/2026-09-25-bilinear-budget-
 29. [Affine runtime admission failure](papers/29-affine-runtime-admission.md) — a configuration-scope mismatch stopped the first attempt before training; the independently audited failure provides no model-quality conclusion.
 
 The [failure evidence bundle](evidence/updates/2026-09-26-symmetric-affine8000-runtime-failure-v1/README.md) preserves source snapshots, tests, receipts, diagnosis and owner decision. No checkpoint was created; the inventory remains37.
+
+30. [Affine lifecycle failure](papers/30-affine-lifecycle-failure.md) — corrected parent admission passed, then a missing evaluator argument stopped v2 before predictions or training.
+
+The [failure bundle](evidence/updates/2026-09-26-symmetric-affine8000-lifecycle-failure-v2/README.md) preserves the implementation, receipts and 93-tensor diagnostic conclusion. The local parent-state payload is excluded; inventory remains 37 and the hypothesis is untested.

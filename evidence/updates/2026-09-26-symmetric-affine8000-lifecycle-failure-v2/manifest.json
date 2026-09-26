@@ -1,0 +1,196 @@
+{
+  "files": [
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine-auditor-tests-v2/readiness.json",
+      "sha256": "324602d8c040cb7e95914f658cc2d87121dd1b9467cd4bf11edca7996406fe6f",
+      "source_path": "runs/learning/symmetric-affine-auditor-tests-v2/readiness.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine-auditor-tests-v2/stdout.txt",
+      "sha256": "8fd4a884495d42cb84abdcb39346c8caa2fae44c6e09d3c3e3f94d294a2482d1",
+      "source_path": "runs/learning/symmetric-affine-auditor-tests-v2/stdout.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine-auditor-tests-v2/test-receipt.json",
+      "sha256": "66b3482ccbdbd8525f1af1931e8eb832968740942bc8dcd42f9a601da02f5560",
+      "source_path": "runs/learning/symmetric-affine-auditor-tests-v2/test-receipt.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine-runner-tests-v2/stdout.txt",
+      "sha256": "73c3b2e234a52463028973156e792b06ef258b7f3992f42a730b9505d7947508",
+      "source_path": "runs/learning/symmetric-affine-runner-tests-v2/stdout.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine-runner-tests-v2/test-receipt.json",
+      "sha256": "3636090e0940f557c306a951b705a385634a6e18916a4d12f53fa304da771fc7",
+      "source_path": "runs/learning/symmetric-affine-runner-tests-v2/test-receipt.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-failure-audit-v2/audit_failure.py",
+      "sha256": "23d40dbe8af5ab56703ff5d5601dbc4fdd02fbc5d19b85f03b306f3a0921b271",
+      "source_path": "runs/learning/symmetric-affine8000-failure-audit-v2/audit_failure.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-failure-audit-v2/execution-receipt.json",
+      "sha256": "1384c3f63c6edb184edf0bb0f0df3c108c3f0a185f761657f4066300653fd410",
+      "source_path": "runs/learning/symmetric-affine8000-failure-audit-v2/execution-receipt.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-failure-audit-v2/report.json",
+      "sha256": "159a5fe0abfc143b49dd30d96635aa9f216f6a64de897a8760a34e8916b85d8a",
+      "source_path": "runs/learning/symmetric-affine8000-failure-audit-v2/report.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-failure-audit-v2/stdout.txt",
+      "sha256": "7030a2e812359ac0bdf2d18ed68d5b1e008def6c25e6c654ad107302373c9ba0",
+      "source_path": "runs/learning/symmetric-affine8000-failure-audit-v2/stdout.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-failure-audit-v2/test_failure_audit.py",
+      "sha256": "277a09abcaf520c5c3d25a77e204d83ccf81382cc08dd1ed921846ad6af497ed",
+      "source_path": "runs/learning/symmetric-affine8000-failure-audit-v2/test_failure_audit.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-planning-v2/independent-metadata-preflight-v1.json",
+      "sha256": "75d602c22a497145af5c95b44250c6b0e1c4880413837b1bf417f193a77340d9",
+      "source_path": "runs/learning/symmetric-affine8000-planning-v2/independent-metadata-preflight-v1.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-planning-v2/selected-preflight-v1.txt",
+      "sha256": "d92859f887faa81687076c90d65ff345ac2e1e8702f239cf2e8730d6af6a06f4",
+      "source_path": "runs/learning/symmetric-affine8000-planning-v2/selected-preflight-v1.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/decision.json",
+      "sha256": "ab28fd742b3921b47811b8cf95883773be01248a9afd795f0aabcddbccda4c8e",
+      "source_path": "runs/learning/symmetric-affine8000-v2/decision.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/execution-receipt.json",
+      "sha256": "1491c8b5262ed3d7d29f5bf206441eef8d16d3ed2cc87a7167f8d4ea5cc34362",
+      "source_path": "runs/learning/symmetric-affine8000-v2/execution-receipt.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/failure-state.json",
+      "sha256": "18367bf20ecc537f8348a311e02536940da8fecc272b3e9fe6c4712b09bc311c",
+      "source_path": "runs/learning/symmetric-affine8000-v2/failure-state.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/independent-audit.py",
+      "sha256": "6b0eb73eb4985c4482221bb7be1f385a0df58a4232d61855e316e117ac8b40f1",
+      "source_path": "runs/learning/symmetric-affine8000-v2/independent-audit.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/primary-stdout.txt",
+      "sha256": "86dd0916468310ad9649ba8a7d2e9b4a0eef9f2f9790af045054ecaff7098143",
+      "source_path": "runs/learning/symmetric-affine8000-v2/primary-stdout.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.affine-helper.py",
+      "sha256": "8c665818bbfb4306f954ce8b0d9cf67e64e1de2b6f883ee087f3fbe8b3037fbe",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.affine-helper.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.bilinear-helper.py",
+      "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.bilinear-helper.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.budget-helper.py",
+      "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.budget-helper.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.configs.zip",
+      "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.configs.zip"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.helper.py",
+      "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.helper.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.input-amendment.md",
+      "sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.input-amendment.md"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.inputs.json",
+      "sha256": "b7551b3477db5805a4ee4b8b503703242b12288add27193f53fe9e6c223545d0",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.inputs.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.json",
+      "sha256": "3939855979f2418f2ef2faefae2823d5a0c90b32b30ae106f963ce2c1bcab6b1",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.mean-helper.py",
+      "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.mean-helper.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.plan.md",
+      "sha256": "d102c6d00ab536b89c0a0021097976fb997831184a4e4c2db82d172a4c61a19a",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.plan.md"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.recipe.json",
+      "sha256": "2deaeb55eefa714915d7731eaef5ae3e837f09316eee2315f8901c96303a1cf9",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.recipe.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.runtime-repair.md",
+      "sha256": "8ac4fbc66d40bf26e249d0ee9a0cd9117d06653e762552629c98e2b53a2c5a18",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.runtime-repair.md"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.script.py",
+      "sha256": "aab0e064a9c9729af4926626c671f28905d90aa6c29eff0cd10737222d911314",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.script.py"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.source.zip"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.test-receipt.json",
+      "sha256": "3636090e0940f557c306a951b705a385634a6e18916a4d12f53fa304da771fc7",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.test-receipt.json"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/summary.test-stdout.txt",
+      "sha256": "73c3b2e234a52463028973156e792b06ef258b7f3992f42a730b9505d7947508",
+      "source_path": "runs/learning/symmetric-affine8000-v2/summary.test-stdout.txt"
+    },
+    {
+      "artifact_path": "artifacts/runs/learning/symmetric-affine8000-v2/training.json",
+      "sha256": "2ae347a9a4d38ee94c14c41d0168ae4227ce9ba2f8b6f48e8c3d2dbd6534c33f",
+      "source_path": "runs/learning/symmetric-affine8000-v2/training.json"
+    },
+    {
+      "artifact_path": "artifacts/tests/fixtures/projection_refit_runtime_source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source_path": "tests/fixtures/projection_refit_runtime_source.zip"
+    },
+    {
+      "artifact_path": "artifacts/tests/unit/test_symmetric_affine_audit_v2.py",
+      "sha256": "3a08613fc193cfcaa7302a93ebb8b62d055a2c0d3064632a2c283241a32a528b",
+      "source_path": "tests/unit/test_symmetric_affine_audit_v2.py"
+    },
+    {
+      "artifact_path": "artifacts/tests/unit/test_symmetric_affine_residual.py",
+      "sha256": "4e31da60b02605f9a3abf1b21adb91549e9ead4dbe784513cf70abbe89d14c7f",
+      "source_path": "tests/unit/test_symmetric_affine_residual.py"
+    },
+    {
+      "artifact_path": "artifacts/tests/unit/test_symmetric_affine_runner_v2.py",
+      "sha256": "f3a608ece497fa8c028961cc519d5299cd830b1dcae83f8ec1705bd737ed6014",
+      "source_path": "tests/unit/test_symmetric_affine_runner_v2.py"
+    }
+  ],
+  "packet": "2026-09-26-symmetric-affine8000-lifecycle-failure-v2",
+  "scope": "Audited implementation failure; no candidate quality result or weights."
+}

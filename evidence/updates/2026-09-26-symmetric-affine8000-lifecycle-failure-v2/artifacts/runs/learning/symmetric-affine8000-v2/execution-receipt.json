@@ -1,0 +1,10 @@
+{
+  "candidate_quality_result": false,
+  "exit_code": 1,
+  "status": "failed-parent-evaluation-call-admission",
+  "stdout_sha256": "86dd0916468310ad9649ba8a7d2e9b4a0eef9f2f9790af045054ecaff7098143",
+  "summary_sha256": "3939855979f2418f2ef2faefae2823d5a0c90b32b30ae106f963ce2c1bcab6b1",
+  "terminal_chunk_id": "47269c",
+  "terminal_completion_observed_by_primary": true,
+  "training_sha256": "2ae347a9a4d38ee94c14c41d0168ae4227ce9ba2f8b6f48e8c3d2dbd6534c33f"
+}

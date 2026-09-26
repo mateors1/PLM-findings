@@ -1,0 +1,9 @@
+{
+  "completed_updates": 0,
+  "diagnostic_only": true,
+  "error": "TypeError(\"_evaluate() missing 1 required positional argument: 'bilinear'\")",
+  "optimizer_steps_attempted": 0,
+  "path": "failure-state.pt",
+  "resume_allowed": false,
+  "sha256": "546e4d5274cb8f581260d690e0ae8e0bc0a898f33fe50a2510ff5a7d95c9e746"
+}

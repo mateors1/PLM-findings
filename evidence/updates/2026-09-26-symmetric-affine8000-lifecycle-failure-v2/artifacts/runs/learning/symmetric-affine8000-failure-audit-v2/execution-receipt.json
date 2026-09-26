@@ -1,0 +1,22 @@
+{
+  "audit_id": "symmetric-affine8000-failure-audit-v2",
+  "candidate_training_executed": false,
+  "checkpoint_payload_loaded": true,
+  "checkpoint_payload_scope": "hash-authenticated diagnostic unchanged parent; CPU only",
+  "cuda_initialized": false,
+  "exit_code": 0,
+  "gpu_used_by_auditor": false,
+  "report_sha256": "159a5fe0abfc143b49dd30d96635aa9f216f6a64de897a8760a34e8916b85d8a",
+  "script_sha256": "23d40dbe8af5ab56703ff5d5601dbc4fdd02fbc5d19b85f03b306f3a0921b271",
+  "stdout_sha256": "7030a2e812359ac0bdf2d18ed68d5b1e008def6c25e6c654ad107302373c9ba0",
+  "synthetic_tests": {
+    "exit_code": 0,
+    "passed": 13,
+    "skipped": 0,
+    "source_sha256": "277a09abcaf520c5c3d25a77e204d83ccf81382cc08dd1ed921846ad6af497ed",
+    "terminal_chunk_id": "c5d666"
+  },
+  "terminal_chunk_id": "99d583",
+  "terminal_completion_observed": true,
+  "torch_imported": true
+}
