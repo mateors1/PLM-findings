@@ -1,0 +1,7 @@
+# @package _global_
+# Existing prompt-set objective plus a symmetric shared-embedding relation loss.
+defaults:
+  - prompt_set_lab
+  - _self_
+model:
+  symmetric_relation_loss_weight: 1.0

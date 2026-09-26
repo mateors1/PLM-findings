@@ -12,3 +12,6 @@ papers/23-bilinear-parent-seed-replication.md -text whitespace=cr-at-eol
 # Retain captured whitespace in byte-verified experiment fixtures.
 evidence/updates/2026-09-25-bilinear-seed-replication/verification/runner/pre-freeze-aggregate-regression.txt whitespace=-blank-at-eol
 evidence/updates/2026-09-25-bilinear-seed-replication/tests/unit/test_bilinear_replication.py whitespace=-blank-at-eol
+\n
+# Preserve intentional Markdown hard-break spaces in the canonical paper.
+/PAPER.md whitespace=-blank-at-eol

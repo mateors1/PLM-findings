@@ -1,0 +1,12 @@
+# Protocol semantics are versioned configuration, not database rows. The graph
+# stores these predicates, but only the dimension/mode tokens become model input.
+version: pokemon-v1
+dimensions:
+  TYPE: HAS_TYPE
+  COLOR: HAS_COLOR
+modes:
+  - SAME
+target_order:
+  - shared_attribute_count_desc
+  - confidence_desc
+  - product_key_asc

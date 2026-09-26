@@ -1,0 +1,55 @@
+# Deliberately small first config — profile before scaling (Phase C exit).
+name: tiny_decoder
+
+vocab_size: 2049  # National Dex v1 manifest vocabulary_size
+max_seq_len: 512
+
+dim: 256
+n_layers: 8
+n_heads: 8
+n_kv_heads: 2          # GQA
+head_dim: null
+
+norm: rmsnorm
+norm_eps: 1.0e-5
+
+activation: swiglu
+ffn_multiple: 2.6667   # ~8/3
+ffn_multiple_of: 256
+
+rope:
+  theta: 10000.0
+  scaling_type: none
+  scaling_factor: 1.0
+  original_max_seq_len: null
+
+attention:
+  backend: sdpa        # flash backend of SDPA on Blackwell; no flash-attn pkg
+  qk_norm: true
+  causal: true
+  sliding_window: null
+  logit_soft_cap: null
+  dropout: 0.0
+
+moe:
+  enabled: false
+  num_experts: 8
+  experts_per_token: 2
+  aux_loss_weight: 0.01
+  shared_experts: 0
+
+resid_dropout: 0.0
+embed_dropout: 0.0
+tie_embeddings: true
+init_std: 0.02
+use_mup: false
+
+dtype: bf16            # native on Blackwell
+gradient_checkpointing: false
+z_loss_weight: 0.0
+first_target_loss_weight: 1.0
+prompt_set_loss_weight: 0.0
+symmetric_relation_loss_weight: 0.0
+symmetric_margin_loss_weight: 0.0
+symmetric_margin: 1.0
+continuation_set_loss_weight: 0.0
