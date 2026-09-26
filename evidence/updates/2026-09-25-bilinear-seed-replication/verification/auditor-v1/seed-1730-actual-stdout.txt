@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py", line 1198, in <module>
+    main()
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py", line 1185, in main
+    result = audit_aggregate(path) if args.aggregate else audit_seed(path, args.seed)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py", line 1003, in audit_seed
+    context = seed_context(seed, historical)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py", line 385, in seed_context
+    exact(run["training_metadata"], sidecar["training_metadata"], "parent metadata sidecar")
+          ~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'training_metadata'

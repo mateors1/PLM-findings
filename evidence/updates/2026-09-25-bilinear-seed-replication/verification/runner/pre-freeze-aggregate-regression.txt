@@ -1,0 +1,100 @@
+runner_before_sha256=7cf9b7465ba841ea294aa74835d7a7650bbf6dd257277b98f3c856346a469758
+command=['uv', 'run', '--no-sync', 'pytest', 'tests/unit/test_bilinear_replication.py', '-k', 'aggregate_missing_seed or aggregate_output_guard', '-o', 'addopts=', '-q']
+FF                                                                       [100%]
+================================== FAILURES ===================================
+___ test_aggregate_missing_seed_retains_original_failure_and_input_manifest ___
+
+_ = WindowsPath('C:/Users/mateo/AppData/Local/Temp/pytest-of-mateo/pytest-200/test_aggregate_missing_seed_re0/seed-1730/summary.json')
+
+    def missing(_):
+>       raise failure
+E       FileNotFoundError: synthetic second seed evidence missing
+
+tests\unit\test_bilinear_replication.py:453: FileNotFoundError
+
+During handling of the above exception, another exception occurred:
+
+runner = <module 'replication_test_runner' from 'C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_replication.py'>
+mean = <module 'replication_mean_helper' from 'C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py'>
+tmp_path = WindowsPath('C:/Users/mateo/AppData/Local/Temp/pytest-of-mateo/pytest-200/test_aggregate_missing_seed_re0')
+
+    def test_aggregate_missing_seed_retains_original_failure_and_input_manifest(runner, mean, tmp_path):
+        failure = FileNotFoundError("synthetic second seed evidence missing")
+    
+        def missing(_):
+            raise failure
+    
+        helper = SimpleNamespace(
+            _read=missing,
+            _bind=lambda path, digest, inputs: path,
+            _sha=lambda path: (
+                hashlib.sha256(path.read_bytes()).hexdigest() if path.exists() else "synthetic-missing"
+            ),
+            _failure_safe=lambda value: value,
+        )
+        out = tmp_path / "summary.json"
+        with pytest.raises(FileNotFoundError) as caught:
+>           runner._aggregate(out, {"inputs": {}}, mean, helper, {"complete": False})
+
+tests\unit\test_bilinear_replication.py:465: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\refit_bilinear_replication.py:920: in _aggregate
+    manifest = out.with_suffix("aggregate-inputs.json")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/mateo/AppData/Local/Temp/pytest-of-mateo/pytest-200/test_aggregate_missing_seed_re0/summary.json')
+suffix = 'aggregate-inputs.json'
+
+    def with_suffix(self, suffix):
+        """Return a new path with the file suffix changed.  If the path
+        has no suffix, add given suffix.  If the given suffix is an empty
+        string, remove the suffix from the path.
+        """
+        f = self._flavour
+        if f.sep in suffix or f.altsep and f.altsep in suffix:
+            raise ValueError("Invalid suffix %r" % (suffix,))
+        if suffix and not suffix.startswith('.') or suffix == '.':
+>           raise ValueError("Invalid suffix %r" % (suffix))
+E           ValueError: Invalid suffix 'aggregate-inputs.json'
+
+..\..\..\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py:651: ValueError
+_ test_aggregate_output_guard_accepts_clean_directory_then_refuses_prior_bytes _
+
+runner = <module 'replication_test_runner' from 'C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_replication.py'>
+mean = <module 'replication_mean_helper' from 'C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py'>
+tmp_path = WindowsPath('C:/Users/mateo/AppData/Local/Temp/pytest-of-mateo/pytest-200/test_aggregate_output_guard_ac0')
+
+    def test_aggregate_output_guard_accepts_clean_directory_then_refuses_prior_bytes(
+        runner, mean, tmp_path
+    ):
+        out = tmp_path / "summary.json"
+>       runner._refuse(out, mean, aggregate=True)
+
+tests\unit\test_bilinear_replication.py:480: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+scripts\refit_bilinear_replication.py:933: in _refuse
+    not out.with_suffix("aggregate-inputs.json").exists(), "immutable aggregate inputs"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath('C:/Users/mateo/AppData/Local/Temp/pytest-of-mateo/pytest-200/test_aggregate_output_guard_ac0/summary.json')
+suffix = 'aggregate-inputs.json'
+
+    def with_suffix(self, suffix):
+        """Return a new path with the file suffix changed.  If the path
+        has no suffix, add given suffix.  If the given suffix is an empty
+        string, remove the suffix from the path.
+        """
+        f = self._flavour
+        if f.sep in suffix or f.altsep and f.altsep in suffix:
+            raise ValueError("Invalid suffix %r" % (suffix,))
+        if suffix and not suffix.startswith('.') or suffix == '.':
+>           raise ValueError("Invalid suffix %r" % (suffix))
+E           ValueError: Invalid suffix 'aggregate-inputs.json'
+
+..\..\..\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py:651: ValueError
+=========================== short test summary info ===========================
+FAILED tests/unit/test_bilinear_replication.py::test_aggregate_missing_seed_retains_original_failure_and_input_manifest
+FAILED tests/unit/test_bilinear_replication.py::test_aggregate_output_guard_accepts_clean_directory_then_refuses_prior_bytes
+2 failed, 43 deselected in 0.21s

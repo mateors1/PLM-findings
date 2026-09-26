@@ -1,0 +1,30 @@
+{
+  "command": "CUDA_VISIBLE_DEVICES=-1 uv run --no-sync pytest -q tests/unit/test_bilinear_replication_aggregation.py tests/unit/test_bilinear_replication.py",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "frozen_runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+  "gpu_used": false,
+  "new_tests_passed": 13,
+  "passed": true,
+  "preflight": {
+    "input_count": 99,
+    "passed": true,
+    "torch_imported": false
+  },
+  "reused_tests_passed": 45,
+  "ruff_check_passed": true,
+  "ruff_format_check_passed": true,
+  "scope": "Synthetic CPU contracts and frozen-function AST equivalence; no actual aggregation, training or prediction executed.",
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-aggregation-tests-v2\\stdout.txt",
+    "sha256": "7bb9d51724d8feecdd6ed04cc086ec4ea2d77df9c48e2758f179cb12537bf12a"
+  },
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_replication.py": "6dc65cdf8a435f8e3c588fa637b86089099f55346f482d7a56fe788cfa86bddc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_replication_aggregation.py": "5757c8a346eb64c8229f8654804eadf58c7945f938224933d3bcb166115bd85a"
+  },
+  "tested_script_sha256": "6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4",
+  "tests_passed": 58,
+  "tests_skipped": 0
+}

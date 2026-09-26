@@ -71,6 +71,7 @@ These are application directions, not validated product claims. The [architectur
 21. [Cross-coordinate bilinear relations](papers/21-bilinear-residual-refit.md) - dense exact answers reach 198 with 99.9406% macro F1, but miss the stronger selector's 201-answer and TYPE group gates; only the new residual tensor changes.
 
 22. [A longer fixed bilinear fit](papers/22-bilinear-training-budget.md) - 2000 updates reach 207 exact answers and pass the unchanged single-seed quality gate; historical500 comparison, remaining errors and replication limits are preserved.
+23. [Bilinear parent-seed replication](papers/23-bilinear-parent-seed-replication.md) - both fresh seeds pass their own fixed gates, reaching 212 and 208 exact answers; 627/666 includes the historical selection seed, with verifier repairs preserved.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -125,6 +126,12 @@ The [fixed 2000-update bilinear screen](evidence/updates/2026-09-25-bilinear-bud
 passes the independently audited single-seed quality gate with 207 exact sets.
 Its 31st checkpoint starts afresh from the original parent; the earlier 500-step
 failed gate remains unchanged. Replication and serving promotion remain separate.
+
+The [bilinear parent-seed replication](evidence/updates/2026-09-25-bilinear-seed-replication/README.md)
+passes both fresh gates: 420/444 exact sets, or 627/666 including the historical
+selection seed. Two new checkpoints bring the inventory to 33. Failed evidence
+processing and explicit repairs are retained; training and predictions were not
+repeated. This is developmental replication, without oracle parity or promotion.
 
 The [bilinear residual refit](evidence/updates/2026-09-25-bilinear-residual-refit/README.md)
 records a substantial dense-membership gain and a rejected exact-answer gate.

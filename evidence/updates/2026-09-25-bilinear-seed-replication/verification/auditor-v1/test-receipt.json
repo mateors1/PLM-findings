@@ -1,0 +1,74 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-q",
+        "-o",
+        "addopts=",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "exit_code": 0,
+  "frozen_primary_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_seed_replication_v1.json": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-seed-replication-plan.md": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-runner-tests-v1\\receipt.json": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_replication.py": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde"
+  },
+  "gpu_used": false,
+  "independent_helper_sha256": {
+    "bilinear": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+    "budget2000": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+    "mean": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a"
+  },
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "passed_count": 67,
+  "skipped": 0,
+  "stdout_sha256": "acb58fd963ea31f1e578a9fb040f9ef3b3925738b4af8a24fda1c689882947d1",
+  "tested_auditor_sha256": "c1170a43629111d1a9904b9c26c2ef9cba77ff46612486dd868d02b03601f0a0",
+  "tests_sha256": "61f0911aeaf959904271a0538dc1e70e11238ee1391f2b8fce7ca0d30c8f34c7"
+}

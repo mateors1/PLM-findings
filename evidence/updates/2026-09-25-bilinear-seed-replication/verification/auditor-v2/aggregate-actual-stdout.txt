@@ -1,0 +1,1 @@
+{"audit_passed": true, "audit_sha256": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8", "gate": {"checks": {"historical1729_accepted": true, "fresh_seed1730": true, "fresh_seed1731": true}, "primary_checks_passed": true, "independent_audit_required": true, "accepted": false}}

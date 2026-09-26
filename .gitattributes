@@ -5,3 +5,10 @@ evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 README.md text eol=lf
 papers/*.md text eol=lf
 .github/*.yml text eol=lf
+
+# Frozen Windows-captured experiment files retain their handoff bytes.
+evidence/updates/2026-09-25-bilinear-seed-replication/** -text whitespace=cr-at-eol
+papers/23-bilinear-parent-seed-replication.md -text whitespace=cr-at-eol
+# Retain captured whitespace in byte-verified experiment fixtures.
+evidence/updates/2026-09-25-bilinear-seed-replication/verification/runner/pre-freeze-aggregate-regression.txt whitespace=-blank-at-eol
+evidence/updates/2026-09-25-bilinear-seed-replication/tests/unit/test_bilinear_replication.py whitespace=-blank-at-eol

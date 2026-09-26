@@ -1,0 +1,3 @@
+C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\.venv\Lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+{"audit_passed": true, "audit_sha256": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f", "gate": {"checks": {"execution_invariants": true, "serialization_compatible": true, "exact_above_matching_width8": true, "f1_at_least_matching_width8": true, "group_exact_nonregression": true}, "primary_checks_passed": true, "independent_audit_required": true, "accepted": false}}

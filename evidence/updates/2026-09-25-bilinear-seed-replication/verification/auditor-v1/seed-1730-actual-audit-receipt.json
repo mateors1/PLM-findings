@@ -1,0 +1,27 @@
+{
+  "audit_sha256": null,
+  "auditor_sha256": "c1170a43629111d1a9904b9c26c2ef9cba77ff46612486dd868d02b03601f0a0",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "python",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.py",
+    "--summary",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\summary.json",
+    "--seed",
+    "1730"
+  ],
+  "elapsed_seconds": 1.7212207317352295,
+  "exit_code": 1,
+  "gpu_used": false,
+  "observed_terminal_completion": true,
+  "primary_execution_receipt_sha256": "679cc9ee93529b8ecaf69c1da357ddf4db61cca72ef12502de876e6b682f6e9f",
+  "seed": 1730,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-auditor-tests-v1\\seed-1730-actual-stdout.txt",
+    "sha256": "7faf1f1c30cbb0cc815214d4479d66e8bfa595835eed4e6b07dfead045e12275"
+  },
+  "summary_sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+  "test_receipt_sha256": "0278cf08e41ed471e1004632c1373cb4e5c8396db1f3382c727f7096730dc8f3"
+}

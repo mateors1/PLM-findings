@@ -1,0 +1,10 @@
+$ uv run --no-sync ruff check tests/unit/test_bilinear_replication.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check tests/unit/test_bilinear_replication.py
+1 file already formatted
+
+$ uv run --no-sync pytest tests/unit/test_bilinear_replication.py tests/unit/test_bilinear_budget.py tests/unit/test_bilinear_residual.py tests/unit/test_projection_only_refit.py -o addopts= -q
+........................................................................ [ 52%]
+................................................................         [100%]
+136 passed in 9.97s

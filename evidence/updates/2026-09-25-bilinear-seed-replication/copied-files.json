@@ -1,0 +1,712 @@
+[
+  {
+    "path": "experiments/2026-09-25-bilinear-seed-replication-plan.md",
+    "sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "source": "docs/experiments/2026-09-25-bilinear-seed-replication-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-residual-plan.md",
+    "sha256": "b1cd8a897e5db7d0dc0adc3e3bd40a87b0ae5830714b63ea86649f1599c9e132",
+    "source": "docs/experiments/2026-09-25-bilinear-residual-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-seed-replication.json",
+    "sha256": "02b4b6d3f60c7b03e67b1180c8c5027a02ba0b113b843a475e60d813869c1578",
+    "source": "docs/experiments/2026-09-25-bilinear-seed-replication.json"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-seed-replication-model-version-inventory.json",
+    "sha256": "5e84f1546fda3ae4e230ad28c98b936043d09e6834e4f26046e7ab9eb2f26034",
+    "source": "docs/experiments/2026-09-25-bilinear-seed-replication-model-version-inventory.json"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-replication-evidence-repair.md",
+    "sha256": "0020f6e9136669109101af048a830690eaa716d9a3607dd1b612e95ab0a57e4f",
+    "source": "docs/experiments/2026-09-25-bilinear-replication-evidence-repair.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-seed-replication-training-1730.json",
+    "sha256": "716d147f02a945c6d859fcc5183a74560119fca712e8de44ed5a1a15a0def862",
+    "source": "docs/experiments/2026-09-25-bilinear-seed-replication-training-1730.json"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-seed-replication-training-1731.json",
+    "sha256": "69e81eacc7ba03e838cf71137e286e682abf82f6067077ca409fef58fef0c447",
+    "source": "docs/experiments/2026-09-25-bilinear-seed-replication-training-1731.json"
+  },
+  {
+    "path": "scripts/aggregate_bilinear_replication.py",
+    "sha256": "6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4",
+    "source": "scripts/aggregate_bilinear_replication.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_replication_aggregation.py",
+    "sha256": "5757c8a346eb64c8229f8654804eadf58c7945f938224933d3bcb166115bd85a",
+    "source": "tests/unit/test_bilinear_replication_aggregation.py"
+  },
+  {
+    "path": "scripts/refit_bilinear_replication.py",
+    "sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "source": "scripts/refit_bilinear_replication.py"
+  },
+  {
+    "path": "scripts/refit_bilinear_budget.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "scripts/refit_bilinear_budget.py"
+  },
+  {
+    "path": "scripts/refit_bilinear_residual.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "scripts/refit_bilinear_residual.py"
+  },
+  {
+    "path": "scripts/refit_membership_projection.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "scripts/refit_membership_projection.py"
+  },
+  {
+    "path": "configs/experiments/bilinear_seed_replication_v1.json",
+    "sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "source": "configs/experiments/bilinear_seed_replication_v1.json"
+  },
+  {
+    "path": "configs/experiments/bilinear_budget2000_v1.json",
+    "sha256": "e454c52a315acb389b2bda3c126367e13df63b96230f9f698517705b531d51da",
+    "source": "configs/experiments/bilinear_budget2000_v1.json"
+  },
+  {
+    "path": "configs/experiments/bilinear_residual_refit_v1.json",
+    "sha256": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+    "source": "configs/experiments/bilinear_residual_refit_v1.json"
+  },
+  {
+    "path": "configs/experiments/projection_only_refit_v1.json",
+    "sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "source": "configs/experiments/projection_only_refit_v1.json"
+  },
+  {
+    "path": "tests/unit/test_bilinear_replication.py",
+    "sha256": "6dc65cdf8a435f8e3c588fa637b86089099f55346f482d7a56fe788cfa86bddc",
+    "source": "tests/unit/test_bilinear_replication.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_budget.py",
+    "sha256": "b9ed564e6b65196c225f57a376b40d90bade0d7696a4cbfbf1c8b9c8fd221d18",
+    "source": "tests/unit/test_bilinear_budget.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_residual.py",
+    "sha256": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34",
+    "source": "tests/unit/test_bilinear_residual.py"
+  },
+  {
+    "path": "tests/unit/test_projection_only_refit.py",
+    "sha256": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+    "source": "tests/unit/test_projection_only_refit.py"
+  },
+  {
+    "path": "tests/fixtures/projection_refit_runtime_source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "tests/fixtures/projection_refit_runtime_source.zip"
+  },
+  {
+    "path": "campaign/aggregate-v2-execution-receipt.json",
+    "sha256": "badfe9ad984d829a61ea0a060af81f777160fa43a05232726f69238cb7f3c77a",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2-execution-receipt.json"
+  },
+  {
+    "path": "campaign/aggregate-v2-stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2-stdout.txt"
+  },
+  {
+    "path": "campaign/aggregate-v2.aggregate-inputs.json",
+    "sha256": "f2ac27711211b669f1b8f55e483f5bb69c55931a8e43e221d5317beed561e30e",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.aggregate-inputs.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.aggregation-script.py",
+    "sha256": "6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.aggregation-script.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.aggregation-test-receipt.json",
+    "sha256": "572b0b7ee24a42116f9b154dab4750b915eded70f67e3b32a3c072287576755f",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.aggregation-test-receipt.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.aggregation-test-stdout.txt",
+    "sha256": "7bb9d51724d8feecdd6ed04cc086ec4ea2d77df9c48e2758f179cb12537bf12a",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.aggregation-test-stdout.txt"
+  },
+  {
+    "path": "campaign/aggregate-v2.bilinear-helper.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.bilinear-helper.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.budget-helper.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.budget-helper.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.configs.zip"
+  },
+  {
+    "path": "campaign/aggregate-v2.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.helper.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.inputs.json",
+    "sha256": "3c36696c687c65ba7da95c881c96957a36fa8e88e1efeeb0c7b7adf1805c743c",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.inputs.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.json",
+    "sha256": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.mean-helper.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.plan.md",
+    "sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.plan.md"
+  },
+  {
+    "path": "campaign/aggregate-v2.recipe.json",
+    "sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.recipe.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.script.py",
+    "sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.script.py"
+  },
+  {
+    "path": "campaign/aggregate-v2.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.source.zip"
+  },
+  {
+    "path": "campaign/aggregate-v2.test-receipt.json",
+    "sha256": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.test-receipt.json"
+  },
+  {
+    "path": "campaign/aggregate-v2.test-stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.test-stdout.txt"
+  },
+  {
+    "path": "campaign/decision.json",
+    "sha256": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+    "source": "runs/learning/bilinear-seed-replication-v1/decision.json"
+  },
+  {
+    "path": "campaign/execution-receipt.json",
+    "sha256": "31101de61a287e9e7addee93cffe881d0591ac338af0826448c810cac365837b",
+    "source": "runs/learning/bilinear-seed-replication-v1/execution-receipt.json"
+  },
+  {
+    "path": "campaign/independent-audit-v2.py",
+    "sha256": "462c76e5fb18b8acf3304c14dbe8924397852c14ff642080a50676338afda941",
+    "source": "runs/learning/bilinear-seed-replication-v1/independent-audit-v2.py"
+  },
+  {
+    "path": "campaign/independent-audit.json",
+    "sha256": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+    "source": "runs/learning/bilinear-seed-replication-v1/independent-audit.json"
+  },
+  {
+    "path": "campaign/independent-audit.py",
+    "sha256": "c1170a43629111d1a9904b9c26c2ef9cba77ff46612486dd868d02b03601f0a0",
+    "source": "runs/learning/bilinear-seed-replication-v1/independent-audit.py"
+  },
+  {
+    "path": "campaign/primary-stdout.txt",
+    "sha256": "68736e31ddca6d572c4384273d7317dbfb02bdbb37896de8b555df40296fbce3",
+    "source": "runs/learning/bilinear-seed-replication-v1/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/record-decision-v2.py",
+    "sha256": "544341a24588861e1ac54aa08712c7efea7cf6ba21f804d0950ec210679e6616",
+    "source": "runs/learning/bilinear-seed-replication-v1/record-decision-v2.py"
+  },
+  {
+    "path": "campaign/record-decision.py",
+    "sha256": "c8d688951c030c4e9b75a5d0c35b58a8edc0f89f2cefd72ad75ac9348ca39498",
+    "source": "runs/learning/bilinear-seed-replication-v1/record-decision.py"
+  },
+  {
+    "path": "campaign/register-checkpoints-v2.py",
+    "sha256": "55434e43174127773750fe3974c65e5f7b143da6a9d693904f67589bebbe6b93",
+    "source": "runs/learning/bilinear-seed-replication-v1/register-checkpoints-v2.py"
+  },
+  {
+    "path": "campaign/register-checkpoints.py",
+    "sha256": "f9382944a223f2c116d53ddbaf787a46f522564c7c60127fecbe727b1dbae806",
+    "source": "runs/learning/bilinear-seed-replication-v1/register-checkpoints.py"
+  },
+  {
+    "path": "campaign/summary.aggregate-inputs.json",
+    "sha256": "5b86ad0fc1752d2b7ca1549e95489b63eef5139ede3b8004711ba8c134d55dee",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.aggregate-inputs.json"
+  },
+  {
+    "path": "campaign/summary.bilinear-helper.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.bilinear-helper.py"
+  },
+  {
+    "path": "campaign/summary.budget-helper.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.budget-helper.py"
+  },
+  {
+    "path": "campaign/summary.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.configs.zip"
+  },
+  {
+    "path": "campaign/summary.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.helper.py"
+  },
+  {
+    "path": "campaign/summary.inputs.json",
+    "sha256": "c5a6dd4a8b743e26ab312f64201aeecd7cdd15fcc5814128e6dd4425bb7c3dba",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.inputs.json"
+  },
+  {
+    "path": "campaign/summary.json",
+    "sha256": "c3d79ed3effe7504b67121b25274603b2a5870f9150a5e8043b975f9dc478c2c",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.json"
+  },
+  {
+    "path": "campaign/summary.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.mean-helper.py"
+  },
+  {
+    "path": "campaign/summary.plan.md",
+    "sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.plan.md"
+  },
+  {
+    "path": "campaign/summary.recipe.json",
+    "sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.recipe.json"
+  },
+  {
+    "path": "campaign/summary.script.py",
+    "sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.script.py"
+  },
+  {
+    "path": "campaign/summary.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.source.zip"
+  },
+  {
+    "path": "campaign/summary.test-receipt.json",
+    "sha256": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/summary.test-stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b",
+    "source": "runs/learning/bilinear-seed-replication-v1/summary.test-stdout.txt"
+  },
+  {
+    "path": "campaign/seed-1730/checkpoint-final.pt.json",
+    "sha256": "a334ea8626acdbfe1d740e00e313ee0134626875ac27f1e437801dba951088f3",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/checkpoint-final.pt.json"
+  },
+  {
+    "path": "campaign/seed-1730/execution-receipt.json",
+    "sha256": "679cc9ee93529b8ecaf69c1da357ddf4db61cca72ef12502de876e6b682f6e9f",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/execution-receipt.json"
+  },
+  {
+    "path": "campaign/seed-1730/independent-audit.json",
+    "sha256": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/independent-audit.json"
+  },
+  {
+    "path": "campaign/seed-1730/launch.json",
+    "sha256": "afd815d56301df52a58773a4539c500b210d5bdbb42773c1edb8967063b79b35",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/launch.json"
+  },
+  {
+    "path": "campaign/seed-1730/primary-stdout.txt",
+    "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/seed-1730/run.json",
+    "sha256": "ca873db65f72e0948bddc0edc9438c1e93b4c5fcb53c27a880b7d3fceddbb085",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/run.json"
+  },
+  {
+    "path": "campaign/seed-1730/summary.bilinear-helper.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.bilinear-helper.py"
+  },
+  {
+    "path": "campaign/seed-1730/summary.budget-helper.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.budget-helper.py"
+  },
+  {
+    "path": "campaign/seed-1730/summary.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.configs.zip"
+  },
+  {
+    "path": "campaign/seed-1730/summary.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.helper.py"
+  },
+  {
+    "path": "campaign/seed-1730/summary.inputs.json",
+    "sha256": "c5a6dd4a8b743e26ab312f64201aeecd7cdd15fcc5814128e6dd4425bb7c3dba",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.inputs.json"
+  },
+  {
+    "path": "campaign/seed-1730/summary.json",
+    "sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.json"
+  },
+  {
+    "path": "campaign/seed-1730/summary.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.mean-helper.py"
+  },
+  {
+    "path": "campaign/seed-1730/summary.plan.md",
+    "sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.plan.md"
+  },
+  {
+    "path": "campaign/seed-1730/summary.recipe.json",
+    "sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.recipe.json"
+  },
+  {
+    "path": "campaign/seed-1730/summary.script.py",
+    "sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.script.py"
+  },
+  {
+    "path": "campaign/seed-1730/summary.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.source.zip"
+  },
+  {
+    "path": "campaign/seed-1730/summary.test-receipt.json",
+    "sha256": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/seed-1730/summary.test-stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.test-stdout.txt"
+  },
+  {
+    "path": "campaign/seed-1730/training.json",
+    "sha256": "a7366f60a7164d8e31d1dccfb4484364cb68919f8e2449c7871138359f2d4fe5",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/training.json"
+  },
+  {
+    "path": "campaign/seed-1730/zero-replay.json",
+    "sha256": "4e3c24344963ec7331f9604e628fb29d56034e0a19e3038ef4edd2e150ee850d",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/zero-replay.json"
+  },
+  {
+    "path": "campaign/seed-1731/checkpoint-final.pt.json",
+    "sha256": "18d56a74587375d8eca76728f69f7b553c51ee450d518a5ab712299ae7b431a9",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/checkpoint-final.pt.json"
+  },
+  {
+    "path": "campaign/seed-1731/execution-receipt.json",
+    "sha256": "c53e8ec9cff35b62958795fe40864e4e5809fe3491a254631d69be09224970d4",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/execution-receipt.json"
+  },
+  {
+    "path": "campaign/seed-1731/independent-audit.json",
+    "sha256": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/independent-audit.json"
+  },
+  {
+    "path": "campaign/seed-1731/launch.json",
+    "sha256": "174ee5d348d08b7568475dd301674d030de9a355aaac3bb1f1ab5cc0b065ee94",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/launch.json"
+  },
+  {
+    "path": "campaign/seed-1731/primary-stdout.txt",
+    "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/seed-1731/run.json",
+    "sha256": "a6cef7688126236a9af3145d94b75a4e5753cf6650e29a9885a72cfc10fe1004",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/run.json"
+  },
+  {
+    "path": "campaign/seed-1731/summary.bilinear-helper.py",
+    "sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.bilinear-helper.py"
+  },
+  {
+    "path": "campaign/seed-1731/summary.budget-helper.py",
+    "sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.budget-helper.py"
+  },
+  {
+    "path": "campaign/seed-1731/summary.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.configs.zip"
+  },
+  {
+    "path": "campaign/seed-1731/summary.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.helper.py"
+  },
+  {
+    "path": "campaign/seed-1731/summary.inputs.json",
+    "sha256": "c5a6dd4a8b743e26ab312f64201aeecd7cdd15fcc5814128e6dd4425bb7c3dba",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.inputs.json"
+  },
+  {
+    "path": "campaign/seed-1731/summary.json",
+    "sha256": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.json"
+  },
+  {
+    "path": "campaign/seed-1731/summary.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.mean-helper.py"
+  },
+  {
+    "path": "campaign/seed-1731/summary.plan.md",
+    "sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.plan.md"
+  },
+  {
+    "path": "campaign/seed-1731/summary.recipe.json",
+    "sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.recipe.json"
+  },
+  {
+    "path": "campaign/seed-1731/summary.script.py",
+    "sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.script.py"
+  },
+  {
+    "path": "campaign/seed-1731/summary.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.source.zip"
+  },
+  {
+    "path": "campaign/seed-1731/summary.test-receipt.json",
+    "sha256": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/seed-1731/summary.test-stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.test-stdout.txt"
+  },
+  {
+    "path": "campaign/seed-1731/training.json",
+    "sha256": "e7f7d4fd2cbfecc7d819b8d691c3a49c9fcd2c46e8d8bf80cf46833d61ad3512",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/training.json"
+  },
+  {
+    "path": "campaign/seed-1731/zero-replay.json",
+    "sha256": "e783d42a5b3b4c61c4b0d72e5dff561e9a0193aa77248b32800b689921da999a",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/zero-replay.json"
+  },
+  {
+    "path": "verification/runner/pre-freeze-aggregate-regression.txt",
+    "sha256": "c60d9d4007d1cf74ededdb642e45f466552d6165fa29559493ec042f84d70759",
+    "source": "runs/learning/bilinear-seed-replication-runner-tests-v1/pre-freeze-aggregate-regression.txt"
+  },
+  {
+    "path": "verification/runner/receipt.json",
+    "sha256": "b786a28b9970843ccc14186748757b25ac187285a40775ee6a2cd8a3d8622229",
+    "source": "runs/learning/bilinear-seed-replication-runner-tests-v1/receipt.json"
+  },
+  {
+    "path": "verification/runner/stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b",
+    "source": "runs/learning/bilinear-seed-replication-runner-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v1/seed-1730-actual-audit-receipt.json",
+    "sha256": "6545cfbe9e37519888a9d86ff188a71d7bb578e5c8486ace82eba8ffeaf982a5",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v1/seed-1730-actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v1/seed-1730-actual-stdout.txt",
+    "sha256": "7faf1f1c30cbb0cc815214d4479d66e8bfa595835eed4e6b07dfead045e12275",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v1/seed-1730-actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v1/stdout.txt",
+    "sha256": "acb58fd963ea31f1e578a9fb040f9ef3b3925738b4af8a24fda1c689882947d1",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v1/test-receipt.json",
+    "sha256": "0278cf08e41ed471e1004632c1373cb4e5c8396db1f3382c727f7096730dc8f3",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v1/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v1/test_auditor.py",
+    "sha256": "61f0911aeaf959904271a0538dc1e70e11238ee1391f2b8fce7ca0d30c8f34c7",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v1/test_auditor.py"
+  },
+  {
+    "path": "verification/auditor-v2/aggregate-actual-audit-receipt.json",
+    "sha256": "bd5f1991c5221598bc9741a7c8e36fac68e15d26f44f6d862334c6f430eae915",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/aggregate-actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v2/aggregate-actual-stdout.txt",
+    "sha256": "67288d9c698893ed3734adec6649a43f047b3128c12495916a1371bae0586ae8",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/aggregate-actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v2/seed-1730-actual-audit-receipt.json",
+    "sha256": "bafa31af7c26cabb74a2b5e09213e496a4fd750369d01af0ee89091f01b99f1e",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/seed-1730-actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v2/seed-1730-actual-stdout.txt",
+    "sha256": "1063aad93ef2e707216e82cec56a9b58aec80da8e3f584fcb0734ceca26d8f40",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/seed-1730-actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v2/seed-1731-actual-audit-receipt.json",
+    "sha256": "dfdfc9ee22f1de6066ce1df3278b44612aa47f98979020e25a3fd71d338c8e59",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/seed-1731-actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v2/seed-1731-actual-stdout.txt",
+    "sha256": "d20a5e8f782dc37689b356c658e71ed3fa442132a2a4723cebb26d21d3b0efe3",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/seed-1731-actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v2/stdout.txt",
+    "sha256": "b8b7f4628612807769a0616a8f60f771d550c5e08dec28802ca8e593593ed9b7",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/stdout.txt"
+  },
+  {
+    "path": "verification/auditor-v2/test-receipt.json",
+    "sha256": "977cf015e1f6d73eabadcb3b149120e0ee1d49d7b71f42521d2c1d3450a37771",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor-v2/test_auditor.py",
+    "sha256": "624cbe88ad29abae2b686efcf37611a703719a8be5be4624a3ccda1ba917866c",
+    "source": "runs/learning/bilinear-seed-replication-auditor-tests-v2/test_auditor.py"
+  },
+  {
+    "path": "verification/aggregation-v2/receipt.json",
+    "sha256": "572b0b7ee24a42116f9b154dab4750b915eded70f67e3b32a3c072287576755f",
+    "source": "runs/learning/bilinear-seed-replication-aggregation-tests-v2/receipt.json"
+  },
+  {
+    "path": "verification/aggregation-v2/stdout.txt",
+    "sha256": "7bb9d51724d8feecdd6ed04cc086ec4ea2d77df9c48e2758f179cb12537bf12a",
+    "source": "runs/learning/bilinear-seed-replication-aggregation-tests-v2/stdout.txt"
+  },
+  {
+    "path": "dependencies/mean-refit-independent-audit.py",
+    "sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "source": "runs/learning/projection-only-refit-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical500/summary.json",
+    "sha256": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+    "source": "runs/learning/bilinear-residual-refit-v1/summary.json"
+  },
+  {
+    "path": "dependencies/historical500/independent-audit.json",
+    "sha256": "2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417",
+    "source": "runs/learning/bilinear-residual-refit-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/historical500/decision.json",
+    "sha256": "d7d38687e2d099348af61bd52ed62df28211464e4209cb00df43db21d1d93234",
+    "source": "runs/learning/bilinear-residual-refit-v1/decision.json"
+  },
+  {
+    "path": "dependencies/historical500/independent-audit.py",
+    "sha256": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+    "source": "runs/learning/bilinear-residual-refit-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical500/training.json",
+    "sha256": "df78c400adee070a4a8065b1ac63f0561ff7e040291bdaec139d25ee6467f647",
+    "source": "runs/learning/bilinear-residual-refit-v1/training.json"
+  },
+  {
+    "path": "dependencies/historical500/run.json",
+    "sha256": "125eb543786e8b5c0460491eae4775e105de4ed9cdc09898f818d4181cd702a0",
+    "source": "runs/learning/bilinear-residual-refit-v1/run.json"
+  },
+  {
+    "path": "dependencies/historical500/zero-replay.json",
+    "sha256": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "source": "runs/learning/bilinear-residual-refit-v1/zero-replay.json"
+  },
+  {
+    "path": "dependencies/historical1729/summary.json",
+    "sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "source": "runs/learning/bilinear-budget2000-v1/summary.json"
+  },
+  {
+    "path": "dependencies/historical1729/independent-audit.json",
+    "sha256": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "source": "runs/learning/bilinear-budget2000-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/historical1729/decision.json",
+    "sha256": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "source": "runs/learning/bilinear-budget2000-v1/decision.json"
+  },
+  {
+    "path": "dependencies/historical1729/independent-audit.py",
+    "sha256": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+    "source": "runs/learning/bilinear-budget2000-v1/independent-audit.py"
+  },
+  {
+    "path": "dependencies/historical1729/training.json",
+    "sha256": "c2942ede18f9316b8f885f36adcbea73bfb92bcf03f6f5c5a8f4a0e4d242ae4c",
+    "source": "runs/learning/bilinear-budget2000-v1/training.json"
+  },
+  {
+    "path": "dependencies/historical1729/run.json",
+    "sha256": "4e6b417f348a1b3f7eac2670b28b63e3db209600e615a3f2209768f7cfe58044",
+    "source": "runs/learning/bilinear-budget2000-v1/run.json"
+  },
+  {
+    "path": "dependencies/historical1729/zero-replay.json",
+    "sha256": "88146c0151168c48f0a03d8c621c6a57a9f5ec47969c5767ede67b62f953092f",
+    "source": "runs/learning/bilinear-budget2000-v1/zero-replay.json"
+  },
+  {
+    "path": "dependencies/historical1729/checkpoint-final.pt.json",
+    "sha256": "0cd646837dd6084fe0495d7171cc4636c835e16dd2c398f5c56a2bd7d61bceae",
+    "source": "runs/learning/bilinear-budget2000-v1/checkpoint-final.pt.json"
+  }
+]
