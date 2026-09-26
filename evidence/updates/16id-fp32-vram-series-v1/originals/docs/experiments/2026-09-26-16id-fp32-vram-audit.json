@@ -1,0 +1,82 @@
+{
+  "all_passed": true,
+  "audit_id": "16id-fp32-vram-series-audit-v1",
+  "auditor": "primary-task independent recomputation from raw repetition rows; not a second-agent review or GPU rerun",
+  "check_count": 11,
+  "checks": [
+    {
+      "name": "28 complete source rows merged",
+      "passed": true
+    },
+    {
+      "name": "unique increasing batch sizes",
+      "passed": true
+    },
+    {
+      "name": "all row rates, powers, memory, parity and per-watt math recompute",
+      "passed": true
+    },
+    {
+      "name": "all complete rows have three repetitions of at least five seconds",
+      "passed": true
+    },
+    {
+      "name": "first row within one percent of decreed 9,600 servings/s",
+      "passed": true
+    },
+    {
+      "name": "highest raw complete rate retained separately",
+      "passed": true
+    },
+    {
+      "name": "65,536 two-repetition observation marked partial",
+      "passed": true
+    },
+    {
+      "name": "no CUDA OOM saturation claim",
+      "passed": true
+    },
+    {
+      "name": "raw input hashes match aggregation record",
+      "passed": true
+    },
+    {
+      "name": "CSV includes 28 complete rows and one explicit partial row",
+      "passed": true
+    },
+    {
+      "files": [
+        "2026-09-26-16id-fp32-board-power.svg",
+        "2026-09-26-16id-fp32-memory-power.svg",
+        "2026-09-26-16id-fp32-servings-per-watt.svg",
+        "2026-09-26-16id-fp32-servings-throughput.svg",
+        "2026-09-26-16id-fp32-tokens-per-watt.svg",
+        "2026-09-26-16id-fp32-tokens-throughput.svg"
+      ],
+      "name": "all six SVG figures parse as XML",
+      "passed": true
+    }
+  ],
+  "date": "2026-09-26",
+  "derived_csv_sha256": "10d76ece1d2a980fe6bddc3dc6628203fea5248708568873429f0ffe7ba263c7",
+  "derived_series_sha256": "2989ea02f4341e00beea06ebfbbc961fcfd29b1791571ce7233158fc5f5ac2ec",
+  "raw_result_sha256": {
+    "runs\\learning\\16id-serving-saturation-20260926\\results-fp32-vram-extension.json": "9e55f783b4199b52ece0c42b399b9b0e98077e0c6d929a813e385c12c8041fa4",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-fp32-vram.json": "a5724774c5d5c3a91f9acf2f640d714fc57f912e465bb56220ebf38f14550f91",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-large-batches.json": "4d471e751097ae38b3a0d1706699c696ca7027c651b152e791d30d15fefd7f5e",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-near-target.json": "e687e25cf1b12ecfe4a915f73f9ee07582731c149e156699d2c3827c5bc9d6e0",
+    "runs\\learning\\16id-serving-saturation-20260926\\results.json": "5c093ef4e7c512e751d025715d8c188203e358dc147ac0dce2f3d16e381e780a"
+  },
+  "recomputed_completed_peak": {
+    "batch_size": 45056,
+    "servings_per_second": 9793.4896551537
+  },
+  "recomputed_first_plateau": {
+    "batch_size": 8192,
+    "device_memory_peak_gib": 5.577339172363281,
+    "servings_per_second": 9555.073797260608
+  },
+  "saturation_status": "not observed; user stopped the FP32 run before CUDA OOM",
+  "status": "complete",
+  "stop_amendment_sha256": "3d5a6c3e0d4f1a29f94b1f1a92f0d3d77eee02d70d94252135fa94f8adb50288"
+}

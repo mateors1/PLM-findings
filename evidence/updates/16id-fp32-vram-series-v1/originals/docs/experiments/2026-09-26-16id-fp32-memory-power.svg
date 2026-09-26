@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="370" viewBox="0 0 650 370" role="img" aria-labelledby="title desc">
+<title id="title">16-ID FP32 VRAM use</title>
+<desc id="desc">Device-wide NVML peak memory used across the fixed-batch FP32 saturation series. The open point at batch 65,536 is partial; no CUDA OOM was recorded before the user stopped the run.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="78" y="25" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#16212b">16-ID FP32 VRAM use</text>
+<line x1="78" y1="304.0" x2="628" y2="304.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="308.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">0.0</text>
+<line x1="78" y1="240.0" x2="628" y2="240.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="244.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">4.1</text>
+<line x1="78" y1="176.0" x2="628" y2="176.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="180.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">8.2</text>
+<line x1="78" y1="112.0" x2="628" y2="112.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="116.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">12.3</text>
+<line x1="78" y1="48.0" x2="628" y2="48.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="52.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">16.4</text>
+<line x1="78.0" y1="48" x2="78.0" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="78.0" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">320</text>
+<line x1="149.6" y1="48" x2="149.6" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="149.6" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">640</text>
+<line x1="221.3" y1="48" x2="221.3" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="221.3" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">1,280</text>
+<line x1="292.9" y1="48" x2="292.9" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="292.9" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">2,560</text>
+<line x1="364.5" y1="48" x2="364.5" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="364.5" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">5,120</text>
+<line x1="436.2" y1="48" x2="436.2" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="436.2" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">10.24k</text>
+<line x1="507.8" y1="48" x2="507.8" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="507.8" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">20.48k</text>
+<line x1="579.4" y1="48" x2="579.4" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="579.4" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">40.96k</text>
+<line x1="628.0" y1="48" x2="628.0" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="628.0" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">65.536k</text>
+<line x1="78" y1="48" x2="78" y2="304" stroke="#34414b" stroke-width="1.2"/>
+<line x1="78" y1="304" x2="628" y2="304" stroke="#34414b" stroke-width="1.2"/>
+<text x="353.0" y="352" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#16212b">Batch size (responses)</text>
+<text x="19" y="176.0" text-anchor="middle" transform="rotate(-90 19 176.0)" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#16212b">Device memory used (GiB)</text>
+<line x1="78" y1="55.8" x2="628" y2="55.8" stroke="#555f68" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="626" y="69.8" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#555f68">device total 15.89 GiB</text>
+<polyline points="78.0,246.5 149.6,245.4 168.5,245.3 198.2,236.0 204.5,244.0 207.5,243.9 210.4,242.6 221.3,234.1 240.1,243.5 269.8,241.2 311.7,237.7 341.5,231.5 383.4,227.0 413.1,216.9 436.2,208.0 455.0,200.1 470.9,192.0 484.7,187.3 496.9,175.4 507.8,167.5 526.6,151.0 542.6,134.9 556.4,118.1 568.5,102.7 579.4,86.2 589.3,69.7 598.3,59.6 614.2,59.0" fill="none" stroke="#009e73" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="78.0" cy="246.5" r="3.3" fill="#009e73"><title>device memory; batch 320; 3.682 Device memory used (GiB)</title></circle>
+<circle cx="149.6" cy="245.4" r="3.3" fill="#009e73"><title>device memory; batch 640; 3.753 Device memory used (GiB)</title></circle>
+<circle cx="168.5" cy="245.3" r="3.3" fill="#009e73"><title>device memory; batch 768; 3.759 Device memory used (GiB)</title></circle>
+<circle cx="198.2" cy="236.0" r="3.3" fill="#009e73"><title>device memory; batch 1,024; 4.357 Device memory used (GiB)</title></circle>
+<circle cx="204.5" cy="244.0" r="3.3" fill="#009e73"><title>device memory; batch 1,088; 3.842 Device memory used (GiB)</title></circle>
+<circle cx="207.5" cy="243.9" r="3.3" fill="#009e73"><title>device memory; batch 1,120; 3.851 Device memory used (GiB)</title></circle>
+<circle cx="210.4" cy="242.6" r="3.3" fill="#009e73"><title>device memory; batch 1,152; 3.930 Device memory used (GiB)</title></circle>
+<circle cx="221.3" cy="234.1" r="3.3" fill="#009e73"><title>device memory; batch 1,280; 4.476 Device memory used (GiB)</title></circle>
+<circle cx="240.1" cy="243.5" r="3.3" fill="#009e73"><title>device memory; batch 1,536; 3.874 Device memory used (GiB)</title></circle>
+<circle cx="269.8" cy="241.2" r="3.3" fill="#009e73"><title>device memory; batch 2,048; 4.025 Device memory used (GiB)</title></circle>
+<circle cx="311.7" cy="237.7" r="3.3" fill="#009e73"><title>device memory; batch 3,072; 4.245 Device memory used (GiB)</title></circle>
+<circle cx="341.5" cy="231.5" r="3.3" fill="#009e73"><title>device memory; batch 4,096; 4.640 Device memory used (GiB)</title></circle>
+<circle cx="383.4" cy="227.0" r="3.3" fill="#009e73"><title>device memory; batch 6,144; 4.929 Device memory used (GiB)</title></circle>
+<circle cx="413.1" cy="216.9" r="3.3" fill="#009e73"><title>device memory; batch 8,192; 5.577 Device memory used (GiB)</title></circle>
+<circle cx="436.2" cy="208.0" r="3.3" fill="#009e73"><title>device memory; batch 10,240; 6.146 Device memory used (GiB)</title></circle>
+<circle cx="455.0" cy="200.1" r="3.3" fill="#009e73"><title>device memory; batch 12,288; 6.654 Device memory used (GiB)</title></circle>
+<circle cx="470.9" cy="192.0" r="3.3" fill="#009e73"><title>device memory; batch 14,336; 7.169 Device memory used (GiB)</title></circle>
+<circle cx="484.7" cy="187.3" r="3.3" fill="#009e73"><title>device memory; batch 16,384; 7.475 Device memory used (GiB)</title></circle>
+<circle cx="496.9" cy="175.4" r="3.3" fill="#009e73"><title>device memory; batch 18,432; 8.238 Device memory used (GiB)</title></circle>
+<circle cx="507.8" cy="167.5" r="3.3" fill="#009e73"><title>device memory; batch 20,480; 8.743 Device memory used (GiB)</title></circle>
+<circle cx="526.6" cy="151.0" r="3.3" fill="#009e73"><title>device memory; batch 24,576; 9.798 Device memory used (GiB)</title></circle>
+<circle cx="542.6" cy="134.9" r="3.3" fill="#009e73"><title>device memory; batch 28,672; 10.832 Device memory used (GiB)</title></circle>
+<circle cx="556.4" cy="118.1" r="3.3" fill="#009e73"><title>device memory; batch 32,768; 11.906 Device memory used (GiB)</title></circle>
+<circle cx="568.5" cy="102.7" r="3.3" fill="#009e73"><title>device memory; batch 36,864; 12.888 Device memory used (GiB)</title></circle>
+<circle cx="579.4" cy="86.2" r="3.3" fill="#009e73"><title>device memory; batch 40,960; 13.946 Device memory used (GiB)</title></circle>
+<circle cx="589.3" cy="69.7" r="3.3" fill="#009e73"><title>device memory; batch 45,056; 15.005 Device memory used (GiB)</title></circle>
+<circle cx="598.3" cy="59.6" r="3.3" fill="#009e73"><title>device memory; batch 49,152; 15.651 Device memory used (GiB)</title></circle>
+<circle cx="614.2" cy="59.0" r="3.3" fill="#009e73"><title>device memory; batch 57,344; 15.688 Device memory used (GiB)</title></circle>
+<path d="M628.0 52.4 L633.0 57.4 L628.0 62.4 L623.0 57.4 Z" fill="#ffffff" stroke="#d55e00" stroke-width="2"><title>Partial, two repetitions only; batch 65,536; 15.790 Device memory used (GiB)</title></path>
+<line x1="413.1" y1="220.9" x2="457.1" y2="246.9" stroke="#35424c" stroke-width="1"/>
+<text x="385.1" y="256.9" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#16212b">first ≥99%: batch 8,192</text>
+<text x="385.1" y="270.9" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#16212b">5.58 GiB device use</text>
+<text x="628" y="327" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#b14d00">◇ 65,536 partial (2/3 reps)</text>
+</svg>

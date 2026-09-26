@@ -257,3 +257,5 @@ The SQLite graph path flattened below the requested 130 W CPU-package target. PL
 - [Decision](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-130w-serving-saturation-decision.json)
 - [Per-watt batch graph](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-26-plm-serving-efficiency.svg)
 - [Historical batch-saturation source](evidence/updates/2026-09-26-130w-serving-saturation-v1/experiments/2026-09-25-batch-saturation.json)
+
+The [FP32 sixteen-ID batch curve](papers/fp32-sixteen-id-batch-curve.md) preserves a user-stopped offline sweep: 9,793.5 decoded rows/s at the highest completed throughput point, separately from the user-declared practical peak of 9,600. No CUDA OOM or VRAM saturation was observed. Recorded protocol/cap validity is zero at peak and plateau despite exact reference-prefix parity; valid serving capacity and oracle quality are not established. The [bounded evidence bundle](evidence/updates/16id-fp32-vram-series-v1/README.md) retains the original report, metrics, primary-task recomputation audit and six figures.

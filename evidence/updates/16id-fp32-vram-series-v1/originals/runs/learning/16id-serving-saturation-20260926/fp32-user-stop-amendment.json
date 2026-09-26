@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-26",
+  "incomplete_attempt": {
+    "batch_size": 65536,
+    "completed_repetitions": 2,
+    "first16_fp32_sequence_agreement": [
+      1.0,
+      1.0
+    ],
+    "limitations": [
+      "Console observations only; the interrupted attempt did not flush a complete raw row or NVML samples.",
+      "Not included in completed-run peak or saturation-boundary statistics.",
+      "No CUDA out-of-memory event was observed before the user stop."
+    ],
+    "observed_entity_id_tokens_per_second": [
+      60775.9,
+      60524.6
+    ],
+    "observed_median_board_power_watts": [
+      79.3,
+      77.1
+    ],
+    "observed_peak_device_memory_gib_rounded": 15.79,
+    "observed_servings_per_second": [
+      3798.5,
+      3782.8
+    ],
+    "planned_repetitions": 3
+  },
+  "last_completed_batch": 57344,
+  "last_completed_result_path": "runs/learning/16id-serving-saturation-20260926/results-fp32-vram-extension.json",
+  "reason": "User directed stopping FP32 benchmarking and converting the collected data into graphs.",
+  "saturation_reached": false,
+  "source_result_sha256": {
+    "runs\\learning\\16id-serving-saturation-20260926\\results-fp32-vram-extension.json": "9e55f783b4199b52ece0c42b399b9b0e98077e0c6d929a813e385c12c8041fa4",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-fp32-vram.json": "a5724774c5d5c3a91f9acf2f640d714fc57f912e465bb56220ebf38f14550f91",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-large-batches.json": "4d471e751097ae38b3a0d1706699c696ca7027c651b152e791d30d15fefd7f5e",
+    "runs\\learning\\16id-serving-saturation-20260926\\results-near-target.json": "e687e25cf1b12ecfe4a915f73f9ee07582731c149e156699d2c3827c5bc9d6e0",
+    "runs\\learning\\16id-serving-saturation-20260926\\results.json": "5c093ef4e7c512e751d025715d8c188203e358dc147ac0dce2f3d16e381e780a"
+  },
+  "status": "user_stopped_fp32_before_cuda_oom"
+}

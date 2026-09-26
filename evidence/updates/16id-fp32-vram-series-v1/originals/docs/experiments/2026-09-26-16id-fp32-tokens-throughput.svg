@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="370" viewBox="0 0 650 370" role="img" aria-labelledby="title desc">
+<title id="title">16-ID FP32 generated tokens per second</title>
+<desc id="desc">Completed fixed-batch FP32 generated entity-ID tokens per second; EOS is excluded. The open point is an interrupted two-repetition observation.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="78" y="25" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" fill="#16212b">16-ID FP32 generated tokens per second</text>
+<line x1="78" y1="304.0" x2="628" y2="304.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="308.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">0k</text>
+<line x1="78" y1="240.0" x2="628" y2="240.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="244.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">45k</text>
+<line x1="78" y1="176.0" x2="628" y2="176.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="180.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">90k</text>
+<line x1="78" y1="112.0" x2="628" y2="112.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="116.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">135k</text>
+<line x1="78" y1="48.0" x2="628" y2="48.0" stroke="#d9e0e5" stroke-width="1"/>
+<text x="68" y="52.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#35424c">180k</text>
+<line x1="78.0" y1="48" x2="78.0" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="78.0" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">320</text>
+<line x1="149.6" y1="48" x2="149.6" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="149.6" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">640</text>
+<line x1="221.3" y1="48" x2="221.3" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="221.3" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">1,280</text>
+<line x1="292.9" y1="48" x2="292.9" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="292.9" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">2,560</text>
+<line x1="364.5" y1="48" x2="364.5" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="364.5" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">5,120</text>
+<line x1="436.2" y1="48" x2="436.2" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="436.2" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">10.24k</text>
+<line x1="507.8" y1="48" x2="507.8" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="507.8" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">20.48k</text>
+<line x1="579.4" y1="48" x2="579.4" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="579.4" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">40.96k</text>
+<line x1="628.0" y1="48" x2="628.0" y2="304" stroke="#e7ecef" stroke-width="1"/>
+<text x="628.0" y="324" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#35424c">65.536k</text>
+<line x1="78" y1="48" x2="78" y2="304" stroke="#34414b" stroke-width="1.2"/>
+<line x1="78" y1="304" x2="628" y2="304" stroke="#34414b" stroke-width="1.2"/>
+<text x="353.0" y="352" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#16212b">Batch size (responses)</text>
+<text x="19" y="176.0" text-anchor="middle" transform="rotate(-90 19 176.0)" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#16212b">Entity-ID tokens per second</text>
+<polyline points="78.0,240.9 149.6,187.3 168.5,189.5 198.2,160.1 204.5,149.2 207.5,147.0 210.4,144.5 221.3,215.5 240.1,120.7 269.8,107.8 311.7,97.0 341.5,93.9 383.4,89.2 413.1,86.6 436.2,89.1 455.0,85.0 470.9,83.2 484.7,83.0 496.9,83.9 507.8,82.9 526.6,82.8 542.6,84.3 556.4,84.5 568.5,84.9 579.4,85.7 589.3,81.1 598.3,187.2 614.2,284.8" fill="none" stroke="#d55e00" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="78.0" cy="240.9" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 320; 44,399.238 Entity-ID tokens per second</title></circle>
+<circle cx="149.6" cy="187.3" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 640; 82,039.613 Entity-ID tokens per second</title></circle>
+<circle cx="168.5" cy="189.5" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 768; 80,537.100 Entity-ID tokens per second</title></circle>
+<circle cx="198.2" cy="160.1" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,024; 101,201.563 Entity-ID tokens per second</title></circle>
+<circle cx="204.5" cy="149.2" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,088; 108,830.258 Entity-ID tokens per second</title></circle>
+<circle cx="207.5" cy="147.0" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,120; 110,415.811 Entity-ID tokens per second</title></circle>
+<circle cx="210.4" cy="144.5" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,152; 112,119.853 Entity-ID tokens per second</title></circle>
+<circle cx="221.3" cy="215.5" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,280; 62,229.041 Entity-ID tokens per second</title></circle>
+<circle cx="240.1" cy="120.7" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 1,536; 128,904.575 Entity-ID tokens per second</title></circle>
+<circle cx="269.8" cy="107.8" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 2,048; 137,957.808 Entity-ID tokens per second</title></circle>
+<circle cx="311.7" cy="97.0" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 3,072; 145,549.612 Entity-ID tokens per second</title></circle>
+<circle cx="341.5" cy="93.9" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 4,096; 147,702.371 Entity-ID tokens per second</title></circle>
+<circle cx="383.4" cy="89.2" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 6,144; 151,062.147 Entity-ID tokens per second</title></circle>
+<circle cx="413.1" cy="86.6" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 8,192; 152,881.181 Entity-ID tokens per second</title></circle>
+<circle cx="436.2" cy="89.1" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 10,240; 151,119.925 Entity-ID tokens per second</title></circle>
+<circle cx="455.0" cy="85.0" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 12,288; 153,988.734 Entity-ID tokens per second</title></circle>
+<circle cx="470.9" cy="83.2" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 14,336; 155,246.515 Entity-ID tokens per second</title></circle>
+<circle cx="484.7" cy="83.0" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 16,384; 155,401.667 Entity-ID tokens per second</title></circle>
+<circle cx="496.9" cy="83.9" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 18,432; 154,790.847 Entity-ID tokens per second</title></circle>
+<circle cx="507.8" cy="82.9" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 20,480; 155,465.779 Entity-ID tokens per second</title></circle>
+<circle cx="526.6" cy="82.8" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 24,576; 155,552.248 Entity-ID tokens per second</title></circle>
+<circle cx="542.6" cy="84.3" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 28,672; 154,503.547 Entity-ID tokens per second</title></circle>
+<circle cx="556.4" cy="84.5" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 32,768; 154,317.456 Entity-ID tokens per second</title></circle>
+<circle cx="568.5" cy="84.9" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 36,864; 154,027.973 Entity-ID tokens per second</title></circle>
+<circle cx="579.4" cy="85.7" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 40,960; 153,519.993 Entity-ID tokens per second</title></circle>
+<circle cx="589.3" cy="81.1" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 45,056; 156,695.834 Entity-ID tokens per second</title></circle>
+<circle cx="598.3" cy="187.2" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 49,152; 82,143.418 Entity-ID tokens per second</title></circle>
+<circle cx="614.2" cy="284.8" r="3.3" fill="#d55e00"><title>entity-ID tokens/s; batch 57,344; 13,528.019 Entity-ID tokens per second</title></circle>
+<path d="M628.0 212.7 L633.0 217.7 L628.0 222.7 L623.0 217.7 Z" fill="#ffffff" stroke="#d55e00" stroke-width="2"><title>Partial, two repetitions only; batch 65,536; 60,650.250 Entity-ID tokens per second</title></path>
+<text x="628" y="327" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10.5" fill="#b14d00">◇ 65,536 partial (2/3 reps)</text>
+</svg>
