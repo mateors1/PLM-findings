@@ -73,6 +73,9 @@ These are application directions, not validated product claims. The [architectur
 22. [A longer fixed bilinear fit](papers/22-bilinear-training-budget.md) - 2000 updates reach 207 exact answers and pass the unchanged single-seed quality gate; historical500 comparison, remaining errors and replication limits are preserved.
 23. [Bilinear parent-seed replication](papers/23-bilinear-parent-seed-replication.md) - both fresh seeds pass their own fixed gates, reaching 212 and 208 exact answers; 627/666 includes the historical selection seed, with verifier repairs preserved.
 
+24. [Bilinear error geometry](papers/24-bilinear-error-geometry.md) - 15 fresh mistakes retain strict ranking separation and nine do not; no shared constant can make every saved dual-TYPE answer exact, and no threshold is selected.
+
+
 26. [More updates with the same objective](papers/26-bilinear-budget8000.md) - the fixed 8000-update screen reaches 216 exact answers, with nine gains and no losses against the 2000-update sibling; the audited gate passes and checkpoint 35 is registered.
 
 27. [Replicating the 8000-update budget](papers/27-bilinear-budget8000-replication.md) - both fresh seeds pass their own fixed gates at 220 and 214 exact answers; 434/444 fresh observations improve over matched 2000-update controls with 14 gains and no losses.
@@ -228,3 +231,8 @@ The [failure evidence bundle](evidence/updates/2026-09-26-symmetric-affine8000-r
 30. [Affine lifecycle failure](papers/30-affine-lifecycle-failure.md) — corrected parent admission passed, then a missing evaluator argument stopped v2 before predictions or training.
 
 The [failure bundle](evidence/updates/2026-09-26-symmetric-affine8000-lifecycle-failure-v2/README.md) preserves the implementation, receipts and 93-tensor diagnostic conclusion. The local parent-state payload is excluded; inventory remains 37 and the hypothesis is untested.
+
+The [bilinear error-geometry diagnostic](evidence/updates/2026-09-25-bilinear-error-geometry/README.md)
+accepts independently audited reductions of the existing scores. The 39 wrong
+model-query observations concern 28 shared questions; 25 mistakes are strictly
+separated but wrong at zero. No checkpoint, threshold or prediction policy changes.

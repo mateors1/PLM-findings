@@ -1,0 +1,73 @@
+{
+  "accepted_chain_preflight": {
+    "authenticated_json_count": 13,
+    "reductions_executed": false
+  },
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-q",
+        "-o",
+        "addopts=",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "diagnostic_executed": false,
+  "exit_code": 0,
+  "gpu_used": false,
+  "model_execution": false,
+  "passed": true,
+  "plan_sha256": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+  "primary_script_sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "primary_test_receipt_sha256": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-auditor-tests-v1\\stdout.txt",
+    "sha256": "84e63b990db5a4f4eea4fc0e49a4486cad8029bf488a048bb2e44ba057d5d0ea"
+  },
+  "test_sha256": "28eed0dd014e6614459e92cc19e13840337add5949ec78f89c45e905b8f7381d",
+  "tested_script_sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+  "tests_passed": 39,
+  "tests_skipped": 0
+}

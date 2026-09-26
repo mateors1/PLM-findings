@@ -1,0 +1,192 @@
+[
+  {
+    "path": "experiments/2026-09-25-bilinear-error-geometry-plan.md",
+    "sha256": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "source": "docs/experiments/2026-09-25-bilinear-error-geometry-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-bilinear-error-geometry.json",
+    "sha256": "7fcbbfe5e9e9f4d9d8e6a0fe5664641e1b2c5c2b22b0ab1dcc38e419065d6977",
+    "source": "docs/experiments/2026-09-25-bilinear-error-geometry.json"
+  },
+  {
+    "path": "scripts/diagnose_bilinear_errors.py",
+    "sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "source": "scripts/diagnose_bilinear_errors.py"
+  },
+  {
+    "path": "tests/unit/test_bilinear_error_geometry.py",
+    "sha256": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580",
+    "source": "tests/unit/test_bilinear_error_geometry.py"
+  },
+  {
+    "path": "learning/45-ranking-errors-and-zero-threshold-errors.md",
+    "sha256": "2b1da3b2998c4211fec4c9f501147ae65353ea9197e695f1fd0511324b2b87d7",
+    "source": "docs/learning/45-ranking-errors-and-zero-threshold-errors.md"
+  },
+  {
+    "path": "model-versions.md",
+    "sha256": "c126c230038cf5a57a3a863fcaa19f1cef25a61d65bd9a25fa2acce2e86186d1",
+    "source": "docs/model-versions.md"
+  },
+  {
+    "path": "campaign/decision.json",
+    "sha256": "4f2d624341cf03d4af8e7c6976135a1b6766071899e745ea4071f9f1cf04e652",
+    "source": "runs/learning/bilinear-error-geometry-v1/decision.json"
+  },
+  {
+    "path": "campaign/execution-receipt.json",
+    "sha256": "708f34ae8f1498559c53561b936b92adeb82bc707b4135b13b7e7c2af1fb438d",
+    "source": "runs/learning/bilinear-error-geometry-v1/execution-receipt.json"
+  },
+  {
+    "path": "campaign/independent-audit.json",
+    "sha256": "1b10b77db77ebb79b5f1327bcc1538331eb876216c424036a516a0ac04cdba96",
+    "source": "runs/learning/bilinear-error-geometry-v1/independent-audit.json"
+  },
+  {
+    "path": "campaign/independent-audit.py",
+    "sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+    "source": "runs/learning/bilinear-error-geometry-v1/independent-audit.py"
+  },
+  {
+    "path": "campaign/primary-stdout.txt",
+    "sha256": "fc85331b855825406dd411cf9532f2cc86575f24281b62b75672412655981320",
+    "source": "runs/learning/bilinear-error-geometry-v1/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/record-decision.py",
+    "sha256": "87367ea40ce67246f5ba207d828b20034ee277ee9e7ff10af7855b6a9de7635b",
+    "source": "runs/learning/bilinear-error-geometry-v1/record-decision.py"
+  },
+  {
+    "path": "campaign/seed-1729.json",
+    "sha256": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+    "source": "runs/learning/bilinear-error-geometry-v1/seed-1729.json"
+  },
+  {
+    "path": "campaign/seed-1730.json",
+    "sha256": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+    "source": "runs/learning/bilinear-error-geometry-v1/seed-1730.json"
+  },
+  {
+    "path": "campaign/seed-1731.json",
+    "sha256": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+    "source": "runs/learning/bilinear-error-geometry-v1/seed-1731.json"
+  },
+  {
+    "path": "campaign/summary.inputs.json",
+    "sha256": "460217ebca71840476ca116ebe0df371ccd798fb56570be9ea1ccef477d6d26d",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.inputs.json"
+  },
+  {
+    "path": "campaign/summary.json",
+    "sha256": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.json"
+  },
+  {
+    "path": "campaign/summary.plan.md",
+    "sha256": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.plan.md"
+  },
+  {
+    "path": "campaign/summary.script.py",
+    "sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.script.py"
+  },
+  {
+    "path": "campaign/summary.test-receipt.json",
+    "sha256": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/summary.test-stdout.txt",
+    "sha256": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "source": "runs/learning/bilinear-error-geometry-v1/summary.test-stdout.txt"
+  },
+  {
+    "path": "verification/runner/receipt.json",
+    "sha256": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "source": "runs/learning/bilinear-error-geometry-runner-tests-v1/receipt.json"
+  },
+  {
+    "path": "verification/runner/stdout.txt",
+    "sha256": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "source": "runs/learning/bilinear-error-geometry-runner-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor/actual-audit-receipt.json",
+    "sha256": "0a3624903b7842c002b5c36da0082640f80fdb18ba4e4e94e754403a5adbf117",
+    "source": "runs/learning/bilinear-error-geometry-auditor-tests-v1/actual-audit-receipt.json"
+  },
+  {
+    "path": "verification/auditor/actual-stdout.txt",
+    "sha256": "c07769866e54b6a1b4216ffe3c2d14f9c4068b5a22bb3b1f97deca4d27181633",
+    "source": "runs/learning/bilinear-error-geometry-auditor-tests-v1/actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor/stdout.txt",
+    "sha256": "84e63b990db5a4f4eea4fc0e49a4486cad8029bf488a048bb2e44ba057d5d0ea",
+    "source": "runs/learning/bilinear-error-geometry-auditor-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor/test-receipt.json",
+    "sha256": "5c0233bdedf53c7293481cb66fd184d2148ff16fee5a51fde0df05b0a4261af6",
+    "source": "runs/learning/bilinear-error-geometry-auditor-tests-v1/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor/test_auditor.py",
+    "sha256": "28eed0dd014e6614459e92cc19e13840337add5949ec78f89c45e905b8f7381d",
+    "source": "runs/learning/bilinear-error-geometry-auditor-tests-v1/test_auditor.py"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-budget2000-v1/decision.json",
+    "sha256": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "source": "runs/learning/bilinear-budget2000-v1/decision.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-budget2000-v1/independent-audit.json",
+    "sha256": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "source": "runs/learning/bilinear-budget2000-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-budget2000-v1/summary.json",
+    "sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "source": "runs/learning/bilinear-budget2000-v1/summary.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/aggregate-v2.json",
+    "sha256": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+    "source": "runs/learning/bilinear-seed-replication-v1/aggregate-v2.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/decision.json",
+    "sha256": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+    "source": "runs/learning/bilinear-seed-replication-v1/decision.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/independent-audit.json",
+    "sha256": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+    "source": "runs/learning/bilinear-seed-replication-v1/independent-audit.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/seed-1730/independent-audit.json",
+    "sha256": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/independent-audit.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/seed-1730/summary.json",
+    "sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/summary.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/seed-1731/independent-audit.json",
+    "sha256": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/independent-audit.json"
+  },
+  {
+    "path": "dependencies/runs/learning/bilinear-seed-replication-v1/seed-1731/summary.json",
+    "sha256": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+    "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/summary.json"
+  }
+]

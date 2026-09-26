@@ -1,0 +1,20 @@
+{
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-error-geometry-plan.md": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\child.json": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\decision.json": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.json": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\receipt.json": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\stdout.txt": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\aggregate-v2.json": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\decision.json": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.json": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\child.json": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\independent-audit.json": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\summary.json": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\child.json": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\independent-audit.json": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\summary.json": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+}

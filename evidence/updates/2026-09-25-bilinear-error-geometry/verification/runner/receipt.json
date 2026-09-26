@@ -1,0 +1,25 @@
+{
+  "command": "uv run --no-sync pytest -q tests/unit/test_bilinear_error_geometry.py",
+  "diagnostic_executed": false,
+  "exit_code": 0,
+  "gpu_used": false,
+  "passed": true,
+  "preflight": {
+    "input_count": 15,
+    "passed": true,
+    "torch_imported": false
+  },
+  "ruff_check_passed": true,
+  "ruff_format_check_passed": true,
+  "scope": "Synthetic saved-score reductions only; no real diagnostic execution or model runtime.",
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\stdout.txt",
+    "sha256": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04"
+  },
+  "terminal_completion_observed": true,
+  "test_sha256": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580",
+  "tested_script_sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "tests_passed": 38,
+  "tests_skipped": 0,
+  "training_executed": false
+}

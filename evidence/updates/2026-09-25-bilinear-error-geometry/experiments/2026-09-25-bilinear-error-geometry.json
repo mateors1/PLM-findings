@@ -1,0 +1,1936 @@
+{
+  "all_three": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 627,
+        "overlap_or_tie": 14,
+        "separated_extra": 15,
+        "separated_missing": 10
+      },
+      "exact_count": 627,
+      "false_negative_count": 25,
+      "false_positive_count": 28,
+      "query_count": 666,
+      "strict_separation_count": 652
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 309,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 309,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 309,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 166,
+          "overlap_or_tie": 14,
+          "separated_extra": 14,
+          "separated_missing": 10
+        },
+        "exact_count": 166,
+        "false_negative_count": 25,
+        "false_positive_count": 27,
+        "query_count": 204,
+        "strict_separation_count": 190
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 152,
+          "overlap_or_tie": 0,
+          "separated_extra": 1,
+          "separated_missing": 0
+        },
+        "exact_count": 152,
+        "false_negative_count": 0,
+        "false_positive_count": 1,
+        "query_count": 153,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "decision": {
+    "alternative_predictions_generated": false,
+    "audit_sha256": "1b10b77db77ebb79b5f1327bcc1538331eb876216c424036a516a0ac04cdba96",
+    "auditor_sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+    "basis": "Independent reconstruction of saved-score reductions; upstream accepted audits remain authority for saved labels and scores. No neural replay.",
+    "campaign_version": "bilinear-error-geometry-v1",
+    "date": "2026-09-25",
+    "decision_script_sha256": "87367ea40ce67246f5ba207d828b20034ee277ee9e7ff10af7855b6a9de7635b",
+    "evidence_accepted": true,
+    "execution_receipt_sha256": "708f34ae8f1498559c53561b936b92adeb82bc707b4135b13b7e7c2af1fb438d",
+    "new_checkpoint_created": false,
+    "policy_promoted": false,
+    "posthoc_validation_diagnostic": true,
+    "protected_test_used": false,
+    "quality_gate_applicable": false,
+    "registered_final_count_unchanged": 33,
+    "summary_sha256": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+    "threshold_selected": false
+  },
+  "decision_sha256": "4f2d624341cf03d4af8e7c6976135a1b6766071899e745ea4071f9f1cf04e652",
+  "fresh_two": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 420,
+        "overlap_or_tie": 9,
+        "separated_extra": 9,
+        "separated_missing": 6
+      },
+      "exact_count": 420,
+      "false_negative_count": 15,
+      "false_positive_count": 20,
+      "query_count": 444,
+      "strict_separation_count": 435
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 206,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 206,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 206,
+        "strict_separation_count": 206
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 112,
+          "overlap_or_tie": 9,
+          "separated_extra": 9,
+          "separated_missing": 6
+        },
+        "exact_count": 112,
+        "false_negative_count": 15,
+        "false_positive_count": 20,
+        "query_count": 136,
+        "strict_separation_count": 127
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 102,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 102,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 102,
+        "strict_separation_count": 102
+      }
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-error-geometry-plan.md": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\child.json": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\decision.json": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.json": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\receipt.json": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\stdout.txt": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\execution-receipt.json": "708f34ae8f1498559c53561b936b92adeb82bc707b4135b13b7e7c2af1fb438d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\primary-stdout.txt": "fc85331b855825406dd411cf9532f2cc86575f24281b62b75672412655981320",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1729.json": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1730.json": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1731.json": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.inputs.json": "460217ebca71840476ca116ebe0df371ccd798fb56570be9ea1ccef477d6d26d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.json": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.plan.md": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.script.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.test-receipt.json": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.test-stdout.txt": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\aggregate-v2.json": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\decision.json": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.json": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\child.json": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\independent-audit.json": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\summary.json": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\child.json": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\independent-audit.json": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\summary.json": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "limitations": [
+    "Label-informed descriptive reductions; no threshold chosen or alternative answers.",
+    "666 observations share222 validation queries;1729 is historical selection evidence.",
+    "No training, checkpoint, protected-test access, serving promotion or quality gate."
+  ],
+  "overlap": {
+    "failed_queries": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 1,
+        "seeds": [
+          1729,
+          1730
+        ],
+        "subject": "PKM_AEGISLASH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 2,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_AERODACTYL"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 6,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_ARCHALUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 7,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_ARCTIBAX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 12,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_AZUMARILL"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 27,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_CARBINK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 43,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_CRAMORANT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 49,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_DEINO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 67,
+        "seeds": [
+          1729,
+          1730,
+          1731
+        ],
+        "subject": "PKM_FEZANDIPITI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 72,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 74,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_FROSLASS"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 91,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_HATTERENE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 93,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_HERDIER"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 111,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_KYUREM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 116,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_LEDIAN"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 124,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_MANTYKE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 150,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_PILOSWINE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 169,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_SABLEYE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 173,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_SEWADDLE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 177,
+        "seeds": [
+          1729,
+          1730,
+          1731
+        ],
+        "subject": "PKM_SKARMORY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 184,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 186,
+        "seeds": [
+          1730,
+          1731
+        ],
+        "subject": "PKM_STEELIX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 188,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_SWANNA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 197,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_TINKATON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 202,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_TOXTRICITY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 204,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_TURTONATOR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 207,
+        "seeds": [
+          1730,
+          1731
+        ],
+        "subject": "PKM_TYRANITAR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 218,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_ZAPDOS"
+      }
+    ],
+    "failure_seed_histogram": {
+      "1729": 8,
+      "1729,1730": 1,
+      "1729,1730,1731": 2,
+      "1729,1731": 4,
+      "1730": 5,
+      "1730,1731": 2,
+      "1731": 6,
+      "none": 194
+    },
+    "shared_queries": 222
+  },
+  "per_seed": [
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 207,
+          "overlap_or_tie": 5,
+          "separated_extra": 6,
+          "separated_missing": 4
+        },
+        "exact_count": 207,
+        "false_negative_count": 10,
+        "false_positive_count": 8,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -2.8682801723480225,
+          "A_query_index": 67,
+          "B": 2.7026796340942383,
+          "B_query_index": 27,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 217
+      },
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 5.282095432281494,
+            "A_query_index": 21,
+            "B": -2.3757262229919434,
+            "B_query_index": 95,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 54,
+            "overlap_or_tie": 5,
+            "separated_extra": 5,
+            "separated_missing": 4
+          },
+          "exact_count": 54,
+          "false_negative_count": 10,
+          "false_positive_count": 7,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -2.8682801723480225,
+            "A_query_index": 67,
+            "B": 2.7026796340942383,
+            "B_query_index": 27,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 63
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 50,
+            "overlap_or_tie": 0,
+            "separated_extra": 1,
+            "separated_missing": 0
+          },
+          "exact_count": 50,
+          "false_negative_count": 0,
+          "false_positive_count": 1,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 2.571256399154663,
+            "A_query_index": 19,
+            "B": 0.3610413074493408,
+            "B_query_index": 93,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "nonexact_rows": [
+        {
+          "a": 0.40949559211730957,
+          "b": 0.8815396428108215,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "02275b370adf95aa5757d5dc927b7545b4d2d2e49f140727884ff9f56e2bc391",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1192,
+              "score": 0.8815396428108215
+            }
+          ],
+          "g": -0.47204405069351196,
+          "group": "TYPE_dual",
+          "index": 1,
+          "maximum_false_id": 1192,
+          "minimum_true_id": 1821,
+          "prompt_ids": [
+            1,
+            1028,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "a": 3.1567156314849854,
+          "b": 2.488278388977051,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "bacacf20463959918aec37db4c1f16fbcc0644b960a323864b167769cc17f0dc",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1052,
+              "score": 2.488278388977051
+            }
+          ],
+          "g": 0.6684372425079346,
+          "group": "TYPE_dual",
+          "index": 2,
+          "maximum_false_id": 1052,
+          "minimum_true_id": 1918,
+          "prompt_ids": [
+            1,
+            1029,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "a": 2.5712575912475586,
+          "b": 2.488276481628418,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "89e6f1bd6011e2aa41d1dfa8d42b0287e4ea1b66a4d4e61a3d17a16e23433b34",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1029,
+              "score": 2.488276481628418
+            }
+          ],
+          "g": 0.08298110961914062,
+          "group": "TYPE_dual",
+          "index": 7,
+          "maximum_false_id": 1029,
+          "minimum_true_id": 1088,
+          "prompt_ids": [
+            1,
+            1052,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_ARCTIBAX"
+        },
+        {
+          "a": 0.9874495267868042,
+          "b": 2.7026796340942383,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "433544f2a0188544d7a68f737ebccecf20d9e2d84f6476b06dfb6ebb27573980",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1673,
+              "score": 2.7026796340942383
+            }
+          ],
+          "g": -1.715230107307434,
+          "group": "TYPE_dual",
+          "index": 27,
+          "maximum_false_id": 1673,
+          "minimum_true_id": 1322,
+          "prompt_ids": [
+            1,
+            1129,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "a": -0.45974230766296387,
+          "b": -4.150153160095215,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "9bf5896a3a95f798d029fc9956dadbf9caac934792d7f4000c1319156ab89113",
+          "false_negative": [
+            {
+              "id": 1825,
+              "score": -0.45974230766296387
+            }
+          ],
+          "false_positive": [],
+          "g": 3.690410852432251,
+          "group": "TYPE_dual",
+          "index": 43,
+          "maximum_false_id": 1857,
+          "minimum_true_id": 1825,
+          "prompt_ids": [
+            1,
+            1193,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_CRAMORANT"
+        },
+        {
+          "a": -2.8682801723480225,
+          "b": -0.6706737279891968,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "c45f9ef13c172f26e6a5e2dba5dc5cf732772ec5cae41c73a850fcf3604b7399",
+          "false_negative": [
+            {
+              "id": 1407,
+              "score": -0.6585683822631836
+            },
+            {
+              "id": 1451,
+              "score": -2.8682801723480225
+            }
+          ],
+          "false_positive": [],
+          "g": -2.1976064443588257,
+          "group": "TYPE_dual",
+          "index": 67,
+          "maximum_false_id": 1028,
+          "minimum_true_id": 1451,
+          "prompt_ids": [
+            1,
+            1306,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "a": -0.658568263053894,
+          "b": -4.3474931716918945,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "64e79ba5a8ad1212946129beb344d5af4bed2f1208c06b3e9d6f6ae82e870f03",
+          "false_negative": [
+            {
+              "id": 1306,
+              "score": -0.658568263053894
+            }
+          ],
+          "false_positive": [],
+          "g": 3.6889249086380005,
+          "group": "TYPE_dual",
+          "index": 91,
+          "maximum_false_id": 2034,
+          "minimum_true_id": 1306,
+          "prompt_ids": [
+            1,
+            1407,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_HATTERENE"
+        },
+        {
+          "a": 10.681333541870117,
+          "b": 0.3610413074493408,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "f01e8c7459fc6c9a444b5cd887b1a59c504107af9a4f985f7ab353c45acc7586",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1918,
+              "score": 0.3610413074493408
+            }
+          ],
+          "g": 10.320292234420776,
+          "group": "TYPE_single",
+          "index": 93,
+          "maximum_false_id": 1918,
+          "minimum_true_id": 1300,
+          "prompt_ids": [
+            1,
+            1417,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_HERDIER"
+        },
+        {
+          "a": -0.16098499298095703,
+          "b": -2.9386000633239746,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "28ff0c62b0a077d968bb579ce2b69772d637fcd06ccee60f0a4996d498bdcaff",
+          "false_negative": [
+            {
+              "id": 1954,
+              "score": -0.16098499298095703
+            }
+          ],
+          "false_positive": [],
+          "g": 2.7776150703430176,
+          "group": "TYPE_dual",
+          "index": 111,
+          "maximum_false_id": 1026,
+          "minimum_true_id": 1954,
+          "prompt_ids": [
+            1,
+            1495,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_KYUREM"
+        },
+        {
+          "a": 5.30202579498291,
+          "b": 0.580162525177002,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "4945c0b9c3392d2d24d403bf8bfc3d68d5ccdecb5a3c7217d306a5b639ce1d86",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1451,
+              "score": 0.580162525177002
+            }
+          ],
+          "g": 4.721863269805908,
+          "group": "TYPE_dual",
+          "index": 116,
+          "maximum_false_id": 1451,
+          "minimum_true_id": 2014,
+          "prompt_ids": [
+            1,
+            1508,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_LEDIAN"
+        },
+        {
+          "a": 3.266350507736206,
+          "b": 0.3284018039703369,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "998cb9f3e9cb8ea3190cf311e66185fd5a7feaf9fa34c6ba079386dd2027dd99",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 2038,
+              "score": 0.3284018039703369
+            }
+          ],
+          "g": 2.937948703765869,
+          "group": "TYPE_dual",
+          "index": 173,
+          "maximum_false_id": 2038,
+          "minimum_true_id": 1837,
+          "prompt_ids": [
+            1,
+            1798,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_SEWADDLE"
+        },
+        {
+          "a": -2.37387752532959,
+          "b": -1.57328200340271,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "1a42d55febe06516fcfaae479829491617489e3c9e561ec6e70ac86e576f82ad",
+          "false_negative": [
+            {
+              "id": 1193,
+              "score": -0.4597437381744385
+            },
+            {
+              "id": 1894,
+              "score": -2.37387752532959
+            }
+          ],
+          "false_positive": [],
+          "g": -0.8005955219268799,
+          "group": "TYPE_dual",
+          "index": 177,
+          "maximum_false_id": 1114,
+          "minimum_true_id": 1894,
+          "prompt_ids": [
+            1,
+            1825,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "a": -2.373880386352539,
+          "b": -1.615095615386963,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "612247aaed7a0a3d749c127fb6fb92506dc2685faf43083f636dec47b916ef73",
+          "false_negative": [
+            {
+              "id": 1138,
+              "score": -1.6322669982910156
+            },
+            {
+              "id": 1825,
+              "score": -2.373880386352539
+            }
+          ],
+          "false_positive": [],
+          "g": -0.7587847709655762,
+          "group": "TYPE_dual",
+          "index": 188,
+          "maximum_false_id": 1337,
+          "minimum_true_id": 1825,
+          "prompt_ids": [
+            1,
+            1894,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_SWANNA"
+        },
+        {
+          "a": -0.16098451614379883,
+          "b": -1.537397861480713,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "01bb019a1bc8673865afdb37f57a8ab20c2bd7c21b95e0f720e1102a2de27833",
+          "false_negative": [
+            {
+              "id": 1495,
+              "score": -0.16098451614379883
+            }
+          ],
+          "false_positive": [],
+          "g": 1.376413345336914,
+          "group": "TYPE_dual",
+          "index": 204,
+          "maximum_false_id": 1184,
+          "minimum_true_id": 1495,
+          "prompt_ids": [
+            1,
+            1954,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_TURTONATOR"
+        },
+        {
+          "a": 5.204736232757568,
+          "b": 0.3283998966217041,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "88b2dcc4872b71cd2bfe1d4bbc45c458f24d8e49a967795d7b5e33fecf396782",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1798,
+              "score": 0.3283998966217041
+            }
+          ],
+          "g": 4.876336336135864,
+          "group": "TYPE_dual",
+          "index": 218,
+          "maximum_false_id": 1798,
+          "minimum_true_id": 1686,
+          "prompt_ids": [
+            1,
+            2038,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_ZAPDOS"
+        }
+      ],
+      "report_sha256": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+      "role": "historical selection",
+      "seed": 1729
+    },
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 212,
+          "overlap_or_tie": 3,
+          "separated_extra": 4,
+          "separated_missing": 3
+        },
+        "exact_count": 212,
+        "false_negative_count": 5,
+        "false_positive_count": 8,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -4.123543739318848,
+          "A_query_index": 184,
+          "B": 1.4291102886199951,
+          "B_query_index": 197,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 219
+      },
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 6.223185062408447,
+            "A_query_index": 30,
+            "B": -1.8256337642669678,
+            "B_query_index": 106,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 58,
+            "overlap_or_tie": 3,
+            "separated_extra": 4,
+            "separated_missing": 3
+          },
+          "exact_count": 58,
+          "false_negative_count": 5,
+          "false_positive_count": 8,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -4.123543739318848,
+            "A_query_index": 184,
+            "B": 1.4291102886199951,
+            "B_query_index": 197,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 65
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 51,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 51,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 1.5010521411895752,
+            "A_query_index": 0,
+            "B": -1.0641374588012695,
+            "B_query_index": 0,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "nonexact_rows": [
+        {
+          "a": 3.7861499786376953,
+          "b": 0.8410987854003906,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "02275b370adf95aa5757d5dc927b7545b4d2d2e49f140727884ff9f56e2bc391",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1306,
+              "score": 0.8410987854003906
+            }
+          ],
+          "g": 2.9450511932373047,
+          "group": "TYPE_dual",
+          "index": 1,
+          "maximum_false_id": 1306,
+          "minimum_true_id": 1138,
+          "prompt_ids": [
+            1,
+            1028,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_AEGISLASH"
+        },
+        {
+          "a": 2.7349867820739746,
+          "b": 0.5843906402587891,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "016f304f91fcd04fc8aa22765fe697d2a9e43608bfe6f0d7cae5e2b9ca9c3cd6",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1196,
+              "score": 0.5843906402587891
+            }
+          ],
+          "g": 2.1505961418151855,
+          "group": "TYPE_dual",
+          "index": 6,
+          "maximum_false_id": 1196,
+          "minimum_true_id": 1927,
+          "prompt_ids": [
+            1,
+            1049,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_ARCHALUDON"
+        },
+        {
+          "a": 1.1240313053131104,
+          "b": 1.2523751258850098,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "c45f9ef13c172f26e6a5e2dba5dc5cf732772ec5cae41c73a850fcf3604b7399",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1028,
+              "score": 0.8410992622375488
+            },
+            {
+              "id": 1111,
+              "score": 0.6116917133331299
+            },
+            {
+              "id": 1876,
+              "score": 1.2523751258850098
+            }
+          ],
+          "g": -0.12834382057189941,
+          "group": "TYPE_dual",
+          "index": 67,
+          "maximum_false_id": 1876,
+          "minimum_true_id": 1129,
+          "prompt_ids": [
+            1,
+            1306,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "a": -0.4117501676082611,
+          "b": -3.913435697555542,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "93aee32c9348de62d721b1ffdf90883442382d3029c2540bcfd26688fbee368f",
+          "false_negative": [
+            {
+              "id": 1960,
+              "score": -0.4117501676082611
+            }
+          ],
+          "false_positive": [],
+          "g": 3.501685529947281,
+          "group": "TYPE_dual",
+          "index": 169,
+          "maximum_false_id": 1766,
+          "minimum_true_id": 1960,
+          "prompt_ids": [
+            1,
+            1765,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_SABLEYE"
+        },
+        {
+          "a": -0.8531110286712646,
+          "b": -3.412525177001953,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "1a42d55febe06516fcfaae479829491617489e3c9e561ec6e70ac86e576f82ad",
+          "false_negative": [
+            {
+              "id": 1556,
+              "score": -0.8531110286712646
+            }
+          ],
+          "false_positive": [],
+          "g": 2.5594141483306885,
+          "group": "TYPE_dual",
+          "index": 177,
+          "maximum_false_id": 1139,
+          "minimum_true_id": 1556,
+          "prompt_ids": [
+            1,
+            1825,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "a": -4.123543739318848,
+          "b": -1.6325125694274902,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "e967bff109e5ed7920451b9c2a9d1d61d1dabc8f763b8f0adef070df5a7c4ab7",
+          "false_negative": [
+            {
+              "id": 1452,
+              "score": -4.123543739318848
+            }
+          ],
+          "false_positive": [],
+          "g": -2.4910311698913574,
+          "group": "TYPE_dual",
+          "index": 184,
+          "maximum_false_id": 1049,
+          "minimum_true_id": 1452,
+          "prompt_ids": [
+            1,
+            1857,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_SOLROCK"
+        },
+        {
+          "a": 4.879979133605957,
+          "b": 0.12738871574401855,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "44541954e14f91c5aaa70cb0c540d1d96d112a6d422f6a9aba3c5c18fc2f8b27",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1960,
+              "score": 0.12738871574401855
+            }
+          ],
+          "g": 4.7525904178619385,
+          "group": "TYPE_dual",
+          "index": 186,
+          "maximum_false_id": 1960,
+          "minimum_true_id": 1926,
+          "prompt_ids": [
+            1,
+            1878,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_STEELIX"
+        },
+        {
+          "a": 4.879979610443115,
+          "b": 1.4291102886199951,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "74e8474bdffde72bd51d485c02cbb0e2e7d0ac202e22122f081d52f9f72217ca",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1452,
+              "score": 1.4291102886199951
+            }
+          ],
+          "g": 3.45086932182312,
+          "group": "TYPE_dual",
+          "index": 197,
+          "maximum_false_id": 1452,
+          "minimum_true_id": 1878,
+          "prompt_ids": [
+            1,
+            1926,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_TINKATON"
+        },
+        {
+          "a": -2.253070592880249,
+          "b": -3.204643726348877,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "2e37d43d21f467ff7cc11457b6d09a7c60c7aecd4865bfdd2fdd386e37247482",
+          "false_negative": [
+            {
+              "id": 2002,
+              "score": -2.253070592880249
+            }
+          ],
+          "false_positive": [],
+          "g": 0.9515731334686279,
+          "group": "TYPE_dual",
+          "index": 202,
+          "maximum_false_id": 1581,
+          "minimum_true_id": 2002,
+          "prompt_ids": [
+            1,
+            1945,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_TOXTRICITY"
+        },
+        {
+          "a": -0.41174906492233276,
+          "b": 0.12739038467407227,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "c3bc4fca11c0313d0570c198b524edb58a3fff949fa3e39621f3d0bc30a27584",
+          "false_negative": [
+            {
+              "id": 1765,
+              "score": -0.41174906492233276
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1878,
+              "score": 0.12739038467407227
+            }
+          ],
+          "g": -0.539139449596405,
+          "group": "TYPE_dual",
+          "index": 207,
+          "maximum_false_id": 1878,
+          "minimum_true_id": 1765,
+          "prompt_ids": [
+            1,
+            1960,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_TYRANITAR"
+        }
+      ],
+      "report_sha256": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+      "role": "fresh replication",
+      "seed": 1730
+    },
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 208,
+          "overlap_or_tie": 6,
+          "separated_extra": 5,
+          "separated_missing": 3
+        },
+        "exact_count": 208,
+        "false_negative_count": 10,
+        "false_positive_count": 12,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -1.8079215288162231,
+          "A_query_index": 150,
+          "B": 3.009807586669922,
+          "B_query_index": 72,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 216
+      },
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 3.8638148307800293,
+            "A_query_index": 96,
+            "B": -2.3015947341918945,
+            "B_query_index": 57,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 54,
+            "overlap_or_tie": 6,
+            "separated_extra": 5,
+            "separated_missing": 3
+          },
+          "exact_count": 54,
+          "false_negative_count": 10,
+          "false_positive_count": 12,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -1.8079215288162231,
+            "A_query_index": 150,
+            "B": 3.009807586669922,
+            "B_query_index": 72,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 62
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 51,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 51,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 1.8366230726242065,
+            "A_query_index": 0,
+            "B": -0.29520082473754883,
+            "B_query_index": 0,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "nonexact_rows": [
+        {
+          "a": -0.2648179531097412,
+          "b": 1.949305534362793,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "bacacf20463959918aec37db4c1f16fbcc0644b960a323864b167769cc17f0dc",
+          "false_negative": [
+            {
+              "id": 1129,
+              "score": -0.2648179531097412
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1451,
+              "score": 1.949305534362793
+            }
+          ],
+          "g": -2.214123487472534,
+          "group": "TYPE_dual",
+          "index": 2,
+          "maximum_false_id": 1451,
+          "minimum_true_id": 1129,
+          "prompt_ids": [
+            1,
+            1029,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_AERODACTYL"
+        },
+        {
+          "a": 5.145470142364502,
+          "b": 0.30108642578125,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "9e36a8f8cf9b2b2f424d1e3715b342440d4c00f06563c8d60662ce49efaef505",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1332,
+              "score": 0.30108642578125
+            }
+          ],
+          "g": 4.844383716583252,
+          "group": "TYPE_dual",
+          "index": 12,
+          "maximum_false_id": 1332,
+          "minimum_true_id": 1454,
+          "prompt_ids": [
+            1,
+            1067,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_AZUMARILL"
+        },
+        {
+          "a": -0.2648181915283203,
+          "b": 1.607344150543213,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "433544f2a0188544d7a68f737ebccecf20d9e2d84f6476b06dfb6ebb27573980",
+          "false_negative": [
+            {
+              "id": 1029,
+              "score": -0.2648181915283203
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1878,
+              "score": 1.607344150543213
+            }
+          ],
+          "g": -1.8721623420715332,
+          "group": "TYPE_dual",
+          "index": 27,
+          "maximum_false_id": 1878,
+          "minimum_true_id": 1029,
+          "prompt_ids": [
+            1,
+            1129,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_CARBINK"
+        },
+        {
+          "a": 2.908820629119873,
+          "b": 0.6181393265724182,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "de5164632620f54e5b67f8070a1a11583ca4a4924b486c3810b0743691864d79",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1253,
+              "score": 0.6181393265724182
+            }
+          ],
+          "g": 2.290681302547455,
+          "group": "TYPE_dual",
+          "index": 49,
+          "maximum_false_id": 1253,
+          "minimum_true_id": 1586,
+          "prompt_ids": [
+            1,
+            1218,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_DEINO"
+        },
+        {
+          "a": -0.37023329734802246,
+          "b": -1.782256007194519,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "c45f9ef13c172f26e6a5e2dba5dc5cf732772ec5cae41c73a850fcf3604b7399",
+          "false_negative": [
+            {
+              "id": 1361,
+              "score": -0.37023329734802246
+            }
+          ],
+          "false_positive": [],
+          "g": 1.4120227098464966,
+          "group": "TYPE_dual",
+          "index": 67,
+          "maximum_false_id": 1924,
+          "minimum_true_id": 1361,
+          "prompt_ids": [
+            1,
+            1306,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_FEZANDIPITI"
+        },
+        {
+          "a": 5.564487457275391,
+          "b": 3.009807586669922,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "e42bdc44afb4c4c167c4d2b404755643261204ea7ecc479470650bb417c8f338",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1452,
+              "score": 3.009807586669922
+            }
+          ],
+          "g": 2.5546798706054688,
+          "group": "TYPE_dual",
+          "index": 72,
+          "maximum_false_id": 1452,
+          "minimum_true_id": 1754,
+          "prompt_ids": [
+            1,
+            1323,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_FLYGON"
+        },
+        {
+          "a": 2.1406989097595215,
+          "b": 0.3010854721069336,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "bb80731f19dc200b6b33086e418048b271fd8661177f22a854410a61b5013f2b",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1067,
+              "score": 0.3010854721069336
+            }
+          ],
+          "g": 1.839613437652588,
+          "group": "TYPE_dual",
+          "index": 74,
+          "maximum_false_id": 1067,
+          "minimum_true_id": 1028,
+          "prompt_ids": [
+            1,
+            1332,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_FROSLASS"
+        },
+        {
+          "a": 3.5817551612854004,
+          "b": 0.05727362632751465,
+          "category": "separated_extra",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "28ff0c62b0a077d968bb579ce2b69772d637fcd06ccee60f0a4996d498bdcaff",
+          "false_negative": [],
+          "false_positive": [
+            {
+              "id": 1102,
+              "score": 0.05727362632751465
+            }
+          ],
+          "g": 3.5244815349578857,
+          "group": "TYPE_dual",
+          "index": 111,
+          "maximum_false_id": 1102,
+          "minimum_true_id": 1463,
+          "prompt_ids": [
+            1,
+            1495,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_KYUREM"
+        },
+        {
+          "a": -1.3207144737243652,
+          "b": -1.7901153564453125,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "48d5dec1c0a57546fe068e936b8972395074622f3e2e5548a12d9267182db0b6",
+          "false_negative": [
+            {
+              "id": 1138,
+              "score": -1.3207144737243652
+            }
+          ],
+          "false_positive": [],
+          "g": 0.46940088272094727,
+          "group": "TYPE_dual",
+          "index": 124,
+          "maximum_false_id": 1463,
+          "minimum_true_id": 1138,
+          "prompt_ids": [
+            1,
+            1557,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_MANTYKE"
+        },
+        {
+          "a": -1.8079215288162231,
+          "b": -1.4084925651550293,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "65af6246193dbc5df7efa72c6bfce3186b2c757d671d2c071d396762c52499d0",
+          "false_negative": [
+            {
+              "id": 1736,
+              "score": -1.8079215288162231
+            }
+          ],
+          "false_positive": [],
+          "g": -0.39942896366119385,
+          "group": "TYPE_dual",
+          "index": 150,
+          "maximum_false_id": 1960,
+          "minimum_true_id": 1736,
+          "prompt_ids": [
+            1,
+            1688,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_PILOSWINE"
+        },
+        {
+          "a": -1.3218822479248047,
+          "b": 0.13057824969291687,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "1a42d55febe06516fcfaae479829491617489e3c9e561ec6e70ac86e576f82ad",
+          "false_negative": [
+            {
+              "id": 1878,
+              "score": -0.3232192099094391
+            },
+            {
+              "id": 1894,
+              "score": -1.3218822479248047
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1960,
+              "score": 0.13057824969291687
+            }
+          ],
+          "g": -1.4524604976177216,
+          "group": "TYPE_dual",
+          "index": 177,
+          "maximum_false_id": 1960,
+          "minimum_true_id": 1894,
+          "prompt_ids": [
+            1,
+            1825,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_SKARMORY"
+        },
+        {
+          "a": -0.3232191205024719,
+          "b": 1.607344150543213,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "44541954e14f91c5aaa70cb0c540d1d96d112a6d422f6a9aba3c5c18fc2f8b27",
+          "false_negative": [
+            {
+              "id": 1825,
+              "score": -0.3232191205024719
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1129,
+              "score": 1.607344150543213
+            }
+          ],
+          "g": -1.9305632710456848,
+          "group": "TYPE_dual",
+          "index": 186,
+          "maximum_false_id": 1129,
+          "minimum_true_id": 1825,
+          "prompt_ids": [
+            1,
+            1878,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_STEELIX"
+        },
+        {
+          "a": -1.321882963180542,
+          "b": -2.8660693168640137,
+          "category": "separated_missing",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "612247aaed7a0a3d749c127fb6fb92506dc2685faf43083f636dec47b916ef73",
+          "false_negative": [
+            {
+              "id": 1825,
+              "score": -1.321882963180542
+            }
+          ],
+          "false_positive": [],
+          "g": 1.5441863536834717,
+          "group": "TYPE_dual",
+          "index": 188,
+          "maximum_false_id": 1068,
+          "minimum_true_id": 1825,
+          "prompt_ids": [
+            1,
+            1894,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": true,
+          "subject": "PKM_SWANNA"
+        },
+        {
+          "a": -0.13380742073059082,
+          "b": 0.814061164855957,
+          "category": "overlap_or_tie",
+          "dimension": "TYPE",
+          "exact": false,
+          "expected_set_sha256": "c3bc4fca11c0313d0570c198b524edb58a3fff949fa3e39621f3d0bc30a27584",
+          "false_negative": [
+            {
+              "id": 1464,
+              "score": -0.13380742073059082
+            }
+          ],
+          "false_positive": [
+            {
+              "id": 1035,
+              "score": 0.814061164855957
+            },
+            {
+              "id": 1138,
+              "score": 0.11142134666442871
+            },
+            {
+              "id": 1825,
+              "score": 0.13057774305343628
+            }
+          ],
+          "g": -0.9478685855865479,
+          "group": "TYPE_dual",
+          "index": 207,
+          "maximum_false_id": 1035,
+          "minimum_true_id": 1464,
+          "prompt_ids": [
+            1,
+            1960,
+            32,
+            34,
+            5
+          ],
+          "strict_separation": false,
+          "subject": "PKM_TYRANITAR"
+        }
+      ],
+      "report_sha256": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+      "role": "fresh replication",
+      "seed": 1731
+    }
+  ],
+  "plan_sha256": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+  "status": "accepted descriptive diagnostic; no quality gate"
+}
