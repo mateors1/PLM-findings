@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "gpu_campaign_complete": true,
+  "lm_studio_backend": "Remained offline; no port8000 listener before run.",
+  "observed_at_utc": "2026-09-25T21:51:00.393600+00:00",
+  "stdout_sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+  "summary_sha256": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+  "terminal_completion_observed_by_primary": true,
+  "terminal_session_id": 96995,
+  "timing_scope": "Descriptive single local fit; no isolated serving comparison."
+}

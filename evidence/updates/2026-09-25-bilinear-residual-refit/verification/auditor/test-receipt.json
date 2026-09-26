@@ -1,0 +1,60 @@
+{
+  "command_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-q",
+      "-o",
+      "addopts=",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.py",
+      "--help"
+    ]
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "gpu_used": false,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "passed_count": 60,
+  "stdout_sha256": "a8a7557690a9797a9713605560f31979729a3152f2127bac05db3093fbd31f99",
+  "tested_auditor_sha256": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+  "tested_independent_helper_sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+  "tested_recipe_sha256": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+  "tested_runner_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "tests_sha256": "8e21f81f458fbd6bf70a3f4ff4663304c887b9811fbef86f6617e4ac7784fc3d"
+}

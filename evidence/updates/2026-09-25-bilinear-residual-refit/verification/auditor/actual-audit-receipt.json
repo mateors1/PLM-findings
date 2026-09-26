@@ -1,0 +1,18 @@
+{
+  "audit_sha256": "2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417",
+  "auditor_sha256": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "python",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\independent-audit.py",
+    "--summary",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-refit-v1\\summary.json"
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "stdout_sha256": "9c8aade73aebae49d1c86de2a13d3041da386f3c7a51b17fd0aec7677c022780",
+  "summary_sha256": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+  "terminal": true
+}

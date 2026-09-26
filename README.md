@@ -43,6 +43,7 @@ These are application directions, not validated product claims. The [architectur
 18. [A frozen-feature projection refit](papers/18-frozen-feature-projection-refit.md) — dense exact answers improve from 112 to 122, but remain below the stronger 201-answer comparator; the fixed quality gate rejects the trained derivative.
 19. [Worst-boundary projection refit](papers/19-worst-boundary-projection-refit.md) — the new sibling reaches 128 exact answers, but fails the unchanged 201-answer comparator and per-group gates; targeted worst-member loss improves while ordinary mean BCE worsens.
 20. [Frozen diagonal-head feasibility](papers/20-frozen-diagonal-feasibility.md) — both bounded training-feasibility probes stop inconclusive when exact sign failures are hidden by FP64 residuals; no capacity or quality conclusion follows.
+21. [Cross-coordinate bilinear relations](papers/21-bilinear-residual-refit.md) - dense exact answers reach 198 with 99.9406% macro F1, but miss the stronger selector's 201-answer and TYPE group gates; only the new residual tensor changes.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -92,6 +93,11 @@ The [diagonal-feasibility diagnostic](evidence/updates/2026-09-25-diagonal-feasi
 records accepted evidence with an inconclusive mathematical result. Exact checks
 reject both numerical proposals; no neural checkpoint or validation prediction
 is created, and the frozen head's training capacity remains unresolved.
+
+The [bilinear residual refit](evidence/updates/2026-09-25-bilinear-residual-refit/README.md)
+records a substantial dense-membership gain and a rejected exact-answer gate.
+Its 30th checkpoint has a new explicit architecture, while all original parent
+tensors stay frozen. Evidence acceptance does not promote ordinary serving.
 
 The [margin training screen](evidence/updates/2026-09-25-margin-screen/README.md)
 records an independently audited negative result and a new 25-checkpoint

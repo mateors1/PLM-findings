@@ -1,0 +1,68 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-q",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py",
+      "--preflight-only"
+    ]
+  ],
+  "experiment_training_executed": false,
+  "fixtures": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+  },
+  "gpu_used": false,
+  "passed": true,
+  "skipped": 0,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-residual-runner-tests-v1\\stdout.txt",
+    "sha256": "aa4fb70ddf0011c83f91f9a2323e368fc17e7c813a3465da1f7af9ce58fe63d6"
+  },
+  "synthetic_cpu_model_only": true,
+  "test_count": 57,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_only_refit_v1.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6"
+  },
+  "test_source": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py",
+  "tested_mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+  "tested_recipe_sha256": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+  "tested_script_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "tested_test_sha256": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34"
+}
