@@ -2,6 +2,31 @@
 
 Research synthesis for **PLM / Pika Edition**, a decoder-only model that emits product identifiers for structured relation queries. Pokémon identifiers are the first opaque product catalog. This repository is a dated research snapshot of the source project's working tree, not a software release.
 
+## Current model size and retained techniques
+
+**Verified 2026-09-25.** The measured family uses the dense `tiny_decoder`: **8 transformer layers**, width **256**, **8 query heads / 2 KV heads** (head width 32), SwiGLU hidden width **768**, a **2,049-entry vocabulary**, and a **512-token context**. The catalog contains 1,025 Pokémon entities.
+
+| Component / variant | Unique learned parameters |
+| --- | ---: |
+| Dense decoder with tied input/output embeddings | 6,558,720 |
+| Prompt-set projection, `[256,256]` | +65,536 |
+| Symmetric relation projection, `[256,256]` | +65,536 |
+| **Parent model used by the verified composition application** | **6,689,792 (~6.69M)** |
+| New per-dimension bilinear residual, `[2,256,256]` | +131,072 |
+| **Latest bilinear research derivative, including frozen parent** | **6,820,864 (~6.82M)** |
+
+Counts were checked by loading the local parent checkpoint on CPU, reconstructing its recorded model config, and counting unique model parameters. Tied embeddings count once; optimizer state and positional buffers are excluded. The derivative adds only the stated residual. During that refit, **131,072 parameters are trainable** and the original 93 saved tensors remain unchanged. The latest derivative is a research variant, not a promoted serving default.
+
+The main techniques retained so far are:
+
+- **Dense decoder architecture:** pre-norm RMSNorm, RoPE, grouped-query attention with QK normalization, SwiGLU, and tied embeddings. The measured model is distinct from the larger `overkill` configuration and separate MoE trials.
+- **Protocol and output constraints:** a subject/dimension/`SAME` prefix, an `ANSWER` loss boundary, legal entity-ID/EOS decoding, and deterministic parsing, post-processing and hydration. Attribute values remain outside the model vocabulary.
+- **Auxiliary supervision:** masked causal next-token loss plus prompt-set membership supervision and a shared-embedding symmetric relation objective. The parent uses AdamW with BF16 mixed-precision training; its learned weights are stored in FP32.
+- **Verified autoregressive inference variants:** KV caching, first-target relation guidance, candidate branching, and learned set selection/composition. These are separately configured inference procedures, not extra transformer parameters. See the [set study](papers/03-set-prediction.md) and [serving study](papers/04-serving-and-reproducibility.md).
+- **Newest research direction:** freeze the parent and fit a symmetric bilinear residual for TYPE/COLOR using query-balanced positive/negative binary cross-entropy. Its dedicated scorer predicts membership from frozen embeddings and learned relation matrices; it does **not** apply the residual through ordinary autoregressive decoder forward calls. Its accepted validation screen is separate from application integration, protected-test evaluation and serving promotion.
+
+The architecture and auxiliary-head design are documented in the copied [architecture](evidence/source/architecture.md), [prompt-set lesson](evidence/learning/05-prompt-supervision.md) and [symmetric-relation lesson](evidence/learning/11-symmetric-relations.md). This size snapshot identifies parent checkpoint `e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1` and local `bilinear-budget8000-v1` derivative `6979013750eb8f2780917f714192850aae411a48490757236a891fea7e351f91`. These hashes identify local artifacts; they do not imply that weights are published or backed up.
+
 ## What the research aims to prove
 
 PLM tests whether a constrained vocabulary and an explicit query protocol can support reliable **relation-to-ID retrieval**. A deterministic pipeline parses a request, supplies the model with a subject and relation, validates its generated product IDs, and hydrates those IDs outside the model. The model does not generate prose or attribute descriptions.
