@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "finished_at_utc": "2026-09-26T03:11:57.301885+00:00",
+  "gpu_used": false,
+  "model_execution": false,
+  "stdout_sha256": "0e13cdd79e4fcc01027d71ffc79e0af74fab06ec6355b281d3d57fb800f5616f",
+  "summary_sha256": "3264144d880fc4fea7487e80bc0a5e5e6275cf294c723af3cb3c0e5e5f24b38d",
+  "terminal_chunk_id": "cf6fa9",
+  "terminal_completion_observed_by_primary": true,
+  "training_executed": false
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "mkdocs",
+    "build"
+  ],
+  "document_sha256": {
+    "docs/index.md": "4e4a0e6e625ea88271f5166a04dbde2f44a501704f41400a9c39e0e4392e5e00",
+    "docs/learning/00-project-so-far.md": "5ab0304507bce1c7049fe3e537efacf5e76bc4fefb064121cae40df7a785af12",
+    "docs/learning/49-how-error-boundaries-change-with-training.md": "0264bf44d893503a2b9219832bbd6573a68ecb83dbd6bb58d3ea8669b4d29306",
+    "docs/model-versions.md": "5ed568d953fa011727503649be7549ad3e00d4110191a6eb0b66cdecefb4568f",
+    "registry.md": "8285563581697de29a6ccaef8a9730afce6a72a22d871ff65dbbaf70aac8fa98"
+  },
+  "exit_code": 0,
+  "observed_at_utc": "2026-09-26T03:16:16.976466+00:00",
+  "scope": "Normal MkDocs build; preexisting external source-link warnings remain.",
+  "stdout_sha256": "91887bcb2012ec06d7e920ac036745bde339bd8d3abfb9ac1b13c96b33fae9c9",
+  "terminal_chunk_id": "f4308e",
+  "terminal_completion_observed_by_primary": true
+}

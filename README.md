@@ -76,6 +76,7 @@ These are application directions, not validated product claims. The [architectur
 26. [More updates with the same objective](papers/26-bilinear-budget8000.md) - the fixed 8000-update screen reaches 216 exact answers, with nine gains and no losses against the 2000-update sibling; the audited gate passes and checkpoint 35 is registered.
 
 27. [Replicating the 8000-update budget](papers/27-bilinear-budget8000-replication.md) - both fresh seeds pass their own fixed gates at 220 and 214 exact answers; 434/444 fresh observations improve over matched 2000-update controls with 14 gains and no losses.
+28. [How error boundaries change with training](papers/28-bilinear-budget-error-geometry.md) - paired saved-score geometry separates exact-answer gains from ranking gains: the fresh seeds gain 14 exact and eight separated answers without losses, while no shared scalar threshold makes every dual-TYPE answer exact, even for fully separated seed 1730.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -217,3 +218,5 @@ dual-TYPE; oracle parity remains unmet. Four exact trace chunks preserve all
 2000-update run. Replication and serving promotion remain separate decisions.
 
 The [8000-update parent-seed replication](evidence/updates/2026-09-25-bilinear-budget8000-replication/README.md) preserves the two original-parent fits, eight exact training-history chunks, versioned verifier repair and 37-checkpoint inventory. Both fresh per-seed gates pass with 14 gains and no losses against matched 2000-update controls. The aggregate and independent-audit records retain `acceptance=false`; their `audit_passed=true` and the owner decision's `evidence_accepted=true` are separate statuses. No oracle parity, serving promotion or weight archival is claimed.
+
+The [paired budget geometry packet](evidence/updates/2026-09-25-bilinear-budget-geometry/README.md) preserves nine complete reduced reports and independent verification. It accepts a descriptive diagnostic, selects no threshold or routing rule, and creates no checkpoint; the inventory remains 37. Historical 1729 remains development-selected, and all comparisons reuse the same 222 validation questions.
