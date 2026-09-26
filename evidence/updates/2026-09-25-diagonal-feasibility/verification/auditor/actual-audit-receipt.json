@@ -1,0 +1,20 @@
+{
+  "audit_sha256": "8d58b54ecde7f2062e89851b6a0a55d237cf71924a6d0fe218f17f09abc0b3ba",
+  "auditor_sha256": "233207bd308dca0611585bf1e6e86fc8b3ca9ae7952ba9163b11e8a33dcc4232",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "--project",
+    "experiments/diagonal-feasibility",
+    "python",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\independent-audit.py",
+    "--summary",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\summary.json"
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "stdout_sha256": "b6779321fb9e9438efda244d53cc1a3aa41b5c8ecd46fa311e9d9bcef6b0ec53",
+  "summary_sha256": "453d0a7a5e4d222500e064a81b019eed0fb56373b5ad74c9350ee897dd4acbd9",
+  "terminal": true
+}

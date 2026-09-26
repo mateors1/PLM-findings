@@ -1,0 +1,61 @@
+{
+  "audit_sha256": "8d58b54ecde7f2062e89851b6a0a55d237cf71924a6d0fe218f17f09abc0b3ba",
+  "auditor_sha256": "233207bd308dca0611585bf1e6e86fc8b3ca9ae7952ba9163b11e8a33dcc4232",
+  "basis": "Independent saved-evidence audit of frozen provenance, training labels, bounded solver traces and exact witnesses where present. Inconclusive is not proof of feasibility or impossibility. No new validation or serving claim.",
+  "campaign_version": "diagonal-feasibility-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "474dce7d88435caede85640bad32a4dc9b8fc4b6c5dcaa1ff835e9cc5b9df64e",
+  "default_changed": false,
+  "diagnostic_outcome": "inconclusive",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "42428566a0257683ac4de4c885a9d672d5ae15e4325ea0a9c575b9a77fdeb0f0",
+  "feature_file_sha256": "b15ec05b20f0d9c2b65849c85e6a0f1febcb188a93b2183ba2610e6a94981bd5",
+  "new_checkpoint_created": false,
+  "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "per_dimension": [
+    {
+      "constraint_count": 824320,
+      "dimension": "TYPE",
+      "execution_status": "completed",
+      "hard_timeout": false,
+      "mathematical_witness_verified": false,
+      "process_sha256": "0bbe0a33bf2214adab6defcd42c93effeddb4bcfcb2fa8b7bd44eb3165b94056",
+      "query_count": 805,
+      "rank_two": true,
+      "reason": "exact_failure_hidden_by_fp64",
+      "report_sha256": "caf497c37729f2b3711b3bbdbd4d79f93d73cd6dd5f2da667d592b04c9dc7cc6",
+      "status": "inconclusive",
+      "trace_sha256": "cba94098b196cf03919d107791cc19fd0eb454dc4b4968d88a75248da5600aee",
+      "work": {
+        "dual_lps": 0,
+        "maximum_working_rows": 2048,
+        "primal_lps": 1
+      }
+    },
+    {
+      "constraint_count": 851968,
+      "dimension": "COLOR",
+      "execution_status": "completed",
+      "hard_timeout": false,
+      "mathematical_witness_verified": false,
+      "process_sha256": "d3c9ef87f09f8acf22d8d114b804c00330761027c48e9b19ad01e0713597be0e",
+      "query_count": 832,
+      "rank_two": true,
+      "reason": "exact_failure_hidden_by_fp64",
+      "report_sha256": "571eacb6d71b4fabd2d8e7c9e090be9e7fabb24b2674964c1ccdf8c3317b3d9b",
+      "status": "inconclusive",
+      "trace_sha256": "44e62416c29fd96c193fca9b3dfabaae0bfc37516a13fb230fcc28b79bed4162",
+      "work": {
+        "dual_lps": 0,
+        "maximum_working_rows": 2048,
+        "primal_lps": 1
+      }
+    }
+  ],
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "quality_gate_applicable": false,
+  "registered_final_neural_checkpoints": 29,
+  "summary_sha256": "453d0a7a5e4d222500e064a81b019eed0fb56373b5ad74c9350ee897dd4acbd9",
+  "training_executed": false
+}

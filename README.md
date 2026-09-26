@@ -42,6 +42,7 @@ These are application directions, not validated product claims. The [architectur
 17. [More coverage, fewer exact answers](papers/17-coverage-seeking-branch.md) — one extra branch raises exact candidate availability from 605 to 608 but lowers selected exact answers from 603 to 600; the fixed gate rejects it.
 18. [A frozen-feature projection refit](papers/18-frozen-feature-projection-refit.md) — dense exact answers improve from 112 to 122, but remain below the stronger 201-answer comparator; the fixed quality gate rejects the trained derivative.
 19. [Worst-boundary projection refit](papers/19-worst-boundary-projection-refit.md) — the new sibling reaches 128 exact answers, but fails the unchanged 201-answer comparator and per-group gates; targeted worst-member loss improves while ordinary mean BCE worsens.
+20. [Frozen diagonal-head feasibility](papers/20-frozen-diagonal-feasibility.md) — both bounded training-feasibility probes stop inconclusive when exact sign failures are hidden by FP64 residuals; no capacity or quality conclusion follows.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -86,6 +87,11 @@ quality decision. The frozen-feature child improves dense exact answers to
 128/222 from 112 for its parent and 122 for the prior mean-BCE sibling, but the
 accepted eight-branch comparator remains at 201. Its fixed exact and group gates
 fail. The result is not a promotion, serving claim or durable weight archive.
+
+The [diagonal-feasibility diagnostic](evidence/updates/2026-09-25-diagonal-feasibility/README.md)
+records accepted evidence with an inconclusive mathematical result. Exact checks
+reject both numerical proposals; no neural checkpoint or validation prediction
+is created, and the frozen head's training capacity remains unresolved.
 
 The [margin training screen](evidence/updates/2026-09-25-margin-screen/README.md)
 records an independently audited negative result and a new 25-checkpoint

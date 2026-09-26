@@ -1,0 +1,242 @@
+[
+  {
+    "path": "experiments/2026-09-25-diagonal-feasibility-plan.md",
+    "sha256": "7b2e575dfd651d10edbf2d8c2a5f4a9f3268d6ad350248fafd35f1e09efe694b",
+    "source": "docs/experiments/2026-09-25-diagonal-feasibility-plan.md"
+  },
+  {
+    "path": "experiments/2026-09-25-diagonal-feasibility.json",
+    "sha256": "9035b42d3b29837d3a10afa8b6c59a072b1771cdbaddcca925efdc14b734988f",
+    "source": "docs/experiments/2026-09-25-diagonal-feasibility.json"
+  },
+  {
+    "path": "scripts/diagnose_diagonal_feasibility.py",
+    "sha256": "62ae708fe094ac4bba2df44082cb1e25592a29c123fd1ac1e71c1cecf58eb531",
+    "source": "scripts/diagnose_diagonal_feasibility.py"
+  },
+  {
+    "path": "scripts/refit_membership_projection.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "scripts/refit_membership_projection.py"
+  },
+  {
+    "path": "configs/experiments/diagonal_feasibility_v1.json",
+    "sha256": "05948f589834699de0f1f99538c739eee33242a04ee1e1c402d41295a13f74a4",
+    "source": "configs/experiments/diagonal_feasibility_v1.json"
+  },
+  {
+    "path": "tests/unit/test_diagonal_feasibility.py",
+    "sha256": "4ab32d15ffe80567f49ea2d23698fe7e132097dca9940503400255cb69be1ef8",
+    "source": "tests/unit/test_diagonal_feasibility.py"
+  },
+  {
+    "path": "experiments/diagonal-feasibility/solver.py",
+    "sha256": "ff94faaf7ad96765039ea9ebd24e0ea08c228c5bb6c7f87f5e263d5205ee923c",
+    "source": "experiments/diagonal-feasibility/solver.py"
+  },
+  {
+    "path": "experiments/diagonal-feasibility/pyproject.toml",
+    "sha256": "5ed560df01dcca1b83170738617e6ead50e583dada72191c89fd0f002b809ccd",
+    "source": "experiments/diagonal-feasibility/pyproject.toml"
+  },
+  {
+    "path": "experiments/diagonal-feasibility/uv.lock",
+    "sha256": "15d540d62127862c19123e99fe1a7a9716f1f3f4ac7cd0824c8554ad42704e54",
+    "source": "experiments/diagonal-feasibility/uv.lock"
+  },
+  {
+    "path": "experiments/diagonal-feasibility/test_solver.py",
+    "sha256": "dd2784fad58b1cc309b8af039d9d7e88ff58ba4b7160930936fa2256a5791181",
+    "source": "experiments/diagonal-feasibility/test_solver.py"
+  },
+  {
+    "path": "campaign/summary.configs.zip",
+    "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.configs.zip"
+  },
+  {
+    "path": "campaign/summary.helper.py",
+    "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.helper.py"
+  },
+  {
+    "path": "campaign/summary.inputs.json",
+    "sha256": "ea9fa671105a0df1cac570b6fb11967c6b8500fa57666e9a73b5b66e76ce794d",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.inputs.json"
+  },
+  {
+    "path": "campaign/summary.json",
+    "sha256": "453d0a7a5e4d222500e064a81b019eed0fb56373b5ad74c9350ee897dd4acbd9",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.json"
+  },
+  {
+    "path": "campaign/summary.mean-helper.py",
+    "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.mean-helper.py"
+  },
+  {
+    "path": "campaign/summary.plan.md",
+    "sha256": "7b2e575dfd651d10edbf2d8c2a5f4a9f3268d6ad350248fafd35f1e09efe694b",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.plan.md"
+  },
+  {
+    "path": "campaign/summary.recipe.json",
+    "sha256": "05948f589834699de0f1f99538c739eee33242a04ee1e1c402d41295a13f74a4",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.recipe.json"
+  },
+  {
+    "path": "campaign/summary.script.py",
+    "sha256": "62ae708fe094ac4bba2df44082cb1e25592a29c123fd1ac1e71c1cecf58eb531",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.script.py"
+  },
+  {
+    "path": "campaign/summary.solver-pyproject.toml",
+    "sha256": "5ed560df01dcca1b83170738617e6ead50e583dada72191c89fd0f002b809ccd",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.solver-pyproject.toml"
+  },
+  {
+    "path": "campaign/summary.solver-uv.lock",
+    "sha256": "15d540d62127862c19123e99fe1a7a9716f1f3f4ac7cd0824c8554ad42704e54",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.solver-uv.lock"
+  },
+  {
+    "path": "campaign/summary.solver.py",
+    "sha256": "ff94faaf7ad96765039ea9ebd24e0ea08c228c5bb6c7f87f5e263d5205ee923c",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.solver.py"
+  },
+  {
+    "path": "campaign/summary.source.zip",
+    "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.source.zip"
+  },
+  {
+    "path": "campaign/summary.test-main.py",
+    "sha256": "4ab32d15ffe80567f49ea2d23698fe7e132097dca9940503400255cb69be1ef8",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.test-main.py"
+  },
+  {
+    "path": "campaign/summary.test-receipt.json",
+    "sha256": "3cd4075dfb4f83923e09c1b162db3331726efb77f75b7f4785493a5b60e021af",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.test-receipt.json"
+  },
+  {
+    "path": "campaign/summary.test-solver.py",
+    "sha256": "dd2784fad58b1cc309b8af039d9d7e88ff58ba4b7160930936fa2256a5791181",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.test-solver.py"
+  },
+  {
+    "path": "campaign/summary.test-stdout.txt",
+    "sha256": "7fc174969e1d05bc914852f0c9ab16a383e103dd5933d9fae1bf878df84b02ad",
+    "source": "runs/learning/diagonal-feasibility-v1/summary.test-stdout.txt"
+  },
+  {
+    "path": "campaign/independent-audit.py",
+    "sha256": "233207bd308dca0611585bf1e6e86fc8b3ca9ae7952ba9163b11e8a33dcc4232",
+    "source": "runs/learning/diagonal-feasibility-v1/independent-audit.py"
+  },
+  {
+    "path": "campaign/independent-audit.json",
+    "sha256": "8d58b54ecde7f2062e89851b6a0a55d237cf71924a6d0fe218f17f09abc0b3ba",
+    "source": "runs/learning/diagonal-feasibility-v1/independent-audit.json"
+  },
+  {
+    "path": "campaign/decision.json",
+    "sha256": "4166b4816cdd6773aceaf63b854d904aec6eaeac10ea7392688af3477eb3a3a2",
+    "source": "runs/learning/diagonal-feasibility-v1/decision.json"
+  },
+  {
+    "path": "campaign/record-decision.py",
+    "sha256": "474dce7d88435caede85640bad32a4dc9b8fc4b6c5dcaa1ff835e9cc5b9df64e",
+    "source": "runs/learning/diagonal-feasibility-v1/record-decision.py"
+  },
+  {
+    "path": "campaign/execution-receipt.json",
+    "sha256": "42428566a0257683ac4de4c885a9d672d5ae15e4325ea0a9c575b9a77fdeb0f0",
+    "source": "runs/learning/diagonal-feasibility-v1/execution-receipt.json"
+  },
+  {
+    "path": "campaign/primary-stdout.txt",
+    "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "source": "runs/learning/diagonal-feasibility-v1/primary-stdout.txt"
+  },
+  {
+    "path": "campaign/extraction.json",
+    "sha256": "9836d3394b2779a2d2cbbd21a06ae39312aaaecd77f311d9d9629a45f06c5f73",
+    "source": "runs/learning/diagonal-feasibility-v1/extraction.json"
+  },
+  {
+    "path": "campaign/TYPE.json",
+    "sha256": "caf497c37729f2b3711b3bbdbd4d79f93d73cd6dd5f2da667d592b04c9dc7cc6",
+    "source": "runs/learning/diagonal-feasibility-v1/TYPE.json"
+  },
+  {
+    "path": "campaign/TYPE.process.json",
+    "sha256": "0bbe0a33bf2214adab6defcd42c93effeddb4bcfcb2fa8b7bd44eb3165b94056",
+    "source": "runs/learning/diagonal-feasibility-v1/TYPE.process.json"
+  },
+  {
+    "path": "campaign/TYPE.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source": "runs/learning/diagonal-feasibility-v1/TYPE.stdout.txt"
+  },
+  {
+    "path": "campaign/TYPE.trace.jsonl",
+    "sha256": "cba94098b196cf03919d107791cc19fd0eb454dc4b4968d88a75248da5600aee",
+    "source": "runs/learning/diagonal-feasibility-v1/TYPE.trace.jsonl"
+  },
+  {
+    "path": "campaign/COLOR.json",
+    "sha256": "571eacb6d71b4fabd2d8e7c9e090be9e7fabb24b2674964c1ccdf8c3317b3d9b",
+    "source": "runs/learning/diagonal-feasibility-v1/COLOR.json"
+  },
+  {
+    "path": "campaign/COLOR.process.json",
+    "sha256": "d3c9ef87f09f8acf22d8d114b804c00330761027c48e9b19ad01e0713597be0e",
+    "source": "runs/learning/diagonal-feasibility-v1/COLOR.process.json"
+  },
+  {
+    "path": "campaign/COLOR.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source": "runs/learning/diagonal-feasibility-v1/COLOR.stdout.txt"
+  },
+  {
+    "path": "campaign/COLOR.trace.jsonl",
+    "sha256": "44e62416c29fd96c193fca9b3dfabaae0bfc37516a13fb230fcc28b79bed4162",
+    "source": "runs/learning/diagonal-feasibility-v1/COLOR.trace.jsonl"
+  },
+  {
+    "path": "verification/runner/stdout.txt",
+    "sha256": "7fc174969e1d05bc914852f0c9ab16a383e103dd5933d9fae1bf878df84b02ad",
+    "source": "runs/learning/diagonal-feasibility-runner-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/runner/test-receipt.json",
+    "sha256": "3cd4075dfb4f83923e09c1b162db3331726efb77f75b7f4785493a5b60e021af",
+    "source": "runs/learning/diagonal-feasibility-runner-tests-v1/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor/stdout.txt",
+    "sha256": "42b0d78373a5abbde0943f5960e7b2ceea1623de41d40728a7ae354da85ffe1b",
+    "source": "runs/learning/diagonal-feasibility-auditor-tests-v1/stdout.txt"
+  },
+  {
+    "path": "verification/auditor/test-receipt.json",
+    "sha256": "f162266f6271078c30d4da6e49ecaf973080e3a031b06d1fc75eac03ea0fd5da",
+    "source": "runs/learning/diagonal-feasibility-auditor-tests-v1/test-receipt.json"
+  },
+  {
+    "path": "verification/auditor/test_auditor.py",
+    "sha256": "81d6b27c6568d875406e3effdf0e15d847d4a9706048e785328e050b0d88d43c",
+    "source": "runs/learning/diagonal-feasibility-auditor-tests-v1/test_auditor.py"
+  },
+  {
+    "path": "verification/auditor/actual-stdout.txt",
+    "sha256": "b6779321fb9e9438efda244d53cc1a3aa41b5c8ecd46fa311e9d9bcef6b0ec53",
+    "source": "runs/learning/diagonal-feasibility-auditor-tests-v1/actual-stdout.txt"
+  },
+  {
+    "path": "verification/auditor/actual-audit-receipt.json",
+    "sha256": "6af19f4b9a281884e098878a8c9d24abae234caf94eedb71eb79b596b80a9292",
+    "source": "runs/learning/diagonal-feasibility-auditor-tests-v1/actual-audit-receipt.json"
+  }
+]

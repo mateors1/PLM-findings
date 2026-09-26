@@ -1,0 +1,26 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-v1\independent-audit.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-auditor-tests-v1\test_auditor.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-v1\independent-audit.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-auditor-tests-v1\test_auditor.py
+2 files already formatted
+
+$ uv run --no-sync --project experiments/diagonal-feasibility python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-auditor-tests-v1\test_auditor.py
+warning: `VIRTUAL_ENV=.venv` does not match the project environment path `experiments\diagonal-feasibility\.venv` and will be ignored; use `--active` to target the active environment instead
+....................................
+----------------------------------------------------------------------
+Ran 36 tests in 0.051s
+
+OK
+
+$ uv run --no-sync --project experiments/diagonal-feasibility python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\diagonal-feasibility-v1\independent-audit.py --help
+warning: `VIRTUAL_ENV=.venv` does not match the project environment path `experiments\diagonal-feasibility\.venv` and will be ignored; use `--active` to target the active environment instead
+usage: independent-audit.py [-h] --summary SUMMARY
+
+Independent saved-evidence audit of exact-real training feasibility. No Torch,
+feature extraction, LP solve or primary arithmetic imports. NumPy reads saved
+constants; FLINT accelerates independently constructed integer sign products.
+
+options:
+  -h, --help         show this help message and exit
+  --summary SUMMARY
+
