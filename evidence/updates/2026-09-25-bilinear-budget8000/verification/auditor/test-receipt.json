@@ -1,0 +1,71 @@
+{
+  "commands": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "ruff",
+        "format",
+        "--check",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\independent-audit.py",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "pytest",
+        "-q",
+        "-o",
+        "addopts=",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-auditor-tests-v1\\test_auditor.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\independent-audit.py",
+        "--help"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "created_at_utc": "2026-09-26T01:50:43.278247+00:00",
+  "exit_code": 0,
+  "gpu_used": false,
+  "model_execution": false,
+  "new_diagnostic_executed": false,
+  "passed": true,
+  "plan_sha256": "064eaa115e673caaf89196bd391005a42441b6fb54cd49f9d67a6ab9c3aaab6f",
+  "primary_recipe_sha256": "f976442315433e32d5c88ce2f4e911509ec5ea56542fc2a247893cefd0ddfefc",
+  "primary_script_sha256": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+  "primary_test_receipt_sha256": "8e0f785207ec1e64d5eb87d426db3c19645a5db2b4aae98fe4ebbb730d0a6387",
+  "real_checkpoint_loaded": false,
+  "recipe_contract_preflight": true,
+  "skipped": 0,
+  "stdout_sha256": "44c7fd320957e2cf14f3fbf675f321b7fa24934538daf58e9f5d7d28daf24fe7",
+  "synthetic_cpu_tensors_only": true,
+  "test_count": 70,
+  "tested_auditor_sha256": "9ecc66cd6f63b43d6fd13f0a29ec29ce785e4d0ad45b3f861a2e92f406bc7676",
+  "tests_sha256": "0111b765f13b8ad638e50b57636d142430f200fbc2327660feafde65bd259090"
+}

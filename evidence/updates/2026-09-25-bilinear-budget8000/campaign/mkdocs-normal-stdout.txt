@@ -1,0 +1,85 @@
+
+ \u2502  \u26a0  Warning from the Material for MkDocs team
+ \u2502
+ \u2502  MkDocs 2.0, the underlying framework of Material for MkDocs,
+ \u2502  will introduce backward-incompatible changes, including:
+ \u2502
+ \u2502  � All plugins will stop working � the plugin system has been removed
+ \u2502  � All theme overrides will break � the theming system has been rewritten
+ \u2502  � No migration path exists � existing projects cannot be upgraded
+ \u2502  � Closed contribution model � community members can't report bugs
+ \u2502  � Currently unlicensed � unsuitable for production use
+ \u2502
+ \u2502  Our full analysis:
+ \u2502
+ \u2502  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/
+
+INFO    -  Cleaning site directory
+INFO    -  Building documentation to directory: C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\site
+INFO    -  The following pages exist in the docs directory, but are not included in the "nav" configuration:
+  - research-publication.md
+  - experiments\2026-09-24-batched-evaluation-plan.md
+  - experiments\2026-09-24-checkpoint-selection-plan.md
+  - experiments\2026-09-24-continuation-diagnosis-plan.md
+  - experiments\2026-09-24-continuation-order-plan.md
+  - experiments\2026-09-24-continuation-set-plan.md
+  - experiments\2026-09-24-direct-membership-plan.md
+  - experiments\2026-09-24-first-choice-paths-plan.md
+  - experiments\2026-09-24-first-guidance-plan.md
+  - experiments\2026-09-24-guidance-uniqueness-plan.md
+  - experiments\2026-09-24-guided-integration-plan.md
+  - experiments\2026-09-24-kv-cache-plan.md
+  - experiments\2026-09-24-matched-prefix-plan.md
+  - experiments\2026-09-24-native-service-plan.md
+  - experiments\2026-09-24-pair-composition-integration-plan.md
+  - experiments\2026-09-24-pair-union-plan.md
+  - experiments\2026-09-24-prompt-objectives-plan.md
+  - experiments\2026-09-24-quality-campaign-plan.md
+  - experiments\2026-09-24-seed-replication-plan.md
+  - experiments\2026-09-24-sequence-diagnosis-plan.md
+  - experiments\2026-09-24-set-reranking-integration-plan.md
+  - experiments\2026-09-24-set-reranking-plan.md
+  - experiments\2026-09-24-symmetric-relation-plan.md
+  - experiments\2026-09-24-symmetric-replication-plan.md
+  - experiments\2026-09-24-target-uniqueness-plan.md
+  - experiments\2026-09-25-batch-saturation-plan.md
+  - experiments\2026-09-25-bilinear-budget2000-plan.md
+  - experiments\2026-09-25-bilinear-budget8000-plan.md
+  - experiments\2026-09-25-bilinear-error-geometry-plan.md
+  - experiments\2026-09-25-bilinear-replication-evidence-repair.md
+  - experiments\2026-09-25-bilinear-residual-plan.md
+  - experiments\2026-09-25-bilinear-seed-replication-plan.md
+  - experiments\2026-09-25-bilinear-worst-boundary-plan.md
+  - experiments\2026-09-25-candidate-score-decomposition-plan.md
+  - experiments\2026-09-25-coverage-seeking-branch-plan.md
+  - experiments\2026-09-25-diagonal-feasibility-plan.md
+  - experiments\2026-09-25-eight-source-set-algebra-plan.md
+  - experiments\2026-09-25-fp8-compiled-plan.md
+  - experiments\2026-09-25-fp8-full-decode-plan.md
+  - experiments\2026-09-25-fp8-paired-plan.md
+  - experiments\2026-09-25-fp8-saturation-plan.md
+  - experiments\2026-09-25-full-validation-batch640-plan.md
+  - experiments\2026-09-25-learned-retrieval-data-review.md
+  - experiments\2026-09-25-learned-retrieval-feasibility.md
+  - experiments\2026-09-25-learned-retrieval-hypothesis.md
+  - experiments\2026-09-25-margin-gradient-diagnosis-plan.md
+  - experiments\2026-09-25-membership-separability-plan.md
+  - experiments\2026-09-25-missing-source-membership-plan.md
+  - experiments\2026-09-25-native-graph-oracle-plan.md
+  - experiments\2026-09-25-native-saturation-plan.md
+  - experiments\2026-09-25-pair-composition-shape-aware-plan.md
+  - experiments\2026-09-25-projection-only-refit-plan.md
+  - experiments\2026-09-25-projection-worst-boundary-plan.md
+  - experiments\2026-09-25-symmetric-margin-plan.md
+  - experiments\2026-09-25-weak-margin-plan.md
+  - experiments\2026-09-25-wide-first-choice-plan.md
+  - plan\phase-b-evaluation-coordination.md
+  - plan\phase-b-evaluation-strategy.md
+  - plan\phase-b-evaluation-tasks.md
+WARNING -  Doc file 'architecture.md' contains a link '../src/plm/config.py', but the target is not found among documentation files.
+WARNING -  Doc file 'architecture.md' contains a link '../src/plm/model/architecture.py', but the target is not found among documentation files.
+WARNING -  Doc file 'architecture.md' contains a link '../src/plm/reproducibility.py', but the target is not found among documentation files.
+WARNING -  Doc file 'benchmarks.md' contains a link '../src/plm/observability/__init__.py', but the target is not found among documentation files.
+WARNING -  Doc file 'benchmarks.md' contains a link '../serving/README.md', but the target is not found among documentation files.
+WARNING -  Doc file 'data-contracts.md' contains a link '../src/plm/graph/schema.py', but the target is not found among documentation files.
+INFO    -  Documentation built in 1.16 seconds

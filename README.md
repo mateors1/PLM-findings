@@ -73,6 +73,8 @@ These are application directions, not validated product claims. The [architectur
 22. [A longer fixed bilinear fit](papers/22-bilinear-training-budget.md) - 2000 updates reach 207 exact answers and pass the unchanged single-seed quality gate; historical500 comparison, remaining errors and replication limits are preserved.
 23. [Bilinear parent-seed replication](papers/23-bilinear-parent-seed-replication.md) - both fresh seeds pass their own fixed gates, reaching 212 and 208 exact answers; 627/666 includes the historical selection seed, with verifier repairs preserved.
 
+26. [More updates with the same objective](papers/26-bilinear-budget8000.md) - the fixed 8000-update screen reaches 216 exact answers, with nine gains and no losses against the 2000-update sibling; the audited gate passes and checkpoint 35 is registered.
+
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
 ## Reading the numbers
@@ -205,3 +207,9 @@ The intended rationale is limited, referential use of names to identify the benc
 
 To support the maintainer, [sponsor @mateors1](https://github.com/sponsors/mateors1).
 The repository's GitHub Sponsor button is configured in [`.github/FUNDING.yml`](.github/FUNDING.yml).
+
+The [fixed 8000-update balanced-BCE screen](evidence/updates/2026-09-25-bilinear-budget8000/README.md)
+passes its declared gate at 216/222 exact sets. All six remaining errors are
+dual-TYPE; oracle parity remains unmet. Four exact trace chunks preserve all
+8000 update records, and scalar-prefix comparison agrees with the historical
+2000-update run. Replication and serving promotion remain separate decisions.
