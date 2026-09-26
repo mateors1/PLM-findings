@@ -1,0 +1,450 @@
+{
+  "acceptance": false,
+  "audit_passed": true,
+  "auditor_helper_sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+  "checkpoint": {
+    "changed_tensor_names": [
+      "symmetric_relation_projection.weight"
+    ],
+    "child_checkpoint_sha256": "0abfbef2af5e12bcdaf21292a3b62a5a047fcdb7e6e77a8be5f5a0bb6fc4323b",
+    "child_sidecar_sha256": "1b6cae108d0d2923e71263ec290df8787183022549019661e0b7d1ed18ccbaea",
+    "final_post_update_loss": 0.31003913283348083,
+    "global_step": 500,
+    "initial_pre_update_loss": 0.44132092595100403,
+    "optimizer_step": 500,
+    "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "parent_training_steps": 2000,
+    "payload_loaded_on": "cpu",
+    "refit_seconds": 4.209835900001053,
+    "state_tensor_count": 93,
+    "train_query_count": 1637,
+    "updates_verified": 500
+  },
+  "child": {
+    "aggregate": {
+      "exact_count": 128,
+      "f1": 0.9923462035732968,
+      "false_negative_count": 131,
+      "false_positive_count": 331,
+      "precision": 0.9893759023386808,
+      "query_count": 222,
+      "recall": 0.9955489122620791,
+      "serialization_compatible": 222,
+      "set_size": 129.02252252252254,
+      "strict_separation_count": 160
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 84,
+        "f1": 0.9986592053892593,
+        "false_negative_count": 3,
+        "false_positive_count": 20,
+        "precision": 0.9977432822793616,
+        "query_count": 103,
+        "recall": 0.9996043920373472,
+        "serialization_compatible": 103,
+        "set_size": 113.83495145631068,
+        "strict_separation_count": 101
+      },
+      "TYPE_dual": {
+        "exact_count": 8,
+        "f1": 0.9805527323211943,
+        "false_negative_count": 117,
+        "false_positive_count": 291,
+        "precision": 0.9729854040840619,
+        "query_count": 68,
+        "recall": 0.9887380826804538,
+        "serialization_compatible": 68,
+        "set_size": 174.14705882352942,
+        "strict_separation_count": 15
+      },
+      "TYPE_single": {
+        "exact_count": 36,
+        "f1": 0.9953210439281758,
+        "false_negative_count": 11,
+        "false_positive_count": 20,
+        "precision": 0.9943310738567978,
+        "query_count": 51,
+        "recall": 0.9964395396090969,
+        "serialization_compatible": 51,
+        "set_size": 99.52941176470588,
+        "strict_separation_count": 44
+      }
+    },
+    "paired_vs_parent_dense": {
+      "gains": 21,
+      "groups": {
+        "COLOR": {
+          "gains": 11,
+          "losses": 2
+        },
+        "TYPE_dual": {
+          "gains": 4,
+          "losses": 1
+        },
+        "TYPE_single": {
+          "gains": 6,
+          "losses": 2
+        }
+      },
+      "losses": 5
+    },
+    "paired_vs_width8": {
+      "gains": 1,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 19
+        },
+        "TYPE_dual": {
+          "gains": 1,
+          "losses": 41
+        },
+        "TYPE_single": {
+          "gains": 0,
+          "losses": 14
+        }
+      },
+      "losses": 74
+    }
+  },
+  "comparisons": {
+    "mean_refit_dense": {
+      "exact": {
+        "gains": 10,
+        "groups": {
+          "COLOR": {
+            "gains": 7,
+            "losses": 0
+          },
+          "TYPE_dual": {
+            "gains": 0,
+            "losses": 0
+          },
+          "TYPE_single": {
+            "gains": 3,
+            "losses": 4
+          }
+        },
+        "losses": 4
+      },
+      "strict_separation": {
+        "gains": 3,
+        "losses": 8
+      }
+    },
+    "parent_dense": {
+      "exact": {
+        "gains": 21,
+        "groups": {
+          "COLOR": {
+            "gains": 11,
+            "losses": 2
+          },
+          "TYPE_dual": {
+            "gains": 4,
+            "losses": 1
+          },
+          "TYPE_single": {
+            "gains": 6,
+            "losses": 2
+          }
+        },
+        "losses": 5
+      },
+      "strict_separation": {
+        "gains": 2,
+        "losses": 7
+      }
+    },
+    "width8": {
+      "exact": {
+        "gains": 1,
+        "groups": {
+          "COLOR": {
+            "gains": 0,
+            "losses": 19
+          },
+          "TYPE_dual": {
+            "gains": 1,
+            "losses": 41
+          },
+          "TYPE_single": {
+            "gains": 0,
+            "losses": 14
+          }
+        },
+        "losses": 74
+      }
+    }
+  },
+  "complete": true,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "exact_above_201": false,
+      "execution_invariants": true,
+      "f1_at_least_strong_comparator": true,
+      "group_exact_nonregression": false,
+      "serialization_compatible": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": false
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_only_refit_v1.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_worst_boundary_v1.json": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\manifests\\pokemon_v1_f1541479_20260924.json": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\records.jsonl": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\sqlite\\pokemon_v1_f1541479_20260924.snapshot.db": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-projection-worst-boundary-plan.md": "03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-wide-first-choice-plan.md": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1729.json": "c7ad1db44d3c7e0387369b1ffc982d5e7b96afb046c4f8a68111b235ae5a3f67",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1730.json": "932ad33ad4d0b00e29cd7d64966b3f0d5820df91764d9ba1188a22cdd84e1659",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\offline-1731.json": "cd713d451a1235f7ad73d8b524acbf3c250b482f78e84c2cfd08f778e3c5ae73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\acceptance.json": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.json": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\independent-audit.py": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-composition-integration-v2\\summary.json": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1729.json": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1730.json": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\pair-unions-v1\\seed-1731.json": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\checkpoint-final.pt": "84a3ba02ab5f43e9073f1f8b8c7afc85ad7a5363e8cb180e1424a77e6a44ab87",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\checkpoint-final.pt.json": "6b82e04e81d2f717bb4c8fd40d22a14366ea18356fe102b5ea01480a7da5ccaa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\child.json": "b44463dd43df234aaba5f95a8910eb5afea1bee012782f2a9d19896adb221f1f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\decision.json": "da0bbc0bd9a1284c6dae6f072e46bcddf30b0c13cdd0a81e34328768042e90a6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.json": "6535d9e85920c1c0e316ff0f9f60f391629c1c74be90d095759d5954692cf3bc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\parent.json": "9447a42cfd6d1880b05b16c0e426142b8dea8965105fdd21e0e926e564025dd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\run.json": "749f5ea7638a638c39a49f59b6c28eacdef2788af4745e18c3a8250476987627",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.json": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.plan.md": "2ac4d157ad8c079561d642199fec8de2c3da1866819baa48f52080e9b0f39bfe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.recipe.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\summary.script.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\training.json": "f0544e1464b88330873f764a1927c949168452610f45a5824cb03d8d4e038d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-auditor-tests-v1\\stdout.txt": "15fa85049dcaf4e069ccf61c6aa64da1649e4c010d23e7eaaa0517edcaf8d9ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-auditor-tests-v1\\test-receipt.json": "7d11dd6054c938a984e0d72ee8e92f3cb46140677a133ebe645f2bdd696060be",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-auditor-tests-v1\\test_auditor.py": "1bf505c05c4caf3f92758c98b9dc50baeac55b19bb43ac2eb74315ea587a3693",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-runner-tests-v1\\stdout.txt": "2a606200af921a129531b5c49b03b70479b0cbbaba4c98bdbd7df97ed598af54",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-runner-tests-v1\\test-receipt.json": "57acbcbf1bb8bf926bc6e1444c3cdfef65ff68fa2fd37ecd0a1770d7051cc1a4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\checkpoint-final.pt": "0abfbef2af5e12bcdaf21292a3b62a5a047fcdb7e6e77a8be5f5a0bb6fc4323b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\checkpoint-final.pt.json": "1b6cae108d0d2923e71263ec290df8787183022549019661e0b7d1ed18ccbaea",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\child.json": "cb7defd3cc4c7a5585830d6d74aa1901928f37e84d0718cabd524cfb7d9e536a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\comparisons.json": "ffea2e7f3f82c19e52ab1a9a8e75f7b2fe5c38a8294e63b03fea7a35e1ef7c3b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\mean-refit-comparator.json": "dd82936200d520d5c25ce1df6f3a81eeada5056a86fb136713d3246a3905df4a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\parent.json": "45518fcab969e5808aef55722823e7415ec2dcabe468bfd056acc44ca7da7e4f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\run.json": "23e5be62dd55dec5784bbbb4418d8e2d8c1875ccda931250f0c8a4f6ec7b0695",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\config.yaml": "06b4eb9e3c74c9dc998cfd7e18af0a7a71d60f0340f2093b2be62297578fcf3a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\data\\pokemon_v1.yaml": "b524769d5a0fd760b06624a5248eac9aaf72eaafe0790e0f39fea1729fbd3d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\eval\\ranking.yaml": "ad2c15c5dc0f3caa91781eddc0a39379161fdd0151dc8845cce97d43fc8401d1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\checkpointing_lab.yaml": "0d793e4255f9b96d37195afe04f4887ca23ea58ac44bfc1bc50c7dc2a55a0f73",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\continuation_set_lab.yaml": "774e9627619b351347be38a2d80a6ff15e0333461c0f7f522d0f75c011486ee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\first_target_lab.yaml": "6cb4f76534346c267881e72bf27f594c5b2f332bd189cd38be00de923de12326",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\moe_lab.yaml": "1749b2d19c87333cd8e01307eeb0430031800111541d5bb2534c116e3fa0ecfa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\national_dex_v1.yaml": "568e9d883c7c2205c7534076d3eb79d8ca01afd9350a73e7d2655f3c01245c9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\prompt_set_lab.yaml": "822294ca346705510203582677cc5b3bb3ab40f8698c55f6bca117132a816b27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\symmetric_relation_lab.yaml": "6eeef56cdf8ffb4a838b2b430a0f6e03ebb17190650ede501a6db4f8707e7092",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\experiment\\tiny_smoke.yaml": "e801e5405db9c072a4d2668579d3c861eb44bbcc2d1ddb0f395a604ba35714b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\model\\overkill.yaml": "6e7b327c492a36c82edaf47781ed4ae6d2c36de4f338c6be7302d6687abd7ee5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\model\\tiny_decoder.yaml": "cb743d984a1cdca098cb0a174cdd2e16488be154cc594da5816dde143c32b240",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\protocol\\pokemon_v1.yaml": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\serve\\local.yaml": "816b6b05e326b678494386d9d41e1cbc4ea3930d4d421ce319ea2490934132f2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\configs\\train\\local_cuda.yaml": "814ceb8df66d50f5bcd8ac3e78cd1fcc695cf9c2133131b767d94212a7510141",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\pyproject.toml": "30bfe2dae495c9641b6d38221948d30925986a5fcfee91b7ff09f0a8b65037e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\__init__.py": "cd891bbe780afd9092084759c9def7ed20cc20e13f2c931ba1b5244ac0374bb4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\baselines\\__init__.py": "e2fc4f1a65963ac4a3cfbb63bbd80a811af5a3f7dbba51e0b9bd3e9c8457608a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\baselines\\complex.py": "a23c4b179a92238d49fa48c4c4c6de466ab214bef91c3b438e4d08db7aa4f0df",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\baselines\\oracle.py": "04bf088092dbe5c79f37b8613004ea2d0c3c25aeaf1a33b98cd09a576342a036",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\baselines\\popularity.py": "29aa93558c9b0595cd643fbb773f6aed1e373102855ba0dcc3a72da9886097ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\cli.py": "6fd5057947fa8c7f40473c287d2ec05d65c09408eaf6e94ab921cd2f0d29f478",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\config.py": "ea1c2fe1d03bb225859b084254d39e2c43afbedfd2ba9d367b1e8f1326ada06d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\configuration.py": "6577b86d8403b4c628546bbc80dfd94b63c818c80e482867ae4ff99e73882d1e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\corpus\\__init__.py": "d84f2234bb4534acfd649f79e0c18286d71a8cea645515c2058e4db7c7c9df2c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\corpus\\compiler.py": "8e5c0f76860d0677e02c55ba023c7523673e3185387ab49485826c795de0cfd0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\corpus\\snapshot.py": "ac61c110c0f1294cd1fa79ac966d56f8bb34c062ce5f6958dbf4fad18faacd51",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\corpus\\validation.py": "38c1ecb76b55f3b7a774542551566261ec36b93750b49cef6d71af7adef6d912",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\__init__.py": "fb115cad4ab3bad67743b2d0187c741656c083e20a7a17b63dc1847c63271112",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\generation.py": "e38cfaba143643ad0b7339fa31a94a19b0cf3110893c54e45f9f8870cd3f7c37",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\plm.py": "d3c81820f8c61ade8f52fcf1c5c3950c8fb6a0717f7a3a52cbc274743e317a66",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\ranking.py": "83ee403c8b53d606199bea72bc83a06f4f5f116577d6da5662839a135e9eb693",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\set_composition.py": "265c8719633b21539d1eca1e693968fdb8a40c160fc64416482d80d268ef7b69",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\evaluation\\split.py": "9ad16d5b297c1dd7055b1a767c213162823f1db9be9b486e9c8c59636b67f3b1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\__init__.py": "a5203b2b72b0645b66bebda3e43fd92afaa19789813d98e06db3e76e7a26b45a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\comparison.py": "10281960c9c9617ccad814edd292d465ea69314b405bd3a19648cdb5741906e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\evidence.py": "ccb31095f096b4c81be2dcab9841f9f99d6d56b02129be9ab57b6d8f735b9509",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\firewall.py": "e2c71168741cb0c0deb514204c28f8a67300540cb65fed8b23ff6f7ccc31f3ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\identity.py": "ef3c8451d213b19981a89561d963abc75a4017eff5fc08b96806ed109a575e34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\lineage.py": "4286d7913b27a6a634786ae9db36ebc5637bcfd8e41687492272b4d0c6f250fa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\measurement.py": "22a94d5f6603eca2c4a131e7e8f3ebe8a36fbf138389385ddb55e417c2b247ff",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\experimentation\\provenance.py": "a71ae38e17e211c227b37dedf42b7d73c0162c42ec09bdc86ef6e40293a11437",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\graph\\__init__.py": "d541af95ab44a4c524f7289c18f7a22795d2e58fb4a5a3848a2e9310eab3dd83",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\graph\\importers.py": "bd9c8f1159aa7b0f65d015215679df63f26baef2e0e4dab2799e1a959f2ab701",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\graph\\repository.py": "f4edca845bf44dba03194a0876d6e6518b8d992202e806a5fbf9d0fea3e9046c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\graph\\schema.py": "53924883936b701b930a27a618a35e09855ea16412c5c186e7e34351451c91d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\labeling\\__init__.py": "3eb12e9fbf63f3167229532ecc96b38905724008d16351f95fe72beba1c44837",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\labeling\\web.py": "44bea94ec405e6328c1866bc21afcc75e71becdb958756df607d68e95a340cc2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\__init__.py": "dbd7a7c96b70bdb13c12c9ed89ef3a8b6c16ab2e7af53c39d7582477046e1698",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\architecture.py": "5e14377afad2fefae1fccc6ece9c379a3bae1853b3d40c2b39b48554755ec5f8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\interfaces.py": "a6ba06429e244bfce78ef7c372a39fce8c44b5335296bbbd4557fdf31cc16b9d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\layers.py": "791adff33e330136f3a7fccbc6a0bebf6737c817e0ed920202fa4a48de7e59da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\legal_output.py": "ade361ca7531d79c328d34ba510ddefc4ebf27309d342133b387b7a70d5c55aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\model\\synthetic.py": "9638a8671cd07ec5bb9fe90bdd2161a9a8276665f1a46ac027000a8a277d78b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\observability\\__init__.py": "81ab11abbef8b39b44011e6c0948bf3f270d971244806836db3fd76f22b0913a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\protocol\\__init__.py": "e90fe7a8e44bf8307431d71951b20db24a3958001f8383b4fe50506f8e1f30e7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\protocol\\config.py": "f3d2732694a472db2b624caba8993385b6cd0f35fc683ace42d6de5e76fdbd59",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\protocol\\tokenizer.py": "d38c166afa0a5dc0f170687ca10ec2f1e6bb9bc5c66e7003a6ad9fcd98b6c61f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\reproducibility.py": "201ea15a0a5f69c1f3f966fcae3cbe202fda0bdc4814e8aa8b995a84ac8762b7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\__init__.py": "af77c53d2e18dd9136fc4c604ce7e999b69a75ca5157ac6a26c227c8c00c75f5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\generation.py": "3706eb262d016ae72783530628948b3bdf25a7571ad03e7859db15adcf70793e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\generation_batch.py": "c397b3a045d052e4f2a4d96976a513e54cd1e43ee964fa9dc04fe9729adf3d61",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\guidance.py": "64da07bf0e351ff4566dce4e5b9881352c3ccfebf2e429743b1643bc23743827",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\hydration.py": "c3118da146b573ae2d78177c442bc192c71cc321955963413ed3df08b299cf25",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\native.py": "0c456bc6c246989af77e85e78a962143f9bc06312533ddd3d74ae460f59a2a8c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\parser.py": "d370557359702d3456e560f4cb58a47a05d94200826bcc6477d03dd4d9331072",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\postprocess.py": "a420ed8b3fa14c507c99e9168153f70ada75eba2aac9ce3a8415befed9907727",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\runtime.py": "7884510497b015b5fa2e1494c8ea492415bb38d1e16154e96b2e2f257d382468",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\set_composition.py": "0f9e7907aa95df5a60e492f0f220bf8ef297bec9c35382d84ae7f6314ebfe2a9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\set_reranking.py": "b5fc41463695c6758ff98471e6c1af5a2cb5ddfb7ca9a85a545b6616908629da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\serving\\web.py": "17fcaddf1583c53109761a91a6a87559fede00ec27698a10a5e6f96ed189818d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\__init__.py": "0caaf782b8b1a92d3907f6da86cc6ecfef1c2903c59e13f09d2cab5b7830e7f9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\checkpoint.py": "b2435c321a13cb71ac450ab560afbfbd907cf75fcee2a5d5a05eee3e22f2a410",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\data.py": "cd8767a7b6e4cf7b9af6546b689151928cc1c329b9c12ef06014e58e9e732d3e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\optim.py": "92cad98334129c39c818a02e4bbd5791b2e7efc2d56804011f4d3aeb7b596c18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\resume.py": "f6a800ae9a56eb7732a89b941ba1d5346e601c3c0a9a14c8bedeff4b6dc96bf4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\runner.py": "8102f84b4714aa593f30b3e2b3636c3a213c44dfaa33d1eda677a18deaccb95a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\src\\plm\\training\\trainer.py": "0c45be0400cc8d3b6cf0497ad393f7934fbe1edeeca7cdcbf25680c91d05b196",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\runtime\\uv.lock": "51fb59faf6a17c2019d3bfc3c99b348be22586469d9fe3d4b3e0503a3e50c4e0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.configs.zip": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.helper.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.inputs.json": "13b4bccd9f532b561ff0065e699bbdc025b70c528f2292593bb0f73799034027",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.json": "23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.mean-helper.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.plan.md": "03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.recipe.json": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.script.py": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.test-receipt.json": "57acbcbf1bb8bf926bc6e1444c3cdfef65ff68fa2fd37ecd0a1770d7051cc1a4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\summary.test-stdout.txt": "2a606200af921a129531b5c49b03b70479b0cbbaba4c98bdbd7df97ed598af54",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-v1\\training.json": "668aa0932666924c38cb0f224f3ecd53168e40c074e6445dc0920b0d3942b1e3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\decision.json": "70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.json": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.py": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1729.json": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.json": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\training-result.json": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\training-result.json": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\training-result.json": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py": "b4e5b1968c0f322ba9e5451c97d45e60bafbfe85f375ef7ce4993cce14d68e7d"
+  },
+  "limitations": [
+    "Independent saved logits/IDs/metrics and CPU checkpoint-byte inspection; no neural or optimizer execution.",
+    "Finite 500-update trace and synchronization/chronology are authenticated execution receipts, not independent training replication.",
+    "New worst-member objective endpoints and diagnostic mean-BCE endpoints are different quantities and are not interchangeable.",
+    "Only W changed from the original parent; historical mean-refit checkpoint is a comparator, not this sibling's parent.",
+    "Shared independent arithmetic helpers were authenticated and used without modifying their globals; primary arithmetic was not imported.",
+    "Dense sets contain no generated EOS and do not establish serving equivalence or durable weight archival."
+  ],
+  "mean_bce_diagnostic": {
+    "final": 0.014048406854271889,
+    "initial": 0.003822767175734043,
+    "initial_replay_exact": true,
+    "used_for_updates": false
+  },
+  "parent": {
+    "aggregate": {
+      "exact_count": 112,
+      "f1": 0.9903735063269145,
+      "false_negative_count": 76,
+      "false_positive_count": 512,
+      "precision": 0.9838575265439718,
+      "query_count": 222,
+      "recall": 0.9975186802788016,
+      "serialization_compatible": 222,
+      "set_size": 130.0855855855856,
+      "strict_separation_count": 165
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 75,
+        "f1": 0.9977532345677808,
+        "false_negative_count": 0,
+        "false_positive_count": 43,
+        "precision": 0.9955625230283973,
+        "query_count": 103,
+        "recall": 1.0,
+        "serialization_compatible": 103,
+        "set_size": 114.0873786407767,
+        "strict_separation_count": 102
+      },
+      "TYPE_dual": {
+        "exact_count": 5,
+        "f1": 0.9766385544057118,
+        "false_negative_count": 71,
+        "false_positive_count": 430,
+        "precision": 0.9617566332610925,
+        "query_count": 68,
+        "recall": 0.9931878215475363,
+        "serialization_compatible": 68,
+        "set_size": 176.86764705882354,
+        "strict_separation_count": 17
+      },
+      "TYPE_single": {
+        "exact_count": 32,
+        "f1": 0.9937826185197096,
+        "false_negative_count": 5,
+        "false_positive_count": 39,
+        "precision": 0.9896858815506382,
+        "query_count": 51,
+        "recall": 0.9982818658168919,
+        "serialization_compatible": 51,
+        "set_size": 100.01960784313725,
+        "strict_separation_count": 46
+      }
+    },
+    "paired_vs_width8": {
+      "gains": 0,
+      "groups": {
+        "COLOR": {
+          "gains": 0,
+          "losses": 28
+        },
+        "TYPE_dual": {
+          "gains": 0,
+          "losses": 43
+        },
+        "TYPE_single": {
+          "gains": 0,
+          "losses": 18
+        }
+      },
+      "losses": 89
+    }
+  },
+  "plan_sha256": "03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c",
+  "script_sha256": "bbfe24e168f3f403a7871e4c0a00abddb16de234cd99ba52e69563d222c5db34",
+  "summary_sha256": "23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0",
+  "test_receipt_sha256": "7d11dd6054c938a984e0d72ee8e92f3cb46140677a133ebe645f2bdd696060be"
+}

@@ -1,0 +1,66 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-q",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py",
+      "--preflight-only"
+    ]
+  ],
+  "experiment_training_executed": false,
+  "fixtures": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+  },
+  "gpu_used": false,
+  "passed": true,
+  "skipped": 0,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-worst-boundary-runner-tests-v1\\stdout.txt",
+    "sha256": "2a606200af921a129531b5c49b03b70479b0cbbaba4c98bdbd7df97ed598af54"
+  },
+  "synthetic_cpu_model_only": true,
+  "test_count": 47,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_only_refit_v1.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6"
+  },
+  "test_source": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py",
+  "tested_mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+  "tested_recipe_sha256": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+  "tested_script_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+  "tested_test_sha256": "b4e5b1968c0f322ba9e5451c97d45e60bafbfe85f375ef7ce4993cce14d68e7d"
+}

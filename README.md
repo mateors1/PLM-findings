@@ -41,6 +41,7 @@ These are application directions, not validated product claims. The [architectur
 16. [Membership support for omitted products](papers/16-membership-scores-for-omitted-products.md) — 1,394/1,407 omitted correct-member occurrences receive positive head scores; this diagnosis does not claim a quality gain.
 17. [More coverage, fewer exact answers](papers/17-coverage-seeking-branch.md) — one extra branch raises exact candidate availability from 605 to 608 but lowers selected exact answers from 603 to 600; the fixed gate rejects it.
 18. [A frozen-feature projection refit](papers/18-frozen-feature-projection-refit.md) — dense exact answers improve from 112 to 122, but remain below the stronger 201-answer comparator; the fixed quality gate rejects the trained derivative.
+19. [Worst-boundary projection refit](papers/19-worst-boundary-projection-refit.md) — the new sibling reaches 128 exact answers, but fails the unchanged 201-answer comparator and per-group gates; targeted worst-member loss improves while ordinary mean BCE worsens.
 
 The [`evidence`](evidence/) directory preserves the 2026-09-24 learning notes, experiment plans and portable reports, figures, and the National Dex manifest from the source checkout. The evidence files are copied without editorial changes. Research papers cite those local copies; consult them for methods, exact run identities and detailed measurements. The evidence notes' links into `src/` refer to the separate [PLM source repository](https://github.com/mateors1/Plm-protocolized-language-model-pika-edition) and may not resolve here.
 
@@ -78,6 +79,13 @@ no new exact-answer availability. These are diagnostic limits, not new policies.
 The [completed composition verification](evidence/updates/2026-09-25-composition-verification/README.md)
 records 666 HTTP responses, fresh serial references, independent audit and
 separate acceptance. Earlier dated copies retain their original pending status.
+
+The [worst-boundary projection refit](evidence/updates/2026-09-25-projection-worst-boundary/README.md)
+preserves the completed seed-1729 sibling, independent audit and separate failed
+quality decision. The frozen-feature child improves dense exact answers to
+128/222 from 112 for its parent and 122 for the prior mean-BCE sibling, but the
+accepted eight-branch comparator remains at 201. Its fixed exact and group gates
+fail. The result is not a promotion, serving claim or durable weight archive.
 
 The [margin training screen](evidence/updates/2026-09-25-margin-screen/README.md)
 records an independently audited negative result and a new 25-checkpoint
