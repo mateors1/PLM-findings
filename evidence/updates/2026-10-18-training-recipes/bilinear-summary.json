@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "publication_date": "2026-10-18",
+  "kind": "curated source-derived summary; not a new experiment or full raw evidence export",
+  "source_commit": "de8338f0dbd644bda1e9746d84a36fe9fb53dc22",
+  "source_report_path": "docs/experiments/2026-09-26-bilinear-budget32000.json",
+  "campaign_version": "bilinear-budget32000-v1",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "experiment_date": "2026-09-26",
+  "status": "completed audited three-seed screen",
+  "all_three": {
+    "aggregate": {
+      "exact_count": 660,
+      "f1": 0.9999637956903659,
+      "false_negative_count": 7,
+      "false_positive_count": 1,
+      "precision": 0.9999891978309244,
+      "query_count": 666,
+      "recall": 0.9999387155396199,
+      "serialization_compatible": 666,
+      "set_size": 128.11261261261262,
+      "strict_separation_count": 665
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 309,
+        "f1": 1,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1,
+        "query_count": 309,
+        "recall": 1,
+        "serialization_compatible": 309,
+        "set_size": 113.66990291262135,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "exact_count": 198,
+        "f1": 0.9998818035773706,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "precision": 0.9999647340950769,
+        "query_count": 204,
+        "recall": 0.9997999242616998,
+        "serialization_compatible": 204,
+        "set_size": 171.55882352941177,
+        "strict_separation_count": 203
+      },
+      "TYPE_single": {
+        "exact_count": 153,
+        "f1": 1,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1,
+        "query_count": 153,
+        "recall": 1,
+        "serialization_compatible": 153,
+        "set_size": 99.3529411764706,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "decision": {
+    "evidence_accepted": true,
+    "fixed_quality_gate_passed": true,
+    "model_promoted": false,
+    "protected_test_used": false,
+    "rationale": "Exact seed-query outcomes improve from 650/666 to 660/666, with 10 gains and no losses. Every seed improves independently; no pooled compensation is used.",
+    "recorded_utc": "2026-09-26T19:16:53.197028+00:00"
+  },
+  "source_pre_audit_gate": {
+    "accepted": false,
+    "checks": {
+      "1729": true,
+      "1730": true,
+      "1731": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "per_seed": [
+    {
+      "seed": 1729,
+      "child": {
+        "aggregate": {
+          "exact_count": 218,
+          "f1": 0.9999232353409879,
+          "false_negative_count": 6,
+          "false_positive_count": 0,
+          "precision": 1,
+          "query_count": 222,
+          "recall": 0.9998472121671663,
+          "serialization_compatible": 222,
+          "set_size": 128.09459459459458,
+          "strict_separation_count": 221
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 103,
+            "recall": 1,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 64,
+            "f1": 0.9997493859661662,
+            "false_negative_count": 6,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 68,
+            "recall": 0.999501192663396,
+            "serialization_compatible": 68,
+            "set_size": 171.5,
+            "strict_separation_count": 67
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 51,
+            "recall": 1,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 28,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 59,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 19,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "checkpoint": {
+        "child_checkpoint_sha256": "8c2edf986f20df78e6d111f934ea5bde5b60a939df6ff92f4eeeb095c625bc27",
+        "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+        "updates_verified": 32000,
+        "original_tensor_count": 93,
+        "unchanged_original_tensor_count": 93
+      },
+      "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+      "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1"
+    },
+    {
+      "seed": 1730,
+      "child": {
+        "aggregate": {
+          "exact_count": 222,
+          "f1": 1,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1,
+          "query_count": 222,
+          "recall": 1,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 103,
+            "recall": 1,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 68,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 68,
+            "recall": 1,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 51,
+            "recall": 1,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 22,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 21,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "checkpoint": {
+        "child_checkpoint_sha256": "8f315c94ba21965e534654119a73a6abea9ef3797cc096f6997f7441c87e775e",
+        "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+        "updates_verified": 32000,
+        "original_tensor_count": 93,
+        "unchanged_original_tensor_count": 93
+      },
+      "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+      "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11"
+    },
+    {
+      "seed": 1731,
+      "child": {
+        "aggregate": {
+          "exact_count": 220,
+          "f1": 0.9999681517301094,
+          "false_negative_count": 1,
+          "false_positive_count": 1,
+          "precision": 0.9999675934927734,
+          "query_count": 222,
+          "recall": 0.9999689344516931,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 103,
+            "recall": 1,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 66,
+            "f1": 0.9998960247659454,
+            "false_negative_count": 1,
+            "false_positive_count": 1,
+            "precision": 0.9998942022852306,
+            "query_count": 68,
+            "recall": 0.9998985801217039,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1,
+            "query_count": 51,
+            "recall": 1,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 6,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 6,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 109,
+          "groups": {
+            "COLOR": {
+              "gains": 21,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 25,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "checkpoint": {
+        "child_checkpoint_sha256": "ceb17a1e1ac92e1dbc44656c05132b518032dec6bf1ac4b4019de5dc5dbabf74",
+        "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+        "updates_verified": 32000,
+        "original_tensor_count": 93,
+        "unchanged_original_tensor_count": 93
+      },
+      "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+      "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+    }
+  ],
+  "aggregate_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+  "aggregate_audit_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+  "decision_sha256": "4a508abaf3fac7e2e678cd5604f73636241aabcb18c876076c134468257e44af",
+  "limitations": [
+    "The same 222 development queries are reused across three seeds; 666 is not an independent sample count.",
+    "Seed 1730 is exact on this validation workload; the other two seeds retain six nonexact seed-query outcomes in total.",
+    "Adaptive validation, no protected evaluation, no oracle-parity generalization or serving-advantage claim.",
+    "Historical failed seed-1730 audit remains unchanged and is superseded only by the separately identified successful audit.",
+    "Weights remain local; checkpoint hashes do not establish backup or public availability."
+  ],
+  "preserved_failure_provenance": {
+    "amendment_path": "docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md",
+    "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "failure": "Equivalent timezone instants rejected by exact predecessor timestamp text comparison.",
+    "original_audit_path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit.json",
+    "original_audit_sha256": "85b193ad473d77ac10d84aa2e9138ba4d56efd7e9694ef52eeab4ed6e069c188",
+    "original_terminal_sha256": "2195369180305bb04f7967b5877e41006f965fd8499d411229193415662fc5ce",
+    "repair": "Versioned audit compares exact Fraction instants; original evidence unchanged.",
+    "seed": 1730,
+    "training_rerun": false
+  }
+}

@@ -2,7 +2,7 @@
 
 [Back to the overview](../README.md) · [Evidence reader guide](../docs/reader-guide.md)
 
-For a first pass, read **01 → 02 → 13**: question, results, then architecture and applications. The remaining papers examine particular methods, failures and evidence boundaries. Paper numbers identify topics, not a requirement to read everything in order.
+For the latest training synthesis, start with **14**. Papers 01–13 retain their earlier evidence cutoff. For a first pass through that historical foundation, read **01 → 02 → 13**: question, results, then architecture and applications. The remaining papers examine particular methods, failures and evidence boundaries. Paper numbers identify topics, not a requirement to read everything in order.
 
 1. [Research question and protocol](01-research-question-and-protocol.md) — what the experiment can establish.
 2. [Learning and quality results](02-learning-and-quality.md) — the measured progression and failed interventions.
@@ -18,3 +18,6 @@ For a first pass, read **01 → 02 → 13**: question, results, then architectur
 12. [FP8 inference screen](12-fp8-inference-screen.md) — eager FP8 kept similar validation quality but was much slower on the measured native path.
 13. [Decoder-only architecture and applications](13-decoder-and-applications.md) — why this reference model generates IDs sequentially, and which uses remain hypotheses.
 
+
+
+14. [Training recipes and techniques](14-training-recipes-and-techniques.md) — ranked explanations, the 660/666 bilinear result, failed alternatives, inference distinctions and reproducibility limits.

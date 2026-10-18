@@ -4,6 +4,12 @@
 
 This guide is an editorial wrapper around the archived research. It changes no experimental result, acceptance gate or archived file. Read dated status statements as a record of what was known then.
 
+## Latest training synthesis (published 2026-10-18)
+
+[Paper 14](../papers/14-training-recipes-and-techniques.md) explains the strongest supported recipes, the diagonal-to-full bilinear change, balanced supervision, budget comparisons, inference techniques and failed interventions. Its [curated evidence](../evidence/updates/2026-10-18-training-recipes/README.md) reports 627/666 at 2k, 650/666 at 8k and 660/666 at 32k residual updates. Each budget starts fresh from the same original parents, not a resumed lower-budget child. All outcomes reuse 222 development queries; protected-test accuracy remains unknown.
+
+The later dense CPU and cached-feature adapters are verified opt-in integrations of the unpromoted scorer, not the ordinary autoregressive decoder. The September size/history sections below retain their dated context. Existing archived files are untouched.
+
 ## Navigating archived links
 
 The copied notes retain paths from the source checkout. A broken relative link does not imply that every target is missing: many learning notes are public here, while the full implementation and run artifacts are not.
@@ -135,4 +141,5 @@ This public repository includes research material copied from a source working
 tree with uncommitted changes. The dated evidence inventories identify the copied
 bytes; source `HEAD` alone does not identify them. Results and status statements
 should be read with their original dates and declared acceptance gates.
+
 

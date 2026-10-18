@@ -1,0 +1,49 @@
+{
+  "kind": "selected configuration fields; not executable standalone config",
+  "source_commit": "de8338f0dbd644bda1e9746d84a36fe9fb53dc22",
+  "source_path": "configs/experiments/bilinear_budget32000_v1.json",
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "autocast": false,
+  "batching": "full-training-partition-in-split-order",
+  "data_split_seed": 1729,
+  "float32_matmul_precision": "highest",
+  "initialization": "exact-zero",
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "decay_excludes_norm_and_bias": true,
+    "eps": 1e-8,
+    "lr": 0.0003,
+    "name": "adamw",
+    "weight_decay": 0
+  },
+  "parameter_dtype": "float32",
+  "parent_training_steps": 2000,
+  "product_count": 1025,
+  "residual_shape": [
+    2,
+    256,
+    256
+  ],
+  "residual_updates": 32000,
+  "scheduler": null,
+  "gradient_clipping": null,
+  "seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+  "threshold": 0,
+  "train_query_count": 1637,
+  "validation_query_count": 222,
+  "validation_batch_size": 8,
+  "validation_update_points": [
+    0,
+    32000
+  ],
+  "standard_serving_supported": false
+}

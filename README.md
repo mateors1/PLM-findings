@@ -2,7 +2,9 @@
 
 **Can a small model answer a structured relation query with the complete, correct set of product IDs?** PLM (Protocolized Language Model) / Pika Edition studies that question using 1,025 Pokémon identifiers as an opaque product catalog. Given a subject and `TYPE` or `COLOR`, the task is to return every other product sharing at least one value of that attribute.
 
-The **~6.69M-parameter parent model**, with candidate generation and learned set composition, reaches **569/666 exact validation answers (85.44%)** and **96.69% macro F1**. Those are **222 queries evaluated under three training seeds**, not 666 independent queries. The [accepted application verification](evidence/updates/2026-09-25-composition-verification/audit/acceptance.json) preserves this result under its revised contract.
+**Latest published synthesis (2026-10-18):** the separate **~6.82M-parameter frozen-parent bilinear scorer** reaches **660/666 exact development answers (99.10%)** after 32,000 residual updates per parent seed, versus 650/666 at 8,000. These are **the same 222 queries evaluated under three seeds**, not 666 independent queries. It remains an **unpromoted candidate**, with a separately verified opt-in CPU/cached adapter that bypasses the transformer decoder. [Training techniques, ranked and explained](papers/14-training-recipes-and-techniques.md) · [curated evidence and limits](evidence/updates/2026-10-18-training-recipes/README.md).
+
+The **~6.69M parent with autoregressive candidate generation and learned set composition** retains its distinct **569/666 exact answers (85.44%)**, **96.69% macro F1** result under the [accepted application verification](evidence/updates/2026-09-25-composition-verification/audit/acceptance.json). Comparing 660 with 569 changes the predictor as well as training; it is not an isolated training ablation.
 
 **The research has not established oracle parity or a quality-matched serving advantage.** Exact graph lookup already defines the correct answers for this task. Personalized recommendation, cold-start products and edge-device deployment have not been validated here. This is a dated research snapshot, with results and failed experiments to inspect; it is not a runnable model release.
 
@@ -12,7 +14,7 @@ The **~6.69M-parameter parent model**, with candidate generation and learned set
 2. [Learning and quality](papers/02-learning-and-quality.md): the measured progression, including interventions that failed.
 3. [Architecture and possible applications](papers/13-decoder-and-applications.md): why decoder-only, where it might fit, and which claims remain hypotheses.
 
-For deeper reading, see the [full 13-paper catalog](papers/README.md) or the [reader guide to model details and archived evidence](docs/reader-guide.md).
+For the latest methods and measured outcomes, read [14: training recipes and techniques](papers/14-training-recipes-and-techniques.md). For deeper reading, see the [full 14-paper catalog](papers/README.md) or the [reader guide to model details and archived evidence](docs/reader-guide.md).
 
 ## A recorded example
 
@@ -55,7 +57,7 @@ This example also exposes a limitation: ARCTIBAX belongs in the exact answer des
 
 ## What is available
 
-- **Public here:** 13 synthesis papers; copied research notes, plans, reports and figures; a pinned [dataset manifest](evidence/pokemon_v1_f1541479_20260924.json); selected audit scripts and tests; and dated checksum inventories.
+- **Public here:** 14 synthesis papers; copied research notes, plans, reports and figures; a pinned [dataset manifest](evidence/pokemon_v1_f1541479_20260924.json); selected audit scripts and tests; and dated checksum inventories.
 - **Not included here:** model weights/checkpoints, the complete training and serving source tree, raw SQLite databases, protected-test outputs, or the full raw responses behind the composition verification.
 - **Reproduction boundary:** the separate source repository referenced by archival links is not publicly accessible. The copied methods may depend on its layout and locally held artifacts. This repository supports reading and auditing the published evidence, but is not a standalone end-to-end replication bundle.
 
@@ -67,7 +69,7 @@ The main quality comparisons reuse **222 validation queries** under each of thre
 
 The composition result is **569/666 exact sets** with **96.69% macro F1**, now preserved by the accepted shape-aware application verification. The first application campaign failed exact HTTP score parity because FP32 scores changed with batch shape; that failed gate remains failed. The revised contract uses exact same-shape score references and unchanged cross-shape decisions, with explicit mixed fresh/reused evidence. No matched-quality concurrent throughput or energy advantage is established.
 
-The **~6.82M bilinear derivative** is a separate research variant with a frozen parent and 131,072 added parameters. Its validation screen does not replace the composition application's 569/666 result or establish serving promotion. See the [parameter breakdown and model identities](docs/reader-guide.md#model-size-and-retained-techniques).
+The **~6.82M bilinear derivative** is a separate research variant with a frozen parent and 131,072 added parameters. Its 660/666 validation result and opt-in CPU integration do not replace the composition application's 569/666 result or establish model promotion. The 191 protected queries remain unused, and six seed-query failures across five distinct queries remain. See the [parameter breakdown and model identities](docs/reader-guide.md#model-size-and-retained-techniques).
 
 Earlier archival notes still say composition acceptance was pending. That was their status when copied. The later [completed verification](evidence/updates/2026-09-25-composition-verification/README.md) records acceptance of the revised contract, while preserving the original failure. The [snapshot guide](docs/reader-guide.md#snapshot-history-and-reuse) keeps these stages separate.
 
@@ -81,3 +83,4 @@ The intended rationale is limited, referential use of names to identify the benc
 
 To support the maintainer, [sponsor @mateors1](https://github.com/sponsors/mateors1).
 The repository's GitHub Sponsor button is configured in [`.github/FUNDING.yml`](.github/FUNDING.yml).
+
