@@ -1,0 +1,138 @@
+{
+  "base_packet": {
+    "frozen_file_count": 18,
+    "path": "docs/publication-queue/2026-09-26-16id-fp32-vram-series-v1.json",
+    "sha256": "ec8817323988b7738cbcf1f89a24cc23d26f7c2d9f2cd945653ee69ab607a4c6"
+  },
+  "exact_copies": [
+    {
+      "bytes": 2290,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-vram-saturation-amendment.md",
+      "sha256": "c6c11b8fa5b52c0ab18bf7f46b71bf12e87b3163417dc2392e64acee2e6b2878",
+      "source_path": "docs/experiments/2026-09-26-16id-vram-saturation-amendment.md",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-vram-saturation-amendment.md",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 2880,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-vram-stopped-report.md",
+      "sha256": "d933c470ac1112b25e2f2ea4d8ccfda8fb619362e2107dca1a03ea05feebddc1",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-vram-stopped-report.md",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-vram-stopped-report.md",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 3169,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-vram-audit.json",
+      "sha256": "01ccda6b622f773424a76c048d92c285564dea8d9eb21b1d58a27b96800cef3e",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-vram-audit.json",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-vram-audit.json",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 1526,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-vram-decision.json",
+      "sha256": "37347972c8641ed4d118b6f7a119b93cec5299c72b6f7eabdc441f99fca9e55d",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-vram-decision.json",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-vram-decision.json",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 9165,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-servings-throughput.svg",
+      "sha256": "d73dfe15ac3b9d283a3a9c213e2c2c1f05221405824ef121aafdc96d30b87267",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-servings-throughput.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-servings-throughput.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 9021,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-tokens-throughput.svg",
+      "sha256": "fd854107b63146e15baf578cd3dff196dd8fa3b526851496085d1397823361dd",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-tokens-throughput.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-tokens-throughput.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 8304,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-servings-per-watt.svg",
+      "sha256": "51f125aa2e7cfa0255f6ab88a33ae1153d34ae660a85f6c26264cf4aa7cc519e",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-servings-per-watt.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-servings-per-watt.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 8596,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-tokens-per-watt.svg",
+      "sha256": "58dd5651714eb7adb9942eed18f2740766562c42d0d774a7fdd921f76307a01a",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-tokens-per-watt.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-tokens-per-watt.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 9247,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-memory-power.svg",
+      "sha256": "ba49079f8f965f09e4a40a024e08d2c20c8f90489dc8932a047f73dfed3b4837",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-memory-power.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-memory-power.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 8525,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/docs/experiments/2026-09-26-16id-fp32-board-power.svg",
+      "sha256": "25191a747a085d6f1567031f3944907fcda27604be297d45700eddc5198a3183",
+      "source_path": "docs/experiments/2026-09-26-16id-fp32-board-power.svg",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\docs\\experiments\\2026-09-26-16id-fp32-board-power.svg",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 7552,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/audit_fp32_vram_series.py",
+      "sha256": "b89f913a3466bc7ddc711e2930c8369acba3eebed9ef3f307922193937cb1d70",
+      "source_path": "runs/learning/16id-serving-saturation-20260926/audit_fp32_vram_series.py",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\runs\\learning\\16id-serving-saturation-20260926\\audit_fp32_vram_series.py",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 25005,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/plot_fp32_vram_series.py",
+      "sha256": "f41b26480e082c57224604885bed12553350df9a01f70290c1c89fb9ecf864f6",
+      "source_path": "runs/learning/16id-serving-saturation-20260926/plot_fp32_vram_series.py",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\runs\\learning\\16id-serving-saturation-20260926\\plot_fp32_vram_series.py",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 6586,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.csv",
+      "sha256": "10d76ece1d2a980fe6bddc3dc6628203fea5248708568873429f0ffe7ba263c7",
+      "source_path": "runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.csv",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\runs\\learning\\16id-serving-saturation-20260926\\fp32-16id-vram-series.csv",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 30128,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.json",
+      "sha256": "2989ea02f4341e00beea06ebfbbc961fcfd29b1791571ce7233158fc5f5ac2ec",
+      "source_path": "runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.json",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\runs\\learning\\16id-serving-saturation-20260926\\fp32-16id-vram-series.json",
+      "transformation": "none: exact byte copy"
+    },
+    {
+      "bytes": 1933,
+      "destination_path": "evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/fp32-user-stop-amendment.json",
+      "sha256": "3d5a6c3e0d4f1a29f94b1f1a92f0d3d77eee02d70d94252135fa94f8adb50288",
+      "source_path": "runs/learning/16id-serving-saturation-20260926/fp32-user-stop-amendment.json",
+      "source_snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\publication-handoffs\\2026-09-26-16id-fp32-vram-series-v1\\source\\runs\\learning\\16id-serving-saturation-20260926\\fp32-user-stop-amendment.json",
+      "transformation": "none: exact byte copy"
+    }
+  ],
+  "independent_hardware_execution": false,
+  "markdown_transformations": [],
+  "omitted_source_paths": [
+    "docs/benchmarks.md",
+    "research_log.md",
+    "devlog.md"
+  ],
+  "raw_dependencies_published": false,
+  "schema_version": 1
+}

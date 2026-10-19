@@ -1,0 +1,873 @@
+{
+  "added_count": 2,
+  "decision_sha256": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+  "inventory_kind": "additive-bilinear-two-seed-derivatives-and-final-byte-verification-v1",
+  "limitations": [
+    "Fresh byte hashes cover33final files; older payloads/configs not all revalidated.",
+    "Each new94-state derivative has a separate independently audited seed lineage.",
+    "Reused1729 creates no new checkpoint; periodic checkpoints remain outside scope.",
+    "Local hashes establish identity, not durable remote checkpoint availability."
+  ],
+  "new_artifacts": [
+    {
+      "audit_sha256": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+      "checkpoint_path": "runs/learning/bilinear-seed-replication-v1/seed-1730/checkpoint-final.pt",
+      "checkpoint_sha256": "735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4",
+      "durable_weight_archive": null,
+      "execution_receipt_sha256": "679cc9ee93529b8ecaf69c1da357ddf4db61cca72ef12502de876e6b682f6e9f",
+      "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+      "parent_training_steps": 2000,
+      "promoted": false,
+      "quality_gate_passed": true,
+      "residual_updates": 2000,
+      "seed": 1730,
+      "sidecar": {
+        "checkpoint_hash": "735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4",
+        "config": {
+          "bilinear_residual_architecture": {
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "dimensions": [
+              "TYPE",
+              "COLOR"
+            ],
+            "dtype": "float32",
+            "id": "plm-frozen-symmetric-bilinear-residual-v1",
+            "initialization": "exact-zero",
+            "parameter": "symmetric_bilinear_residual",
+            "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+            "shape": [
+              2,
+              256,
+              256
+            ],
+            "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+          },
+          "bilinear_residual_recipe": {
+            "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+            "autocast": false,
+            "batching": "full-training-partition-in-split-order",
+            "cuda_matmul_allow_tf32": false,
+            "cudnn_allow_tf32": true,
+            "data_split_seed": 1729,
+            "deterministic_algorithms": false,
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "entity_base": 1024,
+            "evaluator": "plm-bilinear-seed-replication-v1",
+            "experiment": "bilinear-seed-replication-v1",
+            "float32_matmul_precision": "highest",
+            "fresh_seeds": [
+              1730,
+              1731
+            ],
+            "gradient_accumulation": 1,
+            "gradient_clipping": null,
+            "historical_seed": 1729,
+            "initial_training_replay": "exact matching-parent versus actual zero-A full-training logits and loss",
+            "initialization": "exact-zero",
+            "loss_coefficient": 1.0,
+            "objective": "plm-bilinear-residual-balanced-bce-v1",
+            "optimizer": {
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "decay_excludes_norm_and_bias": true,
+              "eps": 1e-08,
+              "lr": 0.0003,
+              "name": "adamw",
+              "weight_decay": 0.0
+            },
+            "parameter_dtype": "float32",
+            "parent_training_steps": 2000,
+            "product_count": 1025,
+            "residual_shape": [
+              2,
+              256,
+              256
+            ],
+            "residual_updates": 2000,
+            "scheduler": null,
+            "schema_version": 1,
+            "seed_contracts": {
+              "1730": {
+                "floors": {
+                  "exact_count": 205,
+                  "f1": 0.9906969338820507,
+                  "groups": {
+                    "COLOR": 103,
+                    "TYPE_dual": 57,
+                    "TYPE_single": 45
+                  }
+                },
+                "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+                "parent_config_sha256": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+                "width8_sha256": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a"
+              },
+              "1731": {
+                "floors": {
+                  "exact_count": 197,
+                  "f1": 0.9798558083418223,
+                  "groups": {
+                    "COLOR": 103,
+                    "TYPE_dual": 50,
+                    "TYPE_single": 44
+                  }
+                },
+                "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+                "parent_config_sha256": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+                "width8_sha256": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799"
+              }
+            },
+            "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+            "serialization_max_products": 506,
+            "serialization_min_products": 1,
+            "threshold": 0.0,
+            "train_query_count": 1637,
+            "trainable_parameter": "symmetric_bilinear_residual",
+            "validation_batch_size": 8,
+            "validation_query_count": 222
+          },
+          "campaign_version": "bilinear-seed-replication-v1",
+          "data_split_seed": 1729,
+          "implementation_identity": {
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+          },
+          "inherited_parent_config": {
+            "baseline": {
+              "complex": {
+                "batch_size": 32,
+                "dimension": 32,
+                "epochs": 100,
+                "learning_rate": 0.01,
+                "negative_samples": 1,
+                "regularization": 0.0
+              }
+            },
+            "data": {
+              "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+              "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+              "held_out_query_fraction": null,
+              "name": "pokemon_v1_f1541479_20260924",
+              "protocol_version": "pokemon-v1",
+              "split_seed": 1729,
+              "test_query_fraction": 0.1,
+              "tokenizer_version": "pokemon-v1",
+              "validation_query_fraction": 0.1
+            },
+            "deterministic": false,
+            "eval": {
+              "constrained_decoding": true,
+              "device": "auto",
+              "filtered": false,
+              "first_target_guidance_alpha": 0.0,
+              "generation_batch_size": 1,
+              "hits_at": [
+                1,
+                3,
+                10
+              ],
+              "max_new_tokens": 507,
+              "metrics": [
+                "mrr",
+                "hits"
+              ],
+              "name": "ranking",
+              "prevent_repeated_targets": false,
+              "use_kv_cache": false
+            },
+            "model": {
+              "activation": "swiglu",
+              "attention": {
+                "backend": "sdpa",
+                "causal": true,
+                "dropout": 0.0,
+                "logit_soft_cap": null,
+                "qk_norm": true,
+                "sliding_window": null
+              },
+              "continuation_set_loss_weight": 0.0,
+              "dim": 256,
+              "dtype": "bf16",
+              "embed_dropout": 0.0,
+              "ffn_multiple": 2.6667,
+              "ffn_multiple_of": 256,
+              "first_target_loss_weight": 1.0,
+              "gradient_checkpointing": false,
+              "head_dim": null,
+              "init_std": 0.02,
+              "max_seq_len": 512,
+              "moe": {
+                "aux_loss_weight": 0.01,
+                "enabled": false,
+                "experts_per_token": 2,
+                "num_experts": 8,
+                "shared_experts": 0
+              },
+              "n_heads": 8,
+              "n_kv_heads": 2,
+              "n_layers": 8,
+              "name": "tiny_decoder",
+              "norm": "rmsnorm",
+              "norm_eps": 1e-05,
+              "prompt_set_loss_weight": 1.0,
+              "resid_dropout": 0.0,
+              "rope": {
+                "original_max_seq_len": null,
+                "scaling_factor": 1.0,
+                "scaling_type": "none",
+                "theta": 10000.0
+              },
+              "symmetric_relation_loss_weight": 1.0,
+              "tie_embeddings": true,
+              "use_mup": false,
+              "vocab_size": 2049,
+              "z_loss_weight": 0.0
+            },
+            "paths": {
+              "data_root": "data",
+              "run_root": "runs"
+            },
+            "run_name": "national_dex_continuation_control_s1730_v1",
+            "seed": 1730,
+            "train": {
+              "batch_size": 32,
+              "checkpoint_every": 500,
+              "compile": false,
+              "ema_decay": null,
+              "eval_every": 200,
+              "grad_accum_steps": 1,
+              "grad_clip_norm": 1.0,
+              "max_steps": 2000,
+              "name": "local_cuda",
+              "num_workers": 0,
+              "optimizer": {
+                "betas": [
+                  0.9,
+                  0.95
+                ],
+                "decay_excludes_norm_and_bias": true,
+                "eps": 1e-08,
+                "lr": 0.0003,
+                "name": "adamw_fused",
+                "weight_decay": 0.1
+              },
+              "pin_memory": false,
+              "precision": "bf16",
+              "scheduler": {
+                "min_lr_ratio": 0.1,
+                "name": "cosine",
+                "warmup_steps": 200
+              },
+              "seq_len": 512
+            }
+          },
+          "seed": 1730
+        },
+        "corpus_identity": {
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "experiment_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "recipe_sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+            "torch": "2.11.0+cu128"
+          },
+          "evaluator_version": "plm-bilinear-seed-replication-v1",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "3c9f824d843ce08f7860740b9776fccc5b207cbd8f57cc41ebc0b6cc317f29ac",
+          "seeds": [
+            1730
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "global_step": 2000,
+        "schema_version": 1,
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "training_metadata": {
+          "architecture": {
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "dimensions": [
+              "TYPE",
+              "COLOR"
+            ],
+            "dtype": "float32",
+            "id": "plm-frozen-symmetric-bilinear-residual-v1",
+            "initialization": "exact-zero",
+            "parameter": "symmetric_bilinear_residual",
+            "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+            "shape": [
+              2,
+              256,
+              256
+            ],
+            "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+          },
+          "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+          "campaign_version": "bilinear-seed-replication-v1",
+          "data_split_seed": 1729,
+          "evaluator": "plm-bilinear-seed-replication-v1",
+          "final_post_update_loss": 3.4819207940017805e-05,
+          "implementation_identity": {
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+          },
+          "initial_pre_update_loss": 0.003967047668993473,
+          "initial_state_sha256": "5bb9d2b5685c77e33c7d7ffcdc785e460648e5d22860fcdcbb66736a82af0949",
+          "model_config": {
+            "activation": "swiglu",
+            "attention": {
+              "backend": "sdpa",
+              "causal": true,
+              "dropout": 0.0,
+              "logit_soft_cap": null,
+              "qk_norm": true,
+              "sliding_window": null
+            },
+            "continuation_set_loss_weight": 0.0,
+            "dim": 256,
+            "dtype": "bf16",
+            "embed_dropout": 0.0,
+            "ffn_multiple": 2.6667,
+            "ffn_multiple_of": 256,
+            "first_target_loss_weight": 1.0,
+            "gradient_checkpointing": false,
+            "head_dim": null,
+            "init_std": 0.02,
+            "max_seq_len": 512,
+            "moe": {
+              "aux_loss_weight": 0.01,
+              "enabled": false,
+              "experts_per_token": 2,
+              "num_experts": 8,
+              "shared_experts": 0
+            },
+            "n_heads": 8,
+            "n_kv_heads": 2,
+            "n_layers": 8,
+            "name": "tiny_decoder",
+            "norm": "rmsnorm",
+            "norm_eps": 1e-05,
+            "prompt_set_loss_weight": 1.0,
+            "resid_dropout": 0.0,
+            "rope": {
+              "original_max_seq_len": null,
+              "scaling_factor": 1.0,
+              "scaling_type": "none",
+              "theta": 10000.0
+            },
+            "symmetric_relation_loss_weight": 1.0,
+            "tie_embeddings": true,
+            "use_mup": false,
+            "vocab_size": 2049,
+            "z_loss_weight": 0.0
+          },
+          "model_config_scope": "inherited archived base only; residual architecture is separate",
+          "objective": "plm-bilinear-residual-balanced-bce-v1",
+          "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+          "parent_state_sha256": "2fe98065214409bacffb71a9c78b87fe43763cd64d4107aa3487b66c765c602d",
+          "parent_training_steps": 2000,
+          "recipe_sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+          "record_count": 1637,
+          "residual_updates": 2000,
+          "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+          "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+          "seed": 1730,
+          "standard_serving_supported": false,
+          "train_query_order_sha256": "7ef5ca0d3bb2440f4f3a4596d40fba65f25fd0ed423aaa32a4f119512938653e",
+          "trainable_parameters": [
+            "symmetric_bilinear_residual"
+          ]
+        }
+      },
+      "sidecar_sha256": "a334ea8626acdbfe1d740e00e313ee0134626875ac27f1e437801dba951088f3",
+      "summary_sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1"
+    },
+    {
+      "audit_sha256": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+      "checkpoint_path": "runs/learning/bilinear-seed-replication-v1/seed-1731/checkpoint-final.pt",
+      "checkpoint_sha256": "ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2",
+      "durable_weight_archive": null,
+      "execution_receipt_sha256": "c53e8ec9cff35b62958795fe40864e4e5809fe3491a254631d69be09224970d4",
+      "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+      "parent_training_steps": 2000,
+      "promoted": false,
+      "quality_gate_passed": true,
+      "residual_updates": 2000,
+      "seed": 1731,
+      "sidecar": {
+        "checkpoint_hash": "ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2",
+        "config": {
+          "bilinear_residual_architecture": {
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "dimensions": [
+              "TYPE",
+              "COLOR"
+            ],
+            "dtype": "float32",
+            "id": "plm-frozen-symmetric-bilinear-residual-v1",
+            "initialization": "exact-zero",
+            "parameter": "symmetric_bilinear_residual",
+            "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+            "shape": [
+              2,
+              256,
+              256
+            ],
+            "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+          },
+          "bilinear_residual_recipe": {
+            "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+            "autocast": false,
+            "batching": "full-training-partition-in-split-order",
+            "cuda_matmul_allow_tf32": false,
+            "cudnn_allow_tf32": true,
+            "data_split_seed": 1729,
+            "deterministic_algorithms": false,
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "entity_base": 1024,
+            "evaluator": "plm-bilinear-seed-replication-v1",
+            "experiment": "bilinear-seed-replication-v1",
+            "float32_matmul_precision": "highest",
+            "fresh_seeds": [
+              1730,
+              1731
+            ],
+            "gradient_accumulation": 1,
+            "gradient_clipping": null,
+            "historical_seed": 1729,
+            "initial_training_replay": "exact matching-parent versus actual zero-A full-training logits and loss",
+            "initialization": "exact-zero",
+            "loss_coefficient": 1.0,
+            "objective": "plm-bilinear-residual-balanced-bce-v1",
+            "optimizer": {
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "decay_excludes_norm_and_bias": true,
+              "eps": 1e-08,
+              "lr": 0.0003,
+              "name": "adamw",
+              "weight_decay": 0.0
+            },
+            "parameter_dtype": "float32",
+            "parent_training_steps": 2000,
+            "product_count": 1025,
+            "residual_shape": [
+              2,
+              256,
+              256
+            ],
+            "residual_updates": 2000,
+            "scheduler": null,
+            "schema_version": 1,
+            "seed_contracts": {
+              "1730": {
+                "floors": {
+                  "exact_count": 205,
+                  "f1": 0.9906969338820507,
+                  "groups": {
+                    "COLOR": 103,
+                    "TYPE_dual": 57,
+                    "TYPE_single": 45
+                  }
+                },
+                "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+                "parent_config_sha256": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+                "width8_sha256": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a"
+              },
+              "1731": {
+                "floors": {
+                  "exact_count": 197,
+                  "f1": 0.9798558083418223,
+                  "groups": {
+                    "COLOR": 103,
+                    "TYPE_dual": 50,
+                    "TYPE_single": 44
+                  }
+                },
+                "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+                "parent_config_sha256": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+                "width8_sha256": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799"
+              }
+            },
+            "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+            "serialization_max_products": 506,
+            "serialization_min_products": 1,
+            "threshold": 0.0,
+            "train_query_count": 1637,
+            "trainable_parameter": "symmetric_bilinear_residual",
+            "validation_batch_size": 8,
+            "validation_query_count": 222
+          },
+          "campaign_version": "bilinear-seed-replication-v1",
+          "data_split_seed": 1729,
+          "implementation_identity": {
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+          },
+          "inherited_parent_config": {
+            "baseline": {
+              "complex": {
+                "batch_size": 32,
+                "dimension": 32,
+                "epochs": 100,
+                "learning_rate": 0.01,
+                "negative_samples": 1,
+                "regularization": 0.0
+              }
+            },
+            "data": {
+              "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+              "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+              "held_out_query_fraction": null,
+              "name": "pokemon_v1_f1541479_20260924",
+              "protocol_version": "pokemon-v1",
+              "split_seed": 1729,
+              "test_query_fraction": 0.1,
+              "tokenizer_version": "pokemon-v1",
+              "validation_query_fraction": 0.1
+            },
+            "deterministic": false,
+            "eval": {
+              "constrained_decoding": true,
+              "device": "auto",
+              "filtered": false,
+              "first_target_guidance_alpha": 0.0,
+              "generation_batch_size": 1,
+              "hits_at": [
+                1,
+                3,
+                10
+              ],
+              "max_new_tokens": 507,
+              "metrics": [
+                "mrr",
+                "hits"
+              ],
+              "name": "ranking",
+              "prevent_repeated_targets": false,
+              "use_kv_cache": false
+            },
+            "model": {
+              "activation": "swiglu",
+              "attention": {
+                "backend": "sdpa",
+                "causal": true,
+                "dropout": 0.0,
+                "logit_soft_cap": null,
+                "qk_norm": true,
+                "sliding_window": null
+              },
+              "continuation_set_loss_weight": 0.0,
+              "dim": 256,
+              "dtype": "bf16",
+              "embed_dropout": 0.0,
+              "ffn_multiple": 2.6667,
+              "ffn_multiple_of": 256,
+              "first_target_loss_weight": 1.0,
+              "gradient_checkpointing": false,
+              "head_dim": null,
+              "init_std": 0.02,
+              "max_seq_len": 512,
+              "moe": {
+                "aux_loss_weight": 0.01,
+                "enabled": false,
+                "experts_per_token": 2,
+                "num_experts": 8,
+                "shared_experts": 0
+              },
+              "n_heads": 8,
+              "n_kv_heads": 2,
+              "n_layers": 8,
+              "name": "tiny_decoder",
+              "norm": "rmsnorm",
+              "norm_eps": 1e-05,
+              "prompt_set_loss_weight": 1.0,
+              "resid_dropout": 0.0,
+              "rope": {
+                "original_max_seq_len": null,
+                "scaling_factor": 1.0,
+                "scaling_type": "none",
+                "theta": 10000.0
+              },
+              "symmetric_relation_loss_weight": 1.0,
+              "tie_embeddings": true,
+              "use_mup": false,
+              "vocab_size": 2049,
+              "z_loss_weight": 0.0
+            },
+            "paths": {
+              "data_root": "data",
+              "run_root": "runs"
+            },
+            "run_name": "national_dex_continuation_control_s1731_v1",
+            "seed": 1731,
+            "train": {
+              "batch_size": 32,
+              "checkpoint_every": 500,
+              "compile": false,
+              "ema_decay": null,
+              "eval_every": 200,
+              "grad_accum_steps": 1,
+              "grad_clip_norm": 1.0,
+              "max_steps": 2000,
+              "name": "local_cuda",
+              "num_workers": 0,
+              "optimizer": {
+                "betas": [
+                  0.9,
+                  0.95
+                ],
+                "decay_excludes_norm_and_bias": true,
+                "eps": 1e-08,
+                "lr": 0.0003,
+                "name": "adamw_fused",
+                "weight_decay": 0.1
+              },
+              "pin_memory": false,
+              "precision": "bf16",
+              "scheduler": {
+                "min_lr_ratio": 0.1,
+                "name": "cosine",
+                "warmup_steps": 200
+              },
+              "seq_len": 512
+            }
+          },
+          "seed": 1731
+        },
+        "corpus_identity": {
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "experiment_identity": {
+          "checkpoint_hash": null,
+          "environment": {
+            "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "cuda": "12.8",
+            "gpu": "NVIDIA GeForce RTX 5070 Ti",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "platform": "Windows-11-10.0.26200-SP0",
+            "python": "3.12.13",
+            "recipe_sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+            "torch": "2.11.0+cu128"
+          },
+          "evaluator_version": "plm-bilinear-seed-replication-v1",
+          "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+          "protocol_version": "pokemon-v1",
+          "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+          "repetitions": 1,
+          "resolved_config_hash": "f8fc07630309f532ff692a8b23d79860220ee9184ecf5305039bc8b9cd0e9e76",
+          "seeds": [
+            1731
+          ],
+          "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+          "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+          "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+        },
+        "global_step": 2000,
+        "schema_version": 1,
+        "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+        "training_metadata": {
+          "architecture": {
+            "dimension_token_ids": [
+              32,
+              33
+            ],
+            "dimensions": [
+              "TYPE",
+              "COLOR"
+            ],
+            "dtype": "float32",
+            "id": "plm-frozen-symmetric-bilinear-residual-v1",
+            "initialization": "exact-zero",
+            "parameter": "symmetric_bilinear_residual",
+            "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+            "shape": [
+              2,
+              256,
+              256
+            ],
+            "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+          },
+          "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+          "campaign_version": "bilinear-seed-replication-v1",
+          "data_split_seed": 1729,
+          "evaluator": "plm-bilinear-seed-replication-v1",
+          "final_post_update_loss": 4.3502172047737986e-05,
+          "implementation_identity": {
+            "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+            "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+            "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+            "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+            "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+            "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+          },
+          "initial_pre_update_loss": 0.004869009833782911,
+          "initial_state_sha256": "f4042c5a29fc5629cef097d340c8f6d8d95a5f86d5661da1bd2b003d36d6fd9d",
+          "model_config": {
+            "activation": "swiglu",
+            "attention": {
+              "backend": "sdpa",
+              "causal": true,
+              "dropout": 0.0,
+              "logit_soft_cap": null,
+              "qk_norm": true,
+              "sliding_window": null
+            },
+            "continuation_set_loss_weight": 0.0,
+            "dim": 256,
+            "dtype": "bf16",
+            "embed_dropout": 0.0,
+            "ffn_multiple": 2.6667,
+            "ffn_multiple_of": 256,
+            "first_target_loss_weight": 1.0,
+            "gradient_checkpointing": false,
+            "head_dim": null,
+            "init_std": 0.02,
+            "max_seq_len": 512,
+            "moe": {
+              "aux_loss_weight": 0.01,
+              "enabled": false,
+              "experts_per_token": 2,
+              "num_experts": 8,
+              "shared_experts": 0
+            },
+            "n_heads": 8,
+            "n_kv_heads": 2,
+            "n_layers": 8,
+            "name": "tiny_decoder",
+            "norm": "rmsnorm",
+            "norm_eps": 1e-05,
+            "prompt_set_loss_weight": 1.0,
+            "resid_dropout": 0.0,
+            "rope": {
+              "original_max_seq_len": null,
+              "scaling_factor": 1.0,
+              "scaling_type": "none",
+              "theta": 10000.0
+            },
+            "symmetric_relation_loss_weight": 1.0,
+            "tie_embeddings": true,
+            "use_mup": false,
+            "vocab_size": 2049,
+            "z_loss_weight": 0.0
+          },
+          "model_config_scope": "inherited archived base only; residual architecture is separate",
+          "objective": "plm-bilinear-residual-balanced-bce-v1",
+          "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+          "parent_state_sha256": "c3541732931a0180fc3db5b00f1224f330112df36cce4159207352b188b1ec6b",
+          "parent_training_steps": 2000,
+          "recipe_sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+          "record_count": 1637,
+          "residual_updates": 2000,
+          "runner_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+          "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+          "seed": 1731,
+          "standard_serving_supported": false,
+          "train_query_order_sha256": "7ef5ca0d3bb2440f4f3a4596d40fba65f25fd0ed423aaa32a4f119512938653e",
+          "trainable_parameters": [
+            "symmetric_bilinear_residual"
+          ]
+        }
+      },
+      "sidecar_sha256": "18d56a74587375d8eca76728f69f7b553c51ee450d518a5ab712299ae7b431a9",
+      "summary_sha256": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c"
+    }
+  ],
+  "observed_at_utc": "2026-09-26T00:50:31.137492+00:00",
+  "prior_inventory_path": "docs/experiments/2026-09-25-bilinear-budget2000-model-version-inventory.json",
+  "prior_inventory_sha256": "6fdfd6aa9780152f4c268c650b82e0f7453313db606dc068fd0718489c740748",
+  "prior_registered_count": 31,
+  "registered_final_count": 33,
+  "schema_version": 1,
+  "script_sha256": "55434e43174127773750fe3974c65e5f7b143da6a9d693904f67589bebbe6b93",
+  "verified_final_checkpoint_bytes": {
+    "runs/learning/bilinear-budget2000-v1/checkpoint-final.pt": "8d9ddadc6d63f7ab8f767fb484193dbdfdf1b9fb369fad1dab38fef8bd028c2c",
+    "runs/learning/bilinear-residual-refit-v1/checkpoint-final.pt": "1f6e9a593ac5c5c83f0d003f273adc02213845ab94f7d5118b1b55bf5bab43d9",
+    "runs/learning/bilinear-seed-replication-v1/seed-1730/checkpoint-final.pt": "735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4",
+    "runs/learning/bilinear-seed-replication-v1/seed-1731/checkpoint-final.pt": "ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2",
+    "runs/learning/projection-only-refit-v1/checkpoint-final.pt": "84a3ba02ab5f43e9073f1f8b8c7afc85ad7a5363e8cb180e1424a77e6a44ab87",
+    "runs/learning/projection-worst-boundary-v1/checkpoint-final.pt": "0abfbef2af5e12bcdaf21292a3b62a5a047fcdb7e6e77a8be5f5a0bb6fc4323b",
+    "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+    "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+    "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "runs/national_dex_continuation_order_w8_s1729_v1/checkpoint-final.pt": "f0d85369e1199de2713d10b6d0430c6cd6e50a0c9c5a0d819c9827371bf7adef",
+    "runs/national_dex_continuation_order_w8_s1730_v1/checkpoint-final.pt": "4dab5ac1417cfacbf792881e0e7935ba085341e36e1214a0628dddf130c238e4",
+    "runs/national_dex_continuation_order_w8_s1731_v1/checkpoint-final.pt": "86896abbbc89cb49ea49d421a43873636ae0b664be4b6dbc7a4712dbf5954378",
+    "runs/national_dex_continuation_set_s1729_v1/checkpoint-final.pt": "c26a0699b6d5799c9a799c06306f00de38b4e418569a0f5df787f313d1af3f48",
+    "runs/national_dex_continuation_set_s1730_v1/checkpoint-final.pt": "da06667c3f8ee6cef19af5a6df581b0ea1aecf01732e046ed7ff52a9a5dc444f",
+    "runs/national_dex_continuation_set_s1731_v1/checkpoint-final.pt": "f79391b82f4d68e9ca5c44b392d860e36c2d482f1914fb167b97c805effcba32",
+    "runs/national_dex_dense_s1729_v1/checkpoint-final.pt": "5ab8e2c19d8f8275366509812c0e882ceb65298dcb024f10500a8e17858986dc",
+    "runs/national_dex_dense_s1730_v1/checkpoint-final.pt": "2bab280cbd12c3638349c49ff8d41e66cfd16b9a1b3312033cd6d47d541a0940",
+    "runs/national_dex_dense_s1731_v1/checkpoint-final.pt": "941c6592847919a4abb1e7a73a1d20af28438e2f1779d0218ea7934acb3e0df8",
+    "runs/national_dex_first32_s1729_v1/checkpoint-final.pt": "40aa8ae7710c99b9a7c984310c111b215bdb0fba8fa31170c2fa428e172c56bc",
+    "runs/national_dex_moe_top1_s1729_v1/checkpoint-final.pt": "10f1449dbee460dcca7195d2d7c74c22c5c67ddd33e9bdeef60eaed71c414fe2",
+    "runs/national_dex_promptset_bridge_s1729_v1/checkpoint-final.pt": "a79daf5325179356fb49fc93d70822991a7e0a8c6f861b9244ce700e71582b7d",
+    "runs/national_dex_promptset_bridge_s1730_v1/checkpoint-final.pt": "f483e09f9828039b07dee27e0b2f5b8d0db6066f7a7547d67ce3e2e34d8420db",
+    "runs/national_dex_promptset_bridge_s1731_v1/checkpoint-final.pt": "18a59b40b884a95a3c5f681db0c533eb83c317223fabd9b72527715a800cdc0d",
+    "runs/national_dex_promptset_s1729_v1/checkpoint-final.pt": "28d7b43f7ae5e14e557fb0abb510b47e1a674f76d7188a4b5988367ef2faa725",
+    "runs/national_dex_promptset_s1730_v1/checkpoint-final.pt": "8637c0c787eb98d403119805e0ca56b5ccf98c7efa5bdd80d7e09e6453b30631",
+    "runs/national_dex_promptset_s1731_v1/checkpoint-final.pt": "a2a935cdcfaaeb182151039fd8a110b39456873f93b4461beded249111f2068e",
+    "runs/national_dex_rank_margin_control_s1729_v1/checkpoint-final.pt": "8771fce8a76cf7fab9a67913a30d85490f8edce979ec353928cf4c500479c487",
+    "runs/national_dex_rank_margin_m1_w0001_s1729_v1/checkpoint-final.pt": "75dab72aa7f4d6ae3d5d10deda2a34fec473b43d47b702ecbce5c899d7054e16",
+    "runs/national_dex_rank_margin_m1_w01_s1729_v1/checkpoint-final.pt": "0bb697a4a0c8a05441fb2c825ffcfc47023f91596be8f48cda639d4e57c1e8ef",
+    "runs/national_dex_rank_margin_weak_control_s1729_v1/checkpoint-final.pt": "1024045780668d961e993881dbfa89edac0bebc99a8f6e9c048092607a804f63",
+    "runs/national_dex_symmetric_s1729_v1/checkpoint-final.pt": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+    "runs/national_dex_symmetric_s1730_v1/checkpoint-final.pt": "c3a4cb6283b49d4c6e4b51f2ffdf8cdc52161916e830f5ad63d83f14f280ff6d",
+    "runs/national_dex_symmetric_s1731_v1/checkpoint-final.pt": "b6fdb6be3f87f31ee4e078896f7242d3a65371f5ac921a36470730af011e78fa"
+  }
+}

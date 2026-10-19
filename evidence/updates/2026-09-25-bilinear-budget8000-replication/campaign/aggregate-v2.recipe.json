@@ -1,0 +1,88 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "autocast": false,
+  "batching": "full-training-partition-in-split-order",
+  "cuda_matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "data_split_seed": 1729,
+  "deterministic_algorithms": false,
+  "dimension_token_ids": [
+    32,
+    33
+  ],
+  "entity_base": 1024,
+  "evaluator": "plm-bilinear-budget8000-replication-v1",
+  "experiment": "bilinear-budget8000-replication-v1",
+  "float32_matmul_precision": "highest",
+  "fresh_seeds": [
+    1730,
+    1731
+  ],
+  "gradient_accumulation": 1,
+  "gradient_clipping": null,
+  "historical_seed": 1729,
+  "initial_training_replay": "exact matching-parent versus actual zero-A full-training logits and loss",
+  "initialization": "exact-zero",
+  "loss_coefficient": 1.0,
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "decay_excludes_norm_and_bias": true,
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "name": "adamw",
+    "weight_decay": 0.0
+  },
+  "parameter_dtype": "float32",
+  "parent_training_steps": 2000,
+  "product_count": 1025,
+  "residual_shape": [
+    2,
+    256,
+    256
+  ],
+  "residual_updates": 8000,
+  "scheduler": null,
+  "schema_version": 1,
+  "seed_contracts": {
+    "1730": {
+      "floors": {
+        "exact_count": 212,
+        "f1": 0.9997931269673187,
+        "groups": {
+          "COLOR": 103,
+          "TYPE_dual": 58,
+          "TYPE_single": 51
+        }
+      },
+      "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+      "parent_config_sha256": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+      "width8_sha256": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a"
+    },
+    "1731": {
+      "floors": {
+        "exact_count": 208,
+        "f1": 0.999668812076336,
+        "groups": {
+          "COLOR": 103,
+          "TYPE_dual": 54,
+          "TYPE_single": 51
+        }
+      },
+      "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+      "parent_config_sha256": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+      "width8_sha256": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799"
+    }
+  },
+  "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+  "serialization_max_products": 506,
+  "serialization_min_products": 1,
+  "threshold": 0.0,
+  "train_query_count": 1637,
+  "trainable_parameter": "symmetric_bilinear_residual",
+  "validation_batch_size": 8,
+  "validation_query_count": 222
+}

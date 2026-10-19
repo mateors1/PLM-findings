@@ -1,0 +1,61 @@
+{
+  "audit_passed": true,
+  "audit_sha256": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+  "summary_sha256": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+  "accounting": {
+    "query_seed_observations": 666,
+    "distinct_queries": 222,
+    "source_paths": 5328,
+    "candidate_slots": 23976
+  },
+  "overall": {
+    "query_count": 666,
+    "gains": 35,
+    "losses": 1,
+    "baseline": {
+      "exact_count": 569,
+      "precision": 0.9820461214803038,
+      "recall": 0.9637964716104676,
+      "f1": 0.9668960529174291,
+      "set_size": 125.52402402402403,
+      "exact_available": 570,
+      "available_exact_miss": 1,
+      "source_union_contains_truth": 613,
+      "mean_distinct_eligible_sets": 8.093093093093094,
+      "original_selections": 576,
+      "pair_selections": 90,
+      "added_slot_selections": 0,
+      "failures": 0
+    },
+    "wide": {
+      "exact_count": 603,
+      "precision": 0.99138927159738,
+      "recall": 0.9817685798026508,
+      "f1": 0.9834927532993669,
+      "set_size": 126.43693693693693,
+      "exact_available": 605,
+      "available_exact_miss": 2,
+      "source_union_contains_truth": 636,
+      "mean_distinct_eligible_sets": 28.17867867867868,
+      "original_selections": 547,
+      "pair_selections": 119,
+      "added_slot_selections": 58,
+      "failures": 0
+    }
+  },
+  "gate": {
+    "checks": {
+      "complete_exact_replay": true,
+      "all_sources_valid_terminated_unique": true,
+      "all_selected_eligible": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": true,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true,
+      "pooled_dual_exact_improvement": true
+    },
+    "quality_passed": true
+  }
+}
+
+exit_code=0

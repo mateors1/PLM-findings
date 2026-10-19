@@ -1,0 +1,12 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_coverage_seeking_branch.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_coverage_seeking_branch.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_coverage_seeking_branch.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_coverage_seeking_branch.py
+2 files already formatted
+
+$ uv run --no-sync pytest C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_coverage_seeking_branch.py -o addopts= -q
+............................                                             [100%]
+28 passed in 4.67s
+
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_coverage_seeking_branch.py --preflight-only
+{"preflight_passed": true, "torch_imported": false, "new_branch_measured": false, "script_sha256": "ff41f533bd20e004391ed0337c1d7e8a5ecf24b159331fe1db27945d06609e7f", "input_count": 47}

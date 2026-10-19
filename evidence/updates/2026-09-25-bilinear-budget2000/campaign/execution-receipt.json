@@ -1,0 +1,9 @@
+{
+  "terminal_session_id": 11548,
+  "exit_code": 0,
+  "terminal_completion_observed_by_primary": true,
+  "summary_sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+  "stdout_sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+  "observed_at_utc": "2026-09-25T22:18:22.7015224Z",
+  "command": "uv run --no-sync python scripts/refit_bilinear_budget.py --test-receipt runs/learning/bilinear-budget2000-runner-tests-v1/receipt.json --test-receipt-sha256 7dc624f0f30478d89dc0f65742b47ba1931af580268b14df422ca0c13c703d1b"
+}

@@ -1,0 +1,63 @@
+{
+  "aggregate_execution_receipt_sha256": "badfe9ad984d829a61ea0a060af81f777160fa43a05232726f69238cb7f3c77a",
+  "aggregation_runner_sha256": "6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4",
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "audit_sha256": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+  "auditor_sha256": "462c76e5fb18b8acf3304c14dbe8924397852c14ff642080a50676338afda941",
+  "basis": "Independent saved-evidence and CPU checkpoint audits, with observed terminal completion for both fresh fits. No independent replay of CUDA training.",
+  "campaign_version": "bilinear-seed-replication-v1",
+  "children": [
+    {
+      "audit_sha256": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+      "checkpoint_path": "runs/learning/bilinear-seed-replication-v1/seed-1730/checkpoint-final.pt",
+      "checkpoint_sha256": "735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4",
+      "execution_receipt_sha256": "679cc9ee93529b8ecaf69c1da357ddf4db61cca72ef12502de876e6b682f6e9f",
+      "quality_gate_passed": true,
+      "seed": 1730,
+      "sidecar_sha256": "a334ea8626acdbfe1d740e00e313ee0134626875ac27f1e437801dba951088f3",
+      "summary_sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1"
+    },
+    {
+      "audit_sha256": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+      "checkpoint_path": "runs/learning/bilinear-seed-replication-v1/seed-1731/checkpoint-final.pt",
+      "checkpoint_sha256": "ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2",
+      "execution_receipt_sha256": "c53e8ec9cff35b62958795fe40864e4e5809fe3491a254631d69be09224970d4",
+      "quality_gate_passed": true,
+      "seed": 1731,
+      "sidecar_sha256": "18d56a74587375d8eca76728f69f7b553c51ee450d518a5ab712299ae7b431a9",
+      "summary_sha256": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c"
+    }
+  ],
+  "date": "2026-09-25",
+  "decision_script_sha256": "544341a24588861e1ac54aa08712c7efea7cf6ba21f804d0950ec210679e6616",
+  "default_changed": false,
+  "evaluator": "plm-bilinear-seed-replication-v1",
+  "evidence_accepted": true,
+  "evidence_repair_declaration_sha256": "0020f6e9136669109101af048a830690eaa716d9a3607dd1b612e95ab0a57e4f",
+  "failed_aggregate_execution_receipt_sha256": "31101de61a287e9e7addee93cffe881d0591ac338af0826448c810cac365837b",
+  "failed_aggregate_summary_sha256": "c3d79ed3effe7504b67121b25274603b2a5870f9150a5e8043b975f9dc478c2c",
+  "fixed_quality_gate_passed": true,
+  "fresh_seeds": [
+    1730,
+    1731
+  ],
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "fresh_seed1730": true,
+      "fresh_seed1731": true,
+      "historical1729_accepted": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "new_checkpoint_count": 2,
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "original_owner_helper_sha256": "c8d688951c030c4e9b75a5d0c35b58a8edc0f89f2cefd72ad75ac9348ca39498",
+  "outcome": "Both fresh seeds pass their matching fixed gates; no automatic promotion.",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "reused_selection_seed": 1729,
+  "standard_serving_supported": false,
+  "summary_sha256": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0"
+}

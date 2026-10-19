@@ -1,0 +1,20 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_residual.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_bilinear_residual.py
+All checks passed!
+
+exit_code=0
+
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_residual.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_bilinear_residual.py
+2 files already formatted
+
+exit_code=0
+
+$ uv run --no-sync pytest -o addopts= -q C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_bilinear_residual.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_projection_only_refit.py
+.........................................................                [100%]
+57 passed in 9.79s
+
+exit_code=0
+
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_residual.py --preflight-only
+{"preflight_passed": true, "torch_imported": false, "input_count": 51, "script_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee", "recipe_sha256": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533"}
+
+exit_code=0

@@ -1,0 +1,264 @@
+{
+  "authority": "Authenticated primary summary input_sha256 and artifact_sha256; independently accepted saved-evidence audit",
+  "dependencies": [
+    {
+      "included": false,
+      "sha256": "6dcd2401dc8ef62e1a79ea4491bf040cbb278a43843eef209734b564b06c20fb",
+      "source": "data/manifests/pokemon_v1_f1541479_20260924.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "dc3544e3658f3d32c44b1986307516c6181103aabd762691fa872b9216dd1dcc",
+      "source": "data/processed/pokemon_v1_f1541479_20260924/manifest.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+      "source": "data/processed/pokemon_v1_f1541479_20260924/records.jsonl",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+      "source": "data/processed/pokemon_v1_f1541479_20260924/vocabulary.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "cc44937e7c425439c1299f823d96e4f733d3d503fda2264bce38856e4784c438",
+      "source": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "02faaedcf88c94c65e70228488431a85e6687e34ea6d6f530f90ec51f43e1461",
+      "source": "docs/experiments/2026-09-25-wide-first-choice-plan.md",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "c7ad1db44d3c7e0387369b1ffc982d5e7b96afb046c4f8a68111b235ae5a3f67",
+      "source": "runs/learning/pair-composition-integration-v1/offline-1729.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "932ad33ad4d0b00e29cd7d64966b3f0d5820df91764d9ba1188a22cdd84e1659",
+      "source": "runs/learning/pair-composition-integration-v1/offline-1730.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "cd713d451a1235f7ad73d8b524acbf3c250b482f78e84c2cfd08f778e3c5ae73",
+      "source": "runs/learning/pair-composition-integration-v1/offline-1731.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "source": "runs/learning/pair-composition-integration-v1/summary.configs.zip",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "runs/learning/pair-composition-integration-v1/summary.source.zip",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "1d5835709646a9dbf7f8db2727e3adabef2c451ff75be932e2eb22833acdd9d4",
+      "source": "runs/learning/pair-composition-integration-v2/acceptance.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "40eba8d9dac72dbe762eb4b54e7c053128b08580f905dd7539a89961c144ebde",
+      "source": "runs/learning/pair-composition-integration-v2/independent-audit.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "1f95f0b5315029920f89a916ff6388a4c392b2b7a2706e5cf3733d71d3577b2a",
+      "source": "runs/learning/pair-composition-integration-v2/independent-audit.py",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "77f9d9bba8eb9c5e0cf5df86f2eb29f522cf00ad50600ee9eea76267ec041c8f",
+      "source": "runs/learning/pair-composition-integration-v2/summary.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "bc468c517941ba8d0f218eae745ddc9558c683ebceb48d73f50d1b977fef4fb5",
+      "source": "runs/learning/pair-unions-v1/seed-1729.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "2875bca2b05ca1b3edcf74b3903bc17045b75dda4d45ffb5b8ffa35797470dee",
+      "source": "runs/learning/pair-unions-v1/seed-1730.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "28d2bebd55a406c472505804d9c99f6c80ae17ad0a90891bfa33ec0f04418580",
+      "source": "runs/learning/pair-unions-v1/seed-1731.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "84a3ba02ab5f43e9073f1f8b8c7afc85ad7a5363e8cb180e1424a77e6a44ab87",
+      "source": "runs/learning/projection-only-refit-v1/checkpoint-final.pt",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "b44463dd43df234aaba5f95a8910eb5afea1bee012782f2a9d19896adb221f1f",
+      "source": "runs/learning/projection-only-refit-v1/child.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "9447a42cfd6d1880b05b16c0e426142b8dea8965105fdd21e0e926e564025dd1",
+      "source": "runs/learning/projection-only-refit-v1/parent.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+      "source": "runs/learning/projection-only-refit-v1/train-membership.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601",
+      "source": "runs/learning/wide-first-choice-v1/decision.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+      "source": "runs/learning/wide-first-choice-v1/independent-audit.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+      "source": "runs/learning/wide-first-choice-v1/independent-audit.py",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705",
+      "source": "runs/learning/wide-first-choice-v1/seed-1729.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+      "source": "runs/learning/wide-first-choice-v1/summary.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+      "source": "runs/learning/wide-first-choice-v1/summary.script.py",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+      "source": "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+      "source": "runs/national_dex_continuation_control_s1729_v1/checkpoint-final.pt.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+      "source": "runs/national_dex_continuation_control_s1729_v1/run.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+      "source": "runs/national_dex_continuation_control_s1729_v1/source.zip",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "e811d4e227450f3e9b4dc38d21c26638dc9aa9ddd9d89007f5e00522858b6744",
+      "source": "runs/national_dex_continuation_control_s1729_v1/training-result.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+      "source": "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+      "source": "runs/national_dex_continuation_control_s1730_v1/checkpoint-final.pt.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+      "source": "runs/national_dex_continuation_control_s1730_v1/run.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+      "source": "runs/national_dex_continuation_control_s1730_v1/source.zip",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "3e3552a360f8081a06d610c1766d1dc51b4f327a9d1b225fc3d87572b1621507",
+      "source": "runs/national_dex_continuation_control_s1730_v1/training-result.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+      "source": "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+      "source": "runs/national_dex_continuation_control_s1731_v1/checkpoint-final.pt.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+      "source": "runs/national_dex_continuation_control_s1731_v1/run.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+      "source": "runs/national_dex_continuation_control_s1731_v1/source.zip",
+      "storage_status": "local dependency; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "9cd0af1fb52da64bdc4426f2d3baf5a26d641f0c7dbced69e503ade19305f841",
+      "source": "runs/national_dex_continuation_control_s1731_v1/training-result.json",
+      "storage_status": "local dependency; durable remote archive not established"
+    }
+  ],
+  "primary_summary_sha256": "0457ac78065c55b4786a436d436c4de6ce2cbad510056a1d9951aa744ab44a61"
+}

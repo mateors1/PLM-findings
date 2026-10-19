@@ -1,0 +1,38 @@
+["uv", "run", "--no-sync", "ruff", "check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\solver.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\test_solver.py"]
+All checks passed!
+
+exit_code=0
+["uv", "run", "--no-sync", "ruff", "format", "--check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\solver.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\test_solver.py"]
+4 files already formatted
+
+exit_code=0
+["uv", "run", "--no-sync", "pytest", "-o", "addopts=", "-q", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py"]
+.............................                                            [100%]
+29 passed in 1.41s
+
+exit_code=0
+["uv", "run", "--frozen", "--project", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility", "python", "-m", "unittest", "discover", "-s", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility", "-p", "test_solver.py", "-v"]
+warning: `VIRTUAL_ENV=.venv` does not match the project environment path `experiments\diagonal-feasibility\.venv` and will be ignored; use `--active` to target the active environment instead
+test_both_label_cuts_and_tie_order (test_solver.SolverTests.test_both_label_cuts_and_tie_order) ... ok
+test_certificate_rejects_mixed_signs_and_extra_nullity (test_solver.SolverTests.test_certificate_rejects_mixed_signs_and_extra_nullity) ... ok
+test_contradictory_system_and_exact_farkas (test_solver.SolverTests.test_contradictory_system_and_exact_farkas) ... ok
+test_dyadic_conversion_exact_including_subnormal (test_solver.SolverTests.test_dyadic_conversion_exact_including_subnormal) ... ok
+test_feasible_system_and_witness (test_solver.SolverTests.test_feasible_system_and_witness) ... ok
+test_free_bounds_are_passed_to_primal (test_solver.SolverTests.test_free_bounds_are_passed_to_primal) ... ok
+test_hidden_exact_failure_stops_before_scan (test_solver.SolverTests.test_hidden_exact_failure_stops_before_scan) ... ok
+test_immutable_artifacts_and_certificate_size (test_solver.SolverTests.test_immutable_artifacts_and_certificate_size) ... ok
+test_nonfinite_rejected (test_solver.SolverTests.test_nonfinite_rejected) ... ok
+test_rank_and_infinite_descriptive_condition (test_solver.SolverTests.test_rank_and_infinite_descriptive_condition) ... ok
+test_rank_failure_and_expired_budget_inconclusive (test_solver.SolverTests.test_rank_failure_and_expired_budget_inconclusive) ... ok
+test_zero_allowed_only_for_negative_and_subject_excluded (test_solver.SolverTests.test_zero_allowed_only_for_negative_and_subject_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.023s
+
+OK
+
+exit_code=0
+["uv", "run", "--no-sync", "python", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py", "--preflight-only"]
+{"preflight_passed": true, "torch_imported": false, "input_count": 59, "solver_environment": {"python": [3, 12, 13], "versions": {"numpy": "2.2.6", "scipy": "1.15.3", "python-flint": "0.8.0"}}}
+
+exit_code=0

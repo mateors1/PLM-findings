@@ -1,0 +1,723 @@
+{
+  "acceptance": false,
+  "all_three": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 627,
+        "overlap_or_tie": 14,
+        "separated_extra": 15,
+        "separated_missing": 10
+      },
+      "exact_count": 627,
+      "false_negative_count": 25,
+      "false_positive_count": 28,
+      "query_count": 666,
+      "strict_separation_count": 652
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 309,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 309,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 309,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 166,
+          "overlap_or_tie": 14,
+          "separated_extra": 14,
+          "separated_missing": 10
+        },
+        "exact_count": 166,
+        "false_negative_count": 25,
+        "false_positive_count": 27,
+        "query_count": 204,
+        "strict_separation_count": 190
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 152,
+          "overlap_or_tie": 0,
+          "separated_extra": 1,
+          "separated_missing": 0
+        },
+        "exact_count": 152,
+        "false_negative_count": 0,
+        "false_positive_count": 1,
+        "query_count": 153,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "audit_passed": true,
+  "complete": true,
+  "fresh_two": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 420,
+        "overlap_or_tie": 9,
+        "separated_extra": 9,
+        "separated_missing": 6
+      },
+      "exact_count": 420,
+      "false_negative_count": 15,
+      "false_positive_count": 20,
+      "query_count": 444,
+      "strict_separation_count": 435
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 206,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 206,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 206,
+        "strict_separation_count": 206
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 112,
+          "overlap_or_tie": 9,
+          "separated_extra": 9,
+          "separated_missing": 6
+        },
+        "exact_count": 112,
+        "false_negative_count": 15,
+        "false_positive_count": 20,
+        "query_count": 136,
+        "strict_separation_count": 127
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 102,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 102,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 102,
+        "strict_separation_count": 102
+      }
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-error-geometry-plan.md": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\child.json": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\decision.json": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.json": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\receipt.json": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-runner-tests-v1\\stdout.txt": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\execution-receipt.json": "708f34ae8f1498559c53561b936b92adeb82bc707b4135b13b7e7c2af1fb438d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\primary-stdout.txt": "fc85331b855825406dd411cf9532f2cc86575f24281b62b75672412655981320",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1729.json": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1730.json": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1731.json": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.inputs.json": "460217ebca71840476ca116ebe0df371ccd798fb56570be9ea1ccef477d6d26d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.json": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.plan.md": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.script.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.test-receipt.json": "1201c714fbfd9bb348373fb65793375d0c0332e549c55e52ed6b55ae2aad760a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.test-stdout.txt": "5dad3086b272feebec423c5de901520a8ca3b7975a114efe2b12aacbd0110c04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\aggregate-v2.json": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\decision.json": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.json": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\child.json": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\independent-audit.json": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\summary.json": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\child.json": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\independent-audit.json": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\summary.json": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "limitations": [
+    "Independent arithmetic on accepted saved scores, not a neural replay.",
+    "666 observations repeat 222 validation identities; seed1729 was used for selection.",
+    "Intervals use labels; they do not select thresholds or estimate new performance.",
+    "No checkpoint, training examples, graph or protected-test artifacts opened."
+  ],
+  "overlap": {
+    "failed_queries": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 1,
+        "seeds": [
+          1729,
+          1730
+        ],
+        "subject": "PKM_AEGISLASH"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 2,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_AERODACTYL"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 6,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_ARCHALUDON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 7,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_ARCTIBAX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 12,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_AZUMARILL"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 27,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_CARBINK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 43,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_CRAMORANT"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 49,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_DEINO"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 67,
+        "seeds": [
+          1729,
+          1730,
+          1731
+        ],
+        "subject": "PKM_FEZANDIPITI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 72,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 74,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_FROSLASS"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 91,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_HATTERENE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_single",
+        "index": 93,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_HERDIER"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 111,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_KYUREM"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 116,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_LEDIAN"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 124,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_MANTYKE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 150,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_PILOSWINE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 169,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_SABLEYE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 173,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_SEWADDLE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 177,
+        "seeds": [
+          1729,
+          1730,
+          1731
+        ],
+        "subject": "PKM_SKARMORY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 184,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_SOLROCK"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 186,
+        "seeds": [
+          1730,
+          1731
+        ],
+        "subject": "PKM_STEELIX"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 188,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_SWANNA"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 197,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_TINKATON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 202,
+        "seeds": [
+          1730
+        ],
+        "subject": "PKM_TOXTRICITY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 204,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_TURTONATOR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 207,
+        "seeds": [
+          1730,
+          1731
+        ],
+        "subject": "PKM_TYRANITAR"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 218,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_ZAPDOS"
+      }
+    ],
+    "failure_seed_histogram": {
+      "1729": 8,
+      "1729,1730": 1,
+      "1729,1730,1731": 2,
+      "1729,1731": 4,
+      "1730": 5,
+      "1730,1731": 2,
+      "1731": 6,
+      "none": 194
+    },
+    "shared_queries": 222
+  },
+  "per_seed": [
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 207,
+          "overlap_or_tie": 5,
+          "separated_extra": 6,
+          "separated_missing": 4
+        },
+        "exact_count": 207,
+        "false_negative_count": 10,
+        "false_positive_count": 8,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -2.8682801723480225,
+          "A_query_index": 67,
+          "B": 2.7026796340942383,
+          "B_query_index": 27,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 217
+      },
+      "child_sha256": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 5.282095432281494,
+            "A_query_index": 21,
+            "B": -2.3757262229919434,
+            "B_query_index": 95,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 54,
+            "overlap_or_tie": 5,
+            "separated_extra": 5,
+            "separated_missing": 4
+          },
+          "exact_count": 54,
+          "false_negative_count": 10,
+          "false_positive_count": 7,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -2.8682801723480225,
+            "A_query_index": 67,
+            "B": 2.7026796340942383,
+            "B_query_index": 27,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 63
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 50,
+            "overlap_or_tie": 0,
+            "separated_extra": 1,
+            "separated_missing": 0
+          },
+          "exact_count": 50,
+          "false_negative_count": 0,
+          "false_positive_count": 1,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 2.571256399154663,
+            "A_query_index": 19,
+            "B": 0.3610413074493408,
+            "B_query_index": 93,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "report_sha256": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+      "seed": 1729
+    },
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 212,
+          "overlap_or_tie": 3,
+          "separated_extra": 4,
+          "separated_missing": 3
+        },
+        "exact_count": 212,
+        "false_negative_count": 5,
+        "false_positive_count": 8,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -4.123543739318848,
+          "A_query_index": 184,
+          "B": 1.4291102886199951,
+          "B_query_index": 197,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 219
+      },
+      "child_sha256": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 6.223185062408447,
+            "A_query_index": 30,
+            "B": -1.8256337642669678,
+            "B_query_index": 106,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 58,
+            "overlap_or_tie": 3,
+            "separated_extra": 4,
+            "separated_missing": 3
+          },
+          "exact_count": 58,
+          "false_negative_count": 5,
+          "false_positive_count": 8,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -4.123543739318848,
+            "A_query_index": 184,
+            "B": 1.4291102886199951,
+            "B_query_index": 197,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 65
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 51,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 51,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 1.5010521411895752,
+            "A_query_index": 0,
+            "B": -1.0641374588012695,
+            "B_query_index": 0,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "report_sha256": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+      "seed": 1730
+    },
+    {
+      "aggregate": {
+        "category_counts": {
+          "exact_zero": 208,
+          "overlap_or_tie": 6,
+          "separated_extra": 5,
+          "separated_missing": 3
+        },
+        "exact_count": 208,
+        "false_negative_count": 10,
+        "false_positive_count": 12,
+        "query_count": 222,
+        "shared_threshold": {
+          "A": -1.8079215288162231,
+          "A_query_index": 150,
+          "B": 3.009807586669922,
+          "B_query_index": 72,
+          "exists": false,
+          "lower_inclusive": true,
+          "upper_exclusive": true
+        },
+        "strict_separation_count": 216
+      },
+      "child_sha256": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+      "groups": {
+        "COLOR": {
+          "category_counts": {
+            "exact_zero": 103,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 103,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 103,
+          "shared_threshold": {
+            "A": 3.8638148307800293,
+            "A_query_index": 96,
+            "B": -2.3015947341918945,
+            "B_query_index": 57,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 103
+        },
+        "TYPE_dual": {
+          "category_counts": {
+            "exact_zero": 54,
+            "overlap_or_tie": 6,
+            "separated_extra": 5,
+            "separated_missing": 3
+          },
+          "exact_count": 54,
+          "false_negative_count": 10,
+          "false_positive_count": 12,
+          "query_count": 68,
+          "shared_threshold": {
+            "A": -1.8079215288162231,
+            "A_query_index": 150,
+            "B": 3.009807586669922,
+            "B_query_index": 72,
+            "exists": false,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 62
+        },
+        "TYPE_single": {
+          "category_counts": {
+            "exact_zero": 51,
+            "overlap_or_tie": 0,
+            "separated_extra": 0,
+            "separated_missing": 0
+          },
+          "exact_count": 51,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "query_count": 51,
+          "shared_threshold": {
+            "A": 1.8366230726242065,
+            "A_query_index": 0,
+            "B": -0.29520082473754883,
+            "B_query_index": 0,
+            "exists": true,
+            "lower_inclusive": true,
+            "upper_exclusive": true
+          },
+          "strict_separation_count": 51
+        }
+      },
+      "report_sha256": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+      "seed": 1731
+    }
+  ],
+  "plan_sha256": "7453c260275c58c4dd8f34fe5be1b2f054251f8ddf1e9b039ec608c76d96e232",
+  "primary_script_sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "script_sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+  "summary_sha256": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606"
+}

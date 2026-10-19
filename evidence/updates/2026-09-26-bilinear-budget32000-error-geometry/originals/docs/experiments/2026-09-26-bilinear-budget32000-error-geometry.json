@@ -1,0 +1,363 @@
+{
+  "acceptance": false,
+  "all_three": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 660,
+        "overlap_or_tie": 1,
+        "separated_extra": 1,
+        "separated_missing": 4
+      },
+      "exact_count": 660,
+      "false_negative_count": 7,
+      "false_positive_count": 1,
+      "query_count": 666,
+      "strict_separation_count": 665
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 309,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 309,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 309,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 198,
+          "overlap_or_tie": 1,
+          "separated_extra": 1,
+          "separated_missing": 4
+        },
+        "exact_count": 198,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "query_count": 204,
+        "strict_separation_count": 203
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 153,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 153,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 153,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "campaign_version": "bilinear-budget32000-error-geometry-v1",
+  "complete": true,
+  "fresh_two": {
+    "aggregate": {
+      "category_counts": {
+        "exact_zero": 442,
+        "overlap_or_tie": 0,
+        "separated_extra": 1,
+        "separated_missing": 1
+      },
+      "exact_count": 442,
+      "false_negative_count": 1,
+      "false_positive_count": 1,
+      "query_count": 444,
+      "strict_separation_count": 444
+    },
+    "groups": {
+      "COLOR": {
+        "category_counts": {
+          "exact_zero": 206,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 206,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 206,
+        "strict_separation_count": 206
+      },
+      "TYPE_dual": {
+        "category_counts": {
+          "exact_zero": 134,
+          "overlap_or_tie": 0,
+          "separated_extra": 1,
+          "separated_missing": 1
+        },
+        "exact_count": 134,
+        "false_negative_count": 1,
+        "false_positive_count": 1,
+        "query_count": 136,
+        "strict_separation_count": 136
+      },
+      "TYPE_single": {
+        "category_counts": {
+          "exact_zero": 102,
+          "overlap_or_tie": 0,
+          "separated_extra": 0,
+          "separated_missing": 0
+        },
+        "exact_count": 102,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "query_count": 102,
+        "strict_separation_count": 102
+      }
+    }
+  },
+  "helper_sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "input_sha256": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-plan.md": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4",
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/stdout.txt": "3da18e989b1b7c74c739f649ec29e290b89d0b5ed36619d72a6b9ee821bfc5b3",
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/test-receipt.json": "0b647272343723d74a16b0f867092949d079cdd96f4f18c5692014ee2c4f6698",
+    "runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "runs/learning/bilinear-budget32000-readiness-v2/readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "runs/learning/bilinear-budget32000-v1/aggregate-audit-v2.json": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+    "runs/learning/bilinear-budget32000-v1/aggregate-v2.json": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+    "runs/learning/bilinear-budget32000-v1/decision-v2.json": "4a508abaf3fac7e2e678cd5604f73636241aabcb18c876076c134468257e44af",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/audit-execution-receipt.json": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/child.json": "8609c7d0286e7140e2db718822643beb8174b5f7a7f9f409f4437eddd3f58240",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/execution-receipt.json": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/summary.json": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/audit-execution-receipt-v2.json": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/child.json": "f5b43656be8fd21bb7235ce72fc92f369fdcd83312f456fb90c92b173860cd23",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/execution-receipt.json": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/summary.json": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/audit-execution-receipt-v2.json": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/child.json": "0b24d38119de11b2e7342b75e6641f5bd93dcbc28fb34b8872a2e4af719c57ae",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation-complete.json": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/execution-receipt.json": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/summary.json": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+    "scripts/diagnose_bilinear_budget32000_errors.py": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+    "scripts/diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "tests/unit/test_bilinear_budget32000_error_geometry.py": "1942b2913468072130a05e44d305d45f7484d0b74cf3b1887d3680eab9ce6161",
+    "tests/unit/test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "limitations": [
+    "Posthoc descriptive saved-score reductions; no threshold selection or alternative predictions.",
+    "666 observations reuse 222 development queries; fresh_two groups seeds1730/1731. All three are current 32000 fits.",
+    "No weights, training records, graph, protected partition, Torch or GPU accessed.",
+    "No model promotion or change to the 41-checkpoint inventory; independent audit and owner acceptance remain required.",
+    "Exclusive batch output writes are not atomic; any failure blocks publication until separately audited."
+  ],
+  "overlap": {
+    "failed_queries": [
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 67,
+        "seeds": [
+          1729,
+          1731
+        ],
+        "subject": "PKM_FEZANDIPITI"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 72,
+        "seeds": [
+          1731
+        ],
+        "subject": "PKM_FLYGON"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 91,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_HATTERENE"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 177,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_SKARMORY"
+      },
+      {
+        "dimension": "TYPE",
+        "group": "TYPE_dual",
+        "index": 188,
+        "seeds": [
+          1729
+        ],
+        "subject": "PKM_SWANNA"
+      }
+    ],
+    "failure_seed_histogram": {
+      "1729": 3,
+      "1729,1731": 1,
+      "1731": 1,
+      "none": 217
+    },
+    "shared_queries": 222
+  },
+  "plan_sha256": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4",
+  "script_sha256": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+  "seed_artifacts": [
+    {
+      "path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1729.json",
+      "seed": 1729,
+      "sha256": "3325d653852da5b194554f584af29b5d033d89fe953a142e418c421baa99e4ca"
+    },
+    {
+      "path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1730.json",
+      "seed": 1730,
+      "sha256": "c47e67bf6336de37b2bd1d03407b09d0bcd95103077da4694732c2570254c441"
+    },
+    {
+      "path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1731.json",
+      "seed": 1731,
+      "sha256": "00a871df0dc3d34fcde82a8386737c2979d0d108d5fe21ae8401ceb4e68d8e53"
+    }
+  ],
+  "snapshot_sha256": {
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper-test.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.inputs.json": "2facde45211b0b34cde570f31c4f4d233ddb7ab8fa4b67678e012215f92ccfb4",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.plan.md": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.script.py": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-receipt.json": "0b647272343723d74a16b0f867092949d079cdd96f4f18c5692014ee2c4f6698",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-stdout.txt": "3da18e989b1b7c74c739f649ec29e290b89d0b5ed36619d72a6b9ee821bfc5b3",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test.py": "1942b2913468072130a05e44d305d45f7484d0b74cf3b1887d3680eab9ce6161"
+  },
+  "test_receipt_sha256": "0b647272343723d74a16b0f867092949d079cdd96f4f18c5692014ee2c4f6698",
+  "upstream": {
+    "accepted_campaign": "bilinear-budget32000-v1",
+    "aggregate_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+    "all_three": {
+      "aggregate": {
+        "exact_count": 660,
+        "f1": 0.9999637956903659,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "precision": 0.9999891978309244,
+        "query_count": 666,
+        "recall": 0.9999387155396199,
+        "serialization_compatible": 666,
+        "set_size": 128.11261261261262,
+        "strict_separation_count": 665
+      },
+      "groups": {
+        "COLOR": {
+          "exact_count": 309,
+          "f1": 1.0,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 309,
+          "recall": 1.0,
+          "serialization_compatible": 309,
+          "set_size": 113.66990291262135,
+          "strict_separation_count": 309
+        },
+        "TYPE_dual": {
+          "exact_count": 198,
+          "f1": 0.9998818035773706,
+          "false_negative_count": 7,
+          "false_positive_count": 1,
+          "precision": 0.9999647340950769,
+          "query_count": 204,
+          "recall": 0.9997999242616998,
+          "serialization_compatible": 204,
+          "set_size": 171.55882352941177,
+          "strict_separation_count": 203
+        },
+        "TYPE_single": {
+          "exact_count": 153,
+          "f1": 1.0,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 153,
+          "recall": 1.0,
+          "serialization_compatible": 153,
+          "set_size": 99.3529411764706,
+          "strict_separation_count": 153
+        }
+      }
+    },
+    "audit_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+    "decision_sha256": "4a508abaf3fac7e2e678cd5604f73636241aabcb18c876076c134468257e44af",
+    "per_seed": [
+      {
+        "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json",
+        "audit_readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+          "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+        },
+        "audit_receipt_sha256": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+        "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+        "checkpoint_opened": false,
+        "checkpoint_sha256": "8c2edf986f20df78e6d111f934ea5bde5b60a939df6ff92f4eeeb095c625bc27",
+        "child_sha256": "8609c7d0286e7140e2db718822643beb8174b5f7a7f9f409f4437eddd3f58240",
+        "continuation": null,
+        "execution_receipt_sha256": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+        "seed": 1729,
+        "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1"
+      },
+      {
+        "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json",
+        "audit_readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+          "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+        },
+        "audit_receipt_sha256": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+        "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+        "checkpoint_opened": false,
+        "checkpoint_sha256": "8f315c94ba21965e534654119a73a6abea9ef3797cc096f6997f7441c87e775e",
+        "child_sha256": "f5b43656be8fd21bb7235ce72fc92f369fdcd83312f456fb90c92b173860cd23",
+        "continuation": null,
+        "execution_receipt_sha256": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+        "seed": 1730,
+        "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11"
+      },
+      {
+        "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json",
+        "audit_readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+          "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+        },
+        "audit_receipt_sha256": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+        "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+        "checkpoint_opened": false,
+        "checkpoint_sha256": "ceb17a1e1ac92e1dbc44656c05132b518032dec6bf1ac4b4019de5dc5dbabf74",
+        "child_sha256": "0b24d38119de11b2e7342b75e6641f5bd93dcbc28fb34b8872a2e4af719c57ae",
+        "continuation": {
+          "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+          "complete": true,
+          "completion_sha256": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+          "continuation_readiness": {
+            "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+            "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+          },
+          "execution_revision": "bilinear-budget32000-continuation-v2",
+          "execution_wrapper_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+          "root_observed_terminal_required": true,
+          "seed": 1731,
+          "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+        },
+        "execution_receipt_sha256": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+        "seed": 1731,
+        "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+      }
+    ]
+  }
+}

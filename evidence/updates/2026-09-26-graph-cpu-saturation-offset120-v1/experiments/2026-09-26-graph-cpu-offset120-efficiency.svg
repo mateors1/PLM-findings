@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620" role="img" aria-labelledby="title desc">
+<title id="title">Graph servings per watt</title>
+<desc id="desc">Throughput divided by median measured package watts or the median after adding 120 W. Client concurrency uses a base-two logarithmic x axis.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="88" y="34" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="650" fill="#152337">Graph servings per watt</text>
+<text x="88" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#526176">Throughput divided by median measured package watts or the median after adding 120 W.</text>
+<line x1="88" y1="450.00" x2="942" y2="450.00" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="454.00" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">0</text>
+<line x1="88" y1="398.71" x2="942" y2="398.71" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="402.71" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">2</text>
+<line x1="88" y1="347.43" x2="942" y2="347.43" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="351.43" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">4</text>
+<line x1="88" y1="296.14" x2="942" y2="296.14" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="300.14" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">6</text>
+<line x1="88" y1="244.86" x2="942" y2="244.86" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="248.86" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">8</text>
+<line x1="88" y1="193.57" x2="942" y2="193.57" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="197.57" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">10</text>
+<line x1="88" y1="142.29" x2="942" y2="142.29" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="146.29" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">12</text>
+<line x1="88" y1="91.00" x2="942" y2="91.00" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="95.00" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">14</text>
+<line x1="88.00" y1="91" x2="88.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="88.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">1</text>
+<line x1="332.00" y1="91" x2="332.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="332.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">4</text>
+<line x1="454.00" y1="91" x2="454.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="454.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">8</text>
+<line x1="576.00" y1="91" x2="576.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="576.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">16</text>
+<line x1="698.00" y1="91" x2="698.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="698.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">32</text>
+<line x1="820.00" y1="91" x2="820.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="820.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">64</text>
+<line x1="942.00" y1="91" x2="942.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="942.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">128</text>
+<line x1="88" y1="450" x2="942" y2="450" stroke="#738198" stroke-width="1.2"/>
+<line x1="88" y1="91" x2="88" y2="450" stroke="#738198" stroke-width="1.2"/>
+<text x="515.0" y="578" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#334155">Client concurrency (log₂ scale)</text>
+<text x="23" y="270.5" transform="rotate(-90 23 270.5)" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#334155">Completed servings per watt</text>
+<polyline points="88.00,131.19 332.00,308.47 454.00,341.15 576.00,340.31 698.00,342.05 769.37,343.74 796.50,342.18 820.00,343.06 840.73,347.65 859.28,341.86 891.37,344.22 918.50,345.14 942.00,342.75" fill="none" stroke="#2457a7" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="131.19" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="332.00" cy="308.47" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="454.00" cy="341.15" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="576.00" cy="340.31" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="698.00" cy="342.05" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="769.37" cy="343.74" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="796.50" cy="342.18" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="820.00" cy="343.06" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="840.73" cy="347.65" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="859.28" cy="341.86" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="891.37" cy="344.22" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="918.50" cy="345.14" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="942.00" cy="342.75" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<polyline points="88.00,325.64 332.00,384.80 454.00,398.30 576.00,398.21 698.00,399.12 769.37,399.59 796.50,399.28 820.00,399.80 840.73,400.84 859.28,399.33 891.37,400.16 918.50,400.60 942.00,400.18" fill="none" stroke="#c36a14" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="325.64" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="332.00" cy="384.80" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="454.00" cy="398.30" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="576.00" cy="398.21" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="698.00" cy="399.12" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="769.37" cy="399.59" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="796.50" cy="399.28" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="820.00" cy="399.80" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="840.73" cy="400.84" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="859.28" cy="399.33" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="891.37" cy="400.16" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="918.50" cy="400.60" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<circle cx="942.00" cy="400.18" r="4" fill="#ffffff" stroke="#c36a14" stroke-width="2.2"/>
+<line x1="260.0" y1="536" x2="287.0" y2="536" stroke="#2457a7" stroke-width="2.7"/>
+<circle cx="273.5" cy="536" r="3.4" fill="#ffffff" stroke="#2457a7" stroke-width="2"/>
+<text x="296.0" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#334155">Using measured RAPL</text>
+<line x1="490.0" y1="536" x2="517.0" y2="536" stroke="#c36a14" stroke-width="2.7"/>
+<circle cx="503.5" cy="536" r="3.4" fill="#ffffff" stroke="#c36a14" stroke-width="2"/>
+<text x="526.0" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#334155">Using RAPL + 120 W</text>
+<text x="50%" y="606" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#78869a">Power whiskers show observed sample ranges. Offset-adjusted watts = measured RAPL + 120 W.</text>
+</svg>

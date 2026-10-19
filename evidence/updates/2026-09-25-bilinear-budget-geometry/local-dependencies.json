@@ -1,0 +1,41 @@
+{
+  "authority": "Only current diagnostic input/snapshot and reduced-artifact inventories; no recursive upstream dependency reads",
+  "dependencies": [
+    {
+      "included": false,
+      "sha256": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+      "source": "runs/learning/bilinear-budget2000-v1/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "625ac6d2cb996024ba4fd77c186f30831baed6c563ae5d88104660bb8d10111b",
+      "source": "runs/learning/bilinear-budget8000-replication-v1/seed-1730/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "5c210e423f1033c8f3851e978cefa528c30344584b5806492c0241fafaf298dc",
+      "source": "runs/learning/bilinear-budget8000-replication-v1/seed-1731/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "51da78579ba2b2754acbca05d81f625d3a4ce616214cf7b73d9ccf08b37630c6",
+      "source": "runs/learning/bilinear-budget8000-v1/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+      "source": "runs/learning/bilinear-seed-replication-v1/seed-1730/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    },
+    {
+      "included": false,
+      "sha256": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+      "source": "runs/learning/bilinear-seed-replication-v1/seed-1731/child.json",
+      "storage_status": "Authenticated local diagnostic input; durable remote archive not established"
+    }
+  ]
+}

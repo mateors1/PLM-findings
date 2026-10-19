@@ -1,0 +1,7 @@
+## SQLite graph CPU saturation with a +120 W offset (2026-09-26)
+
+A fresh loopback graph HTTP sweep completed all 13 concurrency levels with exact frozen-oracle responses and zero failures. Throughput peaked at 954.2 16-ID servings/s at concurrency 1. With concurrency 8–128, throughput ranged from 435.4 to 460.9/s while median CPU-package RAPL power stayed in the 104.1–110.9 W band. The requested additive 120 W yields a derived 224.1–230.9 W band; it is not wall-power measurement. At concurrency 8, the highest concurrent rate was 460.9/s at 108.58 W measured or 228.58 W adjusted (4.24 or 2.02 servings/W). The 128-client p95 latency was 439.37 ms.
+
+Compared with the prior clean sweep, the concurrency 1/4/8 rates were lower by 2.5–6.1% while package power was higher by 16.3–26.0 W. This run did not record CPU frequency, temperature, utilization or concurrent package activity, so the cause is unknown. See the [full report](experiments/2026-09-26-graph-cpu-saturation-offset120-report.md), [throughput graph](experiments/2026-09-26-graph-cpu-offset120-throughput.svg), [power graph](experiments/2026-09-26-graph-cpu-offset120-power.svg), [servings/W graph](experiments/2026-09-26-graph-cpu-offset120-efficiency.svg), [portable per-level summary](experiments/2026-09-26-graph-cpu-saturation-offset120.json). The report includes the audit and outcome decision.
+
+The full raw RAPL receipt remains a local dependency; the portable result retains its SHA256.

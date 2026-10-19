@@ -1,0 +1,198 @@
+{
+  "acceptance": false,
+  "audit_passed": true,
+  "audit_version": "missing-source-membership-independent-v1",
+  "complete": true,
+  "coverage_summary": {
+    "covered_member_occurrences": 83922,
+    "focused_queries": 30,
+    "fully_covered_queries": 636,
+    "omitted_member_occurrences": 1407,
+    "query_count": 666,
+    "true_member_occurrences": 85329
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-missing-source-membership-plan.md": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\decision.json": "01a51a5a9d5957ec68f32b0d81d23acace29d7eb3aa5684d99939582e88cb32a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.json": "27e0c5ff2931d88fed9fae612c73c64c7835e01282097fc290fa78cd9a7e330c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1729.json": "a80d0ad5706dd3514fafb3f650913a84d9e9342873651b2dd016451a2349a830",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1730.json": "50fb3d4fc037cfb53607e2462d2921cd8b1a41eea7a65fae484753be0370ab0e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1731.json": "b26b9d1bd4e9b7c0496c7300337ef7d99d0b73a220cc72585296d7c9be131c81",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.json": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\stdout.txt": "5e46413f230c8d627df1da01a7382bd59538d26628210d3fddb69b94a484c362",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\test-receipt.json": "d3cc700bc269d74ac8bfdf9a77cb883f3b23420db3d9871a440d12fb2e8b6e7c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-auditor-tests-v1\\test_auditor.py": "49b3e64ffa96ec365c8062838cf9c872d81d082da5f7055bbd23f85af8fb3c63",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-runner-tests-v1\\stdout.txt": "846fb9655de8061f01f66b7dd7d341cdcb67bc5a41cda509fea6664bc6dc628a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-runner-tests-v1\\test-receipt.json": "612f268e8be6e50a5b422648148ba3ad40e7c03b07922007838de9246b012e7a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\independent-audit.py": "85aa133c01584f2f8e7979d20097dbbe71f715a54dbf1e0ff4923782e420d86d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1729.json": "0c75bb15a938e861cde1935ee177e092a20dfa97b77a2341b149711e6e4fe6f0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1730.json": "5379de17a693a245c66c53e9defaa9562b30387063fad7becf00cc5b372bbf7c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\seed-1731.json": "18bc002861508c20294ea432da5f1485a4b3a91c808ec9e13f9243b5db35c2a2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.inputs.json": "7af63fb695635ba8b69b83e5c51673cfde77b00f8d3850f2cfe7a0dd6a27d524",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.json": "47bf9d54967009a2be6e46bedc28f7949231be9bc14e18798fd66ad776c59805",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.plan.md": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.script.py": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.test-receipt.json": "612f268e8be6e50a5b422648148ba3ad40e7c03b07922007838de9246b012e7a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\missing-source-membership-v1\\summary.test-stdout.txt": "846fb9655de8061f01f66b7dd7d341cdcb67bc5a41cda509fea6664bc6dc628a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_missing_source_membership.py": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_missing_source_membership.py": "69616b01324cd8bf395d3f69c8e9bc95d089cc78e4749e89b3224e57276c02ce"
+  },
+  "limitations": [
+    "Independent saved-output arithmetic, not neural replay or a new checkpoint audit.",
+    "Relation-head rank is not decoder-plus-guidance rank; oracle K uses teacher labels.",
+    "Positive scores are not calibrated membership probabilities or causal proof.",
+    "Repeated products across queries and seeds are not independent statistical samples.",
+    "Diagnostic only: no prediction policy, generated-quality claim or protected-test use."
+  ],
+  "overall": {
+    "covered": {
+      "mean_query_positive_fraction": 0.9865678842678095,
+      "member_occurrences": 3844,
+      "negative_count": 47,
+      "nonempty_query_count": 30,
+      "positive_count": 3797,
+      "positive_member_fraction": 0.9877731529656608,
+      "zero_count": 0
+    },
+    "distinct_focused_queries": 22,
+    "focused_queries": 30,
+    "omitted": {
+      "mean_query_positive_fraction": 0.9908023047546597,
+      "member_occurrences": 1407,
+      "negative_count": 13,
+      "nonempty_query_count": 30,
+      "positive_count": 1394,
+      "positive_member_fraction": 0.9907604832977968,
+      "zero_count": 0
+    },
+    "omitted_oracle_top_k_count": 1367,
+    "positive_omitted_queries": {
+      "all": 22,
+      "none": 0,
+      "some": 8
+    }
+  },
+  "per_seed": [
+    {
+      "coverage_summary": {
+        "covered_member_occurrences": 27667,
+        "focused_queries": 14,
+        "fully_covered_queries": 208,
+        "omitted_member_occurrences": 776,
+        "query_count": 222,
+        "true_member_occurrences": 28443
+      },
+      "overall": {
+        "covered": {
+          "mean_query_positive_fraction": 0.9860660777417959,
+          "member_occurrences": 1731,
+          "negative_count": 20,
+          "nonempty_query_count": 14,
+          "positive_count": 1711,
+          "positive_member_fraction": 0.9884459849797804,
+          "zero_count": 0
+        },
+        "distinct_focused_queries": 14,
+        "focused_queries": 14,
+        "omitted": {
+          "mean_query_positive_fraction": 0.9917032967032967,
+          "member_occurrences": 776,
+          "negative_count": 6,
+          "nonempty_query_count": 14,
+          "positive_count": 770,
+          "positive_member_fraction": 0.9922680412371134,
+          "zero_count": 0
+        },
+        "omitted_oracle_top_k_count": 757,
+        "positive_omitted_queries": {
+          "all": 11,
+          "none": 0,
+          "some": 3
+        }
+      },
+      "seed": 1729
+    },
+    {
+      "coverage_summary": {
+        "covered_member_occurrences": 28260,
+        "focused_queries": 6,
+        "fully_covered_queries": 216,
+        "omitted_member_occurrences": 183,
+        "query_count": 222,
+        "true_member_occurrences": 28443
+      },
+      "overall": {
+        "covered": {
+          "mean_query_positive_fraction": 0.9829551298224946,
+          "member_occurrences": 878,
+          "negative_count": 13,
+          "nonempty_query_count": 6,
+          "positive_count": 865,
+          "positive_member_fraction": 0.9851936218678815,
+          "zero_count": 0
+        },
+        "distinct_focused_queries": 6,
+        "focused_queries": 6,
+        "omitted": {
+          "mean_query_positive_fraction": 0.99063891070961,
+          "member_occurrences": 183,
+          "negative_count": 3,
+          "nonempty_query_count": 6,
+          "positive_count": 180,
+          "positive_member_fraction": 0.9836065573770492,
+          "zero_count": 0
+        },
+        "omitted_oracle_top_k_count": 174,
+        "positive_omitted_queries": {
+          "all": 4,
+          "none": 0,
+          "some": 2
+        }
+      },
+      "seed": 1730
+    },
+    {
+      "coverage_summary": {
+        "covered_member_occurrences": 27995,
+        "focused_queries": 10,
+        "fully_covered_queries": 212,
+        "omitted_member_occurrences": 448,
+        "query_count": 222,
+        "true_member_occurrences": 28443
+      },
+      "overall": {
+        "covered": {
+          "mean_query_positive_fraction": 0.9894380660714173,
+          "member_occurrences": 1235,
+          "negative_count": 14,
+          "nonempty_query_count": 10,
+          "positive_count": 1221,
+          "positive_member_fraction": 0.988663967611336,
+          "zero_count": 0
+        },
+        "distinct_focused_queries": 10,
+        "focused_queries": 10,
+        "omitted": {
+          "mean_query_positive_fraction": 0.9896389524535978,
+          "member_occurrences": 448,
+          "negative_count": 4,
+          "nonempty_query_count": 10,
+          "positive_count": 444,
+          "positive_member_fraction": 0.9910714285714286,
+          "zero_count": 0
+        },
+        "omitted_oracle_top_k_count": 436,
+        "positive_omitted_queries": {
+          "all": 7,
+          "none": 0,
+          "some": 3
+        }
+      },
+      "seed": 1731
+    }
+  ],
+  "plan_sha256": "bda59d3987d98bb746f3b0dea7445269ec5044f82abd5f0fce3df9404b855907",
+  "script_sha256": "85aa133c01584f2f8e7979d20097dbbe71f715a54dbf1e0ff4923782e420d86d",
+  "summary_sha256": "47bf9d54967009a2be6e46bedc28f7949231be9bc14e18798fd66ad776c59805"
+}

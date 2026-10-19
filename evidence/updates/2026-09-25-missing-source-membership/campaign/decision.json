@@ -1,0 +1,18 @@
+{
+  "audit_sha256": "dc4bda47ac580f2c49d8cdfdd4e8cecc6c17d75c421ba970a1383268403ee16a",
+  "auditor_sha256": "85aa133c01584f2f8e7979d20097dbbe71f715a54dbf1e0ff4923782e420d86d",
+  "basis": "Independent reconstruction agrees on complete coverage, focused membership signs, ranks, false-member comparisons and aggregates.",
+  "campaign_version": "missing-source-membership-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "a5a6b40bc9eaa0961a3974de3cf788f917e414c27dec3e13bc2d835667afef23",
+  "default_changed": false,
+  "evidence_accepted": true,
+  "new_checkpoint_created": false,
+  "outcome": "Accept diagnostic evidence. Most omitted true members receive positive head scores and oracle-cardinality top-K ranks. Investigate candidate construction separately; no causal attribution, calibrated probability or prediction-quality gain established.",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "quality_gain_claimed": false,
+  "quality_gate_applicable": false,
+  "summary_sha256": "47bf9d54967009a2be6e46bedc28f7949231be9bc14e18798fd66ad776c59805",
+  "training_executed": false
+}

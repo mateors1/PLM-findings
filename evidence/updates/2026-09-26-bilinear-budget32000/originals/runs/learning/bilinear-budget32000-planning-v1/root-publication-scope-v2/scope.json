@@ -1,0 +1,55 @@
+{
+  "campaign_version": "bilinear-budget32000-v1",
+  "files": [
+    {
+      "headings": [
+        "## Bilinear 32000-update campaign (completed; all three quality gates passed)"
+      ],
+      "mode": "integrate_scoped_sections",
+      "path": "registry.md",
+      "repository": "source",
+      "sha256": "0a9b97648c154b13c63fd5cc4e92a18d875764e934289fa157b94f76c0bc15d4",
+      "snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-planning-v1\\root-publication-scope-v2\\registry.md"
+    },
+    {
+      "headings": [
+        "## Bilinear 32000 campaign: three audited fits, improvement gate passed"
+      ],
+      "mode": "integrate_scoped_sections",
+      "path": "docs/model-versions.md",
+      "repository": "source",
+      "sha256": "58a887e10cab595b1c1573a9c32488efcc6aede735decc12a6a7be439b4f190c",
+      "snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-planning-v1\\root-publication-scope-v2\\docs\\model-versions.md"
+    },
+    {
+      "headings": [
+        "## 2026-09-26 \u2014 Audit repair verifies the second 32000-update result",
+        "## 2026-09-26 \u2014 All three 32000-update fits pass the fixed quality gates"
+      ],
+      "mode": "integrate_scoped_sections",
+      "path": "research_log.md",
+      "repository": "source",
+      "sha256": "13f380db8974f7c874dbcc7a4f395b6d7f063962b48c482cd4872afbbd4dfb65",
+      "snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-planning-v1\\root-publication-scope-v2\\research_log.md"
+    },
+    {
+      "headings": [
+        "## 2026-09-26 \u2014 Seal audit repair and launch final quality seed"
+      ],
+      "mode": "integrate_scoped_sections",
+      "path": "devlog.md",
+      "repository": "source",
+      "sha256": "ddc29ed45a0b362e440a77648e17faed365a2ebe3ffc26e245dafa9913ea962d",
+      "snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-planning-v1\\root-publication-scope-v2\\devlog.md"
+    },
+    {
+      "mode": "copy",
+      "path": "docs/learning/51-optimization-budget-and-training-margins.md",
+      "repository": "source",
+      "sha256": "fe6089848046793de763a1e96fe815f1101057f4979d88fbf0253c6142fb231d",
+      "snapshot_path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\learning\\51-optimization-budget-and-training-margins.md"
+    }
+  ],
+  "paper_assessment": "Requested from dedicated paper owner; no PAPER/history bytes in this root scope.",
+  "scope": "Only named completed-campaign sections; preserve all unrelated shared work."
+}

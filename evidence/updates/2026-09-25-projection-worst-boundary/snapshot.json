@@ -1,0 +1,225 @@
+{
+  "audit_sha256": "a8f0d320d3408cb65e725c5e1849ffda3cd63854592065a3b8b066a0da6938be",
+  "copied_files": [
+    {
+      "path": "experiments/2026-09-25-projection-worst-boundary-plan.md",
+      "sha256": "03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c",
+      "source": "docs/experiments/2026-09-25-projection-worst-boundary-plan.md"
+    },
+    {
+      "path": "experiments/2026-09-25-projection-worst-boundary.json",
+      "sha256": "d79b43f9551e9918a0ec8d62cc5e9027623b628437b9750f846b86decc881250",
+      "source": "docs/experiments/2026-09-25-projection-worst-boundary.json"
+    },
+    {
+      "path": "scripts/refit_worst_boundary_projection.py",
+      "sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "source": "scripts/refit_worst_boundary_projection.py"
+    },
+    {
+      "path": "scripts/refit_membership_projection.py",
+      "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "source": "scripts/refit_membership_projection.py"
+    },
+    {
+      "path": "configs/experiments/projection_worst_boundary_v1.json",
+      "sha256": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+      "source": "configs/experiments/projection_worst_boundary_v1.json"
+    },
+    {
+      "path": "configs/experiments/projection_only_refit_v1.json",
+      "sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+      "source": "configs/experiments/projection_only_refit_v1.json"
+    },
+    {
+      "path": "tests/unit/test_projection_worst_boundary.py",
+      "sha256": "b4e5b1968c0f322ba9e5451c97d45e60bafbfe85f375ef7ce4993cce14d68e7d",
+      "source": "tests/unit/test_projection_worst_boundary.py"
+    },
+    {
+      "path": "tests/unit/test_projection_only_refit.py",
+      "sha256": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6",
+      "source": "tests/unit/test_projection_only_refit.py"
+    },
+    {
+      "path": "tests/fixtures/projection_refit_runtime_source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "tests/fixtures/projection_refit_runtime_source.zip"
+    },
+    {
+      "path": "campaign/summary.json",
+      "sha256": "23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.json"
+    },
+    {
+      "path": "campaign/summary.script.py",
+      "sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.script.py"
+    },
+    {
+      "path": "campaign/summary.mean-helper.py",
+      "sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.mean-helper.py"
+    },
+    {
+      "path": "campaign/summary.helper.py",
+      "sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.helper.py"
+    },
+    {
+      "path": "campaign/summary.plan.md",
+      "sha256": "03bda47032fa65c11bf70904cb05f845fe10a89154e36a5edb5b76b0f5d7be9c",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.plan.md"
+    },
+    {
+      "path": "campaign/summary.recipe.json",
+      "sha256": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.recipe.json"
+    },
+    {
+      "path": "campaign/summary.source.zip",
+      "sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.source.zip"
+    },
+    {
+      "path": "campaign/summary.configs.zip",
+      "sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.configs.zip"
+    },
+    {
+      "path": "campaign/summary.test-receipt.json",
+      "sha256": "57acbcbf1bb8bf926bc6e1444c3cdfef65ff68fa2fd37ecd0a1770d7051cc1a4",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.test-receipt.json"
+    },
+    {
+      "path": "campaign/summary.test-stdout.txt",
+      "sha256": "2a606200af921a129531b5c49b03b70479b0cbbaba4c98bdbd7df97ed598af54",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.test-stdout.txt"
+    },
+    {
+      "path": "campaign/summary.inputs.json",
+      "sha256": "13b4bccd9f532b561ff0065e699bbdc025b70c528f2292593bb0f73799034027",
+      "source": "runs/learning/projection-worst-boundary-v1/summary.inputs.json"
+    },
+    {
+      "path": "campaign/independent-audit.json",
+      "sha256": "a8f0d320d3408cb65e725c5e1849ffda3cd63854592065a3b8b066a0da6938be",
+      "source": "runs/learning/projection-worst-boundary-v1/independent-audit.json"
+    },
+    {
+      "path": "campaign/independent-audit.py",
+      "sha256": "bbfe24e168f3f403a7871e4c0a00abddb16de234cd99ba52e69563d222c5db34",
+      "source": "runs/learning/projection-worst-boundary-v1/independent-audit.py"
+    },
+    {
+      "path": "campaign/decision.json",
+      "sha256": "d315b51f9f53da3ab9157a1ae57311a1a99b90fa1e099f57513531daaf969eee",
+      "source": "runs/learning/projection-worst-boundary-v1/decision.json"
+    },
+    {
+      "path": "campaign/record-decision.py",
+      "sha256": "51ddb08f1a7eae5d3886f8b9e2bf8d2dfeb4327581134587fcb4583c4baada23",
+      "source": "runs/learning/projection-worst-boundary-v1/record-decision.py"
+    },
+    {
+      "path": "campaign/execution-receipt.json",
+      "sha256": "2111108186de783870aae7523e57f7ac4adaa6766c9a6e6c1a48f2686c7374ad",
+      "source": "runs/learning/projection-worst-boundary-v1/execution-receipt.json"
+    },
+    {
+      "path": "campaign/execution-stdout.txt",
+      "sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+      "source": "runs/learning/projection-worst-boundary-v1/execution-stdout.txt"
+    },
+    {
+      "path": "campaign/register-checkpoint.py",
+      "sha256": "339da29a1beb0bae217136b0785f507fc57cf342ce83b87240779d940d8093cc",
+      "source": "runs/learning/projection-worst-boundary-v1/register-checkpoint.py"
+    },
+    {
+      "path": "campaign/run.json",
+      "sha256": "23e5be62dd55dec5784bbbb4418d8e2d8c1875ccda931250f0c8a4f6ec7b0695",
+      "source": "runs/learning/projection-worst-boundary-v1/run.json"
+    },
+    {
+      "path": "campaign/training.json",
+      "sha256": "668aa0932666924c38cb0f224f3ecd53168e40c074e6445dc0920b0d3942b1e3",
+      "source": "runs/learning/projection-worst-boundary-v1/training.json"
+    },
+    {
+      "path": "campaign/checkpoint-final.pt.json",
+      "sha256": "1b6cae108d0d2923e71263ec290df8787183022549019661e0b7d1ed18ccbaea",
+      "source": "runs/learning/projection-worst-boundary-v1/checkpoint-final.pt.json"
+    },
+    {
+      "path": "campaign/comparisons.json",
+      "sha256": "ffea2e7f3f82c19e52ab1a9a8e75f7b2fe5c38a8294e63b03fea7a35e1ef7c3b",
+      "source": "runs/learning/projection-worst-boundary-v1/comparisons.json"
+    },
+    {
+      "path": "campaign/mean-refit-comparator.json",
+      "sha256": "dd82936200d520d5c25ce1df6f3a81eeada5056a86fb136713d3246a3905df4a",
+      "source": "runs/learning/projection-worst-boundary-v1/mean-refit-comparator.json"
+    },
+    {
+      "path": "verification/runner/stdout.txt",
+      "sha256": "2a606200af921a129531b5c49b03b70479b0cbbaba4c98bdbd7df97ed598af54",
+      "source": "runs/learning/projection-worst-boundary-runner-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/runner/test-receipt.json",
+      "sha256": "57acbcbf1bb8bf926bc6e1444c3cdfef65ff68fa2fd37ecd0a1770d7051cc1a4",
+      "source": "runs/learning/projection-worst-boundary-runner-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/stdout.txt",
+      "sha256": "15fa85049dcaf4e069ccf61c6aa64da1649e4c010d23e7eaaa0517edcaf8d9ad",
+      "source": "runs/learning/projection-worst-boundary-auditor-tests-v1/stdout.txt"
+    },
+    {
+      "path": "verification/auditor/test-receipt.json",
+      "sha256": "7d11dd6054c938a984e0d72ee8e92f3cb46140677a133ebe645f2bdd696060be",
+      "source": "runs/learning/projection-worst-boundary-auditor-tests-v1/test-receipt.json"
+    },
+    {
+      "path": "verification/auditor/test_auditor.py",
+      "sha256": "1bf505c05c4caf3f92758c98b9dc50baeac55b19bb43ac2eb74315ea587a3693",
+      "source": "runs/learning/projection-worst-boundary-auditor-tests-v1/test_auditor.py"
+    },
+    {
+      "path": "verification/auditor/actual-audit-stdout.txt",
+      "sha256": "be6a9dab94e1d19c7c886068546760d00670b596b9d046e81489e43ac9b77db5",
+      "source": "runs/learning/projection-worst-boundary-auditor-tests-v1/actual-audit-stdout.txt"
+    },
+    {
+      "path": "dependencies/mean-refit-independent-audit.py",
+      "sha256": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+      "source": "runs/learning/projection-only-refit-v1/independent-audit.py"
+    },
+    {
+      "path": "learning/40-training-the-weakest-membership-decisions.md",
+      "sha256": "b24b3ffbe364fdb1f6eefa39a66dce8d67c421fba660683a485fb0b6991121e9",
+      "source": "docs/learning/40-training-the-weakest-membership-decisions.md"
+    },
+    {
+      "path": "model-versions.md",
+      "sha256": "3c6267767defd7cc65ae8149777fd756651a1917a1d317052133ad510f632fee",
+      "source": "docs/model-versions.md"
+    },
+    {
+      "path": "experiments/2026-09-25-worst-boundary-model-version-inventory.json",
+      "sha256": "722409c802744c73010661ac0d5996eecdc3426110e20ef4c67c8431455cbc57",
+      "source": "docs/experiments/2026-09-25-worst-boundary-model-version-inventory.json"
+    }
+  ],
+  "date": "2026-09-25",
+  "decision_sha256": "d315b51f9f53da3ab9157a1ae57311a1a99b90fa1e099f57513531daaf969eee",
+  "executed_source_identity": "Campaign source/config/runner/helper snapshots and training identities; current checkout commit is copying provenance only.",
+  "local_dependencies_manifest_sha256": "aae87bf804f796c0e5a4275be73c6f2eb9a608bd4a700f7dc11df1027e2f46c1",
+  "previous_manifest_entries_verified": 458,
+  "primary_copy_batch_manifest_sha256": "4bf423fd49d570f08b75662511a2695dfaeafcd1ff159f41fa656d128d8f4c05",
+  "primary_summary_sha256": "23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0",
+  "source_commit": "8afff361447b1357a041aa65f5b588af5b7ba5b5",
+  "source_repository": "mateors1/Plm-protocolized-language-model-pika-edition",
+  "source_working_tree_dirty": true
+}

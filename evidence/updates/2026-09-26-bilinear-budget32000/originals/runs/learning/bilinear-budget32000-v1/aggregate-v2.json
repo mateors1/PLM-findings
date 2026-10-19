@@ -1,0 +1,508 @@
+{
+  "acceptance": false,
+  "all_three": {
+    "aggregate": {
+      "exact_count": 660,
+      "f1": 0.9999637956903659,
+      "false_negative_count": 7,
+      "false_positive_count": 1,
+      "precision": 0.9999891978309244,
+      "query_count": 666,
+      "recall": 0.9999387155396199,
+      "serialization_compatible": 666,
+      "set_size": 128.11261261261262,
+      "strict_separation_count": 665
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 309,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 309,
+        "recall": 1.0,
+        "serialization_compatible": 309,
+        "set_size": 113.66990291262135,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "exact_count": 198,
+        "f1": 0.9998818035773706,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "precision": 0.9999647340950769,
+        "query_count": 204,
+        "recall": 0.9997999242616998,
+        "serialization_compatible": 204,
+        "set_size": 171.55882352941177,
+        "strict_separation_count": 203
+      },
+      "TYPE_single": {
+        "exact_count": 153,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 153,
+        "recall": 1.0,
+        "serialization_compatible": 153,
+        "set_size": 99.3529411764706,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "base_aggregator_sha256": "41bc30b8e0b29742b4446a3b4a776c91ea7264f656b8dc01ab60966f1df5a09a",
+  "base_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+    "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+  },
+  "campaign_version": "bilinear-budget32000-v1",
+  "complete": true,
+  "evaluator": "plm-bilinear-budget32000-screen-v1",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "1729": true,
+      "1730": true,
+      "1731": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "input_sha256": {
+    "configs/experiments/bilinear_budget32000_v1.json": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+    "docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "docs/experiments/2026-09-26-bilinear-budget32000-plan.md": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "docs/experiments/2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v1/stdout.txt": "71ef10bae6f98db76ad3403078381213e1269b69d63d0666ffa5474624cd46db",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v1/test-receipt.json": "262cd1c7e0c8d56d6c7baccced0a003e6a8e19e7861425704d7ec3aa428f1d0e",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v2/stdout.txt": "aa1b50c46d9e15d319cbabc82ef6f177362a507347f5524135cdd98b0bc47d04",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v2/test-receipt.json": "1cee507361d7ad5c8dc3dac2c9cb6db4c48280b6d7b61361529e0bed61bb1a2e",
+    "runs/learning/bilinear-budget32000-auditor-tests-v1/stdout.txt": "8215c9fdb18dc5a88380368fdfb9edd6d60b92760f3df281cde63c711b0f98d5",
+    "runs/learning/bilinear-budget32000-auditor-tests-v1/test-receipt.json": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67",
+    "runs/learning/bilinear-budget32000-auditor-tests-v2/stdout.txt": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257",
+    "runs/learning/bilinear-budget32000-auditor-tests-v2/test-receipt.json": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6",
+    "runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "runs/learning/bilinear-budget32000-readiness-v2/readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "runs/learning/bilinear-budget32000-runner-tests-v1/stdout.txt": "0b0c14daf7533669715587d373a86d5844afb38f45095f1fdea6724b9ca62fe0",
+    "runs/learning/bilinear-budget32000-runner-tests-v1/test-receipt.json": "d7e49feb6f8f472c6da2c2f6b01e0f70e46fd96da7a0d5ac138b867f53ce7270",
+    "runs/learning/bilinear-budget32000-runner-tests-v2/stdout.txt": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894",
+    "runs/learning/bilinear-budget32000-runner-tests-v2/test-receipt.json": "b649196036e57ff90d5a0b3f389862a83abfb236f6824e97c2f253e7b4d5901c",
+    "runs/learning/bilinear-budget32000-v1/independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+    "runs/learning/bilinear-budget32000-v1/independent-audit.py": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/audit-execution-receipt.json": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/audit-stdout.txt": "acdd469f411f38422c7fe22b9543d44ba15d174eb3bfc50fb40397f56f50ab1b",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/child.json": "8609c7d0286e7140e2db718822643beb8174b5f7a7f9f409f4437eddd3f58240",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/execution-receipt.json": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "runs/learning/bilinear-budget32000-v1/seed-1729/summary.json": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/audit-execution-receipt-v2.json": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/audit-stdout-v2.txt": "013a0522fb52ed8d668ea2eb835b02bd9764d27e45eeaf4e6a80b8045719d597",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/child.json": "f5b43656be8fd21bb7235ce72fc92f369fdcd83312f456fb90c92b173860cd23",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/execution-receipt.json": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "runs/learning/bilinear-budget32000-v1/seed-1730/summary.json": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/audit-execution-receipt-v2.json": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/audit-stdout-v2.txt": "a8147359b402002fd6964c531a94c8c7b9174fddbeadd34bd0b81825c91f3a80",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/child.json": "0b24d38119de11b2e7342b75e6641f5bd93dcbc28fb34b8872a2e4af719c57ae",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation-complete.json": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-aggregate-tests-v2/stdout.txt": "aa1b50c46d9e15d319cbabc82ef6f177362a507347f5524135cdd98b0bc47d04",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-aggregate-tests-v2/test-receipt.json": "1cee507361d7ad5c8dc3dac2c9cb6db4c48280b6d7b61361529e0bed61bb1a2e",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-auditor-tests-v2/stdout.txt": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-auditor-tests-v2/test-receipt.json": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-readiness-v2/readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-runner-tests-v2/stdout.txt": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-runner-tests-v2/test-receipt.json": "b649196036e57ff90d5a0b3f389862a83abfb236f6824e97c2f253e7b4d5901c",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-v1/independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/scripts/aggregate_bilinear_budget32000_v2.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/scripts/refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_aggregate_v2.py": "05a510a6a0401ddc75e502ff6f04f16b8fa483db3e45d5bf1033c4e78eb288cb",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/execution-receipt.json": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "runs/learning/bilinear-budget32000-v1/seed-1731/summary.json": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+    "runs/learning/projection-only-refit-v1/independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "runs/learning/wide-first-choice-v1/summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "scripts/aggregate_bilinear_budget32000.py": "41bc30b8e0b29742b4446a3b4a776c91ea7264f656b8dc01ab60966f1df5a09a",
+    "scripts/aggregate_bilinear_budget32000_v2.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+    "scripts/refit_bilinear_budget32000.py": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+    "scripts/refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+    "scripts/refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "scripts/refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "scripts/refit_symmetric_affine_v3.py": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+    "tests/fixtures/projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "tests/unit/test_bilinear_budget32000.py": "44b12f82802902dde0af9ded46b5be821320e573b6b7c30d50dc0514dd2728c0",
+    "tests/unit/test_bilinear_budget32000_aggregate.py": "85adc8c197da236563f7061bd4e3fa06f743c0e42a73d0671ef9887801c36fd4",
+    "tests/unit/test_bilinear_budget32000_aggregate_v2.py": "05a510a6a0401ddc75e502ff6f04f16b8fa483db3e45d5bf1033c4e78eb288cb",
+    "tests/unit/test_bilinear_budget32000_audit.py": "d48e33542c5f41eea1d76b2c626034e356f98a3b8d986155261af98bb618b7c7",
+    "tests/unit/test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80",
+    "tests/unit/test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b",
+    "tests/unit/test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34"
+  },
+  "limitations": [
+    "Mixed original and repaired audit routes; original failed audit is preserved.",
+    "666 observations reuse 222 development queries and three parents.",
+    "Metadata aggregation; scientific payload checks belong to seed audits.",
+    "Provisional until independent aggregate audit and owner decision."
+  ],
+  "per_seed": [
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1729/audit-execution-receipt.json",
+      "audit_receipt_sha256": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+      "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+      "auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+      "child": {
+        "aggregate": {
+          "exact_count": 218,
+          "f1": 0.9999232353409879,
+          "false_negative_count": 6,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 0.9998472121671663,
+          "serialization_compatible": 222,
+          "set_size": 128.09459459459458,
+          "strict_separation_count": 221
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 64,
+            "f1": 0.9997493859661662,
+            "false_negative_count": 6,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 0.999501192663396,
+            "serialization_compatible": 68,
+            "set_size": 171.5,
+            "strict_separation_count": 67
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 28,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 59,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 19,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "execution_receipt_sha256": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1729,
+      "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+      "test_receipt_sha256": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67"
+    },
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1730/audit-execution-receipt-v2.json",
+      "audit_receipt_sha256": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+      "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+      "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+      "child": {
+        "aggregate": {
+          "exact_count": 222,
+          "f1": 1.0,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 1.0,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 68,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 1.0,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 22,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 21,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "execution_receipt_sha256": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1730,
+      "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+      "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+    },
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1731/audit-execution-receipt-v2.json",
+      "audit_receipt_sha256": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+      "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+      "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+      "child": {
+        "aggregate": {
+          "exact_count": 220,
+          "f1": 0.9999681517301094,
+          "false_negative_count": 1,
+          "false_positive_count": 1,
+          "precision": 0.9999675934927734,
+          "query_count": 222,
+          "recall": 0.9999689344516931,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 66,
+            "f1": 0.9998960247659454,
+            "false_negative_count": 1,
+            "false_positive_count": 1,
+            "precision": 0.9998942022852306,
+            "query_count": 68,
+            "recall": 0.9998985801217039,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 6,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 6,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 109,
+          "groups": {
+            "COLOR": {
+              "gains": 21,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 25,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "continuation_complete_sha256": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+      "execution_receipt_sha256": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+      "execution_wrapper_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1731,
+      "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+      "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+    }
+  ],
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "protected_test_used": false,
+  "readiness_sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+  "script_sha256": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+  "shared_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+    "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+  },
+  "snapshot_sha256": {
+    "runs/learning/bilinear-budget32000-v1/aggregate-v2.inputs.json": "b17005b5ea95586a5b3c4dc60e750fbdedea21db0497e9708a7725f0a2ca075c",
+    "runs/learning/bilinear-budget32000-v1/aggregate-v2.readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "runs/learning/bilinear-budget32000-v1/aggregate-v2.script.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4"
+  },
+  "standard_serving_supported": false
+}

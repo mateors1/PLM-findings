@@ -1,0 +1,17 @@
+["uv", "run", "--no-sync", "ruff", "check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py"]
+All checks passed!
+
+exit_code=0
+["uv", "run", "--no-sync", "ruff", "format", "--check", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py"]
+2 files already formatted
+
+exit_code=0
+["uv", "run", "--no-sync", "pytest", "-o", "addopts=", "-q", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_worst_boundary.py", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py"]
+...............................................                          [100%]
+47 passed in 6.33s
+
+exit_code=0
+["uv", "run", "--no-sync", "python", "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_worst_boundary_projection.py", "--preflight-only"]
+{"preflight_passed": true, "torch_imported": false, "training_executed": false, "input_count": 56, "script_sha256": "8598f110d7cbc60085c7d099a821386cba3566f4264c91939fada5baa0f0e480", "recipe_sha256": "023cc73601332bc2260339808dd244b8456c4e86d59ac5a3cf5bac9e5b9a8c0c"}
+
+exit_code=0

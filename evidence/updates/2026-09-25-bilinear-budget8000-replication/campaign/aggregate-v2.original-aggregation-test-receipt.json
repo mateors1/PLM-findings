@@ -1,0 +1,39 @@
+{
+  "commands": [
+    "uv run --no-sync ruff check scripts/aggregate_bilinear_budget8000_replication.py tests/unit/test_bilinear_budget8000_replication_aggregate.py",
+    "uv run --no-sync ruff format --check scripts/aggregate_bilinear_budget8000_replication.py tests/unit/test_bilinear_budget8000_replication_aggregate.py",
+    "uv run --no-sync pytest -q -o addopts= tests/unit/test_bilinear_budget8000_replication_aggregate.py",
+    "uv run --no-sync python scripts/aggregate_bilinear_budget8000_replication.py --preflight-only"
+  ],
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "observed_execution": {
+    "exit_code": 0,
+    "terminal_completion_observed": true
+  },
+  "passed": true,
+  "plan_sha256": "750d115b2fd0daf356cb3a633248e826c264f30533ddf8e8df2ee125d2ecdc6b",
+  "preflight": {
+    "input_count": 122,
+    "passed": true,
+    "torch_imported": false
+  },
+  "skipped": 0,
+  "stdlib_only_tests": true,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-runner-tests-v1\\aggregate-stdout.txt",
+    "sha256": "4ed1dcb2c9f2e1afd088cb2292b5bfdedb7899543f9a83d39d80eeb72b8e67ff"
+  },
+  "test_count": 34,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_budget8000_replication.py": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget8000_replication_aggregate.py": "4edc1212544d7144e78441693e4c66a909834e40bee337528904bd7a8b5c1d40",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_replication.py": "6dc65cdf8a435f8e3c588fa637b86089099f55346f482d7a56fe788cfa86bddc"
+  },
+  "test_source": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget8000_replication_aggregate.py",
+  "tested_recipe_sha256": "20fad007be0d1852e86086229edc7c9c760117039f0685288d4e8e22f695075f",
+  "tested_runner_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+  "tested_script_sha256": "78cae68bdf741ec35c6deff6a62b57673092be0cf61968e88bbf40274878789f",
+  "tested_test_sha256": "4edc1212544d7144e78441693e4c66a909834e40bee337528904bd7a8b5c1d40"
+}

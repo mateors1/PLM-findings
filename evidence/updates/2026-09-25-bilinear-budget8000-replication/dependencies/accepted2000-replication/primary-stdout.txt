@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_replication.py", line 1126, in <module>
+    main()
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_replication.py", line 1110, in main
+    _aggregate(out, context, mean, helper, summary)
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_replication.py", line 866, in _aggregate
+    _require(
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_bilinear_replication.py", line 62, in _require
+    raise ValueError(message)
+ValueError: launch/terminal chronology binding

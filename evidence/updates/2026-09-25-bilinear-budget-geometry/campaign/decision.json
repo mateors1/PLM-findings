@@ -1,0 +1,21 @@
+{
+  "alternative_predictions_generated": false,
+  "audit_execution_receipt_sha256": "d82a603c865f3a78d742beb848a837eb4cbd30d877265f501b65a73bcad25689",
+  "audit_sha256": "a3d65939a5f844f5eaf0e087bb3ec5071489e1bab8173c2c1c58544710a7c8ac",
+  "auditor_sha256": "c4625ee5ac37b741ea85f1a73365dd4b878d08d04b09daec748816d31c8ecb4d",
+  "basis": "Independent saved-score reconstruction and paired-budget comparisons; no new predictions or checkpoint payload access.",
+  "campaign_version": "bilinear-budget-geometry-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "f403d75d503234ba67dc2f4ef6601162a73d498fc061714e3a8fdcbbca48c63f",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "9d5bb49a06e1a0cd699e4beee83d566227f749e1c4f8e949e8b3ee77330f1e94",
+  "new_checkpoint_created": false,
+  "policy_promoted": false,
+  "posthoc_validation_diagnostic": true,
+  "prior_inventory_sha256": "96fe9238fe1ea8bee910f06ba7aa2c8d2bb2e0381730c35c29338b73c03ef709",
+  "protected_test_used": false,
+  "quality_gate_applicable": false,
+  "registered_final_count_unchanged": 37,
+  "summary_sha256": "3264144d880fc4fea7487e80bc0a5e5e6275cf294c723af3cb3c0e5e5f24b38d",
+  "threshold_selected": false
+}

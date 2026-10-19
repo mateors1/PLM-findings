@@ -1,0 +1,32 @@
+{
+  "audit_sha256": "a8f0d320d3408cb65e725c5e1849ffda3cd63854592065a3b8b066a0da6938be",
+  "auditor_sha256": "bbfe24e168f3f403a7871e4c0a00abddb16de234cd99ba52e69563d222c5db34",
+  "basis": "Independent saved-evidence audit verifies labels, split, predictions, metrics, final checkpoint and optimizer state, frozen tensors, lineage and declared gate. It does not repeat training or independently regenerate logits.",
+  "campaign_version": "projection-worst-boundary-v1",
+  "child_checkpoint_sha256": "0abfbef2af5e12bcdaf21292a3b62a5a047fcdb7e6e77a8be5f5a0bb6fc4323b",
+  "date": "2026-09-25",
+  "decision_script_sha256": "51ddb08f1a7eae5d3886f8b9e2bf8d2dfeb4327581134587fcb4583c4baada23",
+  "default_changed": false,
+  "evidence_accepted": true,
+  "fixed_quality_gate_passed": false,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "exact_above_201": false,
+      "execution_invariants": true,
+      "f1_at_least_strong_comparator": true,
+      "group_exact_nonregression": false,
+      "serialization_compatible": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": false
+  },
+  "new_checkpoint_created": true,
+  "outcome": "Fixed quality screen fails; retain the trained derivative and negative evidence.",
+  "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "standard_serving_supported": false,
+  "summary_sha256": "23e526198e8559b0ded737524fa274d73e5237ee6c0c7b209ca2418977dda6b0",
+  "training_executed": true
+}

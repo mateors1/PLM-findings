@@ -1,0 +1,54 @@
+{
+  "campaign_version": "bilinear-budget32000-error-geometry-v1",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q",
+    "tests/unit/test_bilinear_budget32000_error_geometry_audit.py"
+  ],
+  "coverage": [
+    "Independent four categories, signed zero, extrema ties, disjoint per-query threshold intervals.",
+    "Nonfinite/non-FP32/nonnumeric scores and malformed memberships/metrics rejected.",
+    "Full real-stage synthetic audit lifecycle and primary-to-auditor subprocess contract.",
+    "Tampered reduced row, shared interval, pooled counts, overlap, output routes, input inventories, snapshots and terminal rejected.",
+    "Forged acceptance chains, wrong original/v2 audit routing and child/checkpoint metadata drift rejected.",
+    "Helper source rejected before execution on hash mismatch; unadmitted reads and final identity drift rejected.",
+    "Exclusive output preservation and512KiB bound."
+  ],
+  "diagnostic_executed": false,
+  "exit_code": 0,
+  "fixture_scope": "Synthetic saved validation scores only. Actual frozen primary run and auditor CLI are invoked in a fresh process; only synthetic upstream/readiness pins and fixture source paths are substituted. No real reductions, weights, GPU or protected data.",
+  "gpu_used": false,
+  "lint": "ruff check and format passed before final suite",
+  "passed": true,
+  "schema_version": 1,
+  "separate_actual_metadata_check": {
+    "actual_independent_audit_executed": false,
+    "admitted_inputs": 28,
+    "new_geometry_reductions_executed": false,
+    "passed": true,
+    "tool_chunk": "6c89ca"
+  },
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/auditor-stdout.txt",
+    "sha256": "c3c1b0265ad5055cc8a7599e91d1228aee09ba241b6820f5f32ee334e7203b8c"
+  },
+  "terminal_chunk": "cff23b",
+  "terminal_completion_observed": true,
+  "terminal_session_id": 44542,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-plan.md": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4",
+    "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.py": "a0ff1149e170dc5c2be1532fc6fd2460b9ba35330a3baa5f0fadbcf1b3d809fd",
+    "runs/learning/bilinear-error-geometry-v1/independent-audit.py": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+    "scripts/diagnose_bilinear_budget32000_errors.py": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+    "scripts/diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "tests/unit/test_bilinear_budget32000_error_geometry_audit.py": "2c596e61b14e67d4cc00edd71c29eeae18d64317fac06bb93ad08b7686aab10d"
+  },
+  "tested_script_sha256": "a0ff1149e170dc5c2be1532fc6fd2460b9ba35330a3baa5f0fadbcf1b3d809fd",
+  "tests_passed": 41,
+  "tests_skipped": 0
+}

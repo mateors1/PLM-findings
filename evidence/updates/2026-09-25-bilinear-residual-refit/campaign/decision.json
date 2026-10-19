@@ -1,0 +1,36 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "audit_sha256": "2d8f3d49a4d6e25eaee319f3517b7ec69e139a566a814d4be1f01a44cdbef417",
+  "auditor_sha256": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+  "basis": "Independent saved-evidence audit of split, labels, selected sets, metrics, zero-start replay records, tensor lineage, optimizer and declared gate. This does not independently repeat neural training or regenerate CUDA logits.",
+  "campaign_version": "bilinear-residual-refit-v1",
+  "child_checkpoint_sha256": "1f6e9a593ac5c5c83f0d003f273adc02213845ab94f7d5118b1b55bf5bab43d9",
+  "date": "2026-09-25",
+  "decision_script_sha256": "9210720e8f4341b2224259291e5ebc6966ae7365e17b0723473beb6dc2ead5a9",
+  "default_changed": false,
+  "evaluator": "plm-bilinear-residual-screen-v1",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "6ca841ddfbded81dafb370d99030c43e59a5b603f54e6637adb5f770abfa24bd",
+  "fixed_quality_gate_passed": false,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "exact_above_201": false,
+      "execution_invariants": true,
+      "f1_at_least_strong_comparator": true,
+      "group_exact_nonregression": false,
+      "serialization_compatible": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": false
+  },
+  "new_checkpoint_created": true,
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "outcome": "Fixed quality screen fails; preserve the derivative and negative evidence.",
+  "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "standard_serving_supported": false,
+  "summary_sha256": "92955bf21ce9dc85ce9806436417436cece618d1be9edd3c400f6d90c96bc0b5",
+  "training_executed": true
+}

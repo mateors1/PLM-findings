@@ -1,0 +1,22 @@
+{
+  "auditor": {
+    "path": "runs/learning/symmetric-affine8000-v3/independent-audit.py",
+    "sha256": "06f684c9a770f7e2e28a2a5dff926cd2752aab779837abad257e3f5d1a5f4f1b"
+  },
+  "candidate_audited": false,
+  "experiment": "symmetric-affine8000-v3",
+  "input_adapter_identity": "plm-authenticated-partition-membership-v1",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "plan_sha256": "d102c6d00ab536b89c0a0021097976fb997831184a4e4c2db82d172a4c61a19a",
+  "ready": true,
+  "repair_declaration_sha256": "34dcf2a850c58ca96770dce02d6f64c1a4aa821d885dba04ad173421189a9dfc",
+  "schema_version": 1,
+  "test_receipt": {
+    "path": "runs/learning/symmetric-affine-auditor-tests-v3/test-receipt.json",
+    "sha256": "c2ff23174d0f9cf31168d3d36634d538ec99e7f41a27c66e8ec5d621150a2a49"
+  },
+  "tests": {
+    "path": "tests/unit/test_symmetric_affine_audit_v3.py",
+    "sha256": "a1663dcc9e82cc1cede12807a75cb5e7574d21468d6c57893cbbf7bcdffd6cad"
+  }
+}

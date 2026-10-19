@@ -1,0 +1,1 @@
+{"complete": true, "audit_passed": true, "output": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\aggregate-audit-v2.json", "sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c"}

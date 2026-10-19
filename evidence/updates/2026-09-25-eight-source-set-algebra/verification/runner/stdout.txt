@@ -1,0 +1,12 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_source_intersections.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_source_intersections.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_source_intersections.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_source_intersections.py
+2 files already formatted
+
+$ uv run --no-sync pytest C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_source_intersections.py -o addopts= -q
+......................................                                   [100%]
+38 passed in 0.15s
+
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\evaluate_source_intersections.py --preflight-only
+{"preflight_passed": true, "baseline_reproduction_exact": true, "new_policy_measured": false, "torch_imported": false, "script_sha256": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598", "input_count": 9}

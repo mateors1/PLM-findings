@@ -1,0 +1,30 @@
+{
+  "campaign_version": "bilinear-budget32000-v1",
+  "files": {
+    "configs/experiments/bilinear_budget32000_v1.json": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+    "docs/experiments/2026-09-26-bilinear-budget32000-plan.md": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "docs/experiments/2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v1/stdout.txt": "71ef10bae6f98db76ad3403078381213e1269b69d63d0666ffa5474624cd46db",
+    "runs/learning/bilinear-budget32000-aggregate-tests-v1/test-receipt.json": "262cd1c7e0c8d56d6c7baccced0a003e6a8e19e7861425704d7ec3aa428f1d0e",
+    "runs/learning/bilinear-budget32000-auditor-tests-v1/stdout.txt": "8215c9fdb18dc5a88380368fdfb9edd6d60b92760f3df281cde63c711b0f98d5",
+    "runs/learning/bilinear-budget32000-auditor-tests-v1/test-receipt.json": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67",
+    "runs/learning/bilinear-budget32000-runner-tests-v1/stdout.txt": "0b0c14daf7533669715587d373a86d5844afb38f45095f1fdea6724b9ca62fe0",
+    "runs/learning/bilinear-budget32000-runner-tests-v1/test-receipt.json": "d7e49feb6f8f472c6da2c2f6b01e0f70e46fd96da7a0d5ac138b867f53ce7270",
+    "runs/learning/bilinear-budget32000-v1/independent-audit.py": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+    "runs/learning/projection-only-refit-v1/independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "runs/learning/wide-first-choice-v1/summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "scripts/aggregate_bilinear_budget32000.py": "41bc30b8e0b29742b4446a3b4a776c91ea7264f656b8dc01ab60966f1df5a09a",
+    "scripts/refit_bilinear_budget32000.py": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+    "scripts/refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "scripts/refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "scripts/refit_symmetric_affine_v3.py": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+    "tests/fixtures/projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "tests/unit/test_bilinear_budget32000.py": "44b12f82802902dde0af9ded46b5be821320e573b6b7c30d50dc0514dd2728c0",
+    "tests/unit/test_bilinear_budget32000_aggregate.py": "85adc8c197da236563f7061bd4e3fa06f743c0e42a73d0671ef9887801c36fd4",
+    "tests/unit/test_bilinear_budget32000_audit.py": "d48e33542c5f41eea1d76b2c626034e356f98a3b8d986155261af98bb618b7c7",
+    "tests/unit/test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34"
+  },
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "ready": true,
+  "schema_version": 1
+}

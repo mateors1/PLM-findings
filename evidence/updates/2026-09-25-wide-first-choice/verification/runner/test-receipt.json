@@ -1,0 +1,52 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_wide_first_choices.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_wide_first_choices.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_wide_first_choices.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_wide_first_choices.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_wide_first_choices.py",
+      "-o",
+      "addopts=",
+      "-q"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_wide_first_choices.py",
+      "--preflight-only"
+    ]
+  ],
+  "gpu_used": false,
+  "passed": true,
+  "real_inference_executed": false,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-runner-tests-v1\\stdout.txt",
+    "sha256": "2a3450f788092218e03daa5730df1819f56c2d8ea93dd8cd737baac0ba09e228"
+  },
+  "test_count": 29,
+  "tested_script_sha256": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+  "tested_test_sha256": "acbc3c905313fa34dac0b846def899598be47020e41821bb74c9c88b355a8d51"
+}

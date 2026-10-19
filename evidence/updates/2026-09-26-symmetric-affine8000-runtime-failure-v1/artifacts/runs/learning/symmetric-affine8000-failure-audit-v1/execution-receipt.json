@@ -1,0 +1,19 @@
+{
+  "audit_id": "symmetric-affine8000-failure-audit-v1",
+  "candidate_training_executed": false,
+  "checkpoint_payload_loaded": false,
+  "exit_code": 0,
+  "report_sha256": "f012162aae60dcd9211ce9db919864282fe7ef7c388c70113936cbf04dee6dbb",
+  "script_sha256": "5fecd793be56a393b990ca4da58035992308e7b451f80c3526f1ab947c075ce5",
+  "stdout_sha256": "72c41a7f3dcb88ef3ed9a8d917957d26277e9eb6c0dd27e582bd9814dab3265c",
+  "synthetic_tests": {
+    "exit_code": 0,
+    "passed": 17,
+    "skipped": 0,
+    "source_sha256": "ed22915a43a3ccbbc20746d7ecef613a74ebb83cd596b5e9af56efbe14603da8",
+    "terminal_chunk_id": "4d6329"
+  },
+  "terminal_chunk_id": "aeb52e",
+  "terminal_completion_observed": true,
+  "torch_imported": false
+}

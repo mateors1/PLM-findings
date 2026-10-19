@@ -1,0 +1,12 @@
+{
+  "finished_at_utc": "2026-09-26T00:38:55.3747712+00:00",
+  "terminal_session_id": 64959,
+  "previous_terminal_receipt_sha256": null,
+  "seed": 1730,
+  "terminal_completion_observed_by_primary": true,
+  "stdout_sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+  "summary_sha256": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+  "started_at_utc": "2026-09-25T19:38:06.5251055-05:00",
+  "execution_order": 1,
+  "exit_code": 0
+}

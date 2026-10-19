@@ -1,0 +1,2113 @@
+{
+  "acceptance": false,
+  "audit_passed": true,
+  "budgets": {
+    "2000": {
+      "all_three": {
+        "aggregate": {
+          "category_counts": {
+            "exact_zero": 627,
+            "overlap_or_tie": 14,
+            "separated_extra": 15,
+            "separated_missing": 10
+          },
+          "exact_count": 627,
+          "false_negative_count": 25,
+          "false_positive_count": 28,
+          "query_count": 666,
+          "strict_separation_count": 652
+        },
+        "groups": {
+          "COLOR": {
+            "category_counts": {
+              "exact_zero": 309,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 309,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 309,
+            "strict_separation_count": 309
+          },
+          "TYPE_dual": {
+            "category_counts": {
+              "exact_zero": 166,
+              "overlap_or_tie": 14,
+              "separated_extra": 14,
+              "separated_missing": 10
+            },
+            "exact_count": 166,
+            "false_negative_count": 25,
+            "false_positive_count": 27,
+            "query_count": 204,
+            "strict_separation_count": 190
+          },
+          "TYPE_single": {
+            "category_counts": {
+              "exact_zero": 152,
+              "overlap_or_tie": 0,
+              "separated_extra": 1,
+              "separated_missing": 0
+            },
+            "exact_count": 152,
+            "false_negative_count": 0,
+            "false_positive_count": 1,
+            "query_count": 153,
+            "strict_separation_count": 153
+          }
+        }
+      },
+      "fresh_two": {
+        "aggregate": {
+          "category_counts": {
+            "exact_zero": 420,
+            "overlap_or_tie": 9,
+            "separated_extra": 9,
+            "separated_missing": 6
+          },
+          "exact_count": 420,
+          "false_negative_count": 15,
+          "false_positive_count": 20,
+          "query_count": 444,
+          "strict_separation_count": 435
+        },
+        "groups": {
+          "COLOR": {
+            "category_counts": {
+              "exact_zero": 206,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 206,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 206,
+            "strict_separation_count": 206
+          },
+          "TYPE_dual": {
+            "category_counts": {
+              "exact_zero": 112,
+              "overlap_or_tie": 9,
+              "separated_extra": 9,
+              "separated_missing": 6
+            },
+            "exact_count": 112,
+            "false_negative_count": 15,
+            "false_positive_count": 20,
+            "query_count": 136,
+            "strict_separation_count": 127
+          },
+          "TYPE_single": {
+            "category_counts": {
+              "exact_zero": 102,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 102,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 102,
+            "strict_separation_count": 102
+          }
+        }
+      },
+      "overlap": {
+        "failed_queries": [
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 1,
+            "seeds": [
+              1729,
+              1730
+            ],
+            "subject": "PKM_AEGISLASH"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 2,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_AERODACTYL"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 6,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_ARCHALUDON"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 7,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_ARCTIBAX"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 12,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_AZUMARILL"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 27,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 43,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_CRAMORANT"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 49,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_DEINO"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 67,
+            "seeds": [
+              1729,
+              1730,
+              1731
+            ],
+            "subject": "PKM_FEZANDIPITI"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 72,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_FLYGON"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 74,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_FROSLASS"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 91,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_HATTERENE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_single",
+            "index": 93,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_HERDIER"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 111,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_KYUREM"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 116,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_LEDIAN"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 124,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_MANTYKE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 150,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_PILOSWINE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 169,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_SABLEYE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 173,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_SEWADDLE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 177,
+            "seeds": [
+              1729,
+              1730,
+              1731
+            ],
+            "subject": "PKM_SKARMORY"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 184,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_SOLROCK"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 186,
+            "seeds": [
+              1730,
+              1731
+            ],
+            "subject": "PKM_STEELIX"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 188,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_SWANNA"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 197,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_TINKATON"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 202,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_TOXTRICITY"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 204,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_TURTONATOR"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 207,
+            "seeds": [
+              1730,
+              1731
+            ],
+            "subject": "PKM_TYRANITAR"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 218,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_ZAPDOS"
+          }
+        ],
+        "failure_seed_histogram": {
+          "1729": 8,
+          "1729,1730": 1,
+          "1729,1730,1731": 2,
+          "1729,1731": 4,
+          "1730": 5,
+          "1730,1731": 2,
+          "1731": 6,
+          "none": 194
+        },
+        "shared_queries": 222
+      }
+    },
+    "8000": {
+      "all_three": {
+        "aggregate": {
+          "category_counts": {
+            "exact_zero": 650,
+            "overlap_or_tie": 3,
+            "separated_extra": 5,
+            "separated_missing": 8
+          },
+          "exact_count": 650,
+          "false_negative_count": 12,
+          "false_positive_count": 8,
+          "query_count": 666,
+          "strict_separation_count": 663
+        },
+        "groups": {
+          "COLOR": {
+            "category_counts": {
+              "exact_zero": 309,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 309,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 309,
+            "strict_separation_count": 309
+          },
+          "TYPE_dual": {
+            "category_counts": {
+              "exact_zero": 188,
+              "overlap_or_tie": 3,
+              "separated_extra": 5,
+              "separated_missing": 8
+            },
+            "exact_count": 188,
+            "false_negative_count": 12,
+            "false_positive_count": 8,
+            "query_count": 204,
+            "strict_separation_count": 201
+          },
+          "TYPE_single": {
+            "category_counts": {
+              "exact_zero": 153,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 153,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 153,
+            "strict_separation_count": 153
+          }
+        }
+      },
+      "fresh_two": {
+        "aggregate": {
+          "category_counts": {
+            "exact_zero": 434,
+            "overlap_or_tie": 1,
+            "separated_extra": 5,
+            "separated_missing": 4
+          },
+          "exact_count": 434,
+          "false_negative_count": 4,
+          "false_positive_count": 7,
+          "query_count": 444,
+          "strict_separation_count": 443
+        },
+        "groups": {
+          "COLOR": {
+            "category_counts": {
+              "exact_zero": 206,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 206,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 206,
+            "strict_separation_count": 206
+          },
+          "TYPE_dual": {
+            "category_counts": {
+              "exact_zero": 126,
+              "overlap_or_tie": 1,
+              "separated_extra": 5,
+              "separated_missing": 4
+            },
+            "exact_count": 126,
+            "false_negative_count": 4,
+            "false_positive_count": 7,
+            "query_count": 136,
+            "strict_separation_count": 135
+          },
+          "TYPE_single": {
+            "category_counts": {
+              "exact_zero": 102,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 0
+            },
+            "exact_count": 102,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "query_count": 102,
+            "strict_separation_count": 102
+          }
+        }
+      },
+      "overlap": {
+        "failed_queries": [
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 2,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_AERODACTYL"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 27,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_CARBINK"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 43,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_CRAMORANT"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 67,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_FEZANDIPITI"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 72,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_FLYGON"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 91,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_HATTERENE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 150,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_PILOSWINE"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 177,
+            "seeds": [
+              1729,
+              1731
+            ],
+            "subject": "PKM_SKARMORY"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 184,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_SOLROCK"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 186,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_STEELIX"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 188,
+            "seeds": [
+              1729
+            ],
+            "subject": "PKM_SWANNA"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 202,
+            "seeds": [
+              1730
+            ],
+            "subject": "PKM_TOXTRICITY"
+          },
+          {
+            "dimension": "TYPE",
+            "group": "TYPE_dual",
+            "index": 207,
+            "seeds": [
+              1731
+            ],
+            "subject": "PKM_TYRANITAR"
+          }
+        ],
+        "failure_seed_histogram": {
+          "1729": 3,
+          "1729,1731": 3,
+          "1730": 2,
+          "1731": 5,
+          "none": 209
+        },
+        "shared_queries": 222
+      }
+    }
+  },
+  "complete": true,
+  "independent_helper_sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-bilinear-budget-geometry-plan.md": "9dc2186cb9cf19ee6972c78d136e0680f05ca4ce4f85fc7a8f407217500477e2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-runner-tests-v1\\receipt.json": "2563e38baa69414d3736782afbc6c24f2696aed1623eb66335fa488bf3c5b88c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-runner-tests-v1\\stdout.txt": "1fbb3ab24ca8359fd27acd998c9a7e62d8e041cf750cc5362ec1e8a4d2361335",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\execution-receipt.json": "9d5bb49a06e1a0cd699e4beee83d566227f749e1c4f8e949e8b3ee77330f1e94",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\primary-stdout.txt": "0e13cdd79e4fcc01027d71ffc79e0af74fab06ec6355b281d3d57fb800f5616f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-budget-2000.json": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-budget-8000.json": "62f6353381f460e076310db1467738a6d35901cca739639429d627fae9cad98e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-paired.json": "887abc0ee09ea4ff547aaf503c83c38250bb0f868e6028cf447ef5798df4de85",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-budget-2000.json": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-budget-8000.json": "3a689eb2e84f8036ef2e879a7d8261679a733d2c19bcd6b861439a64a168afd5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-paired.json": "a097fdd1d5f7de14a2840cd0c7255a4f6454ea781baa8e75a38753f693f3d6d9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-budget-2000.json": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-budget-8000.json": "808964598cb1dd67f881c54f1a352b054405e3cfb90caa55118ca60ab0281f01",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-paired.json": "ffe0e027af8813d84a9aebc8d7961f5716e31edee70eb6d811ea54eeeb365782",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.helper.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.inputs.json": "2841537688a1d6b54fc7c48f075365322e0a16e4a57ebaee51c12c964b50710b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.json": "3264144d880fc4fea7487e80bc0a5e5e6275cf294c723af3cb3c0e5e5f24b38d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.plan.md": "9dc2186cb9cf19ee6972c78d136e0680f05ca4ce4f85fc7a8f407217500477e2",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.script.py": "28a3e5f8491d1f3a903e3026d94d70643bfdcf4dd04b2033673c80f120d7f92d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.test-receipt.json": "2563e38baa69414d3736782afbc6c24f2696aed1623eb66335fa488bf3c5b88c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.test-source.py": "349717196c02b243a7828961b8f3579b90f82a19d6486f7ff427479ffc2a02aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\summary.test-stdout.txt": "1fbb3ab24ca8359fd27acd998c9a7e62d8e041cf750cc5362ec1e8a4d2361335",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\child.json": "ab88c93307939cdb2490a691930262909f577c7245694f8ed0a3381374d06e7d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\decision.json": "edaf01b58cd09ad4524123f5f817c64602d0414c4220e1c709487016cf2f89fb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\independent-audit.json": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget2000-v1\\summary.json": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\aggregate-v2.json": "77cc2ee2ebf4dc1f8671e71833712302160190c85477eb6e0dd0b5494bb3cde6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\decision.json": "01a9faefb90ee3d3e7525c0d5191d41741131843dc79ea2b44d860c5c8e21d5e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit-v2.json": "49fc5d7edc7763870ac0e9310295385d8e6a3af6e67d3cc6b5a9f0e44bc2ae77",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\child.json": "625ac6d2cb996024ba4fd77c186f30831baed6c563ae5d88104660bb8d10111b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\independent-audit-v2.json": "76c6e09caa7a5137bbf813d87249c4695b691d3b3d099292f9479fd27455c94b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\summary.json": "a7feed80dbab71e4f66e271a4ba5500b49a19ee068578840b5a6c32b6e8808fe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\child.json": "5c210e423f1033c8f3851e978cefa528c30344584b5806492c0241fafaf298dc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\independent-audit-v2.json": "cf667ab7fc7445cd23cb76a7a9a66bd6fa7d9d91924104cb7cb7c71809db0666",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\summary.json": "3ea265222a1a4cf9b19de98a8ddf934fdff08637d28c39c0ce46fcd9687062af",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\child.json": "51da78579ba2b2754acbca05d81f625d3a4ce616214cf7b73d9ccf08b37630c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\decision.json": "2cadf9dce7ee36cc4095a10a746cc1608d5ce4437724872c1eec1c88e915c195",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\independent-audit.json": "bdf142f48229fbcdb197bce3a019e38c3a65570ae3f8551a9c9a1f14b2198872",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\summary.json": "e4067b516e055cba55c0ba651c9d1171dc0ee406b80b4f969fb8ada5934f24e8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\decision.json": "4f2d624341cf03d4af8e7c6976135a1b6766071899e745ea4071f9f1cf04e652",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\independent-audit.json": "1b10b77db77ebb79b5f1327bcc1538331eb876216c424036a516a0ac04cdba96",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\independent-audit.py": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1729.json": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1730.json": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\seed-1731.json": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-error-geometry-v1\\summary.json": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\aggregate-v2.json": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\decision.json": "62a8dcbb7cbe5d038984f9d57aecacec4b0ba612ba55c2a9f6fe335977304978",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\independent-audit.json": "ddbecaceabdacc0808f9b4f122e0309aa3e233fe76b0d75694e31833a40083a8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\child.json": "3484804f1c4dfd6ef01a64b62b2b799ad9cfee9692bb1b499f469116a6904c1c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\independent-audit.json": "7ee33c9ac1a4c5ccd0f070bbe7110ad6cb641431af127b543d242a0b7933b43f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1730\\summary.json": "ecc49edfa4a7b7b2428326d752a020cf09ef92eefcb69157b12a3c4a340356e1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\child.json": "96b5f875ffb4e8fbd8e5372492509a26fe8595238e68e6490acff8e9f1bd403a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\independent-audit.json": "95cee3963eb42378c6e9b4154c74c61e46ffefe6df74b1d439dd85042d22ea14",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-v1\\seed-1731\\summary.json": "3f99d91b87f4531941ae3af11b3f39a42746df15f86df461db7e06386ecefc9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_budget_geometry.py": "28a3e5f8491d1f3a903e3026d94d70643bfdcf4dd04b2033673c80f120d7f92d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget_geometry.py": "349717196c02b243a7828961b8f3579b90f82a19d6486f7ff427479ffc2a02aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "limitations": [
+    "Independent saved-score reductions; no independent model execution.",
+    "444/666 observations repeat 222 validation questions; 1729 is development-selected.",
+    "Intervals use labels but do not choose thresholds or generate alternative answers.",
+    "Score deltas are descriptive within each parent, not confidence or causal effects.",
+    "No checkpoint payload, training data, graph, Torch, GPU or protected examples opened."
+  ],
+  "per_seed": [
+    {
+      "budgets": {
+        "2000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 207,
+              "overlap_or_tie": 5,
+              "separated_extra": 6,
+              "separated_missing": 4
+            },
+            "exact_count": 207,
+            "false_negative_count": 10,
+            "false_positive_count": 8,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -2.8682801723480225,
+              "A_query_index": 67,
+              "B": 2.7026796340942383,
+              "B_query_index": 27,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 217
+          },
+          "checkpoint_sha256": "8d9ddadc6d63f7ab8f767fb484193dbdfdf1b9fb369fad1dab38fef8bd028c2c",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 5.282095432281494,
+                "A_query_index": 21,
+                "B": -2.3757262229919434,
+                "B_query_index": 95,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 54,
+                "overlap_or_tie": 5,
+                "separated_extra": 5,
+                "separated_missing": 4
+              },
+              "exact_count": 54,
+              "false_negative_count": 10,
+              "false_positive_count": 7,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -2.8682801723480225,
+                "A_query_index": 67,
+                "B": 2.7026796340942383,
+                "B_query_index": 27,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 63
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 50,
+                "overlap_or_tie": 0,
+                "separated_extra": 1,
+                "separated_missing": 0
+              },
+              "exact_count": 50,
+              "false_negative_count": 0,
+              "false_positive_count": 1,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 2.571256399154663,
+                "A_query_index": 19,
+                "B": 0.3610413074493408,
+                "B_query_index": 93,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-budget-2000.json",
+          "sha256": "a1bd84a0427b44646d287d160bacc19e80fb6dc04fdc4436a8d14f26cff59132"
+        },
+        "8000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 216,
+              "overlap_or_tie": 2,
+              "separated_extra": 0,
+              "separated_missing": 4
+            },
+            "exact_count": 216,
+            "false_negative_count": 8,
+            "false_positive_count": 1,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -2.830646514892578,
+              "A_query_index": 67,
+              "B": 1.1218247413635254,
+              "B_query_index": 27,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 220
+          },
+          "checkpoint_sha256": "6979013750eb8f2780917f714192850aae411a48490757236a891fea7e351f91",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 7.380787372589111,
+                "A_query_index": 21,
+                "B": -5.054905891418457,
+                "B_query_index": 95,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 62,
+                "overlap_or_tie": 2,
+                "separated_extra": 0,
+                "separated_missing": 4
+              },
+              "exact_count": 62,
+              "false_negative_count": 8,
+              "false_positive_count": 1,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -2.830646514892578,
+                "A_query_index": 67,
+                "B": 1.1218247413635254,
+                "B_query_index": 27,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 66
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 51,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 51,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 5.189940452575684,
+                "A_query_index": 19,
+                "B": -2.3911919593811035,
+                "B_query_index": 93,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-budget-8000.json",
+          "sha256": "62f6353381f460e076310db1467738a6d35901cca739639429d627fae9cad98e"
+        }
+      },
+      "paired": {
+        "aggregate": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 9,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              207,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              6,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              2
+            ]
+          ],
+          "query_count": 222,
+          "separation_gains": 3,
+          "separation_losses": 0
+        },
+        "groups": {
+          "COLOR": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 0,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                103,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 103,
+            "separation_gains": 0,
+            "separation_losses": 0
+          },
+          "TYPE_dual": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 8,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                54,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                2,
+                0,
+                0
+              ],
+              [
+                5,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                0,
+                2
+              ]
+            ],
+            "query_count": 68,
+            "separation_gains": 3,
+            "separation_losses": 0
+          },
+          "TYPE_single": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 1,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                50,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 51,
+            "separation_gains": 0,
+            "separation_losses": 0
+          }
+        },
+        "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1729-paired.json",
+        "sha256": "887abc0ee09ea4ff547aaf503c83c38250bb0f868e6028cf447ef5798df4de85"
+      },
+      "seed": 1729
+    },
+    {
+      "budgets": {
+        "2000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 212,
+              "overlap_or_tie": 3,
+              "separated_extra": 4,
+              "separated_missing": 3
+            },
+            "exact_count": 212,
+            "false_negative_count": 5,
+            "false_positive_count": 8,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -4.123543739318848,
+              "A_query_index": 184,
+              "B": 1.4291102886199951,
+              "B_query_index": 197,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 219
+          },
+          "checkpoint_sha256": "735b544ee15fb6448e27c8d870e8995eeb6728b221598ccffe8eb9adab3666c4",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 6.223185062408447,
+                "A_query_index": 30,
+                "B": -1.8256337642669678,
+                "B_query_index": 106,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 58,
+                "overlap_or_tie": 3,
+                "separated_extra": 4,
+                "separated_missing": 3
+              },
+              "exact_count": 58,
+              "false_negative_count": 5,
+              "false_positive_count": 8,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -4.123543739318848,
+                "A_query_index": 184,
+                "B": 1.4291102886199951,
+                "B_query_index": 197,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 65
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 51,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 51,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 1.5010521411895752,
+                "A_query_index": 0,
+                "B": -1.0641374588012695,
+                "B_query_index": 0,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-budget-2000.json",
+          "sha256": "15c6e6cbac3596d9ba26b70411b24e3a0a25e1ae5a8dd4e2c233177dc9433dc9"
+        },
+        "8000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 220,
+              "overlap_or_tie": 0,
+              "separated_extra": 0,
+              "separated_missing": 2
+            },
+            "exact_count": 220,
+            "false_negative_count": 2,
+            "false_positive_count": 0,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -1.2183341979980469,
+              "A_query_index": 184,
+              "B": -0.09297823905944824,
+              "B_query_index": 67,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 222
+          },
+          "checkpoint_sha256": "b3e47911015a992c3c805a5643816ee262987f5c7707fa7596f284ec03aa7c27",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 8.866506576538086,
+                "A_query_index": 30,
+                "B": -3.135300874710083,
+                "B_query_index": 106,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 66,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 2
+              },
+              "exact_count": 66,
+              "false_negative_count": 2,
+              "false_positive_count": 0,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -1.2183341979980469,
+                "A_query_index": 184,
+                "B": -0.09297823905944824,
+                "B_query_index": 67,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 68
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 51,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 51,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 2.9944403171539307,
+                "A_query_index": 0,
+                "B": -2.0168819427490234,
+                "B_query_index": 68,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-budget-8000.json",
+          "sha256": "3a689eb2e84f8036ef2e879a7d8261679a733d2c19bcd6b861439a64a168afd5"
+        }
+      },
+      "paired": {
+        "aggregate": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 8,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              212,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ]
+          ],
+          "query_count": 222,
+          "separation_gains": 3,
+          "separation_losses": 0
+        },
+        "groups": {
+          "COLOR": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 0,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                103,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 103,
+            "separation_gains": 0,
+            "separation_losses": 0
+          },
+          "TYPE_dual": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 8,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                58,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0,
+                0
+              ]
+            ],
+            "query_count": 68,
+            "separation_gains": 3,
+            "separation_losses": 0
+          },
+          "TYPE_single": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 0,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                51,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 51,
+            "separation_gains": 0,
+            "separation_losses": 0
+          }
+        },
+        "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1730-paired.json",
+        "sha256": "a097fdd1d5f7de14a2840cd0c7255a4f6454ea781baa8e75a38753f693f3d6d9"
+      },
+      "seed": 1730
+    },
+    {
+      "budgets": {
+        "2000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 208,
+              "overlap_or_tie": 6,
+              "separated_extra": 5,
+              "separated_missing": 3
+            },
+            "exact_count": 208,
+            "false_negative_count": 10,
+            "false_positive_count": 12,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -1.8079215288162231,
+              "A_query_index": 150,
+              "B": 3.009807586669922,
+              "B_query_index": 72,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 216
+          },
+          "checkpoint_sha256": "ce4a3d7eb2de7e0f50761e68fafe07f1e871894a7c962b0a20a52894c86688c2",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 3.8638148307800293,
+                "A_query_index": 96,
+                "B": -2.3015947341918945,
+                "B_query_index": 57,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 54,
+                "overlap_or_tie": 6,
+                "separated_extra": 5,
+                "separated_missing": 3
+              },
+              "exact_count": 54,
+              "false_negative_count": 10,
+              "false_positive_count": 12,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -1.8079215288162231,
+                "A_query_index": 150,
+                "B": 3.009807586669922,
+                "B_query_index": 72,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 62
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 51,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 51,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 1.8366230726242065,
+                "A_query_index": 0,
+                "B": -0.29520082473754883,
+                "B_query_index": 0,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-budget-2000.json",
+          "sha256": "1008e42d6b727606c423cccdda583ece2c4783cb6de7299d24fe5634ce5b1e10"
+        },
+        "8000": {
+          "aggregate": {
+            "category_counts": {
+              "exact_zero": 214,
+              "overlap_or_tie": 1,
+              "separated_extra": 5,
+              "separated_missing": 2
+            },
+            "exact_count": 214,
+            "false_negative_count": 2,
+            "false_positive_count": 7,
+            "query_count": 222,
+            "shared_threshold": {
+              "A": -0.8291666507720947,
+              "A_query_index": 67,
+              "B": 1.5331709384918213,
+              "B_query_index": 72,
+              "exists": false,
+              "lower_inclusive": true,
+              "upper_exclusive": true
+            },
+            "strict_separation_count": 221
+          },
+          "checkpoint_sha256": "d22a510e7a0571a0f86164f8d1dacda46f95594b9bcf8154699d04beb51bd567",
+          "groups": {
+            "COLOR": {
+              "category_counts": {
+                "exact_zero": 103,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 103,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 103,
+              "shared_threshold": {
+                "A": 6.623554229736328,
+                "A_query_index": 96,
+                "B": -5.197101593017578,
+                "B_query_index": 57,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 103
+            },
+            "TYPE_dual": {
+              "category_counts": {
+                "exact_zero": 60,
+                "overlap_or_tie": 1,
+                "separated_extra": 5,
+                "separated_missing": 2
+              },
+              "exact_count": 60,
+              "false_negative_count": 2,
+              "false_positive_count": 7,
+              "query_count": 68,
+              "shared_threshold": {
+                "A": -0.8291666507720947,
+                "A_query_index": 67,
+                "B": 1.5331709384918213,
+                "B_query_index": 72,
+                "exists": false,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 67
+            },
+            "TYPE_single": {
+              "category_counts": {
+                "exact_zero": 51,
+                "overlap_or_tie": 0,
+                "separated_extra": 0,
+                "separated_missing": 0
+              },
+              "exact_count": 51,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "query_count": 51,
+              "shared_threshold": {
+                "A": 3.752382755279541,
+                "A_query_index": 0,
+                "B": -1.5763881206512451,
+                "B_query_index": 0,
+                "exists": true,
+                "lower_inclusive": true,
+                "upper_exclusive": true
+              },
+              "strict_separation_count": 51
+            }
+          },
+          "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-budget-8000.json",
+          "sha256": "808964598cb1dd67f881c54f1a352b054405e3cfb90caa55118ca60ab0281f01"
+        }
+      },
+      "paired": {
+        "aggregate": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 6,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              208,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              4,
+              1
+            ]
+          ],
+          "query_count": 222,
+          "separation_gains": 5,
+          "separation_losses": 0
+        },
+        "groups": {
+          "COLOR": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 0,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                103,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 103,
+            "separation_gains": 0,
+            "separation_losses": 0
+          },
+          "TYPE_dual": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 6,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                54,
+                0,
+                0,
+                0
+              ],
+              [
+                2,
+                1,
+                0,
+                0
+              ],
+              [
+                4,
+                0,
+                1,
+                0
+              ],
+              [
+                0,
+                1,
+                4,
+                1
+              ]
+            ],
+            "query_count": 68,
+            "separation_gains": 5,
+            "separation_losses": 0
+          },
+          "TYPE_single": {
+            "category_order": [
+              "exact_zero",
+              "separated_missing",
+              "separated_extra",
+              "overlap_or_tie"
+            ],
+            "exact_gains": 0,
+            "exact_losses": 0,
+            "matrix": [
+              [
+                51,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "query_count": 51,
+            "separation_gains": 0,
+            "separation_losses": 0
+          }
+        },
+        "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-v1\\seed-1731-paired.json",
+        "sha256": "ffe0e027af8813d84a9aebc8d7961f5716e31edee70eb6d811ea54eeeb365782"
+      },
+      "seed": 1731
+    }
+  ],
+  "plan_sha256": "9dc2186cb9cf19ee6972c78d136e0680f05ca4ce4f85fc7a8f407217500477e2",
+  "primary_script_sha256": "28a3e5f8491d1f3a903e3026d94d70643bfdcf4dd04b2033673c80f120d7f92d",
+  "script_sha256": "c4625ee5ac37b741ea85f1a73365dd4b878d08d04b09daec748816d31c8ecb4d",
+  "summary_sha256": "3264144d880fc4fea7487e80bc0a5e5e6275cf294c723af3cb3c0e5e5f24b38d",
+  "transitions": {
+    "all_three": {
+      "aggregate": {
+        "category_order": [
+          "exact_zero",
+          "separated_missing",
+          "separated_extra",
+          "overlap_or_tie"
+        ],
+        "exact_gains": 23,
+        "exact_losses": 0,
+        "matrix": [
+          [
+            627,
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            4,
+            0,
+            0
+          ],
+          [
+            14,
+            0,
+            1,
+            0
+          ],
+          [
+            3,
+            4,
+            4,
+            3
+          ]
+        ],
+        "query_count": 666,
+        "separation_gains": 11,
+        "separation_losses": 0
+      },
+      "groups": {
+        "COLOR": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 0,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              309,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "query_count": 309,
+          "separation_gains": 0,
+          "separation_losses": 0
+        },
+        "TYPE_dual": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 22,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              166,
+              0,
+              0,
+              0
+            ],
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              13,
+              0,
+              1,
+              0
+            ],
+            [
+              3,
+              4,
+              4,
+              3
+            ]
+          ],
+          "query_count": 204,
+          "separation_gains": 11,
+          "separation_losses": 0
+        },
+        "TYPE_single": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 1,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              152,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "query_count": 153,
+          "separation_gains": 0,
+          "separation_losses": 0
+        }
+      }
+    },
+    "fresh_two": {
+      "aggregate": {
+        "category_order": [
+          "exact_zero",
+          "separated_missing",
+          "separated_extra",
+          "overlap_or_tie"
+        ],
+        "exact_gains": 14,
+        "exact_losses": 0,
+        "matrix": [
+          [
+            420,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            2,
+            0,
+            0
+          ],
+          [
+            8,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            2,
+            4,
+            1
+          ]
+        ],
+        "query_count": 444,
+        "separation_gains": 8,
+        "separation_losses": 0
+      },
+      "groups": {
+        "COLOR": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 0,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              206,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "query_count": 206,
+          "separation_gains": 0,
+          "separation_losses": 0
+        },
+        "TYPE_dual": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 14,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              112,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              8,
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              4,
+              1
+            ]
+          ],
+          "query_count": 136,
+          "separation_gains": 8,
+          "separation_losses": 0
+        },
+        "TYPE_single": {
+          "category_order": [
+            "exact_zero",
+            "separated_missing",
+            "separated_extra",
+            "overlap_or_tie"
+          ],
+          "exact_gains": 0,
+          "exact_losses": 0,
+          "matrix": [
+            [
+              102,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "query_count": 102,
+          "separation_gains": 0,
+          "separation_losses": 0
+        }
+      }
+    }
+  }
+}

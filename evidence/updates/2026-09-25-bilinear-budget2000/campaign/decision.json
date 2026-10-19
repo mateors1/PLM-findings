@@ -1,0 +1,38 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "audit_sha256": "475c50f91891ccd13c180472e2d019913b3e5432ab0a9d3b15162735711aac3d",
+  "auditor_sha256": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+  "basis": "Independent saved-evidence audit of split, labels, selected sets, metrics, zero-start replay records, tensor lineage, optimizer and declared gate. This does not independently repeat neural training or regenerate CUDA logits.",
+  "campaign_version": "bilinear-budget2000-v1",
+  "child_checkpoint_sha256": "8d9ddadc6d63f7ab8f767fb484193dbdfdf1b9fb369fad1dab38fef8bd028c2c",
+  "date": "2026-09-25",
+  "decision_script_sha256": "325ee1d15e9bead9b3f8ba93f8b67dcdd130567b782ebb2a8cb1af2f23b20236",
+  "default_changed": false,
+  "evaluator": "plm-bilinear-residual-screen-v1",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "86a7e7af7001dfdd8baaccbbdcac99df1fe1e53503e24e73ee920ee48f312cac",
+  "fixed_quality_gate_passed": true,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "exact_above_201": true,
+      "execution_invariants": true,
+      "f1_at_least_strong_comparator": true,
+      "group_exact_nonregression": true,
+      "serialization_compatible": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "new_checkpoint_created": true,
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "outcome": "Single-seed screen passes; separately declared replication may follow.",
+  "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+  "policy_promoted": false,
+  "protected_test_used": false,
+  "runner_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+  "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "standard_serving_supported": false,
+  "summary_sha256": "c507162902e173964c6fec1446448a074ee8fed41f4acb3a4f6d46d6744907a3",
+  "training_executed": true
+}

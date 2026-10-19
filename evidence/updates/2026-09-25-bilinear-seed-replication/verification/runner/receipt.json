@@ -1,0 +1,48 @@
+{
+  "commands": [
+    "uv run --no-sync ruff check tests/unit/test_bilinear_replication.py",
+    "uv run --no-sync ruff format --check tests/unit/test_bilinear_replication.py",
+    "uv run --no-sync pytest tests/unit/test_bilinear_replication.py tests/unit/test_bilinear_budget.py tests/unit/test_bilinear_residual.py tests/unit/test_projection_only_refit.py -o addopts= -q"
+  ],
+  "experiment_training_executed": false,
+  "fixtures": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+  },
+  "gpu_used": false,
+  "new_test_count": 45,
+  "passed": true,
+  "plan_sha256": "d5a36d48eac3c40a30a5c29c2126f3d4f815f5ecb4d93a03f8cc47f771e75b54",
+  "pre_freeze_regression": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-runner-tests-v1\\pre-freeze-aggregate-regression.txt",
+    "sha256": "c60d9d4007d1cf74ededdb642e45f466552d6165fa29559493ec042f84d70759",
+    "status": "two invalid-suffix lifecycle failures fixed before final receipt"
+  },
+  "reused_test_count": 91,
+  "skipped": 0,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-seed-replication-runner-tests-v1\\stdout.txt",
+    "sha256": "6c00c112e0019617bb4ce19c4629451b675765fd17629050728a00e7029cbf1b"
+  },
+  "synthetic_cpu_model_only": true,
+  "test_count": 136,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_budget2000_v1.json": "e454c52a315acb389b2bda3c126367e13df63b96230f9f698517705b531d51da",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_residual_refit_v1.json": "7cb54921727046887d888357bc9079e14e6069ae3c7415386e6170afec1a7533",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\projection_only_refit_v1.json": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_budget.py": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget.py": "b9ed564e6b65196c225f57a376b40d90bade0d7696a4cbfbf1c8b9c8fd221d18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_replication.py": "6dc65cdf8a435f8e3c588fa637b86089099f55346f482d7a56fe788cfa86bddc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_projection_only_refit.py": "5207a2632fcfe6b142d008215732a899a00059ec5b2c15d1d1faceb1c89572c6"
+  },
+  "test_source": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_replication.py",
+  "tested_budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+  "tested_mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+  "tested_recipe_sha256": "4090ae0fcb6040147f9bfcee6bcfaf8bcf5cda95d9d484ba977ecddcc90121f7",
+  "tested_scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+  "tested_script_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+  "tested_test_sha256": "6dc65cdf8a435f8e3c588fa637b86089099f55346f482d7a56fe788cfa86bddc"
+}

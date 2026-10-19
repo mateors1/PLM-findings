@@ -1,0 +1,12 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\diagnose_missing_source_membership.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_missing_source_membership.py
+All checks passed!
+
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\diagnose_missing_source_membership.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_missing_source_membership.py
+2 files already formatted
+
+$ uv run --no-sync pytest C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_missing_source_membership.py -o addopts= -q
+..........................                                               [100%]
+26 passed in 0.21s
+
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\diagnose_missing_source_membership.py --preflight-only
+{"preflight_passed": true, "coverage_reconstructed": true, "diagnostic_measured": false, "torch_imported": false, "input_count": 9, "script_sha256": "f88cfff322c6f7c79174c781715238c4405f72f09af703e400398a92c63dd829"}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-26",
+  "experiment_id": "16id-fp32-vram-series-stopped-v1",
+  "decision_id": "16id-fp32-vram-series-decision-v1",
+  "execution_status": "user-stopped-before-vram-limit",
+  "audit_id": "16id-fp32-vram-series-audit-v1",
+  "audit_status": "complete-11-of-11-checks-passed",
+  "saturation_status": "not-observed",
+  "rationale": "The user stopped the FP32 run before CUDA OOM. Do not report batch 57,344 or the partial batch 65,536 attempt as saturation.",
+  "accepted_measurements": {
+    "practical_peak_servings_per_second": 9600,
+    "practical_peak_source": "user-decreed",
+    "first_plateau_definition": "first completed median at or above 99% of 9,600 servings/s",
+    "first_plateau_batch": 8192,
+    "first_plateau_servings_per_second": 9555.073797260608,
+    "first_plateau_device_memory_peak_gib": 5.577339172363281,
+    "highest_completed_batch": 45056,
+    "highest_completed_servings_per_second": 9793.4896551537,
+    "batch_49152_servings_per_second": 5133.96,
+    "batch_57344_servings_per_second": 845.5
+  },
+  "parity": "100% exact ordered first-16 parity on all completed rows; partial batch excluded",
+  "quality": "First-eight label macro-F1 was 0.1509 on a diagnostic slice only; not a full validation quality claim.",
+  "model_promoted": false,
+  "retained_model_changed": false,
+  "paper_update_required": false,
+  "follow_up": "Run the separate 16-ID FP8 compiled sweep only after sufficient VRAM is available; no FP32 restart."
+}

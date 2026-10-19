@@ -1,0 +1,43 @@
+{
+  "audit_passed": true,
+  "audit_sha256": "dc4bda47ac580f2c49d8cdfdd4e8cecc6c17d75c421ba970a1383268403ee16a",
+  "summary_sha256": "47bf9d54967009a2be6e46bedc28f7949231be9bc14e18798fd66ad776c59805",
+  "overall": {
+    "focused_queries": 30,
+    "distinct_focused_queries": 22,
+    "omitted_oracle_top_k_count": 1367,
+    "positive_omitted_queries": {
+      "all": 22,
+      "some": 8,
+      "none": 0
+    },
+    "omitted": {
+      "member_occurrences": 1407,
+      "positive_count": 1394,
+      "zero_count": 0,
+      "negative_count": 13,
+      "positive_member_fraction": 0.9907604832977968,
+      "nonempty_query_count": 30,
+      "mean_query_positive_fraction": 0.9908023047546597
+    },
+    "covered": {
+      "member_occurrences": 3844,
+      "positive_count": 3797,
+      "zero_count": 0,
+      "negative_count": 47,
+      "positive_member_fraction": 0.9877731529656608,
+      "nonempty_query_count": 30,
+      "mean_query_positive_fraction": 0.9865678842678095
+    }
+  },
+  "coverage_summary": {
+    "query_count": 666,
+    "focused_queries": 30,
+    "fully_covered_queries": 636,
+    "true_member_occurrences": 85329,
+    "covered_member_occurrences": 83922,
+    "omitted_member_occurrences": 1407
+  }
+}
+
+exit_code=0

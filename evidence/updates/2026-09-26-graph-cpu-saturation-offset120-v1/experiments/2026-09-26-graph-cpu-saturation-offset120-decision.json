@@ -1,0 +1,39 @@
+{
+  "decision_id": "graph-cpu-saturation-offset120-decision-20260926",
+  "experiment_id": "graph-cpu-saturation-offset120-20260926",
+  "date": "2026-09-26",
+  "status": "complete",
+  "decision": "Retain the measured CPU-package RAPL curve and the explicitly derived additive +120 W curve as separate graph HTTP benchmark evidence.",
+  "accepted_findings": [
+    "The exact 16-ID SQLite graph HTTP workload completed all 13 tested concurrency levels with zero failed responses.",
+    "Concurrency 1 was fastest at 954.2 servings/s. Across concurrency 8 through 128, throughput ranged from 435.4 to 460.9 servings/s and median CPU-package power ranged from 104.1 to 110.9 W.",
+    "At concurrency 8, the fastest concurrent point was 460.9 servings/s at 108.58 W measured RAPL package power; the derived offset-adjusted median is 228.58 W.",
+    "The new run had 2.5–6.1% lower throughput and 16.3–26.0 W higher package power than the previous clean sweep at concurrency 1, 4 and 8; cause is unresolved."
+  ],
+  "power_interpretation": {
+    "raw_series": "Windows Energy Meter(RAPL_Package0_PKG), CookedValue / 1000",
+    "derived_series": "raw CPU-package watts + 120 W",
+    "offset_is_user_requested_arithmetic": true,
+    "offset_independently_measured": false,
+    "offset_adjusted_series_is_wall_power": false,
+    "power_target_or_budget_used": false
+  },
+  "claims_not_supported": [
+    "The adjusted wattage is a direct measurement of whole-system power.",
+    "CPU utilization reached 100%, a thermal limit, or a hardware maximum.",
+    "The run-to-run package-power change has a known cause.",
+    "The graph benchmark establishes production serving capacity or a PLM advantage."
+  ],
+  "model_or_paper_change": {
+    "model_promoted": false,
+    "retained_model_changed": false,
+    "canonical_paper_update_required": false
+  },
+  "evidence_sha256": {
+    "plan": "220cfb24449b0773957b4bedddaba080ffa8594780ac7b154fead042720fda45",
+    "portable_summary": "3a25204e2525a1b6d8261dce4909942331621d5c06d87645507eae9b6cdc9327",
+    "audit": "8a76908d9b4f6d3cc2fd50b63a3005bdc193f2ef5cd1f7c54f73757a822d7bc7",
+    "report": "b6265a63ab3fc351191bd8e90ab40b445979cdffe39084380b87d9fec2a56691",
+    "raw_run": "d36bd8215ccebece39aef5b5f642f3e43d1d107b58363afba8e15f9f82c9999b"
+  }
+}

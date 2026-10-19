@@ -1,0 +1,16 @@
+{
+  "normal_build": {
+    "command": "uv run --no-sync mkdocs build",
+    "exit_code": 0,
+    "stdout_path": "runs\\learning\\bilinear-budget8000-v1\\mkdocs-normal-stdout.txt",
+    "stdout_sha256": "89e2a55a2c57a2e8286863b910ed797d53c09c726964eab3c5e8410fe05ca07a"
+  },
+  "scope": "Documentation generation; not model validation.",
+  "strict_build": {
+    "cause": "Six existing links to source/serving files outside docs in architecture.md, benchmarks.md and data-contracts.md.",
+    "command": "uv run --no-sync mkdocs build --strict",
+    "exit_code": 1,
+    "stdout_path": "runs\\learning\\bilinear-budget8000-v1\\mkdocs-stdout.txt",
+    "stdout_sha256": "5ddce92ebd8f3eb958e80e0b29ed33cb26411425561f53010db955451f82ab2e"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "command_exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\independent-audit.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\independent-audit.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "--project",
+      "experiments/diagonal-feasibility",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-auditor-tests-v1\\test_auditor.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "--project",
+      "experiments/diagonal-feasibility",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\independent-audit.py",
+      "--help"
+    ]
+  ],
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "gpu_used": false,
+  "isolated_lock_sha256": "15d540d62127862c19123e99fe1a7a9716f1f3f4ac7cd0824c8554ad42704e54",
+  "passed": true,
+  "passed_count": 36,
+  "primary_runner_sha256": "62ae708fe094ac4bba2df44082cb1e25592a29c123fd1ac1e71c1cecf58eb531",
+  "primary_solver_sha256": "ff94faaf7ad96765039ea9ebd24e0ea08c228c5bb6c7f87f5e263d5205ee923c",
+  "real_data_executed": false,
+  "stdout_sha256": "42b0d78373a5abbde0943f5960e7b2ceea1623de41d40728a7ae354da85ffe1b",
+  "tested_auditor_sha256": "233207bd308dca0611585bf1e6e86fc8b3ca9ae7952ba9163b11e8a33dcc4232",
+  "tests_sha256": "81d6b27c6568d875406e3effdf0e15d847d4a9706048e785328e050b0d88d43c"
+}

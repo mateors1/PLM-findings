@@ -1,0 +1,553 @@
+{
+  "acceptance": false,
+  "all_three": {
+    "aggregate": {
+      "exact_count": 660,
+      "f1": 0.9999637956903659,
+      "false_negative_count": 7,
+      "false_positive_count": 1,
+      "precision": 0.9999891978309244,
+      "query_count": 666,
+      "recall": 0.9999387155396199,
+      "serialization_compatible": 666,
+      "set_size": 128.11261261261262,
+      "strict_separation_count": 665
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 309,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 309,
+        "recall": 1.0,
+        "serialization_compatible": 309,
+        "set_size": 113.66990291262135,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "exact_count": 198,
+        "f1": 0.9998818035773706,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "precision": 0.9999647340950769,
+        "query_count": 204,
+        "recall": 0.9997999242616998,
+        "serialization_compatible": 204,
+        "set_size": 171.55882352941177,
+        "strict_separation_count": 203
+      },
+      "TYPE_single": {
+        "exact_count": 153,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 153,
+        "recall": 1.0,
+        "serialization_compatible": 153,
+        "set_size": 99.3529411764706,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "audit_passed": true,
+  "audit_revision": "bilinear-budget32000-evidence-v2",
+  "base_auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+  "base_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+    "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+  },
+  "complete": true,
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "1729": true,
+      "1730": true,
+      "1731": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\bilinear_budget32000_v1.json": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-26-bilinear-budget32000-plan.md": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-aggregate-tests-v1\\stdout.txt": "71ef10bae6f98db76ad3403078381213e1269b69d63d0666ffa5474624cd46db",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-aggregate-tests-v1\\test-receipt.json": "262cd1c7e0c8d56d6c7baccced0a003e6a8e19e7861425704d7ec3aa428f1d0e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-aggregate-tests-v2\\stdout.txt": "aa1b50c46d9e15d319cbabc82ef6f177362a507347f5524135cdd98b0bc47d04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-aggregate-tests-v2\\test-receipt.json": "1cee507361d7ad5c8dc3dac2c9cb6db4c48280b6d7b61361529e0bed61bb1a2e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-auditor-tests-v1\\stdout.txt": "8215c9fdb18dc5a88380368fdfb9edd6d60b92760f3df281cde63c711b0f98d5",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-auditor-tests-v1\\test-receipt.json": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-auditor-tests-v2\\stdout.txt": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-auditor-tests-v2\\test-receipt.json": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-readiness-v1\\readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-readiness-v2\\readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-runner-tests-v1\\stdout.txt": "0b0c14daf7533669715587d373a86d5844afb38f45095f1fdea6724b9ca62fe0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-runner-tests-v1\\test-receipt.json": "d7e49feb6f8f472c6da2c2f6b01e0f70e46fd96da7a0d5ac138b867f53ce7270",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-runner-tests-v2\\stdout.txt": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-runner-tests-v2\\test-receipt.json": "b649196036e57ff90d5a0b3f389862a83abfb236f6824e97c2f253e7b4d5901c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\aggregate-v2.inputs.json": "b17005b5ea95586a5b3c4dc60e750fbdedea21db0497e9708a7725f0a2ca075c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\aggregate-v2.json": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\aggregate-v2.readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\aggregate-v2.script.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\independent-audit.py": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\audit-execution-receipt.json": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\audit-stdout.txt": "acdd469f411f38422c7fe22b9543d44ba15d174eb3bfc50fb40397f56f50ab1b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\child.json": "8609c7d0286e7140e2db718822643beb8174b5f7a7f9f409f4437eddd3f58240",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\comparisons.json": "1576bdbc8ae4ca5f93ebc6fcf751495a47b15909fc11c25242e349cfeed16abc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\execution-receipt.json": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\independent-audit.json": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\parent.json": "9051739b8c624cedbd69d18918e4c2d9ecbd40c36d692b75706d19c3fb806e59",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1729\\summary.json": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\audit-execution-receipt-v2.json": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\audit-execution-receipt.json": "2195369180305bb04f7967b5877e41006f965fd8499d411229193415662fc5ce",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\audit-stdout-v2.txt": "013a0522fb52ed8d668ea2eb835b02bd9764d27e45eeaf4e6a80b8045719d597",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\audit-stdout.txt": "9db0e434576f15cbe2255f35398ee4f60da134d19e18fc5d6dbc83c6f1adcc94",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\child.json": "f5b43656be8fd21bb7235ce72fc92f369fdcd83312f456fb90c92b173860cd23",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\comparisons.json": "6554803d3e1ccea5433de072effac9463c95ec9a0756c951e9b9218546e1d710",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\execution-receipt.json": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\independent-audit-v2.json": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\independent-audit.json": "85b193ad473d77ac10d84aa2e9138ba4d56efd7e9694ef52eeab4ed6e069c188",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\parent.json": "4e3b75aa6d6a30331d9d6c09e86c5e3084ae9002c33df7ddd84a3d25ddc52adb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1730\\summary.json": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\audit-execution-receipt-v2.json": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\audit-stdout-v2.txt": "a8147359b402002fd6964c531a94c8c7b9174fddbeadd34bd0b81825c91f3a80",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\child.json": "0b24d38119de11b2e7342b75e6641f5bd93dcbc28fb34b8872a2e4af719c57ae",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\comparisons.json": "d816998376b7ec3ade712baf92d42c087e6fde88050b25c63c2a950cff2fc96b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation-complete.json": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\docs\\experiments\\2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-aggregate-tests-v2\\stdout.txt": "aa1b50c46d9e15d319cbabc82ef6f177362a507347f5524135cdd98b0bc47d04",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-aggregate-tests-v2\\test-receipt.json": "1cee507361d7ad5c8dc3dac2c9cb6db4c48280b6d7b61361529e0bed61bb1a2e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-auditor-tests-v2\\stdout.txt": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-auditor-tests-v2\\test-receipt.json": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-readiness-v1\\readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-readiness-v2\\readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-runner-tests-v2\\stdout.txt": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-runner-tests-v2\\test-receipt.json": "b649196036e57ff90d5a0b3f389862a83abfb236f6824e97c2f253e7b4d5901c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\runs\\learning\\bilinear-budget32000-v1\\independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\scripts\\aggregate_bilinear_budget32000_v2.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\scripts\\refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\tests\\unit\\test_bilinear_budget32000_aggregate_v2.py": "05a510a6a0401ddc75e502ff6f04f16b8fa483db3e45d5bf1033c4e78eb288cb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\tests\\unit\\test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\continuation\\tests\\unit\\test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\execution-receipt.json": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\independent-audit-v2.json": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\parent.json": "1cab0fa0f1b7f06584673f1edf0f33b11fe54c6dd0bafbe90bfebd22fc025d02",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\primary-stdout.txt": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget32000-v1\\seed-1731\\summary.json": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\aggregate-v2.json": "77cc2ee2ebf4dc1f8671e71833712302160190c85477eb6e0dd0b5494bb3cde6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\decision.json": "01a9faefb90ee3d3e7525c0d5191d41741131843dc79ea2b44d860c5c8e21d5e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit-v2.json": "49fc5d7edc7763870ac0e9310295385d8e6a3af6e67d3cc6b5a9f0e44bc2ae77",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\child.json": "625ac6d2cb996024ba4fd77c186f30831baed6c563ae5d88104660bb8d10111b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\independent-audit-v2.json": "76c6e09caa7a5137bbf813d87249c4695b691d3b3d099292f9479fd27455c94b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\parent.json": "e9ca8d3fe340642724fd32792c77f8e4f8eee118d7ffcc37cc7a40dbcfb376b1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\run.json": "6c6c1052f509993f732e83fa129899640939350f68a1fa65b98449205ca55892",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\summary.json": "a7feed80dbab71e4f66e271a4ba5500b49a19ee068578840b5a6c32b6e8808fe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\training.json": "2018ee14b18b7fdb479595e4ec0b95a4311de63c890082df6455678ec0611442",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\child.json": "5c210e423f1033c8f3851e978cefa528c30344584b5806492c0241fafaf298dc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\independent-audit-v2.json": "cf667ab7fc7445cd23cb76a7a9a66bd6fa7d9d91924104cb7cb7c71809db0666",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\parent.json": "f4cec3360eea00435e3b44efa2599155a664db2f723f0ff1bece7fc263773d9a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\run.json": "1570bb8ab95916614c4bd5690452faf2e8694b4a94f701a264437ce91a542d6c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\summary.json": "3ea265222a1a4cf9b19de98a8ddf934fdff08637d28c39c0ce46fcd9687062af",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1731\\training.json": "0b09f87eec6a174374cc7763bb64d0b5c917ab43687e924a98bf2debfebbc19b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\child.json": "51da78579ba2b2754acbca05d81f625d3a4ce616214cf7b73d9ccf08b37630c6",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\decision.json": "2cadf9dce7ee36cc4095a10a746cc1608d5ce4437724872c1eec1c88e915c195",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\independent-audit.json": "bdf142f48229fbcdb197bce3a019e38c3a65570ae3f8551a9c9a1f14b2198872",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\parent.json": "cdcf0accc54eb1b139b6ce02762d10d456659de59f19cd0005e4ce1717d54a48",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\run.json": "f301e98ed9985499a87790807c3fa8d149a7d3b21c2d6db492bef11357e8bd88",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\summary.json": "e4067b516e055cba55c0ba651c9d1171dc0ee406b80b4f969fb8ada5934f24e8",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-v1\\training.json": "81ff5e3af3102f481485d05f94e5d1f735915ff0aa0ff5c7ead12d0e4e3897c9",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\projection-only-refit-v1\\independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\checkpoint-final.pt.json": "4a0cbb69e0f0fb9886612f6ca66ca92858cc96060d86551588ddab7eb9f9756d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1729_v1\\run.json": "ec6c8e358586efa5808591ca0112ea13b4e52cae4b9891ccac82c299332b870d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\checkpoint-final.pt.json": "0b4a1bd926893b4dce8fd06c2e4cd9381c96070cad2bb4603da956b622032e27",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1730_v1\\run.json": "4bf1bf7e93a597ede5873a46078d0910480eca99fe66fa9813fcea0435a3b474",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\checkpoint-final.pt.json": "934381afc8c0361b9630957734b32647e515ea700c3471a71406a11c4ede7c21",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\national_dex_continuation_control_s1731_v1\\run.json": "cbd28a343b14040a258a90a1630c8bbc7eedac6c2c47ff15680322fa2e48fe20",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\aggregate_bilinear_budget32000.py": "41bc30b8e0b29742b4446a3b4a776c91ea7264f656b8dc01ab60966f1df5a09a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\aggregate_bilinear_budget32000_v2.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_budget32000.py": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\refit_symmetric_affine_v3.py": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\fixtures\\projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000.py": "44b12f82802902dde0af9ded46b5be821320e573b6b7c30d50dc0514dd2728c0",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000_aggregate.py": "85adc8c197da236563f7061bd4e3fa06f743c0e42a73d0671ef9887801c36fd4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000_aggregate_v2.py": "05a510a6a0401ddc75e502ff6f04f16b8fa483db3e45d5bf1033c4e78eb288cb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000_audit.py": "d48e33542c5f41eea1d76b2c626034e356f98a3b8d986155261af98bb618b7c7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34"
+  },
+  "limitations": [
+    "Saved-row reaggregation of three previously completed CPU audits; no checkpoint or neural replay in aggregate mode.",
+    "The same 222 validation queries recur across seeds; 666 rows are not independent held-out examples."
+  ],
+  "per_seed": [
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1729/audit-execution-receipt.json",
+      "audit_receipt_sha256": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+      "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+      "auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+      "child": {
+        "aggregate": {
+          "exact_count": 218,
+          "f1": 0.9999232353409879,
+          "false_negative_count": 6,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 0.9998472121671663,
+          "serialization_compatible": 222,
+          "set_size": 128.09459459459458,
+          "strict_separation_count": 221
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 64,
+            "f1": 0.9997493859661662,
+            "false_negative_count": 6,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 0.999501192663396,
+            "serialization_compatible": 68,
+            "set_size": 171.5,
+            "strict_separation_count": 67
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 28,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 59,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 19,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "execution_receipt_sha256": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1729,
+      "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+      "test_receipt_sha256": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67"
+    },
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1730/audit-execution-receipt-v2.json",
+      "audit_receipt_sha256": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+      "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+      "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+      "child": {
+        "aggregate": {
+          "exact_count": 222,
+          "f1": 1.0,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 1.0,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 68,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 1.0,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 22,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 21,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "execution_receipt_sha256": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1730,
+      "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+      "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+    },
+    {
+      "audit_path": "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json",
+      "audit_receipt_path": "runs/learning/bilinear-budget32000-v1/seed-1731/audit-execution-receipt-v2.json",
+      "audit_receipt_sha256": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+      "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+      "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+      "child": {
+        "aggregate": {
+          "exact_count": 220,
+          "f1": 0.9999681517301094,
+          "false_negative_count": 1,
+          "false_positive_count": 1,
+          "precision": 0.9999675934927734,
+          "query_count": 222,
+          "recall": 0.9999689344516931,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 66,
+            "f1": 0.9998960247659454,
+            "false_negative_count": 1,
+            "false_positive_count": 1,
+            "precision": 0.9998942022852306,
+            "query_count": 68,
+            "recall": 0.9998985801217039,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 6,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 6,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 109,
+          "groups": {
+            "COLOR": {
+              "gains": 21,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 25,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "continuation_complete_sha256": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+      "execution_receipt_sha256": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+      "execution_wrapper_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "seed": 1731,
+      "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+      "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+    }
+  ],
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "preserved_original_evidence": {
+    "seed-1729/independent-audit.json": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+    "seed-1729/summary.json": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+    "seed-1730/audit-execution-receipt.json": "2195369180305bb04f7967b5877e41006f965fd8499d411229193415662fc5ce",
+    "seed-1730/execution-receipt.json": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+    "seed-1730/independent-audit.json": "85b193ad473d77ac10d84aa2e9138ba4d56efd7e9694ef52eeab4ed6e069c188",
+    "seed-1730/summary.json": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11"
+  },
+  "protected_test_used": false,
+  "script_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+  "shared_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+    "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+  },
+  "summary_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+  "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+}

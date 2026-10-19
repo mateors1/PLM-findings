@@ -1,0 +1,8 @@
+{
+  "architecture": "plm-frozen-symmetric-affine-residual-v1",
+  "complete": false,
+  "completed_updates": 0,
+  "error": "ValueError('parent checkpoint identity')",
+  "history": [],
+  "objective": "plm-affine-residual-balanced-bce-v1"
+}

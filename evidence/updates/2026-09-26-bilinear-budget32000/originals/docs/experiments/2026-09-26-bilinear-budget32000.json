@@ -1,0 +1,2568 @@
+{
+  "aggregate_audit_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+  "aggregate_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708",
+  "all_three": {
+    "aggregate": {
+      "exact_count": 660,
+      "f1": 0.9999637956903659,
+      "false_negative_count": 7,
+      "false_positive_count": 1,
+      "precision": 0.9999891978309244,
+      "query_count": 666,
+      "recall": 0.9999387155396199,
+      "serialization_compatible": 666,
+      "set_size": 128.11261261261262,
+      "strict_separation_count": 665
+    },
+    "groups": {
+      "COLOR": {
+        "exact_count": 309,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 309,
+        "recall": 1.0,
+        "serialization_compatible": 309,
+        "set_size": 113.66990291262135,
+        "strict_separation_count": 309
+      },
+      "TYPE_dual": {
+        "exact_count": 198,
+        "f1": 0.9998818035773706,
+        "false_negative_count": 7,
+        "false_positive_count": 1,
+        "precision": 0.9999647340950769,
+        "query_count": 204,
+        "recall": 0.9997999242616998,
+        "serialization_compatible": 204,
+        "set_size": 171.55882352941177,
+        "strict_separation_count": 203
+      },
+      "TYPE_single": {
+        "exact_count": 153,
+        "f1": 1.0,
+        "false_negative_count": 0,
+        "false_positive_count": 0,
+        "precision": 1.0,
+        "query_count": 153,
+        "recall": 1.0,
+        "serialization_compatible": 153,
+        "set_size": 99.3529411764706,
+        "strict_separation_count": 153
+      }
+    }
+  },
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "base_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+    "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+  },
+  "campaign_version": "bilinear-budget32000-v1",
+  "date": "2026-09-26",
+  "decision": {
+    "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "audit_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+    "campaign_version": "bilinear-budget32000-v1",
+    "children": [
+      {
+        "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+        "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1729/checkpoint-final.pt",
+        "checkpoint_sha256": "8c2edf986f20df78e6d111f934ea5bde5b60a939df6ff92f4eeeb095c625bc27",
+        "exact_count": 218,
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "seed": 1729,
+        "sidecar_sha256": "4dba47b457f1d8dadc30aa616df2091d36d41bf18b8f210957ce7845be8b12c1",
+        "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1"
+      },
+      {
+        "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+        "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1730/checkpoint-final.pt",
+        "checkpoint_sha256": "8f315c94ba21965e534654119a73a6abea9ef3797cc096f6997f7441c87e775e",
+        "exact_count": 222,
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "seed": 1730,
+        "sidecar_sha256": "1f46bc456c86767784b7cb724a3e674ac7041c77b10223e18a0c3287902d2104",
+        "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11"
+      },
+      {
+        "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+        "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1731/checkpoint-final.pt",
+        "checkpoint_sha256": "ceb17a1e1ac92e1dbc44656c05132b518032dec6bf1ac4b4019de5dc5dbabf74",
+        "exact_count": 220,
+        "paired_vs_historical8000": {
+          "gains": 6,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 6,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "seed": 1731,
+        "sidecar_sha256": "9ada06c691ac82689acfbd480943df998ff69ebfcece9589166f476361e1dd17",
+        "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+      }
+    ],
+    "evidence_accepted": true,
+    "evidence_revision": "bilinear-budget32000-evidence-v2",
+    "fixed_quality_gate_passed": true,
+    "fresh_seed_meaning": "Fresh residual fits from three existing original parents, not newly selected seeds.",
+    "fresh_seeds": [
+      1729,
+      1730,
+      1731
+    ],
+    "limitations": [
+      "The same 222 development queries are reused across three seeds; 666 is not an independent sample count.",
+      "Seed 1730 is exact on this validation workload; the other two seeds retain six nonexact seed-query outcomes in total.",
+      "Adaptive validation, no protected evaluation, no oracle-parity generalization or serving-advantage claim.",
+      "Historical failed seed-1730 audit remains unchanged and is superseded only by the separately identified successful audit.",
+      "Weights remain local; checkpoint hashes do not establish backup or public availability."
+    ],
+    "model_promoted": false,
+    "new_checkpoint_count": 3,
+    "next_research_question": "Diagnose the six remaining dual-TYPE outcomes from saved validation evidence before declaring a new intervention; do not tune on protected data.",
+    "observed_terminals": [
+      {
+        "path": "aggregate-execution-receipt-v2.json",
+        "sha256": "56faaaf784874d8092bd30604fd7993ad76978af9ca5f556dc4ca3820d388722"
+      },
+      {
+        "path": "aggregate-audit-execution-receipt-v2.json",
+        "sha256": "1f98be3bf67fbb77ed3b83407e3251bc611beeced7a9d6374701f44a414d0a8b"
+      }
+    ],
+    "outcome": "All three longer-budget fits pass their predeclared matched-control improvement gates.",
+    "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "protected_test_used": false,
+    "rationale": "Exact seed-query outcomes improve from 650/666 to 660/666, with 10 gains and no losses. Every seed improves independently; no pooled compensation is used.",
+    "readiness_sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+    "recorded_utc": "2026-09-26T19:16:53.197028+00:00",
+    "schema_version": 1,
+    "standard_serving_supported": false,
+    "summary_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708"
+  },
+  "decision_sha256": "4a508abaf3fac7e2e678cd5604f73636241aabcb18c876076c134468257e44af",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "exporter_sha256": "8e01e308b6444c03b75cf5c11f3dcd891e8a1b56e35ab8ab96e043700b2a58bb",
+  "gate": {
+    "accepted": false,
+    "checks": {
+      "1729": true,
+      "1730": true,
+      "1731": true
+    },
+    "independent_audit_required": true,
+    "primary_checks_passed": true
+  },
+  "limitations": [
+    "666 observations reuse the same 222 development queries; they are not 666 independent held-out samples.",
+    "Fresh fits start from the three existing original parents; these are not newly selected parent seeds.",
+    "Training diagnostics are descriptive; no threshold selection or new candidate evaluation.",
+    "Instrumented refit timing includes detached diagnostic reduction and serialization; do not compare it directly with historical uninstrumented time.",
+    "Raw training matrices and final weights remain local; reduced rows retain audited summaries and score hashes, not independently replayable matrices.",
+    "Prior 38 checkpoint identities are inherited; only the three new checkpoint files are freshly hashed.",
+    "Batch output creation is exclusive but not atomic; a failed write may leave partial files. Publication handoff requires verification of every output."
+  ],
+  "model_version_inventory": {
+    "path": "2026-09-26-bilinear-budget32000-model-version-inventory.json",
+    "registered_final_count": 41,
+    "sha256": "eaf8080f8ee8cc9cd7d2c55a4ddad233767943a8e2fe2e5c291e556d009c079c"
+  },
+  "per_seed": [
+    {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "audit_provenance": {
+        "auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+        "path": "runs/learning/bilinear-budget32000-v1/seed-1729/independent-audit.json",
+        "readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+          "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+        },
+        "terminal_path": "runs/learning/bilinear-budget32000-v1/seed-1729/audit-execution-receipt.json",
+        "test_receipt_sha256": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67"
+      },
+      "audit_receipt_sha256": "33737d2ea987b7fd2d6a5e2d4f74b82b1c16171390010ca27b941f290be9ca82",
+      "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+      "checkpoint": {
+        "child_checkpoint_sha256": "8c2edf986f20df78e6d111f934ea5bde5b60a939df6ff92f4eeeb095c625bc27",
+        "child_tensor_count": 94,
+        "final_post_update_loss": 7.570677240664736e-08,
+        "global_step": 32000,
+        "initial_pre_update_loss": 0.003822767175734043,
+        "initial_residual": {
+          "dtype": "torch.float32",
+          "sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "new_trained_tensors": [
+          "symmetric_bilinear_residual"
+        ],
+        "optimizer_step": 32000,
+        "original_tensor_count": 93,
+        "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1",
+        "parent_training_steps": 2000,
+        "payload_loaded_on": "cpu",
+        "refit_seconds": 80.04343830000289,
+        "trained_residual": {
+          "dtype": "torch.float32",
+          "sha256": "3d33d1335c45e76057ec985818640b1fa9614ccbe84d07c8946d942a35710841",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "unchanged_original_tensor_count": 93,
+        "updates_verified": 32000
+      },
+      "child": {
+        "aggregate": {
+          "exact_count": 218,
+          "f1": 0.9999232353409879,
+          "false_negative_count": 6,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 0.9998472121671663,
+          "serialization_compatible": 222,
+          "set_size": 128.09459459459458,
+          "strict_separation_count": 221
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 64,
+            "f1": 0.9997493859661662,
+            "false_negative_count": 6,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 0.999501192663396,
+            "serialization_compatible": 68,
+            "set_size": 171.5,
+            "strict_separation_count": 67
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 28,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 59,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 19,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "continuation": null,
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "torch": "2.11.0+cu128"
+      },
+      "evaluator": "plm-bilinear-budget32000-screen-v1",
+      "execution_receipt_sha256": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+      "final_post_update_loss": 7.570677240664736e-08,
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "independent_training_diagnostics": {
+        "endpoints": {
+          "32000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 8.918478965759277,
+            "minimum_signed_margin_index": 652,
+            "post_update": 32000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post32000.json",
+            "score_artifact_sha256": "b90196500c5c1e016e066cdce4a082878765392bda7edc256b8b30999948694f"
+          },
+          "8000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 6.159852981567383,
+            "minimum_signed_margin_index": 672,
+            "post_update": 8000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post8000.json",
+            "score_artifact_sha256": "800cd96d7d5a5f8ff391d0cae6ed3e64e34dde174ec7b36b7a328555859c8145"
+          }
+        },
+        "full_score_rows_recomputed": 3274,
+        "prefix": {
+          "boundary_loss_equal": true,
+          "compared_pre_update_losses": 8000,
+          "current_pre_update_8001_loss": 1.6234706663453835e-06,
+          "descriptive_only": true,
+          "first_mismatch": null,
+          "historical_final_post_update_loss": 1.6234706663453835e-06,
+          "initial_loss_equal": true,
+          "intermediate_weight_equality_established": false,
+          "mismatch_count": 0
+        },
+        "used_for_quality_gate": false
+      },
+      "inference": "dense-positive-bilinear-residual-subject-excluded-ascending-fp32-b8-last6-v1",
+      "initial_pre_update_loss": 0.003822767175734043,
+      "invariants": {
+        "completed_32000_updates": true,
+        "initial_train_loss_exact": true,
+        "optimizer_reload_exact": true,
+        "original_93_tensors_unchanged": true,
+        "parent_replay_exact": true,
+        "reload_exact": true,
+        "residual_changed": true,
+        "train_only_supervision": true,
+        "zero_A_replay_exact": true
+      },
+      "numerical_settings": {
+        "autocast_cpu_enabled": false,
+        "autocast_cuda_enabled": false,
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "float32_matmul_precision": "highest"
+      },
+      "objective": "plm-bilinear-residual-balanced-bce-v1",
+      "parent": {
+        "exact_count": 112,
+        "f1": 0.9903735063269145,
+        "false_negative_count": 76,
+        "false_positive_count": 512,
+        "precision": 0.9838575265439718,
+        "query_count": 222,
+        "recall": 0.9975186802788016,
+        "serialization_compatible": 222,
+        "set_size": 130.0855855855856,
+        "strict_separation_count": 165
+      },
+      "peak_memory": {
+        "allocated_bytes": 111797248,
+        "reserved_bytes": 161480704
+      },
+      "recipe_sha256": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+      "script_sha256": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+      "seed": 1729,
+      "shared_readiness": {
+        "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+        "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+      },
+      "source_training_sha256": "aba7543149bb188e88f6139b5de70b40c885e1a3d1f153f795f711407cc7e0b6",
+      "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+      "training_diagnostics": {
+        "32000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 8.918478965759277,
+          "minimum_signed_margin_index": 652,
+          "post_update": 32000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-01.json",
+              "row_count": 100,
+              "sha256": "a0cc215f78a3c7fd40de5326c0f1acfdd9df9f77a93b16fcd22f4f20fb33a26c"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-02.json",
+              "row_count": 100,
+              "sha256": "075bf88e4b6df027f6df30da4fae189287cb527e9101439958d1dd1886fc374e"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-03.json",
+              "row_count": 100,
+              "sha256": "c2660626c9ee3c4ded85ff149a6effeeeb4428f6258c736a4270b6c4857fa21a"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-04.json",
+              "row_count": 100,
+              "sha256": "fccb81ecf1c583fa3106b99fa2eaa1e43d08d70a9710b69fcdd8f2987d0b5269"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-05.json",
+              "row_count": 100,
+              "sha256": "4e21c8b3adf0d94ec61470b61b92641adbf595aced0f3b0b7abff884c050250f"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-06.json",
+              "row_count": 100,
+              "sha256": "f7d2afc45f261cfe02256d9410ed1976ed9f1deed3e1e9ae7b287d3d3a8d8dd2"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-07.json",
+              "row_count": 100,
+              "sha256": "a07bf609055d9bc874bb546f6ffa2ecf43aa89fda1ebd9a0e51aaa8a5e72b76e"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-08.json",
+              "row_count": 100,
+              "sha256": "bdc5db46e008840914848d5a21103fe3268f83eb139f1c523dbd71df64d740e3"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-09.json",
+              "row_count": 100,
+              "sha256": "273fe1852cd3a49d0a7e324f745a63ad3a9c7689dc2b70fbbc85923c83c5f13d"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-10.json",
+              "row_count": 100,
+              "sha256": "6c556992b7a145963ee244bcf52535f49d22db82f89a88635481a51509e24fb6"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-11.json",
+              "row_count": 100,
+              "sha256": "1797b0b20e87aff350bafa96eeceb51fa79ed309daec2c04f8e44e7bfc0a2196"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-12.json",
+              "row_count": 100,
+              "sha256": "1a9df81cec194f1094f9f6acd405db96eed4aad5a27ba8ac45087e1c7409913b"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-13.json",
+              "row_count": 100,
+              "sha256": "29b3f7971d349807e395ad1519026fbb952fa24682dbcf22976eda7c4ac4ff59"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-14.json",
+              "row_count": 100,
+              "sha256": "ad250c131bd20d249c8a29e18a995c61146049c6c6398d58010eb41b7694c413"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-15.json",
+              "row_count": 100,
+              "sha256": "08f1af48b51b4b0c95c8107ce75adbffd7ca79089affcbefe88a75d841db7d20"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-16.json",
+              "row_count": 100,
+              "sha256": "b050e26caa3185aee924d00f9c48c7d6cfb20a2f9b7f37a1abcd34159f1ed68a"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post32000-part-17.json",
+              "row_count": 37,
+              "sha256": "b23ea23b3240d508167b194638a3270ac1fa378014267ca8c22d45186051f383"
+            }
+          ],
+          "score_artifact": "train-scores-post32000.json",
+          "score_artifact_sha256": "b90196500c5c1e016e066cdce4a082878765392bda7edc256b8b30999948694f"
+        },
+        "8000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 6.159852981567383,
+          "minimum_signed_margin_index": 672,
+          "post_update": 8000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-01.json",
+              "row_count": 100,
+              "sha256": "bd9fd65f68310f3ee01f2d6993d1cbd985c40936f66b491033b25faca760f398"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-02.json",
+              "row_count": 100,
+              "sha256": "78a6e774a53426d74d7d99d66cd147c496b3f7bacf90521812bc270878601a7b"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-03.json",
+              "row_count": 100,
+              "sha256": "c4fb315cbf9433c0d1ff8934a2378d64d54ea584fb3d0eace65a0a402c4e390a"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-04.json",
+              "row_count": 100,
+              "sha256": "60686c0c685b415ce2766513b410e9d4685a16c0768fa2bd3b25d0e90f1731bb"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-05.json",
+              "row_count": 100,
+              "sha256": "586331bd2a1b0b8f800608aa9480db55d30b4f5b9a98b335a45cb6c36e10d8d2"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-06.json",
+              "row_count": 100,
+              "sha256": "a3db18e688b372cbf31eb3fa6ef91b4f7502bc752b38fc783fea2e79475f1ae4"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-07.json",
+              "row_count": 100,
+              "sha256": "f5194a4e3c793734c16779d4b87ee2237d0ef120848eed3b914662acae783358"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-08.json",
+              "row_count": 100,
+              "sha256": "7122c24535b8ab38d8e855540457e2c4f454e9e2f95fd4a43b44f134976766b1"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-09.json",
+              "row_count": 100,
+              "sha256": "23355d19cf4657328899291bd80379e16ccabbfb2cf1c24d5cd3b8fa44e96826"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-10.json",
+              "row_count": 100,
+              "sha256": "4b9e2ac139733a6a7ca113857ecb2e602ddaa1c96bd4a83ac878d362c2330703"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-11.json",
+              "row_count": 100,
+              "sha256": "65f362ccd34a8a0419434ef476671745ad0a9a913c0e43a596f30be45538c05f"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-12.json",
+              "row_count": 100,
+              "sha256": "20fff51f11db6056c047526669154009dba8318cf7bfec04d2b03c49e419cd35"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-13.json",
+              "row_count": 100,
+              "sha256": "73b692a72f038cd7480f7550cb7844d0988a94a7d0f1a0b0b993f906f88bdca7"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-14.json",
+              "row_count": 100,
+              "sha256": "fae940a57696b179c833a690f82374fac972356862b98cb1c6f8b2974e7bdfff"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-15.json",
+              "row_count": 100,
+              "sha256": "1e5f276263f9a021c771b1324035c324696b2ba196cab61f01f10150b4a55cfd"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-16.json",
+              "row_count": 100,
+              "sha256": "66cc4da185ef326ae55123bfd4a038b9261dc28db6c8680df0280ea2b41ed930"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1729-post8000-part-17.json",
+              "row_count": 37,
+              "sha256": "887aa89a16237ecfd4098cebfa25a01e8afde37eebcee5383d3e2e84a4ea5527"
+            }
+          ],
+          "score_artifact": "train-scores-post8000.json",
+          "score_artifact_sha256": "800cd96d7d5a5f8ff391d0cae6ed3e64e34dde174ec7b36b7a328555859c8145"
+        }
+      },
+      "training_history_artifacts": [
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-01.json",
+          "sha256": "e88aced7ccbb295c5b61d41a3d60b7e12de5ee06cd49d4acf20002866ee57239",
+          "update_end": 2000,
+          "update_start": 1
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-02.json",
+          "sha256": "bc615b9275ea7b64d33a3f26a5df03391eb2cd31833df94055e1cd0ce86cbaf9",
+          "update_end": 4000,
+          "update_start": 2001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-03.json",
+          "sha256": "747d1a3560d1b4caf91d392db0b847f987acbe84bc95fcabf84b9dce0259d224",
+          "update_end": 6000,
+          "update_start": 4001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-04.json",
+          "sha256": "16c42aea4303101df7f25a0f8280e4abf05ed1ead507fd98057eb2213a50345d",
+          "update_end": 8000,
+          "update_start": 6001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-05.json",
+          "sha256": "c95e1f4377ea549ddcc321886c0c8d858c33e4eb3f0e744755d5444467edccb9",
+          "update_end": 10000,
+          "update_start": 8001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-06.json",
+          "sha256": "1c08fa3893fe653f1c0853e0e0e16a11f031517721f8da3ed2edb3237e77161e",
+          "update_end": 12000,
+          "update_start": 10001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-07.json",
+          "sha256": "2f5c078e84d7dc4c6db7afc351957fef8fa8becd1933ab7fef548fe2098e765c",
+          "update_end": 14000,
+          "update_start": 12001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-08.json",
+          "sha256": "8f0b0211e252f6834cf543f2eae806c3c93a1a0a5d55012f50dba2ed4dd041b5",
+          "update_end": 16000,
+          "update_start": 14001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-09.json",
+          "sha256": "b7c1cbccfe596231abf33cbab0630b7015efc4c994f58ebd349f2e58cb6ba69a",
+          "update_end": 18000,
+          "update_start": 16001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-10.json",
+          "sha256": "a15512a01e3d3c463d152db9f590d4d53f7634bd1b5bb5fb2a8130d63f1e354a",
+          "update_end": 20000,
+          "update_start": 18001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-11.json",
+          "sha256": "f432f885e89496bcf31fbbf035d65c3bcd3fefa4ff6e30526327e1ff9069e8bb",
+          "update_end": 22000,
+          "update_start": 20001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-12.json",
+          "sha256": "d87c42360fc3a950f6b9af4690768542f04740e87ba51d5b31b8aef92e2f8054",
+          "update_end": 24000,
+          "update_start": 22001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-13.json",
+          "sha256": "0b344aecb1514b2d0ba296ca2ef7d0a187b9b974f29b124bfa508cb7592c68ee",
+          "update_end": 26000,
+          "update_start": 24001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-14.json",
+          "sha256": "dc727d94740734a41dd68364a11ebdfc10a996075eb9030806e419c5910efb30",
+          "update_end": 28000,
+          "update_start": 26001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-15.json",
+          "sha256": "274480a434524adae9e56d04ab5f2119e326e320b3cbb2d7073e53629ed42fd2",
+          "update_end": 30000,
+          "update_start": 28001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1729-part-16.json",
+          "sha256": "74b83ca3dca7c900a6df67aac3d8490b3333f00a9f14a43743438b1a673bc755",
+          "update_end": 32000,
+          "update_start": 30001
+        }
+      ],
+      "training_prefix_diagnostic": {
+        "all_pre_update_equal": true,
+        "boundary_loss_equal": true,
+        "current_pre_update_8001_loss": 1.6234706663453835e-06,
+        "descriptive_only": true,
+        "first_mismatch_update": null,
+        "historical_final_post_update_loss": 1.6234706663453835e-06,
+        "mismatch_count": 0,
+        "pre_update_compared_count": 8000,
+        "used_for_selection_or_updates": false
+      },
+      "wall_seconds": 87.35466049999377
+    },
+    {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "audit_provenance": {
+        "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+        "path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit-v2.json",
+        "readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+          "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+        },
+        "terminal_path": "runs/learning/bilinear-budget32000-v1/seed-1730/audit-execution-receipt-v2.json",
+        "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+      },
+      "audit_receipt_sha256": "d84131fe3fce048141347d4e415889664cb5c7b8bf92073e29634448c77e31ed",
+      "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+      "checkpoint": {
+        "child_checkpoint_sha256": "8f315c94ba21965e534654119a73a6abea9ef3797cc096f6997f7441c87e775e",
+        "child_tensor_count": 94,
+        "final_post_update_loss": 7.010361713355451e-08,
+        "global_step": 32000,
+        "initial_pre_update_loss": 0.003967047668993473,
+        "initial_residual": {
+          "dtype": "torch.float32",
+          "sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "new_trained_tensors": [
+          "symmetric_bilinear_residual"
+        ],
+        "optimizer_step": 32000,
+        "original_tensor_count": 93,
+        "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+        "parent_training_steps": 2000,
+        "payload_loaded_on": "cpu",
+        "refit_seconds": 115.05615160000161,
+        "trained_residual": {
+          "dtype": "torch.float32",
+          "sha256": "492cf5678b8f0e30cca127181fbf254fe9881e04e3b6b9968ccbc180b64d9b08",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "unchanged_original_tensor_count": 93,
+        "updates_verified": 32000
+      },
+      "child": {
+        "aggregate": {
+          "exact_count": 222,
+          "f1": 1.0,
+          "false_negative_count": 0,
+          "false_positive_count": 0,
+          "precision": 1.0,
+          "query_count": 222,
+          "recall": 1.0,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 68,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 68,
+            "recall": 1.0,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 2,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 2,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 106,
+          "groups": {
+            "COLOR": {
+              "gains": 22,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 21,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "continuation": null,
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "torch": "2.11.0+cu128"
+      },
+      "evaluator": "plm-bilinear-budget32000-screen-v1",
+      "execution_receipt_sha256": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+      "final_post_update_loss": 7.010361713355451e-08,
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "independent_training_diagnostics": {
+        "endpoints": {
+          "32000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 9.139474868774414,
+            "minimum_signed_margin_index": 953,
+            "post_update": 32000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post32000.json",
+            "score_artifact_sha256": "4e907baffdb3f52742948141099c67fa7028431895ed118b189411c017a406d9"
+          },
+          "8000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 6.234370231628418,
+            "minimum_signed_margin_index": 953,
+            "post_update": 8000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post8000.json",
+            "score_artifact_sha256": "b742f6ab748524bace8643377e7ffc705d6da8d53950ee4f4e110428cd69a4ad"
+          }
+        },
+        "full_score_rows_recomputed": 3274,
+        "prefix": {
+          "boundary_loss_equal": true,
+          "compared_pre_update_losses": 8000,
+          "current_pre_update_8001_loss": 1.5859151289987494e-06,
+          "descriptive_only": true,
+          "first_mismatch": null,
+          "historical_final_post_update_loss": 1.5859151289987494e-06,
+          "initial_loss_equal": true,
+          "intermediate_weight_equality_established": false,
+          "mismatch_count": 0
+        },
+        "used_for_quality_gate": false
+      },
+      "inference": "dense-positive-bilinear-residual-subject-excluded-ascending-fp32-b8-last6-v1",
+      "initial_pre_update_loss": 0.003967047668993473,
+      "invariants": {
+        "completed_32000_updates": true,
+        "initial_train_loss_exact": true,
+        "optimizer_reload_exact": true,
+        "original_93_tensors_unchanged": true,
+        "parent_replay_exact": true,
+        "reload_exact": true,
+        "residual_changed": true,
+        "train_only_supervision": true,
+        "zero_A_replay_exact": true
+      },
+      "numerical_settings": {
+        "autocast_cpu_enabled": false,
+        "autocast_cuda_enabled": false,
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "float32_matmul_precision": "highest"
+      },
+      "objective": "plm-bilinear-residual-balanced-bce-v1",
+      "parent": {
+        "exact_count": 116,
+        "f1": 0.9904203935208143,
+        "false_negative_count": 73,
+        "false_positive_count": 515,
+        "precision": 0.9835963223707063,
+        "query_count": 222,
+        "recall": 0.9978384866794707,
+        "serialization_compatible": 222,
+        "set_size": 130.11261261261262,
+        "strict_separation_count": 160
+      },
+      "peak_memory": {
+        "allocated_bytes": 111797248,
+        "reserved_bytes": 161480704
+      },
+      "recipe_sha256": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+      "script_sha256": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+      "seed": 1730,
+      "shared_readiness": {
+        "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+        "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+      },
+      "source_training_sha256": "1edd76de0dd3ca6de22701d03042b22e5cd118e6c53fc46c9d93a1ca6443c74c",
+      "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+      "training_diagnostics": {
+        "32000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 9.139474868774414,
+          "minimum_signed_margin_index": 953,
+          "post_update": 32000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-01.json",
+              "row_count": 100,
+              "sha256": "56a81a2e32703a7f30966bc04a41a5e90fea52d12752a82369b356f29a21d982"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-02.json",
+              "row_count": 100,
+              "sha256": "be673fbc709f79f30751141beed6c5928fe87265b977b889e0f9f71e4fb29184"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-03.json",
+              "row_count": 100,
+              "sha256": "3b6872ebd45f9c53c4621cecd1f330b077012e2b9ea71fd074f1fdcf2d8e253c"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-04.json",
+              "row_count": 100,
+              "sha256": "4eaa688fac5d4a7ea5d794a2033d31faee1c685796e6fde91779dd3af439d2a5"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-05.json",
+              "row_count": 100,
+              "sha256": "6aece00a9aaa9a4b25dd8c707950b79cc76cdfa3c1997b2e058736125fd7eccb"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-06.json",
+              "row_count": 100,
+              "sha256": "d362efdd2198b41999687297bdd3dff2f7a4b8d7dcdd3ba2c6206f79f5bf11cf"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-07.json",
+              "row_count": 100,
+              "sha256": "cd075ff2bdb368439817671c692e44210c38523a50467f081f15b38962e00b1b"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-08.json",
+              "row_count": 100,
+              "sha256": "e4c40aade0b09c6e62a59b65d4ed58219d8fba7572ff34c6eeb33c77f16a7baf"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-09.json",
+              "row_count": 100,
+              "sha256": "2363c32e7a1869e9d418c066b37245c84798952f77fd2dfdc823e7803c3ef030"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-10.json",
+              "row_count": 100,
+              "sha256": "22d5e9a807ab248a2cbc6cff6840bf73870872393d181d2c68f9f551366e1047"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-11.json",
+              "row_count": 100,
+              "sha256": "ade46e91749c7fd3b1e7edc5c1a90515af731f623a20bd709a374b1bf95e3abe"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-12.json",
+              "row_count": 100,
+              "sha256": "7a6c472bb3f9f5e909474f0fcf18d9fb0047e3ab5d45bd76fffdc303eb374e6c"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-13.json",
+              "row_count": 100,
+              "sha256": "f72d5cb57bd00648ab883a999af70dc58cde7b5777d6c4fcf8a558a49e3de69e"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-14.json",
+              "row_count": 100,
+              "sha256": "662e5f1747ca81e847101cf04687324e436ece094c22471373116adafb25e4b4"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-15.json",
+              "row_count": 100,
+              "sha256": "d4ea74b54e3100f0778e47f45d8b02c986db1570715d03e94b2c27881d0fc47a"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-16.json",
+              "row_count": 100,
+              "sha256": "ffbef8e7f3da2889c26d689fa83bcd95f72ae5374ade036f408c88f50548b527"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post32000-part-17.json",
+              "row_count": 37,
+              "sha256": "cd0ed972bf389a632b9898c5a74aaf08ec64dcb8005f9787f143e989eb297c4e"
+            }
+          ],
+          "score_artifact": "train-scores-post32000.json",
+          "score_artifact_sha256": "4e907baffdb3f52742948141099c67fa7028431895ed118b189411c017a406d9"
+        },
+        "8000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 6.234370231628418,
+          "minimum_signed_margin_index": 953,
+          "post_update": 8000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-01.json",
+              "row_count": 100,
+              "sha256": "073dc06664659dc0fcdd7a66f65d4e0c67611732af01e05f5b19c8ec27abee7e"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-02.json",
+              "row_count": 100,
+              "sha256": "ed203076a5cf19b18f7465b47d96f2652f8f9965528e59943e469399af225414"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-03.json",
+              "row_count": 100,
+              "sha256": "290645d919770fc970fc9e3fba8139a60de2ec347cadc759cd2365053e6d6aca"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-04.json",
+              "row_count": 100,
+              "sha256": "539091ebb3b6bac41e6a8382d388ad008122d8aa77496666faeca3a5003da4a9"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-05.json",
+              "row_count": 100,
+              "sha256": "81cfe4ae12161286475a4310af8926c85ffd178a1307ce97fdd915255ec5971b"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-06.json",
+              "row_count": 100,
+              "sha256": "16e8c26d7ab229c36fbb878fef085a07fb0b417234e98aeb28a4b3fce99a6740"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-07.json",
+              "row_count": 100,
+              "sha256": "b9d1eb9fe2deadcf17f26d62d007dd9b1ea61d24fa771508a399aca85261fa40"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-08.json",
+              "row_count": 100,
+              "sha256": "60ed75d14170f7bbb9b7276f7bdccc2cdbcd0e630010bbca2e44f70415db536a"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-09.json",
+              "row_count": 100,
+              "sha256": "a43e1b7b6315831af1ba853b8cd23c736423bdfc20fbbb59da52fdf03578f4dd"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-10.json",
+              "row_count": 100,
+              "sha256": "d0aa738cd1b62e263a552c7b2835161b3a9f4b582b24e9b0241bc34aa0fd28ab"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-11.json",
+              "row_count": 100,
+              "sha256": "61b3014dfd4ad098ae0ab1c6483fe72f90fca670957a26e4f533272ae41c3e09"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-12.json",
+              "row_count": 100,
+              "sha256": "e8e4c3419a643c7509116c7a7eb3718c810a91a0176004c6a73f15d034960308"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-13.json",
+              "row_count": 100,
+              "sha256": "7d5ae766af2cde266c42c9c7bb8df0ee5af51781974f686862a79afccf63e0b9"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-14.json",
+              "row_count": 100,
+              "sha256": "fec5dd3cb586b8efce205f6a21b945e98006c98eec84bed3bb92232c2a68ad87"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-15.json",
+              "row_count": 100,
+              "sha256": "edb931ceffbfaf795944a1549afd76e11692e3ba74d74676591312bd6377432a"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-16.json",
+              "row_count": 100,
+              "sha256": "4bef9bf0c0f0086c8fc06cf136bbde0bdabd4a46379dd24e2347f8cb4f2b4351"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1730-post8000-part-17.json",
+              "row_count": 37,
+              "sha256": "5c2f125ad58038418cce068f957c7afdd953dfa800f6814dd2bdd6cb6ef8e043"
+            }
+          ],
+          "score_artifact": "train-scores-post8000.json",
+          "score_artifact_sha256": "b742f6ab748524bace8643377e7ffc705d6da8d53950ee4f4e110428cd69a4ad"
+        }
+      },
+      "training_history_artifacts": [
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-01.json",
+          "sha256": "11fbc9718603a0172bc206b31ad0a76a0a7344df7e4d5961aacd7fb500e56a67",
+          "update_end": 2000,
+          "update_start": 1
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-02.json",
+          "sha256": "c402f9596deae553d91aaf787ec56a5041c5948f4456aa7951e179d15f0723b1",
+          "update_end": 4000,
+          "update_start": 2001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-03.json",
+          "sha256": "056ff38b74938e00584ad8756960639f6125813ea06850acf27802b4ef0560d8",
+          "update_end": 6000,
+          "update_start": 4001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-04.json",
+          "sha256": "925bcfd51d6aa16eb767e1908888db5b5583cf424e0848145f635cb4f264820e",
+          "update_end": 8000,
+          "update_start": 6001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-05.json",
+          "sha256": "a06ebbd23a9a401380a819a3dfb76e84fdd3095b4b849b2f7cadd3a9af2e8057",
+          "update_end": 10000,
+          "update_start": 8001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-06.json",
+          "sha256": "b8690b2c142f4a4ffd4b1348d2e2dc134b2c8fea307c786a46220ee0b2c72131",
+          "update_end": 12000,
+          "update_start": 10001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-07.json",
+          "sha256": "c59f352771715f9c6db69e47fa5ac91bdd280478da4a525ef187540366bc14f4",
+          "update_end": 14000,
+          "update_start": 12001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-08.json",
+          "sha256": "394105d72b1ecf02305e71f9600a3d6a68a89bc767cadb2bb17b560bfb55c65f",
+          "update_end": 16000,
+          "update_start": 14001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-09.json",
+          "sha256": "0306a35dd348c9977c1765dc351d626901cd211c116f7643b477b3f48d769bf2",
+          "update_end": 18000,
+          "update_start": 16001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-10.json",
+          "sha256": "377d08d1d29bb7f75c762bab2da5310522fcaedc016e1060448c509e427a057d",
+          "update_end": 20000,
+          "update_start": 18001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-11.json",
+          "sha256": "b6c465013fe8df77518a6d3b360f192614d193858352c932f043a2fd0237059d",
+          "update_end": 22000,
+          "update_start": 20001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-12.json",
+          "sha256": "bc2710fa0f5b49a0164d4ae656ff1f4d59624c7f90b30ca31efb0c98df22897b",
+          "update_end": 24000,
+          "update_start": 22001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-13.json",
+          "sha256": "985584775c5aa199308a09cb6eb830d493c4e29bdfafdeacc307c071e2ef17c0",
+          "update_end": 26000,
+          "update_start": 24001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-14.json",
+          "sha256": "7037dd022424d73949a0046392f4a5b0650133c8d725f4050b48ff9ce59a6bac",
+          "update_end": 28000,
+          "update_start": 26001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-15.json",
+          "sha256": "c64f0d66b011dab8a0c3718de2fadea22903700a1a7d6806f6586914f2630bd5",
+          "update_end": 30000,
+          "update_start": 28001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1730-part-16.json",
+          "sha256": "50d47b3e37ba3c1140ab9a05e8d712d59d2dfe910a0b3391558dc0152f8ee5f0",
+          "update_end": 32000,
+          "update_start": 30001
+        }
+      ],
+      "training_prefix_diagnostic": {
+        "all_pre_update_equal": true,
+        "boundary_loss_equal": true,
+        "current_pre_update_8001_loss": 1.5859151289987494e-06,
+        "descriptive_only": true,
+        "first_mismatch_update": null,
+        "historical_final_post_update_loss": 1.5859151289987494e-06,
+        "mismatch_count": 0,
+        "pre_update_compared_count": 8000,
+        "used_for_selection_or_updates": false
+      },
+      "wall_seconds": 122.38876190000155
+    },
+    {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "audit_provenance": {
+        "auditor_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+        "path": "runs/learning/bilinear-budget32000-v1/seed-1731/independent-audit-v2.json",
+        "readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+          "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+        },
+        "terminal_path": "runs/learning/bilinear-budget32000-v1/seed-1731/audit-execution-receipt-v2.json",
+        "test_receipt_sha256": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6"
+      },
+      "audit_receipt_sha256": "9ec3712293096ba4a5f558b197b418d7a573e01dc5719a656c4469f6bcc455ad",
+      "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+      "checkpoint": {
+        "child_checkpoint_sha256": "ceb17a1e1ac92e1dbc44656c05132b518032dec6bf1ac4b4019de5dc5dbabf74",
+        "child_tensor_count": 94,
+        "final_post_update_loss": 7.533954260452447e-08,
+        "global_step": 32000,
+        "initial_pre_update_loss": 0.004869009833782911,
+        "initial_residual": {
+          "dtype": "torch.float32",
+          "sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "new_trained_tensors": [
+          "symmetric_bilinear_residual"
+        ],
+        "optimizer_step": 32000,
+        "original_tensor_count": 93,
+        "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+        "parent_training_steps": 2000,
+        "payload_loaded_on": "cpu",
+        "refit_seconds": 88.42773699999088,
+        "trained_residual": {
+          "dtype": "torch.float32",
+          "sha256": "62a8e9a348e50ef428c3c0863d5628898d0f5fbabee53c767d59ba1c0502c4bc",
+          "shape": [
+            2,
+            256,
+            256
+          ]
+        },
+        "unchanged_original_tensor_count": 93,
+        "updates_verified": 32000
+      },
+      "child": {
+        "aggregate": {
+          "exact_count": 220,
+          "f1": 0.9999681517301094,
+          "false_negative_count": 1,
+          "false_positive_count": 1,
+          "precision": 0.9999675934927734,
+          "query_count": 222,
+          "recall": 0.9999689344516931,
+          "serialization_compatible": 222,
+          "set_size": 128.1216216216216,
+          "strict_separation_count": 222
+        },
+        "groups": {
+          "COLOR": {
+            "exact_count": 103,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 103,
+            "recall": 1.0,
+            "serialization_compatible": 103,
+            "set_size": 113.66990291262135,
+            "strict_separation_count": 103
+          },
+          "TYPE_dual": {
+            "exact_count": 66,
+            "f1": 0.9998960247659454,
+            "false_negative_count": 1,
+            "false_positive_count": 1,
+            "precision": 0.9998942022852306,
+            "query_count": 68,
+            "recall": 0.9998985801217039,
+            "serialization_compatible": 68,
+            "set_size": 171.58823529411765,
+            "strict_separation_count": 68
+          },
+          "TYPE_single": {
+            "exact_count": 51,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 51,
+            "recall": 1.0,
+            "serialization_compatible": 51,
+            "set_size": 99.3529411764706,
+            "strict_separation_count": 51
+          }
+        },
+        "paired_vs_historical8000": {
+          "gains": 6,
+          "groups": {
+            "COLOR": {
+              "gains": 0,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 6,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 0,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        },
+        "paired_vs_parent_dense": {
+          "gains": 109,
+          "groups": {
+            "COLOR": {
+              "gains": 21,
+              "losses": 0
+            },
+            "TYPE_dual": {
+              "gains": 63,
+              "losses": 0
+            },
+            "TYPE_single": {
+              "gains": 25,
+              "losses": 0
+            }
+          },
+          "losses": 0
+        }
+      },
+      "continuation": {
+        "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+        "completion_sha256": "a2b0aee51096713bbc07d3524522e66c9faaccbc73294a3c26b54a9dbdd5ce9c",
+        "continuation_readiness": {
+          "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+          "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+        },
+        "execution_revision": "bilinear-budget32000-continuation-v2",
+        "execution_wrapper_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+        "snapshot_sha256": {
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-aggregate-tests-v2/stdout.txt": "aa1b50c46d9e15d319cbabc82ef6f177362a507347f5524135cdd98b0bc47d04",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-aggregate-tests-v2/test-receipt.json": "1cee507361d7ad5c8dc3dac2c9cb6db4c48280b6d7b61361529e0bed61bb1a2e",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-auditor-tests-v2/stdout.txt": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-auditor-tests-v2/test-receipt.json": "f111838428c19342f8500ef0db5d4e64333bef02a9453a8205abdebd7a37eee6",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-readiness-v2/readiness.json": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-runner-tests-v2/stdout.txt": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-runner-tests-v2/test-receipt.json": "b649196036e57ff90d5a0b3f389862a83abfb236f6824e97c2f253e7b4d5901c",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/runs/learning/bilinear-budget32000-v1/independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/scripts/aggregate_bilinear_budget32000_v2.py": "3968fb63eed12a63994125c84dd0ac7c69cc455d6a4af8cfc63e78ee9c547ed4",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/scripts/refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_aggregate_v2.py": "05a510a6a0401ddc75e502ff6f04f16b8fa483db3e45d5bf1033c4e78eb288cb",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80",
+          "runs/learning/bilinear-budget32000-v1/seed-1731/continuation/tests/unit/test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b"
+        }
+      },
+      "environment": {
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5070 Ti",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "python": "3.12.13",
+        "torch": "2.11.0+cu128"
+      },
+      "evaluator": "plm-bilinear-budget32000-screen-v1",
+      "execution_receipt_sha256": "28727b5ef32f68478983a1c9c87b528c38efd19fee06e41204a813b83ce7207f",
+      "final_post_update_loss": 7.533954260452447e-08,
+      "gate": {
+        "accepted": false,
+        "checks": {
+          "exact_above_matching8000": true,
+          "execution_invariants": true,
+          "f1_at_least_matching8000": true,
+          "group_exact_nonregression": true,
+          "serialization_compatible": true
+        },
+        "independent_audit_required": true,
+        "primary_checks_passed": true
+      },
+      "independent_training_diagnostics": {
+        "endpoints": {
+          "32000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 9.165546417236328,
+            "minimum_signed_margin_index": 1498,
+            "post_update": 32000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post32000.json",
+            "score_artifact_sha256": "e25f4a41b66085b5144bf23d1d8c4bafcedff9a69cc9d191151dd3ccd89d8290"
+          },
+          "8000": {
+            "aggregate": {
+              "exact_count": 1637,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 1637,
+              "recall": 1.0,
+              "serialization_compatible": 1637,
+              "set_size": 125.87904703726329,
+              "strict_separation_count": 1637
+            },
+            "groups": {
+              "COLOR": {
+                "exact_count": 832,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 832,
+                "recall": 1.0,
+                "serialization_compatible": 832,
+                "set_size": 114.03846153846153,
+                "strict_separation_count": 832
+              },
+              "TYPE": {
+                "exact_count": 805,
+                "f1": 1.0,
+                "false_negative_count": 0,
+                "false_positive_count": 0,
+                "precision": 1.0,
+                "query_count": 805,
+                "recall": 1.0,
+                "serialization_compatible": 805,
+                "set_size": 138.1167701863354,
+                "strict_separation_count": 805
+              }
+            },
+            "minimum_signed_margin": 6.0452775955200195,
+            "minimum_signed_margin_index": 278,
+            "post_update": 8000,
+            "query_count": 1637,
+            "score_artifact": "train-scores-post8000.json",
+            "score_artifact_sha256": "c60858bb9800c7825c3d1406b7afdac5a1542315a7b16950c73c747f6a05c9b0"
+          }
+        },
+        "full_score_rows_recomputed": 3274,
+        "prefix": {
+          "boundary_loss_equal": true,
+          "compared_pre_update_losses": 8000,
+          "current_pre_update_8001_loss": 1.9348922251083422e-06,
+          "descriptive_only": true,
+          "first_mismatch": null,
+          "historical_final_post_update_loss": 1.9348922251083422e-06,
+          "initial_loss_equal": true,
+          "intermediate_weight_equality_established": false,
+          "mismatch_count": 0
+        },
+        "used_for_quality_gate": false
+      },
+      "inference": "dense-positive-bilinear-residual-subject-excluded-ascending-fp32-b8-last6-v1",
+      "initial_pre_update_loss": 0.004869009833782911,
+      "invariants": {
+        "completed_32000_updates": true,
+        "initial_train_loss_exact": true,
+        "optimizer_reload_exact": true,
+        "original_93_tensors_unchanged": true,
+        "parent_replay_exact": true,
+        "reload_exact": true,
+        "residual_changed": true,
+        "train_only_supervision": true,
+        "zero_A_replay_exact": true
+      },
+      "numerical_settings": {
+        "autocast_cpu_enabled": false,
+        "autocast_cuda_enabled": false,
+        "cuda_matmul_allow_tf32": false,
+        "cudnn_allow_tf32": true,
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "deterministic_algorithms": false,
+        "float32_matmul_precision": "highest"
+      },
+      "objective": "plm-bilinear-residual-balanced-bce-v1",
+      "parent": {
+        "exact_count": 111,
+        "f1": 0.9879636956311806,
+        "false_negative_count": 97,
+        "false_positive_count": 646,
+        "precision": 0.9795666119292786,
+        "query_count": 222,
+        "recall": 0.9971221098477906,
+        "serialization_compatible": 222,
+        "set_size": 130.59459459459458,
+        "strict_separation_count": 154
+      },
+      "peak_memory": {
+        "allocated_bytes": 111797248,
+        "reserved_bytes": 161480704
+      },
+      "recipe_sha256": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+      "script_sha256": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+      "seed": 1731,
+      "shared_readiness": {
+        "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+        "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+      },
+      "source_training_sha256": "6e05ba4116a4511bfb22d333eb9254bea6a58d7d0b4d73950743877ff4f76308",
+      "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18",
+      "training_diagnostics": {
+        "32000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 9.165546417236328,
+          "minimum_signed_margin_index": 1498,
+          "post_update": 32000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-01.json",
+              "row_count": 100,
+              "sha256": "ea5e00cb9a471a219f897b30472dd866178bed6470840303e69e05de972706f3"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-02.json",
+              "row_count": 100,
+              "sha256": "f1ae2815b20d3b60b474cba6a4b15e49185b60eeb2397225f1bd4b5932aa56a5"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-03.json",
+              "row_count": 100,
+              "sha256": "2ad8b25b7f6e158dc665f404edbcd79c042d08b858069a2146602b70a87b214a"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-04.json",
+              "row_count": 100,
+              "sha256": "4abd0e2f2e1bbb07b217d167091ce92d4d39c1ea119487f2f004e297fd1dae35"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-05.json",
+              "row_count": 100,
+              "sha256": "482e44e82d309d8e36bdd914cf0598b0a89be7f02ef8c324914b4f756e93281a"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-06.json",
+              "row_count": 100,
+              "sha256": "bc27508d32609576fa04215785de9a550f26cb6acfe7a2fa44389d649f978d95"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-07.json",
+              "row_count": 100,
+              "sha256": "a3e3b792d2c35a96298469b86929a0b66e55ce2493cd2455a7b236ec2aab8113"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-08.json",
+              "row_count": 100,
+              "sha256": "de06b010fae2aa9f66843d46240c5a5bf52e7543b72668c70077b0231fd5a816"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-09.json",
+              "row_count": 100,
+              "sha256": "b9c0d3821bdeb6304e0de4121a5cdb3d0561b6846435e8d332509724ce6b38da"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-10.json",
+              "row_count": 100,
+              "sha256": "90223195b9d2fe32006832aa1140d18134d81c4f12881c0537f06a607d803aed"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-11.json",
+              "row_count": 100,
+              "sha256": "3340cb3f3edd49ff074fb4cb5981f63b149f5c051496277fc2ef7a34ae41243d"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-12.json",
+              "row_count": 100,
+              "sha256": "030686e17328aa57599bdc6f64b673ba2c1b6bbecf0467932fedca9f87cfeef9"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-13.json",
+              "row_count": 100,
+              "sha256": "a426c5183f9e2625c753fef19345254299efa4ec945fcf4cabf1104c57ddfd86"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-14.json",
+              "row_count": 100,
+              "sha256": "2aeebb7ee2aa91cd82ae55bc3aedc26278e696fd3552a48757736071ed24f826"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-15.json",
+              "row_count": 100,
+              "sha256": "dfcd7af4d9d7bbd3cee30a15d80fd9b51d7ce9960399dfc9e071399a4f1b34af"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-16.json",
+              "row_count": 100,
+              "sha256": "741be0e805e6e7cf2d5131cd81c7302961318a4bed7325575d68ee6e6d4d1353"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post32000-part-17.json",
+              "row_count": 37,
+              "sha256": "4526970c66b3d2d209b2a02a695c4eba7e7c99d6bab73aaecbae611801feea4b"
+            }
+          ],
+          "score_artifact": "train-scores-post32000.json",
+          "score_artifact_sha256": "e25f4a41b66085b5144bf23d1d8c4bafcedff9a69cc9d191151dd3ccd89d8290"
+        },
+        "8000": {
+          "aggregate": {
+            "exact_count": 1637,
+            "f1": 1.0,
+            "false_negative_count": 0,
+            "false_positive_count": 0,
+            "precision": 1.0,
+            "query_count": 1637,
+            "recall": 1.0,
+            "serialization_compatible": 1637,
+            "set_size": 125.87904703726329,
+            "strict_separation_count": 1637
+          },
+          "groups": {
+            "COLOR": {
+              "exact_count": 832,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 832,
+              "recall": 1.0,
+              "serialization_compatible": 832,
+              "set_size": 114.03846153846153,
+              "strict_separation_count": 832
+            },
+            "TYPE": {
+              "exact_count": 805,
+              "f1": 1.0,
+              "false_negative_count": 0,
+              "false_positive_count": 0,
+              "precision": 1.0,
+              "query_count": 805,
+              "recall": 1.0,
+              "serialization_compatible": 805,
+              "set_size": 138.1167701863354,
+              "strict_separation_count": 805
+            }
+          },
+          "minimum_signed_margin": 6.0452775955200195,
+          "minimum_signed_margin_index": 278,
+          "post_update": 8000,
+          "query_count": 1637,
+          "raw_score_publication_status": "Hash-bound local only; not copied or reread by exporter.",
+          "row_artifacts": [
+            {
+              "index_end": 99,
+              "index_start": 0,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-01.json",
+              "row_count": 100,
+              "sha256": "ec6cc3bc8b4667c39770b0d1cf98d0303a2cd443a3782fbb16180ec27423129c"
+            },
+            {
+              "index_end": 199,
+              "index_start": 100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-02.json",
+              "row_count": 100,
+              "sha256": "8db57254b9e70b15976c7ef0d642330d503d0129fc3d1e963b45269748949f53"
+            },
+            {
+              "index_end": 299,
+              "index_start": 200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-03.json",
+              "row_count": 100,
+              "sha256": "42a62744f635c2ce5ea6dacf530f4a271f690b34c156713fc2b9ac02c2f8ee32"
+            },
+            {
+              "index_end": 399,
+              "index_start": 300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-04.json",
+              "row_count": 100,
+              "sha256": "624aa276b658593f59d316408c0aa62904d4ea4481cf076c24d4b5b8cf4257d1"
+            },
+            {
+              "index_end": 499,
+              "index_start": 400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-05.json",
+              "row_count": 100,
+              "sha256": "69af2337d7f6290d21c58712bc4cffa9b0d3f3942fa575958fa7c5f34698b211"
+            },
+            {
+              "index_end": 599,
+              "index_start": 500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-06.json",
+              "row_count": 100,
+              "sha256": "8f755e51cf016f9bc4006c852802336165a071349f8d2155ad9e4bb4b76bc9c8"
+            },
+            {
+              "index_end": 699,
+              "index_start": 600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-07.json",
+              "row_count": 100,
+              "sha256": "8e0997dc7ecfdac4273a6cda7f13e4a11660d09e8cd1048c7cc6d161a40ea0ef"
+            },
+            {
+              "index_end": 799,
+              "index_start": 700,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-08.json",
+              "row_count": 100,
+              "sha256": "c322ab8b3c18e9102121f1fccb778c94aae55ca9fa65dc6e53cf7b8f035ccff9"
+            },
+            {
+              "index_end": 899,
+              "index_start": 800,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-09.json",
+              "row_count": 100,
+              "sha256": "430ca5dd936b3e408cbc2a4212798d278ebd57c344181fd31438edbc6d33e66a"
+            },
+            {
+              "index_end": 999,
+              "index_start": 900,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-10.json",
+              "row_count": 100,
+              "sha256": "d6992531c12dbda7ee1594613b4add0aaf090f489b897a3bf207d6a9f2006d1d"
+            },
+            {
+              "index_end": 1099,
+              "index_start": 1000,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-11.json",
+              "row_count": 100,
+              "sha256": "c4bc338677d0a27c420ff0033296fdc77114195a3f0adfc3e3035ed83f31e8ca"
+            },
+            {
+              "index_end": 1199,
+              "index_start": 1100,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-12.json",
+              "row_count": 100,
+              "sha256": "67148b33a0ea8aad94044d7fc37042ae7d030e4f2f3756b7676e52dc08783471"
+            },
+            {
+              "index_end": 1299,
+              "index_start": 1200,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-13.json",
+              "row_count": 100,
+              "sha256": "18a2801f11d4d9c636470b3a8b68c41d435948ef8fd1666fd6a6d9ce5a6b5773"
+            },
+            {
+              "index_end": 1399,
+              "index_start": 1300,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-14.json",
+              "row_count": 100,
+              "sha256": "1e09a1f4e15a736bfb82253f212bbadbe1e610628d6d528548176a72f0ad4594"
+            },
+            {
+              "index_end": 1499,
+              "index_start": 1400,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-15.json",
+              "row_count": 100,
+              "sha256": "4885a571b056714d7d50d1617914117e26ca81b9a28c5b2b18f15bc4610b50c5"
+            },
+            {
+              "index_end": 1599,
+              "index_start": 1500,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-16.json",
+              "row_count": 100,
+              "sha256": "a4459086eefc16fa69f1835be12033f2b8803ca0580c3cbb5b961587e79fa7bb"
+            },
+            {
+              "index_end": 1636,
+              "index_start": 1600,
+              "path": "2026-09-26-bilinear-budget32000-diagnostics-1731-post8000-part-17.json",
+              "row_count": 37,
+              "sha256": "4122cd40ec71110b93f6bf30a4c20531fc9e98e5feee17da1fcd53f174db1f97"
+            }
+          ],
+          "score_artifact": "train-scores-post8000.json",
+          "score_artifact_sha256": "c60858bb9800c7825c3d1406b7afdac5a1542315a7b16950c73c747f6a05c9b0"
+        }
+      },
+      "training_history_artifacts": [
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-01.json",
+          "sha256": "ac01116b078f676c2c12e27eb292296f2daf53e465cae469d1c3706e5b63adac",
+          "update_end": 2000,
+          "update_start": 1
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-02.json",
+          "sha256": "6abe1c335188cbfa2c540b1e7a0958c6f126c994daf3d769a4f6cb53e0a892d3",
+          "update_end": 4000,
+          "update_start": 2001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-03.json",
+          "sha256": "4c5ecae672d7277df41166fe21d4ebae5f5d7cd3fac540f3626c8b44800bb24d",
+          "update_end": 6000,
+          "update_start": 4001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-04.json",
+          "sha256": "b6d11649a17231bd79d771dec2bd681751acb3ee6647a38690c2a20c034f2bc0",
+          "update_end": 8000,
+          "update_start": 6001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-05.json",
+          "sha256": "42ff665e2a2a857351464ec569a76c7f39274ffccd4e8f0c9c306be91a998438",
+          "update_end": 10000,
+          "update_start": 8001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-06.json",
+          "sha256": "9a15785fdd74267237ac3dbf146000cc5fc648b73709d738b206df46ad81e0a6",
+          "update_end": 12000,
+          "update_start": 10001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-07.json",
+          "sha256": "34172c26c984f3731acc90aa1cb23dbdd89c5c6a55026fe2837770223f9ec4fc",
+          "update_end": 14000,
+          "update_start": 12001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-08.json",
+          "sha256": "d4b2d7338b6a9cae42dde852b1f2dacc047a5bbb5f3fd7381102eaa302304f41",
+          "update_end": 16000,
+          "update_start": 14001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-09.json",
+          "sha256": "7ade3922895c809e37b593cabc18148bef1fcff1448c0bb79a1c2450be3f2397",
+          "update_end": 18000,
+          "update_start": 16001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-10.json",
+          "sha256": "30088df1599d5efcbc679357ab1eb8b6154eae2a7d1bfb27d93226e6be391b72",
+          "update_end": 20000,
+          "update_start": 18001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-11.json",
+          "sha256": "fcbe9f660e946e6fd638a25a2de5c617d12c7c666d0932cc2c6d667295b700a3",
+          "update_end": 22000,
+          "update_start": 20001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-12.json",
+          "sha256": "e917494bc3793a6559dac36d01c8b66105fc19e4c40bd951b860e9829967983f",
+          "update_end": 24000,
+          "update_start": 22001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-13.json",
+          "sha256": "296bb03013ca354dc51c29a1aeef35b54b3411e0ea99fb2551367a25fcc8675e",
+          "update_end": 26000,
+          "update_start": 24001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-14.json",
+          "sha256": "29b3943c39fe82848f4b186af8bf6418a4e6719a017560a318042c96b34a1553",
+          "update_end": 28000,
+          "update_start": 26001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-15.json",
+          "sha256": "b8d437a0d459a0ecfa5429684b4367f7e98e0122295f32bd85a4b9d9068400ce",
+          "update_end": 30000,
+          "update_start": 28001
+        },
+        {
+          "path": "2026-09-26-bilinear-budget32000-training-1731-part-16.json",
+          "sha256": "b8d0ccdc34bfe7ed7c3cb069ed36f4c107eea8160c7d916f20ca400a3c86c740",
+          "update_end": 32000,
+          "update_start": 30001
+        }
+      ],
+      "training_prefix_diagnostic": {
+        "all_pre_update_equal": true,
+        "boundary_loss_equal": true,
+        "current_pre_update_8001_loss": 1.9348922251083422e-06,
+        "descriptive_only": true,
+        "first_mismatch_update": null,
+        "historical_final_post_update_loss": 1.9348922251083422e-06,
+        "mismatch_count": 0,
+        "pre_update_compared_count": 8000,
+        "used_for_selection_or_updates": false
+      },
+      "wall_seconds": 103.36910360000911
+    }
+  ],
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "preserved_failure_provenance": {
+    "amendment_path": "docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md",
+    "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "failure": "Equivalent timezone instants rejected by exact predecessor timestamp text comparison.",
+    "original_audit_path": "runs/learning/bilinear-budget32000-v1/seed-1730/independent-audit.json",
+    "original_audit_sha256": "85b193ad473d77ac10d84aa2e9138ba4d56efd7e9694ef52eeab4ed6e069c188",
+    "original_terminal_sha256": "2195369180305bb04f7967b5877e41006f965fd8499d411229193415662fc5ce",
+    "repair": "Versioned audit compares exact Fraction instants; original evidence unchanged.",
+    "seed": 1730,
+    "training_rerun": false
+  },
+  "protected_test_used": false,
+  "schema_version": 1,
+  "shared_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+    "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+  },
+  "standard_serving_supported": false,
+  "status": "completed audited three-seed screen"
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620" role="img" aria-labelledby="title desc">
+<title id="title">SQLite graph HTTP throughput</title>
+<desc id="desc">Exact 16-ID capped responses; all 13 levels returned zero failures. Client concurrency uses a base-two logarithmic x axis.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="88" y="34" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="650" fill="#152337">SQLite graph HTTP throughput</text>
+<text x="88" y="59" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#526176">Exact 16-ID capped responses; all 13 levels returned zero failures.</text>
+<line x1="88" y1="450.00" x2="942" y2="450.00" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="454.00" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">0</text>
+<line x1="88" y1="384.73" x2="942" y2="384.73" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="388.73" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">200</text>
+<line x1="88" y1="319.45" x2="942" y2="319.45" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="323.45" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">400</text>
+<line x1="88" y1="254.18" x2="942" y2="254.18" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="258.18" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">600</text>
+<line x1="88" y1="188.91" x2="942" y2="188.91" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="192.91" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">800</text>
+<line x1="88" y1="123.64" x2="942" y2="123.64" stroke="#dce3ec" stroke-width="1"/>
+<text x="76" y="127.64" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">1000</text>
+<line x1="88.00" y1="91" x2="88.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="88.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">1</text>
+<line x1="332.00" y1="91" x2="332.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="332.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">4</text>
+<line x1="454.00" y1="91" x2="454.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="454.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">8</text>
+<line x1="576.00" y1="91" x2="576.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="576.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">16</text>
+<line x1="698.00" y1="91" x2="698.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="698.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">32</text>
+<line x1="820.00" y1="91" x2="820.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="820.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">64</text>
+<line x1="942.00" y1="91" x2="942.00" y2="450" stroke="#eef1f5" stroke-width="1"/>
+<text x="942.00" y="472" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#526176">128</text>
+<line x1="88" y1="450" x2="942" y2="450" stroke="#738198" stroke-width="1.2"/>
+<line x1="88" y1="91" x2="88" y2="450" stroke="#738198" stroke-width="1.2"/>
+<text x="515.0" y="578" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#334155">Client concurrency (log₂ scale)</text>
+<text x="23" y="270.5" transform="rotate(-90 23 270.5)" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#334155">Completed 16-ID servings per second</text>
+<polyline points="88.00,138.58 332.00,265.38 454.00,299.58 576.00,300.13 698.00,303.01 769.37,303.53 796.50,303.72 820.00,305.49 840.73,305.52 859.28,304.41 891.37,306.07 918.50,307.35 942.00,307.90" fill="none" stroke="#2457a7" stroke-width="2.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="138.58" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="332.00" cy="265.38" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="454.00" cy="299.58" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="576.00" cy="300.13" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="698.00" cy="303.01" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="769.37" cy="303.53" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="796.50" cy="303.72" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="820.00" cy="305.49" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="840.73" cy="305.52" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="859.28" cy="304.41" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="891.37" cy="306.07" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="918.50" cy="307.35" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<circle cx="942.00" cy="307.90" r="4" fill="#ffffff" stroke="#2457a7" stroke-width="2.2"/>
+<line x1="395.0" y1="536" x2="422.0" y2="536" stroke="#2457a7" stroke-width="2.7"/>
+<circle cx="408.5" cy="536" r="3.4" fill="#ffffff" stroke="#2457a7" stroke-width="2"/>
+<text x="431.0" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#334155">Completed servings/s</text>
+<text x="50%" y="606" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#78869a">Power whiskers show observed sample ranges. Offset-adjusted watts = measured RAPL + 120 W.</text>
+</svg>

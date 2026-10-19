@@ -1,0 +1,34 @@
+{
+  "campaign_version": "bilinear-budget32000-v1",
+  "command": "uv run --no-sync pytest tests/unit/test_bilinear_budget32000.py tests/unit/test_bilinear_residual.py -o addopts= -q --tb=short",
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "passed": true,
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "schema_version": 1,
+  "scope": "Synthetic CPU tests only. Full lifecycle fit is explicitly simulated after one real AdamW step; separate observer equivalence uses three actual CPU updates. No 32000-update experiment, real input preflight, checkpoint payload, protected corpus, graph or GPU operation.",
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-runner-tests-v1/stdout.txt",
+    "sha256": "0b0c14daf7533669715587d373a86d5844afb38f45095f1fdea6724b9ca62fe0"
+  },
+  "terminal_chunk_id": "afddc9",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-plan.md": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "docs/experiments/2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "runs/learning/wide-first-choice-v1/summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "scripts/refit_bilinear_budget32000.py": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+    "scripts/refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "scripts/refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "scripts/refit_symmetric_affine_v3.py": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+    "tests/fixtures/projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "tests/unit/test_bilinear_budget32000.py": "44b12f82802902dde0af9ded46b5be821320e573b6b7c30d50dc0514dd2728c0",
+    "tests/unit/test_bilinear_residual.py": "e0e0e4159003469a90ae76c499a76353fc8019c65656823d4e712ea2e67b1a34"
+  },
+  "tested_recipe_sha256": "25d4f64d2860cf4e7e372467835c1f11fac205f509ac1064d4d9597e60fba216",
+  "tested_script_sha256": "ee1543bcd39fb1d6f5bfd93bfbbcd1989198acb350cf057d2e4e6be8314e21c1",
+  "tests_passed": 225,
+  "tests_skipped": 0
+}

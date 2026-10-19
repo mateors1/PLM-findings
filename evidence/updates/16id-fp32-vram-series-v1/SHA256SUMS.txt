@@ -1,0 +1,17 @@
+25191a747a085d6f1567031f3944907fcda27604be297d45700eddc5198a3183  originals/docs/experiments/2026-09-26-16id-fp32-board-power.svg
+ba49079f8f965f09e4a40a024e08d2c20c8f90489dc8932a047f73dfed3b4837  originals/docs/experiments/2026-09-26-16id-fp32-memory-power.svg
+51f125aa2e7cfa0255f6ab88a33ae1153d34ae660a85f6c26264cf4aa7cc519e  originals/docs/experiments/2026-09-26-16id-fp32-servings-per-watt.svg
+d73dfe15ac3b9d283a3a9c213e2c2c1f05221405824ef121aafdc96d30b87267  originals/docs/experiments/2026-09-26-16id-fp32-servings-throughput.svg
+58dd5651714eb7adb9942eed18f2740766562c42d0d774a7fdd921f76307a01a  originals/docs/experiments/2026-09-26-16id-fp32-tokens-per-watt.svg
+fd854107b63146e15baf578cd3dff196dd8fa3b526851496085d1397823361dd  originals/docs/experiments/2026-09-26-16id-fp32-tokens-throughput.svg
+01ccda6b622f773424a76c048d92c285564dea8d9eb21b1d58a27b96800cef3e  originals/docs/experiments/2026-09-26-16id-fp32-vram-audit.json
+37347972c8641ed4d118b6f7a119b93cec5299c72b6f7eabdc441f99fca9e55d  originals/docs/experiments/2026-09-26-16id-fp32-vram-decision.json
+d933c470ac1112b25e2f2ea4d8ccfda8fb619362e2107dca1a03ea05feebddc1  originals/docs/experiments/2026-09-26-16id-fp32-vram-stopped-report.md
+c6c11b8fa5b52c0ab18bf7f46b71bf12e87b3163417dc2392e64acee2e6b2878  originals/docs/experiments/2026-09-26-16id-vram-saturation-amendment.md
+b89f913a3466bc7ddc711e2930c8369acba3eebed9ef3f307922193937cb1d70  originals/runs/learning/16id-serving-saturation-20260926/audit_fp32_vram_series.py
+10d76ece1d2a980fe6bddc3dc6628203fea5248708568873429f0ffe7ba263c7  originals/runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.csv
+2989ea02f4341e00beea06ebfbbc961fcfd29b1791571ce7233158fc5f5ac2ec  originals/runs/learning/16id-serving-saturation-20260926/fp32-16id-vram-series.json
+3d5a6c3e0d4f1a29f94b1f1a92f0d3d77eee02d70d94252135fa94f8adb50288  originals/runs/learning/16id-serving-saturation-20260926/fp32-user-stop-amendment.json
+f41b26480e082c57224604885bed12553350df9a01f70290c1c89fb9ecf864f6  originals/runs/learning/16id-serving-saturation-20260926/plot_fp32_vram_series.py
+bee7d7eed50032a13ae809940220d89fa858ef94844ea03f1dd48c94e49d2033  provenance-map.json
+7a64b50631c6c5c66b451376ee52df79e47ee4f2524378be700b16dffab5facc  README.md

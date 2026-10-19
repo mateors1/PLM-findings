@@ -1,0 +1,12 @@
+{
+  "audit_sha256": "78ab0f8fbbadadf59e20a6b11dac1f537a65e76f193901c5f36ad29c77674025",
+  "auditor_sha256": "a0ff1149e170dc5c2be1532fc6fd2460b9ba35330a3baa5f0fadbcf1b3d809fd",
+  "execution_receipt_sha256": "8a76387a2d69f110ad498b379d61ed18ac147f0fec37d10c226c3e7b787b341d",
+  "exit_code": 0,
+  "observed_utc": "2026-09-26T19:58:11.530328+00:00",
+  "stdout_sha256": "32f955d54a35c94ed7cd87d35a16e318f2d13f1dd581f6aba15d4ab48a2a335d",
+  "summary_sha256": "9d5ebfce23e58e5cef6fa9c9747db687ab921a9923c65ad6c81db23ae60c21d8",
+  "terminal_chunk_id": "b29a47",
+  "terminal_completion_observed_by_primary": true,
+  "test_receipt_sha256": "34081a4c2eb244d8a04e53436e8bfb702e69c70d373b16f8394f5cecf008290f"
+}

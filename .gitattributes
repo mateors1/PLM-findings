@@ -2,6 +2,48 @@
 evidence/** -text whitespace=cr-at-eol,-blank-at-eof
 
 # Keep authored research text portable.
-README.md text eol=lf
+/README.md text eol=lf
 papers/*.md text eol=lf
 .github/*.yml text eol=lf
+
+# Exact bytes for the completed research snapshot (2026-10-18).
+/PAPER.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/README.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0001-2026-09-25.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0002-2026-09-26.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0003-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0004-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0005-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0006-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0007-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0008-2026-10-02.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0009-2026-10-18.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/README.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/14-wider-first-choice-search.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/15-eight-source-set-operations.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/16-membership-scores-for-omitted-products.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/17-coverage-seeking-branch.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/18-frozen-feature-projection-refit.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/19-worst-boundary-projection-refit.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/20-frozen-diagonal-feasibility.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/2026-10-18-bilinear-pair-coverage.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/2026-10-18-cached-http-w1.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/21-bilinear-residual-refit.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/22-bilinear-training-budget.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/23-bilinear-parent-seed-replication.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/26-bilinear-budget8000.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/27-bilinear-budget8000-replication.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/28-bilinear-budget-error-geometry.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/29-affine-runtime-admission.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/30-affine-lifecycle-failure.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/31-symmetric-affine-offsets.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/bilinear-thirty-two-thousand-update-error-geometry.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/bilinear-thirty-two-thousand-update-screen.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/fp32-sixteen-id-batch-curve.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+/.gitattributes text eol=lf
+/evidence/**/*.md whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Frozen diagnostic output and embedded Markdown retain authenticated spaces.
+/evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/plot_fp32_vram_series.py whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/evidence/updates/2026-09-25-bilinear-seed-replication/verification/runner/pre-freeze-aggregate-regression.txt whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

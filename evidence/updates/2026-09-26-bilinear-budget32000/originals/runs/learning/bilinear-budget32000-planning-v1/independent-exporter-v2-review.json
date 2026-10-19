@@ -1,0 +1,65 @@
+{
+  "actual_checkpoint_bytes_read": false,
+  "actual_export_executed": false,
+  "actual_payloads_deserialized": false,
+  "checks": {
+    "continuation": "15 exact snapshots plus completion record bound by audit and execution terminal",
+    "diagnostic_publication": "both endpoints, all1637 rows each, bounded intact row chunks with exact concatenation and audited summary binding",
+    "failed_1730_audit": "original failed audit and observed nonzero terminal preserved with fixed identities",
+    "helper_authentication": "fixed source digest checked before executing the same authenticated bytes; helper and exporter included in final input rehash",
+    "immutable_outputs": "all data validated before writes; exclusive creation; existing outputs refused",
+    "input_scope": "fixed named artifacts and authenticated readiness-derived source snapshots; no raw matrices, graph, protected data or old weights read",
+    "model_inventory": "38 inherited entries unchanged plus3 freshly byte-hashed final checkpoints; payload deserialization absent; durable backup not claimed",
+    "original_and_repaired_seed_audit_routes": "verified against hash-bound summaries, observed execution/audit receipts and stdout",
+    "owner_decision": "separate evidence/quality acceptance bound to aggregate, audit and all three children",
+    "trace_publication": "48 chunks of 2000 rows; every encoded output <=512KiB; exact concatenation verified"
+  },
+  "created_at_utc": "2026-09-26T19:24:19.692952+00:00",
+  "gpu_used": false,
+  "independent_cli_checks": {
+    "checks": [
+      "existing output rejected with all publication bytes unchanged",
+      "build failure rejected with all publication bytes unchanged"
+    ],
+    "exit_code": 0,
+    "fixture_scope": "Temporary synthetic evidence only; actual main invoked.",
+    "passed": 2,
+    "terminal_chunk": "9e022a",
+    "terminal_completion_observed": true
+  },
+  "limitations": [
+    "Source/synthetic review does not establish actual export success.",
+    "Multi-file output creation is exclusive but not atomic. Root must verify successful terminal exit and every output hash before a publication handoff; preserve partial failures.",
+    "Fresh new checkpoint hashes are performed only by a later authorized export, not by this review."
+  ],
+  "resolved_finding": {
+    "description": "Inventory helper imported without authentication or final unchanged binding.",
+    "original_exporter_sha256": "cdb47029edb037d66ea507eef788b293d37d8ee0b409429356fc27c1f13690d7",
+    "resolution": "Final reviewed candidate authenticates helper before execution and rehashes it after preparation; both rejection paths covered."
+  },
+  "reviewed_dependencies": {
+    "runs/learning/publication-handoffs/export-bilinear-budget32000-v2.py": "8e01e308b6444c03b75cf5c11f3dcd891e8a1b56e35ab8ab96e043700b2a58bb",
+    "runs/learning/publication-handoffs/test_export_bilinear_budget32000_v2.py": "152a950491b03cb933d072262beb0d53e18d3451233c8f11afaa32cdb5e58741",
+    "scripts/inventory_model_versions.py": "8c8955d3b0aa785f5282cc3ba978fdafc75f1e70257786d8298efbb89de7c2d7"
+  },
+  "reviewer": "affine_v2_review",
+  "schema_version": 1,
+  "status": "clear",
+  "synthetic_tests": {
+    "command": [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-q",
+      "runs/learning/publication-handoffs/test_export_bilinear_budget32000_v2.py"
+    ],
+    "exit_code": 0,
+    "passed": 9,
+    "skipped": 0,
+    "terminal_chunk": "3e877e",
+    "terminal_completion_observed": true
+  }
+}

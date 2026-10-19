@@ -1,0 +1,27 @@
+{
+  "audit_execution_receipt_sha256": "acd21441d67f20c9483b582ffa60ae42eaaecfc03742cc0129760250fa8642e8",
+  "audit_sha256": "2c8e3aafdfc080aed3360fc522cd3fc2fafc72370b6285748d3d0728015906b6",
+  "campaign": "symmetric-affine8000-v3",
+  "checkpoint_inventory_count_after_registration": 38,
+  "checkpoint_sha256": "17d59e7aeae81a88914a523c76fd27e8fd33909a5694d28d3913a8240bc82220",
+  "decision_version": 1,
+  "evidence_accepted": true,
+  "execution_complete": true,
+  "execution_receipt_sha256": "1fd0cf39acdc4537811c28d68bd860d57442fbb3fac6ff21e7ffa15af27593bd",
+  "fixed_quality_gate_passed": false,
+  "independent_audit_passed": true,
+  "model_promoted": false,
+  "new_checkpoint_created": true,
+  "protected_test_used": false,
+  "reason": "Completed audited8000-update affine fit tied the historical8000 bilinear control on exactness and F1; failed predeclared strict exactness improvement. Retain negative evidence without model promotion.",
+  "result": {
+    "exact_count": 216,
+    "macro_f1": 0.9998843626799785,
+    "paired_exact_gains": 0,
+    "paired_exact_losses": 0,
+    "query_count": 222
+  },
+  "scope": "One adaptively chosen seed1729 validation screen; no protected-test, serving or energy claim.",
+  "standard_serving_supported": false,
+  "summary_sha256": "9bbe66e996cbd983c87566fc765c47459d9bcde9022d733fda06b40f3883fc99"
+}

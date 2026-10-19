@@ -1,0 +1,52 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_source_intersections.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_source_intersections.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_source_intersections.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_source_intersections.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_source_intersections.py",
+      "-o",
+      "addopts=",
+      "-q"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_source_intersections.py",
+      "--preflight-only"
+    ]
+  ],
+  "gpu_used": false,
+  "new_policy_measured": false,
+  "passed": true,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-runner-tests-v1\\stdout.txt",
+    "sha256": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330"
+  },
+  "test_count": 38,
+  "tested_script_sha256": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+  "tested_test_sha256": "c18a588c803a7fba7901e3ae3228180e0551ae022446be5ec6d6b8936c855654"
+}

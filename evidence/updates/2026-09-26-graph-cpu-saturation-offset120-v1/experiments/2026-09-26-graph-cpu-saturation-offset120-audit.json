@@ -1,0 +1,256 @@
+{
+  "audit_id": "graph-cpu-saturation-offset120-audit-20260926",
+  "experiment_id": "graph-cpu-saturation-offset120-20260926",
+  "status": "complete",
+  "audit_scope": "secondary source-hash, raw-sample, offset-arithmetic, rate, quality-flag and prior-run comparison checks",
+  "audit_method": "separate verifier re-read frozen raw inputs, recomputed per-level medians/ranges/rates/efficiencies and cross-bound the run to its serving receipt and frozen graph reference",
+  "checks_passed": 39,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "run_completed",
+      "passed": true,
+      "detail": "complete"
+    },
+    {
+      "name": "no_power_target",
+      "passed": true,
+      "detail": "None"
+    },
+    {
+      "name": "requested_offset",
+      "passed": true,
+      "detail": "120.0 W"
+    },
+    {
+      "name": "thirteen_levels",
+      "passed": true,
+      "detail": "observed=13"
+    },
+    {
+      "name": "summary_references_raw",
+      "passed": true,
+      "detail": "SHA256 matches raw JSON"
+    },
+    {
+      "name": "summary_references_runner",
+      "passed": true,
+      "detail": "runner source SHA256 matches"
+    },
+    {
+      "name": "summary_references_aggregator",
+      "passed": true,
+      "detail": "aggregator source SHA256 matches"
+    },
+    {
+      "name": "plan_identity",
+      "passed": true,
+      "detail": "frozen plan SHA256 matches run receipt"
+    },
+    {
+      "name": "serving_receipt_identity",
+      "passed": true,
+      "detail": "graph-serving receipt SHA256 matches"
+    },
+    {
+      "name": "graph_reference_identity",
+      "passed": true,
+      "detail": "oracle reference SHA256 matches"
+    },
+    {
+      "name": "snapshot_identity",
+      "passed": true,
+      "detail": "run uses the receipt-bound SQLite snapshot"
+    },
+    {
+      "name": "graph_identity",
+      "passed": true,
+      "detail": "run uses the receipt-bound graph hash"
+    },
+    {
+      "name": "prior_run_complete",
+      "passed": true,
+      "detail": "prior clean comparison run completed all levels"
+    },
+    {
+      "name": "level_1_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_1_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_4_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_4_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_8_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_8_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_16_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_16_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_32_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_32_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_48_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_48_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_56_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_56_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_64_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_64_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_72_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_72_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_80_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_80_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_96_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_96_power_samples",
+      "passed": true,
+      "detail": "11 one-second samples"
+    },
+    {
+      "name": "level_112_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_112_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    },
+    {
+      "name": "level_128_quality",
+      "passed": true,
+      "detail": "zero failed responses; runner records all accepted target lists equal the frozen oracle"
+    },
+    {
+      "name": "level_128_power_samples",
+      "passed": true,
+      "detail": "10 one-second samples"
+    }
+  ],
+  "prior_clean_run_comparison": [
+    {
+      "client_concurrency": 1,
+      "prior_servings_per_second": 1015.7,
+      "current_servings_per_second": 954.2,
+      "throughput_change_percent": -6.054937481539824,
+      "prior_package_median_watts": 50.70061361718962,
+      "current_package_median_watts": 76.74820598703232,
+      "package_power_change_watts": 26.047592369842704
+    },
+    {
+      "client_concurrency": 4,
+      "prior_servings_per_second": 580.1,
+      "current_servings_per_second": 565.7,
+      "throughput_change_percent": -2.482330632649543,
+      "prior_package_median_watts": 86.18189311885905,
+      "current_package_median_watts": 102.49583055460785,
+      "package_power_change_watts": 16.313937435748798
+    },
+    {
+      "client_concurrency": 8,
+      "prior_servings_per_second": 484.7,
+      "current_servings_per_second": 460.9,
+      "throughput_change_percent": -4.9102537652156,
+      "prior_package_median_watts": 86.27705653019284,
+      "current_package_median_watts": 108.58363479110452,
+      "package_power_change_watts": 22.306578260911678
+    }
+  ],
+  "not_independently_recorded": [
+    "Individual HTTP bodies are not stored; exact target equality is enforced in the frozen runner and corroborated by zero rejected responses plus its source hash.",
+    "CPU utilization, frequency, temperature and other package workloads were not recorded, so run-to-run power changes are not causally attributed.",
+    "The additive 120 W offset is user-specified arithmetic and has no independent whole-system power-meter validation."
+  ],
+  "source_sha256": {
+    "raw_run": "d36bd8215ccebece39aef5b5f642f3e43d1d107b58363afba8e15f9f82c9999b",
+    "runner": "e9ea9b8fcf3209c6a324e1afebbe8e7bb42ab818f8bbb0d5e6304cb3b8464cc6",
+    "aggregator": "ce1b1ff32b7b77561f7d02ee50677ff718a0b5391b107c2dcf1f6a622609d73e",
+    "plan": "220cfb24449b0773957b4bedddaba080ffa8594780ac7b154fead042720fda45",
+    "serving_receipt": "83f1ff5a9e72a959af2781b9a547b06125d1ab98b2a74393abe26675c0aa0046",
+    "graph_reference": "d0d152bcf673a5b0edb7a77421a9681c41ab1a2bea8a45a3ec8f4265c3872bd6",
+    "graph_snapshot": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+    "portable_summary": "3a25204e2525a1b6d8261dce4909942331621d5c06d87645507eae9b6cdc9327",
+    "report": "b6265a63ab3fc351191bd8e90ab40b445979cdffe39084380b87d9fec2a56691",
+    "figures": {
+      "2026-09-26-graph-cpu-offset120-throughput.svg": "f769681858d17c2799adced8e36438a7eda624feae2fbc0a94eb3644da7fa14c",
+      "2026-09-26-graph-cpu-offset120-power.svg": "f9f8845e5593709d12626faad1eee912a0466b1b57bb1ae8b39963f905e78988",
+      "2026-09-26-graph-cpu-offset120-efficiency.svg": "be789c7ffe03f2b677c91b63750e098814c80f31decaf7ac6a24fb476d43483a"
+    }
+  }
+}

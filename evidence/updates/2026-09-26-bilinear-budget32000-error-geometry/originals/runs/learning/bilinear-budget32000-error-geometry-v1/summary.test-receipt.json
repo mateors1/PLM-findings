@@ -1,0 +1,26 @@
+{
+  "campaign_version": "bilinear-budget32000-error-geometry-v1",
+  "command": "uv run --no-sync pytest tests/unit/test_bilinear_budget32000_error_geometry.py tests/unit/test_bilinear_error_geometry.py -o addopts= -q --tb=short",
+  "diagnostic_executed": false,
+  "exit_code": 0,
+  "gpu_used": false,
+  "passed": true,
+  "schema_version": 1,
+  "scope": "Self-contained synthetic score/evidence fixtures plus frozen helper arithmetic tests; no real saved-score reduction.",
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/stdout.txt",
+    "sha256": "3da18e989b1b7c74c739f649ec29e290b89d0b5ed36619d72a6b9ee821bfc5b3"
+  },
+  "terminal_chunk_id": "dc1558",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-plan.md": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4",
+    "scripts/diagnose_bilinear_budget32000_errors.py": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+    "scripts/diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "tests/unit/test_bilinear_budget32000_error_geometry.py": "1942b2913468072130a05e44d305d45f7484d0b74cf3b1887d3680eab9ce6161",
+    "tests/unit/test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "tested_script_sha256": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369",
+  "tests_passed": 71,
+  "tests_skipped": 0
+}

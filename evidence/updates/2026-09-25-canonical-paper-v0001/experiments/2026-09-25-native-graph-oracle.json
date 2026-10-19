@@ -1,0 +1,105 @@
+{
+  "arms": {
+    "graph": {
+      "quality": {
+        "exact_set_accuracy": 1.0,
+        "exact_set_count": 222,
+        "macro_f1": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "micro_precision": 1.0,
+        "micro_recall": 1.0,
+        "query_count": 222,
+        "response_success_count": 222
+      },
+      "serving": {
+        "client_latency_seconds": {
+          "p50": 0.0016308000012941193,
+          "p95": 0.002645499997015577,
+          "p99": 0.012486299998272443
+        },
+        "completed_rps": 449.47687573059306,
+        "path": "loopback Uvicorn HTTP POST /v1/predict, serial requests",
+        "response_bytes": {
+          "mean": 5657.90990990991,
+          "p50": 5730.0
+        },
+        "timed_elapsed_seconds": 0.4939075000002049,
+        "timed_requests": 222,
+        "warmup_requests_excluded": 1
+      }
+    },
+    "plm": {
+      "quality": {
+        "exact_set_accuracy": 0.6801801801801802,
+        "exact_set_count": 151,
+        "generated_output_tokens": 26871,
+        "macro_f1": 0.8857111644302244,
+        "macro_precision": 0.9245952218675837,
+        "macro_recall": 0.8708846926812204,
+        "micro_precision": 0.9102360417612346,
+        "micro_recall": 0.8460078050838519,
+        "protocol_valid_rate": 1.0,
+        "query_count": 222,
+        "response_success_count": 222,
+        "termination_rate": 1.0
+      },
+      "serving": {
+        "client_latency_seconds": {
+          "p50": 0.9548598999972455,
+          "p95": 2.49124799999845,
+          "p99": 2.8242365999976755
+        },
+        "completed_rps": 0.9325788475839876,
+        "path": "loopback Uvicorn HTTP POST /v1/predict, serial requests",
+        "response_bytes": {
+          "mean": 7982.891891891892,
+          "p50": 8213.0
+        },
+        "timed_elapsed_seconds": 238.04957680000007,
+        "timed_requests": 222,
+        "warmup_requests_excluded": 1
+      }
+    }
+  },
+  "checkpoint_sha256": "3af8aa4a7bfae722aa27b04a8b2cc9982dedbf718915ed81ea088e31558a98d1",
+  "comparison": {
+    "graph_to_plm_completed_rps_ratio": 481.97198220294547,
+    "plm_to_graph_macro_f1_difference": -0.11428883556977565,
+    "protected_final_test_used": false,
+    "quality_is_validation_only": true
+  },
+  "corpus_identity": {
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "date": "2026-09-25",
+  "environment": {
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "source_archive_sha256": "cf78f727c75403397d3741558c97716ff2a91d45692c4bbb77f91e255cc24d1e",
+    "source_tree_sha256": "c475b2c177cd1767a108d69033382f6909413f630758c655fe521352013dd1b5",
+    "torch": "2.11.0+cu128",
+    "uv_lock_sha256": "6308eafda0eb38288f347c4b279b946bbd71377918a8f4f25ae88b236f9c63ea"
+  },
+  "experiment": "native-plm-versus-sqlite-graph-oracle-v1",
+  "oracle_validation_preflight": {
+    "exact_set_parity": true,
+    "queries": 222,
+    "timed_arm": "read-only SQLite graph target query and hydration"
+  },
+  "plan_path": "docs/experiments/2026-09-25-native-graph-oracle-plan.md",
+  "plan_sha256": "0781d86d8902655d234e5a26a327b15e5e6e78ce6ae35fe07bcbeac07b9617e7",
+  "protocol_sha256": "6a356e92ec6bfdab7da69275577586e88fab974bcd3c69b95ba877d0495ad88e",
+  "raw_report": "runs/learning/native-graph-oracle-20260925/summary.json",
+  "raw_report_sha256": "2885f25a342e6338068b5c6d82671f0c27ade3f827c708e84a11e6f395cec680",
+  "reference_receipt_sha256": "83f1ff5a9e72a959af2781b9a547b06125d1ab98b2a74393abe26675c0aa0046",
+  "runner_sha256": "bab4be50f83376dd9d3413ac83eb10293c57aebb8e282dc74dc783657076d6b4",
+  "snapshot_sha256": "28aa79a1a888b52110fe329684dd958306f6db04081f3077ca9bb750cca1e747",
+  "source_archive_sha256": "cf78f727c75403397d3741558c97716ff2a91d45692c4bbb77f91e255cc24d1e",
+  "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+  "validation_query_count": 222
+}

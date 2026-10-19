@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "campaign": "bilinear-budget32000-v1",
+  "review_kind": "pre-execution-methodological-review",
+  "recorded_utc": "2026-09-26T14:20:18.421291+00:00",
+  "plan_path": "docs/experiments/2026-09-26-bilinear-budget32000-plan.md",
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "reviewer": "/root/affine_v2_review",
+  "plan_cleared": true,
+  "required_plan_corrections": [],
+  "implementation_requirements": [
+    "Fresh fit-only observer; initial/replay loss calls must not shift the counter.",
+    "Frozen fit callback8001 observes post8000; callback32001 observes post32000 under no_grad.",
+    "Synthetic tests must capture known parameter states at analogous boundaries and prove observer loss/gradient/update equivalence.",
+    "All three per-seed strict exact/F1/group gates are conjunctive; pooled gain cannot rescue failure."
+  ],
+  "limitations": [
+    "Static methodological review only, not implementation readiness.",
+    "No real-data preflight, neural run, checkpoint payload audit or production completion is implied."
+  ]
+}

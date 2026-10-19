@@ -1,0 +1,13 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_membership_projection.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_projection_only_refit.py
+All checks passed!
+exit_code=0
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_membership_projection.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_projection_only_refit.py
+2 files already formatted
+exit_code=0
+$ uv run --no-sync pytest -o addopts= -q C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\tests\unit\test_projection_only_refit.py
+..........................                                               [100%]
+26 passed in 6.14s
+exit_code=0
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\scripts\refit_membership_projection.py --preflight-only
+{"preflight_passed": true, "torch_imported": false, "training_executed": false, "input_count": 42, "script_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c", "recipe_sha256": "a395a114f84192cab2e402c62c2d43cfd3cd60173e286c7243f6600b5d420c22"}
+exit_code=0

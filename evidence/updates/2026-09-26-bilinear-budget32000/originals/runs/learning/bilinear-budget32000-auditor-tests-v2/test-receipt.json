@@ -1,0 +1,33 @@
+{
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "base_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+    "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+  },
+  "campaign_version": "bilinear-budget32000-v1",
+  "command": "uv run --no-sync pytest tests/unit/test_bilinear_budget32000_audit_v2.py -o addopts= -q --tb=short",
+  "cuda_visible_devices": "-1",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "passed": true,
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "schema_version": 1,
+  "scope": "Synthetic CPU evidence only. Original scientific/helper function ASTs match the frozen predecessor except six explicit orchestration/admission functions. Genuine repaired-seed CLI exercises saved evidence and state/optimizer contracts; actual historical/source/readiness admission and payload I/O are test doubles. Genuine aggregate CLI exercises explicit original/repaired audit routes, successful observed terminals, exact chronology, pooled666 metrics, gates and15 continuation snapshots. New14-file readiness admission and four direct dependency contracts run against synthetic files; original22 admission is an explicit boundary double there. Includes equivalent-offset regression,100ns mismatch, wrong/missing/extra predecessor fields, failed terminals, stale hashes, immutable output and preserved original failure namespace. No actual reaudit, real checkpoint payload/hash, experiment preflight, protected corpus, graph, neural forward, optimizer update or GPU operation.",
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-auditor-tests-v2/stdout.txt",
+    "sha256": "e764acf6fa2b4142889cc45419c14478e1029341585e25f925274147c67ce257"
+  },
+  "terminal_chunk_id": "6816ed",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "runs/learning/bilinear-budget32000-v1/independent-audit-v2.py": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+    "tests/unit/test_bilinear_budget32000_audit_v2.py": "cc854b3a3ca0c6ea3ffbbe4a1f88f42b4d5f6f29f10b9c115db8db62ac9c1e80"
+  },
+  "tested_script_sha256": "a04f6e137131c05973f15aa0b3f2e5c07169648e8df95f1d98a9313dc3ba418c",
+  "tests_passed": 120,
+  "tests_skipped": 0
+}

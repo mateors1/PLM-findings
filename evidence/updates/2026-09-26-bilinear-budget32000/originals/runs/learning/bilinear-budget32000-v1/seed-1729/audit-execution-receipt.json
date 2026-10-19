@@ -1,0 +1,15 @@
+{
+  "seed": 1729,
+  "exit_code": 0,
+  "terminal_completion_observed_by_primary": true,
+  "terminal_chunk_id": "a65f04",
+  "started_utc": "2026-09-26T09:57:06.5926404-05:00",
+  "completed_utc": "2026-09-26T14:57:34.3739006+00:00",
+  "cuda_visible_devices": "-1",
+  "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1",
+  "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+  "stdout_sha256": "acdd469f411f38422c7fe22b9543d44ba15d174eb3bfc50fb40397f56f50ab1b",
+  "execution_receipt_sha256": "fa5c17ef7acfa724b08f72f7b5b00f12ff0ff18df63c41a27546af2e53095e24",
+  "auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+  "test_receipt_sha256": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67"
+}

@@ -1,0 +1,112 @@
+{
+  "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+  "autocast": false,
+  "batching": "full-training-partition-in-split-order",
+  "cuda_matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "data_split_seed": 1729,
+  "deterministic_algorithms": false,
+  "dimension_token_ids": [
+    32,
+    33
+  ],
+  "entity_base": 1024,
+  "evaluator": "plm-bilinear-budget32000-screen-v1",
+  "experiment": "bilinear-budget32000-v1",
+  "float32_matmul_precision": "highest",
+  "gradient_accumulation": 1,
+  "gradient_clipping": null,
+  "inference": "dense-positive-bilinear-residual-subject-excluded-ascending-fp32-b8-last6-v1",
+  "initialization": "exact-zero",
+  "input_adapter": "plm-authenticated-partition-membership-v1",
+  "input_adapter_source_sha256": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "loss_coefficient": 1.0,
+  "objective": "plm-bilinear-residual-balanced-bce-v1",
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "decay_excludes_norm_and_bias": true,
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "name": "adamw",
+    "weight_decay": 0.0
+  },
+  "parameter_dtype": "float32",
+  "parent_training_steps": 2000,
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "product_count": 1025,
+  "residual_shape": [
+    2,
+    256,
+    256
+  ],
+  "residual_updates": 32000,
+  "scheduler": null,
+  "schema_version": 1,
+  "seed_contracts": {
+    "1729": {
+      "floors": {
+        "exact_count": 216,
+        "f1": 0.9998843626799785,
+        "groups": {
+          "COLOR": 103,
+          "TYPE_dual": 62,
+          "TYPE_single": 51
+        }
+      },
+      "initial_training_loss": 0.003822767175734043,
+      "parent_checkpoint_sha256": "e844dd73c3af4ae794033ed356f358bf0541dd2469002554242993e596dcd4e1"
+    },
+    "1730": {
+      "floors": {
+        "exact_count": 220,
+        "f1": 0.9999717006519728,
+        "groups": {
+          "COLOR": 103,
+          "TYPE_dual": 66,
+          "TYPE_single": 51
+        }
+      },
+      "initial_training_loss": 0.003967047668993473,
+      "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2"
+    },
+    "1731": {
+      "floors": {
+        "exact_count": 214,
+        "f1": 0.9998584743646364,
+        "groups": {
+          "COLOR": 103,
+          "TYPE_dual": 60,
+          "TYPE_single": 51
+        }
+      },
+      "initial_training_loss": 0.004869009833782911,
+      "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d"
+    }
+  },
+  "seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+  "serialization_max_products": 506,
+  "serialization_min_products": 1,
+  "standard_serving_supported": false,
+  "threshold": 0.0,
+  "train_query_count": 1637,
+  "trainable_parameter": "symmetric_bilinear_residual",
+  "training_diagnostic_updates": [
+    8000,
+    32000
+  ],
+  "validation_batch_size": 8,
+  "validation_query_count": 222,
+  "validation_update_points": [
+    0,
+    32000
+  ]
+}

@@ -1,0 +1,28 @@
+$ uv run --no-sync ruff check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-auditor-tests-v1\test_auditor.py
+All checks passed!
+
+exit_code=0
+$ uv run --no-sync ruff format --check C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-auditor-tests-v1\test_auditor.py
+2 files already formatted
+
+exit_code=0
+$ uv run --no-sync pytest -q -o addopts= C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-auditor-tests-v1\test_auditor.py
+...................................................................      [100%]
+67 passed in 0.25s
+
+exit_code=0
+$ uv run --no-sync python C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-seed-replication-v1\independent-audit.py --help
+usage: independent-audit.py [-h] --summary SUMMARY
+                            (--seed {1730,1731} | --aggregate)
+
+Independent saved-evidence audit of two fresh bilinear seed replications. CPU
+payload inspection only. No primary prediction/gate imports, neural forward,
+optimizer execution, or regeneration of the reported training trajectory.
+
+options:
+  -h, --help          show this help message and exit
+  --summary SUMMARY
+  --seed {1730,1731}
+  --aggregate
+
+exit_code=0

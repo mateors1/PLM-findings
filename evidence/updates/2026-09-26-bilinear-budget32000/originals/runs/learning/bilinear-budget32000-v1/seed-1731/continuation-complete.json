@@ -1,0 +1,13 @@
+{
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "complete": true,
+  "continuation_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v2/readiness.json",
+    "sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a"
+  },
+  "execution_revision": "bilinear-budget32000-continuation-v2",
+  "execution_wrapper_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+  "root_observed_terminal_required": true,
+  "seed": 1731,
+  "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+}

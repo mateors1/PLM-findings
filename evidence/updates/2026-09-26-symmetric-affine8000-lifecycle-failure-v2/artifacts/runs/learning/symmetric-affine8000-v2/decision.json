@@ -1,0 +1,21 @@
+{
+  "audit_execution_receipt_sha256": "1384c3f63c6edb184edf0bb0f0df3c108c3f0a185f761657f4066300653fd410",
+  "audit_sha256": "159a5fe0abfc143b49dd30d96635aa9f216f6a64de897a8760a34e8916b85d8a",
+  "campaign": "symmetric-affine8000-v2",
+  "checkpoint_inventory_count": 37,
+  "decision_version": 1,
+  "diagnostic_parent_state_saved": true,
+  "diagnostic_parent_state_sha256": "546e4d5274cb8f581260d690e0ae8e0bc0a898f33fe50a2510ff5a7d95c9e746",
+  "execution_exit_code": 1,
+  "execution_receipt_sha256": "1491c8b5262ed3d7d29f5bf206441eef8d16d3ed2cc87a7167f8d4ea5cc34362",
+  "execution_terminal": true,
+  "experiment_completed": false,
+  "failure_evidence_accepted": true,
+  "model_promoted": false,
+  "new_trained_checkpoint_created": false,
+  "quality_gate_applicable": false,
+  "quality_gate_passed": null,
+  "reason": "Verified evaluator call-binding failure before any predictions or updates. Diagnostic93tensors match parent exactly; optimizer absent. Preservev2; require full synthetic lifecycle and negative control before v3.",
+  "scientific_hypothesis_evaluated": false,
+  "summary_sha256": "3939855979f2418f2ef2faefae2823d5a0c90b32b30ae106f963ce2c1bcab6b1"
+}

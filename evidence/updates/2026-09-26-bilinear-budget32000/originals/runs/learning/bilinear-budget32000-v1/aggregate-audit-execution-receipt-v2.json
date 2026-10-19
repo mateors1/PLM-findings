@@ -1,0 +1,14 @@
+{
+  "artifact_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+  "campaign_version": "bilinear-budget32000-v1",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "exit_code": 0,
+  "observer_script_sha256": "142a17f30107bffeea34b24dbc700e575718e878ceb88bba25558501d0f43a18",
+  "readiness_sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+  "recorded_utc": "2026-09-26T19:16:53.178521+00:00",
+  "schema_version": 1,
+  "stdout_note": "Captured actual auditor stdout.",
+  "stdout_sha256": "6364a804c8697806056953a7bc5fc9709cbc29b4482250e7eba4b2e74187e140",
+  "terminal_chunk_id": "1e1ed8",
+  "terminal_completion_observed_by_primary": true
+}

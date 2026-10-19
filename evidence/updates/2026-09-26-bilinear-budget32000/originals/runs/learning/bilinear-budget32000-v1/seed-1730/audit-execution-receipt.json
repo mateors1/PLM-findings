@@ -1,0 +1,16 @@
+{
+  "seed": 1730,
+  "exit_code": 1,
+  "terminal_completion_observed_by_primary": true,
+  "terminal_chunk_id": "9529ae",
+  "started_utc": "2026-09-26T10:00:29.7741023-05:00",
+  "completed_utc": "2026-09-26T15:02:10.8885251+00:00",
+  "cuda_visible_devices": "-1",
+  "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11",
+  "audit_sha256": "85b193ad473d77ac10d84aa2e9138ba4d56efd7e9694ef52eeab4ed6e069c188",
+  "stdout_sha256": "9db0e434576f15cbe2255f35398ee4f60da134d19e18fc5d6dbc83c6f1adcc94",
+  "execution_receipt_sha256": "97f36f6d2b1bee433082b49c5204376d4f70dd78e3abba52431d5be32781b1b8",
+  "auditor_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+  "test_receipt_sha256": "b79affb0b67b55027b1255566b0f60b20e31a9ebdf93e89d09d03b4ff74bab67",
+  "failure": "predecessor receipt binding; timezone string representation differs"
+}

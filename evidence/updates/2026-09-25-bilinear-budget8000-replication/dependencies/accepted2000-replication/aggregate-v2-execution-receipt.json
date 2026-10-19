@@ -1,0 +1,8 @@
+{
+  "aggregation_runner_sha256": "6cd3418a61ba3533445854a847c82aa80ffb9951b9baf602f896b876bf6ed1e4",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "summary_sha256": "338fb6b7ea08128952ce9abc02b3506639e712a9cff6ce63468ed2e7980f79a0",
+  "exit_code": 0,
+  "terminal_completion_observed_by_primary": true,
+  "finished_at_utc": "2026-09-26T00:49:07.4383379+00:00"
+}

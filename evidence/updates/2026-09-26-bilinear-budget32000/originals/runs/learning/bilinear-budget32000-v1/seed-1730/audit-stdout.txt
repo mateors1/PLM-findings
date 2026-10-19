@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 2002, in <module>
+    main()
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 1981, in main
+    else audit_seed(reader, args.seed, args.readiness_sha256)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 1776, in audit_seed
+    receipt_chain(reader, seed, summary_sha, ready)
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 1595, in receipt_chain
+    execution_contract(execution, seed, summary_sha, execution["stdout_sha256"], previous)
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 528, in execution_contract
+    exact(receipt["prior_seed"], expected, "predecessor receipt binding")
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 42, in exact
+    require(
+  File "C:\Users\mateo\Documents\Github\Plm-protocolized-language-model-pika-edition\runs\learning\bilinear-budget32000-v1\independent-audit.py", line 38, in require
+    raise ValueError(message)
+ValueError: predecessor receipt binding

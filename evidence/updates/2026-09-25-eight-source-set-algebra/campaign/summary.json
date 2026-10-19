@@ -1,0 +1,236 @@
+{
+  "acceptance": false,
+  "accounting": {
+    "candidate_slots": 42624,
+    "distinct_queries": 222,
+    "pure_operation_subsets_examined": 339660,
+    "query_seed_observations": 666,
+    "source_paths": 5328,
+    "subsets_per_operation_per_query": 255
+  },
+  "campaign_version": "eight-source-set-algebra-v1",
+  "complete": true,
+  "derived_bound": {
+    "existing_available_miss_count": 2,
+    "missing_union_count": 30,
+    "scope": "appended pure union/intersection sets; unchanged scorer and old-first ties",
+    "selected_exact_upper_bound": 634
+  },
+  "final_identity_check": true,
+  "gate": {
+    "checks": {
+      "complete_baseline_reproduction": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": false,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": false
+  },
+  "groups": {
+    "COLOR": {
+      "baseline": {
+        "available_exact_misses": 0,
+        "empty_selections": 0,
+        "exact_available": 309,
+        "exact_count": 309,
+        "f1": 1.0,
+        "intersection_selections": 0,
+        "mean_set_size": 113.66990291262135,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 0,
+        "selected_exact": 309,
+        "unavailable_and_truth_missing_from_all_sources": 0,
+        "unavailable_with_truth_covered": 0
+      },
+      "changed_selection_count": 0,
+      "gains": 0,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 0,
+        "empty_selections": 0,
+        "exact_available": 309,
+        "exact_count": 309,
+        "f1": 1.0,
+        "intersection_selections": 0,
+        "mean_set_size": 113.66990291262135,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "pure_family_availability": {
+        "all_intersections": 309,
+        "all_unions": 309,
+        "either_pure_family": 309
+      },
+      "query_count": 309
+    },
+    "TYPE_dual": {
+      "baseline": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 156,
+        "exact_count": 155,
+        "f1": 0.9501237682021885,
+        "intersection_selections": 0,
+        "mean_set_size": 165.55882352941177,
+        "precision": 0.9774263581828438,
+        "recall": 0.9413572704960016
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 1,
+        "selected_exact": 155,
+        "unavailable_and_truth_missing_from_all_sources": 30,
+        "unavailable_with_truth_covered": 18
+      },
+      "changed_selection_count": 6,
+      "gains": 0,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 156,
+        "exact_count": 155,
+        "f1": 0.950683774705249,
+        "intersection_selections": 6,
+        "mean_set_size": 163.52941176470588,
+        "precision": 0.984852057172748,
+        "recall": 0.9373558773119348
+      },
+      "pure_family_availability": {
+        "all_intersections": 62,
+        "all_unions": 156,
+        "either_pure_family": 156
+      },
+      "query_count": 204
+    },
+    "TYPE_single": {
+      "baseline": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 140,
+        "exact_count": 139,
+        "f1": 0.9946465685237378,
+        "intersection_selections": 0,
+        "mean_set_size": 100.05882352941177,
+        "precision": 0.9926161948663721,
+        "recall": 0.9988300063227525
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 1,
+        "selected_exact": 139,
+        "unavailable_and_truth_missing_from_all_sources": 0,
+        "unavailable_with_truth_covered": 13
+      },
+      "changed_selection_count": 8,
+      "gains": 2,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 142,
+        "exact_count": 141,
+        "f1": 0.9990233975315818,
+        "intersection_selections": 8,
+        "mean_set_size": 99.32679738562092,
+        "precision": 0.9991933775723247,
+        "recall": 0.9988752955758281
+      },
+      "pure_family_availability": {
+        "all_intersections": 144,
+        "all_unions": 140,
+        "either_pure_family": 145
+      },
+      "query_count": 153
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-eight-source-set-algebra-plan.md": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-runner-tests-v1\\stdout.txt": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-runner-tests-v1\\test-receipt.json": "d7197da002be4961e73b2063123d08cc8321ae029c048ee6334ce12c0cf6651c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\decision.json": "70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.json": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.py": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1729.json": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1730.json": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1731.json": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.json": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_source_intersections.py": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598"
+  },
+  "limitations": [
+    "Upstream authenticated audit establishes neural/runtime provenance; no independent neural replay.",
+    "Oracle witnesses cover pure unions and pure intersections, not arbitrary nested expressions.",
+    "Validation-only fixed screen, no policy promotion; 222 distinct queries under three seeds."
+  ],
+  "neural_generation_executed": false,
+  "overall": {
+    "baseline": {
+      "available_exact_misses": 2,
+      "empty_selections": 0,
+      "exact_available": 605,
+      "exact_count": 603,
+      "f1": 0.9834927532993669,
+      "intersection_selections": 0,
+      "mean_set_size": 126.43693693693693,
+      "precision": 0.99138927159738,
+      "recall": 0.9817685798026508
+    },
+    "baseline_state_counts": {
+      "available_exact_but_missed": 2,
+      "selected_exact": 603,
+      "unavailable_and_truth_missing_from_all_sources": 30,
+      "unavailable_with_truth_covered": 31
+    },
+    "changed_selection_count": 14,
+    "gains": 2,
+    "losses": 0,
+    "prediction": {
+      "available_exact_misses": 2,
+      "empty_selections": 0,
+      "exact_available": 607,
+      "exact_count": 605,
+      "f1": 0.9846697745678721,
+      "intersection_selections": 14,
+      "mean_set_size": 125.64714714714715,
+      "precision": 0.9951747844321416,
+      "recall": 0.9805533321242288
+    },
+    "pure_family_availability": {
+      "all_intersections": 515,
+      "all_unions": 605,
+      "either_pure_family": 610
+    },
+    "query_count": 666
+  },
+  "plan_sha256": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+  "protected_test_used": false,
+  "reports": [
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1729.json",
+      "seed": 1729,
+      "sha256": "a80d0ad5706dd3514fafb3f650913a84d9e9342873651b2dd016451a2349a830"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1730.json",
+      "seed": 1730,
+      "sha256": "50fb3d4fc037cfb53607e2462d2921cd8b1a41eea7a65fae484753be0370ab0e"
+    },
+    {
+      "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1731.json",
+      "seed": 1731,
+      "sha256": "b26b9d1bd4e9b7c0496c7300337ef7d99d0b73a220cc72585296d7c9be131c81"
+    }
+  ],
+  "script_sha256": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+  "snapshot_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.inputs.json": "9fb0e5a7a1e8faf720d72addce88b7f46da01c384143a67bc3a7db28e485decc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.plan.md": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.script.py": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.test-receipt.json": "d7197da002be4961e73b2063123d08cc8321ae029c048ee6334ce12c0cf6651c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.test-stdout.txt": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330"
+  },
+  "training_executed": false,
+  "wall_seconds": 3.8486205999997765
+}

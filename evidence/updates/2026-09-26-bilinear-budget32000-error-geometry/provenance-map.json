@@ -1,0 +1,248 @@
+{
+  "document_scope_sha256": "f97f5ac6829007484e27980fdc5a680679c32f3d807cb96a810b4967e069ef1e",
+  "exact_copies": {
+    "devlog.md": {
+      "headings": [
+        "## 2026-09-26 \u2014 Reconstruct the six residual membership errors"
+      ],
+      "mode": "integrate_scoped_sections",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/root-docscope/devlog.md",
+      "sha256": "f74c0acff5f82b97afcee9839b00cd57598c7e57d490b86e9827bec2cb14b886"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-audit.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.json",
+      "sha256": "78ab0f8fbbadadf59e20a6b11dac1f537a65e76f193901c5f36ad29c77674025"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-decision.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/decision.json",
+      "sha256": "a9defd6e81f0902669a73307d8eaf7107e7da6a2f16ee4250d539d6916189567"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-plan.md": {
+      "mode": "copy",
+      "original_path": "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-plan.md",
+      "sha256": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-report.md": {
+      "mode": "copy",
+      "original_path": "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-report.md",
+      "sha256": "d1b7ec671093048a9d3d4f2e16394c6b9f97b0cae9f2a83627e4e21bd6fbfa1d"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-seed-1729.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1729.json",
+      "sha256": "3325d653852da5b194554f584af29b5d033d89fe953a142e418c421baa99e4ca"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-seed-1730.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1730.json",
+      "sha256": "c47e67bf6336de37b2bd1d03407b09d0bcd95103077da4694732c2570254c441"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-seed-1731.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1731.json",
+      "sha256": "00a871df0dc3d34fcde82a8386737c2979d0d108d5fe21ae8401ceb4e68d8e53"
+    },
+    "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.json",
+      "sha256": "9d5ebfce23e58e5cef6fa9c9747db687ab921a9923c65ad6c81db23ae60c21d8"
+    },
+    "docs/experiments/2026-09-26-bilinear-serving-integration-design.md": {
+      "mode": "copy",
+      "original_path": "docs/experiments/2026-09-26-bilinear-serving-integration-design.md",
+      "sha256": "85c7e6c6c24ef57677b56b62810035dce64766f463fb770f7846d762e6127a09"
+    },
+    "docs/learning/52-reading-the-last-membership-errors.md": {
+      "mode": "copy",
+      "original_path": "docs/learning/52-reading-the-last-membership-errors.md",
+      "sha256": "fa632a4cd210e23feea3ee664d98b04a6db3144b0dba994130b4ffbe0ebfcc62"
+    },
+    "docs/model-versions.md": {
+      "headings": [
+        "## Bilinear 32000 saved-error geometry: accepted descriptive diagnostic"
+      ],
+      "mode": "integrate_scoped_sections",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/root-docscope/docs--model-versions.md",
+      "sha256": "b95cdc88fb3a4c08084d3e9a9317fea7e51f6e2c12aab25a1a9f2267c2a285b8"
+    },
+    "registry.md": {
+      "headings": [
+        "## Bilinear 32000 saved-error geometry (completed; descriptive evidence accepted)"
+      ],
+      "mode": "integrate_scoped_sections",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/root-docscope/registry.md",
+      "sha256": "219240521404f153d51751d88a1f8d2d3e467f77d564d5023be4a71b535b4ea2"
+    },
+    "research_log.md": {
+      "headings": [
+        "## 2026-09-26 \u2014 Diagnose residual errors before another intervention"
+      ],
+      "mode": "integrate_scoped_sections",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/root-docscope/research_log.md",
+      "sha256": "803cce905ee45d65cf1ff2766d14a9484d1ed9f70a2d30c9ae3dbea9120aebc1"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/auditor-stdout.txt": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/auditor-stdout.txt",
+      "sha256": "c3c1b0265ad5055cc8a7599e91d1228aee09ba241b6820f5f32ee334e7203b8c"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/auditor-test-receipt.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/auditor-test-receipt.json",
+      "sha256": "34081a4c2eb244d8a04e53436e8bfb702e69c70d373b16f8394f5cecf008290f"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/stdout.txt": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/stdout.txt",
+      "sha256": "3da18e989b1b7c74c739f649ec29e290b89d0b5ed36619d72a6b9ee821bfc5b3"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/test-receipt.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-preparation-v1/test-receipt.json",
+      "sha256": "0b647272343723d74a16b0f867092949d079cdd96f4f18c5692014ee2c4f6698"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/audit-execution-receipt.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/audit-execution-receipt.json",
+      "sha256": "efb90dfda2eef093c23524b1d8cb48116e430c267bc60040f3f6a92503eb85ed"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/audit-stdout.txt": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/audit-stdout.txt",
+      "sha256": "32f955d54a35c94ed7cd87d35a16e318f2d13f1dd581f6aba15d4ab48a2a335d"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/decision.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/decision.json",
+      "sha256": "a9defd6e81f0902669a73307d8eaf7107e7da6a2f16ee4250d539d6916189567"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/execution-receipt.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/execution-receipt.json",
+      "sha256": "8a76387a2d69f110ad498b379d61ed18ac147f0fec37d10c226c3e7b787b341d"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.json",
+      "sha256": "78ab0f8fbbadadf59e20a6b11dac1f537a65e76f193901c5f36ad29c77674025"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/independent-audit.py",
+      "sha256": "a0ff1149e170dc5c2be1532fc6fd2460b9ba35330a3baa5f0fadbcf1b3d809fd"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/primary-stdout.txt": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/primary-stdout.txt",
+      "sha256": "7142412152823ff15780d476dd860daf082048f187a02c22486bc553a1ad3866"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1729.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1729.json",
+      "sha256": "3325d653852da5b194554f584af29b5d033d89fe953a142e418c421baa99e4ca"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1730.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1730.json",
+      "sha256": "c47e67bf6336de37b2bd1d03407b09d0bcd95103077da4694732c2570254c441"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1731.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/seed-1731.json",
+      "sha256": "00a871df0dc3d34fcde82a8386737c2979d0d108d5fe21ae8401ceb4e68d8e53"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper-test.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper-test.py",
+      "sha256": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.helper.py",
+      "sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.inputs.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.inputs.json",
+      "sha256": "2facde45211b0b34cde570f31c4f4d233ddb7ab8fa4b67678e012215f92ccfb4"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.json",
+      "sha256": "9d5ebfce23e58e5cef6fa9c9747db687ab921a9923c65ad6c81db23ae60c21d8"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.plan.md": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.plan.md",
+      "sha256": "d7208191cfdc49308d5e4e4c6bfc3473ed440a686fc5556caeb628a8f5ab52b4"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.script.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.script.py",
+      "sha256": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-receipt.json": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-receipt.json",
+      "sha256": "0b647272343723d74a16b0f867092949d079cdd96f4f18c5692014ee2c4f6698"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-stdout.txt": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test-stdout.txt",
+      "sha256": "3da18e989b1b7c74c739f649ec29e290b89d0b5ed36619d72a6b9ee821bfc5b3"
+    },
+    "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-budget32000-error-geometry-v1/summary.test.py",
+      "sha256": "1942b2913468072130a05e44d305d45f7484d0b74cf3b1887d3680eab9ce6161"
+    },
+    "runs/learning/bilinear-error-geometry-v1/independent-audit.py": {
+      "mode": "copy",
+      "original_path": "runs/learning/bilinear-error-geometry-v1/independent-audit.py",
+      "sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad"
+    },
+    "scripts/diagnose_bilinear_budget32000_errors.py": {
+      "mode": "copy",
+      "original_path": "scripts/diagnose_bilinear_budget32000_errors.py",
+      "sha256": "e078c179477cfc26cf83df6b2a6fce062309d599cd890257c622d5efda276369"
+    },
+    "scripts/diagnose_bilinear_errors.py": {
+      "mode": "copy",
+      "original_path": "scripts/diagnose_bilinear_errors.py",
+      "sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789"
+    },
+    "tests/unit/test_bilinear_budget32000_error_geometry.py": {
+      "mode": "copy",
+      "original_path": "tests/unit/test_bilinear_budget32000_error_geometry.py",
+      "sha256": "1942b2913468072130a05e44d305d45f7484d0b74cf3b1887d3680eab9ce6161"
+    },
+    "tests/unit/test_bilinear_budget32000_error_geometry_audit.py": {
+      "mode": "copy",
+      "original_path": "tests/unit/test_bilinear_budget32000_error_geometry_audit.py",
+      "sha256": "2c596e61b14e67d4cc00edd71c29eeae18d64317fac06bb93ad08b7686aab10d"
+    },
+    "tests/unit/test_bilinear_error_geometry.py": {
+      "mode": "copy",
+      "original_path": "tests/unit/test_bilinear_error_geometry.py",
+      "sha256": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+    }
+  },
+  "findings_projection": {
+    "kind": "link-only projection",
+    "path": "papers/bilinear-thirty-two-thousand-update-error-geometry.md",
+    "sha256": "9c5b16cfdac726d3b65363388eeab74c744f6450fa9457356154215d70a9e4ad",
+    "source_path": "docs/experiments/2026-09-26-bilinear-budget32000-error-geometry-report.md",
+    "source_sha256": "d1b7ec671093048a9d3d4f2e16394c6b9f97b0cae9f2a83627e4e21bd6fbfa1d"
+  },
+  "publication_dependencies": [
+    {
+      "must_publish_first": true,
+      "packet_path": "docs/publication-queue/2026-09-26-bilinear-budget32000-v1.json",
+      "packet_sha256": "2c20972f827f5c4188e35421a91e81e05bb7500d407c2af62a04d548a8966fd2",
+      "scope": "Accepted three-seed campaign, repaired audit chronology and 41-checkpoint inventory. Upstream payloads and transitive manifests are not recopied."
+    }
+  ],
+  "raw_payloads_published": false
+}

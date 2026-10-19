@@ -1,0 +1,13 @@
+[project]
+name = "plm-diagonal-feasibility"
+version = "0.1.0"
+description = "Isolated exact-real diagonal-head feasibility diagnostic dependencies"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy==2.2.6",
+    "scipy==1.15.3",
+    "python-flint==0.8.0",
+]
+
+[tool.uv]
+package = false

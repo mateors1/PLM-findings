@@ -1,0 +1,85 @@
+{
+  "CUDA_VISIBLE_DEVICES": "-1",
+  "commands": [
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\solver.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\test_solver.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "ruff",
+      "format",
+      "--check",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\solver.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\test_solver.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "pytest",
+      "-o",
+      "addopts=",
+      "-q",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--frozen",
+      "--project",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility",
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility",
+      "-p",
+      "test_solver.py",
+      "-v"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py",
+      "--preflight-only"
+    ]
+  ],
+  "feature_extraction_executed": false,
+  "gpu_used": false,
+  "isolated_solver_test_count": 12,
+  "main_test_count": 29,
+  "passed": true,
+  "real_data_executed": false,
+  "skipped": 0,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-runner-tests-v1\\stdout.txt",
+    "sha256": "7fc174969e1d05bc914852f0c9ab16a383e103dd5933d9fae1bf878df84b02ad"
+  },
+  "synthetic_only": true,
+  "test_count": 41,
+  "tested_files_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\configs\\experiments\\diagonal_feasibility_v1.json": "05948f589834699de0f1f99538c739eee33242a04ee1e1c402d41295a13f74a4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\pyproject.toml": "5ed560df01dcca1b83170738617e6ead50e583dada72191c89fd0f002b809ccd",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\solver.py": "ff94faaf7ad96765039ea9ebd24e0ea08c228c5bb6c7f87f5e263d5205ee923c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\test_solver.py": "dd2784fad58b1cc309b8af039d9d7e88ff58ba4b7160930936fa2256a5791181",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\uv.lock": "15d540d62127862c19123e99fe1a7a9716f1f3f4ac7cd0824c8554ad42704e54",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_diagonal_feasibility.py": "62ae708fe094ac4bba2df44082cb1e25592a29c123fd1ac1e71c1cecf58eb531",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_diagonal_feasibility.py": "4ab32d15ffe80567f49ea2d23698fe7e132097dca9940503400255cb69be1ef8"
+  },
+  "tested_script_sha256": "62ae708fe094ac4bba2df44082cb1e25592a29c123fd1ac1e71c1cecf58eb531"
+}

@@ -1,0 +1,31 @@
+{
+  "campaign_version": "bilinear-budget32000-v1",
+  "command": "uv run --no-sync pytest tests/unit/test_bilinear_budget32000_audit.py -o addopts= -q --tb=short",
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "input_adapter_identity": "plm-authenticated-partition-membership-v1",
+  "input_adapter_source_sha256": "02b5364bc7c440269c3a7bf123c37fe188b74353bcd1549a08a18ff95f774a6e",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "passed": true,
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "schema_version": 1,
+  "scope": "Synthetic CPU evidence only. Genuine seed audit CLI executes saved-evidence reads, terminal checks, adapter receipts, validation metrics, 3274 training score rows, zero replay, 93/94 synthetic tensor states, AdamW state inspection, metadata and immutable output. Historical/source/readiness admission and payload I/O are explicit test doubles. Genuine aggregate CLI checks three completed synthetic audit receipts, chronology, pooled666 rows, exact gate schema and tamper rejection; historical/readiness admission are test doubles. No real input preflight, real checkpoint payload/hash, protected corpus, graph, GPU, neural forward or optimizer update.",
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-auditor-tests-v1/stdout.txt",
+    "sha256": "8215c9fdb18dc5a88380368fdfb9edd6d60b92760f3df281cde63c711b0f98d5"
+  },
+  "terminal_chunk_id": "9c9cbd",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-plan.md": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+    "docs/experiments/2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "runs/learning/bilinear-budget32000-v1/independent-audit.py": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+    "runs/learning/projection-only-refit-v1/independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "tests/unit/test_bilinear_budget32000_audit.py": "d48e33542c5f41eea1d76b2c626034e356f98a3b8d986155261af98bb618b7c7"
+  },
+  "tested_script_sha256": "4dba10059e84146a62e1f26d2bec55195ae82e68351debfee1681ba72e0c0188",
+  "tests_passed": 100,
+  "tests_skipped": 0
+}

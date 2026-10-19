@@ -1,0 +1,32 @@
+{
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "base_readiness": {
+    "path": "runs/learning/bilinear-budget32000-readiness-v1/readiness.json",
+    "sha256": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d"
+  },
+  "campaign_version": "bilinear-budget32000-v1",
+  "command": "uv run --no-sync pytest tests/unit/test_bilinear_budget32000_continuation_v2.py -o addopts= -q --tb=short",
+  "cuda_visible_devices": "-1",
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "passed": true,
+  "schema_version": 1,
+  "scope": "Synthetic CPU only, including actual continuation CLI composed with unchanged scientific stage body. Runtime and input admission are synthetic; bounded fit performs one actual AdamW step and explicitly simulates the 32000 trace. No real preflight, checkpoint, protected corpus, graph or GPU access. Original transitive source/test/fixture dependencies are bound separately by the original readiness manifest.",
+  "stdout": {
+    "path": "runs/learning/bilinear-budget32000-runner-tests-v2/stdout.txt",
+    "sha256": "0678c5e01245407ac0b4061203c6a719fd2580d5b067baa947a3ce3d6d5a2894"
+  },
+  "terminal_chunk_id": "0d852c",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-bilinear-budget32000-evidence-repair-v2.md": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+    "runs/learning/bilinear-budget32000-readiness-v1/readiness.json": "5266fba8ab636590c0654db31b337ba8fd806361d9703c41a1b7260fcb5d766d",
+    "scripts/refit_bilinear_budget32000_continuation_v2.py": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+    "tests/unit/test_bilinear_budget32000_continuation_v2.py": "a9b567e681c61b5b425921a86df15cab5fddf1913448ae5cdf24e50979c1334b"
+  },
+  "tested_script_sha256": "df6be08ede8299ba9c13ebffcb307be98126a1da05b1c260a8d770081bff971e",
+  "tests_passed": 40,
+  "tests_skipped": 0
+}

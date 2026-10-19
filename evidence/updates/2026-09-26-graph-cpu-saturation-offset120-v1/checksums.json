@@ -1,0 +1,77 @@
+{
+  "packet_id": "2026-09-26-graph-cpu-saturation-offset120-v1",
+  "entries": [
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-saturation-offset120-plan.md",
+      "sha256": "220cfb24449b0773957b4bedddaba080ffa8594780ac7b154fead042720fda45"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-saturation-offset120.json",
+      "sha256": "3a25204e2525a1b6d8261dce4909942331621d5c06d87645507eae9b6cdc9327"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-saturation-offset120-audit.json",
+      "sha256": "8a76908d9b4f6d3cc2fd50b63a3005bdc193f2ef5cd1f7c54f73757a822d7bc7"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-saturation-offset120-decision.json",
+      "sha256": "a0ac4b57da40f9a96c8e8cbd01cfc1f795742ea5b3e0a57e5128e005dc7ddce0"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-saturation-offset120-report.md",
+      "sha256": "b6265a63ab3fc351191bd8e90ab40b445979cdffe39084380b87d9fec2a56691"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-offset120-throughput.svg",
+      "sha256": "f769681858d17c2799adced8e36438a7eda624feae2fbc0a94eb3644da7fa14c"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-offset120-power.svg",
+      "sha256": "f9f8845e5593709d12626faad1eee912a0466b1b57bb1ae8b39963f905e78988"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/experiments/2026-09-26-graph-cpu-offset120-efficiency.svg",
+      "sha256": "be789c7ffe03f2b677c91b63750e098814c80f31decaf7ac6a24fb476d43483a"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/runners/graph_arm_offset120.py",
+      "sha256": "e9ea9b8fcf3209c6a324e1afebbe8e7bb42ab818f8bbb0d5e6304cb3b8464cc6"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/runners/aggregate_graph_cpu_offset120.py",
+      "sha256": "ce1b1ff32b7b77561f7d02ee50677ff718a0b5391b107c2dcf1f6a622609d73e"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/runners/audit_graph_cpu_offset120.py",
+      "sha256": "74ff2ae67ece4752e1578d7ddb084c8660f0bf62f302c83973fbef6c5c4565c0"
+    },
+    {
+      "path": "PAPER.md",
+      "sha256": "27b22b90e4c90b3b284bc773025dc9443fddbf56c8ade914ec272e18fd10d29d"
+    },
+    {
+      "path": "paper-history/PAPER-v0001-2026-09-25.md",
+      "sha256": "d8746165b57acd5d40613109f47945a1265c5aa0e5d916b2b0a6e49c0bacfa39"
+    },
+    {
+      "path": "paper-history/README.md",
+      "sha256": "c6eb49173e1a14b3e39a76dc43c71fbc11c7bb9c15a44078e4ac58a01912c160"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/benchmarks.md",
+      "sha256": "a3dab5e6bfbd8ec8cc9151f34ad2c1008d069cd44ecc9f9c65105b80b65392da"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/research_log.md",
+      "sha256": "385fee9eba492a852df36f87d40635b86b25076b8cf0c3815c1bebccf70ede7a"
+    },
+    {
+      "path": "evidence/updates/2026-09-26-graph-cpu-saturation-offset120-v1/devlog.md",
+      "sha256": "bf5842ab60334a0985485609a53e54675e739ca20cae0a30f8c15e98163ae99e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "59ee204803b2f650d3c3dc175b3fdeb45c60f29955cae35650fe435dfb1d2233"
+    }
+  ]
+}

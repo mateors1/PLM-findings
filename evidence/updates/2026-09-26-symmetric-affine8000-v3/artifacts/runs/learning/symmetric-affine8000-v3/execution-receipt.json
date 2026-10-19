@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "stdout_sha256": "bea194bb22a33c86e19ba7b08b683c44e69adee835c6aa2db0c04ed05ea0b9c7",
+  "summary_sha256": "9bbe66e996cbd983c87566fc765c47459d9bcde9022d733fda06b40f3883fc99",
+  "terminal_chunk_id": "aa8f33",
+  "terminal_completion_observed_by_primary": true,
+  "terminal_session_id": 4569
+}

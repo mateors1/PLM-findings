@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\experiments\\diagonal-feasibility\\.venv\\Scripts\\python.exe",
+    "-I",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\summary.solver.py",
+    "--features",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\features.npz",
+    "--membership",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\train-membership.json",
+    "--recipe",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\summary.recipe.json",
+    "--dimension",
+    "TYPE",
+    "--out",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\diagonal-feasibility-v1\\TYPE.json"
+  ],
+  "elapsed_seconds": 3.1784363000006124,
+  "exit_code": 0,
+  "hard_limit_seconds": 180.0,
+  "pid": 66996,
+  "process_running": false,
+  "reaped": true,
+  "report_complete": true,
+  "report_sha256": "caf497c37729f2b3711b3bbdbd4d79f93d73cd6dd5f2da667d592b04c9dc7cc6",
+  "status": "inconclusive",
+  "timed_out": false,
+  "wait_budget_seconds": 179.9955059999993
+}

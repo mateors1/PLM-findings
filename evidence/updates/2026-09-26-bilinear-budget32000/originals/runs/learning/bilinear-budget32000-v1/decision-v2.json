@@ -1,0 +1,126 @@
+{
+  "amendment_sha256": "90aa30088980aeffd999fe6fe4e7349220d163b196ad4eb28f06193b9ce2991c",
+  "audit_sha256": "bacc8614e11afceee2080a3faf9850c1b70de92cf5cbd3ac912025da4edb0b3c",
+  "campaign_version": "bilinear-budget32000-v1",
+  "children": [
+    {
+      "audit_sha256": "76ecfdb9e8e3654fe9aa7d939972c6b453079b1a907d489f5cded679e0b20850",
+      "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1729/checkpoint-final.pt",
+      "checkpoint_sha256": "8c2edf986f20df78e6d111f934ea5bde5b60a939df6ff92f4eeeb095c625bc27",
+      "exact_count": 218,
+      "paired_vs_historical8000": {
+        "gains": 2,
+        "groups": {
+          "COLOR": {
+            "gains": 0,
+            "losses": 0
+          },
+          "TYPE_dual": {
+            "gains": 2,
+            "losses": 0
+          },
+          "TYPE_single": {
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "losses": 0
+      },
+      "seed": 1729,
+      "sidecar_sha256": "4dba47b457f1d8dadc30aa616df2091d36d41bf18b8f210957ce7845be8b12c1",
+      "summary_sha256": "b41fec77f92855db5753c97add0255e4593fa328192eb34fe3ab6ad567bbacd1"
+    },
+    {
+      "audit_sha256": "83d48edb5e78ee66eeab4c9e87970b882f8d0783c5829a07b8b9cd56e5ca728d",
+      "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1730/checkpoint-final.pt",
+      "checkpoint_sha256": "8f315c94ba21965e534654119a73a6abea9ef3797cc096f6997f7441c87e775e",
+      "exact_count": 222,
+      "paired_vs_historical8000": {
+        "gains": 2,
+        "groups": {
+          "COLOR": {
+            "gains": 0,
+            "losses": 0
+          },
+          "TYPE_dual": {
+            "gains": 2,
+            "losses": 0
+          },
+          "TYPE_single": {
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "losses": 0
+      },
+      "seed": 1730,
+      "sidecar_sha256": "1f46bc456c86767784b7cb724a3e674ac7041c77b10223e18a0c3287902d2104",
+      "summary_sha256": "1237d6e266fa57b5284f76ab76d50069ec9f161f5e23add84e06d769a47b5e11"
+    },
+    {
+      "audit_sha256": "59cf6a51207aea5ad86d4fc5b0d0ef9cf24ec3f9a494645620f6a68ae66a6430",
+      "checkpoint_path": "runs/learning/bilinear-budget32000-v1/seed-1731/checkpoint-final.pt",
+      "checkpoint_sha256": "ceb17a1e1ac92e1dbc44656c05132b518032dec6bf1ac4b4019de5dc5dbabf74",
+      "exact_count": 220,
+      "paired_vs_historical8000": {
+        "gains": 6,
+        "groups": {
+          "COLOR": {
+            "gains": 0,
+            "losses": 0
+          },
+          "TYPE_dual": {
+            "gains": 6,
+            "losses": 0
+          },
+          "TYPE_single": {
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "losses": 0
+      },
+      "seed": 1731,
+      "sidecar_sha256": "9ada06c691ac82689acfbd480943df998ff69ebfcece9589166f476361e1dd17",
+      "summary_sha256": "89443ad8a5924eb6655c6fe255e64b216cb6e70cee02188fd6d73a34bccd1e18"
+    }
+  ],
+  "evidence_accepted": true,
+  "evidence_revision": "bilinear-budget32000-evidence-v2",
+  "fixed_quality_gate_passed": true,
+  "fresh_seed_meaning": "Fresh residual fits from three existing original parents, not newly selected seeds.",
+  "fresh_seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "limitations": [
+    "The same 222 development queries are reused across three seeds; 666 is not an independent sample count.",
+    "Seed 1730 is exact on this validation workload; the other two seeds retain six nonexact seed-query outcomes in total.",
+    "Adaptive validation, no protected evaluation, no oracle-parity generalization or serving-advantage claim.",
+    "Historical failed seed-1730 audit remains unchanged and is superseded only by the separately identified successful audit.",
+    "Weights remain local; checkpoint hashes do not establish backup or public availability."
+  ],
+  "model_promoted": false,
+  "new_checkpoint_count": 3,
+  "next_research_question": "Diagnose the six remaining dual-TYPE outcomes from saved validation evidence before declaring a new intervention; do not tune on protected data.",
+  "observed_terminals": [
+    {
+      "path": "aggregate-execution-receipt-v2.json",
+      "sha256": "56faaaf784874d8092bd30604fd7993ad76978af9ca5f556dc4ca3820d388722"
+    },
+    {
+      "path": "aggregate-audit-execution-receipt-v2.json",
+      "sha256": "1f98be3bf67fbb77ed3b83407e3251bc611beeced7a9d6374701f44a414d0a8b"
+    }
+  ],
+  "outcome": "All three longer-budget fits pass their predeclared matched-control improvement gates.",
+  "plan_sha256": "5f1e0243b373ad1287c31dcef8a3c1cfa310cac9701795469a68677506e6f444",
+  "protected_test_used": false,
+  "rationale": "Exact seed-query outcomes improve from 650/666 to 660/666, with 10 gains and no losses. Every seed improves independently; no pooled compensation is used.",
+  "readiness_sha256": "9df87cdafc02a3449b3b78d9bf48be93f0840da4ba64b35c21c09c286c96a69a",
+  "recorded_utc": "2026-09-26T19:16:53.197028+00:00",
+  "schema_version": 1,
+  "standard_serving_supported": false,
+  "summary_sha256": "8f4539583080275efe53409ce6881af3b50f2b89a092e0a21801ceafe6fd0708"
+}

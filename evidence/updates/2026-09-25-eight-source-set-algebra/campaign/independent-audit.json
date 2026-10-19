@@ -1,0 +1,712 @@
+{
+  "acceptance": false,
+  "accounting": {
+    "candidate_slots": 42624,
+    "distinct_queries": 222,
+    "pure_operation_subsets_examined": 339660,
+    "query_seed_observations": 666,
+    "source_paths": 5328,
+    "subsets_per_operation_per_query": 255
+  },
+  "audit_passed": true,
+  "audit_version": "eight-source-set-algebra-independent-v1",
+  "complete": true,
+  "derived_bound": {
+    "existing_available_miss_count": 2,
+    "missing_union_count": 30,
+    "scope": "appended pure union/intersection sets; unchanged scorer and old-first ties",
+    "selected_exact_upper_bound": 634
+  },
+  "gate": {
+    "checks": {
+      "complete_baseline_reproduction": true,
+      "per_seed_exact_nonregression": true,
+      "per_seed_f1_nonregression": false,
+      "pooled_exact_improvement": true,
+      "pooled_group_exact_nonregression": true
+    },
+    "quality_passed": false
+  },
+  "groups": {
+    "COLOR": {
+      "baseline": {
+        "available_exact_misses": 0,
+        "empty_selections": 0,
+        "exact_available": 309,
+        "exact_count": 309,
+        "f1": 1.0,
+        "intersection_selections": 0,
+        "mean_set_size": 113.66990291262135,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 0,
+        "selected_exact": 309,
+        "unavailable_and_truth_missing_from_all_sources": 0,
+        "unavailable_with_truth_covered": 0
+      },
+      "changed_selection_count": 0,
+      "gains": 0,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 0,
+        "empty_selections": 0,
+        "exact_available": 309,
+        "exact_count": 309,
+        "f1": 1.0,
+        "intersection_selections": 0,
+        "mean_set_size": 113.66990291262135,
+        "precision": 1.0,
+        "recall": 1.0
+      },
+      "pure_family_availability": {
+        "all_intersections": 309,
+        "all_unions": 309,
+        "either_pure_family": 309
+      },
+      "query_count": 309
+    },
+    "TYPE_dual": {
+      "baseline": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 156,
+        "exact_count": 155,
+        "f1": 0.9501237682021885,
+        "intersection_selections": 0,
+        "mean_set_size": 165.55882352941177,
+        "precision": 0.9774263581828438,
+        "recall": 0.9413572704960016
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 1,
+        "selected_exact": 155,
+        "unavailable_and_truth_missing_from_all_sources": 30,
+        "unavailable_with_truth_covered": 18
+      },
+      "changed_selection_count": 6,
+      "gains": 0,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 156,
+        "exact_count": 155,
+        "f1": 0.950683774705249,
+        "intersection_selections": 6,
+        "mean_set_size": 163.52941176470588,
+        "precision": 0.984852057172748,
+        "recall": 0.9373558773119348
+      },
+      "pure_family_availability": {
+        "all_intersections": 62,
+        "all_unions": 156,
+        "either_pure_family": 156
+      },
+      "query_count": 204
+    },
+    "TYPE_single": {
+      "baseline": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 140,
+        "exact_count": 139,
+        "f1": 0.9946465685237378,
+        "intersection_selections": 0,
+        "mean_set_size": 100.05882352941177,
+        "precision": 0.9926161948663721,
+        "recall": 0.9988300063227525
+      },
+      "baseline_state_counts": {
+        "available_exact_but_missed": 1,
+        "selected_exact": 139,
+        "unavailable_and_truth_missing_from_all_sources": 0,
+        "unavailable_with_truth_covered": 13
+      },
+      "changed_selection_count": 8,
+      "gains": 2,
+      "losses": 0,
+      "prediction": {
+        "available_exact_misses": 1,
+        "empty_selections": 0,
+        "exact_available": 142,
+        "exact_count": 141,
+        "f1": 0.9990233975315818,
+        "intersection_selections": 8,
+        "mean_set_size": 99.32679738562092,
+        "precision": 0.9991933775723247,
+        "recall": 0.9988752955758281
+      },
+      "pure_family_availability": {
+        "all_intersections": 144,
+        "all_unions": 140,
+        "either_pure_family": 145
+      },
+      "query_count": 153
+    }
+  },
+  "input_sha256": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\data\\processed\\pokemon_v1_f1541479_20260924\\vocabulary.json": "1b0d8f1762fede01fb253c3df23d21ced254a10f6cea367709c479565a92fb34",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\docs\\experiments\\2026-09-25-eight-source-set-algebra-plan.md": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\stdout.txt": "bc59136f3908ab0923825ab32790fa7efcb8abf13736304bf0d8a18c9f2c30b7",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\test-receipt.json": "53b8efe7b62e973b72e9e19e59cd1e77a23fb09f568351adc5aec2765ead37a1",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-auditor-tests-v1\\test_auditor.py": "5cd8ce9736feda2d76c41fc0e0ed67b7d235e2c274252f12e0c5b62d460feaeb",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-runner-tests-v1\\stdout.txt": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-runner-tests-v1\\test-receipt.json": "d7197da002be4961e73b2063123d08cc8321ae029c048ee6334ce12c0cf6651c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\independent-audit.py": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1729.json": "a80d0ad5706dd3514fafb3f650913a84d9e9342873651b2dd016451a2349a830",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1730.json": "50fb3d4fc037cfb53607e2462d2921cd8b1a41eea7a65fae484753be0370ab0e",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\seed-1731.json": "b26b9d1bd4e9b7c0496c7300337ef7d99d0b73a220cc72585296d7c9be131c81",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.inputs.json": "9fb0e5a7a1e8faf720d72addce88b7f46da01c384143a67bc3a7db28e485decc",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.json": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.plan.md": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.script.py": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.test-receipt.json": "d7197da002be4961e73b2063123d08cc8321ae029c048ee6334ce12c0cf6651c",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\eight-source-set-algebra-v1\\summary.test-stdout.txt": "932f456dbec51928ca771e949db4fa9072e165afff1ea87a5974a6cd99324330",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\decision.json": "70196a4bcbf1cb8175eccda3956c652fa7d6357c8638dd71196777bf09457601",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.json": "eb7413d30e92519616c74e0541399a90d50d6d1556529ea06c30954d26fb1e95",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\independent-audit.py": "b5b7854ed823b86b93747e120147e0b508b015bc56137ffa60602e22743459e4",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1729.json": "3b7fcccf624a33f6fb7b68c76076841a517972d4e7655297672cf153e5fff705",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1730.json": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\seed-1731.json": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.json": "1422f7ae69f012683e01e7a2e3299019e61c163aa3b675606843cc8ef9bb2183",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\wide-first-choice-v1\\summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\evaluate_source_intersections.py": "9ea168346238a2b941d4132bfb249cc4169ce271f9631762d8e43aea2786d598",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_source_intersections.py": "c18a588c803a7fba7901e3ae3228180e0551ae022446be5ec6d6b8936c855654"
+  },
+  "limitations": [
+    "Saved-only independent bitset and rational-sum audit; upstream accepted receipts establish neural/runtime provenance.",
+    "No checkpoint payloads loaded, neural generation, training, or protected-test predictions.",
+    "All 255 pure unions and all 255 pure intersections per query are oracle diagnostics; they are never predictor inputs.",
+    "Pure-operation attainability does not evaluate arbitrary nested expressions, subtraction, complements, new sources, or changed learned weights.",
+    "Scientific quality gate, faithful evidence acceptance and policy promotion are separate; owner decision remains required."
+  ],
+  "overall": {
+    "baseline": {
+      "available_exact_misses": 2,
+      "empty_selections": 0,
+      "exact_available": 605,
+      "exact_count": 603,
+      "f1": 0.9834927532993669,
+      "intersection_selections": 0,
+      "mean_set_size": 126.43693693693693,
+      "precision": 0.99138927159738,
+      "recall": 0.9817685798026508
+    },
+    "baseline_state_counts": {
+      "available_exact_but_missed": 2,
+      "selected_exact": 603,
+      "unavailable_and_truth_missing_from_all_sources": 30,
+      "unavailable_with_truth_covered": 31
+    },
+    "changed_selection_count": 14,
+    "gains": 2,
+    "losses": 0,
+    "prediction": {
+      "available_exact_misses": 2,
+      "empty_selections": 0,
+      "exact_available": 607,
+      "exact_count": 605,
+      "f1": 0.9846697745678721,
+      "intersection_selections": 14,
+      "mean_set_size": 125.64714714714715,
+      "precision": 0.9951747844321416,
+      "recall": 0.9805533321242288
+    },
+    "pure_family_availability": {
+      "all_intersections": 515,
+      "all_unions": 605,
+      "either_pure_family": 610
+    },
+    "query_count": 666
+  },
+  "per_seed": [
+    {
+      "groups": {
+        "COLOR": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 103,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 0
+          },
+          "changed_selection_count": 0,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "pure_family_availability": {
+            "all_intersections": 103,
+            "all_unions": 103,
+            "either_pure_family": 103
+          },
+          "query_count": 103
+        },
+        "TYPE_dual": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 48,
+            "exact_count": 48,
+            "f1": 0.9350432148218978,
+            "intersection_selections": 0,
+            "mean_set_size": 158.66176470588235,
+            "precision": 0.9841199133768396,
+            "recall": 0.913165593055603
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 48,
+            "unavailable_and_truth_missing_from_all_sources": 14,
+            "unavailable_with_truth_covered": 6
+          },
+          "changed_selection_count": 1,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 48,
+            "exact_count": 48,
+            "f1": 0.9333107713489114,
+            "intersection_selections": 1,
+            "mean_set_size": 156.77941176470588,
+            "precision": 0.9889968641571516,
+            "recall": 0.9060932984889214
+          },
+          "pure_family_availability": {
+            "all_intersections": 19,
+            "all_unions": 48,
+            "either_pure_family": 48
+          },
+          "query_count": 68
+        },
+        "TYPE_single": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 50,
+            "exact_count": 50,
+            "f1": 0.9992260061919505,
+            "intersection_selections": 0,
+            "mean_set_size": 99.43137254901961,
+            "precision": 0.9987430869783811,
+            "recall": 0.9997350291467938
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 50,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 1
+          },
+          "changed_selection_count": 1,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 50,
+            "exact_count": 50,
+            "f1": 0.9998666133119914,
+            "intersection_selections": 1,
+            "mean_set_size": 99.33333333333333,
+            "precision": 1.0,
+            "recall": 0.9997350291467938
+          },
+          "pure_family_availability": {
+            "all_intersections": 51,
+            "all_unions": 50,
+            "either_pure_family": 51
+          },
+          "query_count": 51
+        }
+      },
+      "overall": {
+        "baseline": {
+          "available_exact_misses": 0,
+          "empty_selections": 0,
+          "exact_available": 201,
+          "exact_count": 201,
+          "f1": 0.9799255176742276,
+          "intersection_selections": 0,
+          "mean_set_size": 124.18018018018019,
+          "precision": 0.9948470790338853,
+          "recall": 0.9733412018660698
+        },
+        "baseline_state_counts": {
+          "available_exact_but_missed": 0,
+          "selected_exact": 201,
+          "unavailable_and_truth_missing_from_all_sources": 14,
+          "unavailable_with_truth_covered": 7
+        },
+        "changed_selection_count": 2,
+        "gains": 0,
+        "losses": 0,
+        "prediction": {
+          "available_exact_misses": 0,
+          "empty_selections": 0,
+          "exact_available": 201,
+          "exact_count": 201,
+          "f1": 0.9795420258136825,
+          "intersection_selections": 2,
+          "mean_set_size": 123.58108108108108,
+          "precision": 0.9966296701021905,
+          "recall": 0.9711749134402393
+        },
+        "pure_family_availability": {
+          "all_intersections": 173,
+          "all_unions": 201,
+          "either_pure_family": 202
+        },
+        "query_count": 222
+      },
+      "seed": 1729
+    },
+    {
+      "groups": {
+        "COLOR": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 103,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 0
+          },
+          "changed_selection_count": 0,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "pure_family_availability": {
+            "all_intersections": 103,
+            "all_unions": 103,
+            "either_pure_family": 103
+          },
+          "query_count": 103
+        },
+        "TYPE_dual": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 57,
+            "exact_count": 57,
+            "f1": 0.970307985560731,
+            "intersection_selections": 0,
+            "mean_set_size": 169.5,
+            "precision": 0.9776573171192526,
+            "recall": 0.9674078481478505
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 57,
+            "unavailable_and_truth_missing_from_all_sources": 6,
+            "unavailable_with_truth_covered": 5
+          },
+          "changed_selection_count": 2,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 57,
+            "exact_count": 57,
+            "f1": 0.9737885543898225,
+            "intersection_selections": 2,
+            "mean_set_size": 167.58823529411765,
+            "precision": 0.9908496376620576,
+            "recall": 0.9668440729420278
+          },
+          "pure_family_availability": {
+            "all_intersections": 19,
+            "all_unions": 57,
+            "either_pure_family": 57
+          },
+          "query_count": 68
+        },
+        "TYPE_single": {
+          "baseline": {
+            "available_exact_misses": 1,
+            "empty_selections": 0,
+            "exact_available": 46,
+            "exact_count": 45,
+            "f1": 0.9990936530134423,
+            "intersection_selections": 0,
+            "mean_set_size": 99.27450980392157,
+            "precision": 0.9995915032679739,
+            "recall": 0.9986100358309676
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 1,
+            "selected_exact": 45,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 5
+          },
+          "changed_selection_count": 1,
+          "gains": 1,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 1,
+            "empty_selections": 0,
+            "exact_available": 47,
+            "exact_count": 46,
+            "f1": 0.9992288795178372,
+            "intersection_selections": 1,
+            "mean_set_size": 99.29411764705883,
+            "precision": 0.9995915032679739,
+            "recall": 0.998878636421889
+          },
+          "pure_family_availability": {
+            "all_intersections": 47,
+            "all_unions": 46,
+            "either_pure_family": 47
+          },
+          "query_count": 51
+        }
+      },
+      "overall": {
+        "baseline": {
+          "available_exact_misses": 1,
+          "empty_selections": 0,
+          "exact_available": 206,
+          "exact_count": 205,
+          "f1": 0.9906969338820507,
+          "intersection_selections": 0,
+          "mean_set_size": 127.46396396396396,
+          "precision": 0.9930624514899813,
+          "recall": 0.989697502258708
+        },
+        "baseline_state_counts": {
+          "available_exact_but_missed": 1,
+          "selected_exact": 205,
+          "unavailable_and_truth_missing_from_all_sources": 6,
+          "unavailable_with_truth_covered": 10
+        },
+        "changed_selection_count": 3,
+        "gains": 1,
+        "losses": 0,
+        "prediction": {
+          "available_exact_misses": 1,
+          "empty_selections": 0,
+          "exact_available": 207,
+          "exact_count": 206,
+          "f1": 0.9917941196122415,
+          "intersection_selections": 3,
+          "mean_set_size": 126.88288288288288,
+          "precision": 0.9971033424670567,
+          "recall": 0.989586519898983
+        },
+        "pure_family_availability": {
+          "all_intersections": 169,
+          "all_unions": 206,
+          "either_pure_family": 207
+        },
+        "query_count": 222
+      },
+      "seed": 1730
+    },
+    {
+      "groups": {
+        "COLOR": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 103,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 0
+          },
+          "changed_selection_count": 0,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 103,
+            "exact_count": 103,
+            "f1": 1.0,
+            "intersection_selections": 0,
+            "mean_set_size": 113.66990291262135,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "pure_family_availability": {
+            "all_intersections": 103,
+            "all_unions": 103,
+            "either_pure_family": 103
+          },
+          "query_count": 103
+        },
+        "TYPE_dual": {
+          "baseline": {
+            "available_exact_misses": 1,
+            "empty_selections": 0,
+            "exact_available": 51,
+            "exact_count": 50,
+            "f1": 0.9450201042239366,
+            "intersection_selections": 0,
+            "mean_set_size": 168.51470588235293,
+            "precision": 0.9705018440524398,
+            "recall": 0.943498370284551
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 1,
+            "selected_exact": 50,
+            "unavailable_and_truth_missing_from_all_sources": 10,
+            "unavailable_with_truth_covered": 7
+          },
+          "changed_selection_count": 3,
+          "gains": 0,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 1,
+            "empty_selections": 0,
+            "exact_available": 51,
+            "exact_count": 50,
+            "f1": 0.9449519983770135,
+            "intersection_selections": 3,
+            "mean_set_size": 166.22058823529412,
+            "precision": 0.9747096696990347,
+            "recall": 0.939130260504855
+          },
+          "pure_family_availability": {
+            "all_intersections": 24,
+            "all_unions": 51,
+            "either_pure_family": 51
+          },
+          "query_count": 68
+        },
+        "TYPE_single": {
+          "baseline": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 44,
+            "exact_count": 44,
+            "f1": 0.9856200463658203,
+            "intersection_selections": 0,
+            "mean_set_size": 101.47058823529412,
+            "precision": 0.9795139943527612,
+            "recall": 0.9981449539904962
+          },
+          "baseline_state_counts": {
+            "available_exact_but_missed": 0,
+            "selected_exact": 44,
+            "unavailable_and_truth_missing_from_all_sources": 0,
+            "unavailable_with_truth_covered": 7
+          },
+          "changed_selection_count": 6,
+          "gains": 1,
+          "losses": 0,
+          "prediction": {
+            "available_exact_misses": 0,
+            "empty_selections": 0,
+            "exact_available": 45,
+            "exact_count": 45,
+            "f1": 0.9979746997649166,
+            "intersection_selections": 6,
+            "mean_set_size": 99.3529411764706,
+            "precision": 0.9979886294490006,
+            "recall": 0.9980122211588014
+          },
+          "pure_family_availability": {
+            "all_intersections": 46,
+            "all_unions": 44,
+            "either_pure_family": 47
+          },
+          "query_count": 51
+        }
+      },
+      "overall": {
+        "baseline": {
+          "available_exact_misses": 1,
+          "empty_selections": 0,
+          "exact_available": 198,
+          "exact_count": 197,
+          "f1": 0.9798558083418223,
+          "intersection_selections": 0,
+          "mean_set_size": 127.66666666666667,
+          "precision": 0.9862582842682734,
+          "recall": 0.9822670352831747
+        },
+        "baseline_state_counts": {
+          "available_exact_but_missed": 1,
+          "selected_exact": 197,
+          "unavailable_and_truth_missing_from_all_sources": 10,
+          "unavailable_with_truth_covered": 14
+        },
+        "changed_selection_count": 9,
+        "gains": 1,
+        "losses": 0,
+        "prediction": {
+          "available_exact_misses": 1,
+          "empty_selections": 0,
+          "exact_available": 199,
+          "exact_count": 198,
+          "f1": 0.9826731782776922,
+          "intersection_selections": 9,
+          "mean_set_size": 126.47747747747748,
+          "precision": 0.9917913407271775,
+          "recall": 0.980898563033464
+        },
+        "pure_family_availability": {
+          "all_intersections": 173,
+          "all_unions": 198,
+          "either_pure_family": 201
+        },
+        "query_count": 222
+      },
+      "seed": 1731
+    }
+  ],
+  "plan_sha256": "7fb6f28e9d432799590fd7dff9b9269ffc732ecce8c4f496ba0c1e3521c27a5f",
+  "script_sha256": "2044a66979274b0a67943e07e692b2891af7bad664605a4b98f24f19f0825dd4",
+  "summary_sha256": "1fe6e9cb1980753e6c2315c6dac890148a52105061c881261da9bb73db1c387d"
+}

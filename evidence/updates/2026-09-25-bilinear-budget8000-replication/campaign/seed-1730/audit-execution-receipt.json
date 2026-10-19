@@ -1,0 +1,28 @@
+{
+  "audit_sha256": null,
+  "auditor_sha256": "495db4e3d65e3893fdc68579cad62792c3ab73fd614738b7e97263935af00daa",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "python",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\independent-audit.py",
+    "--summary",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget8000-replication-v1\\seed-1730\\summary.json",
+    "--seed",
+    "1730"
+  ],
+  "exit_code": 1,
+  "finished_at_utc": "2026-09-26T02:26:02.369865+00:00",
+  "gpu_used": false,
+  "model_execution": false,
+  "primary_execution_receipt_sha256": "a47295ecf7c66b3785bf126305ef78085012afcb3106889bfc76ec9425d4f5cd",
+  "seed": 1730,
+  "started_at_utc": "2026-09-26T02:25:59.260550+00:00",
+  "stdout_sha256": "8c5773b049fc57518f2c389bbd616046d70743704c90a8eba7f9c343732cd8fb",
+  "summary_sha256": "a7feed80dbab71e4f66e271a4ba5500b49a19ee068578840b5a6c32b6e8808fe",
+  "terminal_completion_observed_by_primary": true,
+  "test_receipt_sha256": "e130b1dee6d8cedae18af6abdf3cdaabeb5ac78668c8e72802357bde6b8e1ad1",
+  "training_executed": false,
+  "wall_seconds": 3.10918970000057
+}

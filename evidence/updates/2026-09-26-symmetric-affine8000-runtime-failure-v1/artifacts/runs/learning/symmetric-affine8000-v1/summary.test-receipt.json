@@ -1,0 +1,30 @@
+{
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "input_adapter_identity": "plm-authenticated-partition-membership-v1",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "passed": true,
+  "stdout": {
+    "path": "runs/learning/symmetric-affine-runner-tests-v1/stdout.txt",
+    "sha256": "9175b02609b5c0315f3fcc3921f6eb54c28339359070d4496c9825fc4c1ba229"
+  },
+  "terminal_chunk_id": "528ffe",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "runs/learning/wide-first-choice-v1/summary.script.py": "2ab48674b526ec6641a6c2366b669ac76bdeac1e8633331e01c772d4393edd39",
+    "scripts/refit_bilinear_budget.py": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "scripts/refit_bilinear_budget8000.py": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+    "scripts/refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "scripts/refit_membership_projection.py": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+    "scripts/refit_symmetric_affine.py": "a9899d4c494198afcf35346903f93bc39d5771d60a6711dc164d12a42ad11568",
+    "scripts/symmetric_affine_residual.py": "8c665818bbfb4306f954ce8b0d9cf67e64e1de2b6f883ee087f3fbe8b3037fbe",
+    "tests/fixtures/projection_refit_runtime_source.zip": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+    "tests/unit/test_symmetric_affine_residual.py": "4e31da60b02605f9a3abf1b21adb91549e9ead4dbe784513cf70abbe89d14c7f",
+    "tests/unit/test_symmetric_affine_runner.py": "cea63dc52749c398d9b2e4a2b50ec717879febde7befacd8731bd2b25ca97e34"
+  },
+  "tested_recipe_sha256": "5c86e154ce18078a2a12a9ff8d5ab619cfc02227b61ee09dbfadaa1cd3563035",
+  "tested_script_sha256": "a9899d4c494198afcf35346903f93bc39d5771d60a6711dc164d12a42ad11568",
+  "tests_passed": 192,
+  "tests_skipped": 0
+}

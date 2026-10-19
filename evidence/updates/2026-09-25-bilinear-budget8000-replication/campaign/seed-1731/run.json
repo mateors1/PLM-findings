@@ -1,0 +1,404 @@
+{
+  "config": {
+    "bilinear_residual_architecture": {
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "dimensions": [
+        "TYPE",
+        "COLOR"
+      ],
+      "dtype": "float32",
+      "id": "plm-frozen-symmetric-bilinear-residual-v1",
+      "initialization": "exact-zero",
+      "parameter": "symmetric_bilinear_residual",
+      "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+      "shape": [
+        2,
+        256,
+        256
+      ],
+      "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+    },
+    "bilinear_residual_recipe": {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "autocast": false,
+      "batching": "full-training-partition-in-split-order",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "data_split_seed": 1729,
+      "deterministic_algorithms": false,
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "entity_base": 1024,
+      "evaluator": "plm-bilinear-budget8000-replication-v1",
+      "experiment": "bilinear-budget8000-replication-v1",
+      "float32_matmul_precision": "highest",
+      "fresh_seeds": [
+        1730,
+        1731
+      ],
+      "gradient_accumulation": 1,
+      "gradient_clipping": null,
+      "historical_seed": 1729,
+      "initial_training_replay": "exact matching-parent versus actual zero-A full-training logits and loss",
+      "initialization": "exact-zero",
+      "loss_coefficient": 1.0,
+      "objective": "plm-bilinear-residual-balanced-bce-v1",
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "decay_excludes_norm_and_bias": true,
+        "eps": 1e-08,
+        "lr": 0.0003,
+        "name": "adamw",
+        "weight_decay": 0.0
+      },
+      "parameter_dtype": "float32",
+      "parent_training_steps": 2000,
+      "product_count": 1025,
+      "residual_shape": [
+        2,
+        256,
+        256
+      ],
+      "residual_updates": 8000,
+      "scheduler": null,
+      "schema_version": 1,
+      "seed_contracts": {
+        "1730": {
+          "floors": {
+            "exact_count": 212,
+            "f1": 0.9997931269673187,
+            "groups": {
+              "COLOR": 103,
+              "TYPE_dual": 58,
+              "TYPE_single": 51
+            }
+          },
+          "parent_checkpoint_sha256": "5c18bd06ed49302b5cff03422f831caa64cae757bdf11524f4d6892769da28b2",
+          "parent_config_sha256": "0eae5252ae9de2d1463992a319c43e695ae8bb4f24bfb2ae94acdf4da6033b31",
+          "width8_sha256": "0a398f2adb53877a188bf72d444c460398b1ac21e2f4317f23bc2948c0dcb88a"
+        },
+        "1731": {
+          "floors": {
+            "exact_count": 208,
+            "f1": 0.999668812076336,
+            "groups": {
+              "COLOR": 103,
+              "TYPE_dual": 54,
+              "TYPE_single": 51
+            }
+          },
+          "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+          "parent_config_sha256": "9e029d5fa280492a382b3b138eb5933a8ef8580c6a95a90deb0c87420c3601b3",
+          "width8_sha256": "a2004f3a8e98043f7e55fc775e0d33069a1a46a70b13f753a816a0d2ba2d7799"
+        }
+      },
+      "selection": "ascending-non-subject-product-ids-with-logit-strictly-positive",
+      "serialization_max_products": 506,
+      "serialization_min_products": 1,
+      "threshold": 0.0,
+      "train_query_count": 1637,
+      "trainable_parameter": "symmetric_bilinear_residual",
+      "validation_batch_size": 8,
+      "validation_query_count": 222
+    },
+    "campaign_version": "bilinear-budget8000-replication-v1",
+    "data_split_seed": 1729,
+    "implementation_identity": {
+      "budget8000_helper_sha256": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "replication_helper_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+      "runner_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+    },
+    "inherited_parent_config": {
+      "baseline": {
+        "complex": {
+          "batch_size": 32,
+          "dimension": 32,
+          "epochs": 100,
+          "learning_rate": 0.01,
+          "negative_samples": 1,
+          "regularization": 0.0
+        }
+      },
+      "data": {
+        "corpus_manifest": "data\\processed\\pokemon_v1_f1541479_20260924\\manifest.json",
+        "graph_db": "data/sqlite/pokemon_v1_f1541479_20260924.snapshot.db",
+        "held_out_query_fraction": null,
+        "name": "pokemon_v1_f1541479_20260924",
+        "protocol_version": "pokemon-v1",
+        "split_seed": 1729,
+        "test_query_fraction": 0.1,
+        "tokenizer_version": "pokemon-v1",
+        "validation_query_fraction": 0.1
+      },
+      "deterministic": false,
+      "eval": {
+        "constrained_decoding": true,
+        "device": "auto",
+        "filtered": false,
+        "first_target_guidance_alpha": 0.0,
+        "generation_batch_size": 1,
+        "hits_at": [
+          1,
+          3,
+          10
+        ],
+        "max_new_tokens": 507,
+        "metrics": [
+          "mrr",
+          "hits"
+        ],
+        "name": "ranking",
+        "prevent_repeated_targets": false,
+        "use_kv_cache": false
+      },
+      "model": {
+        "activation": "swiglu",
+        "attention": {
+          "backend": "sdpa",
+          "causal": true,
+          "dropout": 0.0,
+          "logit_soft_cap": null,
+          "qk_norm": true,
+          "sliding_window": null
+        },
+        "continuation_set_loss_weight": 0.0,
+        "dim": 256,
+        "dtype": "bf16",
+        "embed_dropout": 0.0,
+        "ffn_multiple": 2.6667,
+        "ffn_multiple_of": 256,
+        "first_target_loss_weight": 1.0,
+        "gradient_checkpointing": false,
+        "head_dim": null,
+        "init_std": 0.02,
+        "max_seq_len": 512,
+        "moe": {
+          "aux_loss_weight": 0.01,
+          "enabled": false,
+          "experts_per_token": 2,
+          "num_experts": 8,
+          "shared_experts": 0
+        },
+        "n_heads": 8,
+        "n_kv_heads": 2,
+        "n_layers": 8,
+        "name": "tiny_decoder",
+        "norm": "rmsnorm",
+        "norm_eps": 1e-05,
+        "prompt_set_loss_weight": 1.0,
+        "resid_dropout": 0.0,
+        "rope": {
+          "original_max_seq_len": null,
+          "scaling_factor": 1.0,
+          "scaling_type": "none",
+          "theta": 10000.0
+        },
+        "symmetric_relation_loss_weight": 1.0,
+        "tie_embeddings": true,
+        "use_mup": false,
+        "vocab_size": 2049,
+        "z_loss_weight": 0.0
+      },
+      "paths": {
+        "data_root": "data",
+        "run_root": "runs"
+      },
+      "run_name": "national_dex_continuation_control_s1731_v1",
+      "seed": 1731,
+      "train": {
+        "batch_size": 32,
+        "checkpoint_every": 500,
+        "compile": false,
+        "ema_decay": null,
+        "eval_every": 200,
+        "grad_accum_steps": 1,
+        "grad_clip_norm": 1.0,
+        "max_steps": 2000,
+        "name": "local_cuda",
+        "num_workers": 0,
+        "optimizer": {
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "decay_excludes_norm_and_bias": true,
+          "eps": 1e-08,
+          "lr": 0.0003,
+          "name": "adamw_fused",
+          "weight_decay": 0.1
+        },
+        "pin_memory": false,
+        "precision": "bf16",
+        "scheduler": {
+          "min_lr_ratio": 0.1,
+          "name": "cosine",
+          "warmup_steps": 200
+        },
+        "seq_len": 512
+      }
+    },
+    "seed": 1731
+  },
+  "identity": {
+    "checkpoint_hash": null,
+    "environment": {
+      "architecture": "plm-frozen-symmetric-bilinear-residual-v1",
+      "budget8000_helper_sha256": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.13",
+      "recipe_sha256": "20fad007be0d1852e86086229edc7c9c760117039f0685288d4e8e22f695075f",
+      "replication_helper_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+      "runner_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376",
+      "torch": "2.11.0+cu128"
+    },
+    "evaluator_version": "plm-bilinear-budget8000-replication-v1",
+    "graph_hash": "bcd363451618f1a83f33213098dff803507b8c02966c7bce08ea0c82ecab2a0d",
+    "protocol_version": "pokemon-v1",
+    "records_hash": "ba37b422b3be3dbbd9a4a2d9187ffdfdc06c3b0c2c7c59610a6123ee001e5185",
+    "repetitions": 1,
+    "resolved_config_hash": "0ed5f7f25ef85dfc68076f95d8e5300166f1a6b7b978a202854da5defb0f74b9",
+    "seeds": [
+      1731
+    ],
+    "source_commit": "cca97ffc5491eb1cfa28ac94532d34460a75812e",
+    "split_hash": "b8329e2f73e44f8948d343c8bc84247fedf6d004f342f0cd37880551fbb2603d",
+    "vocabulary_hash": "5e33d3d43a70f1c7e51e2bb4c4081af3f56ce288ba3a6b07a9a216b5bc3bdae2"
+  },
+  "training_metadata": {
+    "architecture": {
+      "dimension_token_ids": [
+        32,
+        33
+      ],
+      "dimensions": [
+        "TYPE",
+        "COLOR"
+      ],
+      "dtype": "float32",
+      "id": "plm-frozen-symmetric-bilinear-residual-v1",
+      "initialization": "exact-zero",
+      "parameter": "symmetric_bilinear_residual",
+      "score_order": "stack-linear-entities-gather-subject-linear-products-divide16-add-archived-parent-v1",
+      "shape": [
+        2,
+        256,
+        256
+      ],
+      "symmetrization": "(A+A.transpose(-1,-2))*0.5"
+    },
+    "budget8000_helper_sha256": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+    "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+    "campaign_version": "bilinear-budget8000-replication-v1",
+    "data_split_seed": 1729,
+    "evaluator": "plm-bilinear-budget8000-replication-v1",
+    "final_post_update_loss": 1.9348922251083422e-06,
+    "implementation_identity": {
+      "budget8000_helper_sha256": "cd593c14c429247837c26b09754509d5cfd1dd36adb317f56522a80a78a25122",
+      "budget_helper_sha256": "f4376d4f2d838938bb9f50ae0cfa16ef319639fa0ce917c9fea3b842c0018930",
+      "configs_archive_sha256": "51f06619d9b2b37d47dc8a3f7f84de1d292aec36481c64d4c48d0d854e44b970",
+      "mean_helper_sha256": "79299541b9ccf3cebe1562194a3a9e85a1027bf69e0347701d92eedb8b7ee63c",
+      "replication_helper_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+      "runner_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+      "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+      "source_archive_sha256": "1d74e018836cc4e87a8eb46428c0d710492b8dd90ba3b11231115711bcde5376"
+    },
+    "initial_pre_update_loss": 0.004869009833782911,
+    "initial_state_sha256": "f4042c5a29fc5629cef097d340c8f6d8d95a5f86d5661da1bd2b003d36d6fd9d",
+    "model_config": {
+      "activation": "swiglu",
+      "attention": {
+        "backend": "sdpa",
+        "causal": true,
+        "dropout": 0.0,
+        "logit_soft_cap": null,
+        "qk_norm": true,
+        "sliding_window": null
+      },
+      "continuation_set_loss_weight": 0.0,
+      "dim": 256,
+      "dtype": "bf16",
+      "embed_dropout": 0.0,
+      "ffn_multiple": 2.6667,
+      "ffn_multiple_of": 256,
+      "first_target_loss_weight": 1.0,
+      "gradient_checkpointing": false,
+      "head_dim": null,
+      "init_std": 0.02,
+      "max_seq_len": 512,
+      "moe": {
+        "aux_loss_weight": 0.01,
+        "enabled": false,
+        "experts_per_token": 2,
+        "num_experts": 8,
+        "shared_experts": 0
+      },
+      "n_heads": 8,
+      "n_kv_heads": 2,
+      "n_layers": 8,
+      "name": "tiny_decoder",
+      "norm": "rmsnorm",
+      "norm_eps": 1e-05,
+      "prompt_set_loss_weight": 1.0,
+      "resid_dropout": 0.0,
+      "rope": {
+        "original_max_seq_len": null,
+        "scaling_factor": 1.0,
+        "scaling_type": "none",
+        "theta": 10000.0
+      },
+      "symmetric_relation_loss_weight": 1.0,
+      "tie_embeddings": true,
+      "use_mup": false,
+      "vocab_size": 2049,
+      "z_loss_weight": 0.0
+    },
+    "model_config_scope": "inherited archived base only; residual architecture is separate",
+    "objective": "plm-bilinear-residual-balanced-bce-v1",
+    "parent_checkpoint_sha256": "ca2a9ac885c5cc872365f7d505d25a3737a84e38d8ecdb5b5b0009f977dd365d",
+    "parent_state_sha256": "c3541732931a0180fc3db5b00f1224f330112df36cce4159207352b188b1ec6b",
+    "parent_training_steps": 2000,
+    "recipe_sha256": "20fad007be0d1852e86086229edc7c9c760117039f0685288d4e8e22f695075f",
+    "record_count": 1637,
+    "replication_helper_sha256": "24fc43fc7d31ec1bf7aa84b475af79198717fbb6e34f41453939a3da49e9fdde",
+    "residual_updates": 8000,
+    "runner_sha256": "5da5ad02365f72f5e8a7123183d0b5d2f56e50c3538e64e2ac984e2b491230dd",
+    "scorer_sha256": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "seed": 1731,
+    "standard_serving_supported": false,
+    "train_query_order_sha256": "7ef5ca0d3bb2440f4f3a4596d40fba65f25fd0ed423aaa32a4f119512938653e",
+    "trainable_parameters": [
+      "symmetric_bilinear_residual"
+    ],
+    "training_prefix_diagnostic": {
+      "all_pre_update_equal": true,
+      "boundary_loss_equal": true,
+      "current_pre_update_2001_loss": 4.3502172047737986e-05,
+      "descriptive_only": true,
+      "first_mismatch_update": null,
+      "historical_final_post_update_loss": 4.3502172047737986e-05,
+      "mismatch_count": 0,
+      "pre_update_compared_count": 2000,
+      "used_for_selection_or_updates": false
+    }
+  }
+}

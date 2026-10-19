@@ -1,0 +1,9 @@
+{
+  "audit_sha256": "2c8e3aafdfc080aed3360fc522cd3fc2fafc72370b6285748d3d0728015906b6",
+  "cuda_visible_devices": "-1",
+  "exit_code": 0,
+  "stdout_sha256": "4fe48ba4692ee1c17b207d596944786f714a10f90e8a54797dcf816371ba841d",
+  "summary_sha256": "9bbe66e996cbd983c87566fc765c47459d9bcde9022d733fda06b40f3883fc99",
+  "terminal_chunk_id": "899dfc",
+  "terminal_completion_observed_by_primary": true
+}

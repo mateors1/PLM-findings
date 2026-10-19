@@ -1,0 +1,19 @@
+{
+  "alternative_predictions_generated": false,
+  "audit_sha256": "1b10b77db77ebb79b5f1327bcc1538331eb876216c424036a516a0ac04cdba96",
+  "auditor_sha256": "6a7321f0ec0d0ddb644f04b617667e40b349170ab34dc6822a8ebbde45ac0cad",
+  "basis": "Independent reconstruction of saved-score reductions; upstream accepted audits remain authority for saved labels and scores. No neural replay.",
+  "campaign_version": "bilinear-error-geometry-v1",
+  "date": "2026-09-25",
+  "decision_script_sha256": "87367ea40ce67246f5ba207d828b20034ee277ee9e7ff10af7855b6a9de7635b",
+  "evidence_accepted": true,
+  "execution_receipt_sha256": "708f34ae8f1498559c53561b936b92adeb82bc707b4135b13b7e7c2af1fb438d",
+  "new_checkpoint_created": false,
+  "policy_promoted": false,
+  "posthoc_validation_diagnostic": true,
+  "protected_test_used": false,
+  "quality_gate_applicable": false,
+  "registered_final_count_unchanged": 33,
+  "summary_sha256": "1a38b93a27a77eb597637798be4f8b24ef858c546d6a7c25aed8ba8f85a99606",
+  "threshold_selected": false
+}

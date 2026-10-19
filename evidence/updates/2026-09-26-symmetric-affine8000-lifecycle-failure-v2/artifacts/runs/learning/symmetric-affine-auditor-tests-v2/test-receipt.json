@@ -1,0 +1,41 @@
+{
+  "command": "uv run --no-sync pytest tests/unit/test_symmetric_affine_audit_v2.py -o addopts= -q",
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "independent_source_review": {
+    "cleared": true,
+    "reported_chunk": "ae2e8a",
+    "reported_exit_code": 0,
+    "source_sha256": "6b0eb73eb4985c4482221bb7be1f385a0df58a4232d61855e316e117ac8b40f1",
+    "targeted_tests_deselected": 84,
+    "targeted_tests_passed": 35
+  },
+  "input_adapter_identity": "plm-authenticated-partition-membership-v1",
+  "input_amendment_sha256": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+  "passed": true,
+  "plan_sha256": "d102c6d00ab536b89c0a0021097976fb997831184a4e4c2db82d172a4c61a19a",
+  "recorded_utc": "2026-09-26T13:40:25.090907+00:00",
+  "repair_declaration_sha256": "8ac4fbc66d40bf26e249d0ee9a0cd9117d06653e762552629c98e2b53a2c5a18",
+  "scope": "Synthetic CPU only. No actual data, real payload, audit, production preflight or neural execution.",
+  "stdout": {
+    "path": "runs/learning/symmetric-affine-auditor-tests-v2/stdout.txt",
+    "sha256": "8fd4a884495d42cb84abdcb39346c8caa2fae44c6e09d3c3e3f94d294a2482d1"
+  },
+  "terminal_chunk_id": "10826d",
+  "terminal_completion_observed": true,
+  "test_dependencies": {
+    "docs/experiments/2026-09-26-symmetric-affine-input-amendment.md": "bb139d6903104794770f4cc0006f72002716e907a0e1ff3167d425a56caf810f",
+    "docs/experiments/2026-09-26-symmetric-affine-plan.md": "d102c6d00ab536b89c0a0021097976fb997831184a4e4c2db82d172a4c61a19a",
+    "docs/experiments/2026-09-26-symmetric-affine-runtime-repair-v2.md": "8ac4fbc66d40bf26e249d0ee9a0cd9117d06653e762552629c98e2b53a2c5a18",
+    "runs/learning/bilinear-budget2000-v1/independent-audit.py": "c674cf8e4a3ab2056ca4a02746ee55ead639e2a10e6b208525cb0e9dc906d1dc",
+    "runs/learning/bilinear-residual-refit-v1/independent-audit.py": "a046a1e45b3c977fc556ecc74358d64e2b9d0463ebf653c7b7f7c86aed61622b",
+    "runs/learning/projection-only-refit-v1/independent-audit.py": "78d81a14d666549dd1f6419a7d78792073141a59a729135bc32ac84c88c6ce4a",
+    "runs/learning/symmetric-affine8000-v2/independent-audit.py": "6b0eb73eb4985c4482221bb7be1f385a0df58a4232d61855e316e117ac8b40f1",
+    "tests/unit/test_symmetric_affine_audit_v2.py": "3a08613fc193cfcaa7302a93ebb8b62d055a2c0d3064632a2c283241a32a528b"
+  },
+  "tested_script_sha256": "6b0eb73eb4985c4482221bb7be1f385a0df58a4232d61855e316e117ac8b40f1",
+  "tested_tests_sha256": "3a08613fc193cfcaa7302a93ebb8b62d055a2c0d3064632a2c283241a32a528b",
+  "tests_passed": 119,
+  "tests_skipped": 0
+}

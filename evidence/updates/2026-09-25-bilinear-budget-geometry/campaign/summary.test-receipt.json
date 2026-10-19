@@ -1,0 +1,35 @@
+{
+  "chain_only_preflight": {
+    "input_count": 35,
+    "passed": true,
+    "reductions_executed": false,
+    "torch_imported": false
+  },
+  "command": "uv run --no-sync pytest -o addopts='' -q tests/unit/test_bilinear_budget_geometry.py tests/unit/test_bilinear_error_geometry.py",
+  "diagnostic_executed": false,
+  "exit_code": 0,
+  "experiment_training_executed": false,
+  "gpu_used": false,
+  "new_test_count": 52,
+  "observed_terminal_chunk": "58dba0",
+  "passed": true,
+  "reused_test_count": 38,
+  "ruff_check_passed": true,
+  "ruff_format_check_passed": true,
+  "skipped": 0,
+  "stdout": {
+    "path": "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\runs\\learning\\bilinear-budget-geometry-runner-tests-v1\\stdout.txt",
+    "sha256": "1fbb3ab24ca8359fd27acd998c9a7e62d8e041cf750cc5362ec1e8a4d2361335"
+  },
+  "terminal_completion_observed": true,
+  "test_count": 90,
+  "test_dependencies": {
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_budget_geometry.py": "28a3e5f8491d1f3a903e3026d94d70643bfdcf4dd04b2033673c80f120d7f92d",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\scripts\\diagnose_bilinear_errors.py": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_budget_geometry.py": "349717196c02b243a7828961b8f3579b90f82a19d6486f7ff427479ffc2a02aa",
+    "C:\\Users\\mateo\\Documents\\Github\\Plm-protocolized-language-model-pika-edition\\tests\\unit\\test_bilinear_error_geometry.py": "fa86417c9e40298bc7a87d4a7b7ff81fc078bf87b514b28fe8ddb57f58b39580"
+  },
+  "test_sha256": "349717196c02b243a7828961b8f3579b90f82a19d6486f7ff427479ffc2a02aa",
+  "tested_helper_sha256": "66093bfbd06c8622b61535eeaffd0b09886c0cee05ec9eae71292a6e85925789",
+  "tested_script_sha256": "28a3e5f8491d1f3a903e3026d94d70643bfdcf4dd04b2033673c80f120d7f92d"
+}
