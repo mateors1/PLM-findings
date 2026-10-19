@@ -86,7 +86,7 @@ The repository's GitHub Sponsor button is configured in [`.github/FUNDING.yml`](
 
 ## Additional audited updates (2026-10-18)
 
-The [canonical paper, revision v0010](PAPER.md) and [immutable paper history](paper-history/README.md) preserve the current synthesis and preceding revisions. These updates do not promote a model or open the protected test partition.
+The [canonical paper, revision v0011](PAPER.md) and [immutable paper history](paper-history/README.md) preserve the current synthesis and preceding revisions. These updates do not promote a model or open the protected test partition.
 
 - [A stronger matched HTTP baseline](papers/2026-10-18-cached-http-w1.md): serializing SQLite execution removes the earlier measured cached-model serving advantage in the tested setting.
 - [Held-out queries and supervised pairs](papers/2026-10-18-bilinear-pair-coverage.md): reverse training queries directly supervise 79.84% of the eligible validation candidate pairs; all eight remaining membership mistakes lack that coverage. This is a descriptive limitation, not a causal explanation or a new trained model.
@@ -94,3 +94,6 @@ The [canonical paper, revision v0010](PAPER.md) and [immutable paper history](pa
 - [Symmetric affine offsets](papers/31-symmetric-affine-offsets.md): the fixed gate rejects this intervention; execution failures and negative results remain preserved.
 
 Historical experiment papers and their dated evidence are retained alongside the 14 synthesis papers linked above. The source webapp, local uploads, model weights and private records are not included in this public findings update.
+
+
+[Shared entity offsets](papers/2026-10-18-bilinear-entity-offsets.md) records the accepted matched 660/666 to666/666 development result, with repeated-query and serving limitations.

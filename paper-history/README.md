@@ -19,7 +19,8 @@ it and does not move or rewrite source files.
 | `PAPER-v0007` | 2026-10-02 (America/Bogota) | `PAPER-v0006` | Superseded by `PAPER-v0008`; exact archived SHA256 `d5612ec895746e27c6e22b03420c086e21cf223ecf033545cb78cbab8ea8478d` | [PAPER-v0007-2026-10-02.md](PAPER-v0007-2026-10-02.md) |
 | `PAPER-v0008` | 2026-10-02 (America/Bogota) | `PAPER-v0007` | Superseded by `PAPER-v0009`; exact archived SHA256 `87981f0f68d164cc420a0b9e5fb071d243f560343775a42caffcdf76c0b320a8` | [PAPER-v0008-2026-10-02.md](PAPER-v0008-2026-10-02.md) |
 | `PAPER-v0009` | 2026-10-18 (America/Bogota) | `PAPER-v0008` | Superseded by `PAPER-v0010`; exact archived SHA256 `5b91d9f164119953ede546539657e512c4660e42100df89afe21b1403b817a60` | [PAPER-v0009-2026-10-18.md](PAPER-v0009-2026-10-18.md) |
-| `PAPER-v0010` | 2026-10-18 (America/Bogota) | `PAPER-v0009` | Current; adds accepted reverse-query supervision diagnostic and query-holdout limitation | Root [`PAPER.md`](../PAPER.md) |
+| `PAPER-v0010` | 2026-10-18 (America/Bogota) | `PAPER-v0009` | Superseded by `PAPER-v0011`; exact archived SHA256 `21477f22653da6f843b369078b57e6494b8bb072800844ea3e088806e3d3b9eb` | [PAPER-v0010-2026-10-18.md](PAPER-v0010-2026-10-18.md) |
+| `PAPER-v0011` | 2026-10-18 (America/Bogota) | `PAPER-v0010` | Current; retains accepted entity-offset development-quality candidate, 666/666 versus matched controls 660/666; no promotion or serving admission | Root [`PAPER.md`](../PAPER.md) |
 
 Before replacing the current revision, copy its exact bytes to a unique,
 versioned file in this directory and verify the archived checksum. Never
@@ -28,14 +29,15 @@ version, date, predecessor, and evidence cutoff.
 
 ## Retained model and evidence map
 
-| Topic | Status in `PAPER-v0010` | Source evidence |
+| Topic | Status in `PAPER-v0011` | Source evidence |
 | --- | --- | --- |
 | Pokémon-only protocol, hidden graph attributes, `TYPE/COLOR SAME` | Retained scope; the graph compiler is the exact v1 oracle | [`protocol-spec.md`](../docs/protocol-spec.md), [`data/evaluation`](../docs/learning/02-data-and-evaluation.md), [`research_log.md`](../research_log.md) |
 | Prompt-set supervision | Retained in the reference checkpoint recipe; three-seed validation gain, not generalization | [`seed replication report`](../docs/experiments/2026-09-24-seed-replication.json), [`Lesson 6`](../docs/learning/06-seed-replication.md) |
 | Symmetric product-membership head and four-path selector | Implemented and used by the application-reference experiments; selection remains opt-in | [`symmetric relation lesson`](../docs/learning/11-symmetric-relations.md), [`set-selection integration`](../docs/learning/24-integrating-set-selection.md), [`model register`](../docs/model-versions.md) |
 | Pairwise unions of candidate sets | Accepted opt-in policy; 569/666 exact on the three-seed fixed validation split; no oracle parity | [`Lesson 25`](../docs/learning/25-composing-candidate-sets.md), [`shape-aware v2 receipt`](../docs/experiments/2026-09-25-pair-composition-shape-aware.json), [`Lesson 29`](../docs/learning/29-shape-aware-verification.md) |
 | Bilinear 8,000-update residual replication | Accepted validation candidate; not retained or supported by ordinary serving | [`replication plan`](../docs/experiments/2026-09-25-bilinear-budget8000-replication-plan.md), [`portable result`](../docs/experiments/2026-09-25-bilinear-budget8000-replication.json), [`audit repair`](../docs/experiments/2026-09-25-bilinear-budget8000-replication-evidence-repair.md), [`Lesson 48`](../docs/learning/48-testing-a-budget-across-parent-seeds.md), [`model register`](../docs/model-versions.md) |
-| Bilinear 32,000-update learning candidate | Best accepted validation finding at 660/666 versus 650/666 for the 8,000-update candidate; six residual errors are dual-`TYPE`. It remains unpromoted and outside ordinary decoder inference; the repeated seed-query outcomes use the same 222 validation questions. | [`model register`](../docs/model-versions.md) |
+| Bilinear 32,000-update learning candidate | Earlier accepted validation finding at 660/666 versus 650/666 for the 8,000-update candidate; its six residual errors are dual-`TYPE`. The offset experiment supersedes this quality result, while these original checkpoints retain their separate serving evidence. It remains unpromoted and outside ordinary decoder inference; the repeated seed-query outcomes use the same 222 validation questions. | [`model register`](../docs/model-versions.md) |
+| Shared entity-offset learning candidate | Accepted matched development-quality finding: controls 218/222, 222/222, 220/222 versus treatments 222/222 for all three seeds, six paired gains and no losses; all seed/group gates pass. These are repeated outcomes on 222 adaptively reused known-entity queries. Protected 191 remain closed; no model promotion or serving admission. Prior cached-serving latency and HTTP evidence cannot transfer. | [`report`](../docs/experiments/2026-10-18-bilinear-entity-offset-report.md), [`evidence`](../docs/experiments/2026-10-18-bilinear-entity-offset-evidence.json), [`audit`](../docs/experiments/2026-10-18-bilinear-entity-offset-audit.json), [`review`](../docs/experiments/2026-10-18-bilinear-entity-offset-review.json), [`decision`](../docs/experiments/2026-10-18-bilinear-entity-offset-decision.json), [`Lesson 62`](../docs/learning/62-learning-entity-corrections.md) |
 | Dense-set CPU serving integration | Accepted integration of the same three 32,000-update checkpoints; 1,332 score-row comparisons and 666 in-process HTTP requests preserve the existing 660/666 selections. It adds no quality gain, GPU/network capacity, or serving advantage. | [`integration report`](../docs/experiments/2026-10-02-dense-serving-integration-report.md), [`Lesson 53`](../docs/learning/53-from-learned-scores-to-a-serving-contract.md), [`readiness`](../runs/learning/dense-serving-preparation-v1/readiness-v1/readiness.json), [`summary`](../runs/learning/dense-set-serving-integration-v1/summary.json), [`audit`](../runs/learning/dense-set-serving-integration-v1/independent-audit.json), [`decision`](../runs/learning/dense-set-serving-integration-v1/decision.json) |
 | Uncached dense scorer direct-call cost | Audited negative performance evidence for the warm CPU B1 complete-set path: median paired dense/SQLite ratios 12.77–13.08 across three seeds; dense selections remain 218/222, 222/222, and 220/222. A separate warm answer-cache lookup is prepared-answer reuse, not live query computation. This does not establish HTTP, concurrency, energy, or a general speed limit. | [`direct-call report`](../docs/experiments/2026-10-02-dense-oracle-direct-report.md), [`Lesson 54`](../docs/learning/54-what-a-latency-number-measures.md), [`summary`](../runs/learning/dense-oracle-direct-v1/summary.json), [`audit`](../runs/learning/dense-oracle-direct-v1/independent-audit.json), [`read-only review`](../runs/learning/dense-oracle-direct-v1/independent-review.json), [`decision`](../runs/learning/dense-oracle-direct-v1/decision.json) |
 | Dense feature-cache candidate | Accepted experimental policy; passed exact-score and predeclared latency gates, using 6.37–6.64% of same-run unchanged scorer time. It remains 1.135–1.190× live SQLite and preserves the six learned errors. The later cached-serving integration adds the optional application path without changing model quality. Both baseline arms were slower than in the previous run for an unmeasured reason, so performance claims remain within-run paired. | [`feature-cache report`](../docs/experiments/2026-10-02-dense-feature-cache-report.md), [`Lesson 55`](../docs/learning/55-caching-features-without-caching-answers.md), [`summary`](../runs/learning/dense-feature-cache-v1/summary.json), [`audit`](../runs/learning/dense-feature-cache-v1/independent-audit.json), [`review`](../runs/learning/dense-feature-cache-v1/independent-review.json), [`decision`](../runs/learning/dense-feature-cache-v1/decision.json) |
@@ -67,8 +69,9 @@ checkpoint inventory. Checkpoint hashes establish artifact identity, not
 durable storage or public availability. The 8,000-update candidate's results
 are reported separately from the application-reference checkpoints and the
 default decoder policy. The 32,000-update candidate supersedes the 8,000-update
-candidate as the best accepted validation finding, but neither is promoted to
-the retained decoder. The dense-set integration is a separate CPU application
+candidate as the best accepted validation finding at that stage; the later
+entity-offset candidate improves matched development quality to 666/666. None of
+these learning candidates is promoted to the retained decoder. The dense-set integration is a separate CPU application
 path over the 32,000-update checkpoints; it preserves their predictions and
 does not change the candidate's scientific or promotion status.
 The later `dense-feature-cache-v1` selected a distinct experimental policy that
@@ -88,7 +91,8 @@ preserves the earlier state in which that direct comparison was still pending.
 This table preserves a proposed source-to-destination path map for a prior
 `PAPER-v0002` projection. It is not evidence that the projection was published,
 and it does not cover `PAPER-v0003`, `PAPER-v0004`, `PAPER-v0005`,
-`PAPER-v0006`, `PAPER-v0007`, `PAPER-v0008`, the current `PAPER-v0009`, or their added evidence.
+`PAPER-v0006`, `PAPER-v0007`, `PAPER-v0008`, `PAPER-v0009`, `PAPER-v0010`,
+the current `PAPER-v0011`, or their added evidence.
 Any external projection must be established from its own validated packet and
 publication receipt; adapted links are not byte-identical to source files.
 
@@ -124,3 +128,24 @@ ready queue packet proves publication.
 ## 2026-10-18 — Pair-coverage finding retained
 
 `PAPER-v0010` adds the accepted [pair-coverage result](../docs/experiments/2026-10-18-bilinear-pair-coverage-report.md): all eight saved membership errors lack reverse training-query coverage; 79.84% of eligible validation pairs have it. This qualifies query-held-out generalization without changing the model. The [failed preparation](../runs/learning/bilinear-pair-coverage-preparation-v1/failed-preparation-attempt-v1/failure-record.json), exact original source/test/plan snapshots and superseding source review remain preserved. It was an adapter failure, not a negative learning result.
+
+## 2026-10-18 — Matched entity-offset quality candidate retained
+
+`PAPER-v0011` incorporates the accepted `bilinear-entity-offset32000-v1`
+experiment: six fresh fits, 660/666 control versus 666/666 treatment exact
+seed/query outcomes, six gains and no losses, with all seed/group nonregression
+checks passing. The [report](../docs/experiments/2026-10-18-bilinear-entity-offset-report.md),
+[aggregate audit](../docs/experiments/2026-10-18-bilinear-entity-offset-audit.json),
+[independent review](../docs/experiments/2026-10-18-bilinear-entity-offset-review.json)
+and [owner decision](../docs/experiments/2026-10-18-bilinear-entity-offset-decision.json)
+retain the acceptance boundary: development-quality candidate only, repeated 222
+known-entity queries, protected 191 closed, no promotion or serving admission.
+The prior SQLite/W1 negative performance finding remains in the canonical paper;
+its checkpoint-specific measurements cannot be transferred to the new offsets.
+
+The exact `PAPER-v0010` bytes, including their original encoding defects, are
+preserved above. Revision 11 corrects only the identified mojibake sequences in
+its new text, updates the stale identity-ledger paper row, and separates the new
+quality result from the older serving identities. The frozen parent and updated
+residual arithmetic, numerical replay differences and training-exactness limits
+are synthesized without altering the underlying immutable experiment evidence.

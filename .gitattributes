@@ -47,3 +47,9 @@ papers/*.md text eol=lf
 # Frozen diagnostic output and embedded Markdown retain authenticated spaces.
 /evidence/updates/16id-fp32-vram-series-v1/originals/runs/learning/16id-serving-saturation-20260926/plot_fp32_vram_series.py whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /evidence/updates/2026-09-25-bilinear-seed-replication/verification/runner/pre-freeze-aggregate-regression.txt whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Preserve frozen entity-offset and canonical-paper snapshot bytes.
+/PAPER.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/PAPER-v0010-2026-10-18.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/paper-history/README.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/2026-10-18-bilinear-entity-offsets.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
