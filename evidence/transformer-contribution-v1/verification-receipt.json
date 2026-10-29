@@ -1,0 +1,10 @@
+{
+  "tests": 226,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "ruff_check": true,
+  "ruff_format_check": true,
+  "strict_mypy_files": 3,
+  "xml_sha256": "ce6122b243e5922eda9c9c92d0aea0725f6149593cee38ff36103d9a361bff8c"
+}

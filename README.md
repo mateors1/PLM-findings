@@ -97,3 +97,6 @@ Historical experiment papers and their dated evidence are retained alongside the
 
 
 [Shared entity offsets](papers/2026-10-18-bilinear-entity-offsets.md) records the accepted matched 660/666 to666/666 development result, with repeated-query and serving limitations.
+
+
+[Transformer contribution](papers/2026-10-20-transformer-contribution.md): relation-only pretraining matches the historical joint reference at 666/666 repeated development outcomes; random-parent adaptation reaches 662/666. Same222 queries, protected191 closed, no serving promotion.

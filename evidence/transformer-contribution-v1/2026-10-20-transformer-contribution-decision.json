@@ -1,0 +1,53 @@
+{
+  "archived": [
+    "Random-parent arm as informative near-match failing all-seeds exactness.",
+    "Failed attempt1 optimizer reload verification, its executed sources and repair record.",
+    "Exact PAPER-v0011 bytes before PAPER-v0012."
+  ],
+  "audit_sha256": "1de8c45e7469300149db3b738c28146b80ee8543d8ffb363da679a5e1ebdd068",
+  "campaign": "transformer-contribution-v1",
+  "closure_audit_sha256": "90437659f953e4b03d69ab9ad00b430151aa27e00dec3baddee25a8e0b8b244c",
+  "cpu_replay_sha256": "f35bd10cc38b3a7aef3f1ba1012c35a36e1790a25b98745bc9f110135a8b3186",
+  "date": "2026-10-20",
+  "decided_at_utc": "2026-10-21T00:24:16.233709+00:00",
+  "decision_owner": "Primary research agent under user instruction to finish audit, document retention and publish; not a claim of independent human scientific review.",
+  "distinct_development_queries": 222,
+  "evidence_accepted": true,
+  "execution_attempt": "transformer-contribution-attempt2-v1",
+  "experiment_complete": true,
+  "historical_summary_status": "audit_pending=true retained unchanged; superseded for closure by this decision and hash-linked audit/review.",
+  "independent_review_complete": true,
+  "joint_exact": 666,
+  "limits": [
+    "Removes both transformer-dependent objectives, not attention alone.",
+    "Historical joint comparator; no equal-compute or population-level claim.",
+    "Same222 adaptively reused known-entity queries; candidate/reverse-query supervision remains relevant.",
+    "No unseen-entity, protected-test, serving-performance or production evidence.",
+    "No new scientific training at closure; synthetic lifecycle tests exercise toy training only."
+  ],
+  "model_promoted": false,
+  "portable_evidence_sha256": "21ae60cb33b839ef759d24682ebf9c9ff353973dfe19ffa97c71c46fe2aaa910",
+  "primary_relation_only_match_gate_passed": true,
+  "protected_queries": 191,
+  "protected_test_used": false,
+  "publication_status": "ready_for_scoped_handoff; publication success requires separate receipt",
+  "random_parent_exact": 662,
+  "random_parent_match_gate_passed": false,
+  "relation_only_exact": 666,
+  "retained": [
+    "Stable protocol, deterministic oracle and protected evaluation boundary.",
+    "Relation-only pretraining plus entity-offset adaptation as development-validated alternative.",
+    "Original joint checkpoints/transformer decoder as reference and interactive path; existing serving defaults unchanged."
+  ],
+  "review_sha256": "7c7504f628511f094b0d4166517a2aa5d6d3ca356549c3dce6defefc824340f3",
+  "schema_version": 1,
+  "seeds": [
+    1729,
+    1730,
+    1731
+  ],
+  "serving_default_changed": false,
+  "summary_sha256": "af70124cca583591e566838aceb7b6effef3facb66096985a986babf7667e633",
+  "superseded_assumption": "Transformer-dependent pretraining is necessary to attain this observed development target.",
+  "weights_published": false
+}

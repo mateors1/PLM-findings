@@ -20,7 +20,8 @@ it and does not move or rewrite source files.
 | `PAPER-v0008` | 2026-10-02 (America/Bogota) | `PAPER-v0007` | Superseded by `PAPER-v0009`; exact archived SHA256 `87981f0f68d164cc420a0b9e5fb071d243f560343775a42caffcdf76c0b320a8` | [PAPER-v0008-2026-10-02.md](PAPER-v0008-2026-10-02.md) |
 | `PAPER-v0009` | 2026-10-18 (America/Bogota) | `PAPER-v0008` | Superseded by `PAPER-v0010`; exact archived SHA256 `5b91d9f164119953ede546539657e512c4660e42100df89afe21b1403b817a60` | [PAPER-v0009-2026-10-18.md](PAPER-v0009-2026-10-18.md) |
 | `PAPER-v0010` | 2026-10-18 (America/Bogota) | `PAPER-v0009` | Superseded by `PAPER-v0011`; exact archived SHA256 `21477f22653da6f843b369078b57e6494b8bb072800844ea3e088806e3d3b9eb` | [PAPER-v0010-2026-10-18.md](PAPER-v0010-2026-10-18.md) |
-| `PAPER-v0011` | 2026-10-18 (America/Bogota) | `PAPER-v0010` | Current; retains accepted entity-offset development-quality candidate, 666/666 versus matched controls 660/666; no promotion or serving admission | Root [`PAPER.md`](../PAPER.md) |
+| `PAPER-v0011` | 2026-10-18 (America/Bogota) | `PAPER-v0010` | Superseded by `PAPER-v0012`; exact archived SHA256 `117782f02c5074302d3f4faf4df1fe67d59b38632db08948b9b2dccd02f1f76e` | [PAPER-v0011-2026-10-18.md](PAPER-v0011-2026-10-18.md) |
+| `PAPER-v0012` | 2026-10-20 (America/Bogota) | `PAPER-v0011` | Current; retains a relation-only development-validated alternative; no promotion, protected-test claim, or serving admission | Root [`PAPER.md`](../PAPER.md) |
 
 Before replacing the current revision, copy its exact bytes to a unique,
 versioned file in this directory and verify the archived checksum. Never
@@ -29,7 +30,7 @@ version, date, predecessor, and evidence cutoff.
 
 ## Retained model and evidence map
 
-| Topic | Status in `PAPER-v0011` | Source evidence |
+| Topic | Status in `PAPER-v0012` | Source evidence |
 | --- | --- | --- |
 | Pokémon-only protocol, hidden graph attributes, `TYPE/COLOR SAME` | Retained scope; the graph compiler is the exact v1 oracle | [`protocol-spec.md`](../docs/protocol-spec.md), [`data/evaluation`](../docs/learning/02-data-and-evaluation.md), [`research_log.md`](../research_log.md) |
 | Prompt-set supervision | Retained in the reference checkpoint recipe; three-seed validation gain, not generalization | [`seed replication report`](../docs/experiments/2026-09-24-seed-replication.json), [`Lesson 6`](../docs/learning/06-seed-replication.md) |
@@ -47,6 +48,8 @@ version, date, predecessor, and evidence cutoff.
 | Cached HTTP against selected SQLite W1 | Accepted fresh comparison: SQLite passes all nine throughput/p95 pairs at C2/C4/C8/C16; C1 mixed; no cached advantage. Both meet 100 ms p95 through C16, a lower bound. All 81,252 requests and traces were checked; unchanged cached quality is 218/222, 222/222, and 220/222. No model promotion, energy result, or globally optimal worker count. | [`report`](../docs/experiments/2026-10-18-cached-http-w1-report.md), [`portable evidence`](../docs/experiments/2026-10-18-cached-http-w1-portable-evidence.json), [`plan`](../docs/experiments/2026-10-18-cached-http-w1-plan.md), [`readiness`](../runs/learning/cached-http-w1-preparation-v1/readiness-v1/readiness.json), [`summary`](../runs/learning/cached-http-w1-v1/summary.json), [`audit`](../runs/learning/cached-http-w1-v1/independent-audit.json), [`review`](../runs/learning/cached-http-w1-v1/independent-review.json), [`decision`](../runs/learning/cached-http-w1-v1/decision.json) |
 | Native PLM versus SQLite oracle | Contrary, nonmatched-quality serial serving result; graph exactness and speed lead | [`portable report`](../docs/experiments/2026-09-25-native-graph-oracle.json), [`plan`](../docs/experiments/2026-09-25-native-graph-oracle-plan.md) |
 | Graph-only concurrent CPU saturation | Added graph capacity baseline: 954.2 servings/s at one client and 435.4–460.9/s at concurrency 8–128; concurrent package medians 104.1–110.9 W. The user-specified +120 W is arithmetic, not measured wall power; no matched concurrent PLM result | [`report`](../docs/experiments/2026-09-26-graph-cpu-saturation-offset120-report.md), [`portable result`](../docs/experiments/2026-09-26-graph-cpu-saturation-offset120.json), [`audit`](../docs/experiments/2026-09-26-graph-cpu-saturation-offset120-audit.json), [`decision`](../docs/experiments/2026-09-26-graph-cpu-saturation-offset120-decision.json), [`plan`](../docs/experiments/2026-09-26-graph-cpu-saturation-offset120-plan.md) |
+
+| Transformer contribution | Relation-only pretraining matches the historical joint reference across three seeds on the same 222 development queries; random-parent adaptation reaches 662/666. This is a development alternative, not an attention-only causal result, protected-test generalization, model promotion, or serving advantage. | [`experiment paper`](../papers/2026-10-20-transformer-contribution.md), [`portable evidence`](../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-evidence.json), [`review`](../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-review.json), [`decision`](../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-decision.json) |
 
 ## Superseded methods, negative results, and contrary evidence
 
@@ -92,7 +95,7 @@ This table preserves a proposed source-to-destination path map for a prior
 `PAPER-v0002` projection. It is not evidence that the projection was published,
 and it does not cover `PAPER-v0003`, `PAPER-v0004`, `PAPER-v0005`,
 `PAPER-v0006`, `PAPER-v0007`, `PAPER-v0008`, `PAPER-v0009`, `PAPER-v0010`,
-the current `PAPER-v0011`, or their added evidence.
+the current `PAPER-v0012`, or their added evidence.
 Any external projection must be established from its own validated packet and
 publication receipt; adapted links are not byte-identical to source files.
 
@@ -149,3 +152,17 @@ its new text, updates the stale identity-ledger paper row, and separates the new
 quality result from the older serving identities. The frozen parent and updated
 residual arithmetic, numerical replay differences and training-exactness limits
 are synthesized without altering the underlying immutable experiment evidence.
+
+## 2026-10-20 — Transformer contribution retained as a bounded alternative
+
+`PAPER-v0012` records the accepted `transformer-contribution-v1` development
+ablation. Relation-only pretraining matches the historical joint reference at
+666/666 repeated outcomes over the same 222 adaptively reused development
+queries; random-parent adaptation reaches 662/666. The [experiment paper]
+(../papers/2026-10-20-transformer-contribution.md), [portable evidence]
+(../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-evidence.json),
+[independent review](../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-review.json),
+and [owner decision](../evidence/transformer-contribution-v1/2026-10-20-transformer-contribution-decision.json)
+bound the result. This does not isolate attention, use the protected 191 queries,
+promote a model, or establish serving or speed/energy advantage. Exact predecessor
+bytes are preserved as `PAPER-v0011` above.

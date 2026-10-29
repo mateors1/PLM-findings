@@ -53,3 +53,12 @@ papers/*.md text eol=lf
 /paper-history/PAPER-v0010-2026-10-18.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /paper-history/README.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 /papers/2026-10-18-bilinear-entity-offsets.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Exact bytes for transformer-contribution paper/history snapshots (2026-10-20).
+/paper-history/PAPER-v0011-2026-10-18.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+/papers/2026-10-20-transformer-contribution.md -text -eol whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Exact source JSON projections for canonical-paper links (2026-10-20).
+/docs/experiments/2026-10-20-transformer-contribution-evidence.json -text -eol whitespace=cr-at-eol,-blank-at-eof
+/docs/experiments/2026-10-20-transformer-contribution-review.json -text -eol whitespace=cr-at-eol,-blank-at-eof
+/docs/experiments/2026-10-20-transformer-contribution-decision.json -text -eol whitespace=cr-at-eol,-blank-at-eof

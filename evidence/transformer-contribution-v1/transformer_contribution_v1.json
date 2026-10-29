@@ -1,0 +1,17 @@
+{
+  "campaign": "transformer-contribution-v1",
+  "seeds": [1729, 1730, 1731],
+  "arms": ["joint-reference", "relation-only", "random"],
+  "parent_updates": 2000,
+  "parent_batch_size": 32,
+  "adaptation_updates": 32000,
+  "adaptation_batch_size": 1637,
+  "validation_batch_size": 8,
+  "entity_count": 1025,
+  "dimension": 256,
+  "threshold": 0.0,
+  "protected_test_used": false,
+  "model_promoted": false,
+  "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+  "evaluator": "transformer-contribution-development-v1"
+}

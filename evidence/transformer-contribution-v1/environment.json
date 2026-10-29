@@ -1,0 +1,9 @@
+{
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "protected_test_used": false,
+  "python": "3.12.13",
+  "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+  "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+  "torch": "2.11.0+cu128"
+}

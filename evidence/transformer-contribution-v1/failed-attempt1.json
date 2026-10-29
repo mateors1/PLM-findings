@@ -1,0 +1,19 @@
+{
+  "attempt": 1,
+  "exit_code": 1,
+  "phase": "optimizer-reload-verification",
+  "completed_adaptation_updates": 32000,
+  "new_arm_development_evaluated": false,
+  "protected_test_used": false,
+  "artifacts": {
+    "sealed.json": "b64f9d302e438bd30b91a89af0584964c302e869cf4478a95960f2ad78faeb73",
+    "executed-runner-v1.py": "963fd9d48872355d2ecc3469a0deea1c95872c03a44b66faa7dec99e875c7e33",
+    "executed-tests-v1.py": "bdaf07db37f0d86dab368cbd66cc7945ffc8dda47389f286854ccbeaa6f785e7",
+    "seed-1729/relation-only/identity.json": "8ff093e7d71266aeaf9cd5ab6b4009961f95a03854ec46d6fcf90c3c8856b7fb",
+    "seed-1729/relation-only/parent-training.json": "342a9b92384cca4ea50ea094c6a6831e52580293b330f7f05cb3510ffc77fc8f",
+    "seed-1729/relation-only/relation-parent.pt": "a3b96f5999e5a35297ced4a101c9cc631b0e952dba451927db76d274fe912667",
+    "seed-1729/relation-only/checkpoint-final.pt": "3a00a735855e7f954b158289b72e0cdfa20fa352240f38580a2f36df3e612fd7",
+    "seed-1729/relation-only/failure-state.pt": "78a59fca69f753976dc2b463a37f54565a3ab3c4b0f02126ada3ccd88e9143cd",
+    "seed-1729/relation-only/failure.json": "714cd6bdbfce1d1e298e8630235625b22a3978bbef1a95a91dcddb77d71980b4"
+  }
+}

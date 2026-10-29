@@ -1,0 +1,72 @@
+{
+  "audit_sha256": "1de8c45e7469300149db3b738c28146b80ee8543d8ffb363da679a5e1ebdd068",
+  "passed": true,
+  "protected_test_used": false,
+  "queries_replayed": 1998,
+  "results": [
+    {
+      "all_selected_sets_equal": true,
+      "arm": "joint-reference",
+      "max_absolute_cpu_gpu_score_difference": 4.57763671875e-05,
+      "queries": 222,
+      "seed": 1729
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "relation-only",
+      "max_absolute_cpu_gpu_score_difference": 8.392333984375e-05,
+      "queries": 222,
+      "seed": 1729
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "random",
+      "max_absolute_cpu_gpu_score_difference": 4.9591064453125e-05,
+      "queries": 222,
+      "seed": 1729
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "joint-reference",
+      "max_absolute_cpu_gpu_score_difference": 3.4332275390625e-05,
+      "queries": 222,
+      "seed": 1730
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "relation-only",
+      "max_absolute_cpu_gpu_score_difference": 4.57763671875e-05,
+      "queries": 222,
+      "seed": 1730
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "random",
+      "max_absolute_cpu_gpu_score_difference": 5.340576171875e-05,
+      "queries": 222,
+      "seed": 1730
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "joint-reference",
+      "max_absolute_cpu_gpu_score_difference": 3.814697265625e-05,
+      "queries": 222,
+      "seed": 1731
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "relation-only",
+      "max_absolute_cpu_gpu_score_difference": 8.392333984375e-05,
+      "queries": 222,
+      "seed": 1731
+    },
+    {
+      "all_selected_sets_equal": true,
+      "arm": "random",
+      "max_absolute_cpu_gpu_score_difference": 5.340576171875e-05,
+      "queries": 222,
+      "seed": 1731
+    }
+  ],
+  "scope": "Post-fit verification only; independent CPU query-side equation, no training or threshold changes."
+}

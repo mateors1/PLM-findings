@@ -1,0 +1,357 @@
+{
+  "artifact_sha256": {
+    "seed-1729/joint-reference/development.json": "c3f2b759b17c80da211fcf86dc0cb8209a1b11b3804dcf08234e9bb9ecfaf13f",
+    "seed-1729/joint-reference/identity.json": "3aaf844a2b0532ab104d3d0f4d9ac35b3437b67f73af2ec103c80e252911359a",
+    "seed-1729/random/checkpoint-final.pt": "61a02ac78fc20fc9549d56765360d09e6234a41444c0ff8c49a490deea550e24",
+    "seed-1729/random/development.json": "7566aa1d8543a993889aaed2ff146033f61f86a7fc7930bf4792a781ab4086c7",
+    "seed-1729/random/identity.json": "34e133b3c7e6e6ebf9126846a21502e0e3e1ed6a10e5add3c3155d37a5ac9f03",
+    "seed-1729/random/parent-training.json": "fc245777bee8d5fd082412835ed5f82d25205edcd54337dc8bccde8fb0223c29",
+    "seed-1729/random/training.json": "4fe4d333a266baff1345b763e0a20335f33c28f7e7b72c70a69145fe62814e0d",
+    "seed-1729/relation-only/checkpoint-final.pt": "1f67add6bc7fa952980cfcdd5bfc09519d66eabbf2e28d08c344608e1e59f82a",
+    "seed-1729/relation-only/development.json": "43f36527a40bbe0b062fe4a857b00d7ab3e964c0bf567cd37c3a08001b6c7579",
+    "seed-1729/relation-only/identity.json": "3ecfe7298cc83065350190c9798fcddb9862235369ac1951a623928b6fa55f6e",
+    "seed-1729/relation-only/parent-training.json": "8c273e7547147196675f53f6703d87d75f441ecc08806cacae20f10b5c78f535",
+    "seed-1729/relation-only/relation-parent.pt": "a3b96f5999e5a35297ced4a101c9cc631b0e952dba451927db76d274fe912667",
+    "seed-1729/relation-only/training.json": "3b12660e2093723a1e9bf0abb36bc6e42e05737508292aa535a77f33a5c056be",
+    "seed-1730/joint-reference/development.json": "c6ff1d9d62465d2cbf31158dde38bdcf1b8148f18d1dfd7953116f2d8d38a35b",
+    "seed-1730/joint-reference/identity.json": "8e782abb5e116c89df501081155b11716c465a57917aaedf2a7f30a52a0122b6",
+    "seed-1730/random/checkpoint-final.pt": "7c9c06430c6eaf617dbfe7261b7b77c6c9f55c7d02a73464d43b653ea9fc2146",
+    "seed-1730/random/development.json": "f1a5cc260c3d253513cdc9737c79f49d010c20b9baf795fe759951a9e1aa17aa",
+    "seed-1730/random/identity.json": "f93ed117ff3aa9d9ccdf56acd56e41786229e48ab6c746d4a51fcb633dd2e8b4",
+    "seed-1730/random/parent-training.json": "fc245777bee8d5fd082412835ed5f82d25205edcd54337dc8bccde8fb0223c29",
+    "seed-1730/random/training.json": "1472f638bd2c48fae5c11023050aa4172eb0772a3d1f3cb333dfd8bee7bb9a57",
+    "seed-1730/relation-only/checkpoint-final.pt": "ce114eace356d474630c8408953cf8e0f86a40bb3a3d19ea4f7183019591e0eb",
+    "seed-1730/relation-only/development.json": "1ed5e9febb6713d4c1cf16680a959fc300e5f71d04e2dbed54a403183b5de019",
+    "seed-1730/relation-only/identity.json": "9f9539e4a51fd78e5c8d448711b399f8d71ee945158d9b1e78287471c52fcd4b",
+    "seed-1730/relation-only/parent-training.json": "b4b59af914e4e1721aa876d0cb2c40be015954c5a478ad5b3a0f50951a5fa1da",
+    "seed-1730/relation-only/relation-parent.pt": "d5b6c01374af55f12c5fe0f5c9f13bb17dfe4b70db2205fc3c8d1f5a1c2dfd22",
+    "seed-1730/relation-only/training.json": "c1f751e11d11030c7d859c2c9ff913f65bf58896c82c58e7b7103b5fd3ece459",
+    "seed-1731/joint-reference/development.json": "1e56f29913da4ffc8a6506b054a890ca74a2809a32c123f0dd978bdabbab024c",
+    "seed-1731/joint-reference/identity.json": "e9a93538538b6bb3946c4675b0a068d71c832bacccca913e7dabcd62fc09d07d",
+    "seed-1731/random/checkpoint-final.pt": "a9ce6f07b4caf7735cd30975354b0a51cb293066bf363840adb6717c0422c856",
+    "seed-1731/random/development.json": "90ea8d22f609af4dcceed2446a3552afbd4398d6fc65fd7a9eb11ba4e5db279a",
+    "seed-1731/random/identity.json": "90c1b32c5b6d9021965e96180c86800c9c00458d47eb7718433d62425a9adfe2",
+    "seed-1731/random/parent-training.json": "fc245777bee8d5fd082412835ed5f82d25205edcd54337dc8bccde8fb0223c29",
+    "seed-1731/random/training.json": "54cbfe8ebe21b2b72a49e9db78c48916d02931f17171816a4b630a2decf1771d",
+    "seed-1731/relation-only/checkpoint-final.pt": "200ef0637855867d1d7a9d03c16adb48dab32407297008d09ec65ce5f37c7bbc",
+    "seed-1731/relation-only/development.json": "3e3db59d8cfdfbf2a12f089514b2a52962ef1d011963ce8d7412d47a8e37a99f",
+    "seed-1731/relation-only/identity.json": "5fd62fa2075fac7c2e2394d800002a45084c4b3f5c314ed25e859007c489a2f9",
+    "seed-1731/relation-only/parent-training.json": "0e9ef2247d025a69ec1c81baa1451eb4b42bd44dee7a7733f6ecff4fa3cfe1f0",
+    "seed-1731/relation-only/relation-parent.pt": "c0c07cfe91ea77816c5107e1e5051600b1d1381603cf8ce925546203b998dc78",
+    "seed-1731/relation-only/training.json": "14331e2789b0b345ab1761588a3a5877c70a3689053b5a0a956cfb6284b97688"
+  },
+  "audit_passed": true,
+  "complete": true,
+  "exact_totals_of_666": {
+    "joint-reference": 666,
+    "random": 662,
+    "relation-only": 666
+  },
+  "model_promoted": false,
+  "protected_test_used": false,
+  "results": [
+    {
+      "arm": "joint-reference",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1729
+    },
+    {
+      "arm": "relation-only",
+      "checkpoint_sha256": "1f67add6bc7fa952980cfcdd5bfc09519d66eabbf2e28d08c344608e1e59f82a",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1729,
+      "train_exact_execution_report": 1637
+    },
+    {
+      "arm": "random",
+      "checkpoint_sha256": "61a02ac78fc20fc9549d56765360d09e6234a41444c0ff8c49a490deea550e24",
+      "exact": 221,
+      "fn": 1,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 67,
+          "fn": 1,
+          "fp": 0,
+          "macro_f1": 0.9999566198160681,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 0.9999867123760928,
+      "queries": 222,
+      "seed": 1729,
+      "train_exact_execution_report": 1637
+    },
+    {
+      "arm": "joint-reference",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1730
+    },
+    {
+      "arm": "relation-only",
+      "checkpoint_sha256": "ce114eace356d474630c8408953cf8e0f86a40bb3a3d19ea4f7183019591e0eb",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1730,
+      "train_exact_execution_report": 1637
+    },
+    {
+      "arm": "random",
+      "checkpoint_sha256": "7c9c06430c6eaf617dbfe7261b7b77c6c9f55c7d02a73464d43b653ea9fc2146",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1730,
+      "train_exact_execution_report": 1637
+    },
+    {
+      "arm": "joint-reference",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1731
+    },
+    {
+      "arm": "relation-only",
+      "checkpoint_sha256": "200ef0637855867d1d7a9d03c16adb48dab32407297008d09ec65ce5f37c7bbc",
+      "exact": 222,
+      "fn": 0,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 68,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 51,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 51
+        }
+      },
+      "macro_f1": 1.0,
+      "queries": 222,
+      "seed": 1731,
+      "train_exact_execution_report": 1637
+    },
+    {
+      "arm": "random",
+      "checkpoint_sha256": "a9ce6f07b4caf7735cd30975354b0a51cb293066bf363840adb6717c0422c856",
+      "exact": 219,
+      "fn": 3,
+      "fp": 0,
+      "groups": {
+        "COLOR": {
+          "exact": 103,
+          "fn": 0,
+          "fp": 0,
+          "macro_f1": 1.0,
+          "queries": 103
+        },
+        "TYPE_dual": {
+          "exact": 66,
+          "fn": 2,
+          "fp": 0,
+          "macro_f1": 0.9998913215222688,
+          "queries": 68
+        },
+        "TYPE_single": {
+          "exact": 50,
+          "fn": 1,
+          "fp": 0,
+          "macro_f1": 0.9998647734956051,
+          "queries": 51
+        }
+      },
+      "macro_f1": 0.9999356455486043,
+      "queries": 222,
+      "seed": 1731,
+      "train_exact_execution_report": 1637
+    }
+  ],
+  "scope": "Independent saved-score reconstruction and saved checkpoint inspection; no independent neural replay or separate-author code review. Historical labels/partitions depend on sealed source evidence. Training exactness and original execution/reload declarations remain execution evidence.",
+  "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+  "summary_sha256": "af70124cca583591e566838aceb7b6effef3facb66096985a986babf7667e633"
+}

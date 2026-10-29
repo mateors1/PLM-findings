@@ -1,0 +1,18 @@
+{
+  "protected_test_used": false,
+  "read_paths": [
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/checkpoint-final.pt",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/child.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/run.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/train-membership.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/checkpoint-final.pt",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/child.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/run.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/train-membership.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/checkpoint-final.pt",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/child.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/run.json",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/train-membership.json",
+    "runs/national_dex_continuation_control_s1729_v1/source.zip"
+  ]
+}

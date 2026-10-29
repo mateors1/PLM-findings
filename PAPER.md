@@ -1,9 +1,10 @@
 # Protocolized Language Model (Pika Edition)
 
-**Canonical research paper v0011**<br>
-**Revision date:** 2026-10-18 (America/Bogota)<br>
-**Evidence cutoff:** entity-offset aggregate audit and scientific review completed; owner acceptance recorded 2026-10-19 00:51:35 UTC (2026-10-18 19:51:35 America/Bogota).<br>
-**Predecessor:** [`PAPER-v0010`](paper-history/PAPER-v0010-2026-10-18.md), archived byte-identically.
+**Canonical research paper v0012**<br>
+**Revision date:** 2026-10-20 (America/Bogota)<br>
+**Evidence cutoff:** completed transformer-contribution development ablation and closure audit, 2026-10-20; final review and research-owner decision cited below.<br>
+**Predecessor:** [`PAPER-v0011`](paper-history/PAPER-v0011-2026-10-18.md), archived byte-identically.
+
 
 ## Abstract
 
@@ -34,8 +35,15 @@ reproduced 660/666 exact outcomes; treatments reached 666/666 with six paired
 gains and no losses, passing every seed/group exact-count and macro-F1
 nonregression check. This is accepted development-quality evidence on known
 entities and adaptively reused queries, not protected-test oracle parity.
-The new candidate remains unpromoted and outside ordinary or admitted serving
-paths. Its changed arithmetic has no measured serving advantage.
+The entity-offset candidate remains unpromoted as an ordinary serving default;
+its changed arithmetic has no measured serving advantage. A subsequent fixed
+three-seed ablation matches all 666 repeated development outcomes using only
+relation pretraining followed by the same matrix/entity-offset adaptation.
+Frozen random parent features plus learned adaptation reach 662/666. We retain
+relation-only pretraining as a development-validated alternative, while preserving
+the transformer reference and serving identities. This removes any basis for
+claiming transformer-dependent pretraining is necessary for the observed target;
+it does not isolate attention or establish unseen-entity generalization.
 An opt-in authenticated CPU dense-set adapter replays the earlier A-only
 candidate's predictions
 through a serving contract without changing any selected set. The accepted
@@ -863,6 +871,66 @@ Evidence: [declaration](docs/experiments/2026-10-18-bilinear-entity-offset-plan.
 [independent review](docs/experiments/2026-10-18-bilinear-entity-offset-review.json),
 and [owner decision](docs/experiments/2026-10-18-bilinear-entity-offset-decision.json).
 
+### 5.15 Transformer contribution: a simpler retained development recipe
+
+The predeclared `transformer-contribution-v1` campaign asks whether the
+transformer-dependent portion of joint training is needed for the entity-offset
+scorer's existing development target. The successful execution is
+`transformer-contribution-attempt2-v1`. Three historical joint checkpoints are
+replayed as references. For each seed, relation-only training retains the original
+seeded embedding table and relation projection, trains balanced relation loss for
+2000 updates without transformer forwards/backwards, then freezes the parent for
+32000 updates of A and Delta E. A random-parent control freezes those initial
+features immediately and trains the same adaptation. The scorer is the equation
+in Section 5.14; the base still uses E and the symmetric residual uses E+Delta E.
+
+| Seed | Historical joint | Relation-only | Random parent |
+| --- | ---: | ---: | ---: |
+| 1729 | 222/222 | 222/222 | 221/222 |
+| 1730 | 222/222 | 222/222 | 222/222 |
+| 1731 | 222/222 | 222/222 | 219/222 |
+| Repeated outcomes | 666/666 | 666/666 | 662/666 |
+
+Both new arms train 393472 adaptation scalars. The compact frozen parent stores
+590080 embedding/projection scalars, including reserved rows not all used by
+scoring; final compact parameter storage is 983552 scalars. The random arm is
+therefore a trained model with random frozen parent features, not a no-learning
+baseline. Each new final fit reports 1637/1637 training sets.
+
+The saved-score/checkpoint audit passes and an independent CPU equation replay
+preserves all 1998 arm/seed/query selections. Maximum CPU/GPU score difference is
+0.00008392333984375. These checks verify existing artifacts rather than adding
+independent examples or retraining. The closure rerun reproduced the saved audit
+object exactly. A separate scientific review and research-owner decision accept
+this bounded evidence. Historical summary flags and the failed first attempt
+remain immutable: attempt 1 failed optimizer reload verification before any
+new-arm development evaluation, and attempt 2 repeated the unchanged recipe.
+
+We retain relation-only pretraining as a development-validated alternative because
+it passes the fixed all-seeds-exact target without transformer-dependent training.
+The random-parent arm is archived as a near-match that fails that target; its
+result remains contrary evidence against overattributing performance to the
+original transformer. Original joint checkpoints and the transformer decoder
+remain reference/interactive paths. No serving default or checkpoint is promoted.
+
+The intervention removes token and prompt-set objectives together, not attention
+alone. Update/query exposure is matched, not compute or effective optimizer steps;
+joint references are historical, not contemporaneously retrained. The same 222
+adaptively reused, known-entity queries repeat across seeds. Reverse-query
+supervision and candidate exposure remain relevant. The 191 protected queries
+stay closed. No unseen-entity, general necessity, latency, energy or production
+claim follows. Source-review corrections clarify that the evaluator wrapper
+accepts labels for validation/metrics while scoring uses prompt IDs; certain
+initialization/no-decoder properties have static support rather than explicit
+synthetic test assertions.
+
+Evidence: [plan](docs/experiments/2026-10-19-transformer-contribution-plan.md),
+[report](docs/experiments/2026-10-20-transformer-contribution-report.md),
+[portable evidence and checkpoint lineage](docs/experiments/2026-10-20-transformer-contribution-evidence.json),
+[final review](docs/experiments/2026-10-20-transformer-contribution-review.json),
+[decision](docs/experiments/2026-10-20-transformer-contribution-decision.json),
+and [Lesson 63](docs/learning/63-did-the-transformer-help.md).
+
 ## 6. Limitations and remaining work
 
 1. **Development exactness is not general oracle parity.** The entity-offset
@@ -922,7 +990,7 @@ separate:
 
 | Layer | Identity for this paper |
 | --- | --- |
-| Paper | `PAPER-v0011`, dated 2026-10-18; predecessor `PAPER-v0010` |
+| Paper | `PAPER-v0012`, dated 2026-10-20; predecessor `PAPER-v0011` |
 | Protocol/data | `pokemon-v1`; National Dex corpus snapshot `pokemon_v1_f1541479_20260924` |
 | Baseline implementation source | Code and configs for the retained decoder are from source commit `cca97ffc5491eb1cfa28ac94532d34460a75812e` |
 | Reference checkpoints | `national_dex_continuation_control_s1729_v1`, `_s1730_v1`, `_s1731_v1`; hashes and resolved-config hashes are in [model-versions.md](docs/model-versions.md) |
@@ -930,6 +998,8 @@ separate:
 | Pair-composition evaluator | `plm-pair-composition-shape-aware-v2` |
 | Bilinear learning campaign | `bilinear-budget32000-v1`; accepted 660/666 validation evidence, candidate not promoted; full lineage is in [model-versions.md](docs/model-versions.md) |
 | Entity-offset learning campaign | `bilinear-entity-offset32000-v1`; six fresh fits; accepted development-quality candidate at 666/666 versus matched controls 660/666, +6/-0; no promotion or serving admission |
+| Transformer contribution | `transformer-contribution-v1`, attempt 2; relation-only 666/666, random-parent 662/666; retained development alternative, no serving promotion |
+| Ablation evaluator / inference | `transformer-contribution-development-v1` / `positive-nonself-ascending-fp32-b8-last6-v1`; separate CPU replay verification |
 | Entity-offset architecture | `plm-frozen-parent-bilinear-entity-offset-v1`; frozen base plus shared entity offsets in the symmetric residual |
 | Entity-offset evaluation/inference | `plm-entity-offset-fullscore-b8-v1`; `strict-positive-nonself-ascending-ID-batch8-v1`; distinct from previous CPU cached-serving policies |
 | Entity-offset checkpoints and evidence | Six new local children with lineage in the [portable evidence](docs/experiments/2026-10-18-bilinear-entity-offset-evidence.json) and [model register](docs/model-versions.md); [audit](docs/experiments/2026-10-18-bilinear-entity-offset-audit.json), [review](docs/experiments/2026-10-18-bilinear-entity-offset-review.json), [decision](docs/experiments/2026-10-18-bilinear-entity-offset-decision.json) |
@@ -971,7 +1041,12 @@ experiment reaches 666/666 with six paired gains and no losses, passing the
 predeclared development-quality gate across all seeds and groups. This retained
 quality candidate remains unpromoted, reuses the same 222 development queries
 across three seeds, and leaves the 191 protected queries closed. Its new
-checkpoints are not admitted by existing serving manifests.
+checkpoints were not admitted by existing serving manifests at that campaign's cutoff. Separate local interactive integration is not a matched serving campaign.
+The transformer-contribution ablation now retains a relation-only recipe that
+matches the same development target without transformer-dependent training;
+random frozen parent features plus learned corrections reach 662/666. This
+narrows attribution and strengthens the case for keeping simpler baselines in
+the research, without replacing the decoder reference or opening the protected set.
 An opt-in authenticated CPU adapter for the older A-only checkpoints accepts
 feature-cache manifests and preserves
 accepted scores and selections through direct and in-process HTTP checks. A

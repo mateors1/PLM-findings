@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "review_id": "transformer-contribution-attempt2-v1-final-scientific-review",
+  "reviewed_at_utc": "2026-10-21T00:14:27Z",
+  "review_status": "complete",
+  "review_scope": {
+    "included": [
+      "attempt2 summary.json",
+      "attempt2 audit.json",
+      "attempt2 cpu-replay.json",
+      "prior source-only publication-review-v1.json",
+      "sealed plan, config, runner, and synthetic tests"
+    ],
+    "excluded": [
+      "protected 191-query set and labels",
+      "corpus records, graph databases, raw records, and private records",
+      "checkpoint tensor payloads and raw training traces",
+      "training reruns or code changes"
+    ]
+  },
+  "identity_and_integrity": {
+    "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+    "summary_sha256": "af70124cca583591e566838aceb7b6effef3facb66096985a986babf7667e633",
+    "audit_sha256": "1de8c45e7469300149db3b738c28146b80ee8543d8ffb363da679a5e1ebdd068",
+    "cpu_replay_sha256": "f35bd10cc38b3a7aef3f1ba1012c35a36e1790a25b98745bc9f110135a8b3186",
+    "source_review_v1_sha256": "48bbaffdf48625a418d88aa784de975051c996b12d839daa83b3d12a143a9d9f",
+    "hash_links": {
+      "summary_sha_matches_audit": true,
+      "audit_sha_matches_cpu_replay": true,
+      "summary_and_audit_bind_same_seal": true,
+      "reviewed_plan_config_runner_tests_and_uv_lock_match_sealed_pins": true
+    },
+    "runner_sha256": "b74d8b6033a7082cbf5c495f30d3267a46a60d624bb1846aeaea885deec365ef",
+    "tests_sha256": "c99028f5c5d865c77873942a2694591aa3ca812fd8a0f8c1414cc72c386c2682"
+  },
+  "outcome": {
+    "development_queries_per_seed": 222,
+    "seeds": [1729, 1730, 1731],
+    "same_development_queries_repeated_across_seeds": true,
+    "joint_reference": {
+      "per_seed_exact": {"1729": 222, "1730": 222, "1731": 222},
+      "exact_total_of_666": 666,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "macro_f1_per_seed": [1.0, 1.0, 1.0],
+      "lineage": "Authenticated historical joint treatment replay; not contemporaneously retrained."
+    },
+    "relation_only": {
+      "per_seed_exact": {"1729": 222, "1730": 222, "1731": 222},
+      "exact_total_of_666": 666,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "macro_f1_per_seed": [1.0, 1.0, 1.0],
+      "training_exact_per_seed_execution_report": [1637, 1637, 1637],
+      "interpretation": "Met the predeclared 222/222-per-seed development criterion and matched the historical joint reference on these repeated development queries."
+    },
+    "random_initialization_plus_adaptation": {
+      "per_seed_exact": {"1729": 221, "1730": 222, "1731": 219},
+      "exact_total_of_666": 662,
+      "false_positives": 0,
+      "false_negatives": 4,
+      "per_seed_false_negatives": {"1729": 1, "1730": 0, "1731": 3},
+      "macro_f1_per_seed": [0.9999867123760928, 1.0, 0.9999356455486043],
+      "training_exact_per_seed_execution_report": [1637, 1637, 1637],
+      "interpretation": "Did not meet the predeclared 222/222-per-seed criterion. Preserve all four false negatives; do not call this arm a full match."
+    },
+    "planned_gate": "The strict 222/222-per-seed criterion is met by joint-reference and relation-only, but not by random. The primary joint-reference versus relation-only development comparison is tied; the three-arm all-match criterion is not met."
+  },
+  "audit_and_numerical_review": {
+    "saved_score_audit_passed": true,
+    "audit_scope": "Independent reconstruction of selected sets, exactness, macro F1, FP/FN and group metrics from saved scores; checkpoint identity/hash/shape/finiteness/optimizer-state inspection. It does not independently replay the neural model or training and is not a separate-author code review.",
+    "cpu_replay_passed": true,
+    "cpu_replay_query_rows": 1998,
+    "cpu_replay_all_selected_sets_equal_to_saved_gpu_results": true,
+    "maximum_absolute_cpu_gpu_score_difference": 0.00008392333984375,
+    "cpu_replay_scope": "Post-fit query-side equation verification only; no training or threshold change.",
+    "summary_audit_pending_field": "summary.json retains audit_pending=true as the runner-time snapshot; the separate hash-linked audit.json is complete and passed."
+  },
+  "scientific_interpretation": {
+    "supported": "For this fixed 1025-entity transductive catalog and the same historically guided 222 development queries, the relation-only training recipe matched the historical joint reference at 222/222 for all three seeds. Random-initialization plus the same adaptation scored 662/666 across the repeated query-seed runs, with four false negatives and no false positives.",
+    "comparison_boundary": "Relation-only removes both transformer-dependent objectives and their gradients; it does not isolate attention. Update and query exposure are matched, not FLOPs, wall time, or effective optimizer steps. The joint reference is historical rather than contemporaneously retrained.",
+    "not_supported": [
+      "666 independent observations or a population-level significance claim",
+      "Transformer or attention necessity, or an attention-only causal effect",
+      "Unseen-entity or out-of-catalog generalization",
+      "Protected-test parity; the protected 191 remain closed",
+      "Serving latency/energy advantage or replacement of the serving stack",
+      "Model promotion or a claim that learned checkpoints are archived"
+    ],
+    "development_limitations": [
+      "The same 222 development queries are repeated for all three seeds; totals of 666 are descriptive only.",
+      "Development outcomes were guided by prior research and the catalog is transductive.",
+      "The plan records known symmetric pair overlap across query partitions.",
+      "Training exactness is reported by the execution artifact and was not independently replayed by this audit."
+    ]
+  },
+  "source_review_followups": [
+    {
+      "id": "evaluation-label-boundary-wording",
+      "severity": "non_blocking",
+      "detail": "The evaluation wrapper receives rows containing expected_set_ids and tensors() validates/materializes a label tensor before scoring, then discards it. Prompt IDs drive scores and expected labels drive post-score metrics; no label-value path into scores was observed. Keep the paper wording precise: prediction uses prompts only, while the evaluator receives labels for post-score metrics."
+    },
+    {
+      "id": "synthetic-gate-evidence-wording",
+      "severity": "non_blocking",
+      "detail": "The plan lists original-initialization equivalence and no-decoder-call synthetic gates that are not explicit assertions in the reviewed test file. The pinned factory and compact-model source path support these properties by inspection; describe them as source-level evidence unless separate test receipts are added."
+    },
+    {
+      "id": "prior-source-review-status",
+      "severity": "informational",
+      "detail": "publication-review-v1.json was written before outcomes completed and says the random arm was still running. It is retained unchanged and is superseded for outcome status by this final review."
+    }
+  ],
+  "publication_status": {
+    "ready_packet_received": false,
+    "publication_action": "none",
+    "next_owner": "Primary task to complete its report and immutable ready handoff; publication remains unauthorized until that handoff is supplied.",
+    "weights_archived": false,
+    "protected_test_used": false,
+    "model_promoted": false
+  },
+  "changes_made": false,
+  "final_assessment": "The result supports descriptive parity of relation-only versus the historical joint reference on the fixed development set, while the random arm misses the strict all-seed exactness criterion by four false negatives. No blocking inconsistency was found in the sealed audit chain or CPU score replay. Preserve the failed random-arm gate and the limited, repeated-development interpretation."
+}

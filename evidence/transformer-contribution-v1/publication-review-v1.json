@@ -1,0 +1,57 @@
+{
+  "review_id": "transformer-contribution-attempt2-v1-read-only-review-v1",
+  "reviewed_at_utc": "2026-10-21T00:06:44.891Z",
+  "review_scope": [
+    "Declared plan and reload-repair note",
+    "Pinned experiment config",
+    "Runner, independent saved-score auditor, and checked-in synthetic tests",
+    "Seal identity and hashes for reviewed plan, config, runner, tests, and uv.lock"
+  ],
+  "seal": {
+    "sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+    "reviewed_source_and_test_hashes_match_seal": true,
+    "runner_sha256": "b74d8b6033a7082cbf5c495f30d3267a46a60d624bb1846aeaea885deec365ef",
+    "tests_sha256": "c99028f5c5d865c77873942a2694591aa3ca812fd8a0f8c1414cc72c386c2682"
+  },
+  "assessment": "No blocking source-level scientific or publication issue found in this bounded review. This is not an outcome audit or publication-ready handoff. Parent task reports the three relation-only fits at 222/222 and the final random arm still running; no result or model-promotion conclusion is assessed here.",
+  "nonblocking_notes": [
+    {
+      "id": "evaluation-label-boundary-wording",
+      "evidence": [
+        "scripts/ablate_transformer_contribution.py:134-167",
+        "scripts/ablate_transformer_contribution.py:170-204",
+        "docs/experiments/2026-10-19-transformer-contribution-plan.md:59-68"
+      ],
+      "observation": "evaluation() receives rows containing expected_set_ids and calls tensors(), which validates and materializes a label tensor before scoring; that tensor is discarded, while score computation uses prompt IDs only and metrics are computed after predictions. No label-value path into the model scores was observed. The plan's literal statement that the scorer never accepts expected labels is stronger than this wrapper's interface; clarify that the prediction calculation uses prompt IDs only and the evaluator uses labels for post-score metrics."
+    },
+    {
+      "id": "synthetic-gate-evidence-wording",
+      "evidence": [
+        "tests/unit/test_transformer_contribution.py:43-56",
+        "tests/unit/test_transformer_contribution.py:81-111",
+        "docs/experiments/2026-10-19-transformer-contribution-plan.md:76-80",
+        "scripts/ablate_transformer_contribution.py:111-122",
+        "scripts/ablate_transformer_contribution.py:484-506"
+      ],
+      "observation": "The checked-in tests cover scalar score/gradient ownership, balanced self-excluding loss, partial batches, frozen adaptation, reload, failure preservation, invalid membership, the open hook, and zero-adaptation score replay. The plan also describes synthetic gates for original-initialization equivalence and no decoder calls; those two are supported by the pinned factory/compact-model source path but are not explicit assertions in the reviewed test file. Treat these as static implementation evidence or align the plan's description with the test evidence."
+    },
+    {
+      "id": "auditor-scope",
+      "evidence": [
+        "scripts/audit_transformer_contribution.py:36-77",
+        "scripts/audit_transformer_contribution.py:139-180",
+        "scripts/audit_transformer_contribution.py:246-261"
+      ],
+      "observation": "The auditor independently reconstructs selections and metrics from saved scores and inspects checkpoint hashes, shapes, finiteness, optimizer state, and frozen-parent identity. It explicitly does not claim neural replay, separate-author code review, or independent training-exactness verification; the documented scope is accurate."
+    }
+  ],
+  "claim_limits_confirmed": [
+    "Primary joint-reference versus relation-only contrast removes both transformer-dependent objectives and gradients; it does not isolate attention.",
+    "Update and query exposure are matched, not FLOPs or effective optimizer steps; identical settings do not establish equal optimization.",
+    "Joint reference is historical, not contemporaneously retrained.",
+    "The 666 seed-query outcomes repeat the same 222 development queries and are not 666 independent examples.",
+    "Results cannot establish unseen-entity generalization, protected-test parity, transformer necessity for other tasks, serving advantage, or model promotion."
+  ],
+  "changes_made": false,
+  "publication_action": "none"
+}

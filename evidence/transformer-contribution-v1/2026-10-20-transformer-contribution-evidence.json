@@ -1,0 +1,291 @@
+{
+  "campaign": "transformer-contribution-v1",
+  "closure_scoped_tests": {
+    "errors": 0,
+    "failures": 0,
+    "tests": 17,
+    "xml_sha256": "ceff52ac2b06437b0fb292520696bb7721bae4d6f683f91331ed4cd3895a4fe5"
+  },
+  "complete": true,
+  "date": "2026-10-20",
+  "executed_cpu_replay_sha256": "3a29f9f6ee8c22a596fa4286b554d997587e9116ce10fc559f37f42e5fe21ac6",
+  "execution_attempt": "transformer-contribution-attempt2-v1",
+  "historical_references": [
+    {
+      "directory": "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment",
+      "seed": 1729
+    },
+    {
+      "directory": "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment",
+      "seed": 1730
+    },
+    {
+      "directory": "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment",
+      "seed": 1731
+    }
+  ],
+  "input_and_executed_source_pins": {
+    "configs/experiments/transformer_contribution_v1.json": "bee170b579e39730ca8187859e9373fa88bee9fc3d2169e59b8dd754cf762f7c",
+    "docs/experiments/2026-10-18-bilinear-entity-offset-evidence.json": "39c8a9b567d7b7b45337e9be0ee80bfe9d15f4105430a5a59f3c4760eefbb5b3",
+    "docs/experiments/2026-10-19-transformer-contribution-plan.md": "51edc8bf6d1d56fe31fdb074e913031078a5af4cc8ffb0c4bd927dba76ab0330",
+    "docs/experiments/2026-10-19-transformer-contribution-reload-repair.md": "3cd8c43448a25baf7350a2d9b86aa3307908b09380dd884d785f9bd555db8a3c",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/checkpoint-final.pt": "a1667771256729e2ff2becddbbad5cf2a220de7a2c61bf47e131e69738669238",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/child.json": "8febf09ab9a3ca9ea76949e32f043735b5668703c57a63e0a024ae98c7cea1c3",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/run.json": "22a38996384c5022f11d3d45417aa1c7885a9a910259e017d1067a53e272f846",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1729/treatment/train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/checkpoint-final.pt": "7c5db097473041c4857ce7cc3e23610e190c054dc737e017b2423b8586d20fcf",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/child.json": "6e2d54bfb35885d3f75f08c0ee803eff9a0b68a2fc9161bcccbe971b362441f7",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/run.json": "cf6780c2059ae3de7c7901c1fd043f0b9fe3c6ead8c6d33bd58fb9ae485798c8",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1730/treatment/train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/checkpoint-final.pt": "2368207f272e46afc62751951ffbe0bf7a34b2d48ea3b1777289480af7c04ecb",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/child.json": "9b6221cba77a8892b51e4aa3530365a330f9bee49401177538b0815d6a78b620",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/run.json": "97675c48fa1941f1b527aa2bbde8ade18729895fcf3d2f3048af423a99e866b6",
+    "runs/learning/bilinear-entity-offset32000-v1/seed-1731/treatment/train-membership.json": "0c49346f61ab689ae4c0567f88ec96ce62da1735fedc97799ef2e368542fe5ad",
+    "runs/national_dex_continuation_control_s1729_v1/source.zip": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+    "scripts/ablate_transformer_contribution.py": "b74d8b6033a7082cbf5c495f30d3267a46a60d624bb1846aeaea885deec365ef",
+    "scripts/refit_bilinear_residual.py": "5ec58b162648e760997037e5ac969a517d9511be177adf44b1fdb1e7803d33ee",
+    "tests/unit/test_transformer_contribution.py": "c99028f5c5d865c77873942a2694591aa3ca812fd8a0f8c1414cc72c386c2682",
+    "uv.lock": "6308eafda0eb38288f347c4b279b946bbd71377918a8f4f25ae88b236f9c63ea"
+  },
+  "intermediate_relation_parent_count": 3,
+  "model_promoted": false,
+  "new_final_checkpoints": [
+    {
+      "adaptation_updates": 32000,
+      "arm": "relation-only",
+      "checkpoint_sha256": "1f67add6bc7fa952980cfcdd5bfc09519d66eabbf2e28d08c344608e1e59f82a",
+      "development_exact": 222,
+      "identity": {
+        "arm": "relation-only",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "a8fe59a38fcc592ca58c2361091b016e732ccbe9de168997dce09d32ef1f3f9e",
+          "table": "919aac19063e88aab8efde9bf953d81382359c44eee19340296733ecc267a8b1"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1729,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "3ecfe7298cc83065350190c9798fcddb9862235369ac1951a623928b6fa55f6e",
+      "parent_updates": 2000,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1729/relation-only/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": "a3b96f5999e5a35297ced4a101c9cc631b0e952dba451927db76d274fe912667",
+      "seed": 1729,
+      "train_exact": 1637,
+      "training_receipt_sha256": "3b12660e2093723a1e9bf0abb36bc6e42e05737508292aa535a77f33a5c056be"
+    },
+    {
+      "adaptation_updates": 32000,
+      "arm": "random",
+      "checkpoint_sha256": "61a02ac78fc20fc9549d56765360d09e6234a41444c0ff8c49a490deea550e24",
+      "development_exact": 221,
+      "identity": {
+        "arm": "random",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "a8fe59a38fcc592ca58c2361091b016e732ccbe9de168997dce09d32ef1f3f9e",
+          "table": "919aac19063e88aab8efde9bf953d81382359c44eee19340296733ecc267a8b1"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1729,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "34e133b3c7e6e6ebf9126846a21502e0e3e1ed6a10e5add3c3155d37a5ac9f03",
+      "parent_updates": 0,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1729/random/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": null,
+      "seed": 1729,
+      "train_exact": 1637,
+      "training_receipt_sha256": "4fe4d333a266baff1345b763e0a20335f33c28f7e7b72c70a69145fe62814e0d"
+    },
+    {
+      "adaptation_updates": 32000,
+      "arm": "relation-only",
+      "checkpoint_sha256": "ce114eace356d474630c8408953cf8e0f86a40bb3a3d19ea4f7183019591e0eb",
+      "development_exact": 222,
+      "identity": {
+        "arm": "relation-only",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "bbbc2954eba43b2d820a9b70a2287f8acf596d0380a4ec75a2dc77796830f452",
+          "table": "f60296ce47b838b86facc76877e0d1b6c29283c7cc07b18596c862624edbb489"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1730,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "9f9539e4a51fd78e5c8d448711b399f8d71ee945158d9b1e78287471c52fcd4b",
+      "parent_updates": 2000,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1730/relation-only/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": "d5b6c01374af55f12c5fe0f5c9f13bb17dfe4b70db2205fc3c8d1f5a1c2dfd22",
+      "seed": 1730,
+      "train_exact": 1637,
+      "training_receipt_sha256": "c1f751e11d11030c7d859c2c9ff913f65bf58896c82c58e7b7103b5fd3ece459"
+    },
+    {
+      "adaptation_updates": 32000,
+      "arm": "random",
+      "checkpoint_sha256": "7c9c06430c6eaf617dbfe7261b7b77c6c9f55c7d02a73464d43b653ea9fc2146",
+      "development_exact": 222,
+      "identity": {
+        "arm": "random",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "bbbc2954eba43b2d820a9b70a2287f8acf596d0380a4ec75a2dc77796830f452",
+          "table": "f60296ce47b838b86facc76877e0d1b6c29283c7cc07b18596c862624edbb489"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1730,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "f93ed117ff3aa9d9ccdf56acd56e41786229e48ab6c746d4a51fcb633dd2e8b4",
+      "parent_updates": 0,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1730/random/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": null,
+      "seed": 1730,
+      "train_exact": 1637,
+      "training_receipt_sha256": "1472f638bd2c48fae5c11023050aa4172eb0772a3d1f3cb333dfd8bee7bb9a57"
+    },
+    {
+      "adaptation_updates": 32000,
+      "arm": "relation-only",
+      "checkpoint_sha256": "200ef0637855867d1d7a9d03c16adb48dab32407297008d09ec65ce5f37c7bbc",
+      "development_exact": 222,
+      "identity": {
+        "arm": "relation-only",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "1f295da43d469efc55cfbc56fc8cf6230a69673b5076dc6580b653f0cbac87bc",
+          "table": "0bed7c0d19c97d62a6da499fc6b54d67c71fe3f5ad652cca7f41cd6783fd254f"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1731,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "5fd62fa2075fac7c2e2394d800002a45084c4b3f5c314ed25e859007c489a2f9",
+      "parent_updates": 2000,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1731/relation-only/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": "c0c07cfe91ea77816c5107e1e5051600b1d1381603cf8ce925546203b998dc78",
+      "seed": 1731,
+      "train_exact": 1637,
+      "training_receipt_sha256": "14331e2789b0b345ab1761588a3a5877c70a3689053b5a0a956cfb6284b97688"
+    },
+    {
+      "adaptation_updates": 32000,
+      "arm": "random",
+      "checkpoint_sha256": "a9ce6f07b4caf7735cd30975354b0a51cb293066bf363840adb6717c0422c856",
+      "development_exact": 219,
+      "identity": {
+        "arm": "random",
+        "campaign": "transformer-contribution-v1",
+        "evaluator": "transformer-contribution-development-v1",
+        "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+        "initial_sha256": {
+          "projection": "1f295da43d469efc55cfbc56fc8cf6230a69673b5076dc6580b653f0cbac87bc",
+          "table": "0bed7c0d19c97d62a6da499fc6b54d67c71fe3f5ad652cca7f41cd6783fd254f"
+        },
+        "protected_test_used": false,
+        "sealed_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+        "seed": 1731,
+        "source_sha256": "101d661a16e3f17ecc924c1afed3a188cea25fe8e70bb1df2a19b523f363ecd1",
+        "transformer_forwards": 0
+      },
+      "identity_sha256": "90c1b32c5b6d9021965e96180c86800c9c00458d47eb7718433d62425a9adfe2",
+      "parent_updates": 0,
+      "path": "runs/learning/transformer-contribution-attempt2-v1/seed-1731/random/checkpoint-final.pt",
+      "relation_parent_checkpoint_sha256": null,
+      "seed": 1731,
+      "train_exact": 1637,
+      "training_receipt_sha256": "54cbfe8ebe21b2b72a49e9db78c48916d02931f17171816a4b630a2decf1771d"
+    }
+  ],
+  "protected_test_used": false,
+  "publication_cpu_replay_sha256": "7c3eee236b0797ad7aac34150999a258d1518b41eb3cbe5df1a207668c742acb",
+  "raw_scores_published": false,
+  "receipts": {
+    "audit.json": {
+      "path": "docs/experiments/transformer-contribution-v1/audit.json",
+      "sha256": "1de8c45e7469300149db3b738c28146b80ee8543d8ffb363da679a5e1ebdd068"
+    },
+    "closure-audit-reverification-v1.json": {
+      "path": "docs/experiments/transformer-contribution-v1/closure-audit-reverification-v1.json",
+      "sha256": "90437659f953e4b03d69ab9ad00b430151aa27e00dec3baddee25a8e0b8b244c"
+    },
+    "cpu-replay.json": {
+      "path": "docs/experiments/transformer-contribution-v1/cpu-replay.json",
+      "sha256": "f35bd10cc38b3a7aef3f1ba1012c35a36e1790a25b98745bc9f110135a8b3186"
+    },
+    "environment.json": {
+      "path": "docs/experiments/transformer-contribution-v1/environment.json",
+      "sha256": "22dd2e5e6d8fa1937a1c4da429882d824b0e7a33f56e2cd9f01f4ff34e441ea8"
+    },
+    "failed-attempt1.json": {
+      "path": "docs/experiments/transformer-contribution-v1/failed-attempt1.json",
+      "sha256": "fe6aea1a2cc548214ff42458b243380e2448d7616949abbffdf49b53dd6d7cce"
+    },
+    "publication-review-v1.json": {
+      "path": "docs/experiments/transformer-contribution-v1/publication-review-v1.json",
+      "sha256": "48bbaffdf48625a418d88aa784de975051c996b12d839daa83b3d12a143a9d9f"
+    },
+    "read-receipt.json": {
+      "path": "docs/experiments/transformer-contribution-v1/read-receipt.json",
+      "sha256": "505108920c76a1d4e57a8416e3fc4f44df566e887f6f8d4f0c4a0ad8be685de1"
+    },
+    "summary.json": {
+      "path": "docs/experiments/transformer-contribution-v1/summary.json",
+      "sha256": "af70124cca583591e566838aceb7b6effef3facb66096985a986babf7667e633"
+    },
+    "verification-receipt.json": {
+      "path": "docs/experiments/transformer-contribution-v1/verification-receipt.json",
+      "sha256": "51b0441e9f9a8c1c7460f0e8da04506ffe6a01f699af4361c948b05c01710606"
+    }
+  },
+  "recipe": {
+    "adaptation_batch_size": 1637,
+    "adaptation_updates": 32000,
+    "arms": [
+      "joint-reference",
+      "relation-only",
+      "random"
+    ],
+    "campaign": "transformer-contribution-v1",
+    "dimension": 256,
+    "entity_count": 1025,
+    "evaluator": "transformer-contribution-development-v1",
+    "inference": "positive-nonself-ascending-fp32-b8-last6-v1",
+    "model_promoted": false,
+    "parent_batch_size": 32,
+    "parent_updates": 2000,
+    "protected_test_used": false,
+    "seeds": [
+      1729,
+      1730,
+      1731
+    ],
+    "threshold": 0.0,
+    "validation_batch_size": 8
+  },
+  "replay_source_change": "Line wrap of identical scope string only; original preserved locally.",
+  "seal_sha256": "d58ee5315a4d99c2e56c905e439e2eb3b679b9c8bc4c58a754f98c040ee2be4c",
+  "weights_published": false
+}
