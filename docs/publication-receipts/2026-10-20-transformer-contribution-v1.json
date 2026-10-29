@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "publication_id": "2026-10-20-transformer-contribution-v1",
+  "status": "published_remote_verified",
+  "verified_at_utc": "2026-10-29T04:20:16Z",
+  "authorization": "Standing user authorization to publish completed PLM and PLM-findings experiments to the existing remotes, including negative results.",
+  "branch": "codex/plm-transformer-contribution-20261020",
+  "packet_sha256": "401fc955e27bdbd7990445ea7341ff9593744d8942ec42cfb6a7415cad6c9bde",
+  "source_commit": "e4121dc13def710d85df02dd55013fdeb67bca68",
+  "findings_commit": "269bd437d0132ebe28e28bfa6f8655d520862ad0",
+  "source_url": "https://github.com/mateors1/Plm-protocolized-language-model-pika-edition/commit/e4121dc13def710d85df02dd55013fdeb67bca68",
+  "findings_url": "https://github.com/mateors1/PLM-findings/commit/269bd437d0132ebe28e28bfa6f8655d520862ad0",
+  "remote_verification": "git ls-remote --heads matched each pushed content commit exactly before receipt commits; both publication branches will be checked again after receipt pushes.",
+  "validation": {
+    "packet_manifest": "50 entries verified; all 42 copied files matched SHA256 and byte count; all 8 scoped/navigation integrations were present.",
+    "ruff": "passed",
+    "format": "334 files already formatted",
+    "mypy": "strict passed for 79 source files after syncing locked training, serving, and dev groups",
+    "tests": "4641 passed, 17 skipped, 2 warnings; full research test script exited 0 with CUDA_VISIBLE_DEVICES=-1",
+    "isolated_aggregate": "42 passed",
+    "isolated_geometry": "33 passed",
+    "pre_commit": "all source hooks passed; two path-scoped EOF fixer exclusions preserve immutable review JSON bytes",
+    "findings_diff_check": "passed",
+    "findings_links": "12 local links in the added article and source-linked wrappers checked; 0 broken",
+    "committed_bytes": "All 42 copied manifest files were rehashed from committed Git blobs; 0 mismatches."
+  },
+  "validation_notes": [
+    "An initial core-only environment could not collect three Torch test modules; locked optional groups were installed in the isolated candidate and strict mypy passed.",
+    "The first full suite run without a CPU visibility mask hit an existing GPU-visibility guard; the documented CPU-only rerun passed."
+  ],
+  "publication_support": {
+    "source": "Path-scoped exact-byte attributes cover immutable snapshot files; two exact review JSON paths are excluded only from the EOF fixer because their bytes are authenticated by the manifest.",
+    "findings": "Source-linked wrappers resolve canonical-paper relative paths while leaving PAPER.md byte-identical to source."
+  },
+  "experiment": {
+    "result": "Relation-only pretraining matched the historical joint reference across three seeds on the same 222 development queries, 666/666; random-parent adaptation reached 662/666.",
+    "interpretation": "Development alternative only; no attention-only causal result, protected-test generalization, model promotion, or serving advantage."
+  },
+  "byte_identity": {
+    "canonical_paper_sha256": "8baa570956ef6b17a6f2346b5ae95b658b0f9a043dd053db092543e75bb1ae94",
+    "paper_v0011_archive_sha256": "117782f02c5074302d3f4faf4df1fe67d59b38632db08948b9b2dccd02f1f76e",
+    "findings_paper": "byte-identical to source canonical PAPER.md",
+    "findings_v0011_archive": "byte-identical to source PAPER-v0011 archive"
+  },
+  "exclusions": [
+    "protected 191-query set",
+    "model promotion or serving integration",
+    "model weights/checkpoints, raw neural reports, databases, private records, credentials, and private Site artifacts",
+    "unassigned later packets and working-tree changes"
+  ],
+  "claims": "Publication preserves bounded repeated-query development evidence only. Git commits do not archive weights or establish protected-test parity, causal attention contribution, model promotion, or serving/throughput/energy advantage."
+}
